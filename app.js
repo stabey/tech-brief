@@ -153,7 +153,7 @@
         const items = acc.items || [];
         let body;
         if (!items.length) {
-          body = `<div class="empty" style="margin:0.5rem 0 1rem;border:none;padding:0.4rem 0;text-align:left">暂无公开发帖，或本期尚未写入</div>`;
+          body = `<div class="empty">暂无公开发帖，或本期尚未写入</div>`;
         } else {
           body = items
             .map((item) => {
@@ -178,7 +178,7 @@
                 : escapeHtml(title);
               return `
                 <div class="account-item item-card" data-item-id="${escapeHtml(item.id)}">
-                  <h3 style="font-size:1rem;margin:0 0 0.4rem">${titleHtml}</h3>
+                  <h3>${titleHtml}</h3>
                   ${item.summary ? `<p class="summary">${escapeHtml(item.summary)}</p>` : ""}
                   ${extra}
                   ${metaRow(item, { source: `@${acc.handle}`, meta: item.time || "" })}

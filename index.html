@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-accent="safety-orange">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="技术早报：每天 8:00（北京时间）整理技术社区与特别关注账号的热点。" />
   <title>技术早报</title>
   <base href="./" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@200;300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500;600&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
     <header class="site-header">
-      <div class="brand">
+      <div class="chrome">
         <p class="eyebrow">Tech Brief</p>
+        <p class="chrome-meta">08:00 CST · Beijing</p>
+      </div>
+      <div class="brand">
         <h1>技术早报</h1>
         <p class="subtitle" id="issue-date">加载中…</p>
       </div>
+      <hr class="rule-accent" />
       <div class="podcast-panel" id="podcast-panel" hidden>
         <div class="podcast-meta">
           <span class="pill">播客</span>
@@ -27,41 +34,53 @@
     </header>
 
     <nav class="toc" aria-label="分区导航">
-      <a href="#highlights">今日速览</a>
-      <a href="#accounts">特别关注</a>
-      <a href="#community">社区热议</a>
-      <a href="#watches">临时关注</a>
+      <a href="#highlights"><span class="toc-num">01</span>今日速览</a>
+      <a href="#accounts"><span class="toc-num">02</span>特别关注</a>
+      <a href="#community"><span class="toc-num">03</span>社区热议</a>
+      <a href="#watches"><span class="toc-num">04</span>临时关注</a>
     </nav>
 
     <main>
       <section id="highlights" class="section">
         <div class="section-head">
-          <h2>今日速览</h2>
-          <p>过去 24 小时最值得先看的几条</p>
+          <span class="sec-index">01</span>
+          <div class="section-copy">
+            <h2>今日速览</h2>
+            <p>过去 24 小时最值得先看的几条</p>
+          </div>
         </div>
         <div id="highlights-list" class="card-grid"></div>
       </section>
 
       <section id="accounts" class="section">
         <div class="section-head">
-          <h2>特别关注</h2>
-          <p>固定跟踪的 X 账号与互动亮点</p>
+          <span class="sec-index">02</span>
+          <div class="section-copy">
+            <h2>特别关注</h2>
+            <p>固定跟踪的 X 账号与互动亮点</p>
+          </div>
         </div>
         <div id="accounts-list"></div>
       </section>
 
       <section id="community" class="section">
         <div class="section-head">
-          <h2>社区热议</h2>
-          <p>Hacker News、Reddit、Lobsters 等</p>
+          <span class="sec-index">03</span>
+          <div class="section-copy">
+            <h2>社区热议</h2>
+            <p>Hacker News、Reddit、Lobsters 等</p>
+          </div>
         </div>
         <div id="sections-list"></div>
       </section>
 
       <section id="watches" class="section">
         <div class="section-head">
-          <h2>临时关注</h2>
-          <p>加一个账号或话题，可设过期天数</p>
+          <span class="sec-index">04</span>
+          <div class="section-copy">
+            <h2>临时关注</h2>
+            <p>加一个账号或话题，可设过期天数</p>
+          </div>
         </div>
         <div class="watch-panel card">
           <p class="hint">
@@ -99,7 +118,10 @@
 
       <section id="gaps" class="section" hidden>
         <div class="section-head">
-          <h2>说明</h2>
+          <span class="sec-index">05</span>
+          <div class="section-copy">
+            <h2>说明</h2>
+          </div>
         </div>
         <ul id="gaps-list" class="gaps"></ul>
       </section>
