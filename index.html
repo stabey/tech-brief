@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="技术早报：每天 8:00（北京时间）整理技术社区与特别关注账号的热点。" />
+  <title>技术早报</title>
+  <base href="./" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <p class="eyebrow">Tech Brief</p>
+        <h1>技术早报</h1>
+        <p class="subtitle" id="issue-date">加载中…</p>
+      </div>
+      <div class="podcast-panel" id="podcast-panel" hidden>
+        <div class="podcast-meta">
+          <span class="pill">播客</span>
+          <span id="podcast-label">本期语音</span>
+        </div>
+        <audio id="podcast-player" controls preload="none"></audio>
+        <p class="podcast-script" id="podcast-script"></p>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="分区导航">
+      <a href="#highlights">今日速览</a>
+      <a href="#accounts">特别关注</a>
+      <a href="#community">社区热议</a>
+      <a href="#watches">临时关注</a>
+    </nav>
+
+    <main>
+      <section id="highlights" class="section">
+        <div class="section-head">
+          <h2>今日速览</h2>
+          <p>过去 24 小时最值得先看的几条</p>
+        </div>
+        <div id="highlights-list" class="card-grid"></div>
+      </section>
+
+      <section id="accounts" class="section">
+        <div class="section-head">
+          <h2>特别关注</h2>
+          <p>固定跟踪的 X 账号与互动亮点</p>
+        </div>
+        <div id="accounts-list"></div>
+      </section>
+
+      <section id="community" class="section">
+        <div class="section-head">
+          <h2>社区热议</h2>
+          <p>Hacker News、Reddit、Lobsters 等</p>
+        </div>
+        <div id="sections-list"></div>
+      </section>
+
+      <section id="watches" class="section">
+        <div class="section-head">
+          <h2>临时关注</h2>
+          <p>加一个账号或话题，可设过期天数</p>
+        </div>
+        <div class="watch-panel card">
+          <p class="hint">
+            打分与临时关注会打开一个 GitHub Issue（需登录 GitHub）。
+            每天早报会读取这些 Issue，更新 <code>data/config.json</code> 与 <code>data/ratings.json</code>。
+            本地也会立刻记一份，方便你回看。无需再注册其他账号。
+          </p>
+          <form id="watch-form" class="watch-form">
+            <div class="field-row">
+              <label>
+                类型
+                <select name="type" id="watch-type">
+                  <option value="account">账号</option>
+                  <option value="topic">话题</option>
+                </select>
+              </label>
+              <label class="grow">
+                <span id="watch-value-label">账号（不带 @）</span>
+                <input name="value" id="watch-value" type="text" required placeholder="例如 thsottiaux" autocomplete="off" />
+              </label>
+              <label>
+                过期天数
+                <input name="days" id="watch-days" type="number" min="1" max="90" value="7" />
+              </label>
+            </div>
+            <label>
+              备注名（可选）
+              <input name="label" id="watch-label" type="text" placeholder="显示用名称" autocomplete="off" />
+            </label>
+            <button type="submit" class="btn primary">提交临时关注</button>
+          </form>
+          <div id="local-watches" class="local-list"></div>
+        </div>
+      </section>
+
+      <section id="gaps" class="section" hidden>
+        <div class="section-head">
+          <h2>说明</h2>
+        </div>
+        <ul id="gaps-list" class="gaps"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>每天 8:00（北京时间）更新 · 托管于 GitHub Pages</p>
+      <p><a href="https://github.com/stabey/tech-brief" rel="noopener" target="_blank">仓库</a></p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

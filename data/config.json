@@ -1,0 +1,10 @@
+{
+  "timezone": "Asia/Shanghai",
+  "permanent_accounts": [
+    {"handle": "elonmusk", "label": "Elon Musk"},
+    {"handle": "thsottiaux", "label": "Tibo"},
+    {"handle": "poteto", "label": "poteto"}
+  ],
+  "temp_watches": [],
+  "notes": "temp_watches 项形如 {id, type: account|topic, value, label, expires_on: YYYY-MM-DD|null, created_at}"
+}

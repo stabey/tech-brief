@@ -1,0 +1,476 @@
+{
+  "id": "2026-10-09",
+  "title": "技术早报 · 2026-10-09",
+  "window": {
+    "start": "2026-10-08T09:00:00+08:00",
+    "end": "2026-10-09T09:00:00+08:00"
+  },
+  "generated_at": "2026-10-09T09:08:56+08:00",
+  "podcast": {
+    "src": "audio/2026-10-09.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月九日这一期。\n\n先说今天三件值得睁眼就看的事。第一，OpenAI 这边风波叠着产品节奏：CNBC 报道称其年化收入，比此前向投资者示意的数字低了大约两百亿美元，Hacker News 上讨论很热。同日 TechCrunch 写到几位被裁的安全研究者发公开信，否认不当处理敏感信息的指控，并警告可能带来寒蝉效应。第二，端侧语音很吸睛：Cactus 开源的 Whistle，单文件大约十六点九兆，宣称首 token 只要十一毫秒，支持七种语言，HN 五百多分。第三，数学和 AI 声明继续共振——OpenAI 撤回了三篇数学相关论文，陶哲轩在 Mastodon 谈「数学二点零」应更全面地衡量进展，这条在 HN 接近六百赞、六百多条评论。\n\n特别关注三位。Tibo，也就是 OpenAI 的 thsottiaux，这几天连发 Day 三、Day 四：说 Codex Cloud 已静默重上线，steering 改成即时可纠偏，并点到 GPT-六点一 Sol ultrafast；早上还戏仿了当年 ChatGPT 发布文案，互动很高。poteto 发了「你该更有野心」，评论区扯到 PR 产量和软件工厂；也有人担心看不懂代码就没法 ownership，她的态度大致是 figuring it out is the job。Elon 则用达美航班「完全上不了网」开 AI 安全玩笑，又说看见 SpaceX 估值可能比地球经济还高几个数量级的路径；另外还追问 Grok Bot 最急需修什么。\n\n社区一瞥：Lobsters 上「撑起互联网」的可视化、jujutsu 零点四六点零发布都比较稳。V2EX 在聊用 AI 写代码要不要逐条看改动，以及 AI 时代的职业十字路口。Reddit 官方接口这次被拦了，我们靠公共存档扫到 LocalLLaMA 上对 Qwen 三点六的好评和量化讨论，分数不一定准，仅作线索。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "OpenAI 年化收入较此前示意低约 200 亿美元",
+      "summary": "CNBC 等报道称 OpenAI 年化收入比此前向投资者示意的数字低约 200 亿美元；HN 高赞讨论融资与预期落差。",
+      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "source": "Hacker News / CNBC"
+    },
+    {
+      "id": "h2",
+      "title": "被裁 OpenAI 安全研究者发公开信，警告寒蝉效应",
+      "summary": "TechCrunch：Jasmine Wang、Tomek Korbak、Mikita Balesni 否认不当处理敏感信息指控；OpenAI 备忘录否认报复性解雇。",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "source": "TechCrunch"
+    },
+    {
+      "id": "h3",
+      "title": "Whistle：16.9MB 端侧语音识别，HN 破五百赞",
+      "summary": "Cactus 开源 Whistle，单文件约 16.9MB，宣称首 token ~11ms、支持 7 语种；与 Needle C++ 引擎同系。",
+      "url": "https://cactuscompute.com/blog/whistle",
+      "source": "Hacker News"
+    },
+    {
+      "id": "h4",
+      "title": "陶哲轩谈 Math 2.0：衡量数学进展要更全面",
+      "summary": "呼应 OpenAI 数学论文风波；HN 近 600 赞、600+ 评论，讨论 AI 时代如何评价数学工作。",
+      "url": "https://mathstodon.xyz/@tao/117395269325940185",
+      "source": "Hacker News / Mastodon"
+    },
+    {
+      "id": "h5",
+      "title": "OpenAI 撤回三篇数学相关论文",
+      "summary": "GitHub history.md 记录撤回三篇数学结果；与「AI 数学声明」讨论同日升温。",
+      "url": "https://github.com/openai/math/blob/main/history.md",
+      "source": "Hacker News / GitHub"
+    },
+    {
+      "id": "h6",
+      "title": "Tibo Day 4：即时 steering + GPT-6.1 Sol ultrafast",
+      "summary": "OpenAI 的 Tibo（@thsottiaux）称 steering 可实时纠偏，并点到 GPT-6.1 Sol ultrafast；前一日称 Codex Cloud 已静默重上线。",
+      "url": "https://x.com/thsottiaux/status/2108275041276420573",
+      "source": "X · @thsottiaux"
+    },
+    {
+      "id": "h7",
+      "title": "Opus 5.5 单提示六小时可视化《看不见的城市》",
+      "summary": "用 Claude Opus 5.5 长时程 agent 跑约六小时，可视化卡尔维诺作品；展示 coding agent 耐力。",
+      "url": "https://quesma.com/blog/invisible-cities-one-shot/",
+      "source": "Hacker News"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "调侃式「AI 安全」：把超智能测试搬到达美航班——那里完全上不了网。高互动玩笑帖。",
+          "url": "https://x.com/elonmusk/status/2108321181602353333",
+          "time": "2026-10-09T06:18:35+08:00",
+          "interactions": [
+            {
+              "summary": "自回：顺便说这办法其实真能管用（Btw, this would ACTUALLY work!!）",
+              "url": "https://x.com/elonmusk/status/2108326517323248060"
+            }
+          ]
+        },
+        {
+          "id": "elon-2",
+          "summary": "称看到 SpaceX 估值可能比当前地球经济体量大几个数量级的路径；引用与争论很多。",
+          "url": "https://x.com/elonmusk/status/2108315261044445330",
+          "time": "2026-10-09T05:55:03+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-3",
+          "summary": "回复用户对 Grok @bot 体验的长评，追问「最急需加/修什么」。",
+          "url": "https://x.com/elonmusk/status/2108337424959205527",
+          "time": "2026-10-09T07:23:07+08:00",
+          "interactions": [
+            {
+              "summary": "原评：@stepango 对比 Hermes/OpenClaw 与 Grok @bot 的 UX",
+              "url": "https://x.com/stepango/status/2108323965911658844"
+            }
+          ]
+        },
+        {
+          "id": "elon-4",
+          "summary": "澄清旧照里的人是大学室友 Dickson Law（香港），随后还提到宾大物理同学 Robin Ren。",
+          "url": "https://x.com/elonmusk/status/2108327546588721508",
+          "time": "2026-10-09T06:43:52+08:00",
+          "interactions": []
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "戏仿 2022 年 ChatGPT 发布文案「Today, we are announcing ChatGPT」；结合近期 GPT-6/Codex 节奏，互动很高。",
+          "url": "https://x.com/thsottiaux/status/2108349826727588000",
+          "time": "2026-10-09T08:12:24+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-2",
+          "summary": "Day 4：steering 改为即时响应，可实时纠偏；并提到发布 GPT-6.1 Sol ultrafast。",
+          "url": "https://x.com/thsottiaux/status/2108275041276420573",
+          "time": "2026-10-09T03:15:14+08:00",
+          "interactions": [
+            {
+              "summary": "引用 @OpenAIDevs：GPT-6.1 Sol Ultrafast（宣称最高约 8x 于 Sol Standard）",
+              "url": "https://x.com/OpenAIDevs/status/2108262812489531498"
+            }
+          ]
+        },
+        {
+          "id": "tibo-3",
+          "summary": "Day 3 加更：称已静默重新上线 Codex Cloud，「挺好用了」。",
+          "url": "https://x.com/thsottiaux/status/2108084615349170480",
+          "time": "2026-10-08T14:38:33+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-4",
+          "summary": "回应 Gergely「Bot 与 Codex 互怼烦人」：喊 @poteto 回去干活，祝 b/dots 繁荣。",
+          "url": "https://x.com/thsottiaux/status/2108199520836485472",
+          "time": "2026-10-08T22:15:08+08:00",
+          "interactions": [
+            {
+              "summary": "Gergely Orosz 原帖：互怼从好笑变烦人",
+              "url": "https://x.com/GergelyOrosz/status/2108138915823755642"
+            },
+            {
+              "summary": "与 poteto 互怼线一例：poteto 玩笑申请 tibo@mail.grokbot.com",
+              "url": "https://x.com/poteto/status/2108071056259125309"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "短帖「你该更有野心」；评论区延伸到 PR 产量、ambition 作为 AI 产品原则。",
+          "url": "https://x.com/poteto/status/2108299315764777171",
+          "time": "2026-10-09T04:51:41+08:00",
+          "interactions": [
+            {
+              "summary": "有人问能开多少 PR，回复链示例",
+              "url": "https://x.com/poteto/status/2108310261224677576"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "同意 Gergely：重要角色将是「构建构建软件的机器」；软件工厂讨论升温。",
+          "url": "https://x.com/poteto/status/2108318207207669877",
+          "time": "2026-10-09T06:06:45+08:00",
+          "interactions": [
+            {
+              "summary": "Gergely 相关讨论帖",
+              "url": "https://x.com/GergelyOrosz/status/2108311385184616603"
+            },
+            {
+              "summary": "续帖：figuring it out is the job 一线",
+              "url": "https://x.com/poteto/status/2108320890333388854"
+            }
+          ]
+        },
+        {
+          "id": "poteto-3",
+          "summary": "有人说人工 code review 挡在「让世界更好」前面；poteto 回：想办法让人工 code review 过时。",
+          "url": "https://x.com/poteto/status/2108329348600381660",
+          "time": "2026-10-09T06:51:02+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-4",
+          "summary": "戏仿产品发布会：宣布「Poteto」通用淀粉——账号人设式玩笑，接近窗末。",
+          "url": "https://x.com/poteto/status/2108360571729199121",
+          "time": "2026-10-09T08:55:06+08:00",
+          "interactions": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Whistle: Speech to Text in 16.9 MB",
+          "summary": "Cactus 开源端侧语音识别：单文件约 16.9MB，宣称首 token ~11ms，支持 7 语种。",
+          "url": "https://cactuscompute.com/blog/whistle",
+          "discussion_url": "https://news.ycombinator.com/item?id=50008427",
+          "meta": "512 分 · 116 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "OpenAI annualised revenues $20B less than previously signalled",
+          "summary": "报道称年化收入较此前向投资者示意低约 200 亿美元。",
+          "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50008187",
+          "meta": "349 分 · 245 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "“Math 2.0” will need to value mathematical progress more holistically",
+          "summary": "陶哲轩：更全面地衡量数学进展；与 OpenAI 数学论文风波共振。",
+          "url": "https://mathstodon.xyz/@tao/117395269325940185",
+          "discussion_url": "https://news.ycombinator.com/item?id=50002008",
+          "meta": "590 分 · 626 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "OpenAI Withdraws 3 Math Papers",
+          "summary": "撤回三篇数学相关论文/结果（GitHub history.md）。",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "discussion_url": "https://news.ycombinator.com/item?id=50003107",
+          "meta": "338 分 · 3 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
+          "summary": "Claude Opus 5.5 单提示约六小时可视化《看不见的城市》。",
+          "url": "https://quesma.com/blog/invisible-cities-one-shot/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50004790",
+          "meta": "353 分 · 179 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Trump administration is suspending Microsoft from a green card program",
+          "summary": "美政府暂停微软等参与某绿卡/永居相关项目（AP）；科技用工政策热点。",
+          "url": "https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea",
+          "discussion_url": "https://news.ycombinator.com/item?id=50006832",
+          "meta": "820 分 · 1407 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Beauty in DVD Menus",
+          "summary": "回顾 DVD 菜单的交互与视觉设计美学。",
+          "url": "https://vale.rocks/posts/dvd-menus",
+          "discussion_url": "https://news.ycombinator.com/item?id=50005527",
+          "meta": "256 分 · 144 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "4-hour battery storage is cheaper to install than gas turbines all across globe",
+          "summary": "报道称全球范围内 4 小时储能装机成本已低于燃气轮机。",
+          "url": "https://www.solarpowerworldonline.com/2026/10/4-hour-battery-storage-is-cheaper-to-install-than-gas-turbines-all-across-globe/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50007519",
+          "meta": "218 分 · 127 评论"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": [
+        {
+          "id": "rd-1",
+          "title": "Qwen 3.6 35B appreciation post",
+          "summary": "LocalLLaMA：Qwen 3.6 35B 好评帖。（经 arctic-shift 存档；分数非实时热度。）",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x17brf/qwen_36_35b_appreciation_post/",
+          "discussion_url": "https://www.reddit.com/r/LocalLLaMA/comments/1x17brf/qwen_36_35b_appreciation_post/",
+          "meta": "r/LocalLLaMA · 存档"
+        },
+        {
+          "id": "rd-2",
+          "title": "What are you using for NVFP4 and Do you like it?",
+          "summary": "讨论 NVFP4 量化使用体验。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0yxrf/what_are_you_using_for_nvfp4_and_do_you_like_it/",
+          "discussion_url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0yxrf/what_are_you_using_for_nvfp4_and_do_you_like_it/",
+          "meta": "r/LocalLLaMA · 5 评论"
+        },
+        {
+          "id": "rd-3",
+          "title": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+          "summary": "指称某项目改写 GitHub 历史以抹去 Claude 参与痕迹。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x15a8w/strata_rewrote_their_github_history_to_wipe/",
+          "discussion_url": "https://www.reddit.com/r/LocalLLaMA/comments/1x15a8w/strata_rewrote_their_github_history_to_wipe/",
+          "meta": "r/LocalLLaMA · 存档"
+        },
+        {
+          "id": "rd-4",
+          "title": "On the soft, wet fabric of agentic code",
+          "summary": "关于 agentic 代码隐喻的博文分享。",
+          "url": "https://ljtn.github.io/epiq/blog/on-the-soft-wet-fabric-of-agentic-code.html",
+          "discussion_url": "https://www.reddit.com/r/programming/comments/1x1531g/on_the_soft_wet_fabric_of_agentic_code/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-5",
+          "title": "Two-Way Doors: Don’t Code Yourself into a Corner",
+          "summary": "Google Testing Blog：双向门决策与避免把自己编码进死角。",
+          "url": "https://testing.googleblog.com/2026/10/two-way-doors-dont-code-yourself-into.html",
+          "discussion_url": "https://www.reddit.com/r/programming/comments/1x0vmxt/twoway_doors_dont_code_yourself_into_a_corner/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-6",
+          "title": "Tracing np.add, all the way down",
+          "summary": "从 np.add 一路向下追踪实现的博文。",
+          "url": "https://blog.veitheller.de/numpy.html",
+          "discussion_url": "https://www.reddit.com/r/programming/comments/1x11ujr/tracing_npadd_all_the_way_down/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-7",
+          "title": "How big is a Git commit?",
+          "summary": "探讨 Git commit 体积的卡片文。",
+          "url": "https://ratfactor.com/cards/git-commit-size",
+          "discussion_url": "https://www.reddit.com/r/programming/comments/1x144ok/how_big_is_a_git_commit/",
+          "meta": "r/programming"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lb-1",
+          "title": "The people holding up the internet",
+          "summary": "可视化展示「撑起互联网」的关键贡献者/基础设施角色。",
+          "url": "https://sheets.works/data-viz/holding-up-the-internet",
+          "discussion_url": "https://lobste.rs/s/lhr4oy/people_holding_up_internet",
+          "meta": "55 分 · 15 评论"
+        },
+        {
+          "id": "lb-2",
+          "title": "I've Been Deindexed by Google",
+          "summary": "作者自述被 Google 去索引的经历与影响。",
+          "url": "https://kennyqin.com/deindexed-by-google/",
+          "discussion_url": "https://lobste.rs/s/en3vgh/i_ve_been_deindexed_by_google",
+          "meta": "49 分 · 14 评论"
+        },
+        {
+          "id": "lb-3",
+          "title": "jujutsu (jj) 0.46.0",
+          "summary": "版本控制工具 jujutsu (jj) 发布 0.46.0。",
+          "url": "https://github.com/jj-vcs/jj/releases/tag/v0.46.0",
+          "discussion_url": "https://lobste.rs/s/nz3b1h/jujutsu_jj_0_46_0",
+          "meta": "37 分 · 6 评论"
+        },
+        {
+          "id": "lb-4",
+          "title": "The Missing Piece in Rust Error Handling",
+          "summary": "讨论 Rust 错误处理中缺失的一环/模式。",
+          "url": "https://mcmah309.github.io/posts/the-missing-piece-in-rust-error-handling/",
+          "discussion_url": "https://lobste.rs/s/3vfu09/missing_piece_rust_error_handling",
+          "meta": "23 分 · 5 评论"
+        },
+        {
+          "id": "lb-5",
+          "title": "Gentoo infrastructure sponsors wanted",
+          "summary": "Gentoo 寻求基础设施赞助。",
+          "url": "https://www.gentoo.org/news/2026/10/07/infrastructure-sponsors-wanted.html",
+          "discussion_url": "https://lobste.rs/s/jmqi5h/gentoo_infrastructure_sponsors_wanted",
+          "meta": "29 分 · 0 评论"
+        },
+        {
+          "id": "lb-6",
+          "title": "Ending the Casuarina Linux Experiment",
+          "summary": "Casuarina Linux 实验宣告结束。",
+          "url": "https://casuarina.org/news/ending-the-casuarina-linux-experiment/",
+          "discussion_url": "https://lobste.rs/s/sdlhhs/ending_casuarina_linux_experiment",
+          "meta": "26 分 · 3 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "有在薅马斯克 X 低保工资的兄弟吗？进来交流下",
+          "summary": "程序员节点热议：讨论马斯克/X 相关「低保」式收入或激励。",
+          "url": "https://www.v2ex.com/t/1246969",
+          "discussion_url": "https://www.v2ex.com/t/1246969",
+          "meta": "96 回复 · programmer"
+        },
+        {
+          "id": "v2-2",
+          "title": "AI 时代的十字路口",
+          "summary": "职场话题：AI 时代职业选择与焦虑。",
+          "url": "https://www.v2ex.com/t/1246943",
+          "discussion_url": "https://www.v2ex.com/t/1246943",
+          "meta": "72 回复 · career"
+        },
+        {
+          "id": "v2-3",
+          "title": "你们用 AI 写代码，会每次都看它改了什么吗？",
+          "summary": "用 AI 写代码时是否逐条审改动。",
+          "url": "https://www.v2ex.com/t/1247211",
+          "discussion_url": "https://www.v2ex.com/t/1247211",
+          "meta": "16 回复 · programmer"
+        },
+        {
+          "id": "v2-4",
+          "title": "智谱原来真是蒸馏别人的数据",
+          "summary": "关于智谱模型蒸馏/数据来源的社区讨论（观点帖，非官方声明）。",
+          "url": "https://www.v2ex.com/t/1247153",
+          "discussion_url": "https://www.v2ex.com/t/1247153",
+          "meta": "28 回复 · programmer"
+        },
+        {
+          "id": "v2-5",
+          "title": "新发的 Haiku5.5 什么水平，和 6Luna 谁更胜一筹",
+          "summary": "对比讨论 Claude Haiku 5.5 与其他小模型水平。",
+          "url": "https://www.v2ex.com/t/1247186",
+          "discussion_url": "https://www.v2ex.com/t/1247186",
+          "meta": "6 回复 · programmer"
+        },
+        {
+          "id": "v2-6",
+          "title": "前 AI 时代挖的坑，AI 时代填上了：一个算法可视化网站",
+          "summary": "作者分享算法可视化网站：旧坑在 AI 时代补完。",
+          "url": "https://www.v2ex.com/t/1247196",
+          "discussion_url": "https://www.v2ex.com/t/1247196",
+          "meta": "5 回复 · programmer"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "source": "Web 补遗",
+      "items": [
+        {
+          "id": "web-1",
+          "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+          "summary": "被裁安全研究者发公开信否认指控并警告寒蝉效应；OpenAI 否认报复性解雇。",
+          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+          "discussion_url": "",
+          "meta": "TechCrunch · 2026-10-08"
+        },
+        {
+          "id": "web-2",
+          "title": "ChatGPT Gets GPT-6 Model Alongside Intelligent UI（报道）",
+          "summary": "TechTimes 报道 GPT-6 + Intelligent UI；官方博文日期 2026-10-07（略早于窗起点），窗内有持续报道与 Tibo 产品帖。",
+          "url": "https://www.techtimes.com/articles/328769/20261008/openai-chatgpt-gets-gpt-6-model-alongside-intelligent-ui-interactive-features.htm",
+          "discussion_url": "https://openai.com/index/gpt-6-for-everyone/",
+          "meta": "TechTimes · 官方博文见讨论链"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Reddit 官方 JSON 均返回 403；pullpush.io 对 agent 限流 429。改用 arctic-shift 公共存档拿到部分子版帖文；r/MachineLearning 两次超时。存档里多数 score 显示为 1，不能当作 Reddit 实时热度。",
+    "X 对 @elonmusk / @poteto 只取了第一页（最多 25 条），更早窗内帖可能未尽列；@thsottiaux 该窗 14 条已完整返回。",
+    "歸藏站点可打开，但首页条目日期多为 2026-03，未见 2026-10 当周更新；版式仅作参考。",
+    "OpenAI 官方「GPT-6 for everyone」博文日期为 2026-10-07，严格落在窗起点之前；窗内用 TechTimes 报道与 Tibo 动态覆盖，避免把官方发文时间误标进窗内。"
+  ]
+}
