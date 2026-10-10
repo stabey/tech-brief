@@ -1,0 +1,9 @@
+早上好，这里是技术早报，二零二六年十月十日这一期。
+
+先说今天三件值得睁眼就看的事。第一，Deno 团队整体加入 Cloudflare：Ryan Dahl 要把精力转到 Workers 与 Durable Objects，和 celld、workerd 合流；Deno 运行时再维护一年后停止官方开发，Deploy 六个月后关停，JSR 迁到 Cloudflare。Hacker News 破千赞。第二，Oxide 宣布四点四五亿美元 D 轮，Eclipse 领投，AMD 成战略股东——业务已有应税利润，融资主要为消化积压订单、扩产。第三，Python 三点一五正式发布：默认 UTF-八、显式懒加载导入、frozendict 等，实验性 JIT 也有加速。
+
+特别关注三位。Elon 以讽刺口吻称呼「Ambani 总理」，呼吁放行 Starlink 在印度竞争并强调灾时通信，互动很高；还提到 Grok Bot 已能自建邮箱，并问商家用 Bot 管 Shopify 的体验。Tibo 的 Day 五：桌面端 Composer 预测下一句，Pro 不耗额度；dots 可在 ChatGPT 手机端创建。poteto 说面试或可压成系统设计加「用 agent 做真项目」两轮，并谈「技能压缩」。
+
+社区一瞥：Lobsters 热议「编程并不特殊」、Unison Cloud 开源，以及 coding agent 为何还笨。V2EX 在传 poteto 译文，也有人吐槽 Anthropic 协议。Reddit 官方接口仍被拦，本期暂缺。
+
+以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。
