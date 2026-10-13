@@ -1,0 +1,427 @@
+{
+  "id": "2026-10-11",
+  "title": "技术早报 · 2026-10-11",
+  "window": {
+    "start": "2026-10-10T08:00:00+08:00",
+    "end": "2026-10-11T08:00:00+08:00"
+  },
+  "generated_at": "2026-10-11T08:10:27+08:00",
+  "podcast": {
+    "src": "audio/2026-10-11.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月十一日这一期。\n\n先说今天三件值得先看的事。第一，REA——给编程 agent 用的逆向工程工具上线，Hacker News 近七百分：让 agent 自己拆程序、解释它怎么工作。第二，Telegram Desktop 曝出一点击漏洞，精心构造的链接可借 IPC 注入读本地文件、甚至偷走会话；请尽快升到七点二点九。第三，Bitwarden 宣布双许可：商店与直装客户端下版起改商业许可，GitHub 上 GPLv3 源码继续公开，但未来部分功能可能只进商业版，社区讨论很激烈。\n\n特别关注三位。Elon 继续催印度开放 Starlink 竞争，并庆祝委内瑞拉放行；还演示 Grok Bot 可拍信用卡照片就帮你比价下单，另提 Digital Optimus 已能像人一样半通关暗黑破坏神。Tibo 的 Day 六是 Reset——额度日终全球重置；并宣布 ChatGPT 订阅可对接 Devin，Dots 也有大升级，还解释 Codex 默认三十万上下文是算过的好默认。poteto 说自己同时跑十六个 Cursor Projects，最常用提示变成「斜杠 bro，把上次之后的进展和待我拍板的事项摘要给我」。\n\n社区一瞥：HN 还在热议游说是否腐败、以及 Apple 的 macOS 从 Open Group Unix 名录悄然消失；Lobsters 讨论可移植检查字符串转浮点错误、以及「AI 并非必然」；V2EX 在吵大改动 coding agent 扛不住，以及五年后还有多少人靠写代码吃饭。Reddit 官方接口仍被拦，本期暂缺。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。\n"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "REA：给编程 agent 的逆向工程工具上线",
+      "summary": "REA（Reverse – Engineer Anything）让 coding agent 检查程序并解释其行为；HN 近 700 分、约 300 评论。",
+      "url": "https://rea.tools/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "h2",
+      "title": "Telegram Desktop 一点击可读本地文件、威胁会话",
+      "summary": "公开分析：未转义分隔符导致 IPC 注入，点击精心构造链接即可读盘并上传文件（含会话）；建议升至 Desktop 7.2.9。",
+      "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+      "source": "Hacker News / beaksec"
+    },
+    {
+      "id": "h3",
+      "title": "Bitwarden 宣布双许可：商店版改商业许可",
+      "summary": "下版起商店与直装客户端为商业许可构建，GitHub GPLv3 源码续更；现行功能两边都有，但未来部分组件可能仅商业版。",
+      "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "source": "Hacker News / Bitwarden"
+    },
+    {
+      "id": "h4",
+      "title": "Elon：Grok Bot 可拍信用卡比价下单；Starlink 续谈",
+      "summary": "演示拍照丢信用卡给 Grok Bot 搜最优价并下单；另续批印度垄断叙事、庆祝委内瑞拉放行 Starlink。",
+      "url": "https://x.com/elonmusk/status/2109027407185277123",
+      "source": "X · @elonmusk"
+    },
+    {
+      "id": "h5",
+      "title": "Tibo Day 6：Reset；ChatGPT 订阅可当 Devin 用",
+      "summary": "宣布 Day 6/Reset，额度日终全球重置；另称 ChatGPT 个人订阅可对接 Devin 扣额度，Dots 亦有大升级。",
+      "url": "https://x.com/thsottiaux/status/2109045220411351517",
+      "source": "X · @thsottiaux"
+    },
+    {
+      "id": "h6",
+      "title": "poteto：十六个 Cursor Projects 并行，/bro 追进度",
+      "summary": "称同时跑 16 个 Cursor Projects，最常用提示是让助手汇总上次之后进展与待决策事项。",
+      "url": "https://x.com/poteto/status/2109024196760305861",
+      "source": "X · @poteto"
+    },
+    {
+      "id": "h7",
+      "title": "Apple/macOS 从 Open Group Unix 名录消失",
+      "summary": "官方 Unix 注册表上 Apple/macOS 条目悄然不见，原因未公开；HN 热议。",
+      "url": "https://www.opengroup.org//openbrand/register/",
+      "source": "Hacker News / The Open Group"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "演示：拍信用卡照片丢进对话，Grok Bot 可全网比价并下单；另回复 Amazon 屏蔽 Bot 时称会另寻购买路径，并刚从乐高官网买过。",
+          "url": "https://x.com/elonmusk/status/2109027407185277123",
+          "time": "2026-10-11T05:04:52+08:00",
+          "interactions": [
+            {
+              "summary": "回复：Amazon 在拦 Bot；称 Grok 会另找购买路径，并举例刚在乐高官网下单。",
+              "url": "https://x.com/elonmusk/status/2109028313553399947"
+            }
+          ]
+        },
+        {
+          "id": "elon-2",
+          "summary": "长帖批「Ambani 网络水军」自相矛盾：一边说 Starlink 竞争不过低价垄断，一边又说竞争太强；主张竞争利好印度消费者，SpaceX 需把价格做亲民。",
+          "url": "https://x.com/elonmusk/status/2108994867582095465",
+          "time": "2026-10-11T02:55:34+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-3",
+          "summary": "转发庆祝：委内瑞拉电信监管机构 Conatel 授权 Starlink 全国提供卫星互联网。",
+          "url": "https://x.com/elonmusk/status/2108760362082316674",
+          "time": "2026-10-10T11:23:43+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-4",
+          "summary": "Digital Optimus：仅靠看屏幕已能打到暗黑破坏神战役约一半；CS 等快节奏游戏表现不错，英雄联盟也在训，目标跨游戏泛化。",
+          "url": "https://x.com/elonmusk/status/2108823477071303109",
+          "time": "2026-10-10T15:34:31+08:00",
+          "interactions": [
+            {
+              "summary": "另帖招募：感兴趣解决广义现实世界超级智能可加入 TeslaSI。",
+              "url": "https://x.com/elonmusk/status/2108926853230493843"
+            }
+          ]
+        },
+        {
+          "id": "elon-5",
+          "summary": "称发电量是衡量大规模经济真实实力的最佳指标之一；并引用「没有低电量的富裕国家」图表。",
+          "url": "https://x.com/elonmusk/status/2108952286030356925",
+          "time": "2026-10-11T00:06:22+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-6",
+          "summary": "引用：Grok Bot 可制作任意模拟；另提及有趣的微软 CEO 文章。",
+          "url": "https://x.com/elonmusk/status/2108715608846004414",
+          "time": "2026-10-10T08:25:53+08:00",
+          "interactions": [
+            {
+              "summary": "Interesting piece from CEO of Microsoft",
+              "url": "https://x.com/elonmusk/status/2108944224032825761"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "Day 6 / Reset：宣布重置日；自回「日终全球重置，愿 token 助你做成事」，互动很高。",
+          "url": "https://x.com/thsottiaux/status/2109045220411351517",
+          "time": "2026-10-11T06:15:39+08:00",
+          "interactions": [
+            {
+              "summary": "自回：Global reset by EOD.",
+              "url": "https://x.com/thsottiaux/status/2109045392684032299"
+            }
+          ]
+        },
+        {
+          "id": "tibo-2",
+          "summary": "宣布：你的 ChatGPT 订阅现在也是 Devin 订阅——个人计划可对接 Devin，GPT 用量从订阅额度扣。",
+          "url": "https://x.com/thsottiaux/status/2108777962053292398",
+          "time": "2026-10-10T12:33:40+08:00",
+          "interactions": [
+            {
+              "summary": "原帖：ChatGPT Go/Plus/Pro 可连 Devin，GPT 用量走订阅额度",
+              "url": "https://x.com/cognition/status/2108692010056188048"
+            }
+          ]
+        },
+        {
+          "id": "tibo-3",
+          "summary": "Dots 大升级：可把工作委派给 Codex、跟进已有线程，并更好决定续聊还是开新线程。",
+          "url": "https://x.com/thsottiaux/status/2108773703064657936",
+          "time": "2026-10-10T12:16:44+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-4",
+          "summary": "解释 Codex 默认三十万上下文：算过更划算；也能跑一百万，但更贵——好默认很重要。",
+          "url": "https://x.com/thsottiaux/status/2108778939057664357",
+          "time": "2026-10-10T12:37:32+08:00",
+          "interactions": []
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "称同时跑 16 个 Cursor Projects，最常用提示变成：用 /bro 汇总上次之后一切进展，并给出需拍板事项的执行摘要。",
+          "url": "https://x.com/poteto/status/2109024196760305861",
+          "time": "2026-10-11T04:52:06+08:00",
+          "interactions": [
+            {
+              "summary": "续：让 bot 把该提示发到 pstack 项目并加 /ketchup skill",
+              "url": "https://x.com/poteto/status/2109041205132816740"
+            },
+            {
+              "summary": "称已习惯约一年：16 个项目、各有上百 subagent",
+              "url": "https://x.com/poteto/status/2109026625564368991"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "引用 Nicki Minaj 在 X Takeover 称赞 Grok Bot 改变生活、可创建员工/助理。",
+          "url": "https://x.com/poteto/status/2109013640519274836",
+          "time": "2026-10-11T04:10:10+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-3",
+          "summary": "谈工作流：多数事开「lauren-mode」全自动，fuzz 过就发；称 agent 像机甲把飞行员能力放大千倍。",
+          "url": "https://x.com/poteto/status/2109027957658595612",
+          "time": "2026-10-11T05:07:03+08:00",
+          "interactions": [
+            {
+              "summary": "回应：agents 把编程抬成真正工程，可研究/探路而不被单线程打字时间绑死",
+              "url": "https://x.com/poteto/status/2109017184777462232"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "REA Reverse – Engineer Anything",
+          "summary": "为 coding agent 提供逆向/检视程序的工具链。",
+          "url": "https://rea.tools/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50028275",
+          "meta": "688 分 · 300 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Lobbying is corruption",
+          "summary": "论游说即腐败的博文，讨论热烈。",
+          "url": "https://carette.xyz/posts/lobbying_and_corruption/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50032556",
+          "meta": "465 分 · 259 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+          "summary": "一点击链路可读本地文件并危及会话；建议升级。",
+          "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50029123",
+          "meta": "399 分 · 253 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "`123456' password used in Danish CPR data breach",
+          "summary": "丹麦 CPR 相关大规模数据泄露报道提到弱口令 123456。",
+          "url": "https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50031269",
+          "meta": "376 分 · 193 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Bitwarden Dual License Model",
+          "summary": "商店/直装改商业许可，OSS 源码续更于 GitHub。",
+          "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+          "discussion_url": "https://news.ycombinator.com/item?id=50033407",
+          "meta": "335 分 · 243 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Apple/macOS removed from official Unix registry",
+          "summary": "Open Group Unix 注册表上 Apple/macOS 条目消失。",
+          "url": "https://www.opengroup.org//openbrand/register/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50031653",
+          "meta": "237 分 · 214 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+          "summary": "可跑在 Cloudflare 免费档的自托管个人 AI agent。",
+          "url": "https://github.com/rociiu/talorys",
+          "discussion_url": "https://news.ycombinator.com/item?id=50031614",
+          "meta": "234 分 · 118 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "The Lightbulb Computer",
+          "summary": "用投影仪重想空间/环境计算的概念站。",
+          "url": "https://lightbulbcomputer.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50029487",
+          "meta": "191 分 · 39 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Computers Cannot Make Decisions",
+          "summary": "论计算机不能真正「做决定」的短文。",
+          "url": "https://wiki.cateat.fish/art:computers_cannot_make_decisions",
+          "discussion_url": "https://news.ycombinator.com/item?id=50029982",
+          "meta": "193 分 · 177 评论"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lb-1",
+          "title": "oh, apparently it's not possible to portably check for string-to-float conversion errors in standard C",
+          "summary": "标准 C 难以可移植地检测字符串转浮点错误。",
+          "url": "https://sebsite.pw/w/20261009-strtod.html",
+          "discussion_url": "https://lobste.rs/s/rb2ulg/oh_apparently_it_s_not_possible_portably",
+          "meta": "51 分 · 17 评论"
+        },
+        {
+          "id": "lb-2",
+          "title": "No Man Is an Island",
+          "summary": "哲学/vibecoding 随笔，窗内高分。",
+          "url": "https://borretti.me/article/no-man-is-an-island",
+          "discussion_url": "https://lobste.rs/s/nxspz6/no_man_is_island",
+          "meta": "52 分 · 14 评论"
+        },
+        {
+          "id": "lb-3",
+          "title": "There's little that's \"inevitable\" about AI",
+          "summary": "反驳「AI 必然」叙事。",
+          "url": "https://deadsimpletech.com/blog/llms-arent-inevitable",
+          "discussion_url": "https://lobste.rs/s/lgxq91/there_s_little_s_inevitable_about_ai",
+          "meta": "23 分 · 16 评论"
+        },
+        {
+          "id": "lb-4",
+          "title": "The Lightbulb Computer",
+          "summary": "投影仪空间计算概念页。",
+          "url": "https://lightbulbcomputer.com/",
+          "discussion_url": "https://lobste.rs/s/0g9ctg/lightbulb_computer_reimagining_spatial",
+          "meta": "20 分 · 5 评论"
+        },
+        {
+          "id": "lb-5",
+          "title": "Iframes that finally fit their content",
+          "summary": "让 iframe 自适应内容高度的做法。",
+          "url": "https://alfy.blog/2026/10/09/iframe-that-finally-fit-their-content.html",
+          "discussion_url": "https://lobste.rs/s/ka6d0y/iframes_finally_fit_their_content",
+          "meta": "18 分 · 1 评论"
+        },
+        {
+          "id": "lb-6",
+          "title": "Why 'externalized' proofs of cyclic trait impls does not work",
+          "summary": "Niko：循环 trait impl 的 externalized proofs 为何行不通。",
+          "url": "https://smallcultfollowing.com/babysteps/blog/2026/10/10/modular-vs-external-proofs/",
+          "discussion_url": "https://lobste.rs/s/gytcvn/why_externalized_proofs_cyclic_trait",
+          "meta": "8 分"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "超过 500 行的代码改动，codex 根本无法独立完成。astra 也不行",
+          "summary": "讨论大改动时 coding agent 能力边界。",
+          "url": "https://www.v2ex.com/t/1247511",
+          "discussion_url": "https://www.v2ex.com/t/1247511",
+          "meta": "98 回复 · OpenAI"
+        },
+        {
+          "id": "v2-2",
+          "title": "五年后，还有多少程序员能靠写代码活着？",
+          "summary": "程序员节点热帖，讨论职业前景。",
+          "url": "https://www.v2ex.com/t/1247509",
+          "discussion_url": "https://www.v2ex.com/t/1247509",
+          "meta": "90 回复 · 程序员"
+        },
+        {
+          "id": "v2-3",
+          "title": "用 Rust + GPUI 写了个开源 SSH 客户端 ShellRS",
+          "summary": "Xshell 式终端 + WinSCP 式 SFTP 的开源客户端。",
+          "url": "https://www.v2ex.com/t/1247523",
+          "discussion_url": "https://www.v2ex.com/t/1247523",
+          "meta": "57 回复 · 分享创造"
+        },
+        {
+          "id": "v2-4",
+          "title": "发工资了今晚干一票大的，我准备直接用招行卡开 5 倍 max",
+          "summary": "Claude 节点热帖（订阅/额度向），回复最多。",
+          "url": "https://www.v2ex.com/t/1247676",
+          "discussion_url": "https://www.v2ex.com/t/1247676",
+          "meta": "132 回复 · Claude"
+        },
+        {
+          "id": "v2-5",
+          "title": "Apple TV 看样子真要来了",
+          "summary": "Apple 节点讨论 Apple TV 入华传闻。",
+          "url": "https://www.v2ex.com/t/1247540",
+          "discussion_url": "https://www.v2ex.com/t/1247540",
+          "meta": "61 回复 · Apple"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "source": "Web",
+      "items": [
+        {
+          "id": "web-1",
+          "title": "Bitwarden switches store apps to a commercial license",
+          "summary": "第三方整理：商店版改商业许可、OSS 继续、未来功能可能分流。",
+          "url": "https://dev.to/techaiwire/bitwarden-switches-store-apps-to-a-commercial-license-3ake",
+          "discussion_url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+          "meta": "2026-10-10 前后报道"
+        },
+        {
+          "id": "web-2",
+          "title": "Cyware：Telegram Desktop CVE-2026-107181 一点击接管链",
+          "summary": "威胁简报汇总该 Desktop 链路与 7.2.9 修复时间线。",
+          "url": "https://www.cyware.com/resources/threat-briefings/daily-threat-briefing/cyware-daily-threat-intelligence-october-10-2026",
+          "discussion_url": "https://news.ycombinator.com/item?id=50029123",
+          "meta": "2026-10-10 威胁简报"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Reddit（r/programming、r/technology、r/MachineLearning、r/LocalLLaMA）官方 JSON 接口返回 Blocked，本期 reddit 区为空，未编造条目。",
+    "X 账号帖子经 MCP 拉取；elonmusk 有分页、poteto 帖量极大以高互动主帖为主精选，未穷尽全部短回复。",
+    "部分 Lobsters「hottest」含窗前残留热帖，本期 lobsters 区以窗内创建为主并核对讨论链接。",
+    "无 label=rating / label=watch 的开放 Issue；ratings 仍为空、无临时关注。"
+  ]
+}

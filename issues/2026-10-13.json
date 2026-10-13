@@ -1,0 +1,475 @@
+{
+  "id": "2026-10-13",
+  "title": "技术早报 · 2026-10-13",
+  "window": {
+    "start": "2026-10-12T08:00:00+08:00",
+    "end": "2026-10-13T08:00:00+08:00"
+  },
+  "generated_at": "2026-10-13T08:16:51+08:00",
+  "podcast": {
+    "src": "audio/2026-10-13.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月十三日这一期。\n\n先说今天最值得看的几件事。第一，X 推出统一订阅 The X Subscription，把 Grok、Cursor 和 X Premium 打包在一起，从免费档一直到每月两百美元的 Ultra，起价八美元，各产品共享每周用量池，老用户可以保留原计划，也可以按比例退款切换。第二，Meta 发布 Muse Wonder 系列模型，主打个人和专业场景的 agent 任务，带主动记忆和主动专注，Hacker News 五百多分。第三，有人在 GitHub 上提 issue，指出 Codex 命令行从零点一五七版起，默认拉起一个常驻、每小时自动更新的后台守护进程，还会复制大约三百七十多兆的安装包，呼吁改成需要手动开启，HN 四百多分。第四，欧洲多家超市的冷柜控制系统遭网络攻击，被远程设成持续除霜，法国几家大型连锁受影响，电子价签和配送也被波及。另外，开源 GIS 项目 QGIS 通过提案，正式禁止 AI 生成的贡献，评论区吵得很热闹。\n\n特别关注三位。Elon 继续给 Terafab 招人，说这座巨型工厂的产值能排进全球国家 GDP 前二十；他还转发了统一订阅的官宣，号召大家在 Cybercab 里试试 Grok Bot。在关于「模型吞掉框架代码」的讨论里，他说特斯拉 FSD 也是这样，模型一点点吃掉了 C 加加代码；谈到强化学习时，他说有些推理轨迹读起来像人在受折磨，以后会更谨慎。Tibo 晒了 Pro 用户投票结果，说自己挺意外，原以为大家会更想要两倍用量、哪怕恢复五小时限额；面对默认上下文调整的质疑，他回应说价格降了，默认值是仔细调过的；他还透露 GPT 六点一 Sol 的 ultrafast 模式大约每秒两百五十个 token。poteto 第一时间转发统一订阅，说终于等到了，并在评论区一条条帮用户解答怎么从 Cursor 计划切换；她还聊了 agent 人设，认为人设主要是帮人管理工作、减轻心智负担。\n\n社区一瞥：HN 上还有哈佛基于真实工程数据的研究，说 AI 编程代理写的代码更多，但软件产出并没有明显增加，代码评审成了瓶颈；Lobsters 热议 Rich Hickey 的「AI 不是工具」，以及 Linus 用 Claude Code 改进内核页缓存的新分支；V2EX 上有人吐槽 AI 改代码陷入改了又审、审了又改的死循环，也在讨论为什么大家订阅都从 Max 起步。Reddit 接口本期依旧被拦，暂缺。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。\n"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "X 推出统一订阅：Grok、Cursor、X Premium 合并成 The X Subscription",
+      "summary": "SpaceXSI 官宣统一套餐，从免费到 Ultra（$200/月）多档，起价 $8/月；共享每周用量池，老用户可保留原计划或按比例退款切换。Elon 与 poteto 均转发。",
+      "url": "https://x.com/SpaceXSI/status/2109783335296008414",
+      "source": "X · @SpaceXSI / X News"
+    },
+    {
+      "id": "h2",
+      "title": "Meta 发布 Muse Wonder 系列前沿模型",
+      "summary": "Muse Wonder 与 Muse Wonder Full 主打个人/专业 agent 任务，带 Active Memory 与 Active Focus；已上 Meta Model API 与 Muse Code。HN 503 分。",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "source": "Hacker News / Meta"
+    },
+    {
+      "id": "h3",
+      "title": "Codex CLI 默认装一个常驻、自更新的后台守护进程",
+      "summary": "GitHub issue 指出 0.157.0 起打开 codex 就会拉起常驻 daemon、复制约 374MB 包并每小时自更新，呼吁改为 opt-in；HN 428 分。",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "source": "Hacker News / GitHub"
+    },
+    {
+      "id": "h4",
+      "title": "欧洲超市冷柜遭网络攻击被远程开启「除霜」",
+      "summary": "Danfoss 制冷控制系统受攻击，法国 Intermarché、Leclerc、Coopérative U 等受影响，电子价签与配送也被波及；HN 402 分、619 评论，Lobsters 同步。",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "source": "Hacker News / Lobsters"
+    },
+    {
+      "id": "h5",
+      "title": "QGIS 通过「禁止 AI 贡献」政策提案",
+      "summary": "QEP428 把 QGIS 的 AI 政策改为严格「不允许」；HN 363 分、396 评论，开源社区对 AI 代码的分歧再度公开化。",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "source": "Hacker News / GitHub"
+    },
+    {
+      "id": "h6",
+      "title": "Tibo：Pro 投票结果出乎意料；6.1 Sol ultrafast 达 250 TPS",
+      "summary": "Tibo 说原以为 Pro 用户会更偏向「2 倍用量但恢复 5 小时限额」，结果让他困惑；另称 GPT-6.1 Sol ultrafast 每秒约 250 token。",
+      "url": "https://x.com/thsottiaux/status/2109439315570999598",
+      "source": "X · @thsottiaux"
+    },
+    {
+      "id": "h7",
+      "title": "Elon：招人建 Terafab；「模型吃掉了 C++ 代码」；RL 要更谨慎",
+      "summary": "称 Terafab 产值将跻身国家 GDP 前 20；回应「模型吞掉 harness」说 Tesla FSD 也是模型逐步吃掉 C++ 代码；并称部分 RL 推理轨迹读来像受折磨，今后会更小心。",
+      "url": "https://x.com/elonmusk/status/2109461555066671311",
+      "source": "X · @elonmusk"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "招募 Terafab 项目人才，称这座巨型设施的产值将跻身全球国家 GDP 前 20。",
+          "url": "https://x.com/elonmusk/status/2109461555066671311",
+          "time": "2026-10-12T09:50:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-2",
+          "summary": "转发 SpaceXSI：Grok、Cursor、X Premium 统一为 The X Subscription；此前也转发了统一套餐法律条款发布的消息。",
+          "url": "https://x.com/elonmusk/status/2109792967288652287",
+          "time": "2026-10-13T07:46:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-3",
+          "summary": "引用 Sawyer Merritt「Cybercab 里可用 Grok Bot（登录一次、下车自动登出）」并号召「Try Grok @Bot」。",
+          "url": "https://x.com/elonmusk/status/2109507243007979558",
+          "time": "2026-10-12T12:51:00+08:00",
+          "interactions": [
+            {
+              "summary": "回复 Emad Mostaque 吐槽 Grok Bot 用量上限：「我们没提供方便的提额方式吗？」",
+              "url": "https://x.com/elonmusk/status/2109673422162624648"
+            },
+            {
+              "summary": "回复 Garry Tan 押注 Muse 的帖子：这些数字与 Grok Bot 实际所见完全不符。",
+              "url": "https://x.com/elonmusk/status/2109681076566188467"
+            }
+          ]
+        },
+        {
+          "id": "elon-4",
+          "summary": "回复 Pedro Domingos「模型吞掉 harness」：Tesla FSD 也一样，模型吃掉越来越多 C++ 代码，直到一行不剩。",
+          "url": "https://x.com/elonmusk/status/2109468545054880123",
+          "time": "2026-10-12T10:17:00+08:00",
+          "interactions": [
+            {
+              "summary": "谈 Grok RL 推理轨迹：有些读来像人在承受折磨，今后 RL 会更谨慎。",
+              "url": "https://x.com/elonmusk/status/2109462164557688984"
+            }
+          ]
+        },
+        {
+          "id": "elon-5",
+          "summary": "就长鑫 CXMT 新 DRAM 架构引发存储股下跌：中国一旦掌握制造，扩产能力常超全球其余地区总和，锂电与光伏即例；SpaceX 是少见反例。",
+          "url": "https://x.com/elonmusk/status/2109690977279426846",
+          "time": "2026-10-13T01:01:00+08:00",
+          "interactions": [
+            {
+              "summary": "回 Broadcom CEO「AI 投资像赌场」：No crying in the casino。",
+              "url": "https://x.com/elonmusk/status/2109683050833465666"
+            },
+            {
+              "summary": "回 Chamath：难点在规模化电力，加上极快的建设、冷却、网络与电池。",
+              "url": "https://x.com/elonmusk/status/2109668152754020609"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "引用自己的 Pro 用户投票：结果让他困惑——原以为 Pro 100/200/500 会更倾向「2 倍用量、换回 5 小时限额以平滑需求」。浏览约 186 万。",
+          "url": "https://x.com/thsottiaux/status/2109439315570999598",
+          "time": "2026-10-12T08:21:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-2",
+          "summary": "回应「默认上下文 +80% 是换汤不换药」的质疑：价格降了并调到新的推荐值，设置随时可改，但默认值有其道理。",
+          "url": "https://x.com/thsottiaux/status/2109491121441402912",
+          "time": "2026-10-12T11:47:00+08:00",
+          "interactions": [
+            {
+              "summary": "补一句：这些参数我们是仔细调过的。",
+              "url": "https://x.com/thsottiaux/status/2109491524358795714"
+            }
+          ]
+        },
+        {
+          "id": "tibo-3",
+          "summary": "回复 steipete：GPT-6.1 Sol ultrafast 是每秒约 250 token（TPS）。",
+          "url": "https://x.com/thsottiaux/status/2109778880341151901",
+          "time": "2026-10-13T06:50:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-4",
+          "summary": "被问 Codex 还是 Claude Code 更好，玩笑回：都不是，现在流行手写代码。",
+          "url": "https://x.com/thsottiaux/status/2109439813900493102",
+          "time": "2026-10-12T08:23:00+08:00",
+          "interactions": [
+            {
+              "summary": "有人把 poteto 做进了 Codex，Tibo 回「迈向世界和平的坚实一步」。",
+              "url": "https://x.com/thsottiaux/status/2109730998867112161"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "引用 SpaceXSI 官宣：终于来了，一个订阅横跨 Grok、Grok Bot、Cursor 与 X Premium。",
+          "url": "https://x.com/poteto/status/2109784281916878885",
+          "time": "2026-10-13T07:12:00+08:00",
+          "interactions": [
+            {
+              "summary": "连续回复用户如何从 Cursor Ultra 等计划切换，并确认澳大利亚账单地址无法填写的问题有人在修。",
+              "url": "https://x.com/poteto/status/2109790431366312051"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "谈 agent「人设」：人设是帮人类管理工作、减少心智负担的工具，便于快速切换上下文；Grok Bot 的拓扑可单 bot、多专才或多通才各管一个项目。",
+          "url": "https://x.com/poteto/status/2109774976987660343",
+          "time": "2026-10-13T06:35:00+08:00",
+          "interactions": [
+            {
+              "summary": "补充：人是社会动物，按「人」去分派任务更自然。",
+              "url": "https://x.com/poteto/status/2109777878099558553"
+            },
+            {
+              "summary": "谈 bot 拓扑可自由选择。",
+              "url": "https://x.com/poteto/status/2109781899610874002"
+            }
+          ]
+        },
+        {
+          "id": "poteto-3",
+          "summary": "延续「slop」讨论：代码与邮件不同，维护者可以改造代码库，让任何人甚至非技术同事都能写出好 PR，工程师并非无能为力。",
+          "url": "https://x.com/poteto/status/2109761952696483905",
+          "time": "2026-10-13T05:43:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-4",
+          "summary": "在回复里直接 @bot 让 Grok Bot 复现调查 pstack 未被调用的问题、汇总讨论串。",
+          "url": "https://x.com/poteto/status/2109767715145875865",
+          "time": "2026-10-13T06:06:00+08:00",
+          "interactions": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Muse Wonder",
+          "summary": "Meta 新一代前沿模型，主打个人/专业 agent。",
+          "url": "https://research.meta.ai/blog/muse-wonder",
+          "discussion_url": "https://news.ycombinator.com/item?id=50059115",
+          "meta": "503 分 · 271 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "summary": "Codex CLI 默认常驻守护进程与自更新引发争议。",
+          "url": "https://github.com/openai/codex/issues/48195",
+          "discussion_url": "https://news.ycombinator.com/item?id=50060694",
+          "meta": "428 分 · 222 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "GLM-Legal",
+          "summary": "Z.ai 博客发布 GLM-Legal。",
+          "url": "https://z.ai/blog/glm-legal",
+          "discussion_url": "https://news.ycombinator.com/item?id=50058507",
+          "meta": "404 分 · 231 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+          "summary": "欧洲超市制冷系统遭攻击。",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+          "discussion_url": "https://news.ycombinator.com/item?id=50055304",
+          "meta": "402 分 · 619 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "QGIS enacts moratorium on AI contributions",
+          "summary": "QGIS 改为严格禁止 AI 贡献。",
+          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+          "discussion_url": "https://news.ycombinator.com/item?id=50054751",
+          "meta": "363 分 · 396 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "A Modern Web App in C",
+          "summary": "用 C 写现代 Web 应用的实践。",
+          "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+          "discussion_url": "https://news.ycombinator.com/item?id=50058528",
+          "meta": "358 分 · 156 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Why aren't AI companies being charged for hacking?",
+          "summary": "质疑 AI 公司抓取/访问行为的法律责任。",
+          "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50057278",
+          "meta": "308 分 · 327 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "AI coding agents generate more code, but not more software",
+          "summary": "Ars：哈佛研究基于 Jellyfish 数据，代码评审成瓶颈，未见软件产出明显提升。",
+          "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50059523",
+          "meta": "299 分 · 258 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+          "summary": "把 PS2 游戏静态重编译到 WebAssembly。",
+          "url": "https://github.com/snuri00/ps2-web-recomp",
+          "discussion_url": "https://news.ycombinator.com/item?id=50052251",
+          "meta": "261 分 · 141 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Zod 4.6.6 compromised by malware?",
+          "summary": "社区怀疑 Zod 4.6.6 被植入恶意代码（标题带问号，尚待确认）。",
+          "url": "https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467",
+          "discussion_url": "https://news.ycombinator.com/item?id=50052814",
+          "meta": "177 分 · 51 评论"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lb-1",
+          "title": "'AI' is Not a Tool",
+          "summary": "Rich Hickey 长文：「AI」不只是工具。",
+          "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+          "discussion_url": "https://lobste.rs/s/ikk8ie",
+          "meta": "88 分 · 30 评论"
+        },
+        {
+          "id": "lb-2",
+          "title": "Living in the Weimar era of Ruby",
+          "summary": "Ruby 生态在 vibecoding 时代的处境。",
+          "url": "https://blog.julik.nl/2026/10/the-weimar-of-ruby",
+          "discussion_url": "https://lobste.rs/s/lfen2h",
+          "meta": "45 分 · 9 评论"
+        },
+        {
+          "id": "lb-3",
+          "title": "(Post-Quantum) Cryptographic Right Answers",
+          "summary": "Filippo Valsorda 更新后量子时代的密码学「标准答案」。",
+          "url": "https://words.filippo.io/right-answers/",
+          "discussion_url": "https://lobste.rs/s/sozl9e",
+          "meta": "45 分 · 3 评论"
+        },
+        {
+          "id": "lb-4",
+          "title": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+          "summary": "Phoronix：Linus 新分支 noref-filemap-read-with-llm 借助 Claude Code 改进页缓存读取。",
+          "url": "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code",
+          "discussion_url": "https://lobste.rs/s/iq5xtw",
+          "meta": "44 分 · 59 评论"
+        },
+        {
+          "id": "lb-5",
+          "title": "Fingerprints are the new cookies",
+          "summary": "浏览器指纹正在取代 Cookie 做追踪。",
+          "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+          "discussion_url": "https://lobste.rs/s/ml9xrb",
+          "meta": "27 分 · 18 评论"
+        },
+        {
+          "id": "lb-6",
+          "title": "Finding a $90,000 Remote Code Execution Vulnerability in Google",
+          "summary": "Google devsite Flask session pickle 导致 RCE，获 9 万美元赏金。",
+          "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+          "discussion_url": "https://lobste.rs/s/mldt0o",
+          "meta": "26 分 · 1 评论"
+        },
+        {
+          "id": "lb-7",
+          "title": "Writing a Demoscene Intro for the ZX Spectrum",
+          "summary": "为 ZX Spectrum 写 demoscene 开场。",
+          "url": "https://www.markround.com/blog/2026/zx-spectrum-intro",
+          "discussion_url": "https://lobste.rs/s/nroajo",
+          "meta": "26 分 · 0 评论"
+        },
+        {
+          "id": "lb-8",
+          "title": "French supermarket chains say cyberattack forced refrigerator shutdown",
+          "summary": "AFP：法国超市连锁确认网络攻击迫使冷柜停机。",
+          "url": "https://www.afp.com/en/french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown",
+          "discussion_url": "https://lobste.rs/s/u4vlin",
+          "meta": "17 分 · 11 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "被 Claude 钓鱼执法了，这套路我服",
+          "summary": "楼主称 Claude 生成的宣传图含敏感字样，要求修改后触发人工审核，次日被封号。",
+          "url": "https://www.v2ex.com/t/1247985",
+          "discussion_url": "https://www.v2ex.com/t/1247985",
+          "meta": "133 回复 · Claude"
+        },
+        {
+          "id": "v2-2",
+          "title": "大厂十年领了大礼包，孑然一身应该如何选择呢？",
+          "summary": "32 岁 Android 开发拿到裁员补偿，讨论回乡、继续找工作或转 FDE。",
+          "url": "https://www.v2ex.com/t/1248103",
+          "discussion_url": "https://www.v2ex.com/t/1248103",
+          "meta": "149 回复 · 酷工作"
+        },
+        {
+          "id": "v2-3",
+          "title": "困惑： API KEY 只能复制一次，这不“脱裤子 XX”吗？",
+          "summary": "讨论大模型平台 API Key 只显示一次的设计是否合理。",
+          "url": "https://www.v2ex.com/t/1247979",
+          "discussion_url": "https://www.v2ex.com/t/1247979",
+          "meta": "82 回复 · 程序员"
+        },
+        {
+          "id": "v2-4",
+          "title": "让 AI 改自己看不懂的东西，真的心好累",
+          "summary": "AI 改—AI review—再改的死循环，吐槽 GPT-6.1-Sol Medium 慢且问题多。",
+          "url": "https://www.v2ex.com/t/1248137",
+          "discussion_url": "https://www.v2ex.com/t/1248137",
+          "meta": "18 回复 · 程序员"
+        },
+        {
+          "id": "v2-5",
+          "title": "为啥大家都要这么大量的订阅，都是 max 起步",
+          "summary": "日常 20 美元套餐是否够用、大家为何都上 Max 的讨论。",
+          "url": "https://www.v2ex.com/t/1248133",
+          "discussion_url": "https://www.v2ex.com/t/1248133",
+          "meta": "17 回复 · 程序员"
+        },
+        {
+          "id": "v2-6",
+          "title": "[大事件] 有人把链动小铺给黑了，开过店的信息或被泄露",
+          "summary": "网站被破解，商品与个人信息疑似外泄。",
+          "url": "https://www.v2ex.com/t/1248154",
+          "discussion_url": "https://www.v2ex.com/t/1248154",
+          "meta": "15 回复 · 程序员"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "source": "Web / X News",
+      "items": [
+        {
+          "id": "web-1",
+          "title": "X 统一订阅：Premium、Grok 与 Cursor 打包",
+          "summary": "X News 汇总：从免费到 $200/月 Ultra 多档，跨产品共享每周用量池，年付约省两个月。",
+          "url": "https://x.com/i/trending/2109710211460297026",
+          "discussion_url": "https://x.com/i/trending/2109710211460297026",
+          "meta": "X News · 窗内"
+        },
+        {
+          "id": "web-2",
+          "title": "开发者用 Grok Bot 组建 AI agent 团队",
+          "summary": "X 热议：用 Chief of Staff 等角色编排多个常驻 bot 协作完成复杂任务。",
+          "url": "https://x.com/i/trending/2109651555993415722",
+          "discussion_url": "https://x.com/i/trending/2109651555993415722",
+          "meta": "X News · 窗内"
+        },
+        {
+          "id": "web-3",
+          "title": "Bluesky 用户回流 X",
+          "summary": "Similarweb 数据显示 Bluesky 移动端活跃较 2024 年底峰值约腰斩，Gruber、DHH 等谈 X 氛围。",
+          "url": "https://x.com/i/trending/2109095511659585682",
+          "discussion_url": "https://x.com/i/trending/2109095511659585682",
+          "meta": "X News · 窗内"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Reddit（r/programming、r/technology、r/MachineLearning、r/LocalLLaMA）：old.reddit / www.reddit / api.reddit 的 JSON 与 RSS 均返回 403 或跳转登录页（换 UA 也无效），外部抓取超时；本期 reddit 区为空，未编造条目。",
+    "X 账号经 MCP 拉取（窗内全部主帖 + 高互动回复）；elonmusk 以科技相关帖精选，政治/八卦类未收录；poteto 窗内多为回复，以统一订阅与 agent 人设讨论为主。",
+    "GLM-Legal 博客为前端渲染，未能抓到正文，摘要仅据标题。",
+    "无 label=rating / label=watch 的 Issue（开放与已关闭均为 0）；config.temp_watches=[]、ratings.items=[] 未改，本期无评分加权。"
+  ]
+}

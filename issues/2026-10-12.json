@@ -1,0 +1,421 @@
+{
+  "id": "2026-10-12",
+  "title": "技术早报 · 2026-10-12",
+  "window": {
+    "start": "2026-10-11T08:00:00+08:00",
+    "end": "2026-10-12T08:00:00+08:00"
+  },
+  "generated_at": "2026-10-12T08:04:42+08:00",
+  "podcast": {
+    "src": "audio/2026-10-12.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月十二日这一期。\n\n先说今天三件值得先看的事。第一，LineageOS 二十四正式发布，Hacker News 四百余分，Lobsters 也在热议——安卓自定义系统又迈了一大步。第二，Tibo 的 Day 七：Codex 与 Work 里 GPT 六点一 Sol 默认上下文提到五十万，大约涨八成，最高仍可到一百万；订阅额度内还不另收长上下文费。第三，Cloudflare Radar 显示来自 Yandex 的机器人流量异常抢眼，HN 近六百分；另有 Yandex Cloud 第三个数据中心故障的讨论，评论六百多条。\n\n特别关注三位。Elon 继续推 Grok Bot，说把它当成全天候超级聪明的员工，手机几分钟就能上手；同时招募世界级芯片设计与产线工程师加入 SpaceX 或特斯拉，并称 Cybercab 正在扩产，瓶颈之一是内存供应。Tibo 除了 Day 七扩上下文，还确认昨日 Reset 已全球生效，并提到大约一百万个 Dot 在替用户跑事。poteto 发长帖重谈「好代码」：正确、无 bug、跑得快且省——并主张在 agent 已写绝大多数代码的今天，以人为中心的 Clean Code 先验该更新，转向对 agent 友好的架构。\n\n社区一瞥：HN 还在聊「你仍然得自己思考」、IRCv3，以及 Terence Tao 的 Math 二点零幻灯；Lobsters 热议「GitHub 哪里不对」和 Rachel 的近况帖；V2EX 有人晒三个月烧掉二百八十七亿 token，也在聊内存涨价会不会推高 Linux 装机率。Reddit 官方接口仍被拦，本期暂缺。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。\n"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "LineageOS 24 发布",
+      "summary": "基于新版 Android 的自定义 ROM 大版本上线；HN 约 406 分，Lobsters 亦有讨论。",
+      "url": "https://lineageos.org/Changelog-32/",
+      "source": "Hacker News / Lobsters"
+    },
+    {
+      "id": "h2",
+      "title": "Tibo Day 7：GPT-6.1 Sol 默认上下文升至 50 万",
+      "summary": "Codex 与 Work 默认从 27.2 万提到 50 万（约 +80%），上限仍 100 万；订阅额度内不另收长上下文费。",
+      "url": "https://x.com/thsottiaux/status/2109430343346581527",
+      "source": "X · @thsottiaux"
+    },
+    {
+      "id": "h3",
+      "title": "Cloudflare：Yandex 机器人流量异常抢眼",
+      "summary": "Radar 展示 AS13238（Yandex）机器人流量；HN 近 583 分、约 233 评论。",
+      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d",
+      "source": "Hacker News / Cloudflare Radar"
+    },
+    {
+      "id": "h4",
+      "title": "Yandex Cloud 第三个数据中心受影响",
+      "summary": "官方事故页更新；HN 约 542 分、评论逾 600，与机器人流量话题同日发酵。",
+      "url": "https://status.yandex.cloud/en/incidents/2136",
+      "source": "Hacker News / Yandex Cloud"
+    },
+    {
+      "id": "h5",
+      "title": "poteto：重定义 2026 的「好代码」",
+      "summary": "长帖主张 Good Code=正确、无 bug、跑得快且省；并称 agent 写代码时代应更新 Clean Code 先验、发展对 agent 友好的架构。",
+      "url": "https://x.com/poteto/status/2109110547824378140",
+      "source": "X · @poteto"
+    },
+    {
+      "id": "h6",
+      "title": "Elon：招芯片工程师；Grok Bot 当全职员工；Cybercab 扩产",
+      "summary": "招募世界级芯片设计/产线工程师加入 SpaceX 或 Tesla；称 Grok Bot 像 24/7 超级聪明员工；另称 Cybercab 正在扩产，瓶颈含内存供应。",
+      "url": "https://x.com/elonmusk/status/2109271552378220789",
+      "source": "X · @elonmusk"
+    },
+    {
+      "id": "h7",
+      "title": "「对不起，你仍然得自己思考」",
+      "summary": "论 agent/工具时代仍需人类判断；HN 约 311 分，Lobsters 同步讨论。",
+      "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+      "source": "Hacker News / Lobsters"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "强调 Grok Bot「真的能干活」：把它当成全天候、极会找资源的超级聪明员工；手机几分钟即可上手，并附 App Store 链接。",
+          "url": "https://x.com/elonmusk/status/2109387553010851887",
+          "time": "2026-10-12T04:55:57+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-2",
+          "summary": "招募：世界级芯片设计或产线工程师可考虑加入 SpaceX 或 Tesla，强调高速迭代设计与定制生产设备。",
+          "url": "https://x.com/elonmusk/status/2109271552378220789",
+          "time": "2026-10-11T21:15:01+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-3",
+          "summary": "转发称 Cybercab 正在扩产（scaling）。",
+          "url": "https://x.com/elonmusk/status/2109262612303314986",
+          "time": "2026-10-11T20:39:29+08:00",
+          "interactions": [
+            {
+              "summary": "回复讨论产线机器：会改现有设备也会自研，取决于产量瓶颈；另明确「问题在内存供应」。",
+              "url": "https://x.com/elonmusk/status/2109260288314806434"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "Day 7：Codex 与 Work 中 GPT-6.1 Sol 默认上下文提到 50 万（原约 27.2 万，约 +80%），经测试为多数用户新甜点；仍可覆盖写，上限 100 万。",
+          "url": "https://x.com/thsottiaux/status/2109430343346581527",
+          "time": "2026-10-12T07:45:59+08:00",
+          "interactions": [
+            {
+              "summary": "补充：从订阅额度扣用量时，GPT-6.1 Sol 不另收长上下文费。",
+              "url": "https://x.com/thsottiaux/status/2109430894604026039"
+            }
+          ]
+        },
+        {
+          "id": "tibo-2",
+          "summary": "宣布昨日 Reset 已全部生效（Put the reset in the bag）。",
+          "url": "https://x.com/thsottiaux/status/2109132167112782291",
+          "time": "2026-10-11T12:01:09+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-3",
+          "summary": "Pro 用户投票征询偏好（「would you rather have」），互动极高。",
+          "url": "https://x.com/thsottiaux/status/2109152716954222849",
+          "time": "2026-10-11T13:22:48+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-4",
+          "summary": "回复称大约有 100 万个 Dot 在为用户运行并做事。",
+          "url": "https://x.com/thsottiaux/status/2109091159784198475",
+          "time": "2026-10-11T09:18:12+08:00",
+          "interactions": []
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "长帖：代码库历来都有 slop；提出 Good Code=正确、无 bug、跑得快且省；多数软件不必完美才有价值，agent 可加速并在平均水平上写出更好代码——新手艺是学会与 agent 协作。",
+          "url": "https://x.com/poteto/status/2109110547824378140",
+          "time": "2026-10-11T10:35:14+08:00",
+          "interactions": [
+            {
+              "summary": "自回 TL;DR：all code is slop。",
+              "url": "https://x.com/poteto/status/2109123442712994148"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "续论：以人为中心的 Clean Code/可维护性先验该更新；agent 已在写代码，应探索对 agent 友好的架构原则。",
+          "url": "https://x.com/poteto/status/2109356992032817621",
+          "time": "2026-10-12T02:54:31+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-3",
+          "summary": "宣布 pstack 体积再小约 10% 且行为不变；Grok Bot 与 Cursor 自动更新。",
+          "url": "https://x.com/poteto/status/2109116030761230571",
+          "time": "2026-10-11T10:57:01+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-4",
+          "summary": "教用法：把「本周用 Grok Bot 做了啥」长帖丢给 Bot，或让它读完整串并建议工作/生活可帮事项。",
+          "url": "https://x.com/poteto/status/2109326308950032501",
+          "time": "2026-10-12T00:52:36+08:00",
+          "interactions": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Bot traffic from Yandex",
+          "summary": "Cloudflare Radar 上 Yandex（AS13238）机器人流量图。",
+          "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d",
+          "discussion_url": "https://news.ycombinator.com/item?id=50041619",
+          "meta": "583 分 · 233 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "3rd Yandex Cloud Data Center Was Hit",
+          "summary": "Yandex Cloud 事故页：第三个数据中心受影响。",
+          "url": "https://status.yandex.cloud/en/incidents/2136",
+          "discussion_url": "https://news.ycombinator.com/item?id=50040547",
+          "meta": "542 分 · 664 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Nitter: Update Oct 10th seeking funding and legal help",
+          "summary": "Nitter 寻求资金与法律帮助的更新。",
+          "url": "https://nitter.net",
+          "discussion_url": "https://news.ycombinator.com/item?id=50041682",
+          "meta": "413 分 · 218 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "LineageOS 24",
+          "summary": "LineageOS 24 变更日志发布。",
+          "url": "https://lineageos.org/Changelog-32/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50040276",
+          "meta": "406 分 · 164 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "I paid people to try and follow my README",
+          "summary": "付费请人按 README 操作，检验文档可执行性。",
+          "url": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50042219",
+          "meta": "361 分 · 186 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "IRCv3",
+          "summary": "IRCv3 协议站点再度引发讨论。",
+          "url": "https://ircv3.net/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50041540",
+          "meta": "337 分 · 288 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "I'm sorry, but you still have to think",
+          "summary": "工具/agent 再强，判断仍在人。",
+          "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50043689",
+          "meta": "311 分 · 139 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Terence Tao: Math 2.0 [pdf]",
+          "summary": "陶哲轩 Caltech 演讲幻灯：Math 2.0。",
+          "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
+          "discussion_url": "https://news.ycombinator.com/item?id=50043026",
+          "meta": "297 分 · 355 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "The gap in shared understanding of LLM capability is widening",
+          "summary": "Karpathy 相关讨论：对 LLM 能力共识鸿沟在扩大。",
+          "url": "https://twitter.com/karpathy/status/2109361546505966046",
+          "discussion_url": "https://news.ycombinator.com/item?id=50047422",
+          "meta": "185 分 · 279 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Passkeys are a trap. Do not use them",
+          "summary": "批评 Passkey 风险的争议文。",
+          "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+          "discussion_url": "https://news.ycombinator.com/item?id=50048312",
+          "meta": "154 分 · 74 评论"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lb-1",
+          "title": "I'm still around.. I'm just not writing here",
+          "summary": "rachelbythebay 近况：还在，只是不常写博客。",
+          "url": "https://rachelbythebay.com/w/2026/10/08/idle/",
+          "discussion_url": "https://lobste.rs/s/4ehrkn",
+          "meta": "82 分 · 26 评论"
+        },
+        {
+          "id": "lb-2",
+          "title": "What's Wrong with GitHub",
+          "summary": "GNU 哲学文：GitHub 有何问题。",
+          "url": "https://www.gnu.org/philosophy/whats-wrong-with-github.html",
+          "discussion_url": "https://lobste.rs/s/u9ue6c",
+          "meta": "47 分 · 30 评论"
+        },
+        {
+          "id": "lb-3",
+          "title": "LineageOS 24.0 released",
+          "summary": "LineageOS 24.0 发布日志。",
+          "url": "https://lineageos.org/Changelog-32/",
+          "discussion_url": "https://lobste.rs/s/ecxril",
+          "meta": "35 分 · 12 评论"
+        },
+        {
+          "id": "lb-4",
+          "title": "How big is a Git commit?",
+          "summary": "拆解一次 Git commit 体积构成。",
+          "url": "https://ratfactor.com/cards/git-commit-size",
+          "discussion_url": "https://lobste.rs/s/9wcfld",
+          "meta": "26 分 · 2 评论"
+        },
+        {
+          "id": "lb-5",
+          "title": "I'm sorry, but you still have to think",
+          "summary": "与 HN 同文：你仍然得思考。",
+          "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+          "discussion_url": "https://lobste.rs/s/k2natg",
+          "meta": "23 分 · 2 评论"
+        },
+        {
+          "id": "lb-6",
+          "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
+          "summary": "一种新的借用检查/内存安全思路。",
+          "url": "https://verdagon.dev/blog/valen-group-borrowing",
+          "discussion_url": "https://lobste.rs/s/gmnqhj",
+          "meta": "23 分 · 5 评论"
+        },
+        {
+          "id": "lb-7",
+          "title": "D-Bus Hell",
+          "summary": "D-Bus 踩坑实录。",
+          "url": "https://dbushell.com/2026/10/11/d-bus-hell/",
+          "discussion_url": "https://lobste.rs/s/qgybwb",
+          "meta": "20 分 · 3 评论"
+        },
+        {
+          "id": "lb-8",
+          "title": "How shredding JSON is giving Logfire 1000x query speedups",
+          "summary": "Pydantic Logfire：拆解 JSON 换来查询加速。",
+          "url": "https://pydantic.dev/articles/dynamic-shredding-2026-01-26",
+          "discussion_url": "https://lobste.rs/s/6vjx1k",
+          "meta": "20 分 · 3 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "3 个月用了 287 亿的 token。。。",
+          "summary": "晒 token 用量热帖，讨论 AI 消耗与成本。",
+          "url": "https://www.v2ex.com/t/1247820",
+          "discussion_url": "https://www.v2ex.com/t/1247820",
+          "meta": "56 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "内存越来越贵会不会拉高 Linux 的装机率？",
+          "summary": "内存涨价与桌面/装机选择讨论。",
+          "url": "https://www.v2ex.com/t/1247772",
+          "discussion_url": "https://www.v2ex.com/t/1247772",
+          "meta": "69 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "Google Play 开通 Claude Pro，搭配大陆护照 KYC，安全上车中...",
+          "summary": "订阅 Claude Pro 的支付/KYC 经验贴。",
+          "url": "https://www.v2ex.com/t/1247761",
+          "discussion_url": "https://www.v2ex.com/t/1247761",
+          "meta": "33 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "llm 时代，架构师和普通大头兵的在专业上的区别在哪",
+          "summary": "程序员节点：LLM 时代角色分工讨论。",
+          "url": "https://www.v2ex.com/t/1247878",
+          "discussion_url": "https://www.v2ex.com/t/1247878",
+          "meta": "15 回复 · 程序员"
+        },
+        {
+          "id": "v2-5",
+          "title": "gpt 相比其他模型废话多好多，你们是怎么优化的",
+          "summary": "提示/工作流层面减少 GPT 啰嗦的经验。",
+          "url": "https://www.v2ex.com/t/1247908",
+          "discussion_url": "https://www.v2ex.com/t/1247908",
+          "meta": "13 回复 · 程序员"
+        },
+        {
+          "id": "v2-6",
+          "title": "[开源] 好看，更好用的音乐播放器 NonsPlayer",
+          "summary": "开源音乐播放器自荐。",
+          "url": "https://www.v2ex.com/t/1247825",
+          "discussion_url": "https://www.v2ex.com/t/1247825",
+          "meta": "32 回复"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "source": "Web / X News",
+      "items": [
+        {
+          "id": "web-1",
+          "title": "Pieter Levels 等讨论用 AI 自建工具替代 SaaS",
+          "summary": "X 热议：取消大量订阅、用 AI「vibecode」自建替代品，开支转向推理与基础设施工具。",
+          "url": "https://x.com/i/trending/2109391619300704316",
+          "discussion_url": "https://x.com/i/trending/2109391619300704316",
+          "meta": "X News · 窗内"
+        },
+        {
+          "id": "web-2",
+          "title": "AI agent 计算环境：VM vs 短寿命沙箱",
+          "summary": "X 讨论 agent 该用持久 VM 还是 ephemeral sandbox/workspace。",
+          "url": "https://x.com/i/trending/2109357775344017749",
+          "discussion_url": "https://x.com/i/trending/2109357775344017749",
+          "meta": "X News · 窗内"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Reddit（r/programming、r/technology、r/MachineLearning、r/LocalLLaMA）官方 JSON 返回 403/Blocked HTML，本期 reddit 区为空，未编造条目。",
+    "X 账号经 MCP 拉取；elonmusk 以科技相关主帖精选（芯片/Grok Bot/Cybercab），政治/八卦短评未收录；poteto 短回复极多，以长帖与高互动根帖为主。",
+    "Lobsters hottest 含窗内创建帖；讨论链接用 short_id_url。",
+    "无 label=rating / label=watch 的开放 Issue；config.temp_watches=[]、ratings.items=[] 未改。"
+  ]
+}
