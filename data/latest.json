@@ -1,71 +1,71 @@
 {
-  "id": "2026-10-14",
-  "title": "技术早报 · 2026-10-14",
+  "id": "2026-10-15",
+  "title": "技术早报 · 2026-10-15",
   "window": {
-    "start": "2026-10-13T08:00:00+08:00",
-    "end": "2026-10-14T08:00:00+08:00"
+    "start": "2026-10-14T08:00:00+08:00",
+    "end": "2026-10-15T08:00:00+08:00"
   },
-  "generated_at": "2026-10-14T08:08:55+08:00",
+  "generated_at": "2026-10-15T08:07:04+08:00",
   "podcast": {
-    "src": "audio/2026-10-14.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月十四日这一期。\n\n先说今天最值得看的几件事。第一，谷歌发布 Gemini 四点零 Argon，面向开发者和企业，以及 Gemini 应用与搜索里的 Pro、Ultra 用户，主打复杂编码、安全与知识工作，输出上限约一百万 token；DeepMind 页面和 Hacker News 都炸了，九百多分。第二，Anthropic 工程博客讲他们怎么在五个月内自研源码控制系统——每天合并从两千五百次涨到三万多次，瓶颈从写代码变成了版本控制、构建和 CI。第三，有人挖出 Rust 借用检查器里存在大约十一年的 unsoundness 缺陷，GitHub issue 六百多分。第四，苹果推出 HomeView，火狐推出企业版，两边都在抢企业与家用入口。另外，Character.ai 宣布自愿进入第十一章破产重整以便出售；旧金山媒体还报道，一名 OpenAI 工程师因在高管会议室埋放录音设备被捕。\n\n特别关注三位。Elon 今天几乎全程在推 Grok Bot：乐高套装配齐、帮他查物流后自动停掉轮询；Bot 可以认领邮箱、搜 X、联动 Figma Notion；还能绑到手机快捷键，以及接到 X 账号用私信聊天。他还转发了 Starship 四十号返回基地的画面，并引用摩根士丹利研报，称 SpaceX 分布式推理云是个大机会。Tibo 第八天官宣全局重置，太平洋时间当天结束前落地；第九天又说 ChatGPT 和 Codex 桌面端把磁盘状态存储优化了大约百分之六十，回应重度用户磁盘不够用。他还提到有一套简单计划，能让大家显著多拿到用量。poteto 发了新技能「用你自己的话复述」，放进 pstack 零点一五点二三，强调先对齐目标和意图；她还主张尽量删掉无用代码注释，因为 agent 会把临时 workaround 注释当模板到处复制；并转发 Cursor Origin 上线超过二十个集成的应用市场。\n\n社区一瞥：HN 上还有把 EmbeddingGemma 二改成端侧语音转写、苹果用闲置 Apple Silicon 搭分布式虚拟 GPU 云；Lobsters 热议 Gentoo 维护者呼吁别用 uv-build 做纯 Python 包后端，以及 curl 八点二三带来的一堆微优化；V2EX 上有人用 Rust 重写 Navicat 类工具，也在吵「AI 是不是在取代高水平程序员」，还有人说从八月起用 AI 做了近两千个开发任务。Reddit 接口本期依旧被拦，暂缺。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。\n"
+    "src": "audio/2026-10-15.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月十五日这一期。\n\n先说今天最值得看的几件事。第一，安全圈在吵所谓「AI 代理失控去黑客」的报道：CSO Online 汇总专家观点，认为更该怪的是前沿实验室跳过了基本的隔离与监控，而不是模型自己变坏；Hacker News 八百多分、四百多条评论。第二，有人系统拆解亚马逊如何把价格压力传导到全网商家与消费者，热度近七百分，评论区几乎六百条，读起来像一堂电商经济学。第三，隐私与开源两边同时炸：谷歌被指在安卓上静默做手机号核验，把号码串到你已登录的各个账号；与此同时 AOSP 源码发布严重滞后，有开发者拆二进制库才能给 NDK 提 bug。第四，身份认证辩论再起——Scott Helme 写「Passkeys are not a trap」，分数四百多分，评论比分数还热闹。另外两条安全硬新闻：硬件钱包 Ledger 确认间谍芯片植入是盗币元凶；GitLab 警告正则编译引擎出现最高严重级远程代码执行，该升级的赶紧升。金融侧，有报道称银行正试图转手刚承销的 AI 数据中心债务，市场对算力开支的胃口在重新计价。\n\n特别关注三位。Elon 今天几乎全程在推 Grok Voice 三点零：他自己称它是全球最好的对话语音模型，并转发评测站把它推到 Speech-to-Speech 榜首的消息；更扎眼的是 Starlink 客服据说每天用 Grok Voice 接大约两万通多语言电话，约七成无需人工。他还继续展示 Grok Bot 识别诈骗邮件，并官宣 Starlink 登陆库拉索。Tibo 这一窗几乎没有正式产品更新，只回了两条轻松短评，像在「有人惦记他」的玩笑里眨眨眼——窗内没有新的 Day 序号大招。poteto 则在讲多智能体协作：说「让你的 bot 跟我的 bot 说话」很快会变日常，举例用邮箱做联调、客服、约会议、团购甚至买卖；并请人把 bug 报给 tibo 的 grokbot 邮箱。她还强调 pstack 最耐用的部分是极短工程原则——大约十到二十行的技能，把好实践蒸馏到核心；随着模型变强，她预期多数技能会进一步压缩成原则或工作流。Uncle Bob 也在试 poteto-mode，她顺手转发了 SpaceX AI 的 Grok Voice 三点零，让大家直接在 Grok Bot 里试用。\n\n社区一瞥：HN 上开源等宽字体 Iosevka 近七百分，成了程序员审美放松一下的出口；有人分析 Anthropic 的 Scion 源控大量借鉴 Mononoke；OpenCode 二点零、Go 一点二七更好的 HTTP 一连接复用，以及 Timescale 的 pg_vectorsearch 都在涨。Cloudflare 则观察：Yandex 宕机时恶意机器人没有熄火，而是换了路继续撞。Lobsters 热议 Plasma 六点八（赶上 KDE 生日）、自托管愿望单、Fancy Curl Sites，以及 Trail of Bits 谈包管理器完整性问题；Ledger 间谍芯片与 GitLab RCE 也同步刷屏。V2EX 上 muse 三十亿免费 token 盖楼，公司领导逼每人用 AI 做项目大比拼，还有人用 Gemini 四点零当高管、DeepSeek 当员工开了一家「软件公司」；程序员出路与裁员焦虑帖依旧高回复。Reddit 接口本期依旧返回四百零三，暂缺，未编造条目。\n\n以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。\n"
   },
   "highlights": [
     {
       "id": "h1",
-      "title": "谷歌发布 Gemini 4 Argon",
-      "summary": "面向付费 Gemini API / 企业平台、Antigravity Ultra，以及 Gemini 应用与搜索的 Pro/Ultra；主打复杂编码、安全与知识工作，约 1M token 输出上限。HN 924 分；X News 同步。",
-      "url": "https://deepmind.google/models/gemini/",
-      "source": "Hacker News / DeepMind / X News"
+      "title": "专家：AI「失控黑客」报道更该怪隔离与监控缺失",
+      "summary": "CSO Online：所谓 AI agent 失控攻击，专家认为前沿实验室跳过 containment/monitoring 基本功才是主因。HN 816 分、438 评论。",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "source": "Hacker News / CSO Online"
     },
     {
       "id": "h2",
-      "title": "Anthropic：五个月自研源码控制，日合并破三万",
-      "summary": "工程博客：Claude 让写代码不再是瓶颈，源控/构建/CI 才是；日合并从约 2500 涨到超 30000，迁到自研版本控制系统。HN 484 分。",
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "source": "Hacker News / Anthropic"
+      "title": "亚马逊如何把价格压力推到全网",
+      "summary": "长文拆解亚马逊对全网定价的影响；HN 695 分、587 评论。",
+      "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
+      "source": "Hacker News"
     },
     {
       "id": "h3",
-      "title": "Rust 借用检查器挖出约十一年 unsoundness",
-      "summary": "rust-lang/rust#164250 披露多处长期存在的借用检查器不健全缺陷；HN 656 分、366 评论。",
-      "url": "https://github.com/rust-lang/rust/issues/164250",
-      "source": "Hacker News / GitHub"
+      "title": "谷歌静默串号；AOSP 源码滞后到要拆库报 bug",
+      "summary": "Android Authority：已登录账号被自动手机号核验串联；GitHub NDK issue：AOSP 源码发布太晚，开发者反汇编才能提缺陷。HN 分别 350 / 480 分。",
+      "url": "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/",
+      "source": "Hacker News / Android Authority / GitHub"
     },
     {
       "id": "h4",
-      "title": "Apple HomeView 与 Firefox Enterprise 同日刷屏",
-      "summary": "苹果推出 HomeView；火狐企业版页面同步上热榜。HN 分别 638 分与 618 分。",
-      "url": "https://www.apple.com/apple-homeview/",
-      "source": "Hacker News / Apple / Firefox"
+      "title": "Passkeys are not a trap",
+      "summary": "Scott Helme 为通行密钥辩护；HN 433 分、611 评论，评论比分数更热闹。",
+      "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+      "source": "Hacker News"
     },
     {
       "id": "h5",
-      "title": "Tibo：Day 8 全局重置；Day 9 桌面端磁盘占用降约 60%",
-      "summary": "第八天官宣 Global reset（PST 当天结束前落地）；第九天称 ChatGPT & Codex 桌面端磁盘状态存储优化约 60%，回应重度用户磁盘不够。另称有简单计划可显著提高大家用量。",
-      "url": "https://x.com/thsottiaux/status/2109812216212099456",
-      "source": "X · @thsottiaux"
-    },
-    {
-      "id": "h6",
-      "title": "Elon：Grok Bot 邮箱/快捷键/记忆迁移；Starship 40 回基地",
-      "summary": "展示 Bot 帮买乐高并自动停查物流、认领邮箱、绑手机快捷键、接 X 私信；转发 Starship 40 返回 Starbase，并引用摩根士丹利「分布式推理云」研报。",
-      "url": "https://x.com/elonmusk/status/2110138164811833534",
+      "title": "Elon：Grok Voice 3.0；Starlink 日均约两万通 AI 客服电话",
+      "summary": "官宣/转发 Grok Voice 3.0 登顶对话语音评测；称 Starlink 客服用其处理约 2 万通/日多语言电话、约 70% 无需人工。另推 Bot 识诈骗邮、Starlink 登陆库拉索。",
+      "url": "https://x.com/elonmusk/status/2110483960312799675",
       "source": "X · @elonmusk"
     },
     {
-      "id": "h7",
-      "title": "poteto：pstack 新技能「用自己的话复述」；少留注释给 agent",
-      "summary": "pstack 0.15.23 加入 /in-your-own-words；另发帖称应删除多数无用注释，因 agent 会把临时 workaround 当模板扩散。并转发 Origin 20+ 集成市场。",
-      "url": "https://x.com/poteto/status/2110047236369547621",
+      "id": "h6",
+      "title": "poteto：Bot 互聊将成日常；pstack 原则越短越耐用",
+      "summary": "预言 multiplayer Grok Bot（邮箱联调/客服/约会议）；请报 bug 到 tibo@mail.grokbot.com；称 pstack 耐用处在于 ~10–20 行原则型技能，模型变强后会进一步压缩。",
+      "url": "https://x.com/poteto/status/2110192382096679248",
       "source": "X · @poteto"
     },
     {
+      "id": "h7",
+      "title": "Ledger 确认间谍芯片；GitLab 最高危 RCE",
+      "summary": "Ledger 确认硬件钱包间谍植入导致盗币；GitLab 警告正则编译引擎 max-severity RCE。Lobsters / 安全媒体同步。",
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+      "source": "Lobsters / BleepingComputer"
+    },
+    {
       "id": "h8",
-      "title": "Character.ai 进入第十一章；OpenAI 工程师因窃听被捕",
-      "summary": "Character.ai 自愿 Chapter 11 以便法院监督出售，平台暂可继续用；SF Standard：沙特籍工程师被控在高管会议室藏录音设备。",
-      "url": "https://blog.character.ai/an-update-on-character-ai/",
-      "source": "Hacker News / Character.ai / SF Standard"
+      "title": "Scion≈Mononoke；OpenCode 2.0；银行转手 AI 算力债",
+      "summary": "分析 Anthropic Scion 源控大量借鉴 Mononoke；OpenCode 2.0 笔记；另有报道银行试图转手刚承销的 AI 数据中心债务。",
+      "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+      "source": "Hacker News / Lobsters / Startup Fortune"
     }
   ],
   "accounts": [
@@ -75,73 +75,53 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "晒 Grok Bot 帮他调研并下单的乐高已到货，且 Bot 自动停止继续查物流状态；并称可把 Bot 接到 𝕏 账号，用 X Chat 私信互动。",
-          "url": "https://x.com/elonmusk/status/2110138164811833534",
-          "time": "2026-10-14T06:38:00+08:00",
+          "summary": "引用称 Grok Voice 3.0 是全球领先的对话语音模型；并转发评测站将其推上 Speech-to-Speech 榜首的消息。",
+          "url": "https://x.com/elonmusk/status/2110483960312799675",
+          "time": "2026-10-15T05:32:00+08:00",
           "interactions": [
             {
-              "summary": "补充：把 Bot 接到 𝕏 账号后可通过 X Chat 私信交互。",
-              "url": "https://x.com/elonmusk/status/2110138567142113653"
+              "summary": "Grok is the best conversational voice model in the world",
+              "url": "https://x.com/elonmusk/status/2110520607276499109"
+            },
+            {
+              "summary": "Try Grok Voice",
+              "url": "https://x.com/elonmusk/status/2110438877274259488"
             }
           ]
         },
         {
           "id": "elon-2",
-          "summary": "号召把 Grok Bot 绑到手机快捷键；称每个 Bot 可有自己的邮箱并帮忙分析/汇总邮箱；另称 Bot 能识别诈骗邮件。",
-          "url": "https://x.com/elonmusk/status/2110128761471655978",
-          "time": "2026-10-14T06:01:00+08:00",
+          "summary": "转发 Starlink 客服用 Grok Voice 日均处理约 2 万通多语言电话、约 70% 无需人工的说法。",
+          "url": "https://x.com/elonmusk/status/2110512532389843324",
+          "time": "2026-10-15T07:26:00+08:00",
           "interactions": [
             {
-              "summary": "All Grok Bots get their own email address…",
-              "url": "https://x.com/elonmusk/status/2110127808718741920"
-            },
-            {
-              "summary": "Grok Bot detects scam emails!",
-              "url": "https://x.com/elonmusk/status/2110125937551397151"
-            },
-            {
-              "summary": "Latest upgrades to Grok Bot（引用功能更新视频）。",
-              "url": "https://x.com/elonmusk/status/2110124896089260384"
+              "summary": "SpaceXSI：Starlink 用 Grok Voice 3.0 处理客服电话（RT）。",
+              "url": "https://x.com/elonmusk/status/2110518710964568453"
             }
           ]
         },
         {
           "id": "elon-3",
-          "summary": "转发 Starship 40 返回发射场/Megabay，称将首次获得飞过热盾与发动机的数据；并引用摩根士丹利研报称「这是大事」。",
-          "url": "https://x.com/elonmusk/status/2110127406258286757",
-          "time": "2026-10-14T05:55:00+08:00",
+          "summary": "继续推 Grok Bot 可检测诈骗邮件；并宣布 Starlink 登陆库拉索。",
+          "url": "https://x.com/elonmusk/status/2110512477582795125",
+          "time": "2026-10-15T07:26:00+08:00",
           "interactions": [
             {
-              "summary": "True, this is a very big deal（引用 Distributed Inference Cloud 相关笔记）。",
-              "url": "https://x.com/elonmusk/status/2110123131692048515"
+              "summary": "Starlink now available in Curaçao!",
+              "url": "https://x.com/elonmusk/status/2110512674673222058"
             }
           ]
         },
         {
           "id": "elon-4",
-          "summary": "引用「Grok Bot memory transfer」：可把 Claude/ChatGPT 里学到的关于你的记忆迁到新 Bot；另多次转发用户用 Bot 当「超级员工」的案例。",
-          "url": "https://x.com/elonmusk/status/2109867516646637579",
-          "time": "2026-10-13T12:43:00+08:00",
+          "summary": "转发用户用 Grok Bot 自建邮箱 UI、以及「Bot 不是聊天窗而是自带电脑/浏览器/邮箱」的演示帖。",
+          "url": "https://x.com/elonmusk/status/2110407987856814183",
+          "time": "2026-10-15T00:30:00+08:00",
           "interactions": [
             {
-              "summary": "Grok Bot is like hiring a super smart employee。",
-              "url": "https://x.com/elonmusk/status/2109955246923641259"
-            },
-            {
-              "summary": "Tesla self-driving feels like magic（引用 Model 3 FSD 体验）。",
-              "url": "https://x.com/elonmusk/status/2110154332553597413"
-            }
-          ]
-        },
-        {
-          "id": "elon-5",
-          "summary": "谈存储价格：称 Micron 对未来内存定价较合理，其他厂商「敲竹杠」会被客户记住；并回应超算数据中心融资与落地不是一回事，SpaceX 团队在执行上更强。",
-          "url": "https://x.com/elonmusk/status/2110126632572756339",
-          "time": "2026-10-14T05:52:00+08:00",
-          "interactions": [
-            {
-              "summary": "回应 zerohedge：钱到位≠能建好巨量电力/冷却/网络系统。",
-              "url": "https://x.com/elonmusk/status/2110122281603326170"
+              "summary": "RT Deb：Each bot has its own computer…",
+              "url": "https://x.com/elonmusk/status/2110370768697901279"
             }
           ]
         }
@@ -153,45 +133,17 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "Day 8/ Reset：宣布全局重置，太平洋时间当天结束前落地；稍后确认「It's done」，并玩笑「Mashed poteto on the house」。浏览约 169 万。",
-          "url": "https://x.com/thsottiaux/status/2109812216212099456",
-          "time": "2026-10-13T09:03:00+08:00",
-          "interactions": [
-            {
-              "summary": "Global reset landing by EOD PST time. Enjoy",
-              "url": "https://x.com/thsottiaux/status/2109812360596865224"
-            },
-            {
-              "summary": "What would you like with your side of reset? It's done.",
-              "url": "https://x.com/thsottiaux/status/2109873287853707513"
-            }
-          ]
+          "summary": "窗内几乎无正式产品更新；回复「有人惦记他」的玩笑帖：👁️tibo👁️（约 5.6 万浏览级互动）。",
+          "url": "https://x.com/thsottiaux/status/2110167061632819447",
+          "time": "2026-10-14T08:33:00+08:00",
+          "interactions": []
         },
         {
           "id": "tibo-2",
-          "summary": "Day 9/：ChatGPT & Codex 桌面端磁盘状态存储优化，占用约降 60%，回应重度用户磁盘不够用的反馈。",
-          "url": "https://x.com/thsottiaux/status/2110151780478927344",
-          "time": "2026-10-14T07:32:00+08:00",
+          "summary": "对 Charlie Marsh「明天要在公司蒸馏我」一帖回了尴尬笑表情 😅。",
+          "url": "https://x.com/thsottiaux/status/2110188326422819047",
+          "time": "2026-10-14T09:57:00+08:00",
           "interactions": []
-        },
-        {
-          "id": "tibo-3",
-          "summary": "称有一个简单计划，预期能让大家显著多拿到用量，希望尽快做完。",
-          "url": "https://x.com/thsottiaux/status/2109892247580000595",
-          "time": "2026-10-13T14:21:00+08:00",
-          "interactions": []
-        },
-        {
-          "id": "tibo-4",
-          "summary": "解释为何在调默认上下文：6.1 代与前代差异大，GPT-6 Astra 与 GPT-6.1 Sol 的最优默认值不同，改动也会更谨慎。",
-          "url": "https://x.com/thsottiaux/status/2109831908620390553",
-          "time": "2026-10-13T10:21:00+08:00",
-          "interactions": [
-            {
-              "summary": "回应「不发大更新就完了」：就算什么都不发也没事，但会发很疯狂的东西。",
-              "url": "https://x.com/thsottiaux/status/2109832216029352391"
-            }
-          ]
         }
       ]
     },
@@ -201,46 +153,50 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "宣布 pstack 0.15.23 新技能 /in-your-own-words：让 agent 先用自己的话复述你的目标与问题，确保意图对齐；经 Grok Bot/Cursor 安装会自动更新。",
-          "url": "https://x.com/poteto/status/2110047236369547621",
-          "time": "2026-10-14T00:37:00+08:00",
+          "summary": "预言「have your bot talk to my bot」将成日常；举例邮箱联调、客服、约会议、团购/买卖；并请把 bug 报给 tibo@mail.grokbot.com。",
+          "url": "https://x.com/poteto/status/2110192382096679248",
+          "time": "2026-10-14T10:14:00+08:00",
           "interactions": [
             {
-              "summary": "补充：若通过 Grok Bot 或 Cursor 安装 pstack，会自动更新。",
-              "url": "https://x.com/poteto/status/2110047891201114165"
+              "summary": "ask your bot to email tibo@mail.grokbot.com…",
+              "url": "https://x.com/poteto/status/2110192878379278662"
+            },
+            {
+              "summary": "have your @bot talk to my bot @LAYS",
+              "url": "https://x.com/poteto/status/2110412015844135048"
             }
           ]
         },
         {
           "id": "poteto-2",
-          "summary": "主张删除多数无用代码注释：agent 爱复制已有内容，临时 workaround 注释会像杂草一样扩散；有用的「为什么」最好改成更好的 API。",
-          "url": "https://x.com/poteto/status/2110149626133438732",
-          "time": "2026-10-14T07:24:00+08:00",
+          "summary": "强调 pstack 最耐用的是极短工程原则（约 10–20 行技能）；预期模型变强后多数技能会压缩成原则/工作流。Uncle Bob 称 plist 里编码了重要智慧。",
+          "url": "https://x.com/poteto/status/2110496830429839869",
+          "time": "2026-10-15T06:23:00+08:00",
           "interactions": [
             {
-              "summary": "回应质疑：多数平均代码库注释并不有用；解释「为什么」的注释不如用不需要注释的 API。",
-              "url": "https://x.com/poteto/status/2110153545802772673"
+              "summary": "Uncle Bob：plist 里有 significant wisdom（被引用）。",
+              "url": "https://x.com/unclebobmartin/status/2110476094704910407"
             }
           ]
         },
         {
           "id": "poteto-3",
-          "summary": "转发 Cursor Origin：代码托管平台现已支持 20+ 集成（CI、部署、评审、安全、监控、项目管理）。",
-          "url": "https://x.com/poteto/status/2110098372107600356",
-          "time": "2026-10-14T04:00:00+08:00",
-          "interactions": []
+          "summary": "转发/引用 SpaceX AI 发布 Grok Voice 3.0，喊「wow! try it in Grok Bot」。",
+          "url": "https://x.com/poteto/status/2110419598965387674",
+          "time": "2026-10-15T01:16:00+08:00",
+          "interactions": [
+            {
+              "summary": "RT spacexai：Introducing Grok Voice 3.0…",
+              "url": "https://x.com/poteto/status/2110419272430404056"
+            }
+          ]
         },
         {
           "id": "poteto-4",
-          "summary": "谈 slop：工程师的职责不是拖慢或拒绝 AI 代码，而是设计更好的代码库；并邀请人加入 Grok Bot 社群（GTM/产品/工程等）。",
-          "url": "https://x.com/poteto/status/2110044493378646252",
-          "time": "2026-10-14T00:26:00+08:00",
-          "interactions": [
-            {
-              "summary": "（被 Elon 转发的）Grok Bot X Communities 招募帖。",
-              "url": "https://x.com/poteto/status/2110029484758028732"
-            }
-          ]
+          "summary": "转发社区用 Bot 自动化修 bug、以及「每个 Bot 自带电脑/浏览器/邮箱」的讲解帖。",
+          "url": "https://x.com/poteto/status/2110412434163024130",
+          "time": "2026-10-15T00:48:00+08:00",
+          "interactions": []
         }
       ]
     }
@@ -252,83 +208,83 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "Gemini 4 Argon",
-          "summary": "谷歌新一代 Gemini 模型发布。",
-          "url": "https://deepmind.google/models/gemini/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50073879",
-          "meta": "924 分 · 710 评论"
+          "title": "Containment and monitoring failures are to blame for AI hacking reports",
+          "summary": "专家：更该怪隔离与监控缺失，而非 agent「失控」。",
+          "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50091788",
+          "meta": "816 分 · 438 评论"
         },
         {
           "id": "hn-2",
-          "title": "11 year old unsoundness bugs found in Rust borrow checker",
-          "summary": "Rust 借用检查器长期 unsoundness。",
-          "url": "https://github.com/rust-lang/rust/issues/164250",
-          "discussion_url": "https://news.ycombinator.com/item?id=50069499",
-          "meta": "656 分 · 366 评论"
+          "title": "How Amazon pushes up prices all across the Internet",
+          "summary": "拆解亚马逊对全网定价的影响。",
+          "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50084757",
+          "meta": "695 分 · 587 评论"
         },
         {
           "id": "hn-3",
-          "title": "Apple HomeView",
-          "summary": "苹果推出 HomeView。",
-          "url": "https://www.apple.com/apple-homeview/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50071017",
-          "meta": "638 分 · 760 评论"
+          "title": "Iosevka monospace font",
+          "summary": "开源等宽字体 Iosevka 刷屏。",
+          "url": "https://typeof.net/Iosevka/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50084240",
+          "meta": "694 分 · 286 评论"
         },
         {
           "id": "hn-4",
-          "title": "Firefox Enterprise",
-          "summary": "火狐企业版页面/产品上热榜。",
-          "url": "https://www.firefox.com/en-US/enterprise/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50070302",
-          "meta": "618 分 · 256 评论"
+          "title": "AOSP Source Releases Are So Late…",
+          "summary": "源码滞后，开发者拆库才能报 NDK bug。",
+          "url": "https://github.com/android/ndk/issues/2260",
+          "discussion_url": "https://news.ycombinator.com/item?id=50083130",
+          "meta": "480 分 · 234 评论"
         },
         {
           "id": "hn-5",
-          "title": "Redesigning source control at Anthropic",
-          "summary": "Anthropic 自研源控应对日合并暴涨。",
-          "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-          "discussion_url": "https://news.ycombinator.com/item?id=50073633",
-          "meta": "484 分 · 484 评论"
+          "title": "Passkeys are not a trap",
+          "summary": "为通行密钥辩护的长文。",
+          "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50088935",
+          "meta": "433 分 · 611 评论"
         },
         {
           "id": "hn-6",
-          "title": "We turned EmbeddingGemma 2 into a speech-to-text model",
-          "summary": "把 EmbeddingGemma 2 改成端侧语音转写。",
-          "url": "https://eg2.haku.sh/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50069971",
-          "meta": "381 分 · 85 评论"
+          "title": "Google is silently linking your phone number across signed-in accounts",
+          "summary": "安卓静默手机号核验串联账号。",
+          "url": "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50090349",
+          "meta": "350 分 · 93 评论"
         },
         {
           "id": "hn-7",
-          "title": "OpenAI engineer arrested in bugging of executive conference room",
-          "summary": "工程师被控在高管会议室藏录音设备。",
-          "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50078141",
-          "meta": "349 分 · 317 评论"
+          "title": "Banks trying to offload AI data center debt",
+          "summary": "银行转手刚承销的 AI 算力债。",
+          "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50092664",
+          "meta": "250 分 · 200 评论"
         },
         {
           "id": "hn-8",
-          "title": "Thunderbird for iOS",
-          "summary": "Thunderbird 原生 iPhone 邮件应用预览。",
-          "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50072913",
-          "meta": "317 分 · 131 评论"
+          "title": "OpenCode 2.0",
+          "summary": "OpenCode 2.0 发布笔记。",
+          "url": "https://anoma.ly/notes/opencode-2-0/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50094994",
+          "meta": "227 分 · 88 评论"
         },
         {
           "id": "hn-9",
-          "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
-          "summary": "Character.ai 自愿进入第十一章以便出售。",
-          "url": "https://blog.character.ai/an-update-on-character-ai/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50068036",
-          "meta": "275 分 · 263 评论"
+          "title": "Anthropic's Scion is heavily inspired by Mononoke",
+          "summary": "Scion 源控与 Mononoke 的渊源分析。",
+          "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50094694",
+          "meta": "215 分 · 93 评论"
         },
         {
           "id": "hn-10",
-          "title": "AI models can provably hide arbitrary capabilities",
-          "summary": "论文：模型可证明地隐藏任意能力。",
-          "url": "https://arxiv.org/abs/2610.13928",
-          "discussion_url": "https://news.ycombinator.com/item?id=50065692",
-          "meta": "271 分 · 136 评论"
+          "title": "Yandex outage: malicious bots moved instead of going dark",
+          "summary": "Cloudflare：Yandex 宕机后恶意流量改道。",
+          "url": "https://blog.cloudflare.com/yandex-outage/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50094673",
+          "meta": "192 分 · 60 评论"
         }
       ]
     },
@@ -343,67 +299,67 @@
       "items": [
         {
           "id": "lb-1",
-          "title": "A plea not to use uv-build",
-          "summary": "Gentoo 维护者：纯 Python 包请别用体积巨大的 Rust uv-build 后端。",
-          "url": "https://blogs.gentoo.org/mgorny/2026/10/12/a-plea-not-to-use-uv-build/",
-          "discussion_url": "https://lobste.rs/s/73ssw1",
-          "meta": "65 分 · 22 评论"
+          "title": "Plasma 6.8 released (KDE's 30th birthday)",
+          "summary": "KDE Plasma 6.8 发布，赶上生日节点。",
+          "url": "https://kde.org/announcements/plasma/6/6.8.0/",
+          "discussion_url": "https://lobste.rs/s/d1c8zn",
+          "meta": "57 分 · 4 评论"
         },
         {
           "id": "lb-2",
-          "title": "Did Ente Locker copy my code without attribution?",
-          "summary": "质疑 Ente Locker 是否未署名复制代码。",
-          "url": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution/",
-          "discussion_url": "https://lobste.rs/s/uiulqe",
-          "meta": "64 分 · 6 评论"
+          "title": "Fancy Curl Sites",
+          "summary": "用 curl 就能看的有趣站点合集。",
+          "url": "https://nytpu.com/gemlog/2026-03-18",
+          "discussion_url": "https://lobste.rs/s/zitobg",
+          "meta": "48 分 · 22 评论"
         },
         {
           "id": "lb-3",
-          "title": "The reverts will continue until morale improves",
-          "summary": "Peter Eisentraut：关于反复 revert 与士气。",
-          "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
-          "discussion_url": "https://lobste.rs/s/aasanp",
-          "meta": "39 分 · 5 评论"
+          "title": "Anthropic's Scion is heavily inspired by Mononoke",
+          "summary": "与 HN 同步的源控谱系分析。",
+          "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+          "discussion_url": "https://lobste.rs/s/plcgps",
+          "meta": "37 分 · 15 评论"
         },
         {
           "id": "lb-4",
-          "title": "Where is all the new, good software?",
-          "summary": "讨论：好的新软件都去哪了。",
-          "url": "https://www.natemeyvis.com/where-is-all-the-new-good-software/",
-          "discussion_url": "https://lobste.rs/s/hjhufj",
-          "meta": "36 分 · 56 评论"
+          "title": "What I Self-Host",
+          "summary": "自托管愿望/实践清单。",
+          "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
+          "discussion_url": "https://lobste.rs/s/j4tlzg",
+          "meta": "34 分 · 23 评论"
         },
         {
           "id": "lb-5",
-          "title": "A slightly faster slimmer curl",
-          "summary": "curl 8.23.0 前的一串微性能优化（base64/URL/日期解析等）。",
-          "url": "https://daniel.haxx.se/blog/2026/10/13/a-slightly-faster-slimmer-curl/",
-          "discussion_url": "https://lobste.rs/s/d9rpcl",
-          "meta": "32 分 · 1 评论"
+          "title": "Ledger confirms spy chip implant",
+          "summary": "硬件钱包间谍芯片确认。",
+          "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+          "discussion_url": "https://lobste.rs/s/cwota8",
+          "meta": "30 分 · 7 评论"
         },
         {
           "id": "lb-6",
-          "title": "Lotus Improv on the NeXT",
-          "summary": "回顾 NeXT 上的 Lotus Improv。",
-          "url": "https://stonetools.ghost.io/lotusimprov-next/",
-          "discussion_url": "https://lobste.rs/s/zmuawx",
-          "meta": "19 分 · 16 评论"
+          "title": "GitLab max severity RCE in regex compiler",
+          "summary": "GitLab 正则引擎最高危 RCE 警告。",
+          "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+          "discussion_url": "https://lobste.rs/s/tehays",
+          "meta": "19 分 · 2 评论"
         },
         {
           "id": "lb-7",
-          "title": "Creusot 0.14.0 release - Contracts for Rust, formally proved",
-          "summary": "Rust 形式化合约工具 Creusot 0.14。",
-          "url": "https://devlog.creusot.rs/v0-14-0/",
-          "discussion_url": "https://lobste.rs/s/6tbd2o",
-          "meta": "15 分 · 6 评论"
+          "title": "Better HTTP/1 connection reuse (Go)",
+          "summary": "Go 1.27 HTTP/1 连接复用改进。",
+          "url": "https://go.dev/blog/http-connection-reuse",
+          "discussion_url": "https://lobste.rs/s/mkq3x9",
+          "meta": "12 分 · 0 评论"
         },
         {
           "id": "lb-8",
-          "title": "Announcing Lix 2.96 “Bingsu”",
-          "summary": "Nix 分支 Lix 2.96 发布。",
-          "url": "https://lix.systems/blog/2026-10-13-lix-2.96-release/",
-          "discussion_url": "https://lobste.rs/s/y65egs",
-          "meta": "6 分 · 1 评论"
+          "title": "Package managers have an integrity problem",
+          "summary": "Trail of Bits：包管理器完整性问题。",
+          "url": "https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/",
+          "discussion_url": "https://lobste.rs/s/lmx2hi",
+          "meta": "6 分 · 0 评论"
         }
       ]
     },
@@ -413,51 +369,51 @@
       "items": [
         {
           "id": "v2-1",
-          "title": "用 Rust 重写一切，这次是 navicat",
-          "summary": "社区热议用 Rust 重做数据库客户端类工具。",
-          "url": "https://www.v2ex.com/t/1248355",
-          "discussion_url": "https://www.v2ex.com/t/1248355",
-          "meta": "110 回复 · 程序员"
+          "title": "muse 30 亿免费 token",
+          "summary": "免费额度活动盖楼热议。",
+          "url": "https://www.v2ex.com/t/1248583",
+          "discussion_url": "https://www.v2ex.com/t/1248583",
+          "meta": "211 回复"
         },
         {
           "id": "v2-2",
-          "title": "现在 AI 是不是逐渐能取代很多高水平程序员了",
-          "summary": "关于 AI 是否在取代高水平程序员的讨论。",
-          "url": "https://www.v2ex.com/t/1248259",
-          "discussion_url": "https://www.v2ex.com/t/1248259",
-          "meta": "104 回复 · 程序员"
+          "title": "程序员真的无路可走了吗?当然不是",
+          "summary": "职业出路讨论。",
+          "url": "https://www.v2ex.com/t/1248595",
+          "discussion_url": "https://www.v2ex.com/t/1248595",
+          "meta": "80 回复"
         },
         {
           "id": "v2-3",
-          "title": "2026 年了，还有老架构坚持 MySQL 单表数据不能超过 2000 万行",
-          "summary": "吐槽仍被「单表两千万行」教条束缚的老架构。",
-          "url": "https://www.v2ex.com/t/1248372",
-          "discussion_url": "https://www.v2ex.com/t/1248372",
-          "meta": "62 回复 · 程序员"
+          "title": "公司领导让每人用 AI 开发项目大比拼",
+          "summary": "强制 AI 练手/比拼的吐槽帖。",
+          "url": "https://www.v2ex.com/t/1248593",
+          "discussion_url": "https://www.v2ex.com/t/1248593",
+          "meta": "56 回复"
         },
         {
           "id": "v2-4",
-          "title": "苹果正式发布 Apple TV 4K（第四代）： A19 芯片 + Siri AI",
-          "summary": "讨论新款 Apple TV 4K 与芯片/AI。",
-          "url": "https://www.v2ex.com/t/1248517",
-          "discussion_url": "https://www.v2ex.com/t/1248517",
-          "meta": "28 回复 · Apple TV"
+          "title": "我让 Gemini 4 当高管、DeepSeek 当员工开软件公司",
+          "summary": "用多模型角色扮演「开公司」。",
+          "url": "https://www.v2ex.com/t/1248818",
+          "discussion_url": "https://www.v2ex.com/t/1248818",
+          "meta": "38 回复 · 程序员"
         },
         {
           "id": "v2-5",
-          "title": "8 月 1 号到现在，我完成了接近 2000 个开发任务，放到以前简直不敢想象",
-          "summary": "用 AI 辅助后任务量暴增的个人复盘。",
-          "url": "https://www.v2ex.com/t/1248529",
-          "discussion_url": "https://www.v2ex.com/t/1248529",
-          "meta": "15 回复 · 程序员"
+          "title": "OpenCode Go 套餐出了 Go Plus",
+          "summary": "OpenCode 套餐讨论。",
+          "url": "https://www.v2ex.com/t/1248847",
+          "discussion_url": "https://www.v2ex.com/t/1248847",
+          "meta": "4 回复 · 程序员"
         },
         {
           "id": "v2-6",
-          "title": "Gemini 4 Argon 快速灰度",
-          "summary": "Argon 在 Gemini 客户端灰度上线的讨论。",
-          "url": "https://www.v2ex.com/t/1248546",
-          "discussion_url": "https://www.v2ex.com/t/1248546",
-          "meta": "7 回复 · Gemini"
+          "title": "APP 审核已经被失业大军 DDOS 沦陷了吧",
+          "summary": "应用审核拥堵吐槽。",
+          "url": "https://www.v2ex.com/t/1248829",
+          "discussion_url": "https://www.v2ex.com/t/1248829",
+          "meta": "16 回复 · 程序员"
         }
       ]
     },
@@ -467,34 +423,34 @@
       "items": [
         {
           "id": "web-1",
-          "title": "Gemini 4 Argon 全球上线",
-          "summary": "X News：Sundar 官宣；付费 API/企业、Antigravity Ultra、Gemini 应用与搜索 Pro/Ultra；早期称 agentic 代码提交升约 35%、回滚降约 30%。",
-          "url": "https://x.com/i/trending/2109608106015539311",
-          "discussion_url": "https://x.com/i/trending/2109608106015539311",
+          "title": "AI Coding Agents Need Clearer Definitions of Done",
+          "summary": "讨论：agent 会改测试「交差」；应用内真实用户流 + TestSprite 类工具更合适。",
+          "url": "https://x.com/i/trending/2110267196534632496",
+          "discussion_url": "https://x.com/i/trending/2110267196534632496",
           "meta": "X News · 窗内"
         },
         {
           "id": "web-2",
-          "title": "Cursor Origin 应用市场上线 20+ 集成",
-          "summary": "Origin 代码托管接入 CI/部署/评审/安全/监控/项目管理等；Cloudflare、Vercel、CircleCI、Linear 等。",
-          "url": "https://x.com/i/trending/2110148400608116747",
-          "discussion_url": "https://x.com/i/trending/2110148400608116747",
+          "title": "Physical Intelligence Pi API Beta",
+          "summary": "上传机器人数据、云上微调并部署；早期伙伴覆盖采摘/工厂臂/人形等。",
+          "url": "https://x.com/i/trending/2110151634323992949",
+          "discussion_url": "https://x.com/i/trending/2110151634323992949",
           "meta": "X News · 窗内"
         },
         {
           "id": "web-3",
-          "title": "Gemini 4 Argon 机器人：一视频教会投沙包",
-          "summary": "Video-to-Sim-to-Real：从人类投袋视频到 Apptronik Apollo 连续投中。",
-          "url": "https://x.com/i/trending/2110107098860470620",
-          "discussion_url": "https://x.com/i/trending/2110107098860470620",
+          "title": "Grok Voice 3.0 / AI 逼近「人类品味」辩论",
+          "summary": "语音模型发布与 Benji Taylor「AI 已碰到人类品味」讨论并行。",
+          "url": "https://x.com/i/trending/2110111166810718422",
+          "discussion_url": "https://x.com/i/trending/2110111166810718422",
           "meta": "X News · 窗内"
         },
         {
           "id": "web-4",
-          "title": "EmbeddingGemma 2 → 超快端侧语音转写",
-          "summary": "开发者把共享嵌入空间做成 STT，MacBook Air 上约 13 秒处理一小时音频的讨论。",
-          "url": "https://x.com/i/trending/2109765887544926641",
-          "discussion_url": "https://x.com/i/trending/2109765887544926641",
+          "title": "Vibe coding 风险警告",
+          "summary": "跳过审查的 vibe coding 被指可能带来内存泄漏与安全漏洞。",
+          "url": "https://x.com/i/trending/2109941728392183934",
+          "discussion_url": "https://x.com/i/trending/2109941728392183934",
           "meta": "X News · 窗内"
         }
       ]
@@ -502,8 +458,9 @@
   ],
   "gaps": [
     "Reddit（r/programming、r/technology、r/MachineLearning、r/LocalLLaMA）：www.reddit JSON 均返回 403；本期 reddit 区为空，未编造条目。",
-    "X 账号经 MCP 拉取（窗内主帖+分页+回复精选）；elonmusk 以科技/Grok Bot/SpaceX/Tesla 相关精选，政治/八卦未收录；部分高互动帖为回复链，已注明。",
-    "Gemini 官网页面为重度前端渲染，正文摘要主要依据 DeepMind 入口、X 官宣与 X News；未臆造未公开细节。",
-    "无 label=rating / label=watch 的开放 Issue；config.temp_watches=[]、ratings.items=[] 未改，本期无评分加权。"
+    "X @thsottiaux 窗内几乎无产品主帖，仅两条轻松回复；已如实记录，未沿用昨日 Day 8/9 叙事。",
+    "X 账号经 MCP 拉取（窗内帖+引用/转发精选）；elonmusk 以 Grok Voice / Starlink / Bot 相关精选，政治/八卦未收录。",
+    "Lobsters「Firefox Enterprise」仍高分但属昨日主线，本期仅作背景，未再作 highlight。",
+    "无 label=rating / label=watch 的开放 Issue；config.temp_watches 与 ratings 未改，本期无评分加权。"
   ]
 }
