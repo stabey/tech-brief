@@ -1,0 +1,9 @@
+早上好，这里是技术早报，二零二六年十月十六日这一期。
+
+先说今天最重磅的几件事。第一，Meta 开源权重模型 Muse Spark Open：总参数约八百一十六亿、每 token 激活约四十二亿，原生多模态，上下文一百万 token，主打编程与智能体长程任务；权重上 Hugging Face，也可在两台搭载 M5 Ultra 的 Mac Studio 上用 MLX 本地跑，多家推理平台已上线。Hacker News 近六百分、三百多条评论。第二，安全圈炸了：多伦多大学 Citizen Lab 披露「AdFection」——以色列广告商 Discover-Tech 把定向广告做成零点击雇佣间谍软件投递管线，确认曾借广告感染半岛电视台约四十五台 Windows 设备，关联 Candiru；卫报、The Verge 同步报道，谷歌等已将其踢出广告平台。第三，可解释性长文刷屏：Goodfire 的 Nick Cammarata 写《Neural networks are clean》，主张早期「多义神经元」与叠加假说被误读，现代模型多数神经元其实相当干净，机械可解释性前景可能比预想乐观，近四百七十分。第四，有人做了拟物风格的 Linux Wayland 桌面 DEsk，分数也接近四百七十分。开源侧 Libreboot 二十六点十「Ominous Olive」带来完整 UEFI 与 Chromebook 支持；数学圈则一边有 Derek Thompson 谈「数学家为何哭泣」，一边有 Simons 基金会拿出一千五百万美元帮数学家应对 AI 时代。
+
+特别关注三位。Elon 今天推新 Roadster 预热、并官宣 SpaceX 与英伟达共研的 Star Mind 太空服务器明年量产；同时猛推 Grok Bot——称增长从未见过，没有免费档意味着人们付费买到真价值，还转发「让 Bot 帮你从骚扰名单删手机号」的技能，并半开玩笑说或许该做亚马逊竞品。Tibo 这一窗很忙：Day 十 Reset 打脸「重置按钮丢了」的传言，两小时内落地；Day 十一宣布加算力与一串改动，大幅降低「Selected model is at capacity」打断，偶发时也应自动继续而不是卡死；还对 OpenAI 新语音 GPT-Live 一点一回了句「Bonjour」，自称用法语编程。poteto 大力推她的 pstack 技能集——十秒教程：先跑 setup-pstack，再在提示前加 poteto-mode；顺手讲代码注释对智能体是非结构化、难强制的逃逸舱口，并甩出一批「让代码对智能体更友好」的重构提示；还喊大家提交 Grok Bot、Grok、Cursor 插件，并戏称让 Bot 立刻预购新 Roadster。
+
+社区一瞥：HN 上 Epic 新「vibe coding」启动器被嘲不如 Steam；Krea 三发图像编辑模型；Anthropic Scion 借鉴 Mononoke 还有续篇。Lobsters 热议 JPEG XL 对 AVIF、sunsetting decomp.dev、自托管 Git Forgejo 十七、远程证明不该被容忍，以及 Rust 一点九九点一。V2EX 程序员区在聊 AI 副业焦虑、Codex 容量与 Tibo 重置节奏，另有人用 vibe coding 两三百块做出小工具站；Claude 账号被骗近一千二百块的帖也盖了楼。Reddit 接口本期依旧四百零三，暂缺，未编造。
+
+以上就是今天的早报。页面上可以打分、加临时关注；明天早上八点北京时间见。
