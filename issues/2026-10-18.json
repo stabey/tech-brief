@@ -1,0 +1,457 @@
+{
+  "id": "2026-10-18",
+  "title": "技术早报 · 2026-10-18",
+  "window": {
+    "start": "2026-10-17T08:00:00+08:00",
+    "end": "2026-10-18T08:00:00+08:00"
+  },
+  "generated_at": "2026-10-18T08:10:00+08:00",
+  "podcast": {
+    "src": "audio/2026-10-18.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月十八日这一期。\n\n先看今天的头条。第一，开源编码代理 OpenCode 遭到入侵，用户凭证泄露，Hacker News 上将近七百分、一百二十条评论，是这一窗安全侧最热的话题。第二，DeepSeek 发布 V 四点一 Flash 一零一七版，Hugging Face 上线，HN 六百多分、五百六十多条评论，V 站程序员节点也在热议通宵写代码体验。第三，光伏发电首次在全球超过核电，HN 四百多分。第四，MapQuest 开始在地图上标注社区里的 Flock 监控摄像头位置。另外还有：Show HN 的 Llmspeed，让你在买硬件前先感受本地大模型有多快；Pele 把 Mermaid 图做成可换肤的 SVG；爱沙尼亚网上投票系统源码公开；Chrome 和 Edge 要移除 XSLT，生态里有东西会断；LWN 更新了七点二内核的开发统计。\n\n特别关注三位。Elon 继续推新 Roadster：说以后演示会飞过蛇河或者大峡谷，落地后还能超过半个音速；回复里称峰值速度可超过零点五马赫，大约四百英里每小时；还说你可以让「有感知」的 Roadster 自主表演那些特技，德州总部会建一条比 Hot Wheels 还疯的环形赛道。此外他谈到 Starlink 帮偏远社区联网，并强调 X 上别再有丑到「流泪出血」的广告。Tibo 发了 Day 十三：额度重置；随后自己回「Done」，并说当天太平洋时间下班前会落地；他还讲了工作 Dot「汉堡」和个人 Dot「多力多滋」协作报税，二十分钟搞定，感叹还太早。另有 ChatGPT Space 的介绍，以及昨天刚给 Pro、Business、Enterprise 加上幻灯片支持。poteto 在做 pstack 的新验证技能，并转发了「给智能体一个自检方式」的观点；她还抛出问题：聊天是不是智能体界面的最终形态？欢迎大家说理。\n\n社区一瞥：Lobsters 上，gopls 交互式重构、用任何语言写直观并发的 Lingua Franca，以及花九年刷 Xbox 三百六十的文章比较热。V2EX 除了 DeepSeek 和 Roadster，还有人做了纹身试戴工具、群晖助手、Roadster 网页游戏合集。Reddit 这期依旧四百零三，暂缺。\n\n以上就是今天的早报，明天早上八点北京时间见。\n"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "OpenCode 遭入侵：用户凭证泄露",
+      "summary": "开源编码代理 OpenCode 被黑导致凭证泄露；HN 699 分、120 评论，是本窗安全侧最热帖。",
+      "url": "https://twitter.com/opencode/status/2111516673953935833",
+      "source": "Hacker News / OpenCode"
+    },
+    {
+      "id": "h2",
+      "title": "DeepSeek-V4.1-Flash-1017 发布",
+      "summary": "Hugging Face 上线 DeepSeek-V4.1-Flash-1017；HN 669 分、562 评论；V2EX 同步热议。",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "Hacker News / Hugging Face"
+    },
+    {
+      "id": "h3",
+      "title": "光伏发电首次在全球超过核电",
+      "summary": "pv magazine 报道全球太阳能发电量首超核能；HN 454 分、300 评论。",
+      "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "h4",
+      "title": "MapQuest 开始标注社区 Flock 监控摄像头",
+      "summary": "Engadget：MapQuest 地图可显示邻近 Flock 摄像头位置；HN 258 分。",
+      "url": "https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/",
+      "source": "Hacker News / Engadget"
+    },
+    {
+      "id": "h5",
+      "title": "Show HN: Llmspeed – 买硬件前先感受本地 LLM 有多快",
+      "summary": "llmspeed.dev；HN 239 分、77 评论。",
+      "url": "https://llmspeed.dev/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "h6",
+      "title": "Pele：把 Mermaid 图做成可换肤 SVG",
+      "summary": "pele.run；HN 196 分。",
+      "url": "https://pele.run/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "h7",
+      "title": "爱沙尼亚网上投票系统源码公开；Linux 7.2 内核开发统计",
+      "summary": "GitHub valimised/ivxv（HN 145）；LWN 7.2 开发统计（HN 122）。",
+      "url": "https://github.com/valimised/ivxv",
+      "source": "Hacker News / LWN"
+    },
+    {
+      "id": "h8",
+      "title": "Chrome / Edge 将移除 XSLT；gopls 交互式重构",
+      "summary": "doctor-seo 梳理 XSLT 移除影响（HN 68）；Lobsters：gopls 交互式重构（22 分）。",
+      "url": "https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/",
+      "source": "Hacker News / Lobsters"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "新 Roadster 后续：未来演示将飞过 Snake River 或大峡谷，落地后超过半音速；另称「命运最大化讽刺娱乐，Roadster 注定是飞行汽车」。",
+          "url": "https://x.com/elonmusk/status/2111507158215057620",
+          "time": "2026-10-18T01:18:00+08:00",
+          "interactions": [
+            {
+              "summary": "Since fate… flying car",
+              "url": "https://x.com/elonmusk/status/2111507692045148515"
+            },
+            {
+              "summary": "峰值 >0.5 Mach / ~400 mph",
+              "url": "https://x.com/elonmusk/status/2111308999291199884"
+            },
+            {
+              "summary": "可要求 sentient Roadster 自主表演特技；德州 HQ 环形赛道",
+              "url": "https://x.com/elonmusk/status/2111354696854114702"
+            }
+          ]
+        },
+        {
+          "id": "elon-2",
+          "summary": "Starlink 帮助全球偏远社区（含巴布亚新几内亚医疗点联网）；称赞 Boring Company 进展多归功于 Steve Davis 团队。",
+          "url": "https://x.com/elonmusk/status/2111503973064573300",
+          "time": "2026-10-18T01:05:00+08:00",
+          "interactions": [
+            {
+              "summary": "Boring Company 功劳归属",
+              "url": "https://x.com/elonmusk/status/2111504802895061076"
+            }
+          ]
+        },
+        {
+          "id": "elon-3",
+          "summary": "「No more ads so ugly they make your eyes bleed」——延续审美广告标准；另有「Anomalies in the matrix are inevitable」。",
+          "url": "https://x.com/elonmusk/status/2111313240420737438",
+          "time": "2026-10-17T12:27:00+08:00",
+          "interactions": [
+            {
+              "summary": "Anomalies in the matrix",
+              "url": "https://x.com/elonmusk/status/2111312443305558190"
+            },
+            {
+              "summary": "Optimus will build Optimus Prime",
+              "url": "https://x.com/elonmusk/status/2111327635095834954"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "Day 13：Le limit reset；随后自回「Landing sometime today by EOD PST」，晚些再发「Done」。",
+          "url": "https://x.com/thsottiaux/status/2111492673890824348",
+          "time": "2026-10-18T00:20:00+08:00",
+          "interactions": [
+            {
+              "summary": "Landing by EOD PST",
+              "url": "https://x.com/thsottiaux/status/2111492738025959922"
+            },
+            {
+              "summary": "Done",
+              "url": "https://x.com/thsottiaux/status/2111566005684289735"
+            }
+          ]
+        },
+        {
+          "id": "tibo-2",
+          "summary": "工作 Dot「Burger」与个人 Dot「Dorito」协作取文件、对接 CPA 报税，约二十分钟完成：「We're still so early。」",
+          "url": "https://x.com/thsottiaux/status/2111495392559067199",
+          "time": "2026-10-18T00:31:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-3",
+          "summary": "介绍 ChatGPT Space（团队现身讲解）；并称昨天已为 Pro / Business / Enterprise 加上 slides 支持。",
+          "url": "https://x.com/thsottiaux/status/2111249534072529256",
+          "time": "2026-10-17T08:14:00+08:00",
+          "interactions": [
+            {
+              "summary": "slides support",
+              "url": "https://x.com/thsottiaux/status/2111249810502353152"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "「working on a new verification skill for pstack」；并转发 Addy Osmani：给智能体自检方式可显著提升产出质量。",
+          "url": "https://x.com/poteto/status/2111596610836955561",
+          "time": "2026-10-18T07:13:00+08:00",
+          "interactions": [
+            {
+              "summary": "RT: Give your agent a way to verify",
+              "url": "https://x.com/poteto/status/2111604948731609235"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "提问：「is chat the final form of agent ui? please share why」（约八百赞、一千一百多回复）。",
+          "url": "https://x.com/poteto/status/2111321176769442251",
+          "time": "2026-10-17T12:59:00+08:00",
+          "interactions": []
+        },
+        {
+          "id": "poteto-3",
+          "summary": "感慨职业生涯多亏 X；回应 Grok Bot 好评称团队仍有很多事要做；提到已有 tldraw 插件。",
+          "url": "https://x.com/poteto/status/2111507917644222496",
+          "time": "2026-10-18T01:21:00+08:00",
+          "interactions": [
+            {
+              "summary": "bot team still lots more to do",
+              "url": "https://x.com/poteto/status/2111499837950828605"
+            },
+            {
+              "summary": "tldraw plugin",
+              "url": "https://x.com/poteto/status/2111518208297668926"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "OpenCode Hacked: User credentials leaked",
+          "summary": "开源编码代理遭入侵。",
+          "url": "https://twitter.com/opencode/status/2111516673953935833",
+          "discussion_url": "https://news.ycombinator.com/item?id=50133401",
+          "meta": "699 分 · 120 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "DeepSeek-v4.1-Flash-1017",
+          "summary": "新 Flash 模型上线。",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "discussion_url": "https://news.ycombinator.com/item?id=50129045",
+          "meta": "669 分 · 562 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Solar surpasses nuclear power globally for first time",
+          "summary": "光伏首超核电。",
+          "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50131256",
+          "meta": "454 分 · 300 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "MapQuest will now show you where Flock cameras are in your neighborhood",
+          "summary": "地图标注 Flock 摄像头。",
+          "url": "https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50129947",
+          "meta": "258 分 · 47 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+          "summary": "本地 LLM 速度体感。",
+          "url": "https://llmspeed.dev/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50127979",
+          "meta": "239 分 · 77 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Making chicken transparent using Dorito dust",
+          "summary": "物理/光学趣味实验。",
+          "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+          "discussion_url": "https://news.ycombinator.com/item?id=50131213",
+          "meta": "242 分 · 64 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Pele – Mermaid diagrams as themeable SVG",
+          "summary": "Mermaid → 可换肤 SVG。",
+          "url": "https://pele.run/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50132193",
+          "meta": "196 分 · 22 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Source code of the Estonian online voting system",
+          "summary": "爱沙尼亚网投源码。",
+          "url": "https://github.com/valimised/ivxv",
+          "discussion_url": "https://news.ycombinator.com/item?id=50127586",
+          "meta": "145 分 · 128 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Amazon uses AI to monitor union risk in UK warehouses",
+          "summary": "亚马逊用 AI 监测工会风险。",
+          "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50132278",
+          "meta": "145 分 · 57 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Development statistics for the 7.2 kernel",
+          "summary": "LWN 内核开发统计。",
+          "url": "https://lwn.net/Articles/1088776/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50132950",
+          "meta": "122 分 · 101 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
+          "summary": "浏览器跑 ESP32 固件。",
+          "url": "https://github.com/mikroverk/esp32sim",
+          "discussion_url": "https://news.ycombinator.com/item?id=50131189",
+          "meta": "111 分 · 11 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Chrome and Edge are removing XSLT: what breaks and what does not",
+          "summary": "浏览器移除 XSLT 影响。",
+          "url": "https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50134617",
+          "meta": "68 分 · 70 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lob-1",
+          "title": "Interactive refactoring in gopls",
+          "summary": "",
+          "url": "https://go.dev/blog/interactive-refactoring",
+          "discussion_url": "https://lobste.rs/s/wn293o",
+          "meta": "22 分 · 7 评论"
+        },
+        {
+          "id": "lob-2",
+          "title": "Intuitive concurrent programming in any language",
+          "summary": "",
+          "url": "https://www.lf-lang.org/",
+          "discussion_url": "https://lobste.rs/s/srao9u",
+          "meta": "18 分 · 8 评论"
+        },
+        {
+          "id": "lob-3",
+          "title": "It took me nine years to hack my Xbox 360",
+          "summary": "",
+          "url": "https://kennedn.com/blog/posts/glitching/",
+          "discussion_url": "https://lobste.rs/s/wceg2u",
+          "meta": "11 分 · 0 评论"
+        },
+        {
+          "id": "lob-4",
+          "title": "Some quick thoughts on Unit Testing ActivityPub",
+          "summary": "",
+          "url": "https://shkspr.mobi/blog/2026/10/some-thoughts-on-unit-testing-activitypub/",
+          "discussion_url": "https://lobste.rs/s/gwuebx",
+          "meta": "5 分 · 6 评论"
+        },
+        {
+          "id": "lob-5",
+          "title": "Developing for Debugging (2025)",
+          "summary": "",
+          "url": "https://www.davepacheco.net/blog/2025/developing-for-debugging-dns-propagation/",
+          "discussion_url": "https://lobste.rs/s/a0og2j",
+          "meta": "5 分 · 2 评论"
+        },
+        {
+          "id": "lob-6",
+          "title": "PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)",
+          "summary": "",
+          "url": "https://pwn.ai/blog/pwnescape",
+          "discussion_url": "https://lobste.rs/s/np84oh",
+          "meta": "3 分 · 0 评论"
+        },
+        {
+          "id": "lob-7",
+          "title": "Ship Your Interpreter",
+          "summary": "",
+          "url": "https://www.basis.ai/blog/ship-your-interpreters/",
+          "discussion_url": "https://lobste.rs/s/rtd5gq",
+          "meta": "3 分 · 0 评论"
+        },
+        {
+          "id": "lob-8",
+          "title": "orib: Bringing back the old Reddit interface",
+          "summary": "",
+          "url": "https://github.com/rajtilakjee/orib",
+          "discussion_url": "https://lobste.rs/s/pllfoa",
+          "meta": "2 分 · 8 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2ex-1",
+          "title": "deepseek-v4.1-flash-1017 发布了",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249603",
+          "meta": "程序员 · 36 回复"
+        },
+        {
+          "id": "v2ex-2",
+          "title": "roadster 发布了，是真的假的这么牛",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249540",
+          "meta": "程序员 · 27 回复"
+        },
+        {
+          "id": "v2ex-3",
+          "title": "肉身在墙外，现在做物理机远程 Claude 的生意怎么样？",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249581",
+          "meta": "程序员 · 36 回复"
+        },
+        {
+          "id": "v2ex-4",
+          "title": "纹身试戴体验小工具",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249644",
+          "meta": "分享创造 · 3 回复"
+        },
+        {
+          "id": "v2ex-5",
+          "title": "群晖 Nas 管理软件 - 群晖助手，邀请你来体验。",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249655",
+          "meta": "分享创造 · 2 回复"
+        },
+        {
+          "id": "v2ex-6",
+          "title": "做了个 Roadster 网页游戏合集，已经整理了 21 款",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249688",
+          "meta": "分享创造 · 0 回复"
+        },
+        {
+          "id": "v2ex-7",
+          "title": "DeepSeek-V4.1-Flash-1017 发布了，今晚我让它通宵写代码（Day 4）",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249671",
+          "meta": "程序员 · 8 回复"
+        },
+        {
+          "id": "v2ex-8",
+          "title": "tibo 发推了，还有额度的赶紧用，重置卡先留着",
+          "summary": "",
+          "url": "https://www.v2ex.com/t/1249683",
+          "meta": "OpenAI · 6 回复"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    }
+  ],
+  "gaps": [
+    "Reddit（r/programming、r/technology、r/MachineLearning、r/LocalLLaMA）：JSON 返回 403 拦截页；本期 reddit 区为空，未编造条目。",
+    "X 账号经内置 namespace `x` 拉取并按窗内 start/end 过滤；elonmusk 以 Roadster / Starlink / 广告审美相关精选，政治类回复未收录。",
+    "OpenCode 入侵报道 HN 外链为 twitter.com/opencode 状态帖，未另找到独立官方博客，故 highlights 使用该真实 URL。",
+    "Lobsters 窗内最高分帖分数相对偏低（gopls 22）；NIST 种子悬赏等热帖落在上一窗，未重复计入本期 highlights。",
+    "无 label=rating / label=watch 的开放 Issue；config.temp_watches 与 ratings 未改。"
+  ]
+}
