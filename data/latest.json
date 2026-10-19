@@ -57,7 +57,7 @@
       "id": "h7",
       "title": "macOS 15.8.2 被报告破坏 OpenGL",
       "summary": "Apple 开发者论坛帖反馈 15.8.2 更新后 OpenGL 出问题；HN 232 分、241 评论，评论数高于分数。",
-      "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
+      "url": "https://developer.apple.com/forums/thread/850550",
       "source": "Hacker News / Apple Developer Forums"
     },
     {
@@ -289,7 +289,7 @@
           "id": "hn-8",
           "title": "macOS 15.8.2 Breaks OpenGL",
           "summary": "macOS 15.8.2 OpenGL 故障。",
-          "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
+          "url": "https://developer.apple.com/forums/thread/850550",
           "discussion_url": "https://news.ycombinator.com/item?id=50141909",
           "meta": "232 分 · 241 评论"
         },
