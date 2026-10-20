@@ -1,71 +1,71 @@
 {
-  "id": "2026-10-19",
-  "title": "技术早报 · 2026-10-19",
+  "id": "2026-10-20",
+  "title": "技术早报 · 2026-10-20",
   "window": {
-    "start": "2026-10-18T08:00:00+08:00",
-    "end": "2026-10-19T08:00:00+08:00"
+    "start": "2026-10-19T08:00:00+08:00",
+    "end": "2026-10-20T08:00:00+08:00"
   },
-  "generated_at": "2026-10-19T08:13:50+08:00",
+  "generated_at": "2026-10-20T08:13:43+08:00",
   "podcast": {
-    "src": "audio/2026-10-19.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月十九日这一期。\n\n先看头条。DeepSeek 推出搜索和网页抓取接口，每一千次成功请求零点七五美元，Hacker News 五百多分。Anthropic 发布内部就业研究：技术部门初级员工占比从百分之二十一降到百分之十四，员工身边智能体的工作时长已经是人的六倍。The Verge 报道，越来越多网站开始拦截 AI 智能体。一位系统管理员说 Namecheap 停用了他的全部域名。另外还有纽约州的游戏所有权法案、macOS 十五点八点二弄坏 OpenGL，以及一篇让智能体在隐空间思考、用文本调用工具的论文。Lobsters 上，关于 vibecoding 标签的争论拿到两百四十多分。\n\n特别关注三位。Elon 几乎整天在聊 Grok Bot：说团队每天做二十项左右改进，它还能打电话帮人订餐厅；他也吐槽租 AI 算力太难，并炫耀新 Roadster 加速比航母起飞的战斗机还快。Tibo 说现在街上都有人拦他要额度重置，打算印小卡片发；他还解释 Dots 暂时进不了欧盟，以后会上线。poteto 发布 pstack 零点一五点二七，新增生成形式化验证技能的元技能；她还总结说，关于智能体界面，大家分成了「大脑延伸」和「独立数字生命」两派。\n\n社区一瞥：V2EX 在吐槽 Codex 额度掉得太快，也有人做了 Liquid Glass 风格的 X 客户端。Reddit 这期通过 RSS 拿到了，LocalLLaMA 在聊用两台 DGX Spark 跑 DeepSeek V 四点一 Flash。\n\n以上就是今天的早报，明天早上八点北京时间见。\n"
+    "src": "audio/2026-10-20.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月二十日这一期。\n\n先看头条。Linux 七点三正式发布，这一版创下提交纪录，接近一万九千个非合并提交、三千多名开发者参与。Mistral 推出时序基础模型 Timestral，两亿参数级别就在三大公开基准上拿下第一，还能在普通中央处理器上跑。同一天，欧洲核子研究中心和 Mistral 签署意向书，要为对撞机物理做大规模基础模型。MiniMax 发布三点一 Flash，宣称智能体任务成本降七成、输出约两百字每秒；Inception 的 Mercury 三点零则把扩散语言模型推到一千字每秒量级。社区这边，Lobsters 正式停用 vibecoding 标签，改推 ai-tooling，并收紧仓库直链投稿。Hacker News 上也在热议：怎么处理自己看不懂却已经上线的人工智能代码。\n\n特别关注三位。Elon 宣布明年会把 SpaceX 股份送给美国每个孩子，并继续力推 Grok Bot，说它可能成为你最喜欢的员工；他也吐槽向云厂商租推理算力有多难。Tibo 的第十四天更新，桌面端终于能改线程里的旧消息；团队还帮 OpenCode 用户在攻击后恢复服务并退费，并开放 Daybreak Blue 防御向访问。poteto 问大家上周用 Grok Bot 做成了什么，还转发了把 Bot 设成 iPhone 操作按钮的更新。\n\n社区一瞥：Wine 移植到了 OpenBSD；Let's Encrypt 再加两路远程校验视角；GitHub Actions 和 Pages 又有过短暂降级。V2EX 有人吐槽账号被当成日本人整而降智，也有人送 Finder 路径工具激活码。Reddit 这期 JSON 接口被拦，技术与编程板块靠 RSS，机器学习子版暂时缺席。\n\n以上就是今天的早报，明天早上八点北京时间见。\n"
   },
   "highlights": [
     {
       "id": "h1",
-      "title": "DeepSeek 推出 Search / Fetch API：每千次成功请求 0.75 美元",
-      "summary": "自研搜索引擎驱动的网页搜索与抓取接口，账户级 QPS 各 5；经 DeepSeek Harness、Claude Code、Codex 的服务端调用北京时间 11 月 1 日起计费。HN 531 分、255 评论。",
-      "url": "https://api-docs.deepseek.com/guides/search/",
-      "source": "Hacker News / DeepSeek 文档"
+      "title": "Linux 7.3 发布：创纪录的 18765 次非合并提交",
+      "summary": "Linus 如期放出 7.3；LWN 称本版 3021 名开发者、其中 807 人为首次贡献。亮点含 binfmt_misc 扩展、大系统分组调度、failfs、fchroot()、BPF 全局 per-CPU 数据、sched_ext 收官、ntfs3 备选数据流、SMB 服务端改进等。HN 581 分、275 评论。",
+      "url": "https://lwn.net/Articles/1101143/",
+      "source": "Hacker News / LWN"
     },
     {
       "id": "h2",
-      "title": "Anthropic 内部就业研究：初级技术岗明显收缩",
-      "summary": "技术部门初级员工占比从 21% 降到 14%，初级技术招聘占比 27%→9%；到 8 月员工发起的交互式智能体工时是人的 6 倍，人类注意力成瓶颈。HN 107 分、190 评论；r/technology 同步热议。",
-      "url": "https://www.anthropic.com/research/employment-at-anthropic",
-      "source": "Hacker News / Anthropic"
+      "title": "Mistral Timestral：时序基础模型，209M 参数登顶三大基准",
+      "summary": "Timestral 四档规格（5M–209M），最大约 2.09 亿参数，在 GIFT-Eval、TIME、fev-bench 零样本预训练榜上均第一；支持多变量概率预测与过去/已知未来协变量，可在 CPU 推理。经 Mistral Forge 可微调。HN 531 分。",
+      "url": "https://mistral.ai/news/timestral/",
+      "source": "Hacker News / Mistral"
     },
     {
       "id": "h3",
-      "title": "网站开始对 AI 智能体关门",
-      "summary": "The Verge：Yelp 只放行付费数据授权的智能体，达美航空、摩根大通、嘉信理财拦截代理操作；Muse、Grok、Dots 等在亚马逊受阻。HN 133 分、125 评论。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "source": "Hacker News / The Verge"
+      "title": "CERN × Mistral：意向共建高能物理基础模型",
+      "summary": "双方签署意向书，拟基于 LHC 数十亿次模拟质子碰撞训练「Large Physics Model」，覆盖重建、粒子识别、异常信号与探测器设计评估；CERN 现有约 1 EB 实验数据。HN 312 分。",
+      "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "source": "Hacker News / CERN"
     },
     {
       "id": "h4",
-      "title": "Namecheap 被指查封并停用用户全部域名",
-      "summary": "r/sysadmin 用户发帖称其 Namecheap 账户下的域名全部被查封停用，引发对注册商风险的讨论；HN 394 分、187 评论。",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
-      "source": "Hacker News / Reddit"
+      "title": "MiniMax M3.1 Flash：智能体成本降约 70%，输出 200+ TPS",
+      "summary": "官方称匿名跑过 200 万亿 token 的 Space Bunny 即其早期版；在 AutomationBench、DeepSWE、OSWorld、CyberGym 等榜上明显提升。定价约 $0.15/$0.60 每百万输入/输出 token。权重稍后开源。HN 350 分。",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "source": "Hacker News / MiniMax"
     },
     {
       "id": "h5",
-      "title": "Hybrid Reasoning Agents：在隐空间思考、用文本行动",
-      "summary": "Stanford / UIUC / Together AI 等提出 HybridAgent，在潜在推理与文本工具调用间切换；11 个基准平均提升 10.4%，token 减少 35.5%–54.7%，推理快 1.8–2.6 倍。HN 158 分、95 评论。",
-      "url": "https://arxiv.org/abs/2610.18861",
-      "source": "Hacker News / arXiv"
+      "title": "Mercury 3：扩散 LLM 扩到 1000+ token/s",
+      "summary": "Inception 称 Mercury 3 相对 Mercury 1 参数规模超 40×，基准上对标 GPT-6 Luna / Claude Haiku 5.5，NVIDIA GPU 约 1068 token/s，上下文 1M；上市价 $0.20/$0.70 每百万，首发半价。HN 213 分。",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "source": "Hacker News / Inception"
     },
     {
       "id": "h6",
-      "title": "纽约州游戏所有权法案：买游戏应是拥有而非授权",
-      "summary": "Tom's Hardware：法案要求消费者真正拥有所购游戏，并要求发行商在停止支持后保持游戏可用；HN 426 分、197 评论。",
-      "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
-      "source": "Hacker News / Tom's Hardware"
+      "title": "Lobsters：停用 vibecoding，上线 ai-tooling，禁直投代码仓库",
+      "summary": "版主 355E3B 更新站规：收紧话题与自我推广；`vibecoding` 标为 inactive，新标签 `ai-tooling` 仅覆盖 AI/LLM 工具本身的设计与开发；即将禁止直接提交代码仓库链接。315 分、269 评论。",
+      "url": "https://lobste.rs/s/h0eate",
+      "source": "Lobsters"
     },
     {
       "id": "h7",
-      "title": "macOS 15.8.2 被报告破坏 OpenGL",
-      "summary": "Apple 开发者论坛帖反馈 15.8.2 更新后 OpenGL 出问题；HN 232 分、241 评论，评论数高于分数。",
-      "url": "https://developer.apple.com/forums/thread/850550",
-      "source": "Hacker News / Apple Developer Forums"
+      "title": "Ask HN：怎么处理自己看不懂却已经上线的 AI 代码？",
+      "summary": "讨论热度高于分数（228 分、369 评论），聚焦审查债务、责任边界与上线流程。同期还有 Tmux+Claude Code 工作流、Harness Engineering 等 AI 写码实践帖。",
+      "url": "https://news.ycombinator.com/item?id=50151036",
+      "source": "Hacker News"
     },
     {
       "id": "h8",
-      "title": "AI 写码反思：Lobsters vibecoding 标签之争；Show HN Sphinx",
-      "summary": "Lobsters 元讨论「vibecoding 标签已从无用变成有害」245 分、239 评论；Show HN 的 Sphinx 是个 hook，上线前考你 AI 写的代码（HN 239 分、81 评论）。",
-      "url": "https://lobste.rs/s/ggpwfi",
-      "source": "Lobsters / Hacker News"
+      "title": "Wine 移植到 OpenBSD；Let's Encrypt 再加两路远程校验",
+      "summary": "OpenBSD ports 邮件列表宣布 Wine 移植（HN 486 分）；Let's Encrypt 增加两个额外远程视角做域名验证，缓解 BGP 劫持类风险（HN 240 分）。另有 Savannah 警员向 ICE 配偶泄露 Flock 登录（HN 624 分）引发监控讨论。",
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "source": "Hacker News / OpenBSD / Let's Encrypt"
     }
   ],
   "accounts": [
@@ -75,65 +75,45 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "Grok Bot 密集推介：「Our team makes around 20 improvements per day to Grok @Bot」；另转述其能打电话订餐厅、「like hiring an incredibly competent employee」。",
-          "url": "https://x.com/elonmusk/status/2111642151138546118",
-          "time": "2026-10-18T10:14:55+08:00",
+          "summary": "「Next year, I will give one of my SpaceX shares to every kid in America. This will be the first of many.」约五十万赞、三万四千回复；并回复「giving shares… directly to the people is the way」。",
+          "url": "https://x.com/elonmusk/status/2112089556615123114",
+          "time": "2026-10-19T15:52:45+08:00",
           "interactions": [
             {
-              "summary": "Upgrades（引用：电脑任务快 3 倍、可接 X Chat）",
-              "url": "https://x.com/elonmusk/status/2111642949071364231"
+              "summary": "Yes, giving shares… directly to the people is the way",
+              "url": "https://x.com/elonmusk/status/2112211740884975910"
             },
             {
-              "summary": "can call restaurants by phone and book you a table",
-              "url": "https://x.com/elonmusk/status/2111867437238853726"
-            },
-            {
-              "summary": "like hiring an incredibly competent employee",
-              "url": "https://x.com/elonmusk/status/2111914748648296655"
-            },
-            {
-              "summary": "回应训练数据：数据多半对训练无用，但需要调试改进产品",
-              "url": "https://x.com/elonmusk/status/2111638200280363146"
+              "summary": "回应 Anthropic 公益股：「This is what I will be doing」",
+              "url": "https://x.com/elonmusk/status/2111980598084698114"
             }
           ]
         },
         {
           "id": "elon-2",
-          "summary": "「What it’s like trying to rent AI/SI compute」吐槽算力难租（约五千九百赞）；回复 Anthropic 公益基金（首批 5% 股份）称「I recommend giving the shares directly to the public」。",
-          "url": "https://x.com/elonmusk/status/2111930742615802163",
-          "time": "2026-10-19T05:21:41+08:00",
+          "summary": "继续推 Grok Bot：「Hire Grok @Bot today. You won’t regret it.」；另称「Grok @Bot might turn out to be your favorite employee」。",
+          "url": "https://x.com/elonmusk/status/2112083685872644421",
+          "time": "2026-10-19T15:29:25+08:00",
           "interactions": [
             {
-              "summary": "@AnthropicAI: giving the shares directly to the public",
-              "url": "https://x.com/elonmusk/status/2111914396490604547"
+              "summary": "Grok @Bot might turn out to be your favorite employee",
+              "url": "https://x.com/elonmusk/status/2112219181500281276"
             },
             {
-              "summary": "Optimus and Cybercab will be the vast majority of Tesla’s value",
-              "url": "https://x.com/elonmusk/status/2111683964721037767"
+              "summary": "转发 poteto「what did you get done with grok @bot last week?」",
+              "url": "https://x.com/elonmusk/status/2112259494399107099"
             }
           ]
         },
         {
           "id": "elon-3",
-          "summary": "Roadster 与 Starship：称新 Roadster「accelerates faster than a fighter jet taking off from an aircraft carrier」；与 Yann LeCun 就压缩空气推力互怼；另称 X 使用量创历史新高。",
-          "url": "https://x.com/elonmusk/status/2111838943016833235",
-          "time": "2026-10-18T23:16:54+08:00",
+          "summary": "「So many people are going to get one-shotted by super persuasive super intelligences and I might be one of them」（约六万八千赞）；另吐槽向 AWS/GCP 租推理算力，以便把负载从训练集群挪开。",
+          "url": "https://x.com/elonmusk/status/2112070071401238607",
+          "time": "2026-10-19T14:35:20+08:00",
           "interactions": [
             {
-              "summary": "@ylecun: I fart in your general direction",
-              "url": "https://x.com/elonmusk/status/2111829939624300698"
-            },
-            {
-              "summary": "SpaceX 竞争对手的未来计划也落后于 Starship",
-              "url": "https://x.com/elonmusk/status/2111865541472190881"
-            },
-            {
-              "summary": "FSD：We will add a large font option to the UI",
-              "url": "https://x.com/elonmusk/status/2111837668958978519"
-            },
-            {
-              "summary": "𝕏 is seeing all-time high usage",
-              "url": "https://x.com/elonmusk/status/2111842588126818619"
+              "summary": "SpaceX 试图向云厂商租 inference compute 的对话写照",
+              "url": "https://x.com/elonmusk/status/2112017286764659176"
             }
           ]
         }
@@ -145,37 +125,37 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "「People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out」（约六千六百赞）；被问一百万粉丝时会不会重置，答「We’ll see」。",
-          "url": "https://x.com/thsottiaux/status/2111918768733753664",
-          "time": "2026-10-19T04:34:06+08:00",
+          "summary": "Day 14：桌面端可编辑线程内历史消息（「Long time requested」）；约八千二百赞、两千回复。有人问是否像 steer，他答「Registers as time travel」。",
+          "url": "https://x.com/thsottiaux/status/2111990254408434095",
+          "time": "2026-10-19T09:18:10+08:00",
           "interactions": [
             {
-              "summary": "1M followers reset? — We’ll see",
-              "url": "https://x.com/thsottiaux/status/2111918635849801739"
+              "summary": "Registers as time travel",
+              "url": "https://x.com/thsottiaux/status/2111994295364571327"
             }
           ]
         },
         {
           "id": "tibo-2",
-          "summary": "Dots 欧盟可用性：在别处创建的 dot 到欧盟仍可继续使用，且「dots are coming to the EU in the future」；补充「We do care about local regulation」。",
-          "url": "https://x.com/thsottiaux/status/2111832959842161136",
-          "time": "2026-10-18T22:53:08+08:00",
+          "summary": "与 OpenCode 协作：攻击后让同为 OpenAI API 客户的用户恢复服务并退还被抽走的额度；并开放 Daybreak Blue 防御向「cyber permissive」访问。约七千五百赞。",
+          "url": "https://x.com/thsottiaux/status/2112034063934742720",
+          "time": "2026-10-19T12:12:15+08:00",
           "interactions": [
             {
-              "summary": "We do care about local regulation",
-              "url": "https://x.com/thsottiaux/status/2111941223187710114"
+              "summary": "附 chatgpt.com/cyber 链接",
+              "url": "https://x.com/thsottiaux/status/2112034328549216593"
             }
           ]
         },
         {
           "id": "tibo-3",
-          "summary": "发问「What’s cooking today」（约四千九百赞、两千二百多回复）；此前澄清截图是 OpenAI 工作 dot 与个人 dot 协作，两个账号完全独立。",
-          "url": "https://x.com/thsottiaux/status/2111849858374177222",
-          "time": "2026-10-19T00:00:17+08:00",
+          "summary": "「I bought a new domain and I’m very excited for it. Very」（约七千五百赞）；晚些引用 OpenAIDevs 的 Codex 直播说「Day 15/ We're cooked」。",
+          "url": "https://x.com/thsottiaux/status/2112039275344941371",
+          "time": "2026-10-19T12:32:57+08:00",
           "interactions": [
             {
-              "summary": "work dot coordinating with my personal dot",
-              "url": "https://x.com/thsottiaux/status/2111687989328011357"
+              "summary": "Day 15/ We're cooked（引用 OpenAIDevs Codex 直播）",
+              "url": "https://x.com/thsottiaux/status/2112268918681485431"
             }
           ]
         }
@@ -187,37 +167,37 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "pstack v0.15.27 发布 /create-formal-verification-skill（beta）：与 /create-verification-skill 类似的元技能，按你要验证的特性生成新技能与形式化验证套件。",
-          "url": "https://x.com/poteto/status/2111926622278521253",
-          "time": "2026-10-19T05:05:19+08:00",
+          "summary": "发问「what did you get done with grok @bot last week?」（约一千六百赞、八百多回复）；并让 Bot 根据该线程和对她的了解，提出改进 bots/workflows 的想法。",
+          "url": "https://x.com/poteto/status/2112246281016119780",
+          "time": "2026-10-20T02:15:31+08:00",
           "interactions": [
             {
-              "summary": "附链接",
-              "url": "https://x.com/poteto/status/2111926733985444085"
+              "summary": "@bot watch this thread… propose ideas to improve my bots and workflows",
+              "url": "https://x.com/poteto/status/2112264935334126033"
             }
           ]
         },
         {
           "id": "poteto-2",
-          "summary": "总结「chat 是否智能体 UI 最终形态」的回复：两派正在形成——把智能体视为自身心智延伸（cyborg），或视为能自主决策的独立人工存在。",
-          "url": "https://x.com/poteto/status/2111911178503082422",
-          "time": "2026-10-19T04:03:57+08:00",
+          "summary": "「your @bot is now just one button away!」——呼应官方把 Grok Bot 绑到 iPhone Action Button；另回复 Runway 可在 Bot 里装 MCP 插件。",
+          "url": "https://x.com/poteto/status/2112261641505231330",
+          "time": "2026-10-20T03:16:33+08:00",
           "interactions": [
             {
-              "summary": "回应 julianlehr「协作很多是非语言的」：very good point",
-              "url": "https://x.com/poteto/status/2111926912960610463"
+              "summary": "Runway MCP：you can install the plugin here",
+              "url": "https://x.com/poteto/status/2112278987661881540"
             }
           ]
         },
         {
           "id": "poteto-3",
-          "summary": "回应 Grok Bot 打开链接的问题：「I believe we’ve fixed but waiting for approval」；另推荐纪录片 You Can See Everything（HN 当天有文章批评该片具误导性）。",
-          "url": "https://x.com/poteto/status/2111871310712414674",
-          "time": "2026-10-19T01:25:31+08:00",
+          "summary": "被官宣为 AIE Code Summit（11/10–12，SF）演讲嘉宾之一（Principal Engineer @ SpaceX）；另提示可让 Bot 给 Cursor Cloud/Project Agent 发消息。",
+          "url": "https://x.com/poteto/status/2112317822533763290",
+          "time": "2026-10-20T06:25:48+08:00",
           "interactions": [
             {
-              "summary": "You Can See Everything is like The Prestige…",
-              "url": "https://x.com/poteto/status/2111667941171466566"
+              "summary": "you can tell your bot to message your cloud agent or project agent",
+              "url": "https://x.com/poteto/status/2112303622285668402"
             }
           ]
         }
@@ -231,131 +211,131 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-          "summary": "DeepSeek 搜索/抓取 API 定价。",
-          "url": "https://api-docs.deepseek.com/guides/search/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50138531",
-          "meta": "531 分 · 255 评论"
+          "title": "Linux 7.3",
+          "summary": "内核 7.3 正式发布，创纪录提交量。",
+          "url": "https://lwn.net/Articles/1101143/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50149392",
+          "meta": "581 分 · 275 评论"
         },
         {
           "id": "hn-2",
-          "title": "Zuckerberg's Meta Takes Down No Kings Instagram During Protest Day",
-          "summary": "Meta 在抗议日下架 No Kings Instagram 账号（MeidasNews）。",
-          "url": "https://meidasnews.com/news/zuckerbergs-meta-takes-down-no-kings-instagram-during-massive-protest-day",
-          "discussion_url": "https://news.ycombinator.com/item?id=50136881",
-          "meta": "565 分 · 384 评论"
+          "title": "Timestral: Mistral's time-series foundation models",
+          "summary": "Mistral 时序基础模型家族。",
+          "url": "https://mistral.ai/news/timestral/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50150434",
+          "meta": "531 分 · 98 评论"
         },
         {
           "id": "hn-3",
-          "title": "NY announces game ownership bill requiring ownership rather than licensing",
-          "summary": "纽约州游戏所有权法案。",
-          "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
-          "discussion_url": "https://news.ycombinator.com/item?id=50136536",
-          "meta": "426 分 · 197 评论"
+          "title": "Wine ported to OpenBSD",
+          "summary": "Wine 移植到 OpenBSD。",
+          "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+          "discussion_url": "https://news.ycombinator.com/item?id=50152307",
+          "meta": "486 分 · 162 评论"
         },
         {
           "id": "hn-4",
-          "title": "Namecheap just seized and disabled all my domains",
-          "summary": "Namecheap 被指停用用户全部域名。",
-          "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50142866",
-          "meta": "394 分 · 187 评论"
+          "title": "I no longer care to work on any Ruby gems so I've archived all my repositories",
+          "summary": "维护者归档全部 Ruby gems 仓库。",
+          "url": "https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository",
+          "discussion_url": "https://news.ycombinator.com/item?id=50154518",
+          "meta": "413 分 · 393 评论"
         },
         {
           "id": "hn-5",
-          "title": "RepRapMicron",
-          "summary": "RepRapMicron：微米级 RepRap 项目。",
-          "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
-          "discussion_url": "https://news.ycombinator.com/item?id=50141076",
-          "meta": "324 分 · 51 评论"
+          "title": "MiniMax M3.1 Flash",
+          "summary": "MiniMax 新 Flash 模型与定价。",
+          "url": "https://www.minimax.io/blog/minimax-m31f",
+          "discussion_url": "https://news.ycombinator.com/item?id=50154540",
+          "meta": "350 分 · 153 评论"
         },
         {
           "id": "hn-6",
-          "title": "Someone behind the software",
-          "summary": "Karri Saarinen：软件背后的人。",
-          "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50142573",
-          "meta": "280 分 · 117 评论"
+          "title": "CERN and Mistral sign a statement of intent",
+          "summary": "CERN 与 Mistral 战略合作意向。",
+          "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50153630",
+          "meta": "312 分 · 56 评论"
         },
         {
           "id": "hn-7",
-          "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-          "summary": "上线前用 AI 代码考你的 hook。",
-          "url": "https://sphinx-six-theta.vercel.app/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50137950",
-          "meta": "239 分 · 81 评论"
+          "title": "Android apps running native on macOS",
+          "summary": "Mac.apk：安卓应用原生跑在 macOS。",
+          "url": "https://github.com/kksimp/Mac.apk",
+          "discussion_url": "https://news.ycombinator.com/item?id=50154624",
+          "meta": "241 分 · 116 评论"
         },
         {
           "id": "hn-8",
-          "title": "macOS 15.8.2 Breaks OpenGL",
-          "summary": "macOS 15.8.2 OpenGL 故障。",
-          "url": "https://developer.apple.com/forums/thread/850550",
-          "discussion_url": "https://news.ycombinator.com/item?id=50141909",
-          "meta": "232 分 · 241 评论"
+          "title": "Let's Encrypt is adding two additional remote perspectives",
+          "summary": "域名验证再加两路远程视角。",
+          "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+          "discussion_url": "https://news.ycombinator.com/item?id=50150809",
+          "meta": "240 分 · 76 评论"
         },
         {
           "id": "hn-9",
-          "title": "Parser Combinators",
-          "summary": "解析器组合子入门。",
-          "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50139067",
-          "meta": "219 分 · 77 评论"
+          "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+          "summary": "上线自己看不懂的 AI 代码怎么办。",
+          "url": "https://news.ycombinator.com/item?id=50151036",
+          "discussion_url": "https://news.ycombinator.com/item?id=50151036",
+          "meta": "228 分 · 369 评论"
         },
         {
           "id": "hn-10",
-          "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
-          "summary": "Meta 新条款仍保留宽泛抓取授权。",
-          "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50139692",
-          "meta": "216 分 · 60 评论"
+          "title": "Mercury 3: Diffusion at scale",
+          "summary": "Inception 扩散 LLM Mercury 3。",
+          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+          "discussion_url": "https://news.ycombinator.com/item?id=50155245",
+          "meta": "213 分 · 84 评论"
         },
         {
           "id": "hn-11",
-          "title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
-          "summary": "亚微米级开源 3D 运动控制平台。",
-          "url": "https://github.com/0x23/MicroManipulatorStepper",
-          "discussion_url": "https://news.ycombinator.com/item?id=50140001",
-          "meta": "170 分 · 13 评论"
+          "title": "DeepSeek V4.1 Flash 1017 (Max)",
+          "summary": "Artificial Analysis 上的 DeepSeek V4.1 Flash 评测。",
+          "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+          "discussion_url": "https://news.ycombinator.com/item?id=50148452",
+          "meta": "186 分 · 90 评论"
         },
         {
           "id": "hn-12",
-          "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-          "summary": "隐空间思考 + 文本行动的智能体。",
-          "url": "https://arxiv.org/abs/2610.18861",
-          "discussion_url": "https://news.ycombinator.com/item?id=50145337",
-          "meta": "158 分 · 95 评论"
+          "title": "The reverts will continue until morale improves",
+          "summary": "PostgreSQL 相关回滚持续到士气改善（Peter Eisentraut）。",
+          "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
+          "discussion_url": "https://news.ycombinator.com/item?id=50156206",
+          "meta": "181 分 · 30 评论"
         },
         {
           "id": "hn-13",
-          "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-          "summary": "Anthropic 提议的 AI 安全法案触发门槛。",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-          "discussion_url": "https://news.ycombinator.com/item?id=50141429",
-          "meta": "153 分 · 161 评论"
+          "title": "Degraded availability for GitHub Actions, Pages and Webhooks",
+          "summary": "GitHub Actions/Pages/Webhooks 降级事故。",
+          "url": "https://www.githubstatus.com/incidents/8tzbpcnl75jp",
+          "discussion_url": "https://news.ycombinator.com/item?id=50153934",
+          "meta": "148 分 · 124 评论"
         },
         {
           "id": "hn-14",
-          "title": "Websites are closing their doors to AI agents",
-          "summary": "网站拦截 AI 智能体。",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-          "discussion_url": "https://news.ycombinator.com/item?id=50141657",
-          "meta": "133 分 · 125 评论"
+          "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+          "summary": "用 Tmux 驾驭 Claude Code 的实践。",
+          "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50148855",
+          "meta": "147 分 · 112 评论"
         },
         {
           "id": "hn-15",
-          "title": "Will it be a golden age or a dark age for mathematics (and science)?",
-          "summary": "陶哲轩：数学与科学的黄金时代还是黑暗时代。",
-          "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50141681",
-          "meta": "122 分 · 159 评论"
+          "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+          "summary": "洗掉 AI 写作腔的 Qwen3-4B。",
+          "url": "https://100toolkit.com/blog/deslop-model/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50151928",
+          "meta": "145 分 · 107 评论"
         },
         {
           "id": "hn-16",
-          "title": "How employment is changing at Anthropic",
-          "summary": "Anthropic 内部就业变化研究。",
-          "url": "https://www.anthropic.com/research/employment-at-anthropic",
-          "discussion_url": "https://news.ycombinator.com/item?id=50139873",
-          "meta": "107 分 · 190 评论"
+          "title": "Plex vulnerabilities being exploited in the wild to drop a cryptominer",
+          "summary": "Plex 漏洞被用于投放挖矿。",
+          "url": "http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50152321",
+          "meta": "140 分 · 65 评论"
         }
       ]
     },
@@ -364,68 +344,68 @@
       "source": "Lobsters",
       "items": [
         {
-          "id": "lob-1",
-          "title": "It's enough - vibecoding tag crossed from useless to harmful",
-          "summary": "元讨论：vibecoding 标签弊大于利？",
-          "url": "https://lobste.rs/s/ggpwfi",
-          "discussion_url": "https://lobste.rs/s/ggpwfi",
-          "meta": "245 分 · 239 评论"
+          "id": "lo-1",
+          "title": "Updates to site guidelines and AI/LLM tags",
+          "summary": "停用 vibecoding，新增 ai-tooling，收紧仓库投稿。",
+          "url": "https://lobste.rs/s/h0eate",
+          "discussion_url": "https://lobste.rs/s/h0eate",
+          "meta": "315 分 · 269 评论"
         },
         {
-          "id": "lob-2",
-          "title": "Men in tech #YesAllMen",
-          "summary": "EMF 2026 演讲视频。",
-          "url": "https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen",
-          "discussion_url": "https://lobste.rs/s/mp8qye",
-          "meta": "51 分 · 4 评论"
+          "id": "lo-2",
+          "title": "Wine ported to OpenBSD",
+          "summary": "OpenBSD ports 邮件里的 Wine 移植。",
+          "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+          "discussion_url": "https://lobste.rs/s/gqepzd",
+          "meta": "80 分 · 12 评论"
         },
         {
-          "id": "lob-3",
-          "title": "The Brain Sandwich",
-          "summary": "AI 写码下的「大脑三明治」。",
-          "url": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
-          "discussion_url": "https://lobste.rs/s/k5omum",
-          "meta": "38 分 · 14 评论"
+          "id": "lo-3",
+          "title": "One Hash Bloom Filters",
+          "summary": "单哈希布隆过滤器。",
+          "url": "https://www.calabro.io/ohbf",
+          "discussion_url": "https://lobste.rs/s/mpytbn",
+          "meta": "39 分 · 6 评论"
         },
         {
-          "id": "lob-4",
-          "title": "ARP! Tell your network to explain itself",
-          "summary": "ARP 协议入门。",
-          "url": "https://benjcal.space/blog/arp-tell-your-network-to-explain-itself/",
-          "discussion_url": "https://lobste.rs/s/mmvhup",
-          "meta": "29 分 · 13 评论"
+          "id": "lo-4",
+          "title": "What the heck is /pkg?",
+          "summary": "聊聊 /pkg 是什么。",
+          "url": "https://anderegg.ca/2026/10/18/what-the-heck-is-pkg",
+          "discussion_url": "https://lobste.rs/s/w6xosj",
+          "meta": "30 分 · 5 评论"
         },
         {
-          "id": "lob-5",
-          "title": "A New Way to Think About Borrow Checking (In Reverse)",
-          "summary": "反向思考借用检查。",
-          "url": "https://verdagon.dev/blog/reverse-borrow-checking",
-          "discussion_url": "https://lobste.rs/s/vwgrix",
-          "meta": "27 分 · 2 评论"
+          "id": "lo-5",
+          "title": "Beginning of the Ende (a community Deno fork)",
+          "summary": "社区 Deno 分支 Ende。",
+          "url": "https://blog.webb.page/WM-105",
+          "discussion_url": "https://lobste.rs/s/8ejwsp",
+          "meta": "29 分 · 20 评论"
         },
         {
-          "id": "lob-6",
-          "title": "Inside the Intel 8087 chip: floating-point addition and subtraction",
-          "summary": "Intel 8087 浮点加减法微码。",
-          "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
-          "discussion_url": "https://lobste.rs/s/nbxnh7",
-          "meta": "13 分 · 0 评论"
+          "id": "lo-6",
+          "title": "Tor VPN Beta: What we've learned building our own VPN for Android",
+          "summary": "Tor 自研 Android VPN Beta 经验。",
+          "url": "https://blog.torproject.org/tor-vpn-beta/",
+          "discussion_url": "https://lobste.rs/s/s3w7hd",
+          "meta": "29 分 · 5 评论"
         },
         {
-          "id": "lob-7",
-          "title": "My obituary for programming",
-          "summary": "给编程写的讣告。",
-          "url": "https://dumbmatter.com/2026/10/programming-obituary/",
-          "discussion_url": "https://lobste.rs/s/wtobpt",
-          "meta": "10 分 · 5 评论"
+          "id": "lo-7",
+          "title": "Making all divisions slower to fix a bug in 0.000…% of cases",
+          "summary": "Futhark：为极罕见除法 bug 让全体除法变慢。",
+          "url": "https://futhark-lang.org/blog/2026-10-14-defining-division.html",
+          "discussion_url": "https://lobste.rs/s/a9f6z1",
+          "meta": "25 分 · 2 评论"
         },
         {
-          "id": "lob-8",
-          "title": "It's time to talk about TEEs",
-          "summary": "可信执行环境（TEE）。",
-          "url": "https://alinush.github.io//tee",
-          "discussion_url": "https://lobste.rs/s/edli0x",
-          "meta": "8 分 · 2 评论"
+          "id": "lo-8",
+          "title": "Finding a home amidst the wreckage",
+          "summary": "在残骸中找家（文化/Linux）。",
+          "url": "https://blog.zerodogg.org/2026/10/18/finding-a-home-amidst-the-wreckage/",
+          "discussion_url": "https://lobste.rs/s/mpdk1e",
+          "meta": "24 分 · 3 评论"
         }
       ]
     },
@@ -434,60 +414,60 @@
       "source": "V2EX",
       "items": [
         {
-          "id": "v2ex-1",
-          "title": "做了一个 X 的第三方客户端， Liquid Glass，全流程翻译",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249743",
-          "meta": "分享创造 · 31 回复"
+          "id": "v2-1",
+          "title": "[送激活码] FinderNav：跟随 Finder 窗口的路径工具",
+          "summary": "作者送 80 个激活码。",
+          "url": "https://www.v2ex.com/t/1249891",
+          "meta": "106 回复"
         },
         {
-          "id": "v2ex-2",
-          "title": "最近这 codex 额度消耗快的离谱啊， 5x 套餐随便几个问题 10% 额度没了",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249696",
-          "meta": "程序员 · 28 回复"
+          "id": "v2-2",
+          "title": "学生优惠 $8.99 开 2.5 年 Google AI Pro + YouTube Premium + 5TB",
+          "summary": "分享学生套餐薅法。",
+          "url": "https://www.v2ex.com/t/1249913",
+          "meta": "80 回复"
         },
         {
-          "id": "v2ex-3",
-          "title": "Claude 过验证后丝滑升 5x",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249762",
-          "meta": "问与答 · 20 回复"
+          "id": "v2-3",
+          "title": "GPT 当我日本人整，账号降智成 5.6LUNA，想问 Claude",
+          "summary": "模型路由/降智吐槽与 Claude 使用经验。",
+          "url": "https://www.v2ex.com/t/1250142",
+          "meta": "20 回复"
         },
         {
-          "id": "v2ex-4",
-          "title": "Claude 终于还是被封了，再也不跳了",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249830",
-          "meta": "问与答 · 11 回复"
+          "id": "v2-4",
+          "title": "用 Mac 控制家里所有安卓设备（不走云端）",
+          "summary": "跨设备控制小工具，招安卓内测。",
+          "url": "https://www.v2ex.com/t/1250136",
+          "meta": "6 回复"
         },
         {
-          "id": "v2ex-5",
-          "title": "为什么作为日常聊天询问 感觉 gemini 比 gpt 好用",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249756",
-          "meta": "问与答 · 22 回复"
+          "id": "v2-5",
+          "title": "备案防注销：做了个 macOS 侧边栏笔记 iFolo Note",
+          "summary": "顺便放站点保备案。",
+          "url": "https://www.v2ex.com/t/1250121",
+          "meta": "6 回复"
         },
         {
-          "id": "v2ex-6",
-          "title": "分享一个米家的 Windows 桌面客户端",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249821",
-          "meta": "分享发现 · 6 回复"
+          "id": "v2-6",
+          "title": "macmini 文件共享 SMB 也忒拉胯",
+          "summary": "本机 SMB 体验吐槽。",
+          "url": "https://www.v2ex.com/t/1250146",
+          "meta": "5 回复"
         },
         {
-          "id": "v2ex-7",
-          "title": "Obsidian 开源了新的文本绘图库",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249842",
-          "meta": "前端开发 · 1 回复"
+          "id": "v2-7",
+          "title": "不要再撸 Google Bug",
+          "summary": "劝退刷 Google 漏洞羊毛。",
+          "url": "https://www.v2ex.com/t/1250163",
+          "meta": "2 回复"
         },
         {
-          "id": "v2ex-8",
-          "title": "一个 1 兆瓦的 AI 机柜，用 54V 光铜排就要 200 公斤：英伟达要把机柜供电换成 800V 直流",
-          "summary": "",
-          "url": "https://www.v2ex.com/t/1249837",
-          "meta": "硬件 · 0 回复"
+          "id": "v2-8",
+          "title": "你会在虚拟机里跑你不信任的代码吗？",
+          "summary": "隔离执行讨论。",
+          "url": "https://www.v2ex.com/t/1250166",
+          "meta": "1 回复"
         }
       ]
     },
@@ -496,83 +476,81 @@
       "source": "Reddit",
       "items": [
         {
-          "id": "reddit-1",
-          "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-          "summary": "Anthropic 就业研究的社区讨论。",
-          "url": "https://www.reddit.com/r/technology/comments/1x8q6qb/anthropic_says_its_workforce_has_become_less/",
-          "meta": "r/technology · Top 24h（RSS，无分数）"
+          "id": "rd-1",
+          "title": "GitHub Actions is down once again",
+          "summary": "r/programming：Actions 再次宕机讨论。",
+          "url": "https://www.reddit.com/r/programming/comments/1xa0z6c/github_actions_is_down_once_again/",
+          "meta": "r/programming · RSS"
         },
         {
-          "id": "reddit-2",
-          "title": "Dutch cloud services concerned after U.S. request leads to Amsterdam server seizure",
-          "summary": "美方请求导致阿姆斯特丹服务器被扣押。",
-          "url": "https://www.reddit.com/r/technology/comments/1x8xlkf/dutch_cloud_services_concerned_after_us_request/",
-          "meta": "r/technology · Top 24h（RSS，无分数）"
+          "id": "rd-2",
+          "title": "The reverts will continue until morale improves [PostgreSQL 19]",
+          "summary": "与 HN 同源的 PG 回滚文。",
+          "url": "https://www.reddit.com/r/programming/comments/1xa9h5w/the_reverts_will_continue_until_morale_improves/",
+          "meta": "r/programming · RSS"
         },
         {
-          "id": "reddit-3",
-          "title": "Tesla 'Cannot Guarantee' Roadster Reservation Holders Will Ever Get a Car",
-          "summary": "Roadster 预订者未必能拿到车。",
-          "url": "https://www.reddit.com/r/technology/comments/1x8rutm/tesla_cannot_guarantee_roadster_reservation/",
-          "meta": "r/technology · Top 24h（RSS，无分数）"
+          "id": "rd-3",
+          "title": "Developers Are Using AI to Strip Ads and Tracking From Smart TVs",
+          "summary": "用 AI 给智能电视去广告/追踪。",
+          "url": "https://www.reddit.com/r/technology/comments/1xaaong/developers_are_using_ai_to_strip_ads_and_tracking/",
+          "meta": "r/technology · RSS"
         },
         {
-          "id": "reddit-4",
-          "title": "A Subtle Github Bug: Where Did My Merged Code Went Missing?",
-          "summary": "GitHub 合并代码「消失」的隐蔽 bug。",
-          "url": "https://www.reddit.com/r/programming/comments/1x9095f/a_subtle_github_bug_where_did_my_merged_code_went/",
-          "meta": "r/programming · Top 24h（RSS，无分数）"
+          "id": "rd-4",
+          "title": "Anthropic wants AI models blocked only if they threaten >$1B damage or >50 deaths",
+          "summary": "Anthropic 安全阈值阈值讨论。",
+          "url": "https://www.reddit.com/r/technology/comments/1x9vzfw/anthropic_wants_ai_models_blocked_only_if_they/",
+          "meta": "r/technology · RSS"
         },
         {
-          "id": "reddit-5",
-          "title": "Automated Accessibility Testing at Slack",
-          "summary": "Slack 的自动化无障碍测试。",
-          "url": "https://www.reddit.com/r/programming/comments/1x966u5/automated_accessibility_testing_at_slack/",
-          "meta": "r/programming · Top 24h（RSS，无分数）"
+          "id": "rd-5",
+          "title": "AI agents chasing a £465 train refund invented excuses, leaked medical data…",
+          "summary": "智能体退票翻车：编造借口、泄露病历。",
+          "url": "https://www.reddit.com/r/technology/comments/1xa43pp/ai_agents_chasing_a_465_train_refund_invented/",
+          "meta": "r/technology · RSS"
         },
         {
-          "id": "reddit-6",
-          "title": "Beating Warcraft III’s insane AI with self-play reinforcement learning on one desktop [P]",
-          "summary": "单机自博弈强化学习击败魔兽三疯狂 AI。",
-          "url": "https://www.reddit.com/r/MachineLearning/comments/1x9c5ty/beating_warcraft_iiis_insane_ai_with_selfplay/",
-          "meta": "r/MachineLearning · Top 24h（RSS，无分数）"
+          "id": "rd-6",
+          "title": "Campfire port in Java is faster than Rust (JEP 544 AOT)",
+          "summary": "Java AOT 与 Rust 性能对比讨论。",
+          "url": "https://www.reddit.com/r/programming/comments/1xa3cyt/campfire_port_in_java_is_faster_than_rust_some/",
+          "meta": "r/programming · RSS"
         },
         {
-          "id": "reddit-7",
-          "title": "Proof Before Reuse: showing agents only what later sessions reproduced keeps a poisoned skill out of procedural memory [R]",
-          "summary": "防止被投毒技能进入智能体程序性记忆。",
-          "url": "https://www.reddit.com/r/MachineLearning/comments/1x975ea/proof_before_reuse_showing_agents_only_what_later/",
-          "meta": "r/MachineLearning · Top 24h（RSS，无分数）"
+          "id": "rd-7",
+          "title": "In Context - Rich Hickey (Clojure/Conj 2026)",
+          "summary": "Rich Hickey 新演讲。",
+          "url": "https://www.reddit.com/r/programming/comments/1x9x7ar/in_context_rich_hickey_clojureconj_2026/",
+          "meta": "r/programming · RSS"
         },
         {
-          "id": "reddit-8",
-          "title": "DeepSeek V4.1 Flash 1017 on 2x DGX Spark: 57 tok/s text, 92 tok/s code with TensorFold (2.1-2.3x the vLLM kit)",
-          "summary": "两台 DGX Spark 跑 DeepSeek V4.1 Flash。",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8q6t6/deepseek_v41_flash_1017_on_2x_dgx_spark_57_toks/",
-          "meta": "r/LocalLLaMA · Top 24h（RSS，无分数）"
+          "id": "rd-8",
+          "title": "RTX 5090 Laptop on Linux: GPU hangs with Xid 8 — CUDA graphs problem and still no fix?",
+          "summary": "r/LocalLLaMA：笔电 5090 Linux 挂起。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa7qs8/rtx_5090_laptop_on_linux_gpu_hangs_with_xid_8/",
+          "meta": "r/LocalLLaMA · RSS"
         },
         {
-          "id": "reddit-9",
-          "title": "AutoTrust's HF models are trending thanks to thousands of farmed likes",
-          "summary": "HF 上靠刷赞冲榜的模型。",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8sq4z/autotrusts_hf_models_are_trending_thanks_to/",
-          "meta": "r/LocalLLaMA · Top 24h（RSS，无分数）"
+          "id": "rd-9",
+          "title": "I built an app to efficiently run decision models on the Apple Neural Engine with Shortcuts actions for OS automations",
+          "summary": "本地决策模型跑在 Apple NPU。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa7ytv/i_built_an_app_to_efficiently_run_decision_models/",
+          "meta": "r/LocalLLaMA · RSS"
         },
         {
-          "id": "reddit-10",
-          "title": "Ling 3.1 Flash (560B MoE) loaded across 4 DGX Sparks using llama.cpp RPC",
-          "summary": "560B MoE 跨 4 台 DGX Spark（llama.cpp RPC）。",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v7cp/ling_31_flash_560b_moe_loaded_across_4_dgx_sparks/",
-          "meta": "r/LocalLLaMA · Top 24h（RSS，无分数）"
+          "id": "rd-10",
+          "title": "Florida DMV hacked after police dept insecurely stored login info",
+          "summary": "佛州车管所数据泄露。",
+          "url": "https://www.reddit.com/r/technology/comments/1xa4z4q/florida_dmv_hacked_after_police_dept_insecurely/",
+          "meta": "r/technology · RSS"
         }
       ]
     }
   ],
   "gaps": [
-    "Reddit JSON（old.reddit.com）302 跳转无数据；改用 /top/.rss?t=day 成功拿到 r/programming、r/technology、r/MachineLearning、r/LocalLLaMA（LocalLLaMA 首次 429，重试成功）。RSS 不含分数/评论数，故 reddit 区只标 Top 24h，未写分数。",
-    "HN 分数、评论数为北京时间 2026-10-19 08:09 左右抓取时的快照，之后仍会变化。",
-    "X：elonmusk 窗内帖子较多，拉取了两页（50 条，覆盖到 10-18 08:19），窗首约 19 分钟未再翻页；政治类、纯转发未收录。poteto、thsottiaux 单页即全量。",
-    "Namecheap 条目原始来源为 Reddit 用户自述帖，尚无 Namecheap 官方说明；macOS 15.8.2 OpenGL 条目原帖在 Apple 论坛人机验证页后，未能直接读取正文。",
-    "无 label=rating / label=watch 的 Issue；config.temp_watches 与 ratings.json 未改。"
+    "Reddit JSON API（含 old.reddit）对本机持续 403/欢迎页；r/technology、r/programming、r/LocalLLaMA 主要靠 RSS，多数条目无分数/评论数。",
+    "r/MachineLearning 本期 RSS 与 JSON 均失败，未收录。",
+    "X 读取配额充足；三位账号时间窗内帖子已拉取（Elon 分页合并共 42 条）。"
   ]
 }
