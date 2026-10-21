@@ -1,0 +1,620 @@
+{
+  "id": "2026-10-21",
+  "title": "技术早报 · 2026-10-21",
+  "window": {
+    "start": "2026-10-20T08:00:00+08:00",
+    "end": "2026-10-21T08:00:00+08:00"
+  },
+  "generated_at": "2026-10-21T08:07:49+08:00",
+  "podcast": {
+    "src": "audio/2026-10-21.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月二十一日这一期。\n\n先看头条。SpaceX 发布第三季度财报，营收一百四十六亿美元，同比增长百分之一百六十一；人工智能板块收入七十五亿多美元，首次成为第一大业务，主要靠把算力租给 Anthropic、Google 等公司。净利润四十四亿美元，但单季资本开支也接近两百亿。开源这边，DeepSeek 放出了支撑自家线上服务的推理框架 DeepInfer，在 Hacker News 上拿到两千多分，同时支持英伟达新卡和华为昇腾。安全方面，eMudhra 有八个中间证书私钥泄露，Mozilla 不到三个小时就推送封禁，Go 也紧急拒绝了相关证书链。前端圈的大新闻是 Cloudflare 联手 VoidZero 推出 tsrs，把 TypeScript 编译器移植到 Rust，号称最多比七点零快八倍；同一天 TypeScript 七点一 Beta 也发布了。Mistral 推出 Voxtral 3 语音模型和语音智能体 SDK；Google 开源了 PyTorch 的原生 TPU 后端；而 Google Cloud 在欧洲出了大故障，Revolut、汇丰等银行服务一度中断。\n\n特别关注三位。Elon 在财报会后说，二零二八年 SpaceX 营收一万亿美元已经不是不可能；他还谈到把海量算力快速上线，哪一环都很难，不只是缺电；X 的推荐也换上了新的排序和检索模型。Tibo 承认周末大约四万个账户的额度和套餐对不上，已经修好并会补偿，还宣布额度再次重置。poteto 发了一句「You Can Ship Everything」，又自问「但你应该吗」，并展示了在 X 上直接 at 机器人帮忙看直播做总结。\n\n社区一瞥：OpenBSD 8.0 发布；Kyutai 把 Pocket TTS 缩到了一百九十万参数，还能克隆声音；V2EX 在讨论本地跑大模型要花多少钱；掘金热榜第一是「为什么我在团队里禁止使用 axios」。\n\n以上就是今天的早报，明天早上八点北京时间见。"
+  },
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "SpaceX Q3 财报：营收 146 亿美元，同比 +161%，AI 业务成第一大板块",
+      "summary": "SI（超级智能）板块收入 75.6 亿美元、同比约 9 倍，主要来自出租算力（Anthropic、Google、Reflection AI）及收购 Cursor、Grok 采用增长；Connectivity 52.5 亿、Starlink 用户 1360 万；净利润 44 亿美元，季度资本开支 196 亿（其中 SI 164 亿），算力达 1.7 GW。Musk 在电话会上称这是「inflection moment」，并发帖说 2028 年万亿美元营收「不再不可能」。",
+      "url": "https://ir.spacex.com/files/content_files/SpaceX-Reports-Third-Quarter-2026-Results.pdf",
+      "source": "SpaceX IR / Reuters / X"
+    },
+    {
+      "id": "h2",
+      "title": "DeepSeek 开源生产级推理框架 DeepInfer",
+      "summary": "支撑 DeepSeek 线上服务的推理引擎开源离线推理部分：首发支持 DeepSeek-V4.1-Flash，含 FlashMLA/DeepGEMM/DeepEP 等内核、Attention DP + MoE EP/EPLB、DSpark 草稿解码、批次不变与确定性采样、结构化输出；硬件支持 NVIDIA SM100 与华为昇腾 950。KV 缓存与 PD 分离等不在本次开源内。HN 2099 分、818 评论，r/LocalLLaMA 同步热议。",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "source": "Hacker News / GitHub / Reddit"
+    },
+    {
+      "id": "h3",
+      "title": "eMudhra 八个中间 CA 私钥泄露，浏览器与 Go 紧急吊销",
+      "summary": "Mozilla 于 10 月 17 日 20:06 UTC 收到报告，不到 3 小时经 OneCRL 推送封禁，并发布 Firefox 158.0.1 / ESR 更新、在 NSS 3.131.1 移除对应根证书；Go 同日也宣布拒绝含八个被弃信 SPKI 的证书链。事件披露页 HN 587 分、306 评论；Lobsters 114 分、44 评论。",
+      "url": "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+      "source": "Hacker News / Lobsters / Mozilla"
+    },
+    {
+      "id": "h4",
+      "title": "Cloudflare 联手 VoidZero 推出 tsrs：TypeScript 的 Rust 移植",
+      "summary": "与 TypeScript 团队协作、孵化于 Oxc，强调不 fork 语言；早期基准比 TypeScript 7.0 快至 8 倍、内存少约 70%，主打可编译到 Wasm、在浏览器和 Workers 里跑完整工具链；将与 Theo 的 tsc-rs 合并。同日 TypeScript 7.1 Beta 发布，自身比 7.0 快至 2.5 倍并推出正式 API 与 content mappers。HN 335 分、154 评论。",
+      "url": "https://blog.cloudflare.com/typescript-rust-port/",
+      "source": "Hacker News / Cloudflare / Reddit"
+    },
+    {
+      "id": "h5",
+      "title": "Mistral 发布 Voxtral 3：语音智能体 SDK + 新一代语音模型",
+      "summary": "Voxtral Small Transcribe 3 覆盖 50+ 语言、支持说话人分离与上下文偏置，实时版延迟低于 500ms；Voxtral Mini TTS 3 支持 35+ 语言、50+ 方言，每百万字符 13 美元；基于 LiveKit 的语音智能体 SDK 宣称每轮对话一秒内完成，可欧盟托管或私有部署。HN 488 分、133 评论。",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "source": "Hacker News / Mistral"
+    },
+    {
+      "id": "h6",
+      "title": "Google Cloud 欧洲大面积故障，HSBC、Revolut、劳埃德等受波及",
+      "summary": "Neowin 报道，Compute Engine、GKE、Cloud SQL、Cloud Storage、Spanner 等数十项服务受影响，Revolut 一度登录、支付、转账、取现全线中断；Google 建议受影响客户把负载迁到其他可用区或区域。HN 319 分、165 评论；BBC 另报 Revolut 宕机（HN 93 分、84 评论）。",
+      "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+      "source": "Hacker News / Neowin"
+    },
+    {
+      "id": "h7",
+      "title": "Google 开源 TorchTPU：PyTorch 原生 TPU 后端",
+      "summary": "提供 TPU 上的 ATen 内核、编译缓存、torch.compile 集成以及数据/张量并行示例（Llama、Qwen 等）。HN 243 分、57 评论。同日 OpenBSD 8.0 发布（HN 465 分、154 评论），amd64 内核虚拟地址空间从 4G 提到 512G、arm64 支持休眠。",
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "source": "Hacker News / GitHub / OpenBSD"
+    },
+    {
+      "id": "h8",
+      "title": "小模型语音：Kyutai Pocket TTS 缩到 1.9M 参数",
+      "summary": "Kyutai 发布一组更小的 Pocket TTS：18.2M 旗舰版质量追平原 ~100M 版本，单线程 CPU 约 9.9 倍实时；最小 1.9M 参数约 25 倍实时，仍支持声音克隆，训练与剪枝代码开源。r/LocalLLaMA 当日热帖。",
+      "url": "https://kyutai.org/blog/2026-10-20-pocket-tts-small/",
+      "source": "Reddit / Kyutai"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "「As crazy as this sounds, $1T in SpaceX revenue in 2028 is no longer impossible」——发在 Q3 财报电话会之后，约两万六千赞。",
+          "url": "https://x.com/elonmusk/status/2112666467712073815",
+          "time": "2026-10-21T06:05:12+08:00",
+          "interactions": [
+            {
+              "summary": "回复 @aaronburnett：要向投资者详细解释 Starlink 战略，「SpaceX 在开发全新的棋子」",
+              "url": "https://x.com/elonmusk/status/2112665064729710923"
+            },
+            {
+              "summary": "财报会前引用 SpaceX 直播：「Video call」",
+              "url": "https://x.com/elonmusk/status/2112583304738210216"
+            }
+          ]
+        },
+        {
+          "id": "elon-2",
+          "summary": "引用前 Google 员工谈算力瓶颈的长帖：「“Lack of electricity” is an oversimplification. Everything is hard about bringing massive compute online at extremely high speed.」约七千赞。",
+          "url": "https://x.com/elonmusk/status/2112603906723487744",
+          "time": "2026-10-21T01:56:36+08:00",
+          "interactions": []
+        },
+        {
+          "id": "elon-3",
+          "summary": "X 时间线推荐两项改动：新的 AI/SI 排序模型更准地预测停留时长；检索模型改为优先推荐「会被读完」的帖子；称用户活跃秒数几乎每天创新高。约一万八千赞。",
+          "url": "https://x.com/elonmusk/status/2112373713937084809",
+          "time": "2026-10-20T10:41:54+08:00",
+          "interactions": [
+            {
+              "summary": "补充：重写 X Android 客户端也是件大事",
+              "url": "https://x.com/elonmusk/status/2112396145137946819"
+            }
+          ]
+        },
+        {
+          "id": "elon-4",
+          "summary": "「Have to give the EU regulators credit where it’s due for making all Apple products use USB-C」——本窗口最高互动，约十五万赞。",
+          "url": "https://x.com/elonmusk/status/2112348601255125059",
+          "time": "2026-10-20T09:02:06+08:00",
+          "interactions": [
+            {
+              "summary": "回复：「USB-C firmware is complex 😂」",
+              "url": "https://x.com/elonmusk/status/2112374820264460351"
+            }
+          ]
+        },
+        {
+          "id": "elon-5",
+          "summary": "连发 Grok Bot 更新：「Big Grok @Bot update」（引用新功能合集视频：聊天卡片、提速、邮件别名、X 私信、语音通话、Android 助手等），以及「Grok @Bot upgrades」（0.71.2 支持 250MB 文件、1GB 视频）。",
+          "url": "https://x.com/elonmusk/status/2112589019380875714",
+          "time": "2026-10-21T00:57:26+08:00",
+          "interactions": [
+            {
+              "summary": "Grok @Bot upgrades",
+              "url": "https://x.com/elonmusk/status/2112588854691594371"
+            },
+            {
+              "summary": "「True, try Grok @Bot」",
+              "url": "https://x.com/elonmusk/status/2112403910908596503"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "「There were reports of usage draining faster than anticipated…」：周末约四万个账户实际套用的额度上限与所选套餐不符，已修复并逐一联系，受影响用户会补额度，「Sorry we got this wrong」。约九千赞、两千回复。",
+          "url": "https://x.com/thsottiaux/status/2112592264686149749",
+          "time": "2026-10-21T01:10:20+08:00",
+          "interactions": []
+        },
+        {
+          "id": "tibo-2",
+          "summary": "「Day 15/ Nevermind, we're still cooking... and reset. Enjoy.」——引用前一天的「Day 15/ We're cooked」，宣布再次重置额度。约一万一千赞。",
+          "url": "https://x.com/thsottiaux/status/2112432076767289678",
+          "time": "2026-10-20T14:33:48+08:00",
+          "interactions": [
+            {
+              "summary": "被引用的「Day 15/ We're cooked」",
+              "url": "https://x.com/thsottiaux/status/2112268918681485431"
+            }
+          ]
+        },
+        {
+          "id": "tibo-3",
+          "summary": "回复 @theo 的课程发布帖，调侃替代方案：「1) Buy a Pro 100 sub 2) ??? 3) Enjoy T3Code」。",
+          "url": "https://x.com/thsottiaux/status/2112426606870585551",
+          "time": "2026-10-20T14:12:04+08:00",
+          "interactions": []
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "「You Can Ship Everything」（约三千赞），随后自问「but should you?」。",
+          "url": "https://x.com/poteto/status/2112356481597317544",
+          "time": "2026-10-20T09:33:25+08:00",
+          "interactions": [
+            {
+              "summary": "but should you?",
+              "url": "https://x.com/poteto/status/2112358119829577826"
+            }
+          ]
+        },
+        {
+          "id": "poteto-2",
+          "summary": "引用 Grok Bot 新功能合集视频：「the shipping continues!」；回复同事「get ready im doing another cut soon」。",
+          "url": "https://x.com/poteto/status/2112569721216442856",
+          "time": "2026-10-20T23:40:45+08:00",
+          "interactions": [
+            {
+              "summary": "get ready im doing another cut soon",
+              "url": "https://x.com/poteto/status/2112570923496992784"
+            }
+          ]
+        },
+        {
+          "id": "poteto-3",
+          "summary": "「one of the coolest features of grok @bot is tagging it on X!」，并在 SpaceX 财报直播帖下直接 @bot 让它看直播、记笔记、发总结。",
+          "url": "https://x.com/poteto/status/2112606908893053223",
+          "time": "2026-10-21T02:08:32+08:00",
+          "interactions": [
+            {
+              "summary": "@SpaceX @bot watch this livestream… send me a summary",
+              "url": "https://x.com/poteto/status/2112613162591932495"
+            }
+          ]
+        },
+        {
+          "id": "poteto-4",
+          "summary": "邀请用户让自己的 bot 给 tibo@mail.grokbot.com 发反馈；并跟进用户报告的表情回复 bug，说已在 main 复现、会正式修复。",
+          "url": "https://x.com/poteto/status/2112424589783633945",
+          "time": "2026-10-20T14:04:03+08:00",
+          "interactions": [
+            {
+              "summary": "i was actually able to repro on main… it will be properly fixed",
+              "url": "https://x.com/poteto/status/2112400347759280327"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+          "summary": "DeepSeek 开源生产推理框架。",
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "discussion_url": "https://news.ycombinator.com/item?id=50163277",
+          "meta": "2099 分 · 818 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "EMudhra Intermediate CA Compromise",
+          "summary": "eMudhra 中间 CA 私钥泄露披露页。",
+          "url": "https://emudhra.we-have-a-problem.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50166579",
+          "meta": "587 分 · 306 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Voxtral 3",
+          "summary": "Mistral 语音模型与语音智能体 SDK。",
+          "url": "https://mistral.ai/news/voxtral-3/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50168396",
+          "meta": "488 分 · 133 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "SimCity, but with Permits",
+          "summary": "把城市建造游戏换成「审批许可」玩法。",
+          "url": "https://permit.petercai.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50170593",
+          "meta": "482 分 · 258 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Apple broke an essential presentation feature of iPads",
+          "summary": "作者称 iPad 演示功能被 Apple 改坏。",
+          "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50165208",
+          "meta": "472 分 · 245 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "OpenBSD 8.0",
+          "summary": "OpenBSD 第 61 个版本。",
+          "url": "https://www.openbsd.org/80.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50160494",
+          "meta": "465 分 · 154 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Facebook Pages require paid subscription to post more than two links per month",
+          "summary": "Facebook 主页每月发超过两个链接需付费订阅。",
+          "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+          "discussion_url": "https://news.ycombinator.com/item?id=50167536",
+          "meta": "404 分 · 364 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+          "summary": "Google 专有 Android 用户空间的自由实现。",
+          "url": "https://github.com/microg/GmsCore/wiki",
+          "discussion_url": "https://news.ycombinator.com/item?id=50162177",
+          "meta": "378 分 · 95 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Tsrs: A Port of TypeScript to Rust",
+          "summary": "Cloudflare/VoidZero 的 TypeScript Rust 移植。",
+          "url": "https://blog.cloudflare.com/typescript-rust-port/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50165953",
+          "meta": "335 分 · 154 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+          "summary": "Google Cloud 欧洲故障波及多家银行。",
+          "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50163961",
+          "meta": "319 分 · 165 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Publish fake stats, get cited in LLMs",
+          "summary": "发布假统计数据就能被 LLM 引用的 GEO 套路。",
+          "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+          "discussion_url": "https://news.ycombinator.com/item?id=50165801",
+          "meta": "314 分 · 180 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Ofcom concedes defeat in 4chan case",
+          "summary": "Ofcom 在 4chan 案中让步。",
+          "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50167028",
+          "meta": "311 分 · 213 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "How I got over 300 Tor exit nodes removed",
+          "summary": "作者如何让 300 多个 Tor 出口节点被移除。",
+          "url": "https://kaba.cx/posts/20261020_Tor/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50166257",
+          "meta": "304 分 · 74 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+          "summary": "Google 开源 PyTorch TPU 后端。",
+          "url": "https://github.com/google-pytorch/torch_tpu",
+          "discussion_url": "https://news.ycombinator.com/item?id=50169053",
+          "meta": "243 分 · 57 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+          "summary": "Steam 用户呼吁「无 AI」筛选。",
+          "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+          "discussion_url": "https://news.ycombinator.com/item?id=50168190",
+          "meta": "164 分 · 194 评论"
+        },
+        {
+          "id": "hn-16",
+          "title": "Go will reject certificate chains containing eight distrusted SPKIs",
+          "summary": "Go 拒绝含八个被弃信 SPKI 的证书链。",
+          "url": "https://github.com/golang/go/issues/82345",
+          "discussion_url": "https://news.ycombinator.com/item?id=50160877",
+          "meta": "134 分 · 77 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Protecting Firefox users following the compromise of eMudhra intermediate certificates",
+          "summary": "Mozilla 三小时内经 OneCRL 封禁受影响证书。",
+          "url": "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+          "discussion_url": "https://lobste.rs/s/gqyvn5",
+          "meta": "114 分 · 44 评论"
+        },
+        {
+          "id": "lo-2",
+          "title": "Setting up SSH keys on macOS with Touch ID",
+          "summary": "用 Touch ID 保护 macOS 上的 SSH 密钥。",
+          "url": "https://nmattia.com/posts/2026-10-19-setting-up-ssh-keys-touch-id/",
+          "discussion_url": "https://lobste.rs/s/d7m5j1",
+          "meta": "51 分 · 22 评论"
+        },
+        {
+          "id": "lo-3",
+          "title": "NixOS is making me less afraid",
+          "summary": "NixOS 让作者不再害怕改系统。",
+          "url": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
+          "discussion_url": "https://lobste.rs/s/7d1swo",
+          "meta": "38 分 · 22 评论"
+        },
+        {
+          "id": "lo-4",
+          "title": "OpenBSD 8.0",
+          "summary": "OpenBSD 8.0 发布。",
+          "url": "https://www.openbsd.org/80.html",
+          "discussion_url": "https://lobste.rs/s/sqdhu7",
+          "meta": "96 分 · 11 评论"
+        },
+        {
+          "id": "lo-5",
+          "title": "Jepsen: Orkes Conductor 5.3.2",
+          "summary": "Jepsen 测试 Orkes Conductor。",
+          "url": "https://jepsen.io/analyses/orkes-conductor-5.3.2",
+          "discussion_url": "https://lobste.rs/s/42zgmq",
+          "meta": "27 分 · 1 评论"
+        },
+        {
+          "id": "lo-6",
+          "title": "How I got over 300 Tor exit nodes removed",
+          "summary": "举报恶意 Tor 出口节点的经历。",
+          "url": "https://kaba.cx/posts/20261020_Tor/",
+          "discussion_url": "https://lobste.rs/s/9h14un",
+          "meta": "26 分 · 1 评论"
+        },
+        {
+          "id": "lo-7",
+          "title": "Mastodon 5.0: A closer look",
+          "summary": "Mastodon 5.0 设计详解。",
+          "url": "https://blog.joinmastodon.org/2026/10/5.0-a-closer-look/",
+          "discussion_url": "https://lobste.rs/s/dlbufy",
+          "meta": "18 分 · 6 评论"
+        },
+        {
+          "id": "lo-8",
+          "title": "Upcoming Critical PHP Security Release",
+          "summary": "PHP 预告关键安全更新。",
+          "url": "https://www.php.net/archive/2026.php#2026-10-20-1",
+          "discussion_url": "https://lobste.rs/s/ekxoyt",
+          "meta": "12 分 · 3 评论"
+        },
+        {
+          "id": "lo-9",
+          "title": "Do minor curl vulnerabilities in the open",
+          "summary": "Daniel Stenberg：小的 curl 漏洞公开处理。",
+          "url": "https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/",
+          "discussion_url": "https://lobste.rs/s/nryxzd",
+          "meta": "13 分 · 0 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "我做了一个 AI 张大妈，帮忙看看，没啥好送的，每人送 20 V2EX 代币吧",
+          "summary": "作者做了个 AI「张大妈」，回帖送代币。",
+          "url": "https://www.v2ex.com/t/1250253",
+          "meta": "分享创造 · 168 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "本地机器能跑 DeepSeek v4.1flash 或者 Qwen3.8 得多少钱？",
+          "summary": "本地跑 DeepSeek V4.1 Flash 或 Qwen3.8 的硬件成本讨论。",
+          "url": "https://www.v2ex.com/t/1250179",
+          "meta": "程序员 · 92 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "能清理、卸载和系统维护的 Mole Windows 版终于来啦，聊聊我是怎么用 Mac 开发它的",
+          "summary": "Mole 清理工具出 Windows 版，聊用 Mac 开发的过程。",
+          "url": "https://www.v2ex.com/t/1250170",
+          "meta": "分享创造 · 80 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "是去海外还是留国内",
+          "summary": "程序员去海外还是留国内。",
+          "url": "https://www.v2ex.com/t/1250306",
+          "meta": "程序员 · 82 回复"
+        },
+        {
+          "id": "v2-5",
+          "title": "搓了一个看东南亚频道的站",
+          "summary": "东南亚电视频道聚合站。",
+          "url": "https://www.v2ex.com/t/1250171",
+          "meta": "分享创造 · 79 回复"
+        },
+        {
+          "id": "v2-6",
+          "title": "最近被同事消耗的太厉害",
+          "summary": "职场吐槽：被同事消耗。",
+          "url": "https://www.v2ex.com/t/1250197",
+          "meta": "程序员 · 74 回复"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "少数派 / 掘金",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "具透 Plus：Firefox 被「中途喝止」的界面现代化改造；Pixel 不再为 VoLTE 发愁",
+          "summary": "少数派系统更新解读。",
+          "url": "https://sspai.com/prime/story/inside-release-notes-261020",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-2",
+          "title": "App+1 | 紫毫：基于 Rime 引擎、支持双拼纠错的 iOS 输入法",
+          "summary": "Rime 引擎的 iOS 输入法。",
+          "url": "https://sspai.com/post/116430",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-3",
+          "title": "派早报：MiniMax 发布 M3.1 Flash 模型等",
+          "summary": "少数派每日早报。",
+          "url": "https://sspai.com/post/116758",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-4",
+          "title": "为什么我在团队里禁止使用 axios？",
+          "summary": "掘金前端热榜第一。",
+          "url": "https://juejin.cn/post/7698268211587022874",
+          "meta": "掘金 · 18 评论"
+        },
+        {
+          "id": "cn-5",
+          "title": "DeepSeek 又偷偷升级了：我实测了 V4.1-Flash-1017，一句话生成可玩游戏，但有个坑会吃掉你 90% 的预算",
+          "summary": "V4.1-Flash-1017 实测。",
+          "url": "https://juejin.cn/post/7697474838380134410",
+          "meta": "掘金"
+        },
+        {
+          "id": "cn-6",
+          "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
+          "summary": "AI 流式传输的协议选择。",
+          "url": "https://juejin.cn/post/7697591781001691163",
+          "meta": "掘金"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": [
+        {
+          "id": "rd-1",
+          "title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
+          "summary": "r/technology 当日第一：AfD 泄露邮件分析。",
+          "url": "https://www.reddit.com/r/technology/comments/1xar7jl/afd_leak_what_421179_hacked_emails_show_about_the/",
+          "meta": "r/technology · RSS"
+        },
+        {
+          "id": "rd-2",
+          "title": "US restarts three shut-down nuclear reactors to feed AI data centers — 2.25 GW coming online with backing from Microsoft and Google",
+          "summary": "美国重启三座停运核反应堆为 AI 数据中心供电，合计 2.25 GW。",
+          "url": "https://www.reddit.com/r/technology/comments/1xavtj4/us_restarts_three_shutdown_nuclear_reactors_to/",
+          "meta": "r/technology · RSS"
+        },
+        {
+          "id": "rd-3",
+          "title": "DHS Said They Searched Man Who Wiped GrapheneOS Phone for Child Abuse Material. They Lied | Officials said they wanted to search the phone of Samuel Tunick, a Stop Cop City activist, for child abuse material. It was actually because he was suspected of “terrorist activities.”",
+          "summary": "DHS 搜查擦除 GrapheneOS 手机用户的理由被指造假。",
+          "url": "https://www.reddit.com/r/technology/comments/1xawfwz/dhs_said_they_searched_man_who_wiped_grapheneos/",
+          "meta": "r/technology · RSS"
+        },
+        {
+          "id": "rd-4",
+          "title": "MapQuest Includes Flock Camera Locations Now",
+          "summary": "MapQuest 地图加入 Flock 摄像头位置。",
+          "url": "https://www.reddit.com/r/technology/comments/1xapayn/mapquest_includes_flock_camera_locations_now/",
+          "meta": "r/technology · RSS"
+        },
+        {
+          "id": "rd-5",
+          "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+          "summary": "Go 紧急更新封禁八个 CA 密钥。",
+          "url": "https://www.reddit.com/r/programming/comments/1xarfxg/go_issues_emergency_update_blocking_eight_ca_keys/",
+          "meta": "r/programming · RSS"
+        },
+        {
+          "id": "rd-6",
+          "title": "Announcing TypeScript 7.1 Beta",
+          "summary": "TypeScript 7.1 Beta 发布。",
+          "url": "https://www.reddit.com/r/programming/comments/1xaz5ur/announcing_typescript_71_beta/",
+          "meta": "r/programming · RSS"
+        },
+        {
+          "id": "rd-7",
+          "title": "eMudhra Intermediate CA Compromise",
+          "summary": "eMudhra 中间 CA 泄露。",
+          "url": "https://www.reddit.com/r/programming/comments/1xb32yj/emudhra_intermediate_ca_compromise/",
+          "meta": "r/programming · RSS"
+        },
+        {
+          "id": "rd-8",
+          "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
+          "summary": "DeepSeek 开源 DeepInfer。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
+          "meta": "r/LocalLLaMA · RSS"
+        },
+        {
+          "id": "rd-9",
+          "title": "Pocket TTS which supports voice cloning is now just 1.9 million parameters",
+          "summary": "Pocket TTS 缩到 1.9M 参数。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xauekr/pocket_tts_which_supports_voice_cloning_is_now/",
+          "meta": "r/LocalLLaMA · RSS"
+        },
+        {
+          "id": "rd-10",
+          "title": "Vals AI found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on their multi-step offensive cybersecurity task. Sol was tested via the Daybreak trusted access program.",
+          "summary": "Vals AI 称 DeepSeek V4.1 Flash 1017 在多步进攻性网络安全评测中胜过 GPT 6 Sol。",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xap2aq/vals_ai_found_deepseek_v41_flash_1017_beats_gpt_6/",
+          "meta": "r/LocalLLaMA · RSS"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Reddit 继续只能走 RSS（首轮请求 429，间隔重试后拿到）；条目无分数/评论数，r/MachineLearning 当日仅 2 条低热度帖未收录。",
+    "掘金热榜数值偏低、时间窗无法逐条精确核对，仅作社区参考。",
+    "本期无 rating / watch 评分或临时关注 Issue；temp_watches 为空。",
+    "X 读取正常：Elon 两页共 49 条、Tibo 3 条、poteto 20 条（含转发）；Elon 的政治类帖子未收录。"
+  ]
+}
