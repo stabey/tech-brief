@@ -1,0 +1,11 @@
+早上好，这里是技术早报，二零二六年十月二十四日这一期。
+
+安全与隐私继续占头条。Calif 团队在巴黎 Hexacon 演示攻破 iPhone，公开提到 Signal 一键和指向 iMessage 的链路。Keep Android Open 则倒计时：大约七十天后，未向谷歌注册并交身份证件的开发者，其应用或将无法装进全球安卓机，含 F-Droid 与自用软件。谷歌隐私政策也更新了例外——若你打开 Personal Intelligence，Gmail 和相册等内容可能被用来投广告。瑞典政府办公厅据报道要禁用 ChatGPT 与 Claude。与此同时，有人把过去一周的 PHP2Shell、证书事故和连环漏洞写成「这就是新常态吗」。
+
+模型与基础设施：月之暗面放出 Kimi K3.1 Pro 和更快的 Highspeed，一百万上下文，权重预计十一月四日前开源。Block 的 Dessa 宣称只在语音上训练全双工对话。OpenSSL 到了四点一，补强后量子相关优化。另有数据显示，投资者持股的公用事业电价比公立大概贵百分之二十三。
+
+特别关注三位。Elon 力推手机应用已打通的 Grok Bot，并说特斯拉在猛提 Megapack 产量。Tibo 的 Day 十八宣布 Decisions API 正式可用、OpenResponses 进了 Linux 基金会，Day 十九又更新了 Codex 命令行。poteto 提醒大家安全使用 Bot 新保险库，并转发了零点七五点五的发版。
+
+社区一瞥：Lobsters 在聊 Zig 的随机内建和「软件慢是因为设计」；V2EX 有人上午刚开源下午就被裁，也有人较真「为什么死磕 Claude」。
+
+以上就是今天的早报，明天早上八点北京时间见。
