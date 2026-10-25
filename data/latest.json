@@ -1,78 +1,78 @@
 {
-  "id": "2026-10-24",
-  "title": "技术早报 · 2026-10-24",
+  "id": "2026-10-25",
+  "title": "技术早报 · 2026-10-25",
   "window": {
-    "start": "2026-10-23T08:00:00+08:00",
-    "end": "2026-10-24T08:00:00+08:00"
+    "start": "2026-10-24T08:00:00+08:00",
+    "end": "2026-10-25T08:00:00+08:00"
   },
-  "generated_at": "2026-10-24T08:06:52+08:00",
+  "generated_at": "2026-10-25T08:12:19+08:00",
   "podcast": {
-    "src": "audio/2026-10-24.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月二十四日这一期。\n\n安全与隐私继续占头条。Calif 团队在巴黎 Hexacon 演示攻破 iPhone，公开提到 Signal 一键和指向 iMessage 的链路。Keep Android Open 则倒计时：大约七十天后，未向谷歌注册并交身份证件的开发者，其应用或将无法装进全球安卓机，含 F-Droid 与自用软件。谷歌隐私政策也更新了例外——若你打开 Personal Intelligence，Gmail 和相册等内容可能被用来投广告。瑞典政府办公厅据报道要禁用 ChatGPT 与 Claude。与此同时，有人把过去一周的 PHP2Shell、证书事故和连环漏洞写成「这就是新常态吗」。\n\n模型与基础设施：月之暗面放出 Kimi K3.1 Pro 和更快的 Highspeed，一百万上下文，权重预计十一月四日前开源。Block 的 Dessa 宣称只在语音上训练全双工对话。OpenSSL 到了四点一，补强后量子相关优化。另有数据显示，投资者持股的公用事业电价比公立大概贵百分之二十三。\n\n特别关注三位。Elon 力推手机应用已打通的 Grok Bot，并说特斯拉在猛提 Megapack 产量。Tibo 的 Day 十八宣布 Decisions API 正式可用、OpenResponses 进了 Linux 基金会，Day 十九又更新了 Codex 命令行。poteto 提醒大家安全使用 Bot 新保险库，并转发了零点七五点五的发版。\n\n社区一瞥：Lobsters 在聊 Zig 的随机内建和「软件慢是因为设计」；V2EX 有人上午刚开源下午就被裁，也有人较真「为什么死磕 Claude」。\n\n以上就是今天的早报，明天早上八点北京时间见。"
+    "src": "audio/2026-10-25.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月二十五日这一期。\n\n安全与系统层今天很热闹。GrapheneOS 说大约十余款银行应用开始明确放行该系统；有人在新款三星电视上拿到 root，称发现「隐私恐怖」。供应链这边，Node2Shell 背后的 Brotli 漏洞被写成 HTTP2Shell，波及面扩到大量 HTTP 库。直播软件 OBS 到了三十三点零，浏览器源底层大升级，插件加载也重构了。\n\n宏观与地缘：Apollo 观察科技圈以外仍看不到 AI 推高生产率，主流企业更把 token 当成本；Steve Blank 则写欧洲开始认真讨论「美国科技会不会被一键关掉」。基础设施与机器人：rqlite 作者回顾分布式 SQLite 十二年；Dream Labs 放出 Dream-1，宣称没见过的机器人也能零样本控制。还有人拿 Roc 语言挑战 C 写的压缩库，问纯函数式到底能走多近。\n\n特别关注三位。Elon 谈 Starlink V3 带宽约一百倍、又一批二十七星，并说智能体需求涨得前所未见，还在推 Grok Imagine。Tibo 提醒别把自己建成工具，同时招人把 dots 冲向十亿用户。poteto 更新 pstack 思路——模型越强指令越短——并展示多个 Bot 在 Slack 里协作。\n\n社区一瞥：Lobsters 在聊拿回周三和 C++二十六投票结果；V2EX 热议运维被裁与 Kimi 额度烧得飞快。\n\n以上就是今天的早报，明天早上八点北京时间见。"
   },
   "highlights": [
     {
       "id": "h1",
-      "title": "Calif 在 Hexacon 演示攻破 iPhone：Signal 一键与 iMessage 链路",
-      "summary": "安全团队 Calif 发帖称「Today, we hacked what we'd set out to hack: the iPhone」，在巴黎 Hexacon 展示系列 demo，包括 Signal 一键、指向 iMessage 的链路，以及自称 APT（Apple Persistent Threat）的持久化演示；细节称将择日完整放出。HN 707 分、约 467 评论。",
-      "url": "https://blog.calif.io/p/iphone",
-      "source": "Hacker News / Calif"
+      "title": "约十余款银行应用开始明确放行 GrapheneOS",
+      "summary": "GrapheneOS 官方称多数银行应用可在本系统运行，但不少因内存损坏与错误反篡改需打开「每应用兼容模式」；约一成因禁止非谷歌认证系统而不可用。另有约十余款开始在谷歌认证系统之外明确允许 GrapheneOS，并指向用户报告整理的兼容列表。HN 612 分、约 281 评论。",
+      "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+      "source": "Hacker News / GrapheneOS"
     },
     {
       "id": "h2",
-      "title": "月之暗面发布 Kimi K3.1 Pro / Highspeed，权重约 11 月 4 日开源",
-      "summary": "K3.1 Pro 为 K3 的大规模后训练版，号称迄今最强开源权重模型之一，支持约 100 万 token 上下文；Highspeed 版速度约为 Pro 的 2–3 倍。Terminal-Bench 4.0 报 65.7%，接近 Claude Opus 5.5 的 66.4%。今日起可在 Kimi 产品与 API 使用，完整权重计划 11 月 4 日前放出。HN 658 分、约 420 评论。",
-      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "source": "Hacker News / Kimi"
+      "title": "研究员在新款三星电视拿到 root shell，称发现「隐私恐怖」",
+      "summary": "@log4j 称对 2025 款三星电视固件逆向遇 AES 加密后改走零日，拿到 root shell，并称发现「PRIVACY HORROR」、考虑写完整报告。帖文本身早于窗口，但窗口内 HN 讨论热度高。HN 483 分、约 194 评论。",
+      "url": "https://twitter.com/log4j/status/2113014142600953868",
+      "source": "Hacker News / @log4j"
     },
     {
       "id": "h3",
-      "title": "Keep Android Open：距「全面锁定」约 70 天",
-      "summary": "倡议站指出，按谷歌 2025 年 8 月方案，自 2027 年起未向谷歌注册、签约并提交政府身份证件的开发者，其应用将无法在全球 Android 设备安装——含 F-Droid、好友互传与自用兴趣软件，且无退出选项。HN 479 分、约 329 评论。",
-      "url": "https://keepandroidopen.org/",
-      "source": "Hacker News / Keep Android Open"
+      "title": "OBS Studio 33.0.0：浏览器源 CEF 大升级与插件加载重构",
+      "summary": "官方发布说明：CEF 自 127/6533 升至 150/7871（浏览器源与 dock 底层）；插件加载全面翻新，一党插件进 core 目录，第三方安装路径更新但仍兼容旧位置至 34.0；预览吸附与数值框交互改进，Arm64 启用 NVENC。HN 438 分、约 158 评论。",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "source": "Hacker News / OBS Project"
     },
     {
       "id": "h4",
-      "title": "投资者持股公用事业电价比公立高约 23%",
-      "summary": "Kadoa 能源监测称 2025 年投资者持股公用事业居民电价约 17.8¢/kWh，公立约 14.5¢、合作社约 14.1¢；自 2020 年以来前者涨约 34%，后者约 19%，同期通胀约 24%。HN 521 分、约 378 评论。",
-      "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
-      "source": "Hacker News / Kadoa"
+      "title": "Apollo：科技以外仍看不到 AI 带来的生产率回报",
+      "summary": "Daily Spark 称 Mag 7 利润率在升、标普其余约四百九十三家持平，生产率增长仍无 AI 提振迹象；主流企业开始把 token 开支当成本中心而非增长源，VC 公司仍加码。作者认为若智能体与 token 消费仍局限在经济一小角，宏观效应将很有限。HN 436 分、约 428 评论。",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "source": "Hacker News / Apollo"
     },
     {
       "id": "h5",
-      "title": "瑞典政府办公厅拟禁用 ChatGPT 与 Claude",
-      "summary": "瑞典广播电台报道政府办公厅将对 ChatGPT 与 Claude 实施禁用（页面抓取遇 403，条目以 HN 标题与讨论为准）。HN 314 分、约 116 评论。",
-      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-      "source": "Hacker News / Sveriges Radio"
+      "title": "Steve Blank：欧洲把「美国科技可被一键关掉」当真了",
+      "summary": "Blank 在伦敦观察到，Starshield/对乌克兰相关限制消息让欧洲决策者重新审视依赖美国云与 AI 的主权风险；他写到一旦把美企视为「kill-switch」风险，同盟市场会收缩，而 AI 又降低了复制办公与企业软件能力的成本。HN 414 分、约 444 评论。",
+      "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+      "source": "Hacker News / Steve Blank"
     },
     {
       "id": "h6",
-      "title": "谷歌隐私政策更新：Personal Intelligence 或可用 Gmail/相册投广告",
-      "summary": "The Verge 称政策自 10 月 16 日起增加例外：若用户启用个性化 AI（Personal Intelligence），谷歌可能依据 Drive、Gmail、Photos 等内容定向广告；广告主仍拿不到姓名邮箱等直接标识。HN 228 分、约 109 评论。",
-      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "source": "Hacker News / The Verge"
+      "title": "分布式 SQLite 十二年：rqlite 作者回顾从 2014 到品类成型",
+      "summary": "Philip O'Toole 回顾 2014 年把 Raft 放在 SQLite 前做复制的 rqlite，称当时几乎是开源里最早的组合；如今「分布式 SQLite」已成十余项目的品类，有的获投甚至被收购，而许多叙事从 2021 才起笔。HN 359 分、约 62 评论。",
+      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "source": "Hacker News / Philip O'Toole"
     },
     {
       "id": "h7",
-      "title": "Block 发布 Dessa：仅用语音训练的全双工对话模型",
-      "summary": "Dessa 自称从零只在人类对话语音上训练、不做文本预训练，强调情绪、停顿与自然节奏的实时全双工对话；页面开放 waitlist。HN 186 分、约 80 评论。",
-      "url": "https://block.xyz/dessa",
-      "source": "Hacker News / Block"
+      "title": "Node2Shell 演化为 HTTP2Shell：Brotli CVE-2026-111497 波及面扩大",
+      "summary": "Aikido 称 Node2Shell 背后的 Brotli 越界写（CVE-2026-111497，影响约 1.0.3–1.2.0）会波及大量安装 Brotli/brotlicffi 的 HTTP 库与应用，可形成双向远程代码执行；根因二月已在源码修复但迟至现在才当安全问题发版。HN 269 分、约 135 评论。",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "source": "Hacker News / Aikido"
     },
     {
       "id": "h8",
-      "title": "OpenSSL 4.1.0 发布：加强 ML-DSA / ML-KEM 等后量子相关优化",
-      "summary": "OpenSSL 将 4.1.0 标为功能版，加入 MSVC 2013 相关构建目标，并为 ppc64le / x86_64 等平台优化 ML-DSA、ML-KEM 等运算。HN 180 分、约 58 评论。",
-      "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
-      "source": "Hacker News / OpenSSL"
+      "title": "Dream-1：未见过的机器人也能零样本控制，公开 API 约 3 美元/小时",
+      "summary": "Dream Labs 出关并发布 World Action Model Dream-1：宣称可在未见过的双臂夹爪机器人上执行未见过的任务、无需该机微调或演示；同时公布约九千万美元种子轮与公开 API。HN 150 分、约 71 评论。",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "source": "Hacker News / Dream Labs"
     },
     {
       "id": "h9",
-      "title": "「这就是新的网络常态吗？」复盘 PHP2Shell 等一周漏洞潮",
-      "summary": "Drew Silcock 长文串联 PHP2Shell、eMudhra、Railway、GitLab、musl、LiteLLM 等密集披露，讨论 AI 加速挖洞后的防守节奏。HN 149 分、约 163 评论。",
-      "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
-      "source": "Hacker News / drew.silcock.dev"
+      "title": "纯函数式离 C 有多近？Roc 挑战 libdeflate",
+      "summary": "Richard Feldman 在 Lean 压缩库超越部分 Rust 实现却仍不敌 C 版 libdeflate 的背景下，用注重运行时性能的 Roc 语言打磨 roc-deflate，讨论纯函数式在极致吞吐上还能走多远。HN 247 分、约 87 评论。",
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "source": "Hacker News / rtfeldman.com"
     }
   ],
   "accounts": [
@@ -82,47 +82,62 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "称 Grok Bot「是出色的生活与业务管家，几乎什么都能帮，像雇了一个天才员工」。约 2.4万 赞。",
-          "url": "https://x.com/elonmusk/status/2113506269260595431",
-          "time": "2026-10-23T13:42:16+08:00",
+          "summary": "回复称刚开始发射的 Starlink V3「带宽约为现有 V2 系统的约一百倍」。约 4351 赞。",
+          "url": "https://x.com/elonmusk/status/2114074592990150788",
+          "time": "2026-10-25T03:20:35+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 23982,
-            "reposts": 1883,
-            "replies": 1768,
-            "quotes": 207,
-            "bookmarks": 1980,
-            "impressions": 24513473
+            "likes": 4351,
+            "reposts": 310,
+            "replies": 295,
+            "quotes": 37,
+            "bookmarks": 82,
+            "impressions": 91407
           }
         },
         {
           "id": "elon-2",
-          "summary": "宣布「Grok Bot 现已与手机应用集成」。约 1.6万 赞。",
-          "url": "https://x.com/elonmusk/status/2113444022408937913",
-          "time": "2026-10-23T09:34:55+08:00",
+          "summary": "宣布「又一批二十七颗 Starlink 卫星」。约 2万 赞。",
+          "url": "https://x.com/elonmusk/status/2114003587156086798",
+          "time": "2026-10-24T22:38:26+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 16074,
-            "reposts": 1413,
-            "replies": 1386,
-            "quotes": 162,
-            "bookmarks": 1591,
-            "impressions": 1705729
+            "likes": 19507,
+            "reposts": 2116,
+            "replies": 1578,
+            "quotes": 168,
+            "bookmarks": 236,
+            "impressions": 1529713
           }
         },
         {
           "id": "elon-3",
-          "summary": "回复称特斯拉正快速提升 Megapack 产量以应对需求：「Tesla ramping up Megapack production rapidly」。约 5792 赞。",
-          "url": "https://x.com/elonmusk/status/2113679241439027551",
-          "time": "2026-10-24T01:09:36+08:00",
+          "summary": "称「Agentic demand is growing faster than I’ve ever seen anything grow」。约 7335 赞。",
+          "url": "https://x.com/elonmusk/status/2114036686870982681",
+          "time": "2026-10-25T00:49:57+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 5792,
-            "reposts": 329,
-            "replies": 99,
-            "quotes": 52,
-            "bookmarks": 96,
-            "impressions": 567192
+            "likes": 7335,
+            "reposts": 541,
+            "replies": 529,
+            "quotes": 164,
+            "bookmarks": 460,
+            "impressions": 374825
+          }
+        },
+        {
+          "id": "elon-4",
+          "summary": "晒「Odyssey with Grok Imagine」，并另帖提醒「Try Grok @Bot」与保险库存敏感信息。Imagine 帖约 1.4万 赞。",
+          "url": "https://x.com/elonmusk/status/2113869401930039702",
+          "time": "2026-10-24T13:45:13+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 13929,
+            "reposts": 1286,
+            "replies": 1143,
+            "quotes": 153,
+            "bookmarks": 2220,
+            "impressions": 1819303
           }
         }
       ]
@@ -133,47 +148,47 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "Day 18：Decisions API 正式 GA，OpenResponses 加入 Linux Foundation，并称 Uber 全面押注 Codex & Work；同时提醒又是一次用量重置日。约 1万 赞、1658 回复。",
-          "url": "https://x.com/thsottiaux/status/2113492187770175603",
-          "time": "2026-10-23T12:46:19+08:00",
+          "summary": "写道：「拥有工具」和「自己变成工具」如今只差一线，别把自己建成工具。约 9618 赞。",
+          "url": "https://x.com/thsottiaux/status/2113838156193894447",
+          "time": "2026-10-24T11:41:04+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 10185,
-            "reposts": 380,
-            "replies": 1658,
-            "quotes": 581,
-            "bookmarks": 505,
-            "impressions": 1481933
+            "likes": 9618,
+            "reposts": 413,
+            "replies": 1235,
+            "quotes": 245,
+            "bookmarks": 753,
+            "impressions": 939829
           }
         },
         {
           "id": "tibo-2",
-          "summary": "补充：太平洋时间明天上午十点前上线，并带一次小发版。约 2987 赞。",
-          "url": "https://x.com/thsottiaux/status/2113492502355562875",
-          "time": "2026-10-23T12:47:34+08:00",
+          "summary": "公开招聘：有过类似规模经验、想帮 dots 冲到十亿用户的人可私信。约 4553 赞、约一千二百七十四回复。",
+          "url": "https://x.com/thsottiaux/status/2114074885622501706",
+          "time": "2026-10-25T03:21:45+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 2987,
-            "reposts": 106,
-            "replies": 862,
-            "quotes": 207,
-            "bookmarks": 105,
-            "impressions": 837238
+            "likes": 4553,
+            "reposts": 109,
+            "replies": 1274,
+            "quotes": 100,
+            "bookmarks": 404,
+            "impressions": 456545
           }
         },
         {
           "id": "tibo-3",
-          "summary": "Day 19：小更新——Dots 通话接通更快、Codex/Work 对话中途改推理不再废缓存，并更新了 Codex CLI。约 2427 赞。",
-          "url": "https://x.com/thsottiaux/status/2113770573994299544",
-          "time": "2026-10-24T07:12:31+08:00",
+          "summary": "周六修 bug 喝咖啡，顺便问旧金山好去处。约 4496 赞。",
+          "url": "https://x.com/thsottiaux/status/2114030784625647855",
+          "time": "2026-10-25T00:26:30+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 2427,
-            "reposts": 69,
-            "replies": 441,
-            "quotes": 87,
-            "bookmarks": 88,
-            "impressions": 128840
+            "likes": 4496,
+            "reposts": 70,
+            "replies": 1005,
+            "quotes": 61,
+            "bookmarks": 193,
+            "impressions": 525170
           }
         }
       ]
@@ -184,47 +199,47 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "提醒「stay safe with grok bot」，呼应官方上线的保险库：可保存登录、卡片与联系人信息供安全回填。约 879 赞。",
-          "url": "https://x.com/poteto/status/2113723252942241975",
-          "time": "2026-10-24T04:04:29+08:00",
+          "summary": "指向自己的 pstack 指南，并补充：模型越强指令越少，skills 会越来越短，最终近乎「保存的提示词」。指南帖约 913 赞、约一千零二十六收藏。",
+          "url": "https://x.com/poteto/status/2114095305910280363",
+          "time": "2026-10-25T04:42:53+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 879,
+            "likes": 913,
             "reposts": 30,
-            "replies": 79,
-            "quotes": 3,
-            "bookmarks": 75,
-            "impressions": 28840
+            "replies": 32,
+            "quotes": 4,
+            "bookmarks": 1026,
+            "impressions": 44230
           }
         },
         {
           "id": "poteto-2",
-          "summary": "用「🚢🚢🚢」转发 Grok Bot 0.75.5 稳定推送：保险库、邮件转发保留格式与附件、减少多余审批卡。约 417 赞。",
-          "url": "https://x.com/poteto/status/2113745636382343364",
-          "time": "2026-10-24T05:33:25+08:00",
+          "summary": "喜欢让多个 Bot 在 Slack 里互相协作，「像队友一样并肩工作」。约 726 赞。",
+          "url": "https://x.com/poteto/status/2114071326411690209",
+          "time": "2026-10-25T03:07:36+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 417,
-            "reposts": 7,
-            "replies": 48,
-            "quotes": 1,
-            "bookmarks": 23,
-            "impressions": 16802
+            "likes": 726,
+            "reposts": 16,
+            "replies": 120,
+            "quotes": 9,
+            "bookmarks": 119,
+            "impressions": 34287
           }
         },
         {
           "id": "poteto-3",
-          "summary": "回复用户让 Bot 去翻历史帖里的用法灵感线程，并给出链接。约 655 赞、1271 收藏。",
-          "url": "https://x.com/poteto/status/2113697042577137741",
-          "time": "2026-10-24T02:20:20+08:00",
+          "summary": "回复 Tibo「别当工具」：be a potato instead。约 1097 赞。",
+          "url": "https://x.com/poteto/status/2113896737773617607",
+          "time": "2026-10-24T15:33:51+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 655,
-            "reposts": 29,
-            "replies": 237,
-            "quotes": 3,
-            "bookmarks": 1271,
-            "impressions": 54176
+            "likes": 1097,
+            "reposts": 3,
+            "replies": 44,
+            "quotes": 4,
+            "bookmarks": 5,
+            "impressions": 64537
           }
         }
       ]
@@ -233,137 +248,222 @@
   "sections": {
     "hn": [
       {
-        "title": "Today, we hacked what we'd set out to hack: the iPhone",
-        "url": "https://blog.calif.io/p/iphone",
-        "score": 707,
-        "comments": 467,
-        "hn_url": "https://news.ycombinator.com/item?id=50211474"
+        "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
+        "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+        "score": 612,
+        "comments": 281,
+        "hn_url": "https://news.ycombinator.com/item?id=50217495"
       },
       {
-        "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-        "score": 658,
-        "comments": 420,
-        "hn_url": "https://news.ycombinator.com/item?id=50212065"
+        "title": "Root shell on Samsung TV",
+        "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
+        "score": 483,
+        "comments": 194,
+        "hn_url": "https://news.ycombinator.com/item?id=50218633"
       },
       {
-        "title": "Investor-owned utilities charge 23% more for electricity than public providers",
-        "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
-        "score": 521,
-        "comments": 378,
-        "hn_url": "https://news.ycombinator.com/item?id=50208837"
+        "title": "OBS Studio 33",
+        "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+        "score": 438,
+        "comments": 158,
+        "hn_url": "https://news.ycombinator.com/item?id=50218430"
       },
       {
-        "title": "Apple Music 404 Not Found",
-        "url": "https://music.apple.com/this-url-doesnt-exist",
-        "score": 517,
-        "comments": 178,
-        "hn_url": "https://news.ycombinator.com/item?id=50207910"
+        "title": "No signs of AI payoff outside the tech sector",
+        "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+        "score": 436,
+        "comments": 428,
+        "hn_url": "https://news.ycombinator.com/item?id=50224463"
       },
       {
-        "title": "Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown",
-        "url": "https://keepandroidopen.org/?",
-        "score": 479,
-        "comments": 329,
-        "hn_url": "https://news.ycombinator.com/item?id=50208558"
+        "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+        "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+        "score": 414,
+        "comments": 444,
+        "hn_url": "https://news.ycombinator.com/item?id=50220913"
       },
       {
-        "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
-        "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
-        "score": 412,
-        "comments": 432,
-        "hn_url": "https://news.ycombinator.com/item?id=50205934"
+        "title": "Twelve years of distributed SQLite",
+        "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+        "score": 359,
+        "comments": 62,
+        "hn_url": "https://news.ycombinator.com/item?id=50217500"
       },
       {
-        "title": "The foolishness of \"natural language programming\" (1978)",
-        "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+        "title": "Show HN: Steal My Bitcoin",
+        "url": "https://stealmybitcoin.com/",
         "score": 357,
-        "comments": 242,
-        "hn_url": "https://news.ycombinator.com/item?id=50203161"
+        "comments": 199,
+        "hn_url": "https://news.ycombinator.com/item?id=50224916"
       },
       {
-        "title": "Swedish government offices to ban ChatGPT and Claude",
-        "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-        "score": 314,
-        "comments": 116,
-        "hn_url": "https://news.ycombinator.com/item?id=50207405"
+        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+        "score": 269,
+        "comments": 135,
+        "hn_url": "https://news.ycombinator.com/item?id=50219177"
       },
       {
-        "title": "Dutch government had hacked into Jared Kushner's phone",
-        "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
-        "score": 288,
-        "comments": 188,
-        "hn_url": "https://news.ycombinator.com/item?id=50206914"
+        "title": "I don't understand quantum physics (2018)",
+        "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+        "score": 267,
+        "comments": 203,
+        "hn_url": "https://news.ycombinator.com/item?id=50219666"
       },
       {
-        "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-        "score": 228,
-        "comments": 109,
-        "hn_url": "https://news.ycombinator.com/item?id=50214218"
+        "title": "How close can pure functional programming get to C?",
+        "url": "https://rtfeldman.com/fp-vs-c",
+        "score": 247,
+        "comments": 87,
+        "hn_url": "https://news.ycombinator.com/item?id=50218195"
       },
       {
-        "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
-        "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
-        "score": 192,
-        "comments": 150,
-        "hn_url": "https://news.ycombinator.com/item?id=50210067"
+        "title": "Google illegally cut down 250K trees in Finland for data center",
+        "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
+        "score": 246,
+        "comments": 199,
+        "hn_url": "https://news.ycombinator.com/item?id=50221676"
       },
       {
-        "title": "Dessa: the most authentic full-duplex speech model ever built",
-        "url": "https://block.xyz/dessa",
-        "score": 186,
-        "comments": 80,
-        "hn_url": "https://news.ycombinator.com/item?id=50213925"
+        "title": "Roku developer repositories moved from GitHub to GitLab",
+        "url": "https://blog.roku.com/developer/gitlab-move",
+        "score": 242,
+        "comments": 160,
+        "hn_url": "https://news.ycombinator.com/item?id=50222622"
       },
       {
-        "title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
-        "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
-        "score": 182,
-        "comments": 138,
-        "hn_url": "https://news.ycombinator.com/item?id=50205816"
+        "title": "FreeDNS",
+        "url": "https://freedns.afraid.org/",
+        "score": 239,
+        "comments": 61,
+        "hn_url": "https://news.ycombinator.com/item?id=50222133"
       },
       {
-        "title": "OpenSSL 4.1.0",
-        "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
-        "score": 180,
-        "comments": 58,
-        "hn_url": "https://news.ycombinator.com/item?id=50208099"
+        "title": "Danish Government silently drops plan to dump MS Office",
+        "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
+        "score": 185,
+        "comments": 133,
+        "hn_url": "https://news.ycombinator.com/item?id=50223844"
       },
       {
-        "title": "Move Slow and Fix Things (2024)",
-        "url": "https://endler.dev/2024/move-slow-and-fix-things/",
-        "score": 169,
-        "comments": 31,
-        "hn_url": "https://news.ycombinator.com/item?id=50204754"
+        "title": "The Goose Programming Language",
+        "url": "https://aardappel.github.io/goose/",
+        "score": 184,
+        "comments": 141,
+        "hn_url": "https://news.ycombinator.com/item?id=50224100"
       },
       {
-        "title": "Job loss and cortisone mania",
-        "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
-        "score": 164,
-        "comments": 110,
-        "hn_url": "https://news.ycombinator.com/item?id=50206840"
+        "title": "Apple Security Research Device",
+        "url": "https://security.apple.com/research-device/",
+        "score": 171,
+        "comments": 114,
+        "hn_url": "https://news.ycombinator.com/item?id=50217903"
       },
       {
-        "title": "No Need for Retirement When Utopia Is Around the Corner",
-        "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
-        "score": 151,
-        "comments": 168,
-        "hn_url": "https://news.ycombinator.com/item?id=50207050"
+        "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+        "url": "https://github.com/Zagitta/gpu-unlock",
+        "score": 170,
+        "comments": 61,
+        "hn_url": "https://news.ycombinator.com/item?id=50219700"
       },
       {
-        "title": "Is this the new cyber normal?",
-        "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
-        "score": 149,
-        "comments": 163,
-        "hn_url": "https://news.ycombinator.com/item?id=50207115"
+        "title": "The Goose Programming Language",
+        "url": "https://aardappel.github.io/goose/",
+        "score": 168,
+        "comments": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=50224300"
       }
     ],
     "lobsters": [
       {
+        "title": "I want my Wednesday back",
+        "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
+        "score": 93,
+        "comments": 29,
+        "tags": [
+          "php",
+          "security"
+        ]
+      },
+      {
+        "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
+        "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+        "score": 18,
+        "comments": 8,
+        "tags": [
+          "c++"
+        ]
+      },
+      {
+        "title": "Bringing uv and ty together",
+        "url": "https://astral.sh/blog/uv-ty-integration",
+        "score": 27,
+        "comments": 0,
+        "tags": [
+          "python"
+        ]
+      },
+      {
+        "title": "Indian government sites are serving revoked eMudhra certificates",
+        "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
+        "score": 57,
+        "comments": 12,
+        "tags": [
+          "security"
+        ]
+      },
+      {
+        "title": "Wild version 0.11.0 released",
+        "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
+        "score": 26,
+        "comments": 5,
+        "tags": [
+          "mac",
+          "release",
+          "rust"
+        ]
+      },
+      {
+        "title": "Be Aware of What's in Your Logs",
+        "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+        "score": 28,
+        "comments": 1,
+        "tags": [
+          "debugging"
+        ]
+      },
+      {
+        "title": "Attention people who think UB is fine",
+        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
+        "score": 66,
+        "comments": 56,
+        "tags": [
+          "c",
+          "c++"
+        ]
+      },
+      {
+        "title": "Emacs finally folds to my liking",
+        "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
+        "score": 24,
+        "comments": 2,
+        "tags": [
+          "emacs"
+        ]
+      },
+      {
+        "title": "How to run a city builder on 16 MHz",
+        "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
+        "score": 7,
+        "comments": 11,
+        "tags": [
+          "programming"
+        ]
+      },
+      {
         "title": "The glorious @xkcdRandom Zig builtin",
         "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
-        "score": 39,
+        "score": 61,
         "comments": 8,
         "tags": [
           "compilers",
@@ -372,170 +472,85 @@
         ]
       },
       {
-        "title": "Software is slow because of bad design, not slow languages",
-        "url": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
-        "score": 33,
-        "comments": 38,
+        "title": "What's wrong with AI?",
+        "url": "https://homepage.farm/ai.html",
+        "score": 21,
+        "comments": 14,
         "tags": [
-          "performance"
+          "culture"
         ]
       },
       {
-        "title": "How close can pure FP get to C?",
-        "url": "https://rtfeldman.com/fp-vs-c",
-        "score": 35,
-        "comments": 9,
+        "title": "This week's \"node2shell\" Brotli vulnerability (CVE-2026-111497) is exploitable in Python, other consumers of Brotli",
+        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+        "score": 6,
+        "comments": 6,
         "tags": [
-          "performance",
-          "programming"
-        ]
-      },
-      {
-        "title": "Docker is weird",
-        "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-        "score": 94,
-        "comments": 43,
-        "tags": [
-          "programming"
-        ]
-      },
-      {
-        "title": "Please don't mess with links",
-        "url": "https://maurycyz.com/misc/real_links/",
-        "score": 87,
-        "comments": 21,
-        "tags": [
+          "security",
           "web"
-        ]
-      },
-      {
-        "title": "UUIDv7 doesn't have the properties you think it does",
-        "url": "https://alexsci.com/blog/uuidv7-is-weird/",
-        "score": 41,
-        "comments": 12,
-        "tags": [
-          "distributed",
-          "python"
-        ]
-      },
-      {
-        "title": "Attention people who think UB is fine",
-        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
-        "score": 11,
-        "comments": 3,
-        "tags": [
-          "c",
-          "c++"
-        ]
-      },
-      {
-        "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov",
-        "url": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
-        "score": 34,
-        "comments": 16,
-        "tags": [
-          "performance"
-        ]
-      },
-      {
-        "title": "Quad9 DNS Resolver to exit France",
-        "url": "https://quad9.net/news/blog/au-revoir-france/",
-        "score": 105,
-        "comments": 11,
-        "tags": [
-          "law",
-          "networking"
-        ]
-      },
-      {
-        "title": "What are you doing this weekend?",
-        "url": "https://lobste.rs/s/crqz1g",
-        "score": 18,
-        "comments": 41,
-        "tags": [
-          "ask",
-          "programming"
-        ]
-      },
-      {
-        "title": "A whirlwind tour of systemd-nspawn containers (2025)",
-        "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
-        "score": 11,
-        "comments": 2,
-        "tags": [
-          "systemd"
-        ]
-      },
-      {
-        "title": "Incremental Computation Graphs",
-        "url": "https://dziban.net/posts/incremental-computation-graph/",
-        "score": 2,
-        "comments": 3,
-        "tags": [
-          "programming"
         ]
       }
     ],
     "v2ex": [
       {
-        "title": "V 友们，胡姓，帮忙取一个好听的名字",
-        "url": "https://www.v2ex.com/t/1251126",
-        "replies": 208,
-        "node": "qna"
-      },
-      {
-        "title": "上午刚给自己项目开源，下午就收到 hr 裁员，卧槽了，我还没发育完呢",
-        "url": "https://www.v2ex.com/t/1251200",
-        "replies": 170,
+        "title": "别说开发了, 这把运维真给干没了把",
+        "url": "https://www.v2ex.com/t/1251410",
+        "replies": 74,
         "node": "programmer"
       },
       {
-        "title": "如果，我是说如果，谈婚论嫁时，女方父母提出让男方婚后工资给女方管理，怎么破局。",
-        "url": "https://www.v2ex.com/t/1251151",
-        "replies": 133,
+        "title": "用单位电脑开代理，如何逃避后台监测？",
+        "url": "https://www.v2ex.com/t/1251432",
+        "replies": 51,
         "node": "qna"
       },
       {
-        "title": "老实回答，你们硬要用 Claude 的人是不是有 M 倾向？",
-        "url": "https://www.v2ex.com/t/1251139",
-        "replies": 114,
+        "title": "特斯拉到底有什么魔力, 销量这么高的毛坯房",
+        "url": "https://www.v2ex.com/t/1251551",
+        "replies": 38,
+        "node": "ev"
+      },
+      {
+        "title": "Kimi K3.1 Pro 发布, 比 K3 快、性能逼近 Opus，但额度 10 分钟就烧光了",
+        "url": "https://www.v2ex.com/t/1251425",
+        "replies": 35,
         "node": "programmer"
       },
       {
-        "title": "大家会记得很久之前发生的事情吗？",
-        "url": "https://www.v2ex.com/t/1251119",
-        "replies": 104,
-        "node": "qna"
-      },
-      {
-        "title": "远程收入 如何优雅的避税",
-        "url": "https://www.v2ex.com/t/1251173",
-        "replies": 88,
+        "title": "Personal Agent 大家平时都拿来干啥？都有啥定时任务？",
+        "url": "https://www.v2ex.com/t/1251415",
+        "replies": 32,
         "node": "programmer"
       },
       {
-        "title": "求助，刚结婚一百多天，老婆生气不见我怎么办",
-        "url": "https://www.v2ex.com/t/1251212",
-        "replies": 81,
-        "node": "qna"
+        "title": "智友社回馈 V 站新老客户，抽送第 11 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 6",
+        "url": "https://www.v2ex.com/t/1251411",
+        "replies": 26,
+        "node": "promotions"
       },
       {
-        "title": "忍辱负重还是勇敢跳槽",
-        "url": "https://www.v2ex.com/t/1251190",
-        "replies": 78,
-        "node": "career"
+        "title": "国行 iPhone Duo 如何在境内写入境外 eSIM？",
+        "url": "https://www.v2ex.com/t/1251454",
+        "replies": 26,
+        "node": "iphone"
       },
       {
-        "title": "京东提供的 4 年只换不修你们会买吗",
-        "url": "https://www.v2ex.com/t/1251142",
-        "replies": 73,
-        "node": "qna"
+        "title": "现在新号订阅是不是必被 KYC",
+        "url": "https://www.v2ex.com/t/1251445",
+        "replies": 22,
+        "node": "claude"
       },
       {
-        "title": "为什么很多人都把 DeepSeek 神化了，看不起国内豆包和其它 LLM？",
-        "url": "https://www.v2ex.com/t/1251402",
-        "replies": 16,
-        "node": "programmer"
+        "title": "claude 支持中国了？",
+        "url": "https://www.v2ex.com/t/1251557",
+        "replies": 17,
+        "node": "claude"
+      },
+      {
+        "title": "谈谈我的每月 20 美元 AI 工具搭配策略：为什么我停掉了官方 Claude Pro 订阅",
+        "url": "https://www.v2ex.com/t/1251587",
+        "replies": 7,
+        "node": "share"
       }
     ],
     "cn": [
@@ -543,40 +558,47 @@
         "title": "让 AI 在你我身旁，陪我把网页上的事做完",
         "url": "https://sspai.com/post/117034",
         "source": "少数派",
-        "summary": "少数派矩阵近期文章，讨论用 AI 助手完成网页端任务流。"
+        "summary": "作者介绍 Chrome 侧栏助手 ByYourSide：复用当前页与登录态，用一句话驱动阅读、点击与填写。"
       },
       {
         "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
         "url": "https://sspai.com/post/115437",
         "source": "少数派",
-        "summary": "作者记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。"
+        "summary": "记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。"
+      },
+      {
+        "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
+        "url": "https://www.solidot.org/story?sid=85701",
+        "source": "Solidot",
+        "summary": "Solidot 首页摘要：谷歌为保障数据中心电力，将付费鼓励他人减少用电。"
       },
       {
         "title": "KeePassXC 2.8.0 释出",
-        "url": "https://www.solidot.org/",
+        "url": "https://www.solidot.org/story?sid=85690",
         "source": "Solidot",
-        "summary": "Solidot 首页摘要列出 KeePassXC 2.8.0 发布等条目（列表页抓取，无单篇深链）。"
+        "summary": "Solidot 报道开源密码管理器 KeePassXC 2.8.0 发布。"
       },
       {
         "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
         "url": "https://www.oschina.net/news/503177",
         "source": "开源中国",
-        "summary": "OSCHINA 转载/报道 Anthropic 内部平台工程大规模用 Claude 写代码的讨论。"
+        "summary": "OSCHINA 转载/讨论 Anthropic 内部平台工程大规模用 Claude 写代码的说法。"
       },
       {
-        "title": "被三大浏览器联合拉黑后，eMudhra 宣布退出全球 SSL/TLS 证书业务",
-        "url": "https://www.oschina.net/news/503173/emudhra-to-exit-global-ssl-tls-certificate-business",
+        "title": "Arc 浏览器将于 12 月 22 日停止服务",
+        "url": "https://www.oschina.net/news/503188",
         "source": "开源中国",
-        "summary": "对昨日 eMudhra 退出生意新闻的中文跟进。"
+        "summary": "OSCHINA 报道 Arc 浏览器计划于 12 月 22 日停止服务。"
       }
     ],
     "reddit": []
   },
   "gaps": [
-    "时间窗 unix：任务说明中的 S=1761177600/E=1761264000 对应 2025-10-23；已改用 2026-10-23T00:00:00Z..2026-10-24T00:00:00Z（S=1792713600,E=1792800000）过滤 HN。",
-    "Reddit：r/programming、technology、MachineLearning、LocalLLaMA 的 RSS/JSON 均因 SSL EOF 或 curl HTTP 000 失败，reddit 区为空。",
-    "瑞典广播电台原文页返回 403，该条仅保留 HN 标题、分数与原始 URL，未引用正文细节。",
-    "X：政治/八卦帖已过滤；accounts 仅保留科技相关原创。",
+    "Reddit：r/programming、technology、MachineLearning、LocalLLaMA 的 JSON/RSS 均因 SSL 握手超时失败，reddit 区为空。",
+    "Roku 开发者博客页需 JS，未能抽取正文；相关条目若出现在 HN 区仅保留标题与链接。",
+    "IT之家首页 HTML 未能稳定解析出文章列表（页面结构/反爬），cn 区以少数派、Solidot、开源中国为主。",
+    "X：纯政治/八卦帖已过滤；accounts 仅保留科技相关原创与高相关回复。",
+    "三星电视 root 原帖发布时间早于窗口，highlight 依据窗口内 HN 讨论与该帖公开文本。",
     "未编造任何链接、引语或分数；分数来自抓取时 HN/社区快照。"
   ]
 }
