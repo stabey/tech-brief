@@ -1,78 +1,78 @@
 {
-  "id": "2026-10-25",
-  "title": "技术早报 · 2026-10-25",
+  "id": "2026-10-26",
+  "title": "技术早报 · 2026-10-26",
   "window": {
-    "start": "2026-10-24T08:00:00+08:00",
-    "end": "2026-10-25T08:00:00+08:00"
+    "start": "2026-10-25T08:00:00+08:00",
+    "end": "2026-10-26T08:00:00+08:00"
   },
-  "generated_at": "2026-10-25T08:12:19+08:00",
+  "generated_at": "2026-10-26T08:05:57+08:00",
   "podcast": {
-    "src": "audio/2026-10-25.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月二十五日这一期。\n\n安全与系统层今天很热闹。GrapheneOS 说大约十余款银行应用开始明确放行该系统；有人在新款三星电视上拿到 root，称发现「隐私恐怖」。供应链这边，Node2Shell 背后的 Brotli 漏洞被写成 HTTP2Shell，波及面扩到大量 HTTP 库。直播软件 OBS 到了三十三点零，浏览器源底层大升级，插件加载也重构了。\n\n宏观与地缘：Apollo 观察科技圈以外仍看不到 AI 推高生产率，主流企业更把 token 当成本；Steve Blank 则写欧洲开始认真讨论「美国科技会不会被一键关掉」。基础设施与机器人：rqlite 作者回顾分布式 SQLite 十二年；Dream Labs 放出 Dream-1，宣称没见过的机器人也能零样本控制。还有人拿 Roc 语言挑战 C 写的压缩库，问纯函数式到底能走多近。\n\n特别关注三位。Elon 谈 Starlink V3 带宽约一百倍、又一批二十七星，并说智能体需求涨得前所未见，还在推 Grok Imagine。Tibo 提醒别把自己建成工具，同时招人把 dots 冲向十亿用户。poteto 更新 pstack 思路——模型越强指令越短——并展示多个 Bot 在 Slack 里协作。\n\n社区一瞥：Lobsters 在聊拿回周三和 C++二十六投票结果；V2EX 热议运维被裁与 Kimi 额度烧得飞快。\n\n以上就是今天的早报，明天早上八点北京时间见。"
+    "src": "audio/2026-10-26.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月二十六日这一期。\n\n医疗与模型边界很扎眼：有皮肤科医生对比发现，十年前微调的卷积神经网络，在皮肤癌诊断上反而胜过 GPT-六 Astra 和 Claude Fable 五点一——两家大模型都把黑色素瘤看成了可出院的脂溢性角化。算力侧，Cerebras 公开了如何把约三万亿参数的 Kimi K三拆到多块晶圆级芯片上，并声称能跑到上千 tokens 每秒。开源小模型集群这边，有人用五台 Qwen三点八-二十七B 加 GVS5H 编排，宣称能对标 Fable 五。\n\n产品与开发工具：JetBrains 开源了 Thinkrail，把 pi agent 嵌进可隔离 worktree 的轻量 IDE。安全上，Wiz 披露 Gheist 运动用被盗 GitHub token 批量植入泄密 workflow，公开仓已被新控制挡住，私有仓仍有风险。三星电视隐私话题继续：有人指它在低分辨率画面上跑 TensorFlow Lite 做跟踪。政策与教育：法国据报准备过对社交平台的临时 DNS 封锁；伯克利有数学教授感慨 AI 用多了，作业批改没意义。价格战方面，Max Woolf 梳理 OpenAI 与 Anthropic 数月内最高降价约八成。\n\n特别关注三位。Elon 称债市几乎切断纯赌 AI 数据中心的融资，同时 SpaceX 拿下约四百亿美元 GPU 债务；并宣传 Grok Bot 能代打电话、记摘要，还说最好把它当成超级能干的员工。Tibo 进入「第二十天休息重置」，预告「疯狂 Codex」一周。poteto 跟进桌面端渲染 bug，并对「把 Bot 拖出应用携带上下文」的演示表示感兴趣、想合作。\n\n社区一瞥：Lobsters 在聊 POSIX wordexp 危险与 Vim Classic；V2EX 热议 Bing 降权、Tibo 重置，以及 Codex 是否追不上 Claude。\n\n以上就是今天的早报，明天早上八点北京时间见。"
   },
   "highlights": [
     {
       "id": "h1",
-      "title": "约十余款银行应用开始明确放行 GrapheneOS",
-      "summary": "GrapheneOS 官方称多数银行应用可在本系统运行，但不少因内存损坏与错误反篡改需打开「每应用兼容模式」；约一成因禁止非谷歌认证系统而不可用。另有约十余款开始在谷歌认证系统之外明确允许 GrapheneOS，并指向用户报告整理的兼容列表。HN 612 分、约 281 评论。",
-      "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-      "source": "Hacker News / GrapheneOS"
+      "title": "十年前的 CNN 在皮肤癌诊断上胜过前沿大模型",
+      "summary": "皮肤科医生 Magnus Lynch 对比：把同一临床照片与皮肤镜图像交给 GPT-6 Astra 与 Claude Fable 5.1，二者均判为脂溢性角化并可出院；而约十年前微调的 Inception 系 CNN 正确判为黑色素瘤。作者据此讨论「通用视觉大模型 vs 专科小模型」在医疗影像上的边界。HN 387 分、约 184 评论。",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "source": "Hacker News / Lynch Lab"
     },
     {
       "id": "h2",
-      "title": "研究员在新款三星电视拿到 root shell，称发现「隐私恐怖」",
-      "summary": "@log4j 称对 2025 款三星电视固件逆向遇 AES 加密后改走零日，拿到 root shell，并称发现「PRIVACY HORROR」、考虑写完整报告。帖文本身早于窗口，但窗口内 HN 讨论热度高。HN 483 分、约 194 评论。",
-      "url": "https://twitter.com/log4j/status/2113014142600953868",
-      "source": "Hacker News / @log4j"
+      "title": "Cerebras：如何在晶圆级芯片上部署万亿参数模型",
+      "summary": "官方博客以开源约三万亿参数的 Kimi K3 为例，说明单块 WSE-3T 片上仅约四十四 GB，需跨多晶圆切分权重；称可把多万亿参数模型跑到约一千至两千以上 tokens/秒，并谈并发请求映射。HN 348 分、约 127 评论。",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "source": "Hacker News / Cerebras"
     },
     {
       "id": "h3",
-      "title": "OBS Studio 33.0.0：浏览器源 CEF 大升级与插件加载重构",
-      "summary": "官方发布说明：CEF 自 127/6533 升至 150/7871（浏览器源与 dock 底层）；插件加载全面翻新，一党插件进 core 目录，第三方安装路径更新但仍兼容旧位置至 34.0；预览吸附与数值框交互改进，Arm64 启用 NVENC。HN 438 分、约 158 评论。",
-      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
-      "source": "Hacker News / OBS Project"
+      "title": "三星电视被指用 TensorFlow Lite 在低分辨率画面上做跟踪",
+      "summary": "@mike64_t 称三星在约九百六十乘五百四十图像上跑 TensorFlow Lite 模型「跟踪你」；窗口内另有帖讨论三星电视经蓝牙搜寻家中麦克风再监听事件。HN 相关帖约 285 分（评论少）与约 134 分，延续昨日三星电视隐私讨论。",
+      "url": "https://twitter.com/mike64_t/status/2114150399406202896",
+      "source": "Hacker News / @mike64_t"
     },
     {
       "id": "h4",
-      "title": "Apollo：科技以外仍看不到 AI 带来的生产率回报",
-      "summary": "Daily Spark 称 Mag 7 利润率在升、标普其余约四百九十三家持平，生产率增长仍无 AI 提振迹象；主流企业开始把 token 开支当成本中心而非增长源，VC 公司仍加码。作者认为若智能体与 token 消费仍局限在经济一小角，宏观效应将很有限。HN 436 分、约 428 评论。",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "source": "Hacker News / Apollo"
+      "title": "五台 Qwen3.8-27B 用 GVS5H 编排可对标 Fable 5",
+      "summary": "Show/项目 GVS5H：作者称用五台 Qwen3.8-27B 在该 harness 下匹配 Fable 5 级别表现，讨论开源小模型集群与编排层对闭源前沿的追赶路径。HN 181 分、约 69 评论。",
+      "url": "https://github.com/slee-persis/GVS5H",
+      "source": "Hacker News / GitHub"
     },
     {
       "id": "h5",
-      "title": "Steve Blank：欧洲把「美国科技可被一键关掉」当真了",
-      "summary": "Blank 在伦敦观察到，Starshield/对乌克兰相关限制消息让欧洲决策者重新审视依赖美国云与 AI 的主权风险；他写到一旦把美企视为「kill-switch」风险，同盟市场会收缩，而 AI 又降低了复制办公与企业软件能力的成本。HN 414 分、约 444 评论。",
-      "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
-      "source": "Hacker News / Steve Blank"
+      "title": "JetBrains Thinkrail：围绕 pi agent 的可定制「Vibe」IDE",
+      "summary": "JetBrains 开源 Thinkrail：在轻量 IDE 里包一层 pi coding agent，用 git worktree 隔离工作区、living specs 与可复用 skills 沉淀项目知识；路线图含扩展能力让 IDE 按用法自建工具。官网 thinkrail.ai。HN 159 分、约 112 评论。",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "source": "Hacker News / JetBrains"
     },
     {
       "id": "h6",
-      "title": "分布式 SQLite 十二年：rqlite 作者回顾从 2014 到品类成型",
-      "summary": "Philip O'Toole 回顾 2014 年把 Raft 放在 SQLite 前做复制的 rqlite，称当时几乎是开源里最早的组合；如今「分布式 SQLite」已成十余项目的品类，有的获投甚至被收购，而许多叙事从 2021 才起笔。HN 359 分、约 62 评论。",
-      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-      "source": "Hacker News / Philip O'Toole"
+      "title": "加州伯克利数学教授：AI 用多了，「作业批改没意义」",
+      "summary": "Daily Cal 报道 UC Berkeley 数学教授因学生普遍用 AI 完成作业，感到传统批改「没有意义」。HN 185 分、约 267 评论，讨论教学评估如何适配智能体时代。",
+      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-poi",
+      "source": "Hacker News / Daily Cal"
     },
     {
       "id": "h7",
-      "title": "Node2Shell 演化为 HTTP2Shell：Brotli CVE-2026-111497 波及面扩大",
-      "summary": "Aikido 称 Node2Shell 背后的 Brotli 越界写（CVE-2026-111497，影响约 1.0.3–1.2.0）会波及大量安装 Brotli/brotlicffi 的 HTTP 库与应用，可形成双向远程代码执行；根因二月已在源码修复但迟至现在才当安全问题发版。HN 269 分、约 135 评论。",
-      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-      "source": "Hacker News / Aikido"
+      "title": "法国曾要求 ISP 准备对主要社交平台做临时 DNS 封锁",
+      "summary": "Blast 独家称总理一方向运营商下达准备措施，可对大型社交平台实施临时 DNS 封锁。HN 145 分、约 170 评论，与开源反审查/FOSDEM 讨论形成对照。",
+      "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la",
+      "source": "Hacker News / Blast"
     },
     {
       "id": "h8",
-      "title": "Dream-1：未见过的机器人也能零样本控制，公开 API 约 3 美元/小时",
-      "summary": "Dream Labs 出关并发布 World Action Model Dream-1：宣称可在未见过的双臂夹爪机器人上执行未见过的任务、无需该机微调或演示；同时公布约九千万美元种子轮与公开 API。HN 150 分、约 71 评论。",
-      "url": "https://dreamlabs.ai/research/dream-1/",
-      "source": "Hacker News / Dream Labs"
+      "title": "Gheist：盗用 GitHub token 批量植入泄密 workflow，被新控制打断",
+      "summary": "Wiz 自九月十五日起追踪 Gheist：用被盗 token 向可达仓库提交名为 sync-check 的 workflow，把 secrets 打进日志再经 API 拉取并删跑；UA 为 gheist。已恢复逾一万三千五百条分支、约八百五十账号；公开仓已被 GitHub 新控制挡住，私有仓与企业环境仍见成功利用。HN 46 分。",
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "source": "Hacker News / Wiz"
     },
     {
       "id": "h9",
-      "title": "纯函数式离 C 有多近？Roc 挑战 libdeflate",
-      "summary": "Richard Feldman 在 Lean 压缩库超越部分 Rust 实现却仍不敌 C 版 libdeflate 的背景下，用注重运行时性能的 Roc 语言打磨 roc-deflate，讨论纯函数式在极致吞吐上还能走多远。HN 247 分、约 87 评论。",
-      "url": "https://rtfeldman.com/fp-vs-c",
-      "source": "Hacker News / rtfeldman.com"
+      "title": "Max Woolf：OpenAI 与 Anthropic 数月内最高降价约八成，为什么？",
+      "summary": "梳理自六月以来 Sol/Luna、Sonnet 5、Opus 5 等到 Luna 一次性砍价约八成的时间线，讨论价格战、开源权重与二级推理商对大厂报价的约束，以及「奇怪但用户欢迎」的降价动机。HN 81 分、约 105 评论。",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "source": "Hacker News / Max Woolf"
     }
   ],
   "accounts": [
@@ -82,62 +82,62 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "回复称刚开始发射的 Starlink V3「带宽约为现有 V2 系统的约一百倍」。约 4351 赞。",
-          "url": "https://x.com/elonmusk/status/2114074592990150788",
-          "time": "2026-10-25T03:20:35+08:00",
+          "summary": "回复 Chamath：近几周债市几乎切断「没有独立于 AI 数据中心的实质营收」的公司融资；称 SpaceX 已完成约四百亿美元 GPU 债务融资，因投资级且有 Starlink 与发射业务。约 2万 赞。",
+          "url": "https://x.com/elonmusk/status/2114434646914068862",
+          "time": "2026-10-26T03:11:18+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 4351,
-            "reposts": 310,
-            "replies": 295,
-            "quotes": 37,
-            "bookmarks": 82,
-            "impressions": 91407
+            "likes": 20005,
+            "reposts": 1867,
+            "replies": 1053,
+            "quotes": 1099,
+            "bookmarks": 5783,
+            "impressions": 3892407
           }
         },
         {
           "id": "elon-2",
-          "summary": "宣布「又一批二十七颗 Starlink 卫星」。约 2万 赞。",
-          "url": "https://x.com/elonmusk/status/2114003587156086798",
-          "time": "2026-10-24T22:38:26+08:00",
+          "summary": "宣布 Grok Bot 可代你打电话/联系商家、代提需求、记笔记并回传对话摘要。约 1.3万 赞。",
+          "url": "https://x.com/elonmusk/status/2114365361068138990",
+          "time": "2026-10-25T22:35:59+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 19507,
-            "reposts": 2116,
-            "replies": 1578,
-            "quotes": 168,
-            "bookmarks": 236,
-            "impressions": 1529713
+            "likes": 12988,
+            "reposts": 1247,
+            "replies": 1747,
+            "quotes": 382,
+            "bookmarks": 2956,
+            "impressions": 1967448
           }
         },
         {
           "id": "elon-3",
-          "summary": "称「Agentic demand is growing faster than I’ve ever seen anything grow」。约 7335 赞。",
-          "url": "https://x.com/elonmusk/status/2114036686870982681",
-          "time": "2026-10-25T00:49:57+08:00",
+          "summary": "称「用 Grok Bot 的最佳方式是假设你在雇一个超级能干的员工」。约 7428 赞。",
+          "url": "https://x.com/elonmusk/status/2114375896073216334",
+          "time": "2026-10-25T23:17:51+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 7335,
-            "reposts": 541,
-            "replies": 529,
-            "quotes": 164,
-            "bookmarks": 460,
-            "impressions": 374825
+            "likes": 7428,
+            "reposts": 809,
+            "replies": 1192,
+            "quotes": 138,
+            "bookmarks": 556,
+            "impressions": 2017235
           }
         },
         {
           "id": "elon-4",
-          "summary": "晒「Odyssey with Grok Imagine」，并另帖提醒「Try Grok @Bot」与保险库存敏感信息。Imagine 帖约 1.4万 赞。",
-          "url": "https://x.com/elonmusk/status/2113869401930039702",
-          "time": "2026-10-24T13:45:13+08:00",
+          "summary": "认为将看到大量「半成品数据中心里的搁浅算力」；另称 SpaceX「不会收购任何 neocloud，没意义」。搁浅算力帖约 1.3万 赞。",
+          "url": "https://x.com/elonmusk/status/2114168277882581486",
+          "time": "2026-10-25T09:32:51+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 13929,
-            "reposts": 1286,
-            "replies": 1143,
-            "quotes": 153,
-            "bookmarks": 2220,
-            "impressions": 1819303
+            "likes": 13308,
+            "reposts": 705,
+            "replies": 962,
+            "quotes": 450,
+            "bookmarks": 1471,
+            "impressions": 4034719
           }
         }
       ]
@@ -148,47 +148,47 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "写道：「拥有工具」和「自己变成工具」如今只差一线，别把自己建成工具。约 9618 赞。",
-          "url": "https://x.com/thsottiaux/status/2113838156193894447",
-          "time": "2026-10-24T11:41:04+08:00",
+          "summary": "「Day 20/ Rest and reset」，并补充「By midnight PST」；随后称「It is all propagated. Enjoy some mad codexing tomorrow」。重置帖约 1.1万 赞。",
+          "url": "https://x.com/thsottiaux/status/2114200152701575656",
+          "time": "2026-10-25T11:39:31+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 9618,
-            "reposts": 413,
-            "replies": 1235,
-            "quotes": 245,
-            "bookmarks": 753,
-            "impressions": 939829
+            "likes": 11237,
+            "reposts": 465,
+            "replies": 1184,
+            "quotes": 625,
+            "bookmarks": 262,
+            "impressions": 1232045
           }
         },
         {
           "id": "tibo-2",
-          "summary": "公开招聘：有过类似规模经验、想帮 dots 冲到十亿用户的人可私信。约 4553 赞、约一千二百七十四回复。",
-          "url": "https://x.com/thsottiaux/status/2114074885622501706",
-          "time": "2026-10-25T03:21:45+08:00",
+          "summary": "回复 theo「Not a real improvement, put the reset in the bag」，调侃对方「每日改进 Codex」节奏。约 1964 赞。",
+          "url": "https://x.com/thsottiaux/status/2114228044072403055",
+          "time": "2026-10-25T13:30:20+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 4553,
-            "reposts": 109,
-            "replies": 1274,
-            "quotes": 100,
-            "bookmarks": 404,
-            "impressions": 456545
+            "likes": 1964,
+            "reposts": 14,
+            "replies": 64,
+            "quotes": 5,
+            "bookmarks": 21,
+            "impressions": 97871
           }
         },
         {
           "id": "tibo-3",
-          "summary": "周六修 bug 喝咖啡，顺便问旧金山好去处。约 4496 赞。",
-          "url": "https://x.com/thsottiaux/status/2114030784625647855",
-          "time": "2026-10-25T00:26:30+08:00",
+          "summary": "称「It is all propagated. Enjoy some mad codexing tomorrow. Fun week ahead too.」约 5175 赞。",
+          "url": "https://x.com/thsottiaux/status/2114237083652882932",
+          "time": "2026-10-25T14:06:16+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 4496,
-            "reposts": 70,
-            "replies": 1005,
-            "quotes": 61,
-            "bookmarks": 193,
-            "impressions": 525170
+            "likes": 5175,
+            "reposts": 163,
+            "replies": 839,
+            "quotes": 127,
+            "bookmarks": 151,
+            "impressions": 644771
           }
         }
       ]
@@ -199,47 +199,47 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "指向自己的 pstack 指南，并补充：模型越强指令越少，skills 会越来越短，最终近乎「保存的提示词」。指南帖约 913 赞、约一千零二十六收藏。",
-          "url": "https://x.com/poteto/status/2114095305910280363",
-          "time": "2026-10-25T04:42:53+08:00",
+          "summary": "用图回复 Tibo/Alexandr 关于「十二用户」梗的帖，互动火热。约 2034 赞。",
+          "url": "https://x.com/poteto/status/2114152764549021711",
+          "time": "2026-10-25T08:31:12+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 913,
-            "reposts": 30,
-            "replies": 32,
-            "quotes": 4,
-            "bookmarks": 1026,
-            "impressions": 44230
+            "likes": 2034,
+            "reposts": 49,
+            "replies": 77,
+            "quotes": 22,
+            "bookmarks": 71,
+            "impressions": 87179
           }
         },
         {
           "id": "poteto-2",
-          "summary": "喜欢让多个 Bot 在 Slack 里互相协作，「像队友一样并肩工作」。约 726 赞。",
-          "url": "https://x.com/poteto/status/2114071326411690209",
-          "time": "2026-10-25T03:07:36+08:00",
+          "summary": "跟进 Windows 桌面端 Grok Bot 渲染 bug：选新 bot 对话后消息消失或叠在一起，向报告者索取机器规格以便复现。约 199 赞、约八十回复。",
+          "url": "https://x.com/poteto/status/2114265521365684672",
+          "time": "2026-10-25T15:59:16+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 726,
-            "reposts": 16,
-            "replies": 120,
-            "quotes": 9,
-            "bookmarks": 119,
-            "impressions": 34287
+            "likes": 199,
+            "reposts": 0,
+            "replies": 80,
+            "quotes": 0,
+            "bookmarks": 3,
+            "impressions": 13011
           }
         },
         {
           "id": "poteto-3",
-          "summary": "回复 Tibo「别当工具」：be a potato instead。约 1097 赞。",
-          "url": "https://x.com/poteto/status/2113896737773617607",
-          "time": "2026-10-24T15:33:51+08:00",
+          "summary": "对「把 Grok Bot 拖出应用带到图表/邮件并携带上下文」的演示回复 interesting，并另帖说 we should collab。interesting 帖约 454 赞。",
+          "url": "https://x.com/poteto/status/2114156115445612983",
+          "time": "2026-10-25T08:44:31+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 1097,
-            "reposts": 3,
-            "replies": 44,
-            "quotes": 4,
-            "bookmarks": 5,
-            "impressions": 64537
+            "likes": 454,
+            "reposts": 1,
+            "replies": 21,
+            "quotes": 1,
+            "bookmarks": 9,
+            "impressions": 12150
           }
         }
       ]
@@ -248,175 +248,224 @@
   "sections": {
     "hn": [
       {
-        "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
-        "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-        "score": 612,
-        "comments": 281,
-        "hn_url": "https://news.ycombinator.com/item?id=50217495"
+        "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+        "url": "https://lynchlab.net/llm-skin-cancer",
+        "score": 387,
+        "comments": 184,
+        "hn_url": "https://news.ycombinator.com/item?id=50233779"
       },
       {
-        "title": "Root shell on Samsung TV",
-        "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
-        "score": 483,
-        "comments": 194,
-        "hn_url": "https://news.ycombinator.com/item?id=50218633"
+        "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+        "url": "https://talkweb.eu/openweb/4558/",
+        "score": 366,
+        "comments": 180,
+        "hn_url": "https://news.ycombinator.com/item?id=50233929"
       },
       {
-        "title": "OBS Studio 33",
-        "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
-        "score": 438,
-        "comments": 158,
-        "hn_url": "https://news.ycombinator.com/item?id=50218430"
+        "title": "Cerebras Deploys Trillion-Parameter AI Models",
+        "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+        "score": 348,
+        "comments": 127,
+        "hn_url": "https://news.ycombinator.com/item?id=50227356"
       },
       {
-        "title": "No signs of AI payoff outside the tech sector",
-        "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-        "score": 436,
-        "comments": 428,
-        "hn_url": "https://news.ycombinator.com/item?id=50224463"
-      },
-      {
-        "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
-        "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
-        "score": 414,
-        "comments": 444,
-        "hn_url": "https://news.ycombinator.com/item?id=50220913"
-      },
-      {
-        "title": "Twelve years of distributed SQLite",
-        "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-        "score": 359,
-        "comments": 62,
-        "hn_url": "https://news.ycombinator.com/item?id=50217500"
-      },
-      {
-        "title": "Show HN: Steal My Bitcoin",
-        "url": "https://stealmybitcoin.com/",
-        "score": 357,
-        "comments": 199,
-        "hn_url": "https://news.ycombinator.com/item?id=50224916"
-      },
-      {
-        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-        "score": 269,
-        "comments": 135,
-        "hn_url": "https://news.ycombinator.com/item?id=50219177"
-      },
-      {
-        "title": "I don't understand quantum physics (2018)",
-        "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
-        "score": 267,
-        "comments": 203,
-        "hn_url": "https://news.ycombinator.com/item?id=50219666"
-      },
-      {
-        "title": "How close can pure functional programming get to C?",
-        "url": "https://rtfeldman.com/fp-vs-c",
-        "score": 247,
-        "comments": 87,
-        "hn_url": "https://news.ycombinator.com/item?id=50218195"
-      },
-      {
-        "title": "Google illegally cut down 250K trees in Finland for data center",
-        "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
-        "score": 246,
-        "comments": 199,
-        "hn_url": "https://news.ycombinator.com/item?id=50221676"
-      },
-      {
-        "title": "Roku developer repositories moved from GitHub to GitLab",
-        "url": "https://blog.roku.com/developer/gitlab-move",
-        "score": 242,
-        "comments": 160,
-        "hn_url": "https://news.ycombinator.com/item?id=50222622"
-      },
-      {
-        "title": "FreeDNS",
-        "url": "https://freedns.afraid.org/",
-        "score": 239,
-        "comments": 61,
-        "hn_url": "https://news.ycombinator.com/item?id=50222133"
-      },
-      {
-        "title": "Danish Government silently drops plan to dump MS Office",
-        "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
-        "score": 185,
-        "comments": 133,
-        "hn_url": "https://news.ycombinator.com/item?id=50223844"
-      },
-      {
-        "title": "The Goose Programming Language",
-        "url": "https://aardappel.github.io/goose/",
-        "score": 184,
-        "comments": 141,
-        "hn_url": "https://news.ycombinator.com/item?id=50224100"
-      },
-      {
-        "title": "Apple Security Research Device",
-        "url": "https://security.apple.com/research-device/",
-        "score": 171,
-        "comments": 114,
-        "hn_url": "https://news.ycombinator.com/item?id=50217903"
-      },
-      {
-        "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-        "url": "https://github.com/Zagitta/gpu-unlock",
-        "score": 170,
-        "comments": 61,
-        "hn_url": "https://news.ycombinator.com/item?id=50219700"
-      },
-      {
-        "title": "The Goose Programming Language",
-        "url": "https://aardappel.github.io/goose/",
-        "score": 168,
+        "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
+        "url": "https://twitter.com/mike64_t/status/2114150399406202896",
+        "score": 285,
         "comments": 1,
-        "hn_url": "https://news.ycombinator.com/item?id=50224300"
+        "hn_url": "https://news.ycombinator.com/item?id=50230181"
+      },
+      {
+        "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
+        "url": "https://github.com/ihhub/fheroes2",
+        "score": 201,
+        "comments": 71,
+        "hn_url": "https://news.ycombinator.com/item?id=50230384"
+      },
+      {
+        "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+        "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+        "score": 185,
+        "comments": 267,
+        "hn_url": "https://news.ycombinator.com/item?id=50233304"
+      },
+      {
+        "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+        "url": "https://github.com/slee-persis/GVS5H",
+        "score": 181,
+        "comments": 69,
+        "hn_url": "https://news.ycombinator.com/item?id=50228167"
+      },
+      {
+        "title": "Show HN: I put employees inside S&P 500 market-cap bubbles",
+        "url": "https://bigwhalehunting.com/workforce/",
+        "score": 163,
+        "comments": 47,
+        "hn_url": "https://news.ycombinator.com/item?id=50232312"
+      },
+      {
+        "title": "JetBrains Thinkrail",
+        "url": "https://github.com/JetBrains/thinkrail",
+        "score": 159,
+        "comments": 112,
+        "hn_url": "https://news.ycombinator.com/item?id=50233294"
+      },
+      {
+        "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+        "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+        "score": 154,
+        "comments": 31,
+        "hn_url": "https://news.ycombinator.com/item?id=50235217"
+      },
+      {
+        "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
+        "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+        "score": 145,
+        "comments": 170,
+        "hn_url": "https://news.ycombinator.com/item?id=50229861"
+      },
+      {
+        "title": "Samsung TVs look for microphones in your house via Bluetooth and then spy events",
+        "url": "https://twitter.com/freddier/status/2114042326758867453",
+        "score": 134,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=50231189"
+      },
+      {
+        "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+        "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+        "score": 130,
+        "comments": 68,
+        "hn_url": "https://news.ycombinator.com/item?id=50229827"
+      },
+      {
+        "title": "Online censorship is crushing indie webcomics",
+        "url": "https://xtramagazine.com/culture/online-censorship-indie-webcomics-284463",
+        "score": 120,
+        "comments": 102,
+        "hn_url": "https://news.ycombinator.com/item?id=50229599"
+      },
+      {
+        "title": "Active incident at Dreamhost forcing password reset",
+        "url": "https://www.dreamhoststatus.com/",
+        "score": 103,
+        "comments": 37,
+        "hn_url": "https://news.ycombinator.com/item?id=50231166"
+      },
+      {
+        "title": "Why I Am a Programmer",
+        "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+        "score": 102,
+        "comments": 29,
+        "hn_url": "https://news.ycombinator.com/item?id=50235017"
+      },
+      {
+        "title": "Imagine an AI future where being banned means you are now economically useless",
+        "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+        "score": 94,
+        "comments": 74,
+        "hn_url": "https://news.ycombinator.com/item?id=50230995"
+      },
+      {
+        "title": "What Adobe v ArtCraft teaches us",
+        "url": "https://techbronerd.substack.com/p/openai-and-anthropic-wanted-to-replace",
+        "score": 84,
+        "comments": 96,
+        "hn_url": "https://news.ycombinator.com/item?id=50232682"
       }
     ],
     "lobsters": [
       {
         "title": "I want my Wednesday back",
         "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
-        "score": 93,
-        "comments": 29,
+        "score": 115,
+        "comments": 31,
         "tags": [
           "php",
           "security"
         ]
       },
       {
-        "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
-        "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
-        "score": 18,
-        "comments": 8,
+        "title": "The Slurptop: A home-built luggable that runs on power tool batteries",
+        "url": "https://slurpburgers.com/slurpbuilds/the-slurptop/",
+        "score": 83,
+        "comments": 21,
         "tags": [
+          "art",
+          "hardware"
+        ]
+      },
+      {
+        "title": "Attention people who think UB is fine",
+        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
+        "score": 76,
+        "comments": 73,
+        "tags": [
+          "c",
           "c++"
+        ]
+      },
+      {
+        "title": "Indian government sites are serving revoked eMudhra certificates",
+        "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
+        "score": 70,
+        "comments": 16,
+        "tags": [
+          "security"
         ]
       },
       {
         "title": "Bringing uv and ty together",
         "url": "https://astral.sh/blog/uv-ty-integration",
-        "score": 27,
+        "score": 54,
         "comments": 0,
         "tags": [
           "python"
         ]
       },
       {
-        "title": "Indian government sites are serving revoked eMudhra certificates",
-        "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
-        "score": 57,
-        "comments": 12,
+        "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
+        "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+        "score": 50,
+        "comments": 26,
         "tags": [
+          "c++"
+        ]
+      },
+      {
+        "title": "Vim Classic",
+        "url": "https://vim-classic.org/",
+        "score": 48,
+        "comments": 23,
+        "tags": [
+          "editors",
+          "vim"
+        ]
+      },
+      {
+        "title": "POSIX wordexp(3) is dangerous",
+        "url": "https://yossarian.net/til/post/posix-wordexp-3-is-dangerous/",
+        "score": 45,
+        "comments": 11,
+        "tags": [
+          "c",
           "security"
+        ]
+      },
+      {
+        "title": "Be Aware of What's in Your Logs",
+        "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+        "score": 40,
+        "comments": 3,
+        "tags": [
+          "debugging"
         ]
       },
       {
         "title": "Wild version 0.11.0 released",
         "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
-        "score": 26,
-        "comments": 5,
+        "score": 37,
+        "comments": 7,
         "tags": [
           "mac",
           "release",
@@ -424,29 +473,19 @@
         ]
       },
       {
-        "title": "Be Aware of What's in Your Logs",
-        "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+        "title": "Partial Order Precedence",
+        "url": "https://ziglang.org/devlog/2026/#2026-10-24",
         "score": 28,
-        "comments": 1,
+        "comments": 7,
         "tags": [
-          "debugging"
-        ]
-      },
-      {
-        "title": "Attention people who think UB is fine",
-        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
-        "score": 66,
-        "comments": 56,
-        "tags": [
-          "c",
-          "c++"
+          "zig"
         ]
       },
       {
         "title": "Emacs finally folds to my liking",
         "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
-        "score": 24,
-        "comments": 2,
+        "score": 26,
+        "comments": 5,
         "tags": [
           "emacs"
         ]
@@ -454,151 +493,195 @@
       {
         "title": "How to run a city builder on 16 MHz",
         "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
-        "score": 7,
-        "comments": 11,
+        "score": 22,
+        "comments": 15,
         "tags": [
           "programming"
         ]
       },
       {
-        "title": "The glorious @xkcdRandom Zig builtin",
-        "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
-        "score": 61,
-        "comments": 8,
+        "title": "MacOS Extensions pack for the Apple Network Server v1.0",
+        "url": "http://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html",
+        "score": 14,
+        "comments": 0,
         "tags": [
-          "compilers",
-          "satire",
-          "zig"
-        ]
-      },
-      {
-        "title": "What's wrong with AI?",
-        "url": "https://homepage.farm/ai.html",
-        "score": 21,
-        "comments": 14,
-        "tags": [
-          "culture"
-        ]
-      },
-      {
-        "title": "This week's \"node2shell\" Brotli vulnerability (CVE-2026-111497) is exploitable in Python, other consumers of Brotli",
-        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-        "score": 6,
-        "comments": 6,
-        "tags": [
-          "security",
-          "web"
+          "retrocomputing",
+          "reversing"
         ]
       }
     ],
     "v2ex": [
       {
-        "title": "别说开发了, 这把运维真给干没了把",
-        "url": "https://www.v2ex.com/t/1251410",
-        "replies": 74,
-        "node": "programmer"
+        "title": "Bing 中国大陆搜索是否存在对部分国外网站的刻意降权或隐藏？",
+        "url": "https://www.v2ex.com/t/1251598",
+        "replies": 31,
+        "node": "bing"
       },
       {
-        "title": "用单位电脑开代理，如何逃避后台监测？",
-        "url": "https://www.v2ex.com/t/1251432",
-        "replies": 51,
+        "title": "有没有发现一个奇怪的现象？",
+        "url": "https://www.v2ex.com/t/1251636",
+        "replies": 30,
+        "node": "ideas"
+      },
+      {
+        "title": "[Day 20] - 10.25 - Tibo 又要重置了",
+        "url": "https://www.v2ex.com/t/1251616",
+        "replies": 27,
+        "node": "openai"
+      },
+      {
+        "title": "有什么工具可以测试鼠标的微动是否有问题",
+        "url": "https://www.v2ex.com/t/1251609",
+        "replies": 25,
         "node": "qna"
       },
       {
-        "title": "特斯拉到底有什么魔力, 销量这么高的毛坯房",
-        "url": "https://www.v2ex.com/t/1251551",
-        "replies": 38,
-        "node": "ev"
+        "title": "有没有感觉 Codex 越来越比不上 Claude 了",
+        "url": "https://www.v2ex.com/t/1251671",
+        "replies": 25,
+        "node": "qna"
       },
       {
-        "title": "Kimi K3.1 Pro 发布, 比 K3 快、性能逼近 Opus，但额度 10 分钟就烧光了",
-        "url": "https://www.v2ex.com/t/1251425",
-        "replies": 35,
+        "title": "搓了一个“V2EX 评论上下文”的 chrome 插件，方便 V 友阅读评论",
+        "url": "https://www.v2ex.com/t/1251601",
+        "replies": 21,
+        "node": "create"
+      },
+      {
+        "title": "codex 最新的功能，居然和我之前做的小功能如此雷同",
+        "url": "https://www.v2ex.com/t/1251621",
+        "replies": 19,
+        "node": "openai"
+      },
+      {
+        "title": "有件事我搞不明白， V 站为何不升级一下交互和 UI？然后出一个官方的 APP？",
+        "url": "https://www.v2ex.com/t/1251696",
+        "replies": 19,
+        "node": "v2ex"
+      },
+      {
+        "title": "用 ai 实现书法作品自动生成",
+        "url": "https://www.v2ex.com/t/1251592",
+        "replies": 18,
+        "node": "create"
+      },
+      {
+        "title": "我做了一个我自认为全世界最好的雅思背词网站，完全免费，完全开源。🔥🔥🔥🔥🔥",
+        "url": "https://www.v2ex.com/t/1251691",
+        "replies": 13,
         "node": "programmer"
-      },
-      {
-        "title": "Personal Agent 大家平时都拿来干啥？都有啥定时任务？",
-        "url": "https://www.v2ex.com/t/1251415",
-        "replies": 32,
-        "node": "programmer"
-      },
-      {
-        "title": "智友社回馈 V 站新老客户，抽送第 11 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 6",
-        "url": "https://www.v2ex.com/t/1251411",
-        "replies": 26,
-        "node": "promotions"
-      },
-      {
-        "title": "国行 iPhone Duo 如何在境内写入境外 eSIM？",
-        "url": "https://www.v2ex.com/t/1251454",
-        "replies": 26,
-        "node": "iphone"
-      },
-      {
-        "title": "现在新号订阅是不是必被 KYC",
-        "url": "https://www.v2ex.com/t/1251445",
-        "replies": 22,
-        "node": "claude"
-      },
-      {
-        "title": "claude 支持中国了？",
-        "url": "https://www.v2ex.com/t/1251557",
-        "replies": 17,
-        "node": "claude"
-      },
-      {
-        "title": "谈谈我的每月 20 美元 AI 工具搭配策略：为什么我停掉了官方 Claude Pro 订阅",
-        "url": "https://www.v2ex.com/t/1251587",
-        "replies": 7,
-        "node": "share"
       }
     ],
     "cn": [
       {
-        "title": "让 AI 在你我身旁，陪我把网页上的事做完",
-        "url": "https://sspai.com/post/117034",
-        "source": "少数派",
-        "summary": "作者介绍 Chrome 侧栏助手 ByYourSide：复用当前页与登录态，用一句话驱动阅读、点击与填写。"
+        "title": "希腊通过法案禁止 15 岁以下儿童使用社媒",
+        "url": "https://www.solidot.org/story?sid=85696",
+        "source": "Solidot",
+        "summary": "Solidot：希腊通过法案禁止 15 岁以下儿童使用社媒。"
       },
       {
-        "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
-        "url": "https://sspai.com/post/115437",
-        "source": "少数派",
-        "summary": "记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。"
+        "title": "美光桃园厂工会否决奖金方案",
+        "url": "https://www.solidot.org/story?sid=85699",
+        "source": "Solidot",
+        "summary": "Solidot：美光桃园厂工会否决奖金方案。"
       },
       {
         "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
         "url": "https://www.solidot.org/story?sid=85701",
         "source": "Solidot",
-        "summary": "Solidot 首页摘要：谷歌为保障数据中心电力，将付费鼓励他人减少用电。"
+        "summary": "Solidot：为让数据中心有充足电力 Google 将付钱给其他人少用电。"
       },
       {
-        "title": "KeePassXC 2.8.0 释出",
-        "url": "https://www.solidot.org/story?sid=85690",
+        "title": "在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄",
+        "url": "https://www.solidot.org/story?sid=85706",
         "source": "Solidot",
-        "summary": "Solidot 报道开源密码管理器 KeePassXC 2.8.0 发布。"
+        "summary": "Solidot：在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄。"
       },
       {
-        "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
-        "url": "https://www.oschina.net/news/503177",
-        "source": "开源中国",
-        "summary": "OSCHINA 转载/讨论 Anthropic 内部平台工程大规模用 Claude 写代码的说法。"
+        "title": "让 AI 在你我身旁，陪我把网页上的事做完",
+        "url": "https://sspai.com/post/117034",
+        "source": "少数派",
+        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
       },
       {
-        "title": "Arc 浏览器将于 12 月 22 日停止服务",
-        "url": "https://www.oschina.net/news/503188",
-        "source": "开源中国",
-        "summary": "OSCHINA 报道 Arc 浏览器计划于 12 月 22 日停止服务。"
+        "title": "把「想法」和「收藏」分开：我的 Obsidian 知识库搭建实践",
+        "url": "https://sspai.com/post/116871",
+        "source": "少数派",
+        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
+      },
+      {
+        "title": "把书留在访达里：我和 AI 结对写了一款“反潮流”的 Mac 原生阅读器",
+        "url": "https://sspai.com/post/116838",
+        "source": "少数派",
+        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
       }
     ],
-    "reddit": []
+    "reddit": [
+      {
+        "title": "Just finished my multiplayer system in C and turns out we can support 50k players in a single server at 60hz simulation tick",
+        "url": "https://www.reddit.com/r/programming/comments/1xf4c5d/just_finished_my_multiplayer_system_in_c_and/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "HTMX creator on the history of REST and why he thinks we got it wrong",
+        "url": "https://www.reddit.com/r/programming/comments/1xezyoh/htmx_creator_on_the_history_of_rest_and_why_he/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "Rewinding the exponential: How we keep hardware usage down",
+        "url": "https://www.reddit.com/r/programming/comments/1xf0aai/rewinding_the_exponential_how_we_keep_hardware/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "Broccoli2Shell: Brotli decoder RCE (CVE-2026-111497) in Node.js, Python and more",
+        "url": "https://www.reddit.com/r/programming/comments/1xe7dp8/broccoli2shell_brotli_decoder_rce_cve2026111497/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "eMudhra's Press Release on the CA Compromise",
+        "url": "https://www.reddit.com/r/programming/comments/1xd9rwe/emudhras_press_release_on_the_ca_compromise/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "How close can pure FP get to C?",
+        "url": "https://www.reddit.com/r/programming/comments/1xdjru9/how_close_can_pure_fp_get_to_c/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "Where did my freed memory (not) go?",
+        "url": "https://www.reddit.com/r/programming/comments/1xcwsc3/where_did_my_freed_memory_not_go/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      },
+      {
+        "title": "Code and Cake - Docker is weird",
+        "url": "https://www.reddit.com/r/programming/comments/1xdef0p/code_and_cake_docker_is_weird/",
+        "subreddit": "programming",
+        "score": null,
+        "comments": null
+      }
+    ]
   },
   "gaps": [
-    "Reddit：r/programming、technology、MachineLearning、LocalLLaMA 的 JSON/RSS 均因 SSL 握手超时失败，reddit 区为空。",
-    "Roku 开发者博客页需 JS，未能抽取正文；相关条目若出现在 HN 区仅保留标题与链接。",
-    "IT之家首页 HTML 未能稳定解析出文章列表（页面结构/反爬），cn 区以少数派、Solidot、开源中国为主。",
-    "X：纯政治/八卦帖已过滤；accounts 仅保留科技相关原创与高相关回复。",
-    "三星电视 root 原帖发布时间早于窗口，highlight 依据窗口内 HN 讨论与该帖公开文本。",
-    "未编造任何链接、引语或分数；分数来自抓取时 HN/社区快照。"
+    "Reddit：r/technology、MachineLearning、LocalLLaMA 的 JSON 返回 403、RSS 429；仅 r/programming RSS 成功，reddit 区仅含该源解析条目（无分数/评论数字段）。",
+    "IT之家首页 HTML 未能解析出稳定文章列表，cn 区以 Solidot、开源中国为主，少数派为矩阵列表（多数发布时间早于本窗口，已在 summary/gaps 标明）。",
+    "X：大量政治/战争/选举帖已过滤；accounts 仅保留科技相关（GPU 融资、Grok Bot、neocloud/搁浅算力、Tibo 重置与 Codex、poteto 产品协作）。",
+    "Elon 帖分页拉了两页（max_results 上限 25）；科技相关条目已写入 raw/x-elonmusk.json，非科技帖未全量落盘。",
+    "伯克利 Daily Cal 正文页抓取 429，highlight 依据 HN 标题与公开报道摘要，未逐段引用正文。",
+    "Wide Events 原文日期为 2024-02-15，窗口内为 HN 再热议；未列入 highlights 主列表以免时效混淆。",
+    "未编造任何链接、引语或分数；分数来自抓取时 HN/Lobsters/V2EX 快照。"
   ]
 }

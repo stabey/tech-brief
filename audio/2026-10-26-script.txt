@@ -1,0 +1,11 @@
+早上好，这里是技术早报，二零二六年十月二十六日这一期。
+
+医疗与模型边界很扎眼：有皮肤科医生对比发现，十年前微调的卷积神经网络，在皮肤癌诊断上反而胜过 GPT-六 Astra 和 Claude Fable 五点一——两家大模型都把黑色素瘤看成了可出院的脂溢性角化。算力侧，Cerebras 公开了如何把约三万亿参数的 Kimi K三拆到多块晶圆级芯片上，并声称能跑到上千 tokens 每秒。开源小模型集群这边，有人用五台 Qwen三点八-二十七B 加 GVS5H 编排，宣称能对标 Fable 五。
+
+产品与开发工具：JetBrains 开源了 Thinkrail，把 pi agent 嵌进可隔离 worktree 的轻量 IDE。安全上，Wiz 披露 Gheist 运动用被盗 GitHub token 批量植入泄密 workflow，公开仓已被新控制挡住，私有仓仍有风险。三星电视隐私话题继续：有人指它在低分辨率画面上跑 TensorFlow Lite 做跟踪。政策与教育：法国据报准备过对社交平台的临时 DNS 封锁；伯克利有数学教授感慨 AI 用多了，作业批改没意义。价格战方面，Max Woolf 梳理 OpenAI 与 Anthropic 数月内最高降价约八成。
+
+特别关注三位。Elon 称债市几乎切断纯赌 AI 数据中心的融资，同时 SpaceX 拿下约四百亿美元 GPU 债务；并宣传 Grok Bot 能代打电话、记摘要，还说最好把它当成超级能干的员工。Tibo 进入「第二十天休息重置」，预告「疯狂 Codex」一周。poteto 跟进桌面端渲染 bug，并对「把 Bot 拖出应用携带上下文」的演示表示感兴趣、想合作。
+
+社区一瞥：Lobsters 在聊 POSIX wordexp 危险与 Vim Classic；V2EX 热议 Bing 降权、Tibo 重置，以及 Codex 是否追不上 Claude。
+
+以上就是今天的早报，明天早上八点北京时间见。
