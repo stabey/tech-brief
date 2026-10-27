@@ -53,3 +53,9 @@ python3 -m http.server 8080
 ```
 
 仓库根目录放有 `.nojekyll`，便于 GitHub Pages 直接托管静态文件。
+
+## Issue JSON schema (what app.js renders)
+
+`sections` MUST be a **list**: `[{"id":"hn","source":"Hacker News","items":[{"id","title","summary?","url","discussion_url?","meta?"}]}]`.
+A dict like `{"hn":[...],"lobsters":[...]}` renders as “本期内容写入中”. Before committing, run
+`python3 scripts/normalize_issue.py data/latest.json issues/YYYY-MM-DD.json` (converts dict form and validates).

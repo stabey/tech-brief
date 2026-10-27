@@ -208,367 +208,358 @@
       ]
     }
   ],
-  "sections": {
-    "hn": [
-      {
-        "title": "Quad9 (DNS Resolver) to Exit France",
-        "url": "https://quad9.net/news/blog/au-revoir-france/",
-        "score": 953,
-        "comments": 344,
-        "hn_url": "https://news.ycombinator.com/item?id=50195959"
-      },
-      {
-        "title": "eMudhra to exit global SSL/TLS certificate business",
-        "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-        "score": 906,
-        "comments": 618,
-        "hn_url": "https://news.ycombinator.com/item?id=50195110"
-      },
-      {
-        "title": "Jailbreaking the Switch 2",
-        "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-        "score": 697,
-        "comments": 243,
-        "hn_url": "https://news.ycombinator.com/item?id=50192536"
-      },
-      {
-        "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-        "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-        "score": 498,
-        "comments": 156,
-        "hn_url": "https://news.ycombinator.com/item?id=50190363"
-      },
-      {
-        "title": "Woman faces six years in prison over Cash App account she never opened",
-        "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
-        "score": 446,
-        "comments": 445,
-        "hn_url": "https://news.ycombinator.com/item?id=50194833"
-      },
-      {
-        "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
-        "url": "https://news.ycombinator.com/item?id=50193416",
-        "score": 340,
-        "comments": 139,
-        "hn_url": "https://news.ycombinator.com/item?id=50193416"
-      },
-      {
-        "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
-        "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
-        "score": 332,
-        "comments": 118,
-        "hn_url": "https://news.ycombinator.com/item?id=50192900"
-      },
-      {
-        "title": "What’s getting pwned right now",
-        "url": "https://pwn.watch/",
-        "score": 330,
-        "comments": 152,
-        "hn_url": "https://news.ycombinator.com/item?id=50195543"
-      },
-      {
-        "title": "Google cleared 300 hectares of Finnish forest",
-        "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
-        "score": 316,
-        "comments": 231,
-        "hn_url": "https://news.ycombinator.com/item?id=50196837"
-      },
-      {
-        "title": "Run full iOS 16.5 firmware on Android Devices",
-        "url": "https://github.com/oosexgang/hackios-xnu-kernel",
-        "score": 310,
-        "comments": 119,
-        "hn_url": "https://news.ycombinator.com/item?id=50196718"
-      },
-      {
-        "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
-        "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
-        "score": 300,
-        "comments": 279,
-        "hn_url": "https://news.ycombinator.com/item?id=50190455"
-      },
-      {
-        "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-        "url": "https://github.com/NVIDIA/OpenShell",
-        "score": 277,
-        "comments": 143,
-        "hn_url": "https://news.ycombinator.com/item?id=50198675"
-      },
-      {
-        "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
-        "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
-        "score": 249,
-        "comments": 93,
-        "hn_url": "https://news.ycombinator.com/item?id=50194070"
-      },
-      {
-        "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-        "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-        "score": 238,
-        "comments": 86,
-        "hn_url": "https://news.ycombinator.com/item?id=50193804"
-      },
-      {
-        "title": "OpenAI CLI",
-        "url": "https://github.com/openai/openai-cli",
-        "score": 229,
-        "comments": 109,
-        "hn_url": "https://news.ycombinator.com/item?id=50191507"
-      }
-    ],
-    "lobsters": [
-      {
-        "title": "Docker is weird",
-        "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-        "score": 16,
-        "comments": 7,
-        "tags": [
-          "programming"
-        ]
-      },
-      {
-        "title": "examining the macOS gcc binary",
-        "url": "https://zoey-on-github.github.io/blog/macgcc.html",
-        "score": 54,
-        "comments": 17,
-        "tags": [
-          "mac",
-          "reversing"
-        ]
-      },
-      {
-        "title": "jailbreaking the switch 2",
-        "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-        "score": 40,
-        "comments": 6,
-        "tags": [
-          "ai-tooling",
-          "hardware",
-          "reversing",
-          "security"
-        ]
-      },
-      {
-        "title": "a hacky fucked up way to portably access errno from outside of c",
-        "url": "https://sebsite.pw/w/20260925-errno.html",
-        "score": 9,
-        "comments": 4,
-        "tags": [
-          "c"
-        ]
-      },
-      {
-        "title": "Quad9 DNS Resolver to exit France",
-        "url": "https://quad9.net/news/blog/au-revoir-france/",
-        "score": 24,
-        "comments": 0,
-        "tags": [
-          "law",
-          "networking"
-        ]
-      },
-      {
-        "title": "Expose only share links of a private service with caddy",
-        "url": "https://dataswamp.org/~solene/2026-10-21-caddy-forward-auth-public-share-links.html",
-        "score": 19,
-        "comments": 3,
-        "tags": [
-          "devops",
-          "security"
-        ]
-      },
-      {
-        "title": "Tell your network to explain itself and then some",
-        "url": "https://unixdigest.com/tutorials/tell-your-network-to-explain-itself-and-then-some.html",
-        "score": 18,
-        "comments": 8,
-        "tags": [
-          "networking"
-        ]
-      },
-      {
-        "title": "Objects, attributes, maps, oh my",
-        "url": "https://bernsteinbear.com/blog/object-shapes/",
-        "score": 15,
-        "comments": 3,
-        "tags": [
-          "compilers"
-        ]
-      },
-      {
-        "title": "I built a garbage collector for Rust (2023)",
-        "url": "https://claytonwramsey.com/blog/dumpster/",
-        "score": 14,
-        "comments": 5,
-        "tags": [
-          "rust"
-        ]
-      },
-      {
-        "title": "Firefox Local Mode",
-        "url": "https://firefox-source-docs.mozilla.org/devtools-user/local_mode/index.html",
-        "score": 140,
-        "comments": 24,
-        "tags": [
-          "browsers"
-        ]
-      },
-      {
-        "title": "Script dependencies with Nix",
-        "url": "https://entropicthoughts.com/python-dependencies-with-nix",
-        "score": 15,
-        "comments": 1,
-        "tags": [
-          "nix"
-        ]
-      },
-      {
-        "title": "Using a lookup-table to correct an approximation",
-        "url": "https://www.corsix.org/content/using-a-lookup-table-to-correct-an-approximation",
-        "score": 32,
-        "comments": 5,
-        "tags": [
-          "performance"
-        ]
-      }
-    ],
-    "v2ex": [
-      {
-        "title": "现在有多少人还在维护自建的博客的？",
-        "url": "https://www.v2ex.com/t/1250808",
-        "replies": 86,
-        "node": "Blogger"
-      },
-      {
-        "title": "又自动重置了",
-        "url": "https://www.v2ex.com/t/1251088",
-        "replies": 8,
-        "node": "OpenAI"
-      },
-      {
-        "title": "DeepSeek 用什么工具接入编程好？",
-        "url": "https://www.v2ex.com/t/1251079",
-        "replies": 6,
-        "node": "问与答"
-      },
-      {
-        "title": "claude 被封日记…",
-        "url": "https://www.v2ex.com/t/1251103",
-        "replies": 2,
-        "node": "Claude"
-      },
-      {
-        "title": "Vibe Coding 一段时间后变得很懒",
-        "url": "https://www.v2ex.com/t/1251091",
-        "replies": 2,
-        "node": "科技"
-      },
-      {
-        "title": "KKCE（快快测）有最新活动，送会员！ 400+节点网站测速、ping 等功能的快快测工具，",
-        "url": "https://www.v2ex.com/t/1251078",
-        "replies": 2,
-        "node": "云计算"
-      },
-      {
-        "title": "你们有赠送 credits 吗, 在哪查看 credits 额度明细",
-        "url": "https://www.v2ex.com/t/1251072",
-        "replies": 2,
-        "node": "OpenAI"
-      },
-      {
-        "title": "[记录]-2026-10-20 记一次 Claude 的退款",
-        "url": "https://www.v2ex.com/t/1251069",
-        "replies": 2,
-        "node": "Claude"
-      },
-      {
-        "title": "真爽，最爱用公开可查数据来打脸这种叼毛了！",
-        "url": "https://www.v2ex.com/t/1251084",
-        "replies": 1,
-        "node": "程序员"
-      },
-      {
-        "title": "[开源自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #01",
-        "url": "https://www.v2ex.com/t/1251102",
-        "replies": 0,
-        "node": "推广"
-      }
-    ],
-    "cn": [
-      {
-        "title": "现在有多少人还在维护自建的博客的？",
-        "url": "https://www.v2ex.com/t/1250808",
-        "source": "V2EX",
-        "summary": "节点：Blogger，回复 86"
-      },
-      {
-        "title": "DeepSeek 用什么工具接入编程好？",
-        "url": "https://www.v2ex.com/t/1251079",
-        "source": "V2EX",
-        "summary": "节点：问与答，回复 6"
-      },
-      {
-        "title": "Vibe Coding 一段时间后变得很懒",
-        "url": "https://www.v2ex.com/t/1251091",
-        "source": "V2EX",
-        "summary": "节点：科技，回复 2"
-      },
-      {
-        "title": "真爽，最爱用公开可查数据来打脸这种叼毛了！",
-        "url": "https://www.v2ex.com/t/1251084",
-        "source": "V2EX",
-        "summary": "节点：程序员，回复 1"
-      },
-      {
-        "title": "[开源自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #01",
-        "url": "https://www.v2ex.com/t/1251102",
-        "source": "V2EX",
-        "summary": "节点：推广，回复 0"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "Coding Magic the Gathering in C# - PART TWO - The Impossible Magic Card",
-        "url": "https://www.reddit.com/r/programming/comments/1xcp40x/coding_magic_the_gathering_in_c_part_two_the/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov",
-        "url": "https://www.reddit.com/r/programming/comments/1xcaveo/debunking_faster_than_rust_malicious_benchmarks/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "Where did my freed memory (not) go?",
-        "url": "https://www.reddit.com/r/programming/comments/1xcwsc3/where_did_my_freed_memory_not_go/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "examining the macOS gcc binary",
-        "url": "https://www.reddit.com/r/programming/comments/1xcwe3o/examining_the_macos_gcc_binary/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "I Tried to Find Out How ClickHouse Keeper Takes Non-Blocking Snapshots",
-        "url": "https://www.reddit.com/r/programming/comments/1xchal4/i_tried_to_find_out_how_clickhouse_keeper_takes/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
-        "url": "https://www.reddit.com/r/programming/comments/1xcc8i8/tornadovm_7_enables_gpunative_workloads_from_java/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "Arcana: One Pure-Java Library for (Almost) Every Archive Format",
-        "url": "https://www.reddit.com/r/programming/comments/1xcgl1u/arcana_one_purejava_library_for_almost_every/",
-        "subreddit": "programming"
-      },
-      {
-        "title": "Who is Issac Newton or Davinci of programming/CS?",
-        "url": "https://www.reddit.com/r/programming/comments/1xcjx7l/who_is_issac_newton_or_davinci_of_programmingcs/",
-        "subreddit": "programming"
-      }
-    ]
-  },
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Quad9 (DNS Resolver) to Exit France",
+          "url": "https://quad9.net/news/blog/au-revoir-france/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50195959",
+          "meta": "953 分 · 344 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "eMudhra to exit global SSL/TLS certificate business",
+          "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+          "discussion_url": "https://news.ycombinator.com/item?id=50195110",
+          "meta": "906 分 · 618 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Jailbreaking the Switch 2",
+          "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50192536",
+          "meta": "697 分 · 243 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+          "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50190363",
+          "meta": "498 分 · 156 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Woman faces six years in prison over Cash App account she never opened",
+          "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50194833",
+          "meta": "446 分 · 445 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+          "url": "https://news.ycombinator.com/item?id=50193416",
+          "discussion_url": "https://news.ycombinator.com/item?id=50193416",
+          "meta": "340 分 · 139 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
+          "discussion_url": "https://news.ycombinator.com/item?id=50192900",
+          "meta": "332 分 · 118 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "What’s getting pwned right now",
+          "url": "https://pwn.watch/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50195543",
+          "meta": "330 分 · 152 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Google cleared 300 hectares of Finnish forest",
+          "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50196837",
+          "meta": "316 分 · 231 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Run full iOS 16.5 firmware on Android Devices",
+          "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+          "discussion_url": "https://news.ycombinator.com/item?id=50196718",
+          "meta": "310 分 · 119 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
+          "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
+          "discussion_url": "https://news.ycombinator.com/item?id=50190455",
+          "meta": "300 分 · 279 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "discussion_url": "https://news.ycombinator.com/item?id=50198675",
+          "meta": "277 分 · 143 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
+          "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50194070",
+          "meta": "249 分 · 93 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+          "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+          "discussion_url": "https://news.ycombinator.com/item?id=50193804",
+          "meta": "238 分 · 86 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "OpenAI CLI",
+          "url": "https://github.com/openai/openai-cli",
+          "discussion_url": "https://news.ycombinator.com/item?id=50191507",
+          "meta": "229 分 · 109 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Docker is weird",
+          "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+          "meta": "16 分 · 7 评论 · programming"
+        },
+        {
+          "id": "lo-2",
+          "title": "examining the macOS gcc binary",
+          "url": "https://zoey-on-github.github.io/blog/macgcc.html",
+          "meta": "54 分 · 17 评论 · mac, reversing"
+        },
+        {
+          "id": "lo-3",
+          "title": "jailbreaking the switch 2",
+          "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+          "meta": "40 分 · 6 评论 · ai-tooling, hardware, reversing, security"
+        },
+        {
+          "id": "lo-4",
+          "title": "a hacky fucked up way to portably access errno from outside of c",
+          "url": "https://sebsite.pw/w/20260925-errno.html",
+          "meta": "9 分 · 4 评论 · c"
+        },
+        {
+          "id": "lo-5",
+          "title": "Quad9 DNS Resolver to exit France",
+          "url": "https://quad9.net/news/blog/au-revoir-france/",
+          "meta": "24 分 · 0 评论 · law, networking"
+        },
+        {
+          "id": "lo-6",
+          "title": "Expose only share links of a private service with caddy",
+          "url": "https://dataswamp.org/~solene/2026-10-21-caddy-forward-auth-public-share-links.html",
+          "meta": "19 分 · 3 评论 · devops, security"
+        },
+        {
+          "id": "lo-7",
+          "title": "Tell your network to explain itself and then some",
+          "url": "https://unixdigest.com/tutorials/tell-your-network-to-explain-itself-and-then-some.html",
+          "meta": "18 分 · 8 评论 · networking"
+        },
+        {
+          "id": "lo-8",
+          "title": "Objects, attributes, maps, oh my",
+          "url": "https://bernsteinbear.com/blog/object-shapes/",
+          "meta": "15 分 · 3 评论 · compilers"
+        },
+        {
+          "id": "lo-9",
+          "title": "I built a garbage collector for Rust (2023)",
+          "url": "https://claytonwramsey.com/blog/dumpster/",
+          "meta": "14 分 · 5 评论 · rust"
+        },
+        {
+          "id": "lo-10",
+          "title": "Firefox Local Mode",
+          "url": "https://firefox-source-docs.mozilla.org/devtools-user/local_mode/index.html",
+          "meta": "140 分 · 24 评论 · browsers"
+        },
+        {
+          "id": "lo-11",
+          "title": "Script dependencies with Nix",
+          "url": "https://entropicthoughts.com/python-dependencies-with-nix",
+          "meta": "15 分 · 1 评论 · nix"
+        },
+        {
+          "id": "lo-12",
+          "title": "Using a lookup-table to correct an approximation",
+          "url": "https://www.corsix.org/content/using-a-lookup-table-to-correct-an-approximation",
+          "meta": "32 分 · 5 评论 · performance"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "现在有多少人还在维护自建的博客的？",
+          "url": "https://www.v2ex.com/t/1250808",
+          "meta": "Blogger · 86 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "又自动重置了",
+          "url": "https://www.v2ex.com/t/1251088",
+          "meta": "OpenAI · 8 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "DeepSeek 用什么工具接入编程好？",
+          "url": "https://www.v2ex.com/t/1251079",
+          "meta": "问与答 · 6 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "claude 被封日记…",
+          "url": "https://www.v2ex.com/t/1251103",
+          "meta": "Claude · 2 回复"
+        },
+        {
+          "id": "v2-5",
+          "title": "Vibe Coding 一段时间后变得很懒",
+          "url": "https://www.v2ex.com/t/1251091",
+          "meta": "科技 · 2 回复"
+        },
+        {
+          "id": "v2-6",
+          "title": "KKCE（快快测）有最新活动，送会员！ 400+节点网站测速、ping 等功能的快快测工具，",
+          "url": "https://www.v2ex.com/t/1251078",
+          "meta": "云计算 · 2 回复"
+        },
+        {
+          "id": "v2-7",
+          "title": "你们有赠送 credits 吗, 在哪查看 credits 额度明细",
+          "url": "https://www.v2ex.com/t/1251072",
+          "meta": "OpenAI · 2 回复"
+        },
+        {
+          "id": "v2-8",
+          "title": "[记录]-2026-10-20 记一次 Claude 的退款",
+          "url": "https://www.v2ex.com/t/1251069",
+          "meta": "Claude · 2 回复"
+        },
+        {
+          "id": "v2-9",
+          "title": "真爽，最爱用公开可查数据来打脸这种叼毛了！",
+          "url": "https://www.v2ex.com/t/1251084",
+          "meta": "程序员 · 1 回复"
+        },
+        {
+          "id": "v2-10",
+          "title": "[开源自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #01",
+          "url": "https://www.v2ex.com/t/1251102",
+          "meta": "推广 · 0 回复"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "现在有多少人还在维护自建的博客的？",
+          "summary": "节点：Blogger，回复 86",
+          "url": "https://www.v2ex.com/t/1250808",
+          "meta": "V2EX"
+        },
+        {
+          "id": "cn-2",
+          "title": "DeepSeek 用什么工具接入编程好？",
+          "summary": "节点：问与答，回复 6",
+          "url": "https://www.v2ex.com/t/1251079",
+          "meta": "V2EX"
+        },
+        {
+          "id": "cn-3",
+          "title": "Vibe Coding 一段时间后变得很懒",
+          "summary": "节点：科技，回复 2",
+          "url": "https://www.v2ex.com/t/1251091",
+          "meta": "V2EX"
+        },
+        {
+          "id": "cn-4",
+          "title": "真爽，最爱用公开可查数据来打脸这种叼毛了！",
+          "summary": "节点：程序员，回复 1",
+          "url": "https://www.v2ex.com/t/1251084",
+          "meta": "V2EX"
+        },
+        {
+          "id": "cn-5",
+          "title": "[开源自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #01",
+          "summary": "节点：推广，回复 0",
+          "url": "https://www.v2ex.com/t/1251102",
+          "meta": "V2EX"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": [
+        {
+          "id": "rd-1",
+          "title": "Coding Magic the Gathering in C# - PART TWO - The Impossible Magic Card",
+          "url": "https://www.reddit.com/r/programming/comments/1xcp40x/coding_magic_the_gathering_in_c_part_two_the/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-2",
+          "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov",
+          "url": "https://www.reddit.com/r/programming/comments/1xcaveo/debunking_faster_than_rust_malicious_benchmarks/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-3",
+          "title": "Where did my freed memory (not) go?",
+          "url": "https://www.reddit.com/r/programming/comments/1xcwsc3/where_did_my_freed_memory_not_go/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-4",
+          "title": "examining the macOS gcc binary",
+          "url": "https://www.reddit.com/r/programming/comments/1xcwe3o/examining_the_macos_gcc_binary/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-5",
+          "title": "I Tried to Find Out How ClickHouse Keeper Takes Non-Blocking Snapshots",
+          "url": "https://www.reddit.com/r/programming/comments/1xchal4/i_tried_to_find_out_how_clickhouse_keeper_takes/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-6",
+          "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
+          "url": "https://www.reddit.com/r/programming/comments/1xcc8i8/tornadovm_7_enables_gpunative_workloads_from_java/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-7",
+          "title": "Arcana: One Pure-Java Library for (Almost) Every Archive Format",
+          "url": "https://www.reddit.com/r/programming/comments/1xcgl1u/arcana_one_purejava_library_for_almost_every/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-8",
+          "title": "Who is Issac Newton or Davinci of programming/CS?",
+          "url": "https://www.reddit.com/r/programming/comments/1xcjx7l/who_is_issac_newton_or_davinci_of_programmingcs/",
+          "meta": "r/programming"
+        }
+      ]
+    }
+  ],
   "gaps": [
     "Reddit：r/technology、r/MachineLearning、r/LocalLLaMA 返回 429/403，仅保留时间窗内 r/programming Atom 条目。",
     "中文源：少数派 API/Solidot 抓取失败；IT之家首页未能稳定解析结构化条目。cn 区改用时间窗内 V2EX 技术向帖作社区补充。",

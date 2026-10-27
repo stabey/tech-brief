@@ -230,348 +230,330 @@
       ]
     }
   ],
-  "sections": {
-    "hn": [
-      {
-        "title": "Today, we hacked what we'd set out to hack: the iPhone",
-        "url": "https://blog.calif.io/p/iphone",
-        "score": 707,
-        "comments": 467,
-        "hn_url": "https://news.ycombinator.com/item?id=50211474"
-      },
-      {
-        "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-        "score": 658,
-        "comments": 420,
-        "hn_url": "https://news.ycombinator.com/item?id=50212065"
-      },
-      {
-        "title": "Investor-owned utilities charge 23% more for electricity than public providers",
-        "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
-        "score": 521,
-        "comments": 378,
-        "hn_url": "https://news.ycombinator.com/item?id=50208837"
-      },
-      {
-        "title": "Apple Music 404 Not Found",
-        "url": "https://music.apple.com/this-url-doesnt-exist",
-        "score": 517,
-        "comments": 178,
-        "hn_url": "https://news.ycombinator.com/item?id=50207910"
-      },
-      {
-        "title": "Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown",
-        "url": "https://keepandroidopen.org/?",
-        "score": 479,
-        "comments": 329,
-        "hn_url": "https://news.ycombinator.com/item?id=50208558"
-      },
-      {
-        "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
-        "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
-        "score": 412,
-        "comments": 432,
-        "hn_url": "https://news.ycombinator.com/item?id=50205934"
-      },
-      {
-        "title": "The foolishness of \"natural language programming\" (1978)",
-        "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
-        "score": 357,
-        "comments": 242,
-        "hn_url": "https://news.ycombinator.com/item?id=50203161"
-      },
-      {
-        "title": "Swedish government offices to ban ChatGPT and Claude",
-        "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-        "score": 314,
-        "comments": 116,
-        "hn_url": "https://news.ycombinator.com/item?id=50207405"
-      },
-      {
-        "title": "Dutch government had hacked into Jared Kushner's phone",
-        "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
-        "score": 288,
-        "comments": 188,
-        "hn_url": "https://news.ycombinator.com/item?id=50206914"
-      },
-      {
-        "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-        "score": 228,
-        "comments": 109,
-        "hn_url": "https://news.ycombinator.com/item?id=50214218"
-      },
-      {
-        "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
-        "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
-        "score": 192,
-        "comments": 150,
-        "hn_url": "https://news.ycombinator.com/item?id=50210067"
-      },
-      {
-        "title": "Dessa: the most authentic full-duplex speech model ever built",
-        "url": "https://block.xyz/dessa",
-        "score": 186,
-        "comments": 80,
-        "hn_url": "https://news.ycombinator.com/item?id=50213925"
-      },
-      {
-        "title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
-        "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
-        "score": 182,
-        "comments": 138,
-        "hn_url": "https://news.ycombinator.com/item?id=50205816"
-      },
-      {
-        "title": "OpenSSL 4.1.0",
-        "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
-        "score": 180,
-        "comments": 58,
-        "hn_url": "https://news.ycombinator.com/item?id=50208099"
-      },
-      {
-        "title": "Move Slow and Fix Things (2024)",
-        "url": "https://endler.dev/2024/move-slow-and-fix-things/",
-        "score": 169,
-        "comments": 31,
-        "hn_url": "https://news.ycombinator.com/item?id=50204754"
-      },
-      {
-        "title": "Job loss and cortisone mania",
-        "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
-        "score": 164,
-        "comments": 110,
-        "hn_url": "https://news.ycombinator.com/item?id=50206840"
-      },
-      {
-        "title": "No Need for Retirement When Utopia Is Around the Corner",
-        "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
-        "score": 151,
-        "comments": 168,
-        "hn_url": "https://news.ycombinator.com/item?id=50207050"
-      },
-      {
-        "title": "Is this the new cyber normal?",
-        "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
-        "score": 149,
-        "comments": 163,
-        "hn_url": "https://news.ycombinator.com/item?id=50207115"
-      }
-    ],
-    "lobsters": [
-      {
-        "title": "The glorious @xkcdRandom Zig builtin",
-        "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
-        "score": 39,
-        "comments": 8,
-        "tags": [
-          "compilers",
-          "satire",
-          "zig"
-        ]
-      },
-      {
-        "title": "Software is slow because of bad design, not slow languages",
-        "url": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
-        "score": 33,
-        "comments": 38,
-        "tags": [
-          "performance"
-        ]
-      },
-      {
-        "title": "How close can pure FP get to C?",
-        "url": "https://rtfeldman.com/fp-vs-c",
-        "score": 35,
-        "comments": 9,
-        "tags": [
-          "performance",
-          "programming"
-        ]
-      },
-      {
-        "title": "Docker is weird",
-        "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-        "score": 94,
-        "comments": 43,
-        "tags": [
-          "programming"
-        ]
-      },
-      {
-        "title": "Please don't mess with links",
-        "url": "https://maurycyz.com/misc/real_links/",
-        "score": 87,
-        "comments": 21,
-        "tags": [
-          "web"
-        ]
-      },
-      {
-        "title": "UUIDv7 doesn't have the properties you think it does",
-        "url": "https://alexsci.com/blog/uuidv7-is-weird/",
-        "score": 41,
-        "comments": 12,
-        "tags": [
-          "distributed",
-          "python"
-        ]
-      },
-      {
-        "title": "Attention people who think UB is fine",
-        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
-        "score": 11,
-        "comments": 3,
-        "tags": [
-          "c",
-          "c++"
-        ]
-      },
-      {
-        "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov",
-        "url": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
-        "score": 34,
-        "comments": 16,
-        "tags": [
-          "performance"
-        ]
-      },
-      {
-        "title": "Quad9 DNS Resolver to exit France",
-        "url": "https://quad9.net/news/blog/au-revoir-france/",
-        "score": 105,
-        "comments": 11,
-        "tags": [
-          "law",
-          "networking"
-        ]
-      },
-      {
-        "title": "What are you doing this weekend?",
-        "url": "https://lobste.rs/s/crqz1g",
-        "score": 18,
-        "comments": 41,
-        "tags": [
-          "ask",
-          "programming"
-        ]
-      },
-      {
-        "title": "A whirlwind tour of systemd-nspawn containers (2025)",
-        "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
-        "score": 11,
-        "comments": 2,
-        "tags": [
-          "systemd"
-        ]
-      },
-      {
-        "title": "Incremental Computation Graphs",
-        "url": "https://dziban.net/posts/incremental-computation-graph/",
-        "score": 2,
-        "comments": 3,
-        "tags": [
-          "programming"
-        ]
-      }
-    ],
-    "v2ex": [
-      {
-        "title": "V 友们，胡姓，帮忙取一个好听的名字",
-        "url": "https://www.v2ex.com/t/1251126",
-        "replies": 208,
-        "node": "qna"
-      },
-      {
-        "title": "上午刚给自己项目开源，下午就收到 hr 裁员，卧槽了，我还没发育完呢",
-        "url": "https://www.v2ex.com/t/1251200",
-        "replies": 170,
-        "node": "programmer"
-      },
-      {
-        "title": "如果，我是说如果，谈婚论嫁时，女方父母提出让男方婚后工资给女方管理，怎么破局。",
-        "url": "https://www.v2ex.com/t/1251151",
-        "replies": 133,
-        "node": "qna"
-      },
-      {
-        "title": "老实回答，你们硬要用 Claude 的人是不是有 M 倾向？",
-        "url": "https://www.v2ex.com/t/1251139",
-        "replies": 114,
-        "node": "programmer"
-      },
-      {
-        "title": "大家会记得很久之前发生的事情吗？",
-        "url": "https://www.v2ex.com/t/1251119",
-        "replies": 104,
-        "node": "qna"
-      },
-      {
-        "title": "远程收入 如何优雅的避税",
-        "url": "https://www.v2ex.com/t/1251173",
-        "replies": 88,
-        "node": "programmer"
-      },
-      {
-        "title": "求助，刚结婚一百多天，老婆生气不见我怎么办",
-        "url": "https://www.v2ex.com/t/1251212",
-        "replies": 81,
-        "node": "qna"
-      },
-      {
-        "title": "忍辱负重还是勇敢跳槽",
-        "url": "https://www.v2ex.com/t/1251190",
-        "replies": 78,
-        "node": "career"
-      },
-      {
-        "title": "京东提供的 4 年只换不修你们会买吗",
-        "url": "https://www.v2ex.com/t/1251142",
-        "replies": 73,
-        "node": "qna"
-      },
-      {
-        "title": "为什么很多人都把 DeepSeek 神化了，看不起国内豆包和其它 LLM？",
-        "url": "https://www.v2ex.com/t/1251402",
-        "replies": 16,
-        "node": "programmer"
-      }
-    ],
-    "cn": [
-      {
-        "title": "让 AI 在你我身旁，陪我把网页上的事做完",
-        "url": "https://sspai.com/post/117034",
-        "source": "少数派",
-        "summary": "少数派矩阵近期文章，讨论用 AI 助手完成网页端任务流。"
-      },
-      {
-        "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
-        "url": "https://sspai.com/post/115437",
-        "source": "少数派",
-        "summary": "作者记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。"
-      },
-      {
-        "title": "KeePassXC 2.8.0 释出",
-        "url": "https://www.solidot.org/",
-        "source": "Solidot",
-        "summary": "Solidot 首页摘要列出 KeePassXC 2.8.0 发布等条目（列表页抓取，无单篇深链）。"
-      },
-      {
-        "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
-        "url": "https://www.oschina.net/news/503177",
-        "source": "开源中国",
-        "summary": "OSCHINA 转载/报道 Anthropic 内部平台工程大规模用 Claude 写代码的讨论。"
-      },
-      {
-        "title": "被三大浏览器联合拉黑后，eMudhra 宣布退出全球 SSL/TLS 证书业务",
-        "url": "https://www.oschina.net/news/503173/emudhra-to-exit-global-ssl-tls-certificate-business",
-        "source": "开源中国",
-        "summary": "对昨日 eMudhra 退出生意新闻的中文跟进。"
-      }
-    ],
-    "reddit": []
-  },
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Today, we hacked what we'd set out to hack: the iPhone",
+          "url": "https://blog.calif.io/p/iphone",
+          "discussion_url": "https://news.ycombinator.com/item?id=50211474",
+          "meta": "707 分 · 467 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "discussion_url": "https://news.ycombinator.com/item?id=50212065",
+          "meta": "658 分 · 420 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Investor-owned utilities charge 23% more for electricity than public providers",
+          "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
+          "discussion_url": "https://news.ycombinator.com/item?id=50208837",
+          "meta": "521 分 · 378 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "Apple Music 404 Not Found",
+          "url": "https://music.apple.com/this-url-doesnt-exist",
+          "discussion_url": "https://news.ycombinator.com/item?id=50207910",
+          "meta": "517 分 · 178 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown",
+          "url": "https://keepandroidopen.org/?",
+          "discussion_url": "https://news.ycombinator.com/item?id=50208558",
+          "meta": "479 分 · 329 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
+          "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50205934",
+          "meta": "412 分 · 432 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "The foolishness of \"natural language programming\" (1978)",
+          "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50203161",
+          "meta": "357 分 · 242 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Swedish government offices to ban ChatGPT and Claude",
+          "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+          "discussion_url": "https://news.ycombinator.com/item?id=50207405",
+          "meta": "314 分 · 116 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Dutch government had hacked into Jared Kushner's phone",
+          "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
+          "discussion_url": "https://news.ycombinator.com/item?id=50206914",
+          "meta": "288 分 · 188 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+          "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+          "discussion_url": "https://news.ycombinator.com/item?id=50214218",
+          "meta": "228 分 · 109 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
+          "discussion_url": "https://news.ycombinator.com/item?id=50210067",
+          "meta": "192 分 · 150 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Dessa: the most authentic full-duplex speech model ever built",
+          "url": "https://block.xyz/dessa",
+          "discussion_url": "https://news.ycombinator.com/item?id=50213925",
+          "meta": "186 分 · 80 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
+          "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
+          "discussion_url": "https://news.ycombinator.com/item?id=50205816",
+          "meta": "182 分 · 138 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "OpenSSL 4.1.0",
+          "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+          "discussion_url": "https://news.ycombinator.com/item?id=50208099",
+          "meta": "180 分 · 58 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "Move Slow and Fix Things (2024)",
+          "url": "https://endler.dev/2024/move-slow-and-fix-things/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50204754",
+          "meta": "169 分 · 31 评论"
+        },
+        {
+          "id": "hn-16",
+          "title": "Job loss and cortisone mania",
+          "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
+          "discussion_url": "https://news.ycombinator.com/item?id=50206840",
+          "meta": "164 分 · 110 评论"
+        },
+        {
+          "id": "hn-17",
+          "title": "No Need for Retirement When Utopia Is Around the Corner",
+          "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50207050",
+          "meta": "151 分 · 168 评论"
+        },
+        {
+          "id": "hn-18",
+          "title": "Is this the new cyber normal?",
+          "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50207115",
+          "meta": "149 分 · 163 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "The glorious @xkcdRandom Zig builtin",
+          "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
+          "meta": "39 分 · 8 评论 · compilers, satire, zig"
+        },
+        {
+          "id": "lo-2",
+          "title": "Software is slow because of bad design, not slow languages",
+          "url": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+          "meta": "33 分 · 38 评论 · performance"
+        },
+        {
+          "id": "lo-3",
+          "title": "How close can pure FP get to C?",
+          "url": "https://rtfeldman.com/fp-vs-c",
+          "meta": "35 分 · 9 评论 · performance, programming"
+        },
+        {
+          "id": "lo-4",
+          "title": "Docker is weird",
+          "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+          "meta": "94 分 · 43 评论 · programming"
+        },
+        {
+          "id": "lo-5",
+          "title": "Please don't mess with links",
+          "url": "https://maurycyz.com/misc/real_links/",
+          "meta": "87 分 · 21 评论 · web"
+        },
+        {
+          "id": "lo-6",
+          "title": "UUIDv7 doesn't have the properties you think it does",
+          "url": "https://alexsci.com/blog/uuidv7-is-weird/",
+          "meta": "41 分 · 12 评论 · distributed, python"
+        },
+        {
+          "id": "lo-7",
+          "title": "Attention people who think UB is fine",
+          "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
+          "meta": "11 分 · 3 评论 · c, c++"
+        },
+        {
+          "id": "lo-8",
+          "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov",
+          "url": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
+          "meta": "34 分 · 16 评论 · performance"
+        },
+        {
+          "id": "lo-9",
+          "title": "Quad9 DNS Resolver to exit France",
+          "url": "https://quad9.net/news/blog/au-revoir-france/",
+          "meta": "105 分 · 11 评论 · law, networking"
+        },
+        {
+          "id": "lo-10",
+          "title": "What are you doing this weekend?",
+          "url": "https://lobste.rs/s/crqz1g",
+          "meta": "18 分 · 41 评论 · ask, programming"
+        },
+        {
+          "id": "lo-11",
+          "title": "A whirlwind tour of systemd-nspawn containers (2025)",
+          "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+          "meta": "11 分 · 2 评论 · systemd"
+        },
+        {
+          "id": "lo-12",
+          "title": "Incremental Computation Graphs",
+          "url": "https://dziban.net/posts/incremental-computation-graph/",
+          "meta": "2 分 · 3 评论 · programming"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "V 友们，胡姓，帮忙取一个好听的名字",
+          "url": "https://www.v2ex.com/t/1251126",
+          "meta": "qna · 208 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "上午刚给自己项目开源，下午就收到 hr 裁员，卧槽了，我还没发育完呢",
+          "url": "https://www.v2ex.com/t/1251200",
+          "meta": "programmer · 170 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "如果，我是说如果，谈婚论嫁时，女方父母提出让男方婚后工资给女方管理，怎么破局。",
+          "url": "https://www.v2ex.com/t/1251151",
+          "meta": "qna · 133 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "老实回答，你们硬要用 Claude 的人是不是有 M 倾向？",
+          "url": "https://www.v2ex.com/t/1251139",
+          "meta": "programmer · 114 回复"
+        },
+        {
+          "id": "v2-5",
+          "title": "大家会记得很久之前发生的事情吗？",
+          "url": "https://www.v2ex.com/t/1251119",
+          "meta": "qna · 104 回复"
+        },
+        {
+          "id": "v2-6",
+          "title": "远程收入 如何优雅的避税",
+          "url": "https://www.v2ex.com/t/1251173",
+          "meta": "programmer · 88 回复"
+        },
+        {
+          "id": "v2-7",
+          "title": "求助，刚结婚一百多天，老婆生气不见我怎么办",
+          "url": "https://www.v2ex.com/t/1251212",
+          "meta": "qna · 81 回复"
+        },
+        {
+          "id": "v2-8",
+          "title": "忍辱负重还是勇敢跳槽",
+          "url": "https://www.v2ex.com/t/1251190",
+          "meta": "career · 78 回复"
+        },
+        {
+          "id": "v2-9",
+          "title": "京东提供的 4 年只换不修你们会买吗",
+          "url": "https://www.v2ex.com/t/1251142",
+          "meta": "qna · 73 回复"
+        },
+        {
+          "id": "v2-10",
+          "title": "为什么很多人都把 DeepSeek 神化了，看不起国内豆包和其它 LLM？",
+          "url": "https://www.v2ex.com/t/1251402",
+          "meta": "programmer · 16 回复"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "少数派 / Solidot / 开源中国",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "让 AI 在你我身旁，陪我把网页上的事做完",
+          "summary": "少数派矩阵近期文章，讨论用 AI 助手完成网页端任务流。",
+          "url": "https://sspai.com/post/117034",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-2",
+          "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
+          "summary": "作者记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。",
+          "url": "https://sspai.com/post/115437",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-3",
+          "title": "KeePassXC 2.8.0 释出",
+          "summary": "Solidot 首页摘要列出 KeePassXC 2.8.0 发布等条目（列表页抓取，无单篇深链）。",
+          "url": "https://www.solidot.org/",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-4",
+          "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
+          "summary": "OSCHINA 转载/报道 Anthropic 内部平台工程大规模用 Claude 写代码的讨论。",
+          "url": "https://www.oschina.net/news/503177",
+          "meta": "开源中国"
+        },
+        {
+          "id": "cn-5",
+          "title": "被三大浏览器联合拉黑后，eMudhra 宣布退出全球 SSL/TLS 证书业务",
+          "summary": "对昨日 eMudhra 退出生意新闻的中文跟进。",
+          "url": "https://www.oschina.net/news/503173/emudhra-to-exit-global-ssl-tls-certificate-business",
+          "meta": "开源中国"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    }
+  ],
   "gaps": [
     "时间窗 unix：任务说明中的 S=1761177600/E=1761264000 对应 2025-10-23；已改用 2026-10-23T00:00:00Z..2026-10-24T00:00:00Z（S=1792713600,E=1792800000）过滤 HN。",
     "Reddit：r/programming、technology、MachineLearning、LocalLLaMA 的 RSS/JSON 均因 SSL EOF 或 curl HTTP 000 失败，reddit 区为空。",

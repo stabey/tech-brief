@@ -245,436 +245,405 @@
       ]
     }
   ],
-  "sections": {
-    "hn": [
-      {
-        "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-        "url": "https://lynchlab.net/llm-skin-cancer",
-        "score": 387,
-        "comments": 184,
-        "hn_url": "https://news.ycombinator.com/item?id=50233779"
-      },
-      {
-        "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
-        "url": "https://talkweb.eu/openweb/4558/",
-        "score": 366,
-        "comments": 180,
-        "hn_url": "https://news.ycombinator.com/item?id=50233929"
-      },
-      {
-        "title": "Cerebras Deploys Trillion-Parameter AI Models",
-        "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-        "score": 348,
-        "comments": 127,
-        "hn_url": "https://news.ycombinator.com/item?id=50227356"
-      },
-      {
-        "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
-        "url": "https://twitter.com/mike64_t/status/2114150399406202896",
-        "score": 285,
-        "comments": 1,
-        "hn_url": "https://news.ycombinator.com/item?id=50230181"
-      },
-      {
-        "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
-        "url": "https://github.com/ihhub/fheroes2",
-        "score": 201,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=50230384"
-      },
-      {
-        "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
-        "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
-        "score": 185,
-        "comments": 267,
-        "hn_url": "https://news.ycombinator.com/item?id=50233304"
-      },
-      {
-        "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
-        "url": "https://github.com/slee-persis/GVS5H",
-        "score": 181,
-        "comments": 69,
-        "hn_url": "https://news.ycombinator.com/item?id=50228167"
-      },
-      {
-        "title": "Show HN: I put employees inside S&P 500 market-cap bubbles",
-        "url": "https://bigwhalehunting.com/workforce/",
-        "score": 163,
-        "comments": 47,
-        "hn_url": "https://news.ycombinator.com/item?id=50232312"
-      },
-      {
-        "title": "JetBrains Thinkrail",
-        "url": "https://github.com/JetBrains/thinkrail",
-        "score": 159,
-        "comments": 112,
-        "hn_url": "https://news.ycombinator.com/item?id=50233294"
-      },
-      {
-        "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
-        "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
-        "score": 154,
-        "comments": 31,
-        "hn_url": "https://news.ycombinator.com/item?id=50235217"
-      },
-      {
-        "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
-        "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
-        "score": 145,
-        "comments": 170,
-        "hn_url": "https://news.ycombinator.com/item?id=50229861"
-      },
-      {
-        "title": "Samsung TVs look for microphones in your house via Bluetooth and then spy events",
-        "url": "https://twitter.com/freddier/status/2114042326758867453",
-        "score": 134,
-        "comments": 3,
-        "hn_url": "https://news.ycombinator.com/item?id=50231189"
-      },
-      {
-        "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
-        "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-        "score": 130,
-        "comments": 68,
-        "hn_url": "https://news.ycombinator.com/item?id=50229827"
-      },
-      {
-        "title": "Online censorship is crushing indie webcomics",
-        "url": "https://xtramagazine.com/culture/online-censorship-indie-webcomics-284463",
-        "score": 120,
-        "comments": 102,
-        "hn_url": "https://news.ycombinator.com/item?id=50229599"
-      },
-      {
-        "title": "Active incident at Dreamhost forcing password reset",
-        "url": "https://www.dreamhoststatus.com/",
-        "score": 103,
-        "comments": 37,
-        "hn_url": "https://news.ycombinator.com/item?id=50231166"
-      },
-      {
-        "title": "Why I Am a Programmer",
-        "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
-        "score": 102,
-        "comments": 29,
-        "hn_url": "https://news.ycombinator.com/item?id=50235017"
-      },
-      {
-        "title": "Imagine an AI future where being banned means you are now economically useless",
-        "url": "https://twitter.com/boneGPT/status/2114035719853265264",
-        "score": 94,
-        "comments": 74,
-        "hn_url": "https://news.ycombinator.com/item?id=50230995"
-      },
-      {
-        "title": "What Adobe v ArtCraft teaches us",
-        "url": "https://techbronerd.substack.com/p/openai-and-anthropic-wanted-to-replace",
-        "score": 84,
-        "comments": 96,
-        "hn_url": "https://news.ycombinator.com/item?id=50232682"
-      }
-    ],
-    "lobsters": [
-      {
-        "title": "I want my Wednesday back",
-        "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
-        "score": 115,
-        "comments": 31,
-        "tags": [
-          "php",
-          "security"
-        ]
-      },
-      {
-        "title": "The Slurptop: A home-built luggable that runs on power tool batteries",
-        "url": "https://slurpburgers.com/slurpbuilds/the-slurptop/",
-        "score": 83,
-        "comments": 21,
-        "tags": [
-          "art",
-          "hardware"
-        ]
-      },
-      {
-        "title": "Attention people who think UB is fine",
-        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
-        "score": 76,
-        "comments": 73,
-        "tags": [
-          "c",
-          "c++"
-        ]
-      },
-      {
-        "title": "Indian government sites are serving revoked eMudhra certificates",
-        "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
-        "score": 70,
-        "comments": 16,
-        "tags": [
-          "security"
-        ]
-      },
-      {
-        "title": "Bringing uv and ty together",
-        "url": "https://astral.sh/blog/uv-ty-integration",
-        "score": 54,
-        "comments": 0,
-        "tags": [
-          "python"
-        ]
-      },
-      {
-        "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
-        "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
-        "score": 50,
-        "comments": 26,
-        "tags": [
-          "c++"
-        ]
-      },
-      {
-        "title": "Vim Classic",
-        "url": "https://vim-classic.org/",
-        "score": 48,
-        "comments": 23,
-        "tags": [
-          "editors",
-          "vim"
-        ]
-      },
-      {
-        "title": "POSIX wordexp(3) is dangerous",
-        "url": "https://yossarian.net/til/post/posix-wordexp-3-is-dangerous/",
-        "score": 45,
-        "comments": 11,
-        "tags": [
-          "c",
-          "security"
-        ]
-      },
-      {
-        "title": "Be Aware of What's in Your Logs",
-        "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
-        "score": 40,
-        "comments": 3,
-        "tags": [
-          "debugging"
-        ]
-      },
-      {
-        "title": "Wild version 0.11.0 released",
-        "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
-        "score": 37,
-        "comments": 7,
-        "tags": [
-          "mac",
-          "release",
-          "rust"
-        ]
-      },
-      {
-        "title": "Partial Order Precedence",
-        "url": "https://ziglang.org/devlog/2026/#2026-10-24",
-        "score": 28,
-        "comments": 7,
-        "tags": [
-          "zig"
-        ]
-      },
-      {
-        "title": "Emacs finally folds to my liking",
-        "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
-        "score": 26,
-        "comments": 5,
-        "tags": [
-          "emacs"
-        ]
-      },
-      {
-        "title": "How to run a city builder on 16 MHz",
-        "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
-        "score": 22,
-        "comments": 15,
-        "tags": [
-          "programming"
-        ]
-      },
-      {
-        "title": "MacOS Extensions pack for the Apple Network Server v1.0",
-        "url": "http://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html",
-        "score": 14,
-        "comments": 0,
-        "tags": [
-          "retrocomputing",
-          "reversing"
-        ]
-      }
-    ],
-    "v2ex": [
-      {
-        "title": "Bing 中国大陆搜索是否存在对部分国外网站的刻意降权或隐藏？",
-        "url": "https://www.v2ex.com/t/1251598",
-        "replies": 31,
-        "node": "bing"
-      },
-      {
-        "title": "有没有发现一个奇怪的现象？",
-        "url": "https://www.v2ex.com/t/1251636",
-        "replies": 30,
-        "node": "ideas"
-      },
-      {
-        "title": "[Day 20] - 10.25 - Tibo 又要重置了",
-        "url": "https://www.v2ex.com/t/1251616",
-        "replies": 27,
-        "node": "openai"
-      },
-      {
-        "title": "有什么工具可以测试鼠标的微动是否有问题",
-        "url": "https://www.v2ex.com/t/1251609",
-        "replies": 25,
-        "node": "qna"
-      },
-      {
-        "title": "有没有感觉 Codex 越来越比不上 Claude 了",
-        "url": "https://www.v2ex.com/t/1251671",
-        "replies": 25,
-        "node": "qna"
-      },
-      {
-        "title": "搓了一个“V2EX 评论上下文”的 chrome 插件，方便 V 友阅读评论",
-        "url": "https://www.v2ex.com/t/1251601",
-        "replies": 21,
-        "node": "create"
-      },
-      {
-        "title": "codex 最新的功能，居然和我之前做的小功能如此雷同",
-        "url": "https://www.v2ex.com/t/1251621",
-        "replies": 19,
-        "node": "openai"
-      },
-      {
-        "title": "有件事我搞不明白， V 站为何不升级一下交互和 UI？然后出一个官方的 APP？",
-        "url": "https://www.v2ex.com/t/1251696",
-        "replies": 19,
-        "node": "v2ex"
-      },
-      {
-        "title": "用 ai 实现书法作品自动生成",
-        "url": "https://www.v2ex.com/t/1251592",
-        "replies": 18,
-        "node": "create"
-      },
-      {
-        "title": "我做了一个我自认为全世界最好的雅思背词网站，完全免费，完全开源。🔥🔥🔥🔥🔥",
-        "url": "https://www.v2ex.com/t/1251691",
-        "replies": 13,
-        "node": "programmer"
-      }
-    ],
-    "cn": [
-      {
-        "title": "希腊通过法案禁止 15 岁以下儿童使用社媒",
-        "url": "https://www.solidot.org/story?sid=85696",
-        "source": "Solidot",
-        "summary": "Solidot：希腊通过法案禁止 15 岁以下儿童使用社媒。"
-      },
-      {
-        "title": "美光桃园厂工会否决奖金方案",
-        "url": "https://www.solidot.org/story?sid=85699",
-        "source": "Solidot",
-        "summary": "Solidot：美光桃园厂工会否决奖金方案。"
-      },
-      {
-        "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
-        "url": "https://www.solidot.org/story?sid=85701",
-        "source": "Solidot",
-        "summary": "Solidot：为让数据中心有充足电力 Google 将付钱给其他人少用电。"
-      },
-      {
-        "title": "在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄",
-        "url": "https://www.solidot.org/story?sid=85706",
-        "source": "Solidot",
-        "summary": "Solidot：在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄。"
-      },
-      {
-        "title": "让 AI 在你我身旁，陪我把网页上的事做完",
-        "url": "https://sspai.com/post/117034",
-        "source": "少数派",
-        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
-      },
-      {
-        "title": "把「想法」和「收藏」分开：我的 Obsidian 知识库搭建实践",
-        "url": "https://sspai.com/post/116871",
-        "source": "少数派",
-        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
-      },
-      {
-        "title": "把书留在访达里：我和 AI 结对写了一款“反潮流”的 Mac 原生阅读器",
-        "url": "https://sspai.com/post/116838",
-        "source": "少数派",
-        "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "Just finished my multiplayer system in C and turns out we can support 50k players in a single server at 60hz simulation tick",
-        "url": "https://www.reddit.com/r/programming/comments/1xf4c5d/just_finished_my_multiplayer_system_in_c_and/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "HTMX creator on the history of REST and why he thinks we got it wrong",
-        "url": "https://www.reddit.com/r/programming/comments/1xezyoh/htmx_creator_on_the_history_of_rest_and_why_he/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "Rewinding the exponential: How we keep hardware usage down",
-        "url": "https://www.reddit.com/r/programming/comments/1xf0aai/rewinding_the_exponential_how_we_keep_hardware/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "Broccoli2Shell: Brotli decoder RCE (CVE-2026-111497) in Node.js, Python and more",
-        "url": "https://www.reddit.com/r/programming/comments/1xe7dp8/broccoli2shell_brotli_decoder_rce_cve2026111497/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "eMudhra's Press Release on the CA Compromise",
-        "url": "https://www.reddit.com/r/programming/comments/1xd9rwe/emudhras_press_release_on_the_ca_compromise/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "How close can pure FP get to C?",
-        "url": "https://www.reddit.com/r/programming/comments/1xdjru9/how_close_can_pure_fp_get_to_c/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "Where did my freed memory (not) go?",
-        "url": "https://www.reddit.com/r/programming/comments/1xcwsc3/where_did_my_freed_memory_not_go/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      },
-      {
-        "title": "Code and Cake - Docker is weird",
-        "url": "https://www.reddit.com/r/programming/comments/1xdef0p/code_and_cake_docker_is_weird/",
-        "subreddit": "programming",
-        "score": null,
-        "comments": null
-      }
-    ]
-  },
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+          "url": "https://lynchlab.net/llm-skin-cancer",
+          "discussion_url": "https://news.ycombinator.com/item?id=50233779",
+          "meta": "387 分 · 184 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+          "url": "https://talkweb.eu/openweb/4558/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50233929",
+          "meta": "366 分 · 180 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Cerebras Deploys Trillion-Parameter AI Models",
+          "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+          "discussion_url": "https://news.ycombinator.com/item?id=50227356",
+          "meta": "348 分 · 127 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
+          "url": "https://twitter.com/mike64_t/status/2114150399406202896",
+          "discussion_url": "https://news.ycombinator.com/item?id=50230181",
+          "meta": "285 分 · 1 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
+          "url": "https://github.com/ihhub/fheroes2",
+          "discussion_url": "https://news.ycombinator.com/item?id=50230384",
+          "meta": "201 分 · 71 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+          "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50233304",
+          "meta": "185 分 · 267 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+          "url": "https://github.com/slee-persis/GVS5H",
+          "discussion_url": "https://news.ycombinator.com/item?id=50228167",
+          "meta": "181 分 · 69 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Show HN: I put employees inside S&P 500 market-cap bubbles",
+          "url": "https://bigwhalehunting.com/workforce/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50232312",
+          "meta": "163 分 · 47 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "JetBrains Thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "discussion_url": "https://news.ycombinator.com/item?id=50233294",
+          "meta": "159 分 · 112 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+          "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50235217",
+          "meta": "154 分 · 31 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
+          "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+          "discussion_url": "https://news.ycombinator.com/item?id=50229861",
+          "meta": "145 分 · 170 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Samsung TVs look for microphones in your house via Bluetooth and then spy events",
+          "url": "https://twitter.com/freddier/status/2114042326758867453",
+          "discussion_url": "https://news.ycombinator.com/item?id=50231189",
+          "meta": "134 分 · 3 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+          "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50229827",
+          "meta": "130 分 · 68 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "Online censorship is crushing indie webcomics",
+          "url": "https://xtramagazine.com/culture/online-censorship-indie-webcomics-284463",
+          "discussion_url": "https://news.ycombinator.com/item?id=50229599",
+          "meta": "120 分 · 102 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "Active incident at Dreamhost forcing password reset",
+          "url": "https://www.dreamhoststatus.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50231166",
+          "meta": "103 分 · 37 评论"
+        },
+        {
+          "id": "hn-16",
+          "title": "Why I Am a Programmer",
+          "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50235017",
+          "meta": "102 分 · 29 评论"
+        },
+        {
+          "id": "hn-17",
+          "title": "Imagine an AI future where being banned means you are now economically useless",
+          "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+          "discussion_url": "https://news.ycombinator.com/item?id=50230995",
+          "meta": "94 分 · 74 评论"
+        },
+        {
+          "id": "hn-18",
+          "title": "What Adobe v ArtCraft teaches us",
+          "url": "https://techbronerd.substack.com/p/openai-and-anthropic-wanted-to-replace",
+          "discussion_url": "https://news.ycombinator.com/item?id=50232682",
+          "meta": "84 分 · 96 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "I want my Wednesday back",
+          "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
+          "meta": "115 分 · 31 评论 · php, security"
+        },
+        {
+          "id": "lo-2",
+          "title": "The Slurptop: A home-built luggable that runs on power tool batteries",
+          "url": "https://slurpburgers.com/slurpbuilds/the-slurptop/",
+          "meta": "83 分 · 21 评论 · art, hardware"
+        },
+        {
+          "id": "lo-3",
+          "title": "Attention people who think UB is fine",
+          "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
+          "meta": "76 分 · 73 评论 · c, c++"
+        },
+        {
+          "id": "lo-4",
+          "title": "Indian government sites are serving revoked eMudhra certificates",
+          "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
+          "meta": "70 分 · 16 评论 · security"
+        },
+        {
+          "id": "lo-5",
+          "title": "Bringing uv and ty together",
+          "url": "https://astral.sh/blog/uv-ty-integration",
+          "meta": "54 分 · 0 评论 · python"
+        },
+        {
+          "id": "lo-6",
+          "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
+          "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+          "meta": "50 分 · 26 评论 · c++"
+        },
+        {
+          "id": "lo-7",
+          "title": "Vim Classic",
+          "url": "https://vim-classic.org/",
+          "meta": "48 分 · 23 评论 · editors, vim"
+        },
+        {
+          "id": "lo-8",
+          "title": "POSIX wordexp(3) is dangerous",
+          "url": "https://yossarian.net/til/post/posix-wordexp-3-is-dangerous/",
+          "meta": "45 分 · 11 评论 · c, security"
+        },
+        {
+          "id": "lo-9",
+          "title": "Be Aware of What's in Your Logs",
+          "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+          "meta": "40 分 · 3 评论 · debugging"
+        },
+        {
+          "id": "lo-10",
+          "title": "Wild version 0.11.0 released",
+          "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
+          "meta": "37 分 · 7 评论 · mac, release, rust"
+        },
+        {
+          "id": "lo-11",
+          "title": "Partial Order Precedence",
+          "url": "https://ziglang.org/devlog/2026/#2026-10-24",
+          "meta": "28 分 · 7 评论 · zig"
+        },
+        {
+          "id": "lo-12",
+          "title": "Emacs finally folds to my liking",
+          "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
+          "meta": "26 分 · 5 评论 · emacs"
+        },
+        {
+          "id": "lo-13",
+          "title": "How to run a city builder on 16 MHz",
+          "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
+          "meta": "22 分 · 15 评论 · programming"
+        },
+        {
+          "id": "lo-14",
+          "title": "MacOS Extensions pack for the Apple Network Server v1.0",
+          "url": "http://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html",
+          "meta": "14 分 · 0 评论 · retrocomputing, reversing"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "Bing 中国大陆搜索是否存在对部分国外网站的刻意降权或隐藏？",
+          "url": "https://www.v2ex.com/t/1251598",
+          "meta": "bing · 31 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "有没有发现一个奇怪的现象？",
+          "url": "https://www.v2ex.com/t/1251636",
+          "meta": "ideas · 30 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "[Day 20] - 10.25 - Tibo 又要重置了",
+          "url": "https://www.v2ex.com/t/1251616",
+          "meta": "openai · 27 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "有什么工具可以测试鼠标的微动是否有问题",
+          "url": "https://www.v2ex.com/t/1251609",
+          "meta": "qna · 25 回复"
+        },
+        {
+          "id": "v2-5",
+          "title": "有没有感觉 Codex 越来越比不上 Claude 了",
+          "url": "https://www.v2ex.com/t/1251671",
+          "meta": "qna · 25 回复"
+        },
+        {
+          "id": "v2-6",
+          "title": "搓了一个“V2EX 评论上下文”的 chrome 插件，方便 V 友阅读评论",
+          "url": "https://www.v2ex.com/t/1251601",
+          "meta": "create · 21 回复"
+        },
+        {
+          "id": "v2-7",
+          "title": "codex 最新的功能，居然和我之前做的小功能如此雷同",
+          "url": "https://www.v2ex.com/t/1251621",
+          "meta": "openai · 19 回复"
+        },
+        {
+          "id": "v2-8",
+          "title": "有件事我搞不明白， V 站为何不升级一下交互和 UI？然后出一个官方的 APP？",
+          "url": "https://www.v2ex.com/t/1251696",
+          "meta": "v2ex · 19 回复"
+        },
+        {
+          "id": "v2-9",
+          "title": "用 ai 实现书法作品自动生成",
+          "url": "https://www.v2ex.com/t/1251592",
+          "meta": "create · 18 回复"
+        },
+        {
+          "id": "v2-10",
+          "title": "我做了一个我自认为全世界最好的雅思背词网站，完全免费，完全开源。🔥🔥🔥🔥🔥",
+          "url": "https://www.v2ex.com/t/1251691",
+          "meta": "programmer · 13 回复"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 少数派",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "希腊通过法案禁止 15 岁以下儿童使用社媒",
+          "summary": "Solidot：希腊通过法案禁止 15 岁以下儿童使用社媒。",
+          "url": "https://www.solidot.org/story?sid=85696",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-2",
+          "title": "美光桃园厂工会否决奖金方案",
+          "summary": "Solidot：美光桃园厂工会否决奖金方案。",
+          "url": "https://www.solidot.org/story?sid=85699",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-3",
+          "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
+          "summary": "Solidot：为让数据中心有充足电力 Google 将付钱给其他人少用电。",
+          "url": "https://www.solidot.org/story?sid=85701",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-4",
+          "title": "在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄",
+          "summary": "Solidot：在 Google 砍伐了上千英亩树后野狼来到芬兰的村庄。",
+          "url": "https://www.solidot.org/story?sid=85706",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-5",
+          "title": "让 AI 在你我身旁，陪我把网页上的事做完",
+          "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。",
+          "url": "https://sspai.com/post/117034",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-6",
+          "title": "把「想法」和「收藏」分开：我的 Obsidian 知识库搭建实践",
+          "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。",
+          "url": "https://sspai.com/post/116871",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-7",
+          "title": "把书留在访达里：我和 AI 结对写了一款“反潮流”的 Mac 原生阅读器",
+          "summary": "少数派矩阵近期文（发布时间可能早于本窗口，见 gaps）。",
+          "url": "https://sspai.com/post/116838",
+          "meta": "少数派"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": [
+        {
+          "id": "rd-1",
+          "title": "Just finished my multiplayer system in C and turns out we can support 50k players in a single server at 60hz simulation tick",
+          "url": "https://www.reddit.com/r/programming/comments/1xf4c5d/just_finished_my_multiplayer_system_in_c_and/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-2",
+          "title": "HTMX creator on the history of REST and why he thinks we got it wrong",
+          "url": "https://www.reddit.com/r/programming/comments/1xezyoh/htmx_creator_on_the_history_of_rest_and_why_he/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-3",
+          "title": "Rewinding the exponential: How we keep hardware usage down",
+          "url": "https://www.reddit.com/r/programming/comments/1xf0aai/rewinding_the_exponential_how_we_keep_hardware/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-4",
+          "title": "Broccoli2Shell: Brotli decoder RCE (CVE-2026-111497) in Node.js, Python and more",
+          "url": "https://www.reddit.com/r/programming/comments/1xe7dp8/broccoli2shell_brotli_decoder_rce_cve2026111497/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-5",
+          "title": "eMudhra's Press Release on the CA Compromise",
+          "url": "https://www.reddit.com/r/programming/comments/1xd9rwe/emudhras_press_release_on_the_ca_compromise/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-6",
+          "title": "How close can pure FP get to C?",
+          "url": "https://www.reddit.com/r/programming/comments/1xdjru9/how_close_can_pure_fp_get_to_c/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-7",
+          "title": "Where did my freed memory (not) go?",
+          "url": "https://www.reddit.com/r/programming/comments/1xcwsc3/where_did_my_freed_memory_not_go/",
+          "meta": "r/programming"
+        },
+        {
+          "id": "rd-8",
+          "title": "Code and Cake - Docker is weird",
+          "url": "https://www.reddit.com/r/programming/comments/1xdef0p/code_and_cake_docker_is_weird/",
+          "meta": "r/programming"
+        }
+      ]
+    }
+  ],
   "gaps": [
     "Reddit：r/technology、MachineLearning、LocalLLaMA 的 JSON 返回 403、RSS 429；仅 r/programming RSS 成功，reddit 区仅含该源解析条目（无分数/评论数字段）。",
     "IT之家首页 HTML 未能解析出稳定文章列表，cn 区以 Solidot、开源中国为主，少数派为矩阵列表（多数发布时间早于本窗口，已在 summary/gaps 标明）。",

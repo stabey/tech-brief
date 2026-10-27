@@ -245,354 +245,337 @@
       ]
     }
   ],
-  "sections": {
-    "hn": [
-      {
-        "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
-        "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-        "score": 612,
-        "comments": 281,
-        "hn_url": "https://news.ycombinator.com/item?id=50217495"
-      },
-      {
-        "title": "Root shell on Samsung TV",
-        "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
-        "score": 483,
-        "comments": 194,
-        "hn_url": "https://news.ycombinator.com/item?id=50218633"
-      },
-      {
-        "title": "OBS Studio 33",
-        "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
-        "score": 438,
-        "comments": 158,
-        "hn_url": "https://news.ycombinator.com/item?id=50218430"
-      },
-      {
-        "title": "No signs of AI payoff outside the tech sector",
-        "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-        "score": 436,
-        "comments": 428,
-        "hn_url": "https://news.ycombinator.com/item?id=50224463"
-      },
-      {
-        "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
-        "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
-        "score": 414,
-        "comments": 444,
-        "hn_url": "https://news.ycombinator.com/item?id=50220913"
-      },
-      {
-        "title": "Twelve years of distributed SQLite",
-        "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-        "score": 359,
-        "comments": 62,
-        "hn_url": "https://news.ycombinator.com/item?id=50217500"
-      },
-      {
-        "title": "Show HN: Steal My Bitcoin",
-        "url": "https://stealmybitcoin.com/",
-        "score": 357,
-        "comments": 199,
-        "hn_url": "https://news.ycombinator.com/item?id=50224916"
-      },
-      {
-        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-        "score": 269,
-        "comments": 135,
-        "hn_url": "https://news.ycombinator.com/item?id=50219177"
-      },
-      {
-        "title": "I don't understand quantum physics (2018)",
-        "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
-        "score": 267,
-        "comments": 203,
-        "hn_url": "https://news.ycombinator.com/item?id=50219666"
-      },
-      {
-        "title": "How close can pure functional programming get to C?",
-        "url": "https://rtfeldman.com/fp-vs-c",
-        "score": 247,
-        "comments": 87,
-        "hn_url": "https://news.ycombinator.com/item?id=50218195"
-      },
-      {
-        "title": "Google illegally cut down 250K trees in Finland for data center",
-        "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
-        "score": 246,
-        "comments": 199,
-        "hn_url": "https://news.ycombinator.com/item?id=50221676"
-      },
-      {
-        "title": "Roku developer repositories moved from GitHub to GitLab",
-        "url": "https://blog.roku.com/developer/gitlab-move",
-        "score": 242,
-        "comments": 160,
-        "hn_url": "https://news.ycombinator.com/item?id=50222622"
-      },
-      {
-        "title": "FreeDNS",
-        "url": "https://freedns.afraid.org/",
-        "score": 239,
-        "comments": 61,
-        "hn_url": "https://news.ycombinator.com/item?id=50222133"
-      },
-      {
-        "title": "Danish Government silently drops plan to dump MS Office",
-        "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
-        "score": 185,
-        "comments": 133,
-        "hn_url": "https://news.ycombinator.com/item?id=50223844"
-      },
-      {
-        "title": "The Goose Programming Language",
-        "url": "https://aardappel.github.io/goose/",
-        "score": 184,
-        "comments": 141,
-        "hn_url": "https://news.ycombinator.com/item?id=50224100"
-      },
-      {
-        "title": "Apple Security Research Device",
-        "url": "https://security.apple.com/research-device/",
-        "score": 171,
-        "comments": 114,
-        "hn_url": "https://news.ycombinator.com/item?id=50217903"
-      },
-      {
-        "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-        "url": "https://github.com/Zagitta/gpu-unlock",
-        "score": 170,
-        "comments": 61,
-        "hn_url": "https://news.ycombinator.com/item?id=50219700"
-      },
-      {
-        "title": "The Goose Programming Language",
-        "url": "https://aardappel.github.io/goose/",
-        "score": 168,
-        "comments": 1,
-        "hn_url": "https://news.ycombinator.com/item?id=50224300"
-      }
-    ],
-    "lobsters": [
-      {
-        "title": "I want my Wednesday back",
-        "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
-        "score": 93,
-        "comments": 29,
-        "tags": [
-          "php",
-          "security"
-        ]
-      },
-      {
-        "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
-        "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
-        "score": 18,
-        "comments": 8,
-        "tags": [
-          "c++"
-        ]
-      },
-      {
-        "title": "Bringing uv and ty together",
-        "url": "https://astral.sh/blog/uv-ty-integration",
-        "score": 27,
-        "comments": 0,
-        "tags": [
-          "python"
-        ]
-      },
-      {
-        "title": "Indian government sites are serving revoked eMudhra certificates",
-        "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
-        "score": 57,
-        "comments": 12,
-        "tags": [
-          "security"
-        ]
-      },
-      {
-        "title": "Wild version 0.11.0 released",
-        "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
-        "score": 26,
-        "comments": 5,
-        "tags": [
-          "mac",
-          "release",
-          "rust"
-        ]
-      },
-      {
-        "title": "Be Aware of What's in Your Logs",
-        "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
-        "score": 28,
-        "comments": 1,
-        "tags": [
-          "debugging"
-        ]
-      },
-      {
-        "title": "Attention people who think UB is fine",
-        "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
-        "score": 66,
-        "comments": 56,
-        "tags": [
-          "c",
-          "c++"
-        ]
-      },
-      {
-        "title": "Emacs finally folds to my liking",
-        "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
-        "score": 24,
-        "comments": 2,
-        "tags": [
-          "emacs"
-        ]
-      },
-      {
-        "title": "How to run a city builder on 16 MHz",
-        "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
-        "score": 7,
-        "comments": 11,
-        "tags": [
-          "programming"
-        ]
-      },
-      {
-        "title": "The glorious @xkcdRandom Zig builtin",
-        "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
-        "score": 61,
-        "comments": 8,
-        "tags": [
-          "compilers",
-          "satire",
-          "zig"
-        ]
-      },
-      {
-        "title": "What's wrong with AI?",
-        "url": "https://homepage.farm/ai.html",
-        "score": 21,
-        "comments": 14,
-        "tags": [
-          "culture"
-        ]
-      },
-      {
-        "title": "This week's \"node2shell\" Brotli vulnerability (CVE-2026-111497) is exploitable in Python, other consumers of Brotli",
-        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-        "score": 6,
-        "comments": 6,
-        "tags": [
-          "security",
-          "web"
-        ]
-      }
-    ],
-    "v2ex": [
-      {
-        "title": "别说开发了, 这把运维真给干没了把",
-        "url": "https://www.v2ex.com/t/1251410",
-        "replies": 74,
-        "node": "programmer"
-      },
-      {
-        "title": "用单位电脑开代理，如何逃避后台监测？",
-        "url": "https://www.v2ex.com/t/1251432",
-        "replies": 51,
-        "node": "qna"
-      },
-      {
-        "title": "特斯拉到底有什么魔力, 销量这么高的毛坯房",
-        "url": "https://www.v2ex.com/t/1251551",
-        "replies": 38,
-        "node": "ev"
-      },
-      {
-        "title": "Kimi K3.1 Pro 发布, 比 K3 快、性能逼近 Opus，但额度 10 分钟就烧光了",
-        "url": "https://www.v2ex.com/t/1251425",
-        "replies": 35,
-        "node": "programmer"
-      },
-      {
-        "title": "Personal Agent 大家平时都拿来干啥？都有啥定时任务？",
-        "url": "https://www.v2ex.com/t/1251415",
-        "replies": 32,
-        "node": "programmer"
-      },
-      {
-        "title": "智友社回馈 V 站新老客户，抽送第 11 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 6",
-        "url": "https://www.v2ex.com/t/1251411",
-        "replies": 26,
-        "node": "promotions"
-      },
-      {
-        "title": "国行 iPhone Duo 如何在境内写入境外 eSIM？",
-        "url": "https://www.v2ex.com/t/1251454",
-        "replies": 26,
-        "node": "iphone"
-      },
-      {
-        "title": "现在新号订阅是不是必被 KYC",
-        "url": "https://www.v2ex.com/t/1251445",
-        "replies": 22,
-        "node": "claude"
-      },
-      {
-        "title": "claude 支持中国了？",
-        "url": "https://www.v2ex.com/t/1251557",
-        "replies": 17,
-        "node": "claude"
-      },
-      {
-        "title": "谈谈我的每月 20 美元 AI 工具搭配策略：为什么我停掉了官方 Claude Pro 订阅",
-        "url": "https://www.v2ex.com/t/1251587",
-        "replies": 7,
-        "node": "share"
-      }
-    ],
-    "cn": [
-      {
-        "title": "让 AI 在你我身旁，陪我把网页上的事做完",
-        "url": "https://sspai.com/post/117034",
-        "source": "少数派",
-        "summary": "作者介绍 Chrome 侧栏助手 ByYourSide：复用当前页与登录态，用一句话驱动阅读、点击与填写。"
-      },
-      {
-        "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
-        "url": "https://sspai.com/post/115437",
-        "source": "少数派",
-        "summary": "记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。"
-      },
-      {
-        "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
-        "url": "https://www.solidot.org/story?sid=85701",
-        "source": "Solidot",
-        "summary": "Solidot 首页摘要：谷歌为保障数据中心电力，将付费鼓励他人减少用电。"
-      },
-      {
-        "title": "KeePassXC 2.8.0 释出",
-        "url": "https://www.solidot.org/story?sid=85690",
-        "source": "Solidot",
-        "summary": "Solidot 报道开源密码管理器 KeePassXC 2.8.0 发布。"
-      },
-      {
-        "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
-        "url": "https://www.oschina.net/news/503177",
-        "source": "开源中国",
-        "summary": "OSCHINA 转载/讨论 Anthropic 内部平台工程大规模用 Claude 写代码的说法。"
-      },
-      {
-        "title": "Arc 浏览器将于 12 月 22 日停止服务",
-        "url": "https://www.oschina.net/news/503188",
-        "source": "开源中国",
-        "summary": "OSCHINA 报道 Arc 浏览器计划于 12 月 22 日停止服务。"
-      }
-    ],
-    "reddit": []
-  },
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
+          "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+          "discussion_url": "https://news.ycombinator.com/item?id=50217495",
+          "meta": "612 分 · 281 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Root shell on Samsung TV",
+          "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
+          "discussion_url": "https://news.ycombinator.com/item?id=50218633",
+          "meta": "483 分 · 194 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "OBS Studio 33",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+          "discussion_url": "https://news.ycombinator.com/item?id=50218430",
+          "meta": "438 分 · 158 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "No signs of AI payoff outside the tech sector",
+          "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+          "discussion_url": "https://news.ycombinator.com/item?id=50224463",
+          "meta": "436 分 · 428 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+          "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50220913",
+          "meta": "414 分 · 444 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Twelve years of distributed SQLite",
+          "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50217500",
+          "meta": "359 分 · 62 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Show HN: Steal My Bitcoin",
+          "url": "https://stealmybitcoin.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50224916",
+          "meta": "357 分 · 199 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+          "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+          "discussion_url": "https://news.ycombinator.com/item?id=50219177",
+          "meta": "269 分 · 135 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "I don't understand quantum physics (2018)",
+          "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50219666",
+          "meta": "267 分 · 203 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "How close can pure functional programming get to C?",
+          "url": "https://rtfeldman.com/fp-vs-c",
+          "discussion_url": "https://news.ycombinator.com/item?id=50218195",
+          "meta": "247 分 · 87 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Google illegally cut down 250K trees in Finland for data center",
+          "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50221676",
+          "meta": "246 分 · 199 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Roku developer repositories moved from GitHub to GitLab",
+          "url": "https://blog.roku.com/developer/gitlab-move",
+          "discussion_url": "https://news.ycombinator.com/item?id=50222622",
+          "meta": "242 分 · 160 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "FreeDNS",
+          "url": "https://freedns.afraid.org/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50222133",
+          "meta": "239 分 · 61 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "Danish Government silently drops plan to dump MS Office",
+          "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
+          "discussion_url": "https://news.ycombinator.com/item?id=50223844",
+          "meta": "185 分 · 133 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "The Goose Programming Language",
+          "url": "https://aardappel.github.io/goose/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50224100",
+          "meta": "184 分 · 141 评论"
+        },
+        {
+          "id": "hn-16",
+          "title": "Apple Security Research Device",
+          "url": "https://security.apple.com/research-device/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50217903",
+          "meta": "171 分 · 114 评论"
+        },
+        {
+          "id": "hn-17",
+          "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+          "url": "https://github.com/Zagitta/gpu-unlock",
+          "discussion_url": "https://news.ycombinator.com/item?id=50219700",
+          "meta": "170 分 · 61 评论"
+        },
+        {
+          "id": "hn-18",
+          "title": "The Goose Programming Language",
+          "url": "https://aardappel.github.io/goose/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50224300",
+          "meta": "168 分 · 1 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "I want my Wednesday back",
+          "url": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
+          "meta": "93 分 · 29 评论 · php, security"
+        },
+        {
+          "id": "lo-2",
+          "title": "Balloting has completed for C++26. Unfortunately it was Disapproved",
+          "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+          "meta": "18 分 · 8 评论 · c++"
+        },
+        {
+          "id": "lo-3",
+          "title": "Bringing uv and ty together",
+          "url": "https://astral.sh/blog/uv-ty-integration",
+          "meta": "27 分 · 0 评论 · python"
+        },
+        {
+          "id": "lo-4",
+          "title": "Indian government sites are serving revoked eMudhra certificates",
+          "url": "https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/",
+          "meta": "57 分 · 12 评论 · security"
+        },
+        {
+          "id": "lo-5",
+          "title": "Wild version 0.11.0 released",
+          "url": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
+          "meta": "26 分 · 5 评论 · mac, release, rust"
+        },
+        {
+          "id": "lo-6",
+          "title": "Be Aware of What's in Your Logs",
+          "url": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+          "meta": "28 分 · 1 评论 · debugging"
+        },
+        {
+          "id": "lo-7",
+          "title": "Attention people who think UB is fine",
+          "url": "https://blog.habets.se/2026/10/Attention-people-who-think-UB-is-fine.html",
+          "meta": "66 分 · 56 评论 · c, c++"
+        },
+        {
+          "id": "lo-8",
+          "title": "Emacs finally folds to my liking",
+          "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
+          "meta": "24 分 · 2 评论 · emacs"
+        },
+        {
+          "id": "lo-9",
+          "title": "How to run a city builder on 16 MHz",
+          "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
+          "meta": "7 分 · 11 评论 · programming"
+        },
+        {
+          "id": "lo-10",
+          "title": "The glorious @xkcdRandom Zig builtin",
+          "url": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
+          "meta": "61 分 · 8 评论 · compilers, satire, zig"
+        },
+        {
+          "id": "lo-11",
+          "title": "What's wrong with AI?",
+          "url": "https://homepage.farm/ai.html",
+          "meta": "21 分 · 14 评论 · culture"
+        },
+        {
+          "id": "lo-12",
+          "title": "This week's \"node2shell\" Brotli vulnerability (CVE-2026-111497) is exploitable in Python, other consumers of Brotli",
+          "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+          "meta": "6 分 · 6 评论 · security, web"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "别说开发了, 这把运维真给干没了把",
+          "url": "https://www.v2ex.com/t/1251410",
+          "meta": "programmer · 74 回复"
+        },
+        {
+          "id": "v2-2",
+          "title": "用单位电脑开代理，如何逃避后台监测？",
+          "url": "https://www.v2ex.com/t/1251432",
+          "meta": "qna · 51 回复"
+        },
+        {
+          "id": "v2-3",
+          "title": "特斯拉到底有什么魔力, 销量这么高的毛坯房",
+          "url": "https://www.v2ex.com/t/1251551",
+          "meta": "ev · 38 回复"
+        },
+        {
+          "id": "v2-4",
+          "title": "Kimi K3.1 Pro 发布, 比 K3 快、性能逼近 Opus，但额度 10 分钟就烧光了",
+          "url": "https://www.v2ex.com/t/1251425",
+          "meta": "programmer · 35 回复"
+        },
+        {
+          "id": "v2-5",
+          "title": "Personal Agent 大家平时都拿来干啥？都有啥定时任务？",
+          "url": "https://www.v2ex.com/t/1251415",
+          "meta": "programmer · 32 回复"
+        },
+        {
+          "id": "v2-6",
+          "title": "智友社回馈 V 站新老客户，抽送第 11 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 6",
+          "url": "https://www.v2ex.com/t/1251411",
+          "meta": "promotions · 26 回复"
+        },
+        {
+          "id": "v2-7",
+          "title": "国行 iPhone Duo 如何在境内写入境外 eSIM？",
+          "url": "https://www.v2ex.com/t/1251454",
+          "meta": "iphone · 26 回复"
+        },
+        {
+          "id": "v2-8",
+          "title": "现在新号订阅是不是必被 KYC",
+          "url": "https://www.v2ex.com/t/1251445",
+          "meta": "claude · 22 回复"
+        },
+        {
+          "id": "v2-9",
+          "title": "claude 支持中国了？",
+          "url": "https://www.v2ex.com/t/1251557",
+          "meta": "claude · 17 回复"
+        },
+        {
+          "id": "v2-10",
+          "title": "谈谈我的每月 20 美元 AI 工具搭配策略：为什么我停掉了官方 Claude Pro 订阅",
+          "url": "https://www.v2ex.com/t/1251587",
+          "meta": "share · 7 回复"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "少数派 / Solidot / 开源中国",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "让 AI 在你我身旁，陪我把网页上的事做完",
+          "summary": "作者介绍 Chrome 侧栏助手 ByYourSide：复用当前页与登录态，用一句话驱动阅读、点击与填写。",
+          "url": "https://sspai.com/post/117034",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-2",
+          "title": "把 Muse 装进 ESP-Mosaico：Vibe Coding 也在硬件领域快速成长",
+          "summary": "记录把 Muse 装进 ESP 硬件玩具的实践，作为 Vibe Coding 延伸到嵌入式的案例。",
+          "url": "https://sspai.com/post/115437",
+          "meta": "少数派"
+        },
+        {
+          "id": "cn-3",
+          "title": "为让数据中心有充足电力 Google 将付钱给其他人少用电",
+          "summary": "Solidot 首页摘要：谷歌为保障数据中心电力，将付费鼓励他人减少用电。",
+          "url": "https://www.solidot.org/story?sid=85701",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-4",
+          "title": "KeePassXC 2.8.0 释出",
+          "summary": "Solidot 报道开源密码管理器 KeePassXC 2.8.0 发布。",
+          "url": "https://www.solidot.org/story?sid=85690",
+          "meta": "Solidot"
+        },
+        {
+          "id": "cn-5",
+          "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
+          "summary": "OSCHINA 转载/讨论 Anthropic 内部平台工程大规模用 Claude 写代码的说法。",
+          "url": "https://www.oschina.net/news/503177",
+          "meta": "开源中国"
+        },
+        {
+          "id": "cn-6",
+          "title": "Arc 浏览器将于 12 月 22 日停止服务",
+          "summary": "OSCHINA 报道 Arc 浏览器计划于 12 月 22 日停止服务。",
+          "url": "https://www.oschina.net/news/503188",
+          "meta": "开源中国"
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "source": "Reddit",
+      "items": []
+    }
+  ],
   "gaps": [
     "Reddit：r/programming、technology、MachineLearning、LocalLLaMA 的 JSON/RSS 均因 SSL 握手超时失败，reddit 区为空。",
     "Roku 开发者博客页需 JS，未能抽取正文；相关条目若出现在 HN 区仅保留标题与链接。",
