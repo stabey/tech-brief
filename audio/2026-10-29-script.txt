@@ -1,0 +1,15 @@
+早上好，这里是技术早报，二零二六年十月二十九日这一期。
+
+今天几条大新闻。谷歌发布 Gemini 四点零 Carbon，称是目前最强前沿模型，在 Artificial Analysis 智能指数五点零上拿下五十九分第一，并在多项网络安全基准领先，例如漏洞发现八点八二成、利用验证五点四八成、补丁七点一成。两周前刚出过 Argon，这次先给受信任的网络防御方试用，之后再经 Fairwind 逐步开放，入门价每百万输入代币两美元。
+
+安全方面，有人指出苹果十月十七日就接到 eMudhra 证书机构被攻破的通报，但到二十八日，系统自带的 git、curl、python 三仍信任那些弱密钥中间证书；二十六日的 macOS 二十七点二更新不但没修，还把用户手工规避冲掉了。这意味着 https 的 git 拉取可能被中间人劫持。苹果已挡了 Safari，开发者工具还需官方补丁。
+
+硬件上，苹果推出搭载 PROLED 超视网膜 XDR 触控屏的 MacBook Pro，串联双层 OLED，峰值亮度约两千尼特，对比度号称一千万比一，配 M 五 Pro 或 Max，续航最高二十四小时，十一月六日起供应；此前还有搭 M 六的十四寸机型。Cursor 则开源了自家 Agent SDK，用来像代码一样定义 Bugbot、安全审查这类托管 agent。英伟达也放出开源权重的 Nemotron 三点五 Transcribe，四十语种、可提示、可说话人标注。
+
+社区还在聊：指纹脚本里塞生物武器相关函数名防大模型反混淆、把美国法典当 git 历史回放，以及 WIRED 报道的 ICE 大规模监控与国土安全人员信息泄露。
+
+特别关注三位。Elon 称赞 Sundar 和 Demis 的 Gemini 四点零 Carbon「Impressive」，转发休斯敦 Robotaxi 扩展，并继续推 Grok Bot。Tibo 宣布 poteto 点 com 上线、称有约三百万浏览，又澄清 Chat 与 Work 合并还没上线、会谨慎推进，并预告「明天见好消息」。poteto 调侃自己域名比 Tibo 其他帖更火，还买了新域名，并提到之后可以把任意 bot 加进 Slack 互相协作。
+
+社区一瞥：Lobsters 热议苹果证书和 AlpineBSD；V2EX 在聊 JetBrains 新编辑器 Thinkrail 与 M 六 MacBook；开源中国与 Solidot 继续跟进维基百科清理 AI 文稿和 Ghostty。
+
+以上就是今天的早报，明天早上八点北京时间见。
