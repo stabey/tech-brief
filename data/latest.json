@@ -638,5 +638,6 @@
     "币安约 56–57 亿美元流出：来自 Arkham/第三方 X 帖与 HN 讨论，未见币安官方完整确认；金额与归因仍可能变动。",
     "部分 Elon 回复帖的 public_metrics 字段不完整（展示为 0），以可见点赞数为准。",
     "无 open 状态的 GitHub Issues 带 rating/watch 标签，未改 ratings.json / config.json 临时关注。"
-  ]
+  ],
+  "cover": "images/covers/2026-10-30.png"
 }

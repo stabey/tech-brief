@@ -10,7 +10,8 @@
 - **特别关注**：固定跟踪的 X 账号（Elon / Tibo / poteto）及互动亮点
 - **社区热议**：Hacker News、Reddit、Lobsters 等
 - **临时关注**：临时加账号或话题
-- **播客**：每期语音（`audio/`）
+- **封面**：每期一张瑞士风分享图（`images/covers/`），嵌在页头并用于 og:image
+- **播客**：可选；口播暂停时可不生成（`audio/`）
 
 ## 喜欢 / 不喜欢
 
@@ -40,7 +41,9 @@
 | `issues/YYYY-MM-DD.json` | 每日归档 |
 | `data/config.json` | 时区、固定账号、临时关注 |
 | `data/ratings.json` | 汇总后的评分 |
-| `audio/YYYY-MM-DD.mp3` | 播客音频 |
+| `audio/YYYY-MM-DD.mp3` | 播客音频（可选） |
+| `images/covers/YYYY-MM-DD.png` | 本期封面 / 分享图 |
+| `images/cover.png` | 最新封面副本（方便固定路径） |
 
 ## 本地预览
 
@@ -59,3 +62,15 @@ python3 -m http.server 8080
 `sections` MUST be a **list**: `[{"id":"hn","source":"Hacker News","items":[{"id","title","summary?","url","discussion_url?","meta?"}]}]`.
 A dict like `{"hn":[...],"lobsters":[...]}` renders as “本期内容写入中”. Before committing, run
 `python3 scripts/normalize_issue.py data/latest.json issues/YYYY-MM-DD.json` (converts dict form and validates).
+
+## 每日发布流水线
+
+写好 `data/latest.json`（并复制到 `issues/YYYY-MM-DD.json`）之后：
+
+```bash
+python3 scripts/generate_cover.py data/latest.json   # 生成封面 PNG，写入 cover 字段，更新 og:image
+python3 scripts/normalize_issue.py data/latest.json issues/YYYY-MM-DD.json
+# （口播暂不生成）然后 commit 推送到 main
+```
+
+封面脚本依赖本机 `google-chrome` headless；画布 1200×630，Swiss / Safety Orange。

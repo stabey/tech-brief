@@ -249,6 +249,47 @@
     list.innerHTML = gaps.map((g) => `<li>${escapeHtml(g)}</li>`).join("");
   }
 
+
+  function renderCover(data) {
+    const panel = $("#cover-panel");
+    if (!panel) return;
+    const src = data.cover;
+    if (!src) {
+      panel.hidden = true;
+      return;
+    }
+    panel.hidden = false;
+    const img = $("#cover-image");
+    img.src = src;
+    img.alt = `${data.title || "技术早报"} 封面`;
+  }
+
+  function setShareMeta(data) {
+    const title = data.title || "技术早报";
+    const desc =
+      (data.highlights && data.highlights[0] && data.highlights[0].title) ||
+      "每天 8:00（北京时间）整理技术社区与特别关注账号的热点。";
+    const setMeta = (attr, key, value) => {
+      if (!value) return;
+      let el = document.head.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", value);
+    };
+    document.title = title;
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", desc);
+    setMeta("name", "twitter:card", "summary_large_image");
+    if (data.cover) {
+      const abs = new URL(data.cover, location.href).href;
+      setMeta("property", "og:image", abs);
+      setMeta("name", "twitter:image", abs);
+    }
+  }
+
   function renderPodcast(data) {
     const panel = $("#podcast-panel");
     const podcast = data.podcast;
