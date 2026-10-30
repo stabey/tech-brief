@@ -1,0 +1,15 @@
+早上好，这里是技术早报，二零二六年十月三十日这一期。
+
+今天几条大新闻。Mistral 开源了 Large 四点零的权重，约一万亿参数，号称在开源权重里编程与防御性网络安全领先，支持低中高三档推理模式，API 价约每百万输入零点七美元、输出二点一美元。
+
+安全方面，有人披露 Android「SMS of Death」：一条畸形 WAP Push 短信即可零点击弄崩电话进程、掉线甚至进重启循环，十月安全补丁已修。Dream Research 则称有人把 PHP2Shell 与内核提权串起来，拿下二十五台暴露管理口的 Palo Alto 防火墙，含美国政府相关环境。Orange Tsai 也写了只用逻辑漏洞打穿 Edge 全链的文章。
+
+社区热议 Qwenputer：在 Qwen 三点五权重里编译进一颗确定性 RISC-V CPU，用模型自己的 Gated DeltaNet 当内存。另有帖子称 Claude Code 大约每三十秒把每个后台 agent 的整段 transcript 再发给模型，只为刷新三五个词的状态行，可烧掉约一成五到两成额度。
+
+商业上，DoorDash 宣布约一百七十亿美元收购 Instacart；Alphabet 当季搜索营收首次低于一半，云业务同比约翻倍。链上有人声称币安相关钱包流出约五十六到五十七亿美元，尚未见官方完整确认，Elon 引用后只回了「Everyday is Zeroday」。
+
+特别关注三位。Elon 还提醒 Grok Bot 没有免费档，并问 Demis 榜首模型何时可访问。Tibo 的 Day 二十五宣布 Pro 与 Business Premium 额度翻倍，自称从重置公司毕业成 Token 公司，并让人把反馈发给 ajambrosino。poteto 发布 pstack 零点十五点三六的稳定 statechart skill，可配合形式化验证找 bug，并继续推用 Grok Bot 购物。
+
+社区一瞥：Lobsters 在聊狐狸叫声、NetBSD 新编辑器 atto 与 Qwenputer；V2EX 有群晖加 GitLab 遭勒索、自研内核 IPTV 播放器；开源中国与 Solidot 跟进 Qwenputer、OpenAI agent 侧信道，以及谷歌 AI 搜索收入低于传统搜索。
+
+以上就是今天的早报，明天早上八点北京时间见。

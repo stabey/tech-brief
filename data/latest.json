@@ -1,71 +1,71 @@
 {
-  "id": "2026-10-29",
-  "title": "技术早报 · 2026-10-29",
+  "id": "2026-10-30",
+  "title": "技术早报 · 2026-10-30",
   "window": {
-    "start": "2026-10-28T08:00:00+08:00",
-    "end": "2026-10-29T08:00:00+08:00"
+    "start": "2026-10-29T08:00:00+08:00",
+    "end": "2026-10-30T08:00:00+08:00"
   },
-  "generated_at": "2026-10-29T08:25:00+08:00",
+  "generated_at": "2026-10-30T11:05:00+08:00",
   "podcast": {
-    "src": "audio/2026-10-29.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月二十九日这一期。\n\n今天几条大新闻。谷歌发布 Gemini 四点零 Carbon，称是目前最强前沿模型，在 Artificial Analysis 智能指数五点零上拿下五十九分第一，并在多项网络安全基准领先，例如漏洞发现八点八二成、利用验证五点四八成、补丁七点一成。两周前刚出过 Argon，这次先给受信任的网络防御方试用，之后再经 Fairwind 逐步开放，入门价每百万输入代币两美元。\n\n安全方面，有人指出苹果十月十七日就接到 eMudhra 证书机构被攻破的通报，但到二十八日，系统自带的 git、curl、python 三仍信任那些弱密钥中间证书；二十六日的 macOS 二十七点二更新不但没修，还把用户手工规避冲掉了。这意味着 https 的 git 拉取可能被中间人劫持。苹果已挡了 Safari，开发者工具还需官方补丁。\n\n硬件上，苹果推出搭载 PROLED 超视网膜 XDR 触控屏的 MacBook Pro，串联双层 OLED，峰值亮度约两千尼特，对比度号称一千万比一，配 M 五 Pro 或 Max，续航最高二十四小时，十一月六日起供应；此前还有搭 M 六的十四寸机型。Cursor 则开源了自家 Agent SDK，用来像代码一样定义 Bugbot、安全审查这类托管 agent。英伟达也放出开源权重的 Nemotron 三点五 Transcribe，四十语种、可提示、可说话人标注。\n\n社区还在聊：指纹脚本里塞生物武器相关函数名防大模型反混淆、把美国法典当 git 历史回放，以及 WIRED 报道的 ICE 大规模监控与国土安全人员信息泄露。\n\n特别关注三位。Elon 称赞 Sundar 和 Demis 的 Gemini 四点零 Carbon「Impressive」，转发休斯敦 Robotaxi 扩展，并继续推 Grok Bot。Tibo 宣布 poteto 点 com 上线、称有约三百万浏览，又澄清 Chat 与 Work 合并还没上线、会谨慎推进，并预告「明天见好消息」。poteto 调侃自己域名比 Tibo 其他帖更火，还买了新域名，并提到之后可以把任意 bot 加进 Slack 互相协作。\n\n社区一瞥：Lobsters 热议苹果证书和 AlpineBSD；V2EX 在聊 JetBrains 新编辑器 Thinkrail 与 M 六 MacBook；开源中国与 Solidot 继续跟进维基百科清理 AI 文稿和 Ghostty。\n\n以上就是今天的早报，明天早上八点北京时间见。"
+    "src": "audio/2026-10-30.mp3",
+    "script": "早上好，这里是技术早报，二零二六年十月三十日这一期。\n\n今天几条大新闻。Mistral 开源了 Large 四点零的权重，约一万亿参数，号称在开源权重里编程与防御性网络安全领先，支持低中高三档推理模式，API 价约每百万输入零点七美元、输出二点一美元。\n\n安全方面，有人披露 Android「SMS of Death」：一条畸形 WAP Push 短信即可零点击弄崩电话进程、掉线甚至进重启循环，十月安全补丁已修。Dream Research 则称有人把 PHP2Shell 与内核提权串起来，拿下二十五台暴露管理口的 Palo Alto 防火墙，含美国政府相关环境。Orange Tsai 也写了只用逻辑漏洞打穿 Edge 全链的文章。\n\n社区热议 Qwenputer：在 Qwen 三点五权重里编译进一颗确定性 RISC-V CPU，用模型自己的 Gated DeltaNet 当内存。另有帖子称 Claude Code 大约每三十秒把每个后台 agent 的整段 transcript 再发给模型，只为刷新三五个词的状态行，可烧掉约一成五到两成额度。\n\n商业上，DoorDash 宣布约一百七十亿美元收购 Instacart；Alphabet 当季搜索营收首次低于一半，云业务同比约翻倍。链上有人声称币安相关钱包流出约五十六到五十七亿美元，尚未见官方完整确认，Elon 引用后只回了「Everyday is Zeroday」。\n\n特别关注三位。Elon 还提醒 Grok Bot 没有免费档，并问 Demis 榜首模型何时可访问。Tibo 的 Day 二十五宣布 Pro 与 Business Premium 额度翻倍，自称从重置公司毕业成 Token 公司，并让人把反馈发给 ajambrosino。poteto 发布 pstack 零点十五点三六的稳定 statechart skill，可配合形式化验证找 bug，并继续推用 Grok Bot 购物。\n\n社区一瞥：Lobsters 在聊狐狸叫声、NetBSD 新编辑器 atto 与 Qwenputer；V2EX 有群晖加 GitLab 遭勒索、自研内核 IPTV 播放器；开源中国与 Solidot 跟进 Qwenputer、OpenAI agent 侧信道，以及谷歌 AI 搜索收入低于传统搜索。\n\n以上就是今天的早报，明天早上八点北京时间见。"
   },
   "highlights": [
     {
       "id": "h1",
-      "title": "谷歌发布 Gemini 4 Carbon：网络安全与长程任务领先，渐进开放",
-      "summary": "10/28 Google DeepMind 宣布 Gemini 4 Carbon：称其为目前最强前沿模型，Artificial Analysis Intelligence Index v5.0 以 59 分排名第一；SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%。强调长程工程与安全代码生成，提示注入抗性达 0.0% 攻击成功率（Gray Swan IPI）。先向部分网络防御方与 Fairwind 合作伙伴开放，入门价 $2/$10 每百万 in/out token（与 Argon 同），Argon 仅两周前发布。HN 约 768 分、627 评论；Sundar / Demis 同步发帖。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "source": "Hacker News / Google"
+      "title": "Mistral 开源 Large 4（Le Chonk）权重：开源里编程与防御安全领先",
+      "summary": "Mistral 发布约 1 万亿参数的 Large 4 开源权重：称在 FrontierCode / Terminal-Bench 等开源权重榜领先，Artificial Analysis Cyber Index 约 51%，恶意网络请求平均拒答约 96.6%；三档推理模式；API 约 $0.70/$2.10 每百万 in/out token；可在 Hugging Face 自托管。HN 约 1238 分、347 评论。",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source": "Hacker News / Mistral"
     },
     {
       "id": "h2",
-      "title": "苹果开发者工具仍信任被攻破的 eMudhra 证书；macOS 27.2 甚至冲掉手工规避",
-      "summary": "安全研究者 10/28 称：Apple 于 10/17 获知 eMudhra 中间 CA 私钥可被恢复；截至 10/28，随 macOS 附带的 git/curl/python3 仍信任相关证书。10/26 的 macOS 27.2 未修复且撤销用户手工移除根证书的规避，HTTPS git 克隆/推送与凭证可能遭中间人篡改。Safari 等系统网络栈已拦截。Apple Support 有说明页；Lobsters 约 85 分。HN 约 1025 分、375 评论。",
-      "url": "https://emudhra.we-have-a-problem.com/apple.html",
-      "source": "Hacker News / Lobsters"
+      "title": "Android「SMS of Death」：零点击畸形 WAP Push 可搞崩电话进程",
+      "summary": "公开披露：畸形 WAP Push（uintvar 长度无校验导致 NegativeArraySizeException）可远程、静默弄崩 com.android.phone，掉话甚至持久重启循环；普通用户往往只能恢复出厂。Google 在 2026 年 10 月安全更新中修复（吞异常并删除毒短信）。HN 约 314 分、181 评论。",
+      "url": "https://smsofdeath.com/",
+      "source": "Hacker News"
     },
     {
       "id": "h3",
-      "title": "MacBook Pro 推出 PROLED XDR 触控屏：串联 OLED、M5 Pro/Max，11/6 起供应",
-      "summary": "苹果产品页：新款 MacBook Pro 配备 PROLED XDR（tandem OLED）与内嵌 Touch、Dynamic Island；峰值亮度最高约 2000 nits，对比度宣称 10,000,000:1，可选 M5 Pro / M5 Max，续航最高约 24 小时，14.2\"/16.3\"，更轻机身。与搭载 M6 的新 Liquid Retina 机型并存。11 月 6 日起供应。HN 约 476 分、828 评论。",
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "source": "Hacker News / Apple"
+      "title": "Qwenputer：在 Qwen3.5 权重里编译进确定性 RISC-V CPU",
+      "summary": "实验模型：在 stock Qwen 3.5 4B 上用编译器把 RV32IM CPU 写进权重，以 Gated DeltaNet 状态当精确可寻址 RAM，前向传播内跑算术/C/MicroPython，无需外部工具；长整数算术可到约 100%。权重与代码已开源。HN 约 680 分；Lobsters 约 41 分。",
+      "url": "https://divagr.com/blog/qwenputer",
+      "source": "Hacker News / Lobsters"
     },
     {
       "id": "h4",
-      "title": "指纹脚本用「生物武器」符号名防 LLM 反混淆；实为反爬/反机器人",
-      "summary": "nullpt.rs：爬取指纹 canvas 时发现 servicepipe.tech 脚本含 ricin/自杀剂量等函数名与隐蔽系统提示字符串，意在绊倒模型安全护栏；解混淆后仍是常规反 bot 信号采集。作者将画布集中到 fingerprint.garden。HN 约 740 分；Lobsters 亦有讨论。",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "title": "Claude Code：后台 agent 约每 30 秒整段 transcript 再送模型刷状态行",
+      "summary": "Gist 实测：为刷新 agents 面板三五个词的状态行，Claude Code 默认周期性把每个后台 agent 的全部 transcript 再发给该 agent 模型；OpenTelemetry 上 agent_summary 可占花费约 16–26%。作者提供 Bun preload 钩子关掉定时器，不改二进制。HN 约 562 分、226 评论。",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
       "source": "Hacker News"
     },
     {
       "id": "h5",
-      "title": "Cursor 开源 Agent SDK：用代码定义并部署托管 agent",
-      "summary": "Cursor 博客：发布内部用于 Bugbot、Security Reviewer、Rollouts 的 Agent SDK，可用代码定义 agent、响应 PR/事件并一键部署；示例团队约一小时做出对照知识库的 PR 审查 agent。HN 约 90 分、107 评论。",
-      "url": "https://cursor.com/blog/agent-sdk",
-      "source": "Hacker News / Cursor"
+      "title": "DoorDash 约 170 亿美元收购 Instacart",
+      "summary": "DoorDash 官方：以每股 65 美元、股权价值约 170 亿美元收购 Instacart，对价至少 75% 现金；预计 2027 年底至 2028 上半年交割，仍须股东与反垄断等审批。HN 约 436 分、609 评论。",
+      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+      "source": "Hacker News / DoorDash"
     },
     {
       "id": "h6",
-      "title": "NVIDIA Nemotron 3.5 Transcribe：开源权重、40 语种、可提示 ASR",
-      "summary": "Hugging Face 博文（10/28）：Nemotron 3.5 Transcribe 开源权重，支持转录、说话人标注、翻译与音频问答；英语 Open ASR 榜前列，并配 Granary v2 数据与 NeMo 微调工具。HN 约 106 分。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "source": "Hacker News / Hugging Face"
+      "title": "声称币安相关钱包流出约 56–57 亿美元；Elon：「Everyday is Zeroday」",
+      "summary": "窗口内 Arkham 实体页与 Kobeissi Letter 等称 Ethereum/Bitcoin/TRON 相关钱包出现约 56–57 亿美元流出，若属实或成加密史上最大盗窃之一；未见币安官方完整确认。HN 约 816 分；Elon 引用后回「Everyday is Zeroday」（约 3.8 万赞）。",
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "source": "Hacker News / X"
     },
     {
       "id": "h7",
-      "title": "Git for the US Code：按修正案回放九部法典标题的历史",
-      "summary": "Lexifina：用公开法律修正指令在发布点之间回放，为美国法典九个标题重建「像 git 一样」的条文历史，便于查任意日期文本与出处；对 AI 法律问答的时效错误亦有讨论。HN 约 425 分。",
-      "url": "https://lexifina.com/blog/git-for-the-us-code",
+      "title": "PHP2Shell 链式利用：约 25 台暴露管理口的 PAN-OS 被 root",
+      "summary": "Dream Research（更新至 10/29）：攻击者将定制 PHP2Shell（CVE-2026-109618/109619）与 Fragnesia 内核提权（CVE-2026-46300）串成单次未认证 HTTPS 请求，根下约 25 台互联网暴露的 Palo Alto 防火墙/管理节点，并尝试渗入美国政府相关 AD。Palo Alto 已发补丁；Unit 42 跟踪为 CL-UNK-1280。HN 约 297 分。",
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
       "source": "Hacker News"
     },
     {
       "id": "h8",
-      "title": "WIRED：ICE 大规模反左翼监控；另有约 4.1 万国土安全人员信息泄露报道",
-      "summary": "窗口内两篇高分 WIRED：其一指 ICE 对左翼社会运动的大规模监控（HN 约 1086 分）；其二称泄露站点曝光约 4.1 万国土安全雇员含卧底 ICE 特工（HN 约 256 分）。偏社会/安全新闻，社区讨论热烈。",
-      "url": "https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/",
-      "source": "Hacker News / WIRED"
+      "title": "Alphabet 搜索营收首次低于一半；Google Cloud 同比约 +103%",
+      "summary": "Kadoa 据财报：截至 2026 年 9 月当季，Search 约 634 亿美元、占 Alphabet 总营收约 49.7%（首次低于一半）；Google Cloud 约 307 亿美元、约占 24.1%，同比约 +103%。搜索本身仍同比增长约 12%。HN 约 399 分。",
+      "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+      "source": "Hacker News"
     }
   ],
   "accounts": [
@@ -75,82 +75,107 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "引用 Sundar Pichai 发布 Gemini 4 Carbon 的帖，仅回「Impressive」。约 1.9 万赞、约 200 万浏览。",
-          "url": "https://x.com/elonmusk/status/2115503730368061688",
-          "time": "2026-10-29T01:59:28+08:00",
+          "summary": "引用 Kobeissi Letter 关于币安相关钱包约 57 亿美元流出的帖，仅回「Everyday is Zeroday」。约 3.85 万赞、约 324 万浏览。",
+          "url": "https://x.com/elonmusk/status/2115935053347786773",
+          "time": "2026-10-30T06:33:23+08:00",
           "interactions": [
             {
-              "summary": "Sundar：Gemini 4 Carbon，AA Index v5.0 第一（59），网络安全基准领先，渐进开放",
-              "url": "https://x.com/sundarpichai/status/2115489219804352921"
+              "summary": "Kobeissi Letter：称 Binance 相关链上流出约 $5.7B（BTC/ETH 等），若确认或成史上最大加密盗窃",
+              "url": "https://x.com/KobeissiLetter/status/2115926246916038921"
             }
           ],
           "metrics": {
-            "likes": 19030,
-            "reposts": 971,
-            "replies": 1207,
-            "quotes": 111,
-            "bookmarks": 1251,
-            "impressions": 2002229
+            "likes": 38547,
+            "reposts": 4001,
+            "replies": 2830,
+            "quotes": 944,
+            "bookmarks": 2501,
+            "impressions": 3243901
           }
         },
         {
           "id": "elon-2",
-          "summary": "回复 Demis Hassabis 关于 Carbon SOTA 与安全研究的帖：「Impressive」。约 2147 赞。",
-          "url": "https://x.com/elonmusk/status/2115501459332890893",
-          "time": "2026-10-29T01:50:26+08:00",
-          "interactions": [],
+          "summary": "「Worth noting that Grok @Bot has no free tier」——引用 XFreeze 关于 Grok Bot DAU 连续 16 日增长、约 60 万日活的帖。约 9868 赞。",
+          "url": "https://x.com/elonmusk/status/2115921600658735169",
+          "time": "2026-10-30T05:39:56+08:00",
+          "interactions": [
+            {
+              "summary": "XFreeze：Grok Bot DAU 连续增长 16 天；9 月初不足 10 万 → 10/26 超 60 万",
+              "url": "https://x.com/XFreeze/status/2115779686697697557"
+            }
+          ],
           "metrics": {
-            "likes": 2147,
-            "reposts": 48,
-            "replies": 110,
-            "quotes": 9,
-            "bookmarks": 36,
-            "impressions": 91245
+            "likes": 9868,
+            "reposts": 776,
+            "replies": 1407,
+            "quotes": 160,
+            "bookmarks": 394,
+            "impressions": 1242909
           }
         },
         {
           "id": "elon-3",
-          "summary": "「🇺🇸 Robotaxi Houston 🇺🇸」——引用休斯敦警察工会关于 Tesla Cybercab/Robotaxi 扩展、劝勿酒驾的帖。约 8599 赞。",
-          "url": "https://x.com/elonmusk/status/2115501119296463056",
-          "time": "2026-10-29T01:49:05+08:00",
-          "interactions": [],
+          "summary": "回复 Demis Hassabis「No.1」榜首帖：「Well done! When can it be accessed?」约 3680 赞。",
+          "url": "https://x.com/elonmusk/status/2115941758475620410",
+          "time": "2026-10-30T07:00:02+08:00",
+          "interactions": [
+            {
+              "summary": "Demis Hassabis：No.1（配图）",
+              "url": "https://x.com/demishassabis/status/2115933173175689570"
+            }
+          ],
           "metrics": {
-            "likes": 8599,
-            "reposts": 887,
-            "replies": 929,
-            "quotes": 89,
-            "bookmarks": 155,
-            "impressions": 1066889
+            "likes": 3680,
+            "reposts": 104,
+            "replies": 231,
+            "quotes": 21,
+            "bookmarks": 94,
+            "impressions": 210181
           }
         },
         {
           "id": "elon-4",
-          "summary": "「Try Grok @Bot」——引用 a16z/Baker 相关访谈剪辑，称 Grok Bot 像又一个 ChatGPT 时刻。约 1.22 万赞、约 3646 万浏览。",
-          "url": "https://x.com/elonmusk/status/2115353441954636214",
-          "time": "2026-10-28T16:02:16+08:00",
+          "summary": "谈 Von Neumann 探针与 Larry Page：称若本世纪末以自复制探测器探索星系则文明「winning wondrously」；Larry「可能是对的」。约 1.4 万赞。",
+          "url": "https://x.com/elonmusk/status/2115825787647496203",
+          "time": "2026-10-29T23:19:12+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 12168,
-            "reposts": 952,
-            "replies": 1160,
-            "quotes": 100,
-            "bookmarks": 1319,
-            "impressions": 36458065
+            "likes": 13974,
+            "reposts": 1541,
+            "replies": 1973,
+            "quotes": 188,
+            "bookmarks": 1834,
+            "impressions": 2076009
           }
         },
         {
           "id": "elon-5",
-          "summary": "「At Tesla, we even care about the chipmunks」——引用 98 岁老人买 FSD Model Y、车为花栗鼠停车的报道。约 2.23 万赞。",
-          "url": "https://x.com/elonmusk/status/2115447957843821013",
-          "time": "2026-10-28T22:17:50+08:00",
+          "summary": "引用 Stan Druckenmiller 投资 trade(xyz)/ICE×Hyperliquid 永续合约帖，回「Interesting」。约 2.53 万赞。",
+          "url": "https://x.com/elonmusk/status/2115823011399938182",
+          "time": "2026-10-29T23:08:10+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 22314,
-            "reposts": 2211,
-            "replies": 1623,
-            "quotes": 191,
-            "bookmarks": 802,
-            "impressions": 2269765
+            "likes": 25268,
+            "reposts": 3401,
+            "replies": 3548,
+            "quotes": 2193,
+            "bookmarks": 2482,
+            "impressions": 4530900
+          }
+        },
+        {
+          "id": "elon-6",
+          "summary": "回复关于算力成本：「The GPU bill must be pretty high」。约 1447 赞。",
+          "url": "https://x.com/elonmusk/status/2115943148178563526",
+          "time": "2026-10-30T07:05:33+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 1447,
+            "reposts": 0,
+            "replies": 0,
+            "quotes": 0,
+            "bookmarks": 0,
+            "impressions": 0
           }
         }
       ]
@@ -161,61 +186,72 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "「poteto.com has landed」——宣布站点上线；随后称该页约 300 万浏览「Pretty wild」。主帖约 1.18 万赞、约 372 万浏览。",
-          "url": "https://x.com/thsottiaux/status/2115297093879472332",
-          "time": "2026-10-28T12:18:22+08:00",
+          "summary": "Day 25：宣布即日起将 Pro 100/200/500 与 Business Premium 用量上限翻倍；不削减 Pro 200 的 Work/Codex；dots 仍单独计。约 3.37 万赞、约 343 万浏览。",
+          "url": "https://x.com/thsottiaux/status/2115850175868727621",
+          "time": "2026-10-30T00:56:07+08:00",
           "interactions": [
             {
-              "summary": "跟帖：Pretty wild that this site got 3M views（约 4154 赞）",
-              "url": "https://x.com/thsottiaux/status/2115473170279080149"
+              "summary": "跟帖：Graduating from The Reset Company to The Token Company.（约 7504 赞）",
+              "url": "https://x.com/thsottiaux/status/2115851621137784832"
             }
           ],
           "metrics": {
-            "likes": 11846,
-            "reposts": 370,
-            "replies": 1836,
-            "quotes": 671,
-            "bookmarks": 1770,
-            "impressions": 3716234
+            "likes": 33687,
+            "reposts": 2359,
+            "replies": 6160,
+            "quotes": 3126,
+            "bookmarks": 2743,
+            "impressions": 3429328
           }
         },
         {
           "id": "tibo-2",
-          "summary": "Day 23「重置日」玩笑（假称 iCloud Mail/Calendar 插件），并称「Lands by midnight PST」；稍后「And it's done. See you tomorrow for some good news.」约 8119 / 6880 赞。",
-          "url": "https://x.com/thsottiaux/status/2115273064481218829",
-          "time": "2026-10-28T10:42:53+08:00",
+          "summary": "「Send your kind feedback to this person」——引用 ajambrosino 关于额度翻倍与冲刺简化/性能的帖。约 3247 赞。",
+          "url": "https://x.com/thsottiaux/status/2115890336107233347",
+          "time": "2026-10-30T03:35:42+08:00",
           "interactions": [
             {
-              "summary": "Lands by midnight PST",
-              "url": "https://x.com/thsottiaux/status/2115273253711409208"
-            },
-            {
-              "summary": "And it's done. See you tomorrow for some good news.",
-              "url": "https://x.com/thsottiaux/status/2115330127886463244"
+              "summary": "ajambrosino：额度已翻倍；启动简化与性能 sprint，欢迎吐槽",
+              "url": "https://x.com/ajambrosino/status/2115855769665147254"
             }
           ],
           "metrics": {
-            "likes": 8119,
-            "reposts": 342,
-            "replies": 1118,
-            "quotes": 566,
-            "bookmarks": 353,
-            "impressions": 1266815
+            "likes": 3247,
+            "reposts": 54,
+            "replies": 570,
+            "quotes": 23,
+            "bookmarks": 141,
+            "impressions": 406528
           }
         },
         {
           "id": "tibo-3",
-          "summary": "澄清：Chat 与 Work 能力合并「还没上线」，团队在做但会谨慎推进，「We'll have more to share soon.」约 1458 赞。",
-          "url": "https://x.com/thsottiaux/status/2115588390414581916",
-          "time": "2026-10-29T07:35:52+08:00",
+          "summary": "Day 24：可像普通人一样给 dot 发短信/语音；配合 Siri「text …」把任务丢给它。约 3804 赞。",
+          "url": "https://x.com/thsottiaux/status/2115622002581188681",
+          "time": "2026-10-29T09:49:26+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 1458,
-            "reposts": 66,
-            "replies": 481,
-            "quotes": 81,
-            "bookmarks": 119,
-            "impressions": 120885
+            "likes": 3804,
+            "reposts": 135,
+            "replies": 2238,
+            "quotes": 230,
+            "bookmarks": 370,
+            "impressions": 1204477
+          }
+        },
+        {
+          "id": "tibo-4",
+          "summary": "调侃 alexandr_wang 的 Muse 落地页：「Muse couldn't build a website so the man just did a redirect」。约 6531 赞。",
+          "url": "https://x.com/thsottiaux/status/2115648685069742441",
+          "time": "2026-10-29T11:35:28+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 6531,
+            "reposts": 54,
+            "replies": 132,
+            "quotes": 24,
+            "bookmarks": 88,
+            "impressions": 513753
           }
         }
       ]
@@ -226,62 +262,77 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "回复 Tibo 的 poteto.com 帖：「i guess potetos are just more popular than all your other posts」。约 1375 赞。",
-          "url": "https://x.com/poteto/status/2115491614777069746",
-          "time": "2026-10-29T01:11:19+08:00",
+          "summary": "宣布 pstack v0.15.36 的 /statechart skill 已稳定：可配合形式化验证 skill 建模状态机/分布式系统找 bug；内含迷你 TLC 编译到 Mermaid，可用 pele.run 换肤。约 4661 赞。",
+          "url": "https://x.com/poteto/status/2115880102601101414",
+          "time": "2026-10-30T02:55:02+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 1375,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0,
-            "bookmarks": 0,
-            "impressions": 0
+            "likes": 4661,
+            "reposts": 254,
+            "replies": 258,
+            "quotes": 31,
+            "bookmarks": 4654,
+            "impressions": 196405
           }
         },
         {
           "id": "poteto-2",
-          "summary": "「i bought a new domain too」——配动图，约 5660 赞。",
-          "url": "https://x.com/poteto/status/2115314718370054312",
-          "time": "2026-10-28T13:28:24+08:00",
+          "summary": "「shop with grok bot!」——引用 Tobi 关于 Shop Pay 支持的帖。约 612 赞。",
+          "url": "https://x.com/poteto/status/2115648413530542286",
+          "time": "2026-10-29T11:34:23+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 5660,
-            "reposts": 64,
-            "replies": 328,
-            "quotes": 73,
-            "bookmarks": 232,
-            "impressions": 303081
+            "likes": 612,
+            "reposts": 13,
+            "replies": 77,
+            "quotes": 5,
+            "bookmarks": 29,
+            "impressions": 60370
           }
         },
         {
           "id": "poteto-3",
-          "summary": "回复 Nathan Barry：目前需建 team bot，但很快可把任意 bot 加进 Slack，且 bot 之间可协作。约 76 赞。",
-          "url": "https://x.com/poteto/status/2115492618931151002",
-          "time": "2026-10-29T01:15:18+08:00",
+          "summary": "「day 28」——引用自己新买域名的旧帖。约 2729 赞。",
+          "url": "https://x.com/poteto/status/2115714174026436832",
+          "time": "2026-10-29T15:55:41+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 76,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0,
-            "bookmarks": 0,
-            "impressions": 0
+            "likes": 2729,
+            "reposts": 21,
+            "replies": 172,
+            "quotes": 19,
+            "bookmarks": 70,
+            "impressions": 189931
           }
         },
         {
           "id": "poteto-4",
-          "summary": "「grok bot told me to post this」配图；并 RT Grok Bot 0.78.1 稳定版（商品卡、订阅模板等）。主帖约 433 赞。",
-          "url": "https://x.com/poteto/status/2115586637484921102",
-          "time": "2026-10-29T07:28:54+08:00",
+          "summary": "谈 agent 污染代码库：团队干脆禁止注释——「agents love justifying their lazy hacks with comments」。约 1459 赞。",
+          "url": "https://x.com/poteto/status/2115644484226777581",
+          "time": "2026-10-29T11:18:46+08:00",
           "interactions": [],
           "metrics": {
-            "likes": 433,
-            "reposts": 85,
-            "replies": 86,
-            "quotes": 17,
-            "bookmarks": 11,
-            "impressions": 23314
+            "likes": 1459,
+            "reposts": 21,
+            "replies": 74,
+            "quotes": 18,
+            "bookmarks": 346,
+            "impressions": 68550
+          }
+        },
+        {
+          "id": "poteto-5",
+          "summary": "转发 mark_k：Grok Bot v0.78.1 新增购物卡片、订单跟踪、订阅管理、免费试用模板、Shop Pay、自定义 cloud agents 等。",
+          "url": "https://x.com/poteto/status/2115845643998777820",
+          "time": "2026-10-30T00:38:06+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 0,
+            "reposts": 13,
+            "replies": 0,
+            "quotes": 0,
+            "bookmarks": 0,
+            "impressions": 2717
           }
         }
       ]
@@ -294,123 +345,123 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "Evidence of a spying operation by ICE against left-wing social movements",
-          "summary": "WIRED：ICE 大规模反左翼监控行动报道。",
-          "url": "https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50272749",
-          "meta": "1086 分 · 898 评论"
+          "title": "We're releasing the weights of Mistral Large 4",
+          "summary": "开源约 1T 参数 Large 4 权重；编程与防御安全开源榜领先。",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50289418",
+          "meta": "1238 分 · 347 评论"
         },
         {
           "id": "hn-2",
-          "title": "Apple's git still trusts the compromised eMudhra certificates",
-          "summary": "macOS 自带 git/curl/python3 仍信任弱密钥中间 CA。",
-          "url": "https://emudhra.we-have-a-problem.com/apple.html",
-          "discussion_url": "https://news.ycombinator.com/item?id=50271640",
-          "meta": "1025 分 · 375 评论"
+          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+          "summary": "Arkham 实体页展示相关链上流出；金额与归属仍待官方确认。",
+          "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+          "discussion_url": "https://news.ycombinator.com/item?id=50296470",
+          "meta": "816 分 · 484 评论"
         },
         {
           "id": "hn-3",
-          "title": "Gemini 4 Carbon",
-          "summary": "谷歌下一款前沿模型，强调网络安全与长程任务。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50276792",
-          "meta": "768 分 · 627 评论"
+          "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+          "summary": "把 RISC-V CPU 编译进 Qwen3.5 权重，GDN 当 RAM。",
+          "url": "https://divagr.com/blog/qwenputer",
+          "discussion_url": "https://news.ycombinator.com/item?id=50282838",
+          "meta": "680 分 · 144 评论"
         },
         {
           "id": "hn-4",
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "summary": "指纹脚本用危险符号名绊倒 LLM 反混淆。",
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "discussion_url": "https://news.ycombinator.com/item?id=50276998",
-          "meta": "740 分 · 169 评论"
+          "title": "Claude Code regularly sends each background agent’s transcript to its model",
+          "summary": "约每 30 秒整段 transcript 再送模型刷状态行；可占约 15–20% 额度。",
+          "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+          "discussion_url": "https://news.ycombinator.com/item?id=50284255",
+          "meta": "562 分 · 226 评论"
         },
         {
           "id": "hn-5",
-          "title": "MacBook Pro with PROLED XDR Display and Touch",
-          "summary": "串联 OLED 触控屏 + M5 Pro/Max。",
-          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50276940",
-          "meta": "476 分 · 828 评论"
+          "title": "DoorDash to acquire Instacart",
+          "summary": "约 170 亿美元股权价值收购；预计 2027 末–2028 上交割。",
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "discussion_url": "https://news.ycombinator.com/item?id=50287919",
+          "meta": "436 分 · 609 评论"
         },
         {
           "id": "hn-6",
-          "title": "Git for the US Code",
-          "summary": "按修正案回放美国法典历史。",
-          "url": "https://lexifina.com/blog/git-for-the-us-code",
-          "discussion_url": "https://news.ycombinator.com/item?id=50268380",
-          "meta": "425 分 · 252 评论"
+          "title": "Google Search is now less than half of Alphabet’s revenue",
+          "summary": "2026Q3 Search 约占 49.7%；Cloud 同比约 +103%。",
+          "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+          "discussion_url": "https://news.ycombinator.com/item?id=50291945",
+          "meta": "399 分 · 337 评论"
         },
         {
           "id": "hn-7",
-          "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
-          "summary": "人文主义信仰获准免于使用 AI（RNS）。",
-          "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50273396",
-          "meta": "414 分 · 458 评论"
+          "title": "LLM Voice",
+          "summary": "Martin Fowler：谈「LLM 腔」与如何识别/规避。",
+          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50290177",
+          "meta": "366 分 · 191 评论"
         },
         {
           "id": "hn-8",
-          "title": "Emacs Turns 50",
-          "summary": "MIT Technology Review：Emacs 五十周年。",
-          "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50273171",
-          "meta": "394 分 · 168 评论"
+          "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+          "summary": "Artificial Analysis：Gemini 4 Carbon 登顶 AA Index；窗口内继续发酵。",
+          "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+          "discussion_url": "https://news.ycombinator.com/item?id=50288019",
+          "meta": "328 分 · 240 评论"
         },
         {
           "id": "hn-9",
-          "title": "Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents",
-          "summary": "WIRED：约 4.1 万国土安全人员信息泄露。",
-          "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50280864",
-          "meta": "256 分 · 114 评论"
+          "title": "Zero click, silent, remote Android DoS",
+          "summary": "SMS of Death：畸形 WAP Push 零点击弄崩电话进程；十月补丁已修。",
+          "url": "https://smsofdeath.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50285452",
+          "meta": "314 分 · 181 评论"
         },
         {
           "id": "hn-10",
-          "title": "US agency approves Amazon Leo’s $11.5B acquisition of Globalstar",
-          "summary": "路透：美机构批准 Amazon Leo 收购 Globalstar。",
-          "url": "https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50272145",
-          "meta": "222 分 · 100 评论"
+          "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+          "summary": "PHP2Shell+内核 LPE 打暴露管理口的 PAN-OS；约 25 台被 root。",
+          "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+          "discussion_url": "https://news.ycombinator.com/item?id=50286987",
+          "meta": "297 分 · 148 评论"
         },
         {
           "id": "hn-11",
-          "title": "AlpineBSD",
-          "summary": "Alpine 与 BSD 相关项目 wiki。",
-          "url": "https://wiki.alpinebsd.org",
-          "discussion_url": "https://news.ycombinator.com/item?id=50274251",
-          "meta": "169 分 · 154 评论"
+          "title": "If IPv4 were land",
+          "summary": "把 IPv4 地址空间类比土地分配的可视化讨论。",
+          "url": "https://iptrust.co/blog/if-ipv4-were-land",
+          "discussion_url": "https://news.ycombinator.com/item?id=50287775",
+          "meta": "241 分 · 338 评论"
         },
         {
           "id": "hn-12",
-          "title": "About the compromised eMudhra intermediate CAs",
-          "summary": "苹果支持文档：被攻破的 eMudhra 中间 CA。",
-          "url": "https://support.apple.com/en-us/149555",
-          "discussion_url": "https://news.ycombinator.com/item?id=50271685",
-          "meta": "151 分 · 73 评论"
+          "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
+          "summary": "Orange Tsai：Pwn2Own 风格，纯逻辑漏洞拼出 Edge 全链。",
+          "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50285319",
+          "meta": "235 分 · 38 评论"
         },
         {
           "id": "hn-13",
-          "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
-          "summary": "开源权重多语种 ASR。",
-          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-          "discussion_url": "https://news.ycombinator.com/item?id=50275128",
-          "meta": "106 分 · 17 评论"
+          "title": "NetBSD adds a new text editor called atto",
+          "summary": "NetBSD 新增 Emacs 风格编辑器 atto。",
+          "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+          "discussion_url": "https://news.ycombinator.com/item?id=50287599",
+          "meta": "167 分 · 138 评论"
         },
         {
           "id": "hn-14",
-          "title": "The Agent SDK",
-          "summary": "Cursor 用代码定义托管 agent 的 SDK。",
-          "url": "https://cursor.com/blog/agent-sdk",
-          "discussion_url": "https://news.ycombinator.com/item?id=50273731",
-          "meta": "90 分 · 107 评论"
+          "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+          "summary": "SkyPilot：NVL72 拓扑感知调度，同机架多用约 27% GPU。",
+          "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+          "discussion_url": "https://news.ycombinator.com/item?id=50290912",
+          "meta": "132 分 · 21 评论"
         },
         {
           "id": "hn-15",
-          "title": "Artificial Analysis Intelligence Index v5",
-          "summary": "基准指数更新（Carbon 榜首相关）。",
-          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
-          "discussion_url": "https://news.ycombinator.com/item?id=50268868",
-          "meta": "90 分 · 82 评论"
+          "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+          "summary": "社区评测 Claude Duet 个人助理 harness。",
+          "url": "https://fig.blue/posts/duet-is-the-future/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50292727",
+          "meta": "110 分 · 97 评论"
         }
       ]
     },
@@ -420,83 +471,75 @@
       "items": [
         {
           "id": "lo-1",
-          "title": "Apple's git still trusts the compromised eMudhra certificates",
-          "summary": "与 HN 同题，加密/安全标签。",
-          "url": "https://emudhra.we-have-a-problem.com/apple.html",
-          "discussion_url": "https://lobste.rs/s/xybmsj",
-          "meta": "85 分 · 17 评论 · cryptography, mac"
+          "title": "What the fox say?",
+          "summary": "从系统视角聊「狐狸叫声」隐喻与工程沟通。",
+          "url": "https://entropicthoughts.com/what-the-fox-say",
+          "discussion_url": "https://lobste.rs/s/7qaac6",
+          "meta": "59 分 · 12 评论"
         },
         {
           "id": "lo-2",
-          "title": "This is not sustainable",
-          "summary": "DDoS 防御成本与可持续性（持续热议）。",
-          "url": "https://www.netmeister.org/blog/defense-ddos.html",
-          "discussion_url": "https://lobste.rs/s/cpaibp",
-          "meta": "114 分 · 32 评论 · security"
+          "title": "NetBSD adds a new Emacs-like text editor called atto",
+          "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+          "discussion_url": "https://lobste.rs/s/m6fw0x",
+          "meta": "43 分 · 25 评论"
         },
         {
           "id": "lo-3",
-          "title": "AlpineBSD",
-          "summary": "AlpineBSD wiki。",
-          "url": "https://wiki.alpinebsd.org/",
-          "discussion_url": "https://lobste.rs/s/yxuvie",
-          "meta": "61 分 · 16 评论 · netbsd"
+          "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
+          "url": "https://divagr.com/blog/qwenputer",
+          "discussion_url": "https://lobste.rs/s/zftely",
+          "meta": "41 分 · 5 评论"
         },
         {
           "id": "lo-4",
-          "title": "A fast and secure tar parser for the Rust ecosystem",
-          "summary": "Astral tar 解析器（跨窗持续讨论）。",
-          "url": "https://astral.sh/blog/tar-codec",
-          "discussion_url": "https://lobste.rs/s/q7arzy",
-          "meta": "81 分 · 15 评论 · python, rust"
+          "title": "My favourite PowerMac is a Nintendo Wii",
+          "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+          "discussion_url": "https://lobste.rs/s/siebde",
+          "meta": "31 分 · 1 评论"
         },
         {
           "id": "lo-5",
-          "title": "Ghostty 1.4.0",
-          "summary": "终端 1.4 发布笔记。",
-          "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
-          "discussion_url": "https://lobste.rs/s/o6vpqb",
-          "meta": "78 分 · 13 评论 · release"
+          "title": "Shared password manager for families?",
+          "url": "https://lobste.rs/s/eccbci",
+          "discussion_url": "https://lobste.rs/s/eccbci",
+          "meta": "27 分 · 35 评论"
         },
         {
           "id": "lo-6",
-          "title": "Four Months of Zig",
-          "summary": "使用 Zig 四月感想。",
-          "url": "https://gracefulliberty.com/articles/four-months-of-zig/",
-          "discussion_url": "https://lobste.rs/s/qr59sa",
-          "meta": "69 分 · 22 评论 · zig"
+          "title": "London meetup",
+          "url": "https://lobste.rs/s/dsrruj",
+          "discussion_url": "https://lobste.rs/s/dsrruj",
+          "meta": "22 分 · 11 评论"
         },
         {
           "id": "lo-7",
-          "title": "GOTO Considered Totally Sick (for error handling in C)",
-          "summary": "C 里用 goto 做错误处理的辩护。",
-          "url": "https://thestateofinahaze.net/blog/c-goto-considered-totally-sick/",
-          "discussion_url": "https://lobste.rs/s/exwlmn",
-          "meta": "29 分 · 7 评论 · c"
+          "title": "C2PA's eMudhra Moment",
+          "summary": "C2PA 内容凭证与 eMudhra 证书事件的交叉讨论。",
+          "url": "https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html",
+          "discussion_url": "https://lobste.rs/s/2matgw",
+          "meta": "12 分 · 1 评论"
         },
         {
           "id": "lo-8",
-          "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
-          "summary": "UEFI 固件代码执行漏洞，波及大量服务器。",
-          "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers",
-          "discussion_url": "https://lobste.rs/s/0gomue",
-          "meta": "25 分 · 10 评论 · security"
+          "title": "Nim version 2.4.0 released",
+          "url": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
+          "discussion_url": "https://lobste.rs/s/vfllme",
+          "meta": "11 分 · 0 评论"
         },
         {
           "id": "lo-9",
-          "title": "Why Is This Fingerprinting Script Creating Bioweapons?",
-          "summary": "与 HN 同题。",
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "discussion_url": "https://lobste.rs/s/gvy5gz",
-          "meta": "13 分 · 0 评论 · ai, reversing"
+          "title": "The Web Can't Afford a JavaScript Runtime Monoculture",
+          "url": "https://redmonk.com/kholterhoff/2026/10/27/js-runtime-monoculture/",
+          "discussion_url": "https://lobste.rs/s/x6n380",
+          "meta": "6 分 · 9 评论"
         },
         {
           "id": "lo-10",
-          "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
-          "summary": "仅用逻辑洞拼 Edge 完整利用链。",
-          "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
-          "discussion_url": "https://lobste.rs/s/ansfvi",
-          "meta": "14 分 · 0 评论 · security"
+          "title": "XSS in yarr RSS reader",
+          "url": "https://0x67673068.me/xss-in-yarr/",
+          "discussion_url": "https://lobste.rs/s/1r7enm",
+          "meta": "5 分 · 0 评论"
         }
       ]
     },
@@ -506,107 +549,79 @@
       "items": [
         {
           "id": "v2-1",
-          "title": "Jetbrains 在经历 Fleet 和 Air 的失败之后再次发布一款的轻量级编辑器 Thinkrail",
-          "summary": "程序员节点热议新编辑器。",
-          "url": "https://www.v2ex.com/t/1252393",
-          "meta": "112 回复 · 程序员"
+          "title": "Android 全平台纯自研内核 IPTV 播放器，各种格式都可以快速起播",
+          "url": "https://www.v2ex.com/t/1252867",
+          "discussion_url": "https://www.v2ex.com/t/1252867",
+          "meta": "94 回复"
         },
         {
           "id": "v2-2",
-          "title": "MacBook Pro M6 14 寸来袭，值不值？",
-          "summary": "硬件购买讨论。",
-          "url": "https://www.v2ex.com/t/1252401",
-          "meta": "79 回复 · MacBook Pro"
+          "title": "群晖 DSM+Gitlab CE 遭 C3RB3R 勒索软件攻击！救灾直播贴",
+          "url": "https://www.v2ex.com/t/1252851",
+          "discussion_url": "https://www.v2ex.com/t/1252851",
+          "meta": "64 回复"
         },
         {
           "id": "v2-3",
-          "title": "人在大陆，只有国内银行的 VISA 卡，如何搞定 Claude 会员支付？",
-          "summary": "支付与订阅实务。",
-          "url": "https://www.v2ex.com/t/1252487",
-          "meta": "62 回复 · Claude"
-        },
-        {
-          "id": "v2-4",
-          "title": "面对重大医疗决策， AI 和医生意见不同，我该信谁？",
-          "summary": "生活区热帖：AI 与医嘱冲突。",
-          "url": "https://www.v2ex.com/t/1252479",
-          "meta": "186 回复 · 生活"
-        },
-        {
-          "id": "v2-5",
-          "title": "免费帮你设计一块电路板，你最想做什么？",
-          "summary": "硬件奇思妙想。",
-          "url": "https://www.v2ex.com/t/1252431",
-          "meta": "130 回复 · 奇思妙想"
-        },
-        {
-          "id": "v2-6",
-          "title": "ChatGPT 订阅也能领 API 额度了：最高每月 500 美元，手把手教你领取",
-          "summary": "最新帖：订阅送 API 额度攻略。",
-          "url": "https://www.v2ex.com/t/1252714",
-          "meta": "latest · 问与答"
+          "title": "今天自己的自建梯子被封端口了，架构是 Vless+reality+xhttp+443",
+          "url": "https://www.v2ex.com/t/1252881",
+          "discussion_url": "https://www.v2ex.com/t/1252881",
+          "meta": "59 回复"
         }
       ]
     },
     {
       "id": "cn",
-      "source": "Solidot / 开源中国 / 少数派",
+      "source": "开源中国 / Solidot",
       "items": [
         {
           "id": "cn-1",
-          "title": "维基百科如何清理 AI 生成文本",
-          "summary": "Solidot 跟进维基百科 AI 文稿清理。",
-          "url": "https://www.solidot.org/story?sid=85727",
-          "meta": "Solidot"
+          "title": "MiniMax Code 团队把自己每天用的 16 个 Agent 技能开源了",
+          "url": "https://www.oschina.net/news/503308",
+          "meta": "开源中国"
         },
         {
           "id": "cn-2",
-          "title": "女子信任 ChatGPT 的用药决策，结果因此猝死",
-          "summary": "Solidot：ChatGPT 用药建议相关悲剧报道。",
-          "url": "https://www.solidot.org/story?sid=85737",
-          "meta": "Solidot"
+          "title": "拿注意力层当内存——有人在 Qwen 权重里编译了一颗 RISC-V CPU",
+          "summary": "开源中国对 Qwenputer 的中文报道。",
+          "url": "https://www.oschina.net/news/503307/qwenputer-risc-v",
+          "meta": "开源中国"
         },
         {
           "id": "cn-3",
-          "title": "Genie 4 来了，谷歌 DeepMind 的世界模型开始同步生成声音",
-          "summary": "开源中国转载 Genie 4。",
-          "url": "https://www.oschina.net/news/503259/google-deepmind-genie-4-a-new-generation-of-world-simulation",
+          "title": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
+          "url": "https://www.oschina.net/news/503303/openai-securing-our-frontier-model-training-environment",
           "meta": "开源中国"
         },
         {
           "id": "cn-4",
-          "title": "开源终端模拟器 Ghostty 发布 1.4.0",
-          "summary": "开源中国：Ghostty 1.4 内存与性能。",
-          "url": "https://www.oschina.net/news/503260/ghostty-release-1-4-0",
+          "title": "Anthropic 平台负责人：多 Agent 跑起来之后，还有四个工程难题无法解决",
+          "url": "https://www.oschina.net/news/503288/new-problems-for-engineers-to-solve",
           "meta": "开源中国"
         },
         {
           "id": "cn-5",
-          "title": "Anthropic 工程经理把传统编程面试砍了",
-          "summary": "开源中国：coding interview 信号失效讨论。",
-          "url": "https://www.oschina.net/news/503275/the-coding-interview-is-dead",
+          "title": "Cursor 把创造 Agent 的那套工序做成了产品",
+          "url": "https://www.oschina.net/news/503287/cursor-agent-sdk",
           "meta": "开源中国"
         },
         {
           "id": "cn-6",
-          "title": "百度开源「文心 Unlimited OCR 2」",
-          "summary": "开源中国：任意页数文档解析宣称。",
-          "url": "https://www.oschina.net/news/503269",
+          "title": "谷歌发布 Gemini 4 Carbon，安全能力先开放给白帽子",
+          "url": "https://www.oschina.net/news/503286/google-gemini-4-carbon",
           "meta": "开源中国"
         },
         {
           "id": "cn-7",
-          "title": "我用 AI 做了一张两千年的中国历史地图",
-          "summary": "少数派：江山时序开源项目走红。",
-          "url": "https://sspai.com/post/117510",
-          "meta": "少数派 · 7 赞"
+          "title": "Google AI 搜索产生的收入低于传统搜索",
+          "url": "https://www.solidot.org/story?sid=85748",
+          "meta": "Solidot"
         },
         {
           "id": "cn-8",
-          "title": "出门在外想开家里的 NAS？不必公网 IP，一台 ESP8266 就够了",
-          "summary": "少数派：ESP8266 唤醒 NAS 方案。",
-          "url": "https://sspai.com/post/117393",
-          "meta": "少数派"
+          "title": "研究发现非英语的 token 成本更高",
+          "url": "https://www.solidot.org/story?sid=85747",
+          "meta": "Solidot"
         }
       ]
     },
@@ -617,9 +632,11 @@
     }
   ],
   "gaps": [
-    "Reddit（r/programming、technology、MachineLearning、LocalLLaMA、singularity）JSON/RSS 均被拦截为登录/验证页（403/HTML），本期无 Reddit 条目。",
-    "IT之家首页抓取未解析出稳定标题列表；中文侧重 Solidot / 开源中国 / 少数派。",
-    "Artificial Analysis Index v5 原文页 SSL 拉取失败，Carbon 排名与分数采自 Google 官方博文与 Sundar 帖。",
-    "部分 poteto 回复帖的 public_metrics 在二次拉取时部分字段为 0，摘要以首次完整拉取为准；互动数字可能略有偏差。"
+    "Reddit：JSON/RSS 仍返回登录墙或 403，本期末收录 Reddit 条目。",
+    "IT之家：抓取结果为空。",
+    "V2EX latest 接口本轮仅返回窗口外帖；技术相关条目取自热议榜且创建时间落在窗口内。",
+    "币安约 56–57 亿美元流出：来自 Arkham/第三方 X 帖与 HN 讨论，未见币安官方完整确认；金额与归因仍可能变动。",
+    "部分 Elon 回复帖的 public_metrics 字段不完整（展示为 0），以可见点赞数为准。",
+    "无 open 状态的 GitHub Issues 带 rating/watch 标签，未改 ratings.json / config.json 临时关注。"
   ]
 }
