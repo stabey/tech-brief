@@ -1,71 +1,67 @@
 {
-  "id": "2026-10-30",
-  "title": "技术早报 · 2026-10-30",
+  "id": "2026-10-31",
+  "title": "技术早报 · 2026-10-31",
   "window": {
-    "start": "2026-10-29T08:00:00+08:00",
-    "end": "2026-10-30T08:00:00+08:00"
+    "start": "2026-10-30T08:00:00+08:00",
+    "end": "2026-10-31T08:00:00+08:00"
   },
-  "generated_at": "2026-10-30T11:05:00+08:00",
-  "podcast": {
-    "src": "audio/2026-10-30.mp3",
-    "script": "早上好，这里是技术早报，二零二六年十月三十日这一期。\n\n今天几条大新闻。Mistral 开源了 Large 四点零的权重，约一万亿参数，号称在开源权重里编程与防御性网络安全领先，支持低中高三档推理模式，API 价约每百万输入零点七美元、输出二点一美元。\n\n安全方面，有人披露 Android「SMS of Death」：一条畸形 WAP Push 短信即可零点击弄崩电话进程、掉线甚至进重启循环，十月安全补丁已修。Dream Research 则称有人把 PHP2Shell 与内核提权串起来，拿下二十五台暴露管理口的 Palo Alto 防火墙，含美国政府相关环境。Orange Tsai 也写了只用逻辑漏洞打穿 Edge 全链的文章。\n\n社区热议 Qwenputer：在 Qwen 三点五权重里编译进一颗确定性 RISC-V CPU，用模型自己的 Gated DeltaNet 当内存。另有帖子称 Claude Code 大约每三十秒把每个后台 agent 的整段 transcript 再发给模型，只为刷新三五个词的状态行，可烧掉约一成五到两成额度。\n\n商业上，DoorDash 宣布约一百七十亿美元收购 Instacart；Alphabet 当季搜索营收首次低于一半，云业务同比约翻倍。链上有人声称币安相关钱包流出约五十六到五十七亿美元，尚未见官方完整确认，Elon 引用后只回了「Everyday is Zeroday」。\n\n特别关注三位。Elon 还提醒 Grok Bot 没有免费档，并问 Demis 榜首模型何时可访问。Tibo 的 Day 二十五宣布 Pro 与 Business Premium 额度翻倍，自称从重置公司毕业成 Token 公司，并让人把反馈发给 ajambrosino。poteto 发布 pstack 零点十五点三六的稳定 statechart skill，可配合形式化验证找 bug，并继续推用 Grok Bot 购物。\n\n社区一瞥：Lobsters 在聊狐狸叫声、NetBSD 新编辑器 atto 与 Qwenputer；V2EX 有群晖加 GitLab 遭勒索、自研内核 IPTV 播放器；开源中国与 Solidot 跟进 Qwenputer、OpenAI agent 侧信道，以及谷歌 AI 搜索收入低于传统搜索。\n\n以上就是今天的早报，明天早上八点北京时间见。"
-  },
+  "generated_at": "2026-10-31T08:15:00+08:00",
   "highlights": [
     {
       "id": "h1",
-      "title": "Mistral 开源 Large 4（Le Chonk）权重：开源里编程与防御安全领先",
-      "summary": "Mistral 发布约 1 万亿参数的 Large 4 开源权重：称在 FrontierCode / Terminal-Bench 等开源权重榜领先，Artificial Analysis Cyber Index 约 51%，恶意网络请求平均拒答约 96.6%；三档推理模式；API 约 $0.70/$2.10 每百万 in/out token；可在 Hugging Face 自托管。HN 约 1238 分、347 评论。",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "source": "Hacker News / Mistral"
+      "title": "Cursor 市场 Claude Code 扩展遭后门投毒",
+      "summary": "冒充官方的 Anthropic.claude-code 2.1.313 在 Cursor Marketplace 上线约 11 小时，试图植入 SSH 后门，估计影响至多约 5000 用户；Cursor 已发公告。",
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "source": "HN/Cursor/Solidot"
     },
     {
       "id": "h2",
-      "title": "Android「SMS of Death」：零点击畸形 WAP Push 可搞崩电话进程",
-      "summary": "公开披露：畸形 WAP Push（uintvar 长度无校验导致 NegativeArraySizeException）可远程、静默弄崩 com.android.phone，掉话甚至持久重启循环；普通用户往往只能恢复出厂。Google 在 2026 年 10 月安全更新中修复（吞异常并删除毒短信）。HN 约 314 分、181 评论。",
-      "url": "https://smsofdeath.com/",
-      "source": "Hacker News"
+      "title": "币安约 63 亿美元热钱包失窃，情报指朝鲜",
+      "summary": "盗窃约 20 分钟内完成；稳定币方冻结部分后黑客仍握约 30 亿美元；区块链情报机构指向朝鲜。",
+      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "source": "HN/Wired"
     },
     {
       "id": "h3",
-      "title": "Qwenputer：在 Qwen3.5 权重里编译进确定性 RISC-V CPU",
-      "summary": "实验模型：在 stock Qwen 3.5 4B 上用编译器把 RV32IM CPU 写进权重，以 Gated DeltaNet 状态当精确可寻址 RAM，前向传播内跑算术/C/MicroPython，无需外部工具；长整数算术可到约 100%。权重与代码已开源。HN 约 680 分；Lobsters 约 41 分。",
-      "url": "https://divagr.com/blog/qwenputer",
-      "source": "Hacker News / Lobsters"
+      "title": "美股科技股因 AI 成本担忧重挫，英特尔单日约 -29%",
+      "summary": "Google 创上市最大单日跌幅、市值蒸发逾 5000 亿美元；英特尔约跌 29%。",
+      "url": "https://www.solidot.org/story?sid=85752",
+      "source": "Solidot/BBC/HN"
     },
     {
       "id": "h4",
-      "title": "Claude Code：后台 agent 约每 30 秒整段 transcript 再送模型刷状态行",
-      "summary": "Gist 实测：为刷新 agents 面板三五个词的状态行，Claude Code 默认周期性把每个后台 agent 的全部 transcript 再发给该 agent 模型；OpenTelemetry 上 agent_summary 可占花费约 16–26%。作者提供 Bun preload 钩子关掉定时器，不改二进制。HN 约 562 分、226 评论。",
-      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-      "source": "Hacker News"
+      "title": "民主党议员决议反对「AI 泡沫」救助大科技",
+      "summary": "众议院进步派提出决议反对为大科技 AI 泡沫 bailout，HN 超 600 分。",
+      "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+      "source": "HN"
     },
     {
       "id": "h5",
-      "title": "DoorDash 约 170 亿美元收购 Instacart",
-      "summary": "DoorDash 官方：以每股 65 美元、股权价值约 170 亿美元收购 Instacart，对价至少 75% 现金；预计 2027 年底至 2028 上半年交割，仍须股东与反垄断等审批。HN 约 436 分、609 评论。",
-      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
-      "source": "Hacker News / DoorDash"
+      "title": "「AI 不是取代 SRE，而是去技能化」",
+      "summary": "SigNoz 通讯文章引发运维圈热议：AI 工具可能削弱深层排查能力。",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "source": "HN"
     },
     {
       "id": "h6",
-      "title": "声称币安相关钱包流出约 56–57 亿美元；Elon：「Everyday is Zeroday」",
-      "summary": "窗口内 Arkham 实体页与 Kobeissi Letter 等称 Ethereum/Bitcoin/TRON 相关钱包出现约 56–57 亿美元流出，若属实或成加密史上最大盗窃之一；未见币安官方完整确认。HN 约 816 分；Elon 引用后回「Everyday is Zeroday」（约 3.8 万赞）。",
-      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-      "source": "Hacker News / X"
+      "title": "Google Project Suncatcher：在轨 TPU 首次完整推理回传",
+      "summary": "Sundar Pichai 宣布原型卫星 TPU 已跑通提示→推理→回传；Elon/poteto 等高互动转发。",
+      "url": "https://x.com/sundarpichai/status/2116214866444943853",
+      "source": "X/@sundarpichai"
     },
     {
       "id": "h7",
-      "title": "PHP2Shell 链式利用：约 25 台暴露管理口的 PAN-OS 被 root",
-      "summary": "Dream Research（更新至 10/29）：攻击者将定制 PHP2Shell（CVE-2026-109618/109619）与 Fragnesia 内核提权（CVE-2026-46300）串成单次未认证 HTTPS 请求，根下约 25 台互联网暴露的 Palo Alto 防火墙/管理节点，并尝试渗入美国政府相关 AD。Palo Alto 已发补丁；Unit 42 跟踪为 CL-UNK-1280。HN 约 297 分。",
-      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-      "source": "Hacker News"
+      "title": "Claude Max 套餐更名并放宽 Ultra 限额",
+      "summary": "Max 5x→Max（$100）、Max 20x→Ultra（$200）；核实 Ultra 取消 5 小时限额。Tibo 调侃应宣布 28 天 reset。",
+      "url": "https://x.com/claudeai/status/2116220869479428500",
+      "source": "X/@claudeai/@thsottiaux"
     },
     {
       "id": "h8",
-      "title": "Alphabet 搜索营收首次低于一半；Google Cloud 同比约 +103%",
-      "summary": "Kadoa 据财报：截至 2026 年 9 月当季，Search 约 634 亿美元、占 Alphabet 总营收约 49.7%（首次低于一半）；Google Cloud 约 307 亿美元、约占 24.1%，同比约 +103%。搜索本身仍同比增长约 12%。HN 约 399 分。",
-      "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
-      "source": "Hacker News"
+      "title": "Azure 跨租户沦陷研究 & Proton 取消 AI 重面",
+      "summary": "Binary Security 称发现五起完整跨租户妥协；Proton CEO 取消 AI 重新面试。",
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "source": "HN"
     }
   ],
   "accounts": [
@@ -75,107 +71,159 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "引用 Kobeissi Letter 关于币安相关钱包约 57 亿美元流出的帖，仅回「Everyday is Zeroday」。约 3.85 万赞、约 324 万浏览。",
-          "url": "https://x.com/elonmusk/status/2115935053347786773",
-          "time": "2026-10-30T06:33:23+08:00",
+          "summary": "引用 Sundar Pichai：Google Project Suncatcher 原型卫星 TPU 完成「地面提示→在轨推理→回传」里程碑，回复 Cool。",
+          "url": "https://x.com/elonmusk/status/2116215659214561518",
+          "time": "2026-10-31T01:08:00+08:00",
           "interactions": [
             {
-              "summary": "Kobeissi Letter：称 Binance 相关链上流出约 $5.7B（BTC/ETH 等），若确认或成史上最大加密盗窃",
-              "url": "https://x.com/KobeissiLetter/status/2115926246916038921"
+              "summary": "sundarpichai：A hello world milestone for Project Suncatcher; first complete response back on earth - a haiku",
+              "url": "https://x.com/sundarpichai/status/2116214866444943853"
             }
           ],
           "metrics": {
-            "likes": 38547,
-            "reposts": 4001,
-            "replies": 2830,
-            "quotes": 944,
-            "bookmarks": 2501,
-            "impressions": 3243901
+            "likes": 6434,
+            "reposts": 488,
+            "replies": 508
           }
         },
         {
           "id": "elon-2",
-          "summary": "「Worth noting that Grok @Bot has no free tier」——引用 XFreeze 关于 Grok Bot DAU 连续 16 日增长、约 60 万日活的帖。约 9868 赞。",
-          "url": "https://x.com/elonmusk/status/2115921600658735169",
-          "time": "2026-10-30T05:39:56+08:00",
+          "summary": "RT：Google 在轨 TPU/Suncatcher 叙事（@ns123abc）。",
+          "url": "https://x.com/elonmusk/status/2116295774485041336",
+          "time": "2026-10-31T06:26:00+08:00",
           "interactions": [
             {
-              "summary": "XFreeze：Grok Bot DAU 连续增长 16 天；9 月初不足 10 万 → 10/26 超 60 万",
-              "url": "https://x.com/XFreeze/status/2115779686697697557"
+              "summary": "ns123abc：Google just proved AI data centers in space actually work; TPU in orbit ran Gemma inference",
+              "url": "https://x.com/ns123abc/status/2116247027335966934"
             }
           ],
           "metrics": {
-            "likes": 9868,
-            "reposts": 776,
-            "replies": 1407,
-            "quotes": 160,
-            "bookmarks": 394,
-            "impressions": 1242909
+            "likes": 0,
+            "reposts": 296,
+            "replies": 0,
+            "views": 338941
           }
         },
         {
           "id": "elon-3",
-          "summary": "回复 Demis Hassabis「No.1」榜首帖：「Well done! When can it be accessed?」约 3680 赞。",
-          "url": "https://x.com/elonmusk/status/2115941758475620410",
-          "time": "2026-10-30T07:00:02+08:00",
+          "summary": "Even F1 champions love Tesla self-driving（引用 Tesla）。",
+          "url": "https://x.com/elonmusk/status/2116287873918140737",
+          "time": "2026-10-31T05:55:00+08:00",
           "interactions": [
             {
-              "summary": "Demis Hassabis：No.1（配图）",
-              "url": "https://x.com/demishassabis/status/2115933173175689570"
+              "summary": "Tesla",
+              "url": "https://x.com/tesla/status/2116200444276178966"
             }
           ],
           "metrics": {
-            "likes": 3680,
-            "reposts": 104,
-            "replies": 231,
-            "quotes": 21,
-            "bookmarks": 94,
-            "impressions": 210181
+            "likes": 4357,
+            "reposts": 389,
+            "replies": 457,
+            "views": 704070
           }
         },
         {
           "id": "elon-4",
-          "summary": "谈 Von Neumann 探针与 Larry Page：称若本世纪末以自复制探测器探索星系则文明「winning wondrously」；Larry「可能是对的」。约 1.4 万赞。",
-          "url": "https://x.com/elonmusk/status/2115825787647496203",
-          "time": "2026-10-29T23:19:12+08:00",
-          "interactions": [],
+          "summary": "宣布 X Under the Hood 可查看触达/可见度限制标签。",
+          "url": "https://x.com/elonmusk/status/2116289989914787912",
+          "time": "2026-10-31T06:03:00+08:00",
+          "interactions": [
+            {
+              "summary": "XOpenSource：Under the Hood now shows which posts received a visibility-limiting label",
+              "url": "https://x.com/xopensource/status/2116262141745565826"
+            }
+          ],
           "metrics": {
-            "likes": 13974,
-            "reposts": 1541,
-            "replies": 1973,
-            "quotes": 188,
-            "bookmarks": 1834,
-            "impressions": 2076009
+            "likes": 5663,
+            "reposts": 800,
+            "replies": 940,
+            "views": 852874
           }
         },
         {
           "id": "elon-5",
-          "summary": "引用 Stan Druckenmiller 投资 trade(xyz)/ICE×Hyperliquid 永续合约帖，回「Interesting」。约 2.53 万赞。",
-          "url": "https://x.com/elonmusk/status/2115823011399938182",
-          "time": "2026-10-29T23:08:10+08:00",
-          "interactions": [],
+          "summary": "Think of Grok Bot as a work colleague。",
+          "url": "https://x.com/elonmusk/status/2116305829381263528",
+          "time": "2026-10-31T07:06:00+08:00",
+          "interactions": [
+            {
+              "summary": "0xgaut",
+              "url": "https://x.com/0xgaut/status/2116293365180309566"
+            }
+          ],
           "metrics": {
-            "likes": 25268,
-            "reposts": 3401,
-            "replies": 3548,
-            "quotes": 2193,
-            "bookmarks": 2482,
-            "impressions": 4530900
+            "likes": 1698,
+            "reposts": 176,
+            "replies": 512,
+            "views": 498153
           }
         },
         {
           "id": "elon-6",
-          "summary": "回复关于算力成本：「The GPU bill must be pretty high」。约 1447 赞。",
-          "url": "https://x.com/elonmusk/status/2115943148178563526",
-          "time": "2026-10-30T07:05:33+08:00",
-          "interactions": [],
+          "summary": "Cool：引用开源 Shortcut，Grok Bot 可结合屏幕内容问答。",
+          "url": "https://x.com/elonmusk/status/2116306579779731464",
+          "time": "2026-10-31T07:09:00+08:00",
+          "interactions": [
+            {
+              "summary": "everestchris6：grok bot can now see what's on your phone; free open-source iPhone shortcut",
+              "url": "https://x.com/everestchris6/status/2116183923747422477"
+            }
+          ],
           "metrics": {
-            "likes": 1447,
-            "reposts": 0,
-            "replies": 0,
-            "quotes": 0,
-            "bookmarks": 0,
-            "impressions": 0
+            "likes": 2177,
+            "reposts": 231,
+            "replies": 413,
+            "views": 507328
+          }
+        },
+        {
+          "id": "elon-7",
+          "summary": "Good video about Neuralink。",
+          "url": "https://x.com/elonmusk/status/2116242462582989090",
+          "time": "2026-10-31T02:54:00+08:00",
+          "interactions": [
+            {
+              "summary": ""
+            }
+          ],
+          "metrics": {
+            "likes": 3951,
+            "reposts": 493,
+            "replies": 430
+          }
+        },
+        {
+          "id": "elon-8",
+          "summary": "Cool 回应 Shotwell：超 200 万股 SpaceX 股票将分配给儿童 Trump 账户。",
+          "url": "https://x.com/elonmusk/status/2116291813732495578",
+          "time": "2026-10-31T06:11:00+08:00",
+          "interactions": [
+            {
+              "summary": "Gwynne_Shotwell",
+              "url": "https://x.com/Gwynne_Shotwell/status/2116266502533902586"
+            }
+          ],
+          "metrics": {
+            "likes": 10591,
+            "reposts": 876,
+            "replies": 531,
+            "views": 827758
+          }
+        },
+        {
+          "id": "elon-9",
+          "summary": "高互动政治帖（非纯技术）：The Democrat Party is racist against Asians and Whites。",
+          "url": "https://x.com/elonmusk/status/2116218370362122746",
+          "time": "2026-10-31T01:19:00+08:00",
+          "interactions": [
+            {
+              "summary": ""
+            }
+          ],
+          "metrics": {
+            "likes": 28823,
+            "reposts": 4171,
+            "replies": 1992
           }
         }
       ]
@@ -186,72 +234,76 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "Day 25：宣布即日起将 Pro 100/200/500 与 Business Premium 用量上限翻倍；不削减 Pro 200 的 Work/Codex；dots 仍单独计。约 3.37 万赞、约 343 万浏览。",
-          "url": "https://x.com/thsottiaux/status/2115850175868727621",
-          "time": "2026-10-30T00:56:07+08:00",
+          "summary": "回复 Claude Max 更名与 Ultra 取消 5 小时限额：Better announce 28 days of reset。",
+          "url": "https://x.com/thsottiaux/status/2116256600436641887",
+          "time": "2026-10-31T03:51:06+08:00",
           "interactions": [
             {
-              "summary": "跟帖：Graduating from The Reset Company to The Token Company.（约 7504 赞）",
-              "url": "https://x.com/thsottiaux/status/2115851621137784832"
+              "summary": "claudeai：Renaming Max plans: Max 5x→Max ($100), Max 20x→Ultra ($200); removing 5-hour limit for verified Ultra",
+              "url": "https://x.com/claudeai/status/2116220869479428500"
             }
           ],
           "metrics": {
-            "likes": 33687,
-            "reposts": 2359,
-            "replies": 6160,
-            "quotes": 3126,
-            "bookmarks": 2743,
-            "impressions": 3429328
+            "likes": 3266,
+            "reposts": 60,
+            "replies": 345,
+            "quotes": 34,
+            "views": 180129,
+            "bookmarks": 48
           }
         },
         {
           "id": "tibo-2",
-          "summary": "「Send your kind feedback to this person」——引用 ajambrosino 关于额度翻倍与冲刺简化/性能的帖。约 3247 赞。",
-          "url": "https://x.com/thsottiaux/status/2115890336107233347",
-          "time": "2026-10-30T03:35:42+08:00",
+          "summary": "No hype, just shipping。",
+          "url": "https://x.com/thsottiaux/status/2116072117540417651",
+          "time": "2026-10-30T15:38:02+08:00",
           "interactions": [
             {
-              "summary": "ajambrosino：额度已翻倍；启动简化与性能 sprint，欢迎吐槽",
-              "url": "https://x.com/ajambrosino/status/2115855769665147254"
+              "summary": "ajambrosino",
+              "url": "https://x.com/ajambrosino/status/2115999183434080298"
             }
           ],
           "metrics": {
-            "likes": 3247,
-            "reposts": 54,
-            "replies": 570,
-            "quotes": 23,
-            "bookmarks": 141,
-            "impressions": 406528
+            "likes": 308,
+            "reposts": 4,
+            "replies": 94,
+            "views": 93795
           }
         },
         {
           "id": "tibo-3",
-          "summary": "Day 24：可像普通人一样给 dot 发短信/语音；配合 Siri「text …」把任务丢给它。约 3804 赞。",
-          "url": "https://x.com/thsottiaux/status/2115622002581188681",
-          "time": "2026-10-29T09:49:26+08:00",
-          "interactions": [],
+          "summary": "You merge, I split。",
+          "url": "https://x.com/thsottiaux/status/2115974268936712436",
+          "time": "2026-10-30T09:09:13+08:00",
+          "interactions": [
+            {
+              "summary": "ajambrosino",
+              "url": "https://x.com/ajambrosino/status/2115967206333075945"
+            }
+          ],
           "metrics": {
-            "likes": 3804,
-            "reposts": 135,
-            "replies": 2238,
-            "quotes": 230,
-            "bookmarks": 370,
-            "impressions": 1204477
+            "likes": 350,
+            "reposts": 5,
+            "replies": 85,
+            "views": 80985
           }
         },
         {
           "id": "tibo-4",
-          "summary": "调侃 alexandr_wang 的 Muse 落地页：「Muse couldn't build a website so the man just did a redirect」。约 6531 赞。",
-          "url": "https://x.com/thsottiaux/status/2115648685069742441",
-          "time": "2026-10-29T11:35:28+08:00",
-          "interactions": [],
+          "summary": "对用户 OpenAI 改进清单回复 Good list。",
+          "url": "https://x.com/thsottiaux/status/2116045727642366367",
+          "time": "2026-10-30T13:53:10+08:00",
+          "interactions": [
+            {
+              "summary": "blueemi99",
+              "url": "https://x.com/blueemi99/status/2115845891953213919"
+            }
+          ],
           "metrics": {
-            "likes": 6531,
-            "reposts": 54,
-            "replies": 132,
-            "quotes": 24,
-            "bookmarks": 88,
-            "impressions": 513753
+            "likes": 836,
+            "reposts": 9,
+            "replies": 67,
+            "views": 85725
           }
         }
       ]
@@ -262,77 +314,112 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "宣布 pstack v0.15.36 的 /statechart skill 已稳定：可配合形式化验证 skill 建模状态机/分布式系统找 bug；内含迷你 TLC 编译到 Mermaid，可用 pele.run 换肤。约 4661 赞。",
-          "url": "https://x.com/poteto/status/2115880102601101414",
-          "time": "2026-10-30T02:55:02+08:00",
-          "interactions": [],
+          "summary": "长文：AI 使代码如湍流持续涌入，需重建软件与护栏让 agent 在正确约束下工作；mourning coding is long over。引用 Proton CTO AI 宣言相关帖。",
+          "url": "https://x.com/poteto/status/2116191971714953262",
+          "time": "2026-10-30T23:34:17+08:00",
+          "interactions": [
+            {
+              "summary": "josephfcox：Here is Proton CTO's AI manifesto",
+              "url": "https://x.com/josephfcox/status/2115868430897385497"
+            }
+          ],
           "metrics": {
-            "likes": 4661,
-            "reposts": 254,
-            "replies": 258,
-            "quotes": 31,
-            "bookmarks": 4654,
-            "impressions": 196405
+            "likes": 4257,
+            "reposts": 312,
+            "replies": 236,
+            "quotes": 93,
+            "bookmarks": 2544,
+            "views": 177429
           }
         },
         {
           "id": "poteto-2",
-          "summary": "「shop with grok bot!」——引用 Tobi 关于 Shop Pay 支持的帖。约 612 赞。",
-          "url": "https://x.com/poteto/status/2115648413530542286",
-          "time": "2026-10-29T11:34:23+08:00",
-          "interactions": [],
+          "summary": "RT Cursor：Claude Code VS Code 扩展安全事件，至多约 5000 用户。",
+          "url": "https://x.com/poteto/status/2116180359297859837",
+          "time": "2026-10-30T22:48:09+08:00",
+          "interactions": [
+            {
+              "summary": "cursor_ai：security incident affecting modified Claude Code VS Code extension; at most 5000 users; not developed by Anthropic",
+              "url": "https://x.com/cursor_ai/status/2116074289053175808"
+            }
+          ],
           "metrics": {
-            "likes": 612,
-            "reposts": 13,
-            "replies": 77,
-            "quotes": 5,
-            "bookmarks": 29,
-            "impressions": 60370
+            "likes": 0,
+            "reposts": 1000,
+            "replies": 0,
+            "views": 2288
           }
         },
         {
           "id": "poteto-3",
-          "summary": "「day 28」——引用自己新买域名的旧帖。约 2729 赞。",
-          "url": "https://x.com/poteto/status/2115714174026436832",
-          "time": "2026-10-29T15:55:41+08:00",
-          "interactions": [],
+          "summary": "征集 /statechart 与 formal-verification skill 作品；指向 pstack。",
+          "url": "https://x.com/poteto/status/2116302165702783320",
+          "time": "2026-10-31T06:52:09+08:00",
+          "interactions": [
+            {
+              "summary": "kevin_t_ngo",
+              "url": "https://x.com/kevin_t_ngo/status/2116270190040416313"
+            }
+          ],
           "metrics": {
-            "likes": 2729,
-            "reposts": 21,
-            "replies": 172,
-            "quotes": 19,
-            "bookmarks": 70,
-            "impressions": 189931
+            "likes": 435,
+            "reposts": 23,
+            "replies": 39,
+            "bookmarks": 412,
+            "views": 23418
           }
         },
         {
           "id": "poteto-4",
-          "summary": "谈 agent 污染代码库：团队干脆禁止注释——「agents love justifying their lazy hacks with comments」。约 1459 赞。",
-          "url": "https://x.com/poteto/status/2115644484226777581",
-          "time": "2026-10-29T11:18:46+08:00",
-          "interactions": [],
+          "summary": "software needs to be maintained; human-facing software is ever changing。",
+          "url": "https://x.com/poteto/status/2116217625554698569",
+          "time": "2026-10-31T01:16:14+08:00",
+          "interactions": [
+            {
+              "summary": "bryan_king",
+              "url": "https://x.com/bryan_king/status/2116213850345181556"
+            }
+          ],
           "metrics": {
-            "likes": 1459,
-            "reposts": 21,
-            "replies": 74,
-            "quotes": 18,
-            "bookmarks": 346,
-            "impressions": 68550
+            "likes": 223,
+            "reposts": 3,
+            "replies": 24,
+            "views": 7054
           }
         },
         {
           "id": "poteto-5",
-          "summary": "转发 mark_k：Grok Bot v0.78.1 新增购物卡片、订单跟踪、订阅管理、免费试用模板、Shop Pay、自定义 cloud agents 等。",
-          "url": "https://x.com/poteto/status/2115845643998777820",
-          "time": "2026-10-30T00:38:06+08:00",
-          "interactions": [],
+          "summary": "RT Sundar Pichai Project Suncatcher 在轨 TPU hello-world。",
+          "url": "https://x.com/poteto/status/2116303548870963560",
+          "time": "2026-10-31T06:57:39+08:00",
+          "interactions": [
+            {
+              "summary": "sundarpichai",
+              "url": "https://x.com/sundarpichai/status/2116214866444943853"
+            }
+          ],
           "metrics": {
             "likes": 0,
-            "reposts": 13,
-            "replies": 0,
-            "quotes": 0,
-            "bookmarks": 0,
-            "impressions": 2717
+            "reposts": 1631,
+            "views": 1448
+          }
+        },
+        {
+          "id": "poteto-6",
+          "summary": "感谢 Garry Tan 邀请 Lightcone 播客（PStack/GStack）。",
+          "url": "https://x.com/poteto/status/2116264260804452374",
+          "time": "2026-10-31T04:21:32+08:00",
+          "interactions": [
+            {
+              "summary": "garrytan",
+              "url": "https://x.com/garrytan/status/2116262167892852812"
+            }
+          ],
+          "metrics": {
+            "likes": 215,
+            "reposts": 1,
+            "replies": 7,
+            "views": 7702
           }
         }
       ]
@@ -345,123 +432,123 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "We're releasing the weights of Mistral Large 4",
-          "summary": "开源约 1T 参数 Large 4 权重；编程与防御安全开源榜领先。",
-          "url": "https://mistral.ai/news/mistral-large-4-oss/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50289418",
-          "meta": "1238 分 · 347 评论"
+          "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+          "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+          "summary": "Cursor 市场中冒充官方的 Claude Code VS Code 扩展被植入后门，影响约至多 5000 名用户；恶意版约上线 11 小时后下架。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50300683",
+          "meta": "732 分 · 461 评论"
         },
         {
           "id": "hn-2",
-          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-          "summary": "Arkham 实体页展示相关链上流出；金额与归属仍待官方确认。",
-          "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-          "discussion_url": "https://news.ycombinator.com/item?id=50296470",
-          "meta": "816 分 · 484 评论"
+          "title": "Backdoors in official Claude Code extensions",
+          "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+          "summary": "安全研究者 Kevin Beaumont 等跟进披露：官方名义 Claude Code 扩展出现后门相关线索，引发供应链安全讨论。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50302334",
+          "meta": "652 分 · 17 评论"
         },
         {
           "id": "hn-3",
-          "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-          "summary": "把 RISC-V CPU 编译进 Qwen3.5 权重，GDN 当 RAM。",
-          "url": "https://divagr.com/blog/qwenputer",
-          "discussion_url": "https://news.ycombinator.com/item?id=50282838",
-          "meta": "680 分 · 144 评论"
+          "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+          "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+          "summary": "美国民主党议员提出决议，反对为大科技 AI 泡沫提供救助，主张优先保护普通民众。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50302814",
+          "meta": "619 分 · 469 评论"
         },
         {
           "id": "hn-4",
-          "title": "Claude Code regularly sends each background agent’s transcript to its model",
-          "summary": "约每 30 秒整段 transcript 再送模型刷状态行；可占约 15–20% 额度。",
-          "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-          "discussion_url": "https://news.ycombinator.com/item?id=50284255",
-          "meta": "562 分 · 226 评论"
+          "title": "elect.horse",
+          "url": "https://elect.horse/",
+          "summary": "独立站点 elect.horse 登上 HN 首页并引发大量讨论。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50301462",
+          "meta": "529 分 · 148 评论"
         },
         {
           "id": "hn-5",
-          "title": "DoorDash to acquire Instacart",
-          "summary": "约 170 亿美元股权价值收购；预计 2027 末–2028 上交割。",
-          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
-          "discussion_url": "https://news.ycombinator.com/item?id=50287919",
-          "meta": "436 分 · 609 评论"
+          "title": "AI isn't replacing SREs, it's deskilling them",
+          "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+          "summary": "文章认为 AI 并未直接取代 SRE，而是削弱其技能深度，导致「去技能化」风险。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50305693",
+          "meta": "482 分 · 355 评论"
         },
         {
           "id": "hn-6",
-          "title": "Google Search is now less than half of Alphabet’s revenue",
-          "summary": "2026Q3 Search 约占 49.7%；Cloud 同比约 +103%。",
-          "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
-          "discussion_url": "https://news.ycombinator.com/item?id=50291945",
-          "meta": "399 分 · 337 评论"
+          "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+          "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+          "summary": "DoublePulsar 报道称 Cursor 市场上架带后门的 Claude Code 扩展，试图通过 SSH 等方式远程控制开发者机器。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50301983",
+          "meta": "398 分 · 1 评论"
         },
         {
           "id": "hn-7",
-          "title": "LLM Voice",
-          "summary": "Martin Fowler：谈「LLM 腔」与如何识别/规避。",
-          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-          "discussion_url": "https://news.ycombinator.com/item?id=50290177",
-          "meta": "366 分 · 191 评论"
+          "title": "Herdr has released native app",
+          "url": "https://github.com/herdrdev/herdr-app",
+          "summary": "Herdr 发布原生应用并开源相关代码，HN 讨论其产品定位与实现。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50298436",
+          "meta": "346 分 · 238 评论"
         },
         {
           "id": "hn-8",
-          "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-          "summary": "Artificial Analysis：Gemini 4 Carbon 登顶 AA Index；窗口内继续发酵。",
-          "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
-          "discussion_url": "https://news.ycombinator.com/item?id=50288019",
-          "meta": "328 分 · 240 评论"
+          "title": "Northflank Breached",
+          "url": "https://status.northflank.com",
+          "summary": "云平台 Northflank 状态页显示遭遇安全事件/入侵，社区关注客户影响面。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50305025",
+          "meta": "341 分 · 258 评论"
         },
         {
           "id": "hn-9",
-          "title": "Zero click, silent, remote Android DoS",
-          "summary": "SMS of Death：畸形 WAP Push 零点击弄崩电话进程；十月补丁已修。",
-          "url": "https://smsofdeath.com/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50285452",
-          "meta": "314 分 · 181 评论"
+          "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
+          "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+          "summary": "Wired 报道币安约 63 亿美元规模盗窃约在 20 分钟内完成；稳定币发行方已冻结部分被盗资产。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50303172",
+          "meta": "299 分 · 206 评论"
         },
         {
           "id": "hn-10",
-          "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
-          "summary": "PHP2Shell+内核 LPE 打暴露管理口的 PAN-OS；约 25 台被 root。",
-          "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-          "discussion_url": "https://news.ycombinator.com/item?id=50286987",
-          "meta": "297 分 · 148 评论"
+          "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+          "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+          "summary": "金融时报：黑石方面称 Anthropic IPO 后未必能获得投资级评级。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50307219",
+          "meta": "269 分 · 221 评论"
         },
         {
           "id": "hn-11",
-          "title": "If IPv4 were land",
-          "summary": "把 IPv4 地址空间类比土地分配的可视化讨论。",
-          "url": "https://iptrust.co/blog/if-ipv4-were-land",
-          "discussion_url": "https://news.ycombinator.com/item?id=50287775",
-          "meta": "241 分 · 338 评论"
+          "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+          "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+          "summary": "安全研究披露 Azure 相关弱点可导致完整跨租户沦陷，文中称发现五起全跨租户妥协路径。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50301854",
+          "meta": "257 分 · 48 评论"
         },
         {
           "id": "hn-12",
-          "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
-          "summary": "Orange Tsai：Pwn2Own 风格，纯逻辑漏洞拼出 Edge 全链。",
-          "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50285319",
-          "meta": "235 分 · 38 评论"
+          "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+          "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+          "summary": "404 Media：Proton CEO 取消此前引发争议的 AI「重新面试」安排。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50307183",
+          "meta": "254 分 · 212 评论"
         },
         {
           "id": "hn-13",
-          "title": "NetBSD adds a new text editor called atto",
-          "summary": "NetBSD 新增 Emacs 风格编辑器 atto。",
-          "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
-          "discussion_url": "https://news.ycombinator.com/item?id=50287599",
-          "meta": "167 分 · 138 评论"
+          "title": "US tech stocks see sharp falls over AI cost fears",
+          "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+          "summary": "BBC：美股科技股因 AI 成本担忧大幅下跌。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50306008",
+          "meta": "231 分 · 257 评论"
         },
         {
           "id": "hn-14",
-          "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-          "summary": "SkyPilot：NVL72 拓扑感知调度，同机架多用约 27% GPU。",
-          "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
-          "discussion_url": "https://news.ycombinator.com/item?id=50290912",
-          "meta": "132 分 · 21 评论"
+          "title": "The federated code forge",
+          "url": "https://tangled.org/blog/forge/",
+          "summary": "Tangled 介绍联邦式代码托管（federated code forge）设想与实现方向。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50305573",
+          "meta": "214 分 · 69 评论"
         },
         {
           "id": "hn-15",
-          "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
-          "summary": "社区评测 Claude Duet 个人助理 harness。",
-          "url": "https://fig.blue/posts/duet-is-the-future/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50292727",
-          "meta": "110 分 · 97 评论"
+          "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+          "summary": "NPR：多家区块链情报公司将币安约 63 亿美元被盗与朝鲜相关活动联系起来。",
+          "discussion_url": "https://news.ycombinator.com/item?id=50305480",
+          "meta": "190 分 · 119 评论"
         }
       ]
     },
@@ -471,75 +558,83 @@
       "items": [
         {
           "id": "lo-1",
-          "title": "What the fox say?",
-          "summary": "从系统视角聊「狐狸叫声」隐喻与工程沟通。",
-          "url": "https://entropicthoughts.com/what-the-fox-say",
-          "discussion_url": "https://lobste.rs/s/7qaac6",
-          "meta": "59 分 · 12 评论"
+          "title": "Backdoors in Claude Code for VS, Cursor official extensions",
+          "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+          "summary": "Lobsters 热议 Claude Code / Cursor 官方扩展后门事件。",
+          "discussion_url": "https://lobste.rs/s/ttp7aq/backdoors_claude_code_for_vs_cursor",
+          "meta": "136 分 · 37 评论"
         },
         {
           "id": "lo-2",
-          "title": "NetBSD adds a new Emacs-like text editor called atto",
-          "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
-          "discussion_url": "https://lobste.rs/s/m6fw0x",
-          "meta": "43 分 · 25 评论"
+          "title": "Do At-Proto Users Know This Is Public?",
+          "url": "https://melaniekat.com/blog/public-on-pds/",
+          "summary": "讨论 AT Protocol / Bluesky PDS 上数据公开性。",
+          "discussion_url": "https://lobste.rs/s/htgcuc/do_at_proto_users_know_this_is_public",
+          "meta": "76 分 · 17 评论"
         },
         {
           "id": "lo-3",
-          "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
-          "url": "https://divagr.com/blog/qwenputer",
-          "discussion_url": "https://lobste.rs/s/zftely",
-          "meta": "41 分 · 5 评论"
+          "title": "How curl was accidentally Turing-complete for nine months",
+          "url": "https://seriot.ch/computation/curl.html",
+          "summary": "技术文章回顾 curl 曾意外图灵完备约九个月。",
+          "discussion_url": "https://lobste.rs/s/f4aqog/how_curl_was_accidentally_turing",
+          "meta": "69 分 · 6 评论"
         },
         {
           "id": "lo-4",
-          "title": "My favourite PowerMac is a Nintendo Wii",
-          "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
-          "discussion_url": "https://lobste.rs/s/siebde",
-          "meta": "31 分 · 1 评论"
+          "title": "If you love a website, back it up",
+          "url": "http://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+          "summary": "呼吁对喜爱的网站主动备份（创建 落在 UTC 窗内）。",
+          "discussion_url": "https://lobste.rs/s/6ole9g/if_you_love_website_back_it_up",
+          "meta": "72 分 · 20 评论"
         },
         {
           "id": "lo-5",
-          "title": "Shared password manager for families?",
-          "url": "https://lobste.rs/s/eccbci",
-          "discussion_url": "https://lobste.rs/s/eccbci",
-          "meta": "27 分 · 35 评论"
+          "title": "No, npm, “estee” is not a typo of “testem”",
+          "url": "https://smoores.dev/post/no_npm_estee_is_not_a_typo/",
+          "summary": "作者吐槽 npm 把合法包名 estee 当成 testem 拼写错误。",
+          "discussion_url": "https://lobste.rs/s/xudbqx/no_npm_estee_is_not_typo_testem",
+          "meta": "27 分 · 18 评论"
         },
         {
           "id": "lo-6",
-          "title": "London meetup",
-          "url": "https://lobste.rs/s/dsrruj",
-          "discussion_url": "https://lobste.rs/s/dsrruj",
-          "meta": "22 分 · 11 评论"
+          "title": "The federated code forge",
+          "url": "https://tangled.org/blog/forge/",
+          "summary": "Tangled 阐述联邦代码 forge 设计。",
+          "discussion_url": "https://lobste.rs/s/ukj8mm/federated_code_forge",
+          "meta": "23 分 · 13 评论"
         },
         {
           "id": "lo-7",
-          "title": "C2PA's eMudhra Moment",
-          "summary": "C2PA 内容凭证与 eMudhra 证书事件的交叉讨论。",
-          "url": "https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html",
-          "discussion_url": "https://lobste.rs/s/2matgw",
-          "meta": "12 分 · 1 评论"
+          "title": "Infinite Mac: BeOS",
+          "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
+          "summary": "Infinite Mac 项目新增浏览器内运行 BeOS。",
+          "discussion_url": "https://lobste.rs/s/fskctn/infinite_mac_beos",
+          "meta": "25 分 · 4 评论"
         },
         {
           "id": "lo-8",
-          "title": "Nim version 2.4.0 released",
-          "url": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
-          "discussion_url": "https://lobste.rs/s/vfllme",
-          "meta": "11 分 · 0 评论"
+          "title": "Pidgin 3.0 Alpha 4 2.98.0 has been released",
+          "url": "https://discourse.imfreedom.org/t/pidgin-3-0-alpha-4-2-98-0-has-been-released/445",
+          "summary": "Pidgin 3.0 Alpha 4（2.98.0）发布。",
+          "discussion_url": "https://lobste.rs/s/qsvspv/pidgin_3_0_alpha_4_2_98_0_has_been_released",
+          "meta": "18 分 · 6 评论"
         },
         {
           "id": "lo-9",
-          "title": "The Web Can't Afford a JavaScript Runtime Monoculture",
-          "url": "https://redmonk.com/kholterhoff/2026/10/27/js-runtime-monoculture/",
-          "discussion_url": "https://lobste.rs/s/x6n380",
-          "meta": "6 分 · 9 评论"
+          "title": "Go 1.28's HTTP/2 Parking: Measuring Memory Savings",
+          "url": "https://abdolirad.me/articles/go-1-28-http2-parking-memory/",
+          "summary": "实测 Go 1.28 HTTP/2 parking 内存节省。",
+          "discussion_url": "https://lobste.rs/s/mhmqky/go_1_28_s_http_2_parking_measuring_memory",
+          "meta": "9 分 · 0 评论"
         },
         {
           "id": "lo-10",
-          "title": "XSS in yarr RSS reader",
-          "url": "https://0x67673068.me/xss-in-yarr/",
-          "discussion_url": "https://lobste.rs/s/1r7enm",
-          "meta": "5 分 · 0 评论"
+          "title": "Protecting against CVE-2026-98432",
+          "url": "https://groups.google.com/g/golang-announce/c/PCoQcdxoScw",
+          "summary": "Go 官方公告讨论防护 CVE-2026-98432。",
+          "discussion_url": "https://lobste.rs/s/mp8yqt/protecting_against_cve_2026_98432",
+          "meta": "6 分 · 0 评论"
         }
       ]
     },
@@ -549,79 +644,107 @@
       "items": [
         {
           "id": "v2-1",
-          "title": "Android 全平台纯自研内核 IPTV 播放器，各种格式都可以快速起播",
-          "url": "https://www.v2ex.com/t/1252867",
-          "discussion_url": "https://www.v2ex.com/t/1252867",
-          "meta": "94 回复"
+          "title": "我没有任何办法用 Claude 了吗？",
+          "url": "https://www.v2ex.com/t/1253076",
+          "summary": "多名用户反馈 Claude 账号被封、KYC/护照认证失败。",
+          "meta": "133 回复 · Claude"
         },
         {
           "id": "v2-2",
-          "title": "群晖 DSM+Gitlab CE 遭 C3RB3R 勒索软件攻击！救灾直播贴",
-          "url": "https://www.v2ex.com/t/1252851",
-          "discussion_url": "https://www.v2ex.com/t/1252851",
-          "meta": "64 回复"
+          "title": "为啥这帮煞笔前端设计师，把 PC WEB 滚动条 搞 那么细？",
+          "url": "https://www.v2ex.com/t/1253068",
+          "summary": "吐槽现代 Web 滚动条过细导致难点击。",
+          "meta": "114 回复 · 程序员"
         },
         {
           "id": "v2-3",
-          "title": "今天自己的自建梯子被封端口了，架构是 Vless+reality+xhttp+443",
-          "url": "https://www.v2ex.com/t/1252881",
-          "discussion_url": "https://www.v2ex.com/t/1252881",
-          "meta": "59 回复"
+          "title": "推荐一款日常打字聊天就可以顺便学习英语的工具",
+          "url": "https://www.v2ex.com/t/1253095",
+          "summary": "分享 macOS 工具 Glint：中文输入候选旁显示英文。",
+          "meta": "79 回复 · macOS"
+        },
+        {
+          "id": "v2-4",
+          "title": "Apple 智能将于 11 月 4 日上线",
+          "url": "https://www.v2ex.com/t/1253334",
+          "summary": "帖文称 Apple 智能首批功能将于 11 月 4 日起开放测试。",
+          "meta": "1 回复 · iOS"
+        },
+        {
+          "id": "v2-5",
+          "title": "中了勒索病毒后，我觉得 NAS 有必要装个杀毒软件吧",
+          "url": "https://www.v2ex.com/t/1253321",
+          "summary": "用户 NAS 中勒索后讨论杀毒与备份。",
+          "meta": "6 回复 · NAS"
+        },
+        {
+          "id": "v2-6",
+          "title": "做了个小工具 cc-pair：让 Claude Code 和 Codex 互相 review 代码",
+          "url": "https://www.v2ex.com/t/1253311",
+          "summary": "分享 cc-pair：Claude Code 与 Codex 互相代码审查。",
+          "meta": "1 回复 · 分享创造"
         }
       ]
     },
     {
       "id": "cn",
-      "source": "开源中国 / Solidot",
+      "source": "Solidot / 开源中国",
       "items": [
         {
           "id": "cn-1",
-          "title": "MiniMax Code 团队把自己每天用的 16 个 Agent 技能开源了",
-          "url": "https://www.oschina.net/news/503308",
-          "meta": "开源中国"
+          "title": "英特尔股价暴跌 29%",
+          "url": "https://www.solidot.org/story?sid=85757",
+          "summary": "英特尔周五暴跌约 29%，市值蒸发逾 1370 亿美元；Q4 指引低于预期。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-2",
-          "title": "拿注意力层当内存——有人在 Qwen 权重里编译了一颗 RISC-V CPU",
-          "summary": "开源中国对 Qwenputer 的中文报道。",
-          "url": "https://www.oschina.net/news/503307/qwenputer-risc-v",
-          "meta": "开源中国"
+          "title": "Claude Code for VS Code 官方扩展被植入后门",
+          "url": "https://www.solidot.org/story?sid=85756",
+          "summary": "Cursor Marketplace 上 Anthropic.claude-code 2.1.313 被植入 SSH 后门，约上线 11 小时、估计约 5000 用户。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-3",
-          "title": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
-          "url": "https://www.oschina.net/news/503303/openai-securing-our-frontier-model-training-environment",
-          "meta": "开源中国"
+          "title": "LibreOffice 项目递交的代码发现使用 LLM 的明确标记",
+          "url": "https://www.solidot.org/story?sid=85755",
+          "summary": "LibreOffice 社区贡献中至少三处明确提及 Claude/Copilot；TDF 要求披露。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-4",
-          "title": "Anthropic 平台负责人：多 Agent 跑起来之后，还有四个工程难题无法解决",
-          "url": "https://www.oschina.net/news/503288/new-problems-for-engineers-to-solve",
-          "meta": "开源中国"
+          "title": "芬兰对 Google 砍伐 25 万颗树展开调查",
+          "url": "https://www.solidot.org/story?sid=85754",
+          "summary": "芬兰叫停 Google 数据中心工程；警方就砍伐约 25 万棵树立案。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-5",
-          "title": "Cursor 把创造 Agent 的那套工序做成了产品",
-          "url": "https://www.oschina.net/news/503287/cursor-agent-sdk",
-          "meta": "开源中国"
+          "title": "Reddit 将强制要求所有用户登录",
+          "url": "https://www.solidot.org/story?sid=85753",
+          "summary": "Reddit 计划强制全站登录；CEO 称搜索引流周降超百万次。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-6",
-          "title": "谷歌发布 Gemini 4 Carbon，安全能力先开放给白帽子",
-          "url": "https://www.oschina.net/news/503286/google-gemini-4-carbon",
-          "meta": "开源中国"
+          "title": "Google 创上市至今最大跌幅，市值蒸发逾 5000 亿美元",
+          "url": "https://www.solidot.org/story?sid=85752",
+          "summary": "财报后 Google 创上市最大单日跌幅；与 AI 变现弱于传统搜索相关。",
+          "meta": "Solidot"
         },
         {
           "id": "cn-7",
-          "title": "Google AI 搜索产生的收入低于传统搜索",
-          "url": "https://www.solidot.org/story?sid=85748",
+          "title": "币安多达 30 亿美元数字货币被盗",
+          "url": "https://www.solidot.org/story?sid=85749",
+          "summary": "热钱包转移约 55 亿美元，冻结后黑客仍握约 30 亿美元；承诺赔付客户。",
           "meta": "Solidot"
         },
         {
           "id": "cn-8",
-          "title": "研究发现非英语的 token 成本更高",
-          "url": "https://www.solidot.org/story?sid=85747",
-          "meta": "Solidot"
+          "title": "群晖NAS突发大规模L0CK3D勒索病毒，舍末无勒详解救援方案",
+          "url": "https://www.oschina.net/news/503279",
+          "summary": "开源中国报道群晖 NAS 遭遇 L0CK3D 勒索及救援讨论。",
+          "meta": "开源中国"
         }
       ]
     },
@@ -632,12 +755,13 @@
     }
   ],
   "gaps": [
-    "Reddit：JSON/RSS 仍返回登录墙或 403，本期末收录 Reddit 条目。",
-    "IT之家：抓取结果为空。",
-    "V2EX latest 接口本轮仅返回窗口外帖；技术相关条目取自热议榜且创建时间落在窗口内。",
-    "币安约 56–57 亿美元流出：来自 Arkham/第三方 X 帖与 HN 讨论，未见币安官方完整确认；金额与归因仍可能变动。",
-    "部分 Elon 回复帖的 public_metrics 字段不完整（展示为 0），以可见点赞数为准。",
-    "无 open 状态的 GitHub Issues 带 rating/watch 标签，未改 ratings.json / config.json 临时关注。"
+    "Reddit：www.reddit.com 与 old.reddit.com 的 *.json 均被网络策略拦截，未能取得条目。",
+    "开源中国列表多数无精确 pubDate；主中文源用 Solidot RSS。OSChina 群晖条目需二次核实时间。",
+    "Elon 当日发帖量极大（分页仍有后续）；已收技术相关与最高互动帖，未穷尽全部政治 RT。",
+    "V2EX 以 created 时间戳筛窗；仅保留技术相关帖。",
+    "HN 首次误用 2025 epoch 已丢弃；本报告使用 created_at_i∈(1793318400,1793404800)。",
+    "无 open 状态的 GitHub Issues 带 rating/watch 标签，未改 ratings.json / config.json 临时关注。",
+    "本期按用户设定暂时不做中文口播/TTS，无 audio 文件。"
   ],
-  "cover": "images/covers/2026-10-30.png"
+  "cover": "images/covers/2026-10-31.png"
 }
