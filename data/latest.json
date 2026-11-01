@@ -10,58 +10,58 @@
     {
       "id": "h1",
       "title": "ChatGPT 账号接管漏洞：Parameter 团队「做数学」即可接管账户",
-      "summary": "Parameter AI Labs 披露可借取整/舍入误差一类逻辑接管 ChatGPT 账户的路径；HN 近 300 分热议。",
+      "summary": "Parameter AI Labs 称发现可借「做数学」一类取整/舍入误差逻辑路径接管 ChatGPT 账户；HN 近 300 分，焦点在：漏洞是否已修复、影响面、以及大模型产品把用户态逻辑当安全边界的风险。读原文看复现思路与 OpenAI 回应节奏，别只停在标题恐吓。",
       "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
       "source": "HN"
     },
     {
       "id": "h2",
       "title": "Linux TCP Use-After-Free：CVE-2026-98432 / CVSS 9.8",
-      "summary": "IPv4 TCP 路径存在 UAF，CVSS 9.8；补丁与细节见 Atlasum 分析，HN/安全圈同步发酵。",
+      "summary": "Linux IPv4 TCP 路径被报 Use-After-Free（CVE-2026-98432，CVSS 9.8）：远程可达的内存破坏级别，影响面取决于发行版补丁窗口。Atlasum 有技术分析；运维侧优先核对内核版本与发行版 advisory，别把「9.8」当已经全网可打的口令。",
       "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
       "source": "HN"
     },
     {
       "id": "h3",
       "title": "HackerTube：Karpathy 用 HN 推荐视频拼出「黑客 YouTube」",
-      "summary": "Andrej Karpathy 把 HN 高票视频串成可刷的 HackerTube，536 分，讨论「算法 vs 社区策展」。",
+      "summary": "Andrej Karpathy 把 HN 高票视频串成可刷的 HackerTube（博客帖 500+ 分）：本质是用社区投票当推荐算法的对照组，讨论「策展 vs 个性化 feed」。好玩，也提醒内容分发不一定非要黑盒推荐。",
       "url": "https://karpathy.bearblog.dev/hacker-tube/",
       "source": "HN"
     },
     {
       "id": "h4",
       "title": "Vitalik：数字极简主义长文",
-      "summary": "Vitalik 谈削减数字噪音、注意力与隐私工具选择；HN 与 Lobsters 双平台热议。",
+      "summary": "Vitalik 发数字极简主义长文：砍通知与噪音、重审工具链与隐私默认项。HN 与 Lobsters 同时热——不是新概念，但作者身份让「少用一点产品」本身变成技术圈议题。",
       "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
       "source": "HN/Lobsters"
     },
     {
       "id": "h5",
       "title": "Anthropic：封禁「碰触更大模型训练」相关用法；亦限制游戏逆向",
-      "summary": "用户反馈仅因触及更大模型训练相关内容即被封；另有报道 Claude 加强阻止游戏逆向工程。",
+      "summary": "Anthropic/Claude 相关两条线撞车：用户称触及「更大模型训练」类内容即遭封；另有讨论强化阻止游戏逆向工程。政策边界在变严，写提示词与做研究的人都在对「红线在哪」补地图；以官方条款与个案帖交叉验证，避免二手夸张。",
       "url": "https://news.ycombinator.com/item?id=50319358",
       "source": "HN"
     },
     {
       "id": "h6",
       "title": "Claude 对 Pro/Free 推 ID 验证，中文社区 KYC 讨论爆棚",
-      "summary": "V2EX 多帖反馈 Claude 跳 KYC；渠道、截图与「至今未跳」经验帖同日扎堆。",
+      "summary": "Claude 对部分 Pro/Free 推身份核验（KYC），V2EX 同日多帖：有人已跳验证、有人渠道至今未跳、还有截图与绕路经验。实质是供应与风控收紧在中文用户侧的体感；关注官方说明与地区差异，别把单个渠道经验当成全局政策。",
       "url": "https://www.v2ex.com/t/1253347",
       "source": "V2EX"
     },
     {
       "id": "h7",
       "title": "Sam Altman：PC 闲置内存是「糟糕分配」；社区骂声一片",
-      "summary": "Altman 称笔记本 RAM 浪费稀缺资源、应集中到数据中心；Solidot/Linux.do 同步转载。",
+      "summary": "Sam Altman 称个人电脑闲置内存是「糟糕分配」、算力应更集中到数据中心；Solidot/Linux.do 转载后骂声很大。争论点不只是一句暴论，而是本地 AI/隐私算力 vs 云端集中的利益叙事——读评论区比读原句更有信息量。",
       "url": "https://www.solidot.org/story?sid=85763",
       "source": "Solidot/Linux.do"
     },
     {
       "id": "h8",
-      "title": "Tibo Day26：移动端多账号切换上线，并预告「resets…banked」",
-      "summary": "Cursor 的 Tibo 宣布手机端易切多账号，桌面端将至；「接下来两天会是 resets」引发高互动解读。",
+      "title": "OpenAI Tibo Day26：ChatGPT 手机多账号切换，并暗示「banked reset」",
+      "summary": "OpenAI 的 Tibo（@thsottiaux，bio 写 Codex & ChatGPT）宣布 ChatGPT 手机端可轻松切换多账号，桌面端也将跟上，并链到官方多账号说明。同帖甩梗「Next two days will be resets… banked… do with this what you may」：社区普遍解读为接下来两天会发「banked reset」（可囤着、稍后再兑的用量重置额度），不是今天立刻自动回满周限；有人把它读成用量策略从「频繁 reset」转向更克制的 token 公司打法。属高互动暗示，非官方 changelog 正文。",
       "url": "https://x.com/thsottiaux/status/2116405414921384099",
-      "source": "X/@thsottiaux"
+      "source": "X/@thsottiaux · OpenAI"
     }
   ],
   "accounts": [
@@ -167,11 +167,11 @@
     },
     {
       "handle": "thsottiaux",
-      "name": "Tibo",
+      "name": "Tibo（OpenAI · Codex & ChatGPT）",
       "items": [
         {
           "id": "tibo-1",
-          "summary": "Day 26：手机端可轻松切换多账号，桌面端即将跟上；并暗示「接下来两天是 resets… banked…」——互动破万赞。",
+          "summary": "Day 26：ChatGPT 手机端多账号切换上线（桌面将至），并链官方帮助文档。同帖暗示「接下来两天是 resets… banked」——社区解读为将发放可囤用的 banked reset（用量重置额度），不是当场自动回满；「do with this what you may」被读成可预期的额度策略彩蛋。1.4 万赞量级，回复里大量在问何时能兑、是否抵 5 小时限。",
           "url": "https://x.com/thsottiaux/status/2116405414921384099",
           "time": "2026-10-31T13:42:26+08:00",
           "interactions": [],

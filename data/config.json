@@ -7,7 +7,8 @@
     },
     {
       "handle": "thsottiaux",
-      "label": "Tibo"
+      "label": "Tibo（OpenAI · Codex & ChatGPT）",
+      "notes": "bio: Codex & ChatGPT @OpenAI；写条目时禁止写成 Cursor 或其他公司"
     },
     {
       "handle": "poteto",
