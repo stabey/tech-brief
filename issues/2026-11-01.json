@@ -1,0 +1,660 @@
+{
+  "id": "2026-11-01",
+  "title": "技术早报 · 2026-11-01",
+  "window": {
+    "start": "2026-10-31T08:00:00+08:00",
+    "end": "2026-11-01T08:00:00+08:00"
+  },
+  "generated_at": "2026-11-01T08:20:00+08:00",
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "ChatGPT 账号接管漏洞：Parameter 团队「做数学」即可接管账户",
+      "summary": "Parameter AI Labs 披露可借取整/舍入误差一类逻辑接管 ChatGPT 账户的路径；HN 近 300 分热议。",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "source": "HN"
+    },
+    {
+      "id": "h2",
+      "title": "Linux TCP Use-After-Free：CVE-2026-98432 / CVSS 9.8",
+      "summary": "IPv4 TCP 路径存在 UAF，CVSS 9.8；补丁与细节见 Atlasum 分析，HN/安全圈同步发酵。",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "source": "HN"
+    },
+    {
+      "id": "h3",
+      "title": "HackerTube：Karpathy 用 HN 推荐视频拼出「黑客 YouTube」",
+      "summary": "Andrej Karpathy 把 HN 高票视频串成可刷的 HackerTube，536 分，讨论「算法 vs 社区策展」。",
+      "url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "source": "HN"
+    },
+    {
+      "id": "h4",
+      "title": "Vitalik：数字极简主义长文",
+      "summary": "Vitalik 谈削减数字噪音、注意力与隐私工具选择；HN 与 Lobsters 双平台热议。",
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "source": "HN/Lobsters"
+    },
+    {
+      "id": "h5",
+      "title": "Anthropic：封禁「碰触更大模型训练」相关用法；亦限制游戏逆向",
+      "summary": "用户反馈仅因触及更大模型训练相关内容即被封；另有报道 Claude 加强阻止游戏逆向工程。",
+      "url": "https://news.ycombinator.com/item?id=50319358",
+      "source": "HN"
+    },
+    {
+      "id": "h6",
+      "title": "Claude 对 Pro/Free 推 ID 验证，中文社区 KYC 讨论爆棚",
+      "summary": "V2EX 多帖反馈 Claude 跳 KYC；渠道、截图与「至今未跳」经验帖同日扎堆。",
+      "url": "https://www.v2ex.com/t/1253347",
+      "source": "V2EX"
+    },
+    {
+      "id": "h7",
+      "title": "Sam Altman：PC 闲置内存是「糟糕分配」；社区骂声一片",
+      "summary": "Altman 称笔记本 RAM 浪费稀缺资源、应集中到数据中心；Solidot/Linux.do 同步转载。",
+      "url": "https://www.solidot.org/story?sid=85763",
+      "source": "Solidot/Linux.do"
+    },
+    {
+      "id": "h8",
+      "title": "Tibo Day26：移动端多账号切换上线，并预告「resets…banked」",
+      "summary": "Cursor 的 Tibo 宣布手机端易切多账号，桌面端将至；「接下来两天会是 resets」引发高互动解读。",
+      "url": "https://x.com/thsottiaux/status/2116405414921384099",
+      "source": "X/@thsottiaux"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "引用 Neuralink 深度访谈：Brain-computer interface / R1 手术机器人专题，文案 Neuralink deep dive。",
+          "url": "https://x.com/elonmusk/status/2116614579136635120",
+          "time": "2026-11-01T03:33:35+08:00",
+          "interactions": [
+            {
+              "summary": "Dwarkesh 等访谈：Full HUGE* If True episode on Neuralink and BCI；参观 R1 手术机器人",
+              "url": "https://x.com/i/status/2116587096651505814"
+            }
+          ],
+          "metrics": {
+            "likes": 7928,
+            "reposts": 1015,
+            "replies": 666,
+            "views": 1550119
+          }
+        },
+        {
+          "id": "elon-2",
+          "summary": "回复 Colossus/Macrohard 规模：Macroharder 与 Minihard 各约 220k GB300（训练组网）；Spam 约 200k GB300 偏推理；并称 Colossus 2 年底约 1.2M Blackwell。",
+          "url": "https://x.com/elonmusk/status/2116587474021691629",
+          "time": "2026-11-01T01:45:52+08:00",
+          "interactions": [
+            {
+              "summary": "补充：Macrohard is 110k GB200 and 220k GB300（@nextbigfuture 追问）",
+              "url": "https://x.com/elonmusk/status/2116665263718342979"
+            },
+            {
+              "summary": "There will be a total of around 1.2M Blackwells at Colossus 2 by end of year",
+              "url": "https://x.com/elonmusk/status/2116596535433871630"
+            }
+          ],
+          "metrics": {
+            "likes": 6535,
+            "reposts": 495,
+            "replies": 359,
+            "views": 611836
+          }
+        },
+        {
+          "id": "elon-3",
+          "summary": "RT：Starlink 占在轨活跃卫星约 66%（11,184/16,848，截至 2026-10-31）。",
+          "url": "https://x.com/elonmusk/status/2116606747179958537",
+          "time": "2026-11-01T03:02:27+08:00",
+          "interactions": [
+            {
+              "summary": "XFreeze：The scale of Starlink… 11,184 of 16,848 active satellites",
+              "url": "https://x.com/i/status/2116579225914519759"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 213,
+            "replies": 0,
+            "views": 491527
+          }
+        },
+        {
+          "id": "elon-4",
+          "summary": "RT François Chollet：多巴胺峰值在奖励预测误差，而非确定奖励——谈风险与不确定性。",
+          "url": "https://x.com/elonmusk/status/2116664598858510514",
+          "time": "2026-11-01T06:52:20+08:00",
+          "interactions": [
+            {
+              "summary": "fchollet：Dopamine spikes highest at reward prediction error…",
+              "url": "https://x.com/i/status/2116627718347591988"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 372,
+            "replies": 0,
+            "views": 368623
+          }
+        },
+        {
+          "id": "elon-5",
+          "summary": "RT：Grok Bot「目前手机上最有用的应用」。",
+          "url": "https://x.com/elonmusk/status/2116615575791116356",
+          "time": "2026-11-01T03:37:32+08:00",
+          "interactions": [
+            {
+              "summary": "cb_doge：Grok Bot is the most useful app on my phone right now.",
+              "url": "https://x.com/i/status/2116610983997460897"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 144,
+            "replies": 0,
+            "views": 482953
+          }
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "Day 26：手机端可轻松切换多账号，桌面端即将跟上；并暗示「接下来两天是 resets… banked…」——互动破万赞。",
+          "url": "https://x.com/thsottiaux/status/2116405414921384099",
+          "time": "2026-10-31T13:42:26+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 13645,
+            "reposts": 617,
+            "replies": 2483,
+            "views": 2326276
+          }
+        },
+        {
+          "id": "tibo-2",
+          "summary": "回复 Theo 推 T3 Code 对比 Claude Code/Codex：「You had me at Codex」。",
+          "url": "https://x.com/thsottiaux/status/2116408135930069347",
+          "time": "2026-10-31T13:53:15+08:00",
+          "interactions": [
+            {
+              "summary": "theo：Why T3 Code instead of Claude Code or Codex…",
+              "url": "https://x.com/i/status/2115911518663647662"
+            }
+          ],
+          "metrics": {
+            "likes": 1267,
+            "reposts": 9,
+            "replies": 55,
+            "views": 179659
+          }
+        },
+        {
+          "id": "tibo-3",
+          "summary": "回复 Charlie Marsh 晒 bloom filter：「No way」。",
+          "url": "https://x.com/thsottiaux/status/2116346061317140873",
+          "time": "2026-10-31T09:46:35+08:00",
+          "interactions": [
+            {
+              "summary": "charliermarsh：we just used a bloom filter",
+              "url": "https://x.com/i/status/2116282383099945421"
+            }
+          ],
+          "metrics": {
+            "likes": 366,
+            "reposts": 2,
+            "replies": 141,
+            "views": 187968
+          }
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "lauren",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "发布短版 Grok Bot 指南：如何打造高质量 bot、管理团队；推荐加入 dr eggbot 做 bot 设计——约 5700 赞、1 万+ 收藏。",
+          "url": "https://x.com/poteto/status/2116576229319233596",
+          "time": "2026-11-01T01:01:11+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 5712,
+            "reposts": 366,
+            "replies": 1189,
+            "views": 400158
+          }
+        },
+        {
+          "id": "poteto-2",
+          "summary": "补充 tip：用 routines 让 bot 更主动——定时巡检 Issue，或订阅类「收到某客户邮件即自动摘要」。",
+          "url": "https://x.com/poteto/status/2116580481236115933",
+          "time": "2026-11-01T01:18:05+08:00",
+          "interactions": [
+            {
+              "summary": "线程接在 Grok bot guide 下",
+              "url": "https://x.com/poteto/status/2116576229319233596"
+            }
+          ],
+          "metrics": {
+            "likes": 250,
+            "reposts": 11,
+            "replies": 81,
+            "views": 31308
+          }
+        },
+        {
+          "id": "poteto-3",
+          "summary": "RT Stageshow：帮 agent 做更好的假 UI 静帧、动画、bento 网格的 skill（npx skills add…）。",
+          "url": "https://x.com/poteto/status/2116606592032575507",
+          "time": "2026-11-01T03:01:50+08:00",
+          "interactions": [
+            {
+              "summary": "benjitaylor：Stageshow skill…",
+              "url": "https://x.com/i/status/2116593247854453244"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 148,
+            "replies": 0,
+            "views": 2195
+          }
+        },
+        {
+          "id": "poteto-4",
+          "summary": "预告「明天会很好玩」——引用自己早前买域名帖，暗示新品上线。",
+          "url": "https://x.com/poteto/status/2116662792631746861",
+          "time": "2026-11-01T06:45:10+08:00",
+          "interactions": [
+            {
+              "summary": "quoted：i bought a new domain too",
+              "url": "https://x.com/poteto/status/2115314718370054312"
+            }
+          ],
+          "metrics": {
+            "likes": 562,
+            "reposts": 4,
+            "replies": 50,
+            "views": 17430
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Serbia just elected the world's brainiest parliament",
+          "summary": "Science 报道称塞尔维亚新议会学历/认知指标惊人；HN 794 分，讨论选举制度与人才结构（偏社会但互动最高）。",
+          "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+          "discussion_url": "https://news.ycombinator.com/item?id=50314654",
+          "meta": "794 分 · 459 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "HackerTube: YouTube built from videos recommended by HN",
+          "summary": "Karpathy 用 HN 推荐拼出视频站，社区策展对抗推荐算法的一次实验。",
+          "url": "https://karpathy.bearblog.dev/hacker-tube/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50319510",
+          "meta": "536 分 · 198 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Tell HN: Scribd Breached",
+          "summary": "用户报料 Scribd 遭入侵；细节仍在讨论串中拼凑。",
+          "url": "https://news.ycombinator.com/item?id=50312756",
+          "discussion_url": "https://news.ycombinator.com/item?id=50312756",
+          "meta": "334 分 · 120 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "Digital minimalism",
+          "summary": "Vitalik 谈数字极简、注意力与工具选择。",
+          "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50313661",
+          "meta": "302 分 · 223 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Do the math: How we took over ChatGPT accounts",
+          "summary": "Parameter 团队展示可借数学/舍入类逻辑接管 ChatGPT 账户的路径。",
+          "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+          "discussion_url": "https://news.ycombinator.com/item?id=50314699",
+          "meta": "297 分 · 144 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+          "summary": "Signal 分支 Molly 三个月未更新，存在已知漏洞风险，提醒用户迁移或停用。",
+          "url": "https://piefed.world/post/1503394",
+          "discussion_url": "https://news.ycombinator.com/item?id=50314666",
+          "meta": "292 分 · 172 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+          "summary": "Linux IPv4 TCP UAF，CVSS 9.8，影响面大。",
+          "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+          "discussion_url": "https://news.ycombinator.com/item?id=50319143",
+          "meta": "274 分 · 134 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Malware uses LLMs to rank victims by how much they're worth",
+          "summary": "Cisco Talos：Volta 信息窃取木马用 LLM 按「划算程度」给受害者排序。",
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50316531",
+          "meta": "228 分 · 125 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "OpenAI raises less than half of $30B target",
+          "summary": "WSJ：OpenAI 本轮融资未达 300 亿美元目标一半，市场对 AI 烧钱更谨慎。",
+          "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+          "discussion_url": "https://news.ycombinator.com/item?id=50312922",
+          "meta": "181 分 · 186 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Prospero: A new coding harness for a more civilized age",
+          "summary": "nullprogram 介绍新的 coding harness Prospero，讨论 agent 编排方式。",
+          "url": "https://nullprogram.com/blog/2026/10/31/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50315226",
+          "meta": "180 分 · 118 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Jepsen: ParticleDB 1.1.4",
+          "summary": "Jepsen 对 ParticleDB 1.1.4 的一致性分析上线。",
+          "url": "https://jepsen.io/analyses/particledb-1.1.4",
+          "discussion_url": "https://news.ycombinator.com/item?id=50316100",
+          "meta": "175 分 · 95 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Anthropic blocks users for anything touching training larger models",
+          "summary": "开发者称触及「训练更大模型」相关内容即遭 Anthropic 封禁。",
+          "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+          "discussion_url": "https://news.ycombinator.com/item?id=50319358",
+          "meta": "153 分 · 53 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+          "summary": "报告称 GPT-5.6 Sol 可在和平模式通关 Factorio，agent 长期规划能力再被检验。",
+          "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50318871",
+          "meta": "151 分 · 167 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "It's the Memory Latency, Stupid",
+          "summary": "Pivot Lake：性能瓶颈往往是内存延迟而非峰值算力。",
+          "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50318720",
+          "meta": "104 分 · 34 评论"
+        },
+        {
+          "id": "hn-15",
+          "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+          "summary": "报道称 Anthropic 采取措施阻止 Claude 被用于逆向/克隆游戏。",
+          "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+          "discussion_url": "https://news.ycombinator.com/item?id=50320255",
+          "meta": "89 分 · 60 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Jepsen: ParticleDB 1.1.4",
+          "summary": "数据库一致性测试报告，Lobsters 75 分居首。",
+          "url": "https://jepsen.io/analyses/particledb-1.1.4",
+          "discussion_url": "https://lobste.rs/s/drwd4j",
+          "meta": "75 分 · 14 评论 · databases, testing"
+        },
+        {
+          "id": "lo-2",
+          "title": "The support case of a customer who said that all they could see was a black screen",
+          "summary": "Raymond Chen Old New Thing：黑屏工单背后的故事。",
+          "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
+          "discussion_url": "https://lobste.rs/s/soosuu",
+          "meta": "60 分 · 8 评论 · historical, windows"
+        },
+        {
+          "id": "lo-3",
+          "title": "Avoid Public Functions Calling Other Public Functions",
+          "summary": "matklad：API 设计上避免 public 调 public，降低耦合与误用。",
+          "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+          "discussion_url": "https://lobste.rs/s/k508we",
+          "meta": "34 分 · 8 评论 · api, programming"
+        },
+        {
+          "id": "lo-4",
+          "title": "The Kluever Maneuver",
+          "summary": "测试相关随笔：Kluever Maneuver。",
+          "url": "https://jordi.inversethought.com/blog/the-kluever-maneuver/",
+          "discussion_url": "https://lobste.rs/s/rpiu3w",
+          "meta": "31 分 · 16 评论 · testing"
+        },
+        {
+          "id": "lo-5",
+          "title": "Mystery of 60-Second Fluctuations in Power Grids Solved",
+          "summary": "于利希研究中心：电网约 60 秒波动之谜有了解释。",
+          "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+          "discussion_url": "https://lobste.rs/s/qwou15",
+          "meta": "18 分 · 9 评论 · science"
+        },
+        {
+          "id": "lo-6",
+          "title": "Tangled, hire a front-end accessibility expert",
+          "summary": "对 Tangled（VCS）前端无障碍的公开批评与呼吁。",
+          "url": "https://dbushell.com/2026/11/01/tangled-accessibility/",
+          "discussion_url": "https://lobste.rs/s/ymqjuj",
+          "meta": "17 分 · 4 评论 · a11y, rant, vcs"
+        },
+        {
+          "id": "lo-7",
+          "title": "Enlightenment 0.28.0 Release",
+          "summary": "Enlightenment 桌面 0.28.0 发布。",
+          "url": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0",
+          "discussion_url": "https://lobste.rs/s/fmawla",
+          "meta": "10 分 · 1 评论 · linux, release"
+        },
+        {
+          "id": "lo-8",
+          "title": "Digital minimalism",
+          "summary": "Vitalik 同文在 Lobsters 的讨论串。",
+          "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+          "discussion_url": "https://lobste.rs/s/y81ppi",
+          "meta": "9 分 · 9 评论 · privacy"
+        },
+        {
+          "id": "lo-9",
+          "title": "Speeding up GPU copies by permuting iteration spaces",
+          "summary": "Futhark：通过置换迭代空间加速 GPU 拷贝。",
+          "url": "https://futhark-lang.org/blog/2026-10-31-faster-copying.html",
+          "discussion_url": "https://lobste.rs/s/1abkzu",
+          "meta": "4 分 · 1 评论 · compilers"
+        },
+        {
+          "id": "lo-10",
+          "title": "Let’s Build a Brain",
+          "summary": "互动式「搭一个大脑」教学/演示。",
+          "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+          "discussion_url": "https://lobste.rs/s/bmmj1e",
+          "meta": "7 分 · 1 评论 · ai, programming"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "claude 似乎今天对 pro 和 free 用户执行 ID verification 了",
+          "summary": "多名用户反馈 Claude 弹出身份验证；引发后续一串 KYC 经验帖。",
+          "url": "https://www.v2ex.com/t/1253347",
+          "meta": "33 回复 · Claude/问与答"
+        },
+        {
+          "id": "v2-2",
+          "title": "claude 跳 kyc 了，有啥渠道可以联系歪果仁帮忙 kyc 啊？",
+          "summary": "KYC 求助与代操作讨论升温。",
+          "url": "https://www.v2ex.com/t/1253446",
+          "meta": "21 回复 · Claude"
+        },
+        {
+          "id": "v2-3",
+          "title": "LockSticky 喜提大陆 App Store 下架",
+          "summary": "LockSticky 在中国大陆 App Store 被下架，用户交流替代方案。",
+          "url": "https://www.v2ex.com/t/1253370",
+          "meta": "25 回复 · 程序员"
+        },
+        {
+          "id": "v2-4",
+          "title": "大家用 obsidian 么，用什么路线同步的",
+          "summary": "Obsidian 同步方案大讨论：官方 Sync、Git、网盘、自建等。",
+          "url": "https://www.v2ex.com/t/1253421",
+          "meta": "29 回复 · 问与答"
+        },
+        {
+          "id": "v2-5",
+          "title": "避雷 API 中转站：前端低价引流，实际暗藏 10 倍扣费倍率",
+          "summary": "曝光某中转站计费陷阱，提醒核对真实扣费倍率。",
+          "url": "https://www.v2ex.com/t/1253430",
+          "meta": "10 回复 · 程序员"
+        },
+        {
+          "id": "v2-6",
+          "title": "看到最近群晖被黑，想给 NAS 数据做备份，大家用的什么方案？",
+          "summary": "群晖安全事件后，NAS 异地/版本化备份方案征集。",
+          "url": "https://www.v2ex.com/t/1253451",
+          "meta": "12 回复 · NAS"
+        },
+        {
+          "id": "v2-7",
+          "title": "[送码] Emby/Plex/NAS 播放器 Vidzer v1.2.0，首次支持安卓与 macOS",
+          "summary": "国产播放器新版本送码推广，安卓/macOS 首发支持。",
+          "url": "https://www.v2ex.com/t/1253453",
+          "meta": "41 回复 · 推广"
+        },
+        {
+          "id": "v2-8",
+          "title": "所以新出的 Claude ultra 实际容量砍半了？",
+          "summary": "用户对比 Ultra 额度体感，怀疑有效容量下降。",
+          "url": "https://www.v2ex.com/t/1253474",
+          "meta": "4 回复 · Claude"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 开源中国 / Linux.do / NodeSeek",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "思科给予一名 27 岁工程师无限 tokens 去重写陈旧代码",
+          "summary": "Solidot：思科给年轻工程师无限模型额度重构遗留代码，引发「AI 重构债务」讨论。",
+          "url": "https://www.solidot.org/story?sid=85764",
+          "meta": "Solidot · 2026-10-31"
+        },
+        {
+          "id": "cn-2",
+          "title": "Sam Altman 认为 PC 内存闲置太糟糕",
+          "summary": "Altman 称个人电脑 RAM 是稀缺资源的糟糕分配；社区反弹强烈。",
+          "url": "https://www.solidot.org/story?sid=85763",
+          "meta": "Solidot · 2026-10-31"
+        },
+        {
+          "id": "cn-3",
+          "title": "中国首次载人登月计划由三人组成其中两人将着陆月球表面",
+          "summary": "官方披露载人登月乘组规模与着陆安排。",
+          "url": "https://www.solidot.org/story?sid=85762",
+          "meta": "Solidot · 2026-10-31"
+        },
+        {
+          "id": "cn-4",
+          "title": "Anthropic 工程经理把传统编程面试砍了：它不再提供有效信号",
+          "summary": "开源中国转载：面试形式向实际工程信号迁移。",
+          "url": "https://www.oschina.net/news/503275/the-coding-interview-is-dead",
+          "meta": "开源中国"
+        },
+        {
+          "id": "cn-5",
+          "title": "深度使用 Zig 四个月：最爱的设计与最失望的坑",
+          "summary": "同一偏执驱动下的赞与槽——Zig 体验长文。",
+          "url": "https://www.oschina.net/news/503266/four-months-of-zig",
+          "meta": "开源中国"
+        },
+        {
+          "id": "cn-6",
+          "title": "史上最大 IPO 前夕，黑石改口称 Anthropic 或无法获投资级信用评级",
+          "summary": "Linux.do 热议 Anthropic 信用评级与 IPO 前景。",
+          "url": "https://linux.do/t/topic/3102195",
+          "meta": "Linux.do · 19 帖 · 1401 浏览"
+        },
+        {
+          "id": "cn-7",
+          "title": "GLM 5.5 部分信息被实习生泄露",
+          "summary": "智谱相关型号信息疑遭实习生外泄，社区传播截图与辟谣并存。",
+          "url": "https://linux.do/t/topic/3101697",
+          "meta": "Linux.do · 32 帖 · 2747 浏览"
+        },
+        {
+          "id": "cn-8",
+          "title": "grok 现在支持支付宝订阅了",
+          "summary": "国内用户反馈 Grok 订阅可走支付宝。",
+          "url": "https://linux.do/t/topic/3100016",
+          "meta": "Linux.do · 22 帖 · 1798 浏览"
+        },
+        {
+          "id": "cn-9",
+          "title": "【开源推广】nanopi：一个大道至简的 coding agent",
+          "summary": "Linux.do 开源推广：轻量 coding agent nanopi。",
+          "url": "https://linux.do/t/topic/3099276",
+          "meta": "Linux.do · Agent/开源"
+        },
+        {
+          "id": "cn-10",
+          "title": "NodeSeek：11 月 1 日速览（AMD 免费 Token / 48team 清算等）及 Claude KYC、Surge6 TF 等话题",
+          "summary": "首页热帖还包括「拉回日本 IP」教程、Google Play 土耳其订阅、AMD 免费 Token 等；CF 拦截未能解析单帖深链，统一指向社区首页。",
+          "url": "https://www.nodeseek.com/",
+          "meta": "NodeSeek · 首页热帖（深链受限）"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "未抓取 Reddit（按用户设定）；sections 不含 reddit 分区。",
+    "NodeSeek 详情页/搜索被 Cloudflare 拦截，仅能用 WebFetch 首页标题；cn-10 链到首页并注明。",
+    "开源中国新闻页多数无可靠 pubDate；条目选自首页列表，未逐篇核实精确发布时间。",
+    "Solidot 85761 币安稿标注 10-31，但事件主体已在 10-30 期覆盖，本期未作为 highlight 重复主推。",
+    "Elon 当日发帖量极大且大量政治 RT；accounts 仅收 Neuralink / Colossus·GB300 / Starlink / Chollet / Grok Bot 等技术向，未穷尽。",
+    "get_users_posts 对 Elon 分页未拉完全部窗口（已两页）；Starlink/Colossus 等关键技术帖已覆盖。",
+    "无 open 的 rating/watch Issue；ratings.json 为空；temp_watches=[]。",
+    "按用户设定本期不做中文口播/TTS，无 audio 字段或音频文件。"
+  ],
+  "cover": "images/covers/2026-11-01.png"
+}
