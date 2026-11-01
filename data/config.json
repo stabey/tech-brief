@@ -15,12 +15,153 @@
     }
   ],
   "temp_watches": [],
-  "notes": "Reddit disabled. sspai/ithome optional. temp_watches 项形如 {id, type: account|topic, value, label, expires_on: YYYY-MM-DD|null, created_at}",
+  "notes": "Reddit disabled. sspai/ithome optional. temp_watches 项形如 {id, type: account|topic, value, label, expires_on: YYYY-MM-DD|null, created_at}. product_watches: 每日必查；开源且 summarize_code 时对照 tag/commit 摘要代码变更。",
   "chinese_sources": [
     "v2ex",
     "solidot",
     "oschina",
     "linux.do",
     "nodeseek"
+  ],
+  "product_watches": [
+    {
+      "id": "claude-code-cli",
+      "label": "Claude Code CLI",
+      "kind": "cli",
+      "vendor": "anthropic",
+      "homepage": "https://code.claude.com/docs",
+      "changelog_url": "https://code.claude.com/docs/en/changelog",
+      "github": "anthropics/claude-code",
+      "npm": "@anthropic-ai/claude-code",
+      "check": [
+        "github_releases",
+        "npm"
+      ],
+      "summarize_code": true
+    },
+    {
+      "id": "claude-desktop",
+      "label": "Claude Desktop（含 Code 页）",
+      "kind": "desktop",
+      "vendor": "anthropic",
+      "homepage": "https://claude.com/download",
+      "changelog_url": "https://claude.com/docs/cowork/changelog",
+      "github": null,
+      "check": [
+        "html_changelog"
+      ],
+      "summarize_code": false,
+      "notes": "桌面 changelog 会写 Bundled Claude Code version；与 CLI 分开报"
+    },
+    {
+      "id": "codex-cli",
+      "label": "Codex CLI",
+      "kind": "cli",
+      "vendor": "openai",
+      "homepage": "https://github.com/openai/codex",
+      "changelog_url": "https://learn.chatgpt.com/docs/changelog",
+      "github": "openai/codex",
+      "npm": "@openai/codex",
+      "check": [
+        "github_releases",
+        "npm"
+      ],
+      "summarize_code": true
+    },
+    {
+      "id": "chatgpt-desktop",
+      "label": "ChatGPT 客户端",
+      "kind": "desktop",
+      "vendor": "openai",
+      "homepage": "https://openai.com/chatgpt/download/",
+      "changelog_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "extra_changelogs": [
+        "https://help.openai.com/en/articles/9703738-chatgpt-macos-app-release-notes",
+        "https://help.openai.com/en/articles/10003026-windows-app-release-notes"
+      ],
+      "github": null,
+      "check": [
+        "html_changelog"
+      ],
+      "platforms": [
+        "macos",
+        "windows",
+        "ios",
+        "android"
+      ],
+      "summarize_code": false,
+      "notes": "macOS/Windows 有独立 release notes；iOS/Android 多在总 changelog"
+    },
+    {
+      "id": "omp",
+      "label": "omp (oh-my-pi)",
+      "kind": "cli",
+      "vendor": "stencil",
+      "homepage": "https://omp.sh",
+      "changelog_url": "https://github.com/can1357/oh-my-pi/releases",
+      "github": "can1357/oh-my-pi",
+      "npm": "@oh-my-pi/pi-coding-agent",
+      "check": [
+        "github_releases",
+        "npm"
+      ],
+      "summarize_code": true
+    },
+    {
+      "id": "tern",
+      "label": "Tern (Stencil)",
+      "kind": "desktop",
+      "vendor": "stencil",
+      "homepage": "https://stencil.so/tern",
+      "changelog_url": "https://docs.stencil.so/tern/",
+      "github": "stencil-hq/tern-sdk",
+      "check": [
+        "html_docs",
+        "github_commits"
+      ],
+      "summarize_code": true,
+      "notes": "官方 App 封闭 beta，无公开 Releases；看 docs 与 tern-sdk 提交。若要 homebrew-tern 公开发行版再改"
+    },
+    {
+      "id": "magpie",
+      "label": "magpie",
+      "kind": "desktop_gateway",
+      "vendor": "yetone",
+      "homepage": "https://usemagpie.ai",
+      "changelog_url": "https://github.com/yetone/magpie/releases",
+      "github": "yetone/magpie",
+      "releases_repo": "yetone/magpie-releases",
+      "check": [
+        "github_releases"
+      ],
+      "summarize_code": true
+    },
+    {
+      "id": "sub2api",
+      "label": "Sub2API",
+      "kind": "gateway",
+      "vendor": "Wei-Shaw",
+      "homepage": "https://github.com/Wei-Shaw/sub2api",
+      "changelog_url": "https://github.com/Wei-Shaw/sub2api/releases",
+      "github": "Wei-Shaw/sub2api",
+      "check": [
+        "github_releases"
+      ],
+      "summarize_code": true
+    },
+    {
+      "id": "cpa",
+      "label": "CPA (CLIProxyAPI)",
+      "kind": "gateway",
+      "vendor": "router-for-me",
+      "homepage": "https://github.com/router-for-me/CLIProxyAPI",
+      "changelog_url": "https://github.com/router-for-me/CLIProxyAPI/releases",
+      "github": "router-for-me/CLIProxyAPI",
+      "check": [
+        "github_releases"
+      ],
+      "summarize_code": true,
+      "optional_related": "router-for-me/EasyCLIProxyAPI"
+    }
   ]
 }

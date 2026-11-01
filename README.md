@@ -33,13 +33,17 @@
 
 **不需要再注册其他账号**，用已有的 GitHub 账号即可。
 
+## 产品更新
+
+`data/config.json` 的 `product_watches` 是每日必查的产品清单（CLI、桌面端、网关等）。开源且 `summarize_code` 为 true 时，对照 tag 或 commit 摘要代码变更。每日 issue 的 `sections` 里可以包含一节 `product_updates`。
+
 ## 数据文件
 
 | 路径 | 说明 |
 |------|------|
 | `data/latest.json` | 最新一期 |
 | `issues/YYYY-MM-DD.json` | 每日归档 |
-| `data/config.json` | 时区、固定账号、临时关注 |
+| `data/config.json` | 时区、固定账号、临时关注、`product_watches` |
 | `data/ratings.json` | 汇总后的评分 |
 | `audio/YYYY-MM-DD.mp3` | 播客音频（可选） |
 | `images/covers/YYYY-MM-DD.png` | 本期封面 / 分享图 |
