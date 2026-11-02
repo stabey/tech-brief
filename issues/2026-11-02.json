@@ -1,0 +1,880 @@
+{
+  "id": "2026-11-02",
+  "title": "技术早报 · 2026-11-02",
+  "window": {
+    "start": "2026-11-01T08:00:00+08:00",
+    "end": "2026-11-02T08:00:00+08:00"
+  },
+  "generated_at": "2026-11-02T08:12:13+08:00",
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "poteto × Tibo：tibo.dog 落地，Day28 彩蛋游戏可嵌 X 内玩",
+      "summary": "SpaceXSI 的 @poteto（lauren，Grok Bot；prev Cursor）发布 https://tibo.dog：自称 $5.99 买域名，用 Grok Bot + Cursor 四天侧项目约 1150 PR 做完，可在 X 帖卡内直接玩。同日 OpenAI 的 Tibo（@thsottiaux）恰好在刷「Dot 自动纠正成 dog」梗，两边互呛「并非策划 / 其实策划了也没事」。看点不是域名笑话，而是 agent 工作流展演：lint-as-you-go、TLA+ 验状态机、确定性回放防作弊、gzip≈124KB——把「用 bot 做产品」推到可玩的极端。",
+      "url": "https://x.com/poteto/status/2117004709198475365",
+      "source": "X/@poteto · SpaceXSI"
+    },
+    {
+      "id": "h2",
+      "title": "Tibo Day28 收官：Banked 2/2，自嘲「I demand a banked reset」",
+      "summary": "OpenAI 的 Tibo（@thsottiaux，bio：Codex & ChatGPT）把 28 天公开打卡推到终点：早间 Banked 1/2、收官 Banked 2/2。社区大量求「banked reset」——社区解读 / 非官方定义：可囤、稍后再兑的用量重置额度（挑战攒卡），不是当场自动回满周限；Banked n/m 指已攒满的档位。Tibo 自己回「I demand a banked reset」把梗收回自嘲。中文站 Linux.do / V2EX / NodeSeek 同步刷「第二张重置卡到账」与额度合并体感，别把打卡叙事当官方 changelog。",
+      "url": "https://x.com/thsottiaux/status/2117035794678546764",
+      "source": "X/@thsottiaux · OpenAI"
+    },
+    {
+      "id": "h3",
+      "title": "ChatGPT 与 Codex 额度合并：中文社区多源同日炸锅",
+      "summary": "V2EX「恶心了，ChatGPT 要跟 Codex 共用额度了」、Linux.do「收到 GPT 额度合并通知」等多帖同日出现：用户在截图核对接文案——网页 ChatGPT 与 Codex 是否共用池、合并后重置卡怎么兑、会不会逼续费。这不是抽象政策辩论，而是订阅用户的账单与日用量地图在重画；交叉对照官方通知与社区截图，别只信二手标题。",
+      "url": "https://www.v2ex.com/t/1253511",
+      "source": "V2EX / Linux.do"
+    },
+    {
+      "id": "h4",
+      "title": "Elon：服务 Grok Bot 的成本相对收入「不可持续地高」",
+      "summary": "有人求本周 Grok Bot 用量 reset，Elon 直接答：serving 成本相对收入 unsustainably high。另有帖反问「升更高用量套餐涨价是不是太高」，像在公开收定价反馈；同时仍日更喊人试 Bot、推礼物代购与 agent 看板 demo。对读者意味：配额紧 ≠ 单纯 bug，可能是成本控制；「日更几十项修复」与「成本不可持续」同框出现，产品节奏与商业账在打架。",
+      "url": "https://x.com/elonmusk/status/2116992258520064397",
+      "source": "X/@elonmusk"
+    },
+    {
+      "id": "h5",
+      "title": "巴西法院处罚律师：法院文件里写 Prompt Injection",
+      "summary": "巴西法院制裁在诉讼材料中植入 prompt injection、试图操纵 AI 审阅流程的律师。HN 313 分 / 197 评：法律文书一旦进入「机器先读」管线，对抗性提示就从 CTF 梗变成执业风险。启示不只是「别对法官 bot 下指令」，而是司法数字化要把提示注入当真实攻击面，而不是段子。",
+      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "source": "HN"
+    },
+    {
+      "id": "h6",
+      "title": "联想「加密」指纹 U 盘：拆开是未加密 SD 卡",
+      "summary": "拆解显示联想标称加密指纹 U 盘内部实为壳子里的未加密 SD——营销话术与安全声明脱节。HN 369 分：消费者安全产品又一次「信任边界写在包装上」。买「硬件加密」外设请先验拆解/固件审计，别把指纹盖当密码学。",
+      "url": "https://news.ycombinator.com/item?id=50326099",
+      "source": "HN"
+    },
+    {
+      "id": "h7",
+      "title": "Memdoor：5×Qwen3.8-27B 团队打过 Fable 5（LiveCodeBench Hard）",
+      "summary": "Memdoor 展示用 5 个 Qwen3.8-27B 组成的协作工作流在 LiveCodeBench Hard 上超过 Fable 5。帖发于窗前数小时，但窗内仍在 front_page（419 分）。争论焦点：是模型真强，还是「多智能体编排 + 验题」把开源权重抬过闭源单模型。对自建 agent 的人：编排与工具链可能比再换一个 SOTA 名字更值钱。",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "source": "HN"
+    },
+    {
+      "id": "h8",
+      "title": "Google AI Mode / Overviews 未给网站带来引荐流量",
+      "summary": "Solidot 援引 Reddit 财报侧面：Google AI Mode 与 AI Overviews 几乎不给站外带点击，搜索引流继续下滑。对依赖 SEO 的站长，这不是「AI 摘要好不好看」的审美题，而是流量分配机制改写——内容被摘要吃掉、点击留在 Google。产品人要重新估「被引用」与「被访问」是不是两回事。",
+      "url": "https://www.solidot.org/story?sid=85767",
+      "source": "Solidot"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "回应「本周 Grok Bot 用量很快耗尽、能否 reset」：称服务 Grok Bot 的成本相对收入不可持续地高——给配额紧张提供成本侧口径。",
+          "url": "https://x.com/elonmusk/status/2116992258520064397",
+          "time": "2026-11-02T04:34:20+08:00",
+          "interactions": [
+            {
+              "summary": "DogecoinNorway：求 Grok Bot reset，称本周用量很快耗尽",
+              "url": "https://x.com/i/status/2116986414110007446"
+            }
+          ],
+          "metrics": {
+            "likes": 7224,
+            "reposts": 299,
+            "replies": 1521,
+            "views": 1438174
+          }
+        },
+        {
+          "id": "elon-2",
+          "summary": "用户称已撞 Grok Bot 用量上限需等到周三；Elon 反问升更高用量套餐的涨价是否过高——像在公开收定价反馈。",
+          "url": "https://x.com/elonmusk/status/2117008189195800814",
+          "time": "2026-11-02T05:37:39+08:00",
+          "interactions": [
+            {
+              "summary": "dvorahfr：已达 Grok bots 用量上限，需等到周三",
+              "url": "https://x.com/i/status/2116887698212343854"
+            }
+          ],
+          "metrics": {
+            "likes": 2988,
+            "reposts": 78,
+            "replies": 1034,
+            "views": 497083
+          }
+        },
+        {
+          "id": "elon-3",
+          "summary": "呼吁试用 Grok Bot：称团队几乎每天上线几十项修复/功能甚至「powers」，并看反馈迭代；引用日文用户把 Grok Bot 与 Cursor 并列称赞 UX。",
+          "url": "https://x.com/elonmusk/status/2117033967782113327",
+          "time": "2026-11-02T07:20:05+08:00",
+          "interactions": [
+            {
+              "summary": "shimabu_it：推荐 Cursor（Grok Bot），称 UX 已不输 Claude Code/Codex",
+              "url": "https://x.com/i/status/2116706033271992754"
+            }
+          ],
+          "metrics": {
+            "likes": 2709,
+            "reposts": 272,
+            "replies": 899,
+            "views": 1114109
+          }
+        },
+        {
+          "id": "elon-4",
+          "summary": "宣传 Grok Bot 可研究亲友喜好并用 X Money 代购礼物；引用 Justine Moore 上周让 Bot 用最多 $100 自主选礼物并收到实物的案例。",
+          "url": "https://x.com/elonmusk/status/2116989604104392969",
+          "time": "2026-11-02T04:23:48+08:00",
+          "interactions": [
+            {
+              "summary": "venturetwins / Justine Moore：Bot 用最多 $100 X Money 惊喜选礼物已收到",
+              "url": "https://x.com/i/status/2116643253726683590"
+            }
+          ],
+          "metrics": {
+            "likes": 1940,
+            "reposts": 254,
+            "replies": 450,
+            "views": 772919
+          }
+        },
+        {
+          "id": "elon-5",
+          "summary": "引用称 SpaceXAI Colossus 2（孟菲斯）约 111 万 H100 当量、领先 Stargate；Elon 称其他超算项目达不到目标，SpaceX 已在达成自己的——数字来自第三方帖，未经验证。",
+          "url": "https://x.com/elonmusk/status/2116991729660575998",
+          "time": "2026-11-02T04:32:14+08:00",
+          "interactions": [
+            {
+              "summary": "Rothmus：Colossus 2 ≈1.11M H100eq，称领先 OpenAI Stargate",
+              "url": "https://x.com/i/status/2116967150200193242"
+            }
+          ],
+          "metrics": {
+            "likes": 8050,
+            "reposts": 914,
+            "replies": 832,
+            "views": 1144576
+          }
+        },
+        {
+          "id": "elon-6",
+          "summary": "「Starlink saves lives」：引用英国坎布里亚营救——无移动信号时 Starlink 打通急救呼叫。",
+          "url": "https://x.com/elonmusk/status/2116963596462600249",
+          "time": "2026-11-02T02:40:27+08:00",
+          "interactions": [
+            {
+              "summary": "AmandaLovesElon：Cumbria 步行者坠黄蜂窝；Starlink 在无手机信号下接通救援",
+              "url": "https://x.com/i/status/2116885685743321273"
+            }
+          ],
+          "metrics": {
+            "likes": 8063,
+            "reposts": 974,
+            "replies": 1035,
+            "views": 1011665
+          }
+        },
+        {
+          "id": "elon-7",
+          "summary": "RT：称 Google Gemma 4 已在太空数据中心运行（Project Suncatcher）。属空间算力话题；帖文断言需独立核实，非 Elon 本人声明。",
+          "url": "https://x.com/elonmusk/status/2117040223477743684",
+          "time": "2026-11-02T07:44:56+08:00",
+          "interactions": [
+            {
+              "summary": "Saboo_Shubham_：Gemma 4 in space data center / Suncatcher",
+              "url": "https://x.com/i/status/2116740612372435274"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 79,
+            "replies": 0,
+            "views": 287651
+          }
+        },
+        {
+          "id": "elon-8",
+          "summary": "RT 社区作品：一句话 prompt 搭出 GrokBot 团队 live 3D 办公室看板，可看哪个 bot 吃用量、是否存活。",
+          "url": "https://x.com/elonmusk/status/2117042166321287411",
+          "time": "2026-11-02T07:52:39+08:00",
+          "interactions": [
+            {
+              "summary": "0xCodila：Introducing GrokBot's first live dashboard for agent teams",
+              "url": "https://x.com/i/status/2116960213206966317"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 57,
+            "replies": 0,
+            "views": 288607
+          }
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo（OpenAI · Codex & ChatGPT）",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "Day 28 收官：「Banked 2/2」——两档 banked 额度打卡攒满。社区解读 / 非官方定义：Banked n/m 是挑战期间可囤额度档位进度，不是周限当场回满；同日中文站大量「第二张重置卡到账」帖与之共振。",
+          "url": "https://x.com/thsottiaux/status/2117035794678546764",
+          "time": "2026-11-02T07:27:20+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 2504,
+            "reposts": 100,
+            "replies": 446,
+            "views": 114128
+          }
+        },
+        {
+          "id": "tibo-2",
+          "summary": "同日稍早打卡「Banked 1/2」（约 130 万曝光），开启最后一天攒额度叙事；晚间升到 2/2。回复区大量求 banked reset。",
+          "url": "https://x.com/thsottiaux/status/2116692529970311254",
+          "time": "2026-11-01T08:43:20+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 9753,
+            "reposts": 228,
+            "replies": 1601,
+            "views": 1295298
+          }
+        },
+        {
+          "id": "tibo-3",
+          "summary": "有人感慨 28 Days 结束后空虚；Tibo 回「I demand a banked reset」——用社区梗自嘲。社区解读 / 非官方定义：banked reset ≈ 可囤、稍后再兑的用量重置额度，不是自动回满周限。",
+          "url": "https://x.com/thsottiaux/status/2116942192497533418",
+          "time": "2026-11-02T01:15:24+08:00",
+          "interactions": [
+            {
+              "summary": "TokenGremlin：28 Days 结束感到空虚，问是否名副其实",
+              "url": "https://x.com/i/status/2116820985873571993"
+            }
+          ],
+          "metrics": {
+            "likes": 1801,
+            "reposts": 21,
+            "replies": 168,
+            "views": 91718
+          }
+        },
+        {
+          "id": "tibo-4",
+          "summary": "吐槽手机把「Dot」自动纠正成「dog」，导致收到的消息很滑稽；随后自接多条 dog 梗（speed dial / meeting notes / patched that bug）。与 poteto 同日 tibo.dog 游戏形成联动。",
+          "url": "https://x.com/thsottiaux/status/2116935650511585696",
+          "time": "2026-11-02T00:49:24+08:00",
+          "interactions": [
+            {
+              "summary": "自回：I love my dog, I have it on speed dial…",
+              "url": "https://x.com/thsottiaux/status/2116935821534380166"
+            },
+            {
+              "summary": "自回：My dog just patched that bug… Clever dog",
+              "url": "https://x.com/thsottiaux/status/2116936205623611781"
+            }
+          ],
+          "metrics": {
+            "likes": 3384,
+            "reposts": 45,
+            "replies": 583,
+            "views": 455897
+          }
+        },
+        {
+          "id": "tibo-5",
+          "summary": "回应 poteto 发 tibo.dog 并声明「并非策划」：开玩笑说「其实提前几个月一起策划也没关系」。",
+          "url": "https://x.com/thsottiaux/status/2117035666332954818",
+          "time": "2026-11-02T07:26:50+08:00",
+          "interactions": [
+            {
+              "summary": "poteto：i swear it was not planned lmao",
+              "url": "https://x.com/poteto/status/2117008219432538217"
+            }
+          ],
+          "metrics": {
+            "likes": 66,
+            "reposts": 0,
+            "replies": 7,
+            "views": 6009
+          }
+        },
+        {
+          "id": "tibo-6",
+          "summary": "回复 poteto 预告「明天有好玩的」：「Can't wait」——即随后上线的 tibo.dog。",
+          "url": "https://x.com/thsottiaux/status/2116692730877522349",
+          "time": "2026-11-01T08:44:07+08:00",
+          "interactions": [
+            {
+              "summary": "poteto 预告次日有好玩内容（跨窗引用链）",
+              "url": "https://x.com/poteto/status/2116662792631746861"
+            }
+          ],
+          "metrics": {
+            "likes": 705,
+            "reposts": 5,
+            "replies": 40,
+            "views": 73442
+          }
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "lauren（SpaceXSI · Grok Bot）",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "Day 28 发布 tibo.dog：自称 $5.99 买域名，用 Grok Bot + Cursor 制作，希望大家找彩蛋，并可在 X 帖内直接玩。约 5.5k 赞 / 28 万曝光。",
+          "url": "https://x.com/poteto/status/2117004709198475365",
+          "time": "2026-11-02T05:23:49+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 5475,
+            "reposts": 338,
+            "replies": 707,
+            "views": 286157
+          }
+        },
+        {
+          "id": "poteto-2",
+          "summary": "长帖 trivia：4 天侧项目约 1150 PR；问题写成 lint；TLA+ 验状态机；.hot.ts 禁分配保 60fps；自定义引擎+three.js；确定性回放防作弊；10 语言；无音频文件全实时合成；像素画全代码；X 卡内可玩；gzip≈124KB；bot 无头调难度；禁注释靠命名/测试。",
+          "url": "https://x.com/poteto/status/2117043478140276847",
+          "time": "2026-11-02T07:57:52+08:00",
+          "interactions": [
+            {
+              "summary": "线程接在 tibo.dog 发布帖下",
+              "url": "https://x.com/poteto/status/2117004709198475365"
+            }
+          ],
+          "metrics": {
+            "likes": 35,
+            "reposts": 0,
+            "replies": 6,
+            "views": 2894
+          }
+        },
+        {
+          "id": "poteto-3",
+          "summary": "引用 Tibo 的 Dot/dog 帖并贴出游戏链接，声明并非事先策划。",
+          "url": "https://x.com/poteto/status/2117007794536890391",
+          "time": "2026-11-02T05:36:04+08:00",
+          "interactions": [
+            {
+              "summary": "thsottiaux：Dot still autocorrects to dog…",
+              "url": "https://x.com/thsottiaux/status/2116935650511585696"
+            }
+          ],
+          "metrics": {
+            "likes": 444,
+            "reposts": 8,
+            "replies": 23,
+            "views": 25970
+          }
+        },
+        {
+          "id": "poteto-4",
+          "summary": "有人夸游戏完成度；poteto 透露用了 pstack。",
+          "url": "https://x.com/poteto/status/2117006144195764393",
+          "time": "2026-11-02T05:29:31+08:00",
+          "interactions": [
+            {
+              "summary": "aidenybai：惊叹游戏完成度",
+              "url": "https://x.com/i/status/2117006013299872080"
+            }
+          ],
+          "metrics": {
+            "likes": 383,
+            "reposts": 1,
+            "replies": 6,
+            "views": 27779
+          }
+        },
+        {
+          "id": "poteto-5",
+          "summary": "再次否认与 Tibo dog 梗联动是策划：「i swear it was not planned lmao」。",
+          "url": "https://x.com/poteto/status/2117008219432538217",
+          "time": "2026-11-02T05:37:46+08:00",
+          "interactions": [
+            {
+              "summary": "MyCrazyIdeal：指出域名在 Tibo dog 帖背景下更搞笑",
+              "url": "https://x.com/i/status/2117006941301948439"
+            }
+          ],
+          "metrics": {
+            "likes": 394,
+            "reposts": 1,
+            "replies": 8,
+            "views": 22813
+          }
+        },
+        {
+          "id": "poteto-6",
+          "summary": "RT：称 grokbot 在 always-on agents 里表现最佳。",
+          "url": "https://x.com/poteto/status/2116765695749066826",
+          "time": "2026-11-01T13:34:04+08:00",
+          "interactions": [
+            {
+              "summary": "frankdegods：grokbot definitely the best out of all the new always-on agents",
+              "url": "https://x.com/i/status/2116744367352271334"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 20,
+            "replies": 0,
+            "views": 3100
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+          "summary": "HackerTube 的书籍版：按 HN 提及书籍做索引。社区策展从视频扩到书单，窗口内高分高评——还是同一套「投票当推荐算法」思路。",
+          "url": "https://hackerbooks.org",
+          "discussion_url": "https://news.ycombinator.com/item?id=50326821",
+          "meta": "815 分 · 165 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+          "summary": "拆解显示「加密」指纹盘内部是未加密 SD；安全声明与硬件事实脱节，消费级加密外设信任危机再加一笔。",
+          "url": "https://news.ycombinator.com/item?id=50326099",
+          "discussion_url": "https://news.ycombinator.com/item?id=50326099",
+          "meta": "369 分 · 132 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+          "summary": "巴西法院处罚在诉讼材料中写入 prompt injection 的律师——司法 AI 审阅管线已成真实攻击面。",
+          "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50322173",
+          "meta": "313 分 · 197 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "The AI cost of JavaScript frameworks",
+          "summary": "比较主流 JS 框架在 AI/LLM 相关流程上的成本开销——框架选择开始多一维「喂给模型贵不贵」。",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50323088",
+          "meta": "284 分 · 223 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Mathematics has changed. Let's act like it",
+          "summary": "Terry Tao：数学实践已被计算与软件工具重塑，教育与研究应按新现实调整——不是「AI 会不会取代数学家」的鸡汤帖。",
+          "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50328251",
+          "meta": "201 分 · 213 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
+          "summary": "（2024）通过 RAM 无线电旁路从气隙机外泄密钥的研究再上热榜；物理隔离≠信息隔离的老课重温。",
+          "url": "https://arxiv.org/abs/2409.02292",
+          "discussion_url": "https://news.ycombinator.com/item?id=50322022",
+          "meta": "179 分 · 92 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Frontier Airlines Likely Breached",
+          "summary": "报道称 Frontier Airlines 疑似遭遇安全事件/数据泄露；细节仍在核实，评论串在拼时间线。",
+          "url": "https://news.ycombinator.com/item?id=50327266",
+          "discussion_url": "https://news.ycombinator.com/item?id=50327266",
+          "meta": "165 分 · 54 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+          "summary": "Minecraft 里 50 人规模 agent 群建设「文明」实验失败，陷入低效与官僚——多智能体协作的失败模式比成功 demo 更有信息量。",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+          "discussion_url": "https://news.ycombinator.com/item?id=50325662",
+          "meta": "144 分 · 64 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+          "summary": "Rust 实现的内容感知 Git diff 工具，强调速度；Show HN 工具贴。",
+          "url": "https://github.com/ivankovic/omnidiff",
+          "discussion_url": "https://news.ycombinator.com/item?id=50325253",
+          "meta": "140 分 · 38 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Seoul Viosys begins production of rare-earth-free white light emitter",
+          "summary": "Seoul Viosys 开始量产无稀土白色发光器件，照明/显示供应链少一环稀土依赖。",
+          "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
+          "discussion_url": "https://news.ycombinator.com/item?id=50327058",
+          "meta": "127 分 · 32 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+          "summary": "用 JEPA 等方法证明并改进「柏拉图表征假说」——不同模型表征趋同的理论与实证再推进。",
+          "url": "https://arxiv.org/abs/2610.39302",
+          "discussion_url": "https://news.ycombinator.com/item?id=50325454",
+          "meta": "101 分 · 56 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+          "summary": "Apollo 经济学家称多数企业从 AI 投入中几乎得不到财务回报——与「处处要上 AI」的销售叙事对撞。",
+          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50330456",
+          "meta": "76 分 · 52 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "HackerTube: YouTube built from videos recommended by HN",
+          "summary": "Karpathy 用 HN 推荐视频拼出 HackerTube；发于窗前但 front_page 残留超高分（2212），窗内持续讨论。",
+          "url": "https://karpathy.bearblog.dev/hacker-tube/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50319510",
+          "meta": "2212 分 · 532 评论 · 近窗热榜"
+        },
+        {
+          "id": "hn-14",
+          "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+          "summary": "Linux IPv4 TCP UAF 续热（发于窗前数小时）；运维侧仍应核对内核与发行版 advisory，别把 CVSS 9.8 当全网可打口令。",
+          "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+          "discussion_url": "https://news.ycombinator.com/item?id=50319143",
+          "meta": "698 分 · 324 评论 · 近窗热榜"
+        },
+        {
+          "id": "hn-15",
+          "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+          "summary": "5×Qwen3.8-27B 协作打过 Fable 5；发于窗前，窗内仍在热榜——多智能体编排 vs 单模型 SOTA 的对照实验。",
+          "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+          "discussion_url": "https://news.ycombinator.com/item?id=50320995",
+          "meta": "419 分 · 204 评论 · 近窗热榜"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Introducing Kwi, a new KDE terminal emulator",
+          "summary": "KDE 新终端模拟器 Kwi 发布，Lobsters 窗口内最高热——桌面终端赛道又多一个自家选项。",
+          "url": "https://blogs.kde.org/2026/11/01/introducing-kwi/",
+          "discussion_url": "https://lobste.rs/s/lt44rt/introducing_kwi_new_kde_terminal",
+          "meta": "98 分 · 25 评论 · linux"
+        },
+        {
+          "id": "lo-2",
+          "title": "An outsider's perspective on Scion and Mononoke",
+          "summary": "局外人视角评述 Scion 与 Mononoke（VCS 相关）的设计与生态——版本控制工具链的旁观者笔记。",
+          "url": "https://typesanitizer.com/blog/scion.html",
+          "discussion_url": "https://lobste.rs/s/s2qeww/outsider_s_perspective_on_scion_mononoke",
+          "meta": "47 分 · 5 评论 · vcs"
+        },
+        {
+          "id": "lo-3",
+          "title": "XKCD and Fourier",
+          "summary": "从 XKCD 切入讨论傅里叶相关数学直观，短而好读。",
+          "url": "https://leancrew.com/all-this/2026/10/xkcd-and-fourier/",
+          "discussion_url": "https://lobste.rs/s/mni8ri/xkcd_fourier",
+          "meta": "27 分 · 2 评论 · math"
+        },
+        {
+          "id": "lo-4",
+          "title": "Pratt parsing is a black box",
+          "summary": "拆解 Pratt parsing：常被当黑盒用，文中讲原理与实现要点，编译器/语言人向。",
+          "url": "https://vinipsmaker.github.io/blog/article/pratt-parsing-is-a-black-box/",
+          "discussion_url": "https://lobste.rs/s/bzazar/pratt_parsing_is_black_box",
+          "meta": "24 分 · 8 评论 · compilers, plt"
+        },
+        {
+          "id": "lo-5",
+          "title": "Work on GEFS (the Good Enough File System) for OpenBSD progresses",
+          "summary": "OpenBSD 上推进 GEFS（Good Enough File System）的工作笔记——务实命名的文件系统进展。",
+          "url": "https://www.undeadly.org/cgi?action=article;sid=20261101115637",
+          "discussion_url": "https://lobste.rs/s/zjjvbo/work_on_gefs_good_enough_file_system_for",
+          "meta": "17 分 · openbsd"
+        },
+        {
+          "id": "lo-6",
+          "title": "groff/troff macros: ms, mm, me or mom",
+          "summary": "比较 groff/troff 宏包 ms、mm、me、mom 的选用差异——排版老工具链仍有人认真用。",
+          "url": "https://www.stephenlindholm.com/groff_macros.html",
+          "discussion_url": "https://lobste.rs/s/dbwbvr/groff_troff_macros_ms_mm_me_mom",
+          "meta": "15 分 · unix"
+        },
+        {
+          "id": "lo-7",
+          "title": "Zig: From Beginner to Slightly Less Beginner",
+          "summary": "Zig 入门到略进阶的视频教程分享。",
+          "url": "https://www.youtube.com/watch?v=jWCQXBVIyrY",
+          "discussion_url": "https://lobste.rs/s/uhlnqx/zig_from_beginner_slightly_less_beginner",
+          "meta": "10 分 · video, zig"
+        },
+        {
+          "id": "lo-8",
+          "title": "Introduction to Programming in ATS",
+          "summary": "ATS 语言入门书讯——依赖类型/定理证明向 PLT 小路。",
+          "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
+          "discussion_url": "https://lobste.rs/s/oqj2zo/introduction_programming_ats",
+          "meta": "9 分 · 2 评论 · book, plt"
+        },
+        {
+          "id": "lo-9",
+          "title": "Non-Determinism and Overcount on Modern Hardware Performance Counter Implementations",
+          "summary": "现代硬件性能计数器上的非确定性与过计数问题（PDF）——perf 数字别太当真。",
+          "url": "https://web.eece.maine.edu/~vweaver/projects/deterministic/deterministic_counters.pdf",
+          "discussion_url": "https://lobste.rs/s/pswl6z/non_determinism_overcount_on_modern",
+          "meta": "9 分 · hardware, pdf, performance"
+        },
+        {
+          "id": "lo-10",
+          "title": "A Specialised Haskell Processor on FPGA",
+          "summary": "在 FPGA 上实现专用 Haskell 处理器的硬件实验。",
+          "url": "https://bathtub-01.github.io/technical/ouros-demo/",
+          "discussion_url": "https://lobste.rs/s/8o9wus/specialised_haskell_processor_on_fpga",
+          "meta": "7 分 · 1 评论 · hardware, haskell"
+        },
+        {
+          "id": "lo-11",
+          "title": "Beating the compiler at signed 32-bit division",
+          "summary": "Lemire：手工优化有符号 32 位除法，试图打过编译器生成的代码。",
+          "url": "https://lemire.me/blog/2026/10/31/beating-the-compiler-at-signed-32-bit-division/",
+          "discussion_url": "https://lobste.rs/s/ep5vsq/beating_compiler_at_signed_32_bit",
+          "meta": "7 分 · 2 评论 · compilers, performance"
+        },
+        {
+          "id": "lo-12",
+          "title": "Spooky C++",
+          "summary": "讨论「Spooky」风格/诡异的 C++ 代码陷阱。",
+          "url": "https://www.nablag.com/spooky_cpp",
+          "discussion_url": "https://lobste.rs/s/4yxx6f/spooky_c",
+          "meta": "6 分 · c++"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "恶心了， ChatGPT 要跟 Codex 共用额度了",
+          "summary": "用户反馈 ChatGPT 将与 Codex 共用额度，引发续费与用量策略讨论；同日 Linux.do 多帖截图印证。",
+          "url": "https://www.v2ex.com/t/1253511",
+          "meta": "36 回复 · openai"
+        },
+        {
+          "id": "v2-2",
+          "title": "[macOS] AbcTab：让 ⌘Tab 快得能跟上你的手 [送激活码]",
+          "summary": "macOS 工具加速 ⌘Tab 应用切换；作者送激活码，热榜高回复——效率工具帖。",
+          "url": "https://www.v2ex.com/t/1253484",
+          "meta": "110 回复 · create"
+        },
+        {
+          "id": "v2-3",
+          "title": "当没 token 额度了 你会手改 AI 生成的代码吗 😂",
+          "summary": "额度用尽后是否手改 AI 代码、手改成本有多高——与合并额度话题同一焦虑面。",
+          "url": "https://www.v2ex.com/t/1253543",
+          "meta": "35 回复 · programmer"
+        },
+        {
+          "id": "v2-4",
+          "title": "注册 claude 就弹 kyc",
+          "summary": "多人反馈注册 Claude 时触发 KYC；上期热议的延续，风控仍在收紧。",
+          "url": "https://www.v2ex.com/t/1253499",
+          "meta": "30 回复 · claude"
+        },
+        {
+          "id": "v2-5",
+          "title": "用 AI 逆向了搜狗输入法，让搜狗输入法(v16.10)完全断网 / 禁止更新 / 禁止广告 的一键脚本",
+          "summary": "作者用 AI 逆向搜狗 v16.10，分享断网/禁更新/禁广告脚本；随后引出开源输入法安利帖。",
+          "url": "https://www.v2ex.com/t/1253540",
+          "meta": "27 回复 · programmer"
+        },
+        {
+          "id": "v2-6",
+          "title": "Claude 邮箱登录，监听时间、使用的设备和所在位置",
+          "summary": "讨论 Claude 邮箱登录可见的时间/设备/位置信息——隐私与会话安全体感帖。",
+          "url": "https://www.v2ex.com/t/1253598",
+          "meta": "9 回复 · claude"
+        },
+        {
+          "id": "v2-7",
+          "title": "day 28 - 额度合并 怕你们不续费：）tibo 发重置卡了 banked 2/2",
+          "summary": "把 Tibo Day28 / banked 2/2 与额度合并叙事绑在一起的站内情报帖；回复少但时间戳贴窗末。",
+          "url": "https://www.v2ex.com/t/1253632",
+          "meta": "2 回复 · openai"
+        },
+        {
+          "id": "v2-8",
+          "title": "看到有人在站内分享逆向搜狗输入法，于是厚着脸皮推荐下自家的开源输入法：水杉输入法",
+          "summary": "借搜狗逆向热帖安利开源「水杉」输入法。",
+          "url": "https://www.v2ex.com/t/1253625",
+          "meta": "2 回复 · create"
+        },
+        {
+          "id": "v2-9",
+          "title": "做了一个网页旁的画布：收藏带来源，圈出细节交给 Codex / Claude Code",
+          "summary": "网页旁画布：收藏带来源，圈细节丢给 Codex / Claude Code——agent 辅助阅读/标注小工具。",
+          "url": "https://www.v2ex.com/t/1253627",
+          "meta": "0 回复 · create"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 开源中国 / Linux.do / NodeSeek",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "Google AI Mode 未给网站带来流量",
+          "summary": "Solidot：Reddit 财报侧面印证 Google AI Mode/Overviews 几乎不带站外点击，搜索引流下滑——SEO 流量分配再改写。",
+          "url": "https://www.solidot.org/story?sid=85767",
+          "meta": "Solidot · 2026-11-02"
+        },
+        {
+          "id": "cn-2",
+          "title": "数据中心抵消了过去 15 年美国的减排努力",
+          "summary": "Sierra Club 分析称数据中心电力需求可能抵消美国电力行业约 15 年减排；部分离网自备发电仍靠化石能源。",
+          "url": "https://www.solidot.org/story?sid=85766",
+          "meta": "Solidot · 2026-11-01"
+        },
+        {
+          "id": "cn-3",
+          "title": "NASA 征询拯救哈勃望远镜的方案",
+          "summary": "NASA 发 RFI 征询提升哈勃轨道/维护或受控再入；高度已降至约 470km，不干预或于 2030 年代中期坠落。",
+          "url": "https://www.solidot.org/story?sid=85765",
+          "meta": "Solidot · 2026-11-01"
+        },
+        {
+          "id": "cn-4",
+          "title": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准",
+          "summary": "开源 AI 划词工具 Magpie（拾趣）发版：划选翻译/解释/总结及图文 OCR；与 GitHub 高频 release 同线产品。",
+          "url": "https://www.oschina.net/news/503329",
+          "meta": "开源中国 · 2026-11-01"
+        },
+        {
+          "id": "cn-5",
+          "title": "收到GPT额度合并的通知了",
+          "summary": "Linux.do：用户收到 ChatGPT 与 Codex 额度合并通知；站内多帖同步讨论合并细则与重置卡。",
+          "url": "https://linux.do/t/topic/3106701",
+          "meta": "Linux.do · 25 帖 · 798 浏览"
+        },
+        {
+          "id": "cn-6",
+          "title": "gpt网页和codex真的要合并了，但是这是啥意思",
+          "summary": "截图讨论 GPT 网页与 Codex 额度/产品合并文案含义——合并叙事的「读通知」帖。",
+          "url": "https://linux.do/t/topic/3106228",
+          "meta": "Linux.do · 14 帖 · 789 浏览"
+        },
+        {
+          "id": "cn-7",
+          "title": "GPT 第二个重置卡已到账",
+          "summary": "用户反馈 OpenAI/Tibo 活动第二张用量重置卡到账（28 天节点）；与 X 上 Banked 2/2 同日。",
+          "url": "https://linux.do/t/topic/3106723",
+          "meta": "Linux.do · 10 帖 · 270 浏览"
+        },
+        {
+          "id": "cn-8",
+          "title": "dsv4.1-1017是否碾压glm5.3-flash",
+          "summary": "社区对比 DeepSeek-V4.1-1017 与 GLM-5.3-Flash 体感/基准——中文站模型横评日常。",
+          "url": "https://linux.do/t/topic/3105730",
+          "meta": "Linux.do · 47 帖 · 2007 浏览"
+        },
+        {
+          "id": "cn-9",
+          "title": "10MB 干翻Proxyman！开源全能网络请求抓包工具 ProxyCrab",
+          "summary": "开源抓包工具 ProxyCrab 推广：约 10MB，支持 HTTP/HTTPS/WebSocket；日榜高赞（创建略早于窗起点但持续热）。",
+          "url": "https://linux.do/t/topic/3104217",
+          "meta": "Linux.do · 38 帖 · 140 赞"
+        },
+        {
+          "id": "cn-10",
+          "title": "Airsnip 轻截 0.6.0 , 1MB的全功能截图软件",
+          "summary": "原创开源截图工具 Airsnip 0.6.0：宣称约 1MB 全功能；日榜持续热议。",
+          "url": "https://linux.do/t/topic/3103210",
+          "meta": "Linux.do · 92 帖 · 179 赞"
+        },
+        {
+          "id": "cn-11",
+          "title": "杀死比赛：fable5.5的鹈鹕",
+          "summary": "分享 Fable 5.5「鹈鹕」相关生成/竞技效果对比——对标社区热梗评测。",
+          "url": "https://linux.do/t/topic/3105994",
+          "meta": "Linux.do · 53 帖 · 2163 浏览"
+        },
+        {
+          "id": "cn-12",
+          "title": "Tibo 28-28 第二张重置卡到账 / gpt一下发了两张重置卡？",
+          "summary": "NodeSeek 情报向：Tibo 28 天节点第二张重置卡；另有帖观察「一下发了两张」。详情页常被 Cloudflare 拦截，链接来自 RSS/首页。",
+          "url": "https://www.nodeseek.com/post-1025235-1",
+          "meta": "NodeSeek · info（深链可能受限）"
+        },
+        {
+          "id": "cn-13",
+          "title": "今天的重置卡已发送，28 天结束，没有惊喜",
+          "summary": "用户记录 28 天活动重置卡已发、未见到新模型惊喜——与「banked 收官但无大招」体感一致。",
+          "url": "https://www.nodeseek.com/post-1025225-1",
+          "meta": "NodeSeek · daily（深链可能受限）"
+        }
+      ]
+    },
+    {
+      "id": "product_updates",
+      "source": "产品更新",
+      "items": [
+        {
+          "id": "prod-1",
+          "title": "Codex CLI 0.167.0-alpha.3（stable latest 仍 0.166.0）",
+          "summary": "窗内连发 rust-v0.167.0-alpha.2/3；相对 0.166.0 约 ahead 121 commits。编辑部看点：TUI inset 渲染会话、跨 backend 切 session、子代理选择器优先 pending approvals、Guardian 弹性预算与 context 上限、插件 app settings、可点击已查看图片路径。alpha 可尝鲜多后端会话与子代理审批；生产仍建议钉 npm latest 0.166.0。",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.3",
+          "meta": "0.167.0-alpha.3 · 2026-11-02 06:26+08"
+        },
+        {
+          "id": "prod-2",
+          "title": "omp (oh-my-pi) v18.15.0",
+          "summary": "GitHub + npm 同日发 18.15.0。修 Codex remote compaction/replay 误带 metadata、custom provider 丢 service_tier ultrafast、Vertex WIF ADC 刷 token 打错端点；usage 轮询 invalid_grant 不再直接踢 Anthropic OAuth。新增 Modular Cloud、SambaNova 前缀缓存、后台 shell 任务一句话 caption。对走 Codex/OpenAI 远程压缩与 Vertex 联邦身份的人，这版偏稳定性。",
+          "url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.15.0",
+          "meta": "v18.15.0 · 2026-11-01 22:17+08"
+        },
+        {
+          "id": "prod-3",
+          "title": "magpie v0.1.2504→v0.1.2660（约 156 发）",
+          "summary": "高频自动发布一日约 156 个 tag。代表性：统一 browser 工具、Codex session 闲置窗从约 5 分钟延到 1 小时、Cursor 插件 0.2.36（工具调用超时约 4 分钟→60 秒转交）、隐私遮盖不误伤代码同名标识、gateway/routing/relay 多项修复。不必逐 tag 升级，跟自更新即可。",
+          "url": "https://github.com/yetone/magpie/releases/tag/v0.1.2660",
+          "meta": "v0.1.2504→v0.1.2660 · 截至 2026-11-02 07:49+08"
+        },
+        {
+          "id": "prod-4",
+          "title": "CPA (CLIProxyAPI) v8.0.51（窗内 8.0.49→51）",
+          "summary": "三连发：可选可见 Codex commentary、按 api-key 连接池、Anthropic 余额 400 当支付问题、Codex 凭证隔离、无 refresh token 时停止 Codex 空转刷新；并加 Muse Code 头/namespace、Grok Imagine Video 1.5 Lite。代理 Codex 更不易假刷新空转；多 key 可配连接池。建议直接升到 v8.0.51。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.51",
+          "meta": "v8.0.51 · 2026-11-02 01:08+08"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "未抓取 Reddit（按用户设定）；sections 不含 reddit 分区。",
+    "Linux.do / NodeSeek：本机 curl 常被 Cloudflare 403；依赖 WebFetch。NodeSeek 详情页不稳定，摘要多基于标题+分类；深链可能打不开。",
+    "Solidot 窗内硬进仅约 3 条（AI Mode 流量、数据中心排放、哈勃 RFI）；未放宽到 10-30/10-31。",
+    "开源中国 HTML 精选（Ghostty 1.4、Zig 四月谈、Anthropic 面试、LLM 降价等）精确发布时间未确认（time_uncertain），本期未硬塞进 cn；RSS 确认窗内主要是 Magpie。",
+    "HN 近窗热榜 HackerTube(2212)、TCP UAF CVE-2026-98432(698)、Memdoor(419) 发布略早于 11-01 08:00，但仍在 front_page，按「窗口内持续讨论」收录并在 meta 标注。",
+    "Elon 窗内发帖极多；accounts 仅收 Grok Bot 成本/配额、日更、礼物、Colossus、Starlink、Gemma4 RT（第三方断言）、agent 看板等技术向。政治/文化高互动帖「This is what they stole from us」未进 accounts，仅作备注。",
+    "其余关注产品今日无新版本：Claude Code CLI / Claude Desktop / ChatGPT 客户端 / Tern / Sub2API。",
+    "中文社区广告/交易噪声（机场 AFF、出收 VPS）已尽量剔除，勿把推广帖当 highlights。",
+    "少数派 / IT之家本期未采。",
+    "无 open 的 rating/watch Issue 变更需汇总进本期。",
+    "按用户设定本期不做中文口播/TTS，无 audio 字段或音频文件。"
+  ],
+  "cover": "images/covers/2026-11-02.png"
+}
