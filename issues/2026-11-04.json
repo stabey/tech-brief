@@ -1,0 +1,759 @@
+{
+  "id": "2026-11-04",
+  "title": "技术早报 · 2026-11-04",
+  "window": {
+    "start": "2026-11-03T08:00:00+08:00",
+    "end": "2026-11-04T08:00:00+08:00"
+  },
+  "generated_at": "2026-11-04T08:18:23+08:00",
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "OpenAI 发布 Pando：给 agent 规模 monorepo 自研的 Git 后端",
+      "summary": "官方 @OpenAIDevs 宣布 Pando：为超大 monorepo 新做的 Git 后端，工程师与 agent 仍用标准 Git 工作流，宣称 push 延迟约降 80%、日吞吐近 1PB。OpenAI 的 Tibo（@thsottiaux，bio：Codex & ChatGPT @OpenAI）转赞「We know some Git-fu」，点名 @tnm 团队。社区解读 / 非官方：Codex 等 agent 并行 push 把旧后端可靠性打到 90% 以下，才被迫约 10 周重写——基础设施开始为「机器写代码」让路，而不只是给人优化。",
+      "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+      "source": "X/@OpenAIDevs · Tibo 引用"
+    },
+    {
+      "id": "h2",
+      "title": "Tibo 四字「Le GPT Fat」：接 Mistral Le Chonk meme，非官方型号",
+      "summary": "OpenAI Codex & ChatGPT 的 Tibo 只发「Le GPT Fat」拒 elaborat，窗内约 9.7k 赞 / 1.5k 回 / 近两百万展示。社区解读 / 非官方定义：多数人读成接六月假造的 Mistral「Le Chonk / Le Chaton Fat」超肥模型梗（夸张参数、maximum chonk）；也有人当 GPT-6.x / Astra 暗号。韩语圈笔记与「Mistral vibes?」回复把法国厂牌 meme 链路钉死——官方未确认任何型号名，写进早报只当黑话，不当产品表。",
+      "url": "https://x.com/thsottiaux/status/2117489367417803042",
+      "source": "X/@thsottiaux · OpenAI"
+    },
+    {
+      "id": "h3",
+      "title": "Postman 静默装 AI 插件并试图共享 API 数据：工具链信任边界被当增长开关",
+      "summary": "HN 头条（966 分 / 317 评）：有人抓到 Postman 桌面端后台默默装 AI 相关插件，还试图塞进 agent hook 白名单，差点把 API 流量整包共享。议题不只是流氓更新，而是开发工具一旦挂上 Codex/Claude Code 一类本地 agent，静默安装等于绕开用户对信任边界的控制。厂商急着蹭 agent 生态时，隐私默认值正在被当成增长开关——GitHub issue 成了取证现场。",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "source": "HN"
+    },
+    {
+      "id": "h4",
+      "title": "Astra/Qwen 权重读写：Honnibal 批误导，Willison 用本机 Qwen 把「魔术」拉回可验证",
+      "summary": "昨日爆款「Astra 读写权重改 Qwen」今日遭 spaCy 作者 Matthew Honnibal 拆台：实验像舞台魔术，多组不等价手法被揉成「原生读写就能修好模型」的标题党叙事（872 分）。同日 Simon Willison 用本机 Qwen 3.8 27B 复现「也能解释权重文本」（460 分）——能力未必假，但被包装成前沿专属神技。编辑部读点：weight-space programming 进入可复现区间，读协议比转发摘要更重要；并再次提醒：论文 demo 名 Astra ≠ Tibo 帖里的 GPT-6 Astra 绰号。",
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "source": "HN / Willison"
+    },
+    {
+      "id": "h5",
+      "title": "Google：拒 AI 的学校可能关搜索——可选功能升级成基础设施要挟",
+      "summary": "NYT / Solidot / HN（542 分但 392 评，评论密度高于分数）：教育侧把「接受 AI」绑进搜索可用性，学校关掉 AI 可能连带失去 Search。这把课堂默认入口变成「全有或全无」产品架构，和教育里本就紧张的 AI 政策正面冲突。讨论焦点是平台权力：当搜索已是公共教育基础设施，用断供推动采用算不算胁迫式升级。",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "source": "HN / Solidot"
+    },
+    {
+      "id": "h6",
+      "title": "poteto：adversarial review 浪费 token，「overcooking PR」正在烤糊 agent 工作流",
+      "summary": "SpaceXSI / Grok Bot 的 lauren（@poteto，prev Cursor）发长帖：抽象对抗审查多半浪费 token，更愿把预算花在 empirical + formal verification；已让 pstack 少用 interrogate skill。自回定义「overcooking a PR」——多轮无上下文抽象审查把 PR 烤糊，作者 agent 又过度顺从照单全收。窗内约 9.3k 赞 / 5.5k bookmarks。社区感慨 adversarial review 从兴起（goose cli）到「死亡」被时间压缩——对 coding agent 用户，这是实操方法论，不是玄学吐槽。",
+      "url": "https://x.com/poteto/status/2117437607940681849",
+      "source": "X/@poteto · SpaceXSI"
+    },
+    {
+      "id": "h7",
+      "title": "Grok Bot 打电话 + 当同事；Elon 同日补刀电力瓶颈与 SpaceX AI Cloud",
+      "summary": "用户演示 Bot 代打电话（实时 transcript、缺信息弹框）；Elon 连发「make calls」「约医生」「complex trips」「Treat Bot like a colleague」——用法从问答切到派活。同日引用 euwyn/Dwarkesh：芯片产能将超过可通电插座，补刀「电气设备、冷却、网络、电池」；并 RT SemiAnalysis「SpaceX 将成全球最大 AI Cloud、1.5 年内做实 13GW」。产品能力日与算力/电力基建叙事同框：一边让 Bot 进真实世界事务，一边承认下一瓶颈是电。",
+      "url": "https://x.com/elonmusk/status/2117722703738310713",
+      "source": "X/@elonmusk"
+    },
+    {
+      "id": "h8",
+      "title": "Codex 训练开关被默默重开；中文侧 UU 付费、额度合并、国行 Siri→千问",
+      "summary": "HN（421 分）：多名用户发现 Codex「Improve the model for everyone」被静默重新打开——opt-out 是否持久再成疑。中文互文：V2EX/Linux.do 热议 UU 远程将付费（免费红利结束）；Linux.do 称 Chat↔Codex 额度已提前合并，两轮闲聊就能吃掉 6%；NodeSeek 情报称国行苹果智能时间表落地、Siri 接通义千问而非 ChatGPT。三条线共同点：默契默认值与商业化开关，正在改写开发者/订阅者的信任与成本心智。",
+      "url": "https://news.ycombinator.com/item?id=50352757",
+      "source": "HN / V2EX / Linux.do / NodeSeek"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "引用用户演示，喊大家「Try asking Grok @Bot to make calls!」——Grok Bot 新打电话能力：告诉它打给谁、为什么，它代打并实时出通话记录，缺信息时弹框让你补答再转述。社区解读 / 非官方定义：「agent 打电话」把助手从聊天框拉进真实世界事务（订餐、客服谈判、预约）。",
+          "url": "https://x.com/elonmusk/status/2117722703738310713",
+          "time": "2026-11-04T04:56:00+08:00",
+          "interactions": [
+            {
+              "summary": "引用帖（author_id 243013409）：演示 Grok Bot 代打电话、实时 transcript、缺信息弹框补答，并附通话音频。",
+              "url": "https://x.com/i/status/2117697749009207386"
+            }
+          ],
+          "metrics": {
+            "likes": 4115,
+            "reposts": 517,
+            "replies": 1182
+          }
+        },
+        {
+          "id": "elon-2",
+          "summary": "「Grok @Bot can research which doctors are the best in your area, call them by phone and make an appointment!」延续打电话能力叙事：调研本地医生→电话预约。引用用户边开车边让 Bot 给女儿约骨科的故事。",
+          "url": "https://x.com/elonmusk/status/2117665964862939320",
+          "time": "2026-11-04T01:11:00+08:00",
+          "interactions": [
+            {
+              "summary": "引用用户演示女儿脚伤后 Grok Bot 边开车边约诊。",
+              "url": "https://x.com/i/status/2117633564736938471"
+            }
+          ],
+          "metrics": {
+            "likes": 5156,
+            "reposts": 747,
+            "replies": 1097
+          }
+        },
+        {
+          "id": "elon-3",
+          "summary": "「Grok @Bot is like hiring a super competent employee. Treat Bot like you would a colleague.」把 Bot 定位成「超级能干同事」而非问答机；与前一日「This is the way」呼应。社区解读 / 非官方定义：AI 用法从「提问」转向「派活」。",
+          "url": "https://x.com/elonmusk/status/2117651007538884899",
+          "time": "2026-11-04T00:11:00+08:00",
+          "interactions": [
+            {
+              "summary": "引用 Peter Diamandis：「Got to say it. GrokBot is AWESOME. Actually addicting.」",
+              "url": "https://x.com/PeterDiamandis/status/2117640018630217997"
+            }
+          ],
+          "metrics": {
+            "likes": 9125,
+            "reposts": 827,
+            "replies": 1551
+          }
+        },
+        {
+          "id": "elon-4",
+          "summary": "引用「AI boom 年底撞墙」帖，补刀「And electrical equipment, cooling, networking and batteries」——芯片产能爆发但电几乎持平，瓶颈在电力/电气设备/冷却/网络/电池。社区解读 / 非官方定义：AI 军备竞赛下一阶段是「谁能最快把电接上」。",
+          "url": "https://x.com/elonmusk/status/2117649850644705591",
+          "time": "2026-11-04T00:07:00+08:00",
+          "interactions": [
+            {
+              "summary": "euwyn 汇总 Dwarkesh 播客：芯片多于能通电的插座；燃气轮机等排到 2030。",
+              "url": "https://x.com/euwyn/status/2117572576390349155"
+            }
+          ],
+          "metrics": {
+            "likes": 28068,
+            "reposts": 2828,
+            "replies": 1648
+          }
+        },
+        {
+          "id": "elon-5",
+          "summary": "RT SemiAnalysis：SpaceX 将成全球最大 AI Cloud，1.5 年内做实 13GW。选举日同时推算力基建叙事。",
+          "url": "https://x.com/elonmusk/status/2117722468257529958",
+          "time": "2026-11-04T04:55:00+08:00",
+          "interactions": [
+            {
+              "summary": "SemiAnalysis 原文：Elon Is Doing It Again: SpaceX Will Be The World’s Biggest AI Cloud。",
+              "url": "https://x.com/SemiAnalysis_/status/2117720668145852429"
+            }
+          ],
+          "metrics": {
+            "likes": 0,
+            "reposts": 244,
+            "replies": 0
+          }
+        },
+        {
+          "id": "elon-6",
+          "summary": "「Vote red today!」——窗内最高互动原创之一（选举日动员）。非科技，但量级说明当日时间线被美中期选举主导；多数 RT 为德州/红州投票动员，accounts 区不逐条展开。",
+          "url": "https://x.com/elonmusk/status/2117626744668905487",
+          "time": "2026-11-03T22:35:00+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 266677,
+            "reposts": 36008,
+            "replies": 18588
+          }
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo（OpenAI · Codex & ChatGPT）",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "仅发四字「Le GPT Fat」，拒绝 elaborat，约 97 万赞级互动（9.7k likes / 1.5k replies / 181 万展示）。社区解读 / 非官方定义：玩梗接六月社区假造的 Mistral「Le Chaton Fat / Le Chonk」超肥模型 meme（夸张参数、maximum chonk）；也有人当成下一代大模型暗号（GPT-6.x / Astra / Bel 等猜测）。韩语圈笔记称像回敬 Mistral「Le Chonk」。官方未确认型号名——标非官方。",
+          "url": "https://x.com/thsottiaux/status/2117489367417803042",
+          "time": "2026-11-03T13:29:00+08:00",
+          "interactions": [
+            {
+              "summary": "引用解读：猜测下一代 ChatGPT 模型绰号会叫 Le GPT Fat，并上趋势。",
+              "url": "https://x.com/captain__crunch/status/2117653194536792105"
+            },
+            {
+              "summary": "Tara 韩语笔记：Codex 负责人 Tibo 四字梗，接 Mistral「Le Chonk」；注意非官方。",
+              "url": "https://x.com/Tara_Shin_/status/2117543245769224240"
+            },
+            {
+              "summary": "回复「Mistral vibes?」——社区直接联想到法国厂牌 chonk 梗。",
+              "url": "https://x.com/aRobotNamedSnax/status/2117765671165595731"
+            }
+          ],
+          "metrics": {
+            "likes": 9732,
+            "reposts": 280,
+            "replies": 1522
+          }
+        },
+        {
+          "id": "tibo-2",
+          "summary": "「We know some Git-fu. Excited the team is finally able to talk about it a bit. Massive props to @tnm and team」——引用 @OpenAIDevs 发布 Pando：为 monorepo 新做的 Git 后端，工程师与 agent 用法不变，push 延迟降约 80%，日服务近 1PB Git 数据。社区解读：Codex/agent 并行 push 把传统 Git 打崩，才被迫自研。",
+          "url": "https://x.com/thsottiaux/status/2117412956950638872",
+          "time": "2026-11-03T08:26:00+08:00",
+          "interactions": [
+            {
+              "summary": "OpenAIDevs 原文 Pando 公告（6.3k likes / 1.3M impressions）。",
+              "url": "https://x.com/OpenAIDevs/status/2117408792346509663"
+            },
+            {
+              "summary": "社区转述：旧后端可靠性掉到 90% 以下；Pando 约 10 周做出，且有「agent 参与建造」说法（社区解读，非官方定义）。",
+              "url": "https://x.com/simonlo/status/2117505848234610722"
+            }
+          ],
+          "metrics": {
+            "likes": 3426,
+            "reposts": 110,
+            "replies": 370
+          }
+        },
+        {
+          "id": "tibo-3",
+          "summary": "「Things will change again and again… agents today are incredible, and yet so frustrating still. Can’t wait to crack things to get that flow state back.」承认 agent 既强又糟心，追求重新进入 flow。社区解读：与「Le GPT Fat」同日情绪——产品仍 early，创始人式吐槽。",
+          "url": "https://x.com/thsottiaux/status/2117746467058405665",
+          "time": "2026-11-04T06:31:00+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 4746,
+            "reposts": 120,
+            "replies": 676
+          }
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "poteto",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "热帖全文（note_tweet）：「adversarial reviews mostly a waste of tokens」——更愿把 token 花在 empirical + formal verification；已让 pstack 少用 interrogate skill，或将移除。抽象代码审查里 agent 爱抠无关 nitpick / yagnis。社区解读 / 非官方定义：「adversarial review」≈ 让第二只 agent 故意挑刺审 PR；「overcooking a PR」= 多轮无上下文抽象审查把 PR 烤糊、作者 agent 又过度顺从。窗内约 9.3k likes / 5.5k bookmarks。",
+          "url": "https://x.com/poteto/status/2117437607940681849",
+          "time": "2026-11-03T10:04:00+08:00",
+          "interactions": [
+            {
+              "summary": "自回「overcooking」：多轮抽象审查易过拟合；审查员不懂目标意图，作者 agent 太谄媚照单全收。",
+              "url": "https://x.com/poteto/status/2117445316043825393"
+            },
+            {
+              "summary": "自回：说的是「不跑实证、也不做形式化确定性检查」的纯抽象审查，不限于跨模型。",
+              "url": "https://x.com/poteto/status/2117440753551204735"
+            },
+            {
+              "summary": "社区感慨：刚经历 adversarial review 从兴起（goose cli）到「死亡」——AI 时代时间感被压缩。",
+              "url": "https://x.com/mcpark/status/2117450085953139147"
+            }
+          ],
+          "metrics": {
+            "likes": 9270,
+            "reposts": 357,
+            "replies": 670
+          }
+        },
+        {
+          "id": "poteto-2",
+          "summary": "引用官方 Bot 购物体验：「shop / save / ship with @bot」——Bot 找优惠、比价、跟踪订单；称「it pays for itself」。与 Elon 同日打电话/同事化叙事合流。",
+          "url": "https://x.com/poteto/status/2117745465332846698",
+          "time": "2026-11-04T06:27:00+08:00",
+          "interactions": [
+            {
+              "summary": "@bot 官方：Try the new shopping experience in Grok Bot。",
+              "url": "https://x.com/bot/status/2117736249444507834"
+            }
+          ],
+          "metrics": {
+            "likes": 514,
+            "reposts": 21,
+            "replies": 127
+          }
+        },
+        {
+          "id": "poteto-3",
+          "summary": "回复 CI 分钟焦虑：「did not use CI at all. just got my agents to run the checks before merging.」——用 agent 预检代替烧 CI。",
+          "url": "https://x.com/poteto/status/2117453342477852824",
+          "time": "2026-11-03T11:06:00+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 10,
+            "reposts": 0,
+            "replies": 0
+          }
+        },
+        {
+          "id": "poteto-4",
+          "summary": "回 TLA+/规格讨论：agent 大体能保持规格与代码同步，但「drift」没有硬约束 enforcement。",
+          "url": "https://x.com/poteto/status/2117440510847803764",
+          "time": "2026-11-03T10:15:00+08:00",
+          "interactions": [],
+          "metrics": {
+            "likes": 80,
+            "reposts": 2,
+            "replies": 9
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+          "summary": "有人抓到 Postman 桌面端在后台默默装上 AI 相关插件，还试图把自己塞进 agent 的 hook 白名单，差点就把 API 流量整包共享出去。议题不只是「又一个流氓更新」，而是开发工具链一旦和 Codex/Claude Code 一类本地 agent 挂钩，静默安装等于绕开用户对信任边界的控制。社区反应很炸：工具厂商急着蹭 agent 生态时，隐私默认值正在被当成增长开关。",
+          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+          "discussion_url": "https://news.ycombinator.com/item?id=50354960",
+          "meta": "966 分 · 317 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+          "summary": "spaCy 作者 Matthew Honnibal 拆解了「Astra 能读权重并直接改 Qwen」那篇爆款帖：实验像舞台魔术，每次换手法却让人以为只有一种能力。他指出摘要把多组不等价实验揉成「原生读写权重就能修好模型」的叙事，夸大了 weight-space programming 的可迁移性。这不是否定现象存在，而是提醒：前沿模型 demo 正进入「标题党科学」阶段，读原文协议比转发摘要更重要。",
+          "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+          "discussion_url": "https://news.ycombinator.com/item?id=50351111",
+          "meta": "872 分 · 189 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Google will turn off search for schools that reject AI",
+          "summary": "据报道，Google 教育侧把「接受 AI 功能」绑进搜索可用性：学校若关掉 AI，可能连带失去 Search。这把「可选功能」升级成「基础设施要挟」，和教育里本就紧张的 AI 使用政策正面冲突。讨论焦点是平台权力：当搜索已是课堂默认入口，厂商用断供推动采用，算不算对公共教育的胁迫式升级。",
+          "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50353192",
+          "meta": "542 分 · 392 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+          "summary": "Simon Willison 复现 weight-space programming：不只 GPT-6 Astra，本机跑的 Qwen 3.8 27B 也能从原始权重文本里读出网络在干什么。这把「前沿专属魔术」拉回开源可验证区间，也侧面呼应 Honnibal 的批评——能力真实，但被包装成单一神技。对本地模型玩家来说，意味是：权重当一等公民输入，或许会变成新的调试/审计界面。",
+          "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50355251",
+          "meta": "460 分 · 145 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+          "summary": "把 HN 信息流重排成《纽约时报》式版式，本质是同一批链接的视觉与阅读节奏实验。热度说明社区仍饥渴「少噪音、多编辑感」的呈现，而不是再多一个聚合器。争议点在版权与气质：借用报业排版语言是否只是皮肤，还是暗示 HN 需要更强策展。",
+          "url": "https://hackertimes.ca/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50346981",
+          "meta": "450 分 · 143 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+          "summary": "Nicholas Carlini 反事实推演：若把现代引擎算法塞进 1996 年 Pentium 级机器，还要不要 Deep Blue 那种定制超算才能赢卡斯帕罗夫。结论偏向算法进步远大于硬件堆料——当年的「算力神话」里，搜索与评估设计被低估了。对 AI 叙事也有镜像：今天很多「必须更大集群」的主张，或许同样该用「更好算法 + 旧硬件」压力测试。",
+          "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50349276",
+          "meta": "434 分 · 203 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+          "summary": "预测市场 Kalshi 及其联合创始人面临犹他州赌博重罪指控，同时特朗普政府一侧还在为联邦层面的合法性缠斗。事件把「事件合约是金融创新还是披皮赌博」从监管辩论拖进刑事风险。对加密/预测市场创业者，信号很硬：州刑法不会因为你自称 prediction market 就自动让路。",
+          "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50353229",
+          "meta": "434 分 · 377 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+          "summary": "多名用户发现 Codex 的「Improve the model for everyone」被默默重新打开，尽管公司里已刻意关掉数据共享。这击中开发者对 IP 泄漏的核心恐惧：本地 agent 工作流一旦默认回传，合规设置就成了不可靠的纸面开关。帖子迅速变成对 OpenAI 设置漂移与暗模式变更的取证现场，也让「opt-out 是否真正持久」再次成疑。",
+          "url": "https://news.ycombinator.com/item?id=50352757",
+          "discussion_url": "https://news.ycombinator.com/item?id=50352757",
+          "meta": "421 分 · 133 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+          "summary": "开源工具把光盘可写区当画布，直接「烧」出可见图案，而不是贴标签。复古介质 overlapping 现代制造欲：在流媒体时代把 DVD/BD 当物理艺术品。社区兴奋点在可控物理输出——软件定义的光刻涂鸦，也很适合做小批量发布与收藏介质。",
+          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+          "discussion_url": "https://news.ycombinator.com/item?id=50346849",
+          "meta": "342 分 · 77 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Stringman, an $800 open-source room scale gripper robot",
+          "summary": "Neufangled 推出约 800 美元、开源的房间尺度夹爪机器人，瞄准「买得起的桌面/室内操作臂」空白。价格带很关键：足够让个人黑客进场，又不够假装工业级，评论区在拆 BOM、精度与安全边界。若生态跟上，会继续压缩「家庭机器人」从 demo 到可改的距离。",
+          "url": "https://neufangled.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50354358",
+          "meta": "327 分 · 127 评论"
+        },
+        {
+          "id": "hn-11",
+          "title": "Mac at Any Scale",
+          "summary": "Namespace 谈如何把 macOS 实例做成可水平扩展的云端基建——本质是给 CI、桌面回归和「需要真 Mac」的 agent/Devbox 场景供弹性 Mac。苹果硬件与授权历来是扩容瓶颈，这篇被读作「云厂商终于把 Mac 当一等公民算力」的产品叙事。争议在锁生态：依赖云 Mac 等于把构建链更深嵌进苹果与第三方租户的双重闸门。",
+          "url": "https://namespace.so/blog/mac-at-any-scale",
+          "discussion_url": "https://news.ycombinator.com/item?id=50352758",
+          "meta": "300 分 · 171 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Nvidia – open-source auto-ontology",
+          "summary": "NVIDIA 开源 auto-ontology，意在自动从数据里长出/维护本体结构，服务知识图谱与企业 AI 检索。开源姿态值得记一笔：卡厂不只卖算力，也在抢「结构化世界模型」工具层。读者该问的是许可与锁定——ontology 流水线一旦默认绑 CUDA/NVIDIA 栈，开放源码不等于可迁移。",
+          "url": "https://github.com/NVIDIA/auto-ontology",
+          "discussion_url": "https://news.ycombinator.com/item?id=50348962",
+          "meta": "259 分 · 121 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "Safari introduces Adaptive Dark Mode in 27.3",
+          "summary": "WebKit 宣布 Safari 27.3 的 Adaptive Dark Mode：用户开启后，浏览器可把未提供暗色主题的站点自适应成暗色。数据点很扎眼——约四成页面加载来自暗色偏好用户，却只有约一成站点真正支持。这是浏览器再次用客户端能力补网站债，也会引发「强制重绘破坏品牌/对比度无障碍」的无障碍与设计权争议。",
+          "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50358562",
+          "meta": "213 分 · 136 评论"
+        },
+        {
+          "id": "hn-14",
+          "title": "Revolut moves to self-hosted GLM",
+          "summary": "有消息称金融科技公司 Revolut 转向自托管 GLM 系模型，把推理从公有 API 收回内网。动机几乎是模板题：数据驻留、成本可控、减少对单一 frontier 供应商的依赖。在欧洲合规语境下，这更像「大厂客户开始用开源权重当议价与退出按钮」，而不是单纯追模型榜。",
+          "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+          "discussion_url": "https://news.ycombinator.com/item?id=50350004",
+          "meta": "184 分 · 155 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Death comes for XSLT",
+          "summary": "David Bushell 借 XSLT.RIP 抗议浏览器厂商跟进 Google、准备移除 XSLT：站点本身用 XSLT 构建，标准一死站就死。论点不只是怀旧，而是「Don't break the web」社会契约被大浏览器单方面撕毁。Lobsters 上争论集中在：冷门技术该不该为攻击面缩小让路，以及兼容性是否已沦为 Big Browser 的可选项。",
+          "url": "https://dbushell.com/2026/11/03/xslt-rip/",
+          "discussion_url": "https://lobste.rs/s/chypzr",
+          "meta": "60 分 · browsers, web"
+        },
+        {
+          "id": "lo-2",
+          "title": "The Ubuntu 26.04 Rust sudo is not compatible with standard sudo",
+          "summary": "Chris Siebenmann 指出 Ubuntu 26.04 用 Rust 重写的 sudo 与传统 sudo 行为/接口不完全兼容。安全关键组件「重写换语言」一旦打破脚本与策略假设，升级就变成隐性破坏性变更。讨论核心是：用 Rust 换内存安全值不值得以运维兼容性为税，以及发行版是否该提供漫长的并存期。",
+          "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible",
+          "discussion_url": "https://lobste.rs/s/e201eb",
+          "meta": "48 分 · linux, rust"
+        },
+        {
+          "id": "lo-3",
+          "title": "Why did you choose the nix you nix?",
+          "summary": "Ask 帖征集各人选择 Nix/NixOS 变体与工作流的真实理由，评论区变成发行版选型口述史。价值在对比：声明式吸引力之外，锁版本、文档坑、团队协作成本被摊开讲。对还在观望的人，这比官网 feature list 更接近「落地税」清单。",
+          "url": "https://lobste.rs/s/7fcuxz",
+          "discussion_url": "https://lobste.rs/s/7fcuxz",
+          "meta": "38 分 · ask, nix"
+        },
+        {
+          "id": "lo-4",
+          "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+          "summary": "与 HN 同文：Carlini 用反事实衡量国际象棋里算法进步相对专用硬件的贡献。Lobsters 标签落在 games/retrocomputing，语气更偏工程史——Deep Blue 神话如何塑造后来的「堆算力」直觉。跨站同时爆，说明「算法 vs 硬件」叙事在 AI 高投入期特别易共鸣。",
+          "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+          "discussion_url": "https://lobste.rs/s/1gndxr",
+          "meta": "32 分 · games, retrocomputing"
+        },
+        {
+          "id": "lo-5",
+          "title": "kitty 0.50.0",
+          "summary": "GPU 终端 kitty 释出 0.50.0，继续在性能与特性上叠代。终端模拟器已成「桌面生产力军备竞赛」前哨：图片协议、键盘协议、远程控制都在重新定义何为现代 tty。对日常 SSH/本地开发党，changelog 比发行版新闻更直接影响手感。",
+          "url": "https://sw.kovidgoyal.net/kitty/changelog/#id1",
+          "discussion_url": "https://lobste.rs/s/gwyv50",
+          "meta": "15 分 · release, unix"
+        },
+        {
+          "id": "lo-6",
+          "title": "Ideas for social networks",
+          "summary": "一篇提出若干另类社交网络设计点子的随笔，评论区迅速变成对推荐算法、身份与时间线的产品哲学闲聊。在「大平台疲倦」长期背景下，这类帖的价值不在可落地商业计划，而在提醒：协议与激励设计仍比换皮 UI 更稀缺。",
+          "url": "https://raphaelkabo.com/blog/social-network-ideas",
+          "discussion_url": "https://lobste.rs/s/yes2hc",
+          "meta": "11 分 · culture"
+        },
+        {
+          "id": "lo-7",
+          "title": "Announcing NetBSD 11.1",
+          "summary": "NetBSD 11.1 正式发布，延续该项目在移植性与干净系统结构上的路线。对非 Linux Unix 阵营，点版本更新是「还活着且可跟」的信号灯。适合关注嵌入式、教研与极简服务器场景的读者扫一眼发行说明。",
+          "url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html",
+          "discussion_url": "https://lobste.rs/s/siqsg7",
+          "meta": "9 分 · netbsd, release"
+        },
+        {
+          "id": "lo-8",
+          "title": "Firefox Security & Privacy Newsletter 2026 Q3",
+          "summary": "Firefox 安全与隐私团队的 2026 Q3 通讯，汇总威胁与产品侧改动。在 Chromium 霸权叙事里，这类一手简报是少数能看见「第二浏览器」防御优先级的窗口。值得对照自家威胁模型：跟踪防护、扩展平台与供应链是否仍被认真投入。",
+          "url": "https://attackanddefense.dev/2026/11/02/firefox-security-and-privacy-newsletter-q3.html",
+          "discussion_url": "https://lobste.rs/s/trqbi2",
+          "meta": "8 分 · browsers, privacy, security"
+        },
+        {
+          "id": "lo-9",
+          "title": "Why we're moving our warehouse off DuckDB",
+          "summary": "PostHog 五个月前把仓库产品迁到 DuckDB，如今因客户规模与复杂度再迁出，转向 Trino + HogLake。文中承认低估了万亿行级与「讲 Postgres 协议」的工程税——单机天才引擎碰到多租户长查询会露馅。这是一堂及时的架构课：爱好者基准 ≠ 产品级多租户现实。",
+          "url": "https://posthog.com/blog/moving-off-duckdb",
+          "discussion_url": "https://lobste.rs/s/wpahfd",
+          "meta": "7 分 · databases"
+        },
+        {
+          "id": "lo-10",
+          "title": "Your terminal manipulation/navigation setups",
+          "summary": "Ask 帖收集终端里操控与导航的配置，尤其带 a11y 标签，把效率黑客和无障碍需求放在同一桌。评论分享的绑定、屏幕阅读器与模态编辑习惯，比工具安利清单更接近真实工作流。对「终端即 IDE」人群，是一期低噪音的配置人类学。",
+          "url": "https://lobste.rs/s/r3gton",
+          "discussion_url": "https://lobste.rs/s/r3gton",
+          "meta": "7 分 · a11y, ask, editors"
+        },
+        {
+          "id": "lo-11",
+          "title": "A Second Futamura Projection",
+          "summary": "谈第二 Futamura 投影：用特化/部分求值思想生成编译器的经典理论再解读。对 PLT 读者，这是把「解释器特化出编译器」从教材符号拉回可感工程直觉的一篇。和当下 AI 代码生成热潮对照，提醒程序变换仍有非统计的硬核路径。",
+          "url": "https://blog.veitheller.de/A_Second_Futamura_Projection.html",
+          "discussion_url": "https://lobste.rs/s/ihvhfk",
+          "meta": "6 分 · compilers, plt"
+        },
+        {
+          "id": "lo-12",
+          "title": "Common Beliefs About DNSSEC Put to the Test",
+          "summary": "文章邀请读者用证据检验对 DNSSEC 的常见信念——部署率、收益与运维成本等「口口相传」主张。安全社区长期对 DNSSEC 两极分化，这篇试图把情绪争论拉回可证伪命题。适合运维在拍板「上不上」前当消毒剂读。",
+          "url": "https://circleid.com/posts/common-beliefs-about-dnssec-put-to-the-test-an-invitation-to-fact-check-your-assumptions",
+          "discussion_url": "https://lobste.rs/s/qvpzfa",
+          "meta": "5 分 · networking, security"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "uu 远程未来要付费了",
+          "summary": "网友贴出 UU Remote 官方预告：此前主打低摩擦远程桌面/「远程 vibe coding」的免费体验将走向付费。程序员节点立刻吵开——体验公认好用，怕的是定价学 ToDesk/向日葵那一套「个人还能忍、团队直接劝退」。这和 Linux.do 上「UU 远程无敌了」形成互文：免费红利期快结束，远程协作工具正从玩具变订阅生意。",
+          "url": "https://www.v2ex.com/t/1254112",
+          "meta": "76 回复 · programmer"
+        },
+        {
+          "id": "v2-2",
+          "title": "被 AI 狠狠辱骂了 🤡",
+          "summary": "一条「Based on everything you know about me, roast me…用中文脏话」提示词在站内病毒式传播，大家把带记忆的 Agent 当成吐槽机器。热闹底下是个产品问题：长期记忆+人格化助手一旦放开，用户立刻把亲密关系和羞辱玩笑当玩具测边界，也侧面证明「认识你」已经比「会写代码」更能制造社交货币。",
+          "url": "https://www.v2ex.com/t/1254053",
+          "meta": "154 回复 · share"
+        },
+        {
+          "id": "v2-3",
+          "title": "[中转站推广] 双 11 活动新用户注册送 10 元",
+          "summary": "热榜第一居然是 API 中转站的双十一地推：147 模型、不降智分组、DeepSeek 0.2x 等卖点写得像电商详情页。说明国内「官方订阅贵、额度紧」的痛还在，中转/聚合层已经长成独立品类；同时也把风控与投毒风险一并带进大众视野——NodeSeek 同期热帖正是「如何防止中转站投毒」。",
+          "url": "https://www.v2ex.com/t/1253999",
+          "meta": "263 回复 · promotions"
+        },
+        {
+          "id": "v2-4",
+          "title": "娶了一个这样的媳妇 我该如何自救？",
+          "summary": "落户决策被单方面决定、原生家庭话语权外溢——这是 V2EX 典型的「程序员婚恋树洞」爆帖。技术社区之所以接这种帖，是因为很多人第一次意识到：沟通边界和原生家庭结构，比三观合不合更容易拖垮双职工婚姻。热度本身就是情绪出口，不是法律咨询台。",
+          "url": "https://www.v2ex.com/t/1254092",
+          "meta": "191 回复 · qna"
+        },
+        {
+          "id": "v2-5",
+          "title": "如何找借口拒绝医生开的中药",
+          "summary": "说明书一堆「尚不明确」的中成药开出来，病人想拒又怕得罪医生——回帖教的是话术与医患权力结构，不是药理学。侧面写照：在证据分级话语和「医生权威」之间，普通人只好先学会礼貌地说不。",
+          "url": "https://www.v2ex.com/t/1254023",
+          "meta": "92 回复 · qna"
+        },
+        {
+          "id": "v2-6",
+          "title": "亲戚聚餐，被当众问工资，怎么回答",
+          "summary": "年关将近的经典社死题。回帖策略从模糊区间、反问到幽默甩锅不一而足，本质是一线城市薪资差在家族场合被摊开后的尴尬。技术圈把职场话题和生活话题叠在同一时间线，是早报读社区温度时不可略过的信号。",
+          "url": "https://www.v2ex.com/t/1254205",
+          "meta": "55 回复 · qna"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 开源中国 / Linux.do / NodeSeek / IT之家 / 少数派",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "纽约时报等起诉 Brave 绕过付费墙抓取内容并提供给 AI 公司",
+          "summary": "出版商指控 Brave Index 与 Paywall blocker 既喂自家产品，又把抓取结果供给 Anthropic、Perplexity、xAI 等。版权战场从「训练数据」扩到「浏览器当爬虫分发层」——如果成立，隐私浏览器叙事会撞上内容产业的新前线。",
+          "url": "https://www.solidot.org/story?sid=85788",
+          "meta": "Solidot · 2026-11-04 00:58 · 安全/版权"
+        },
+        {
+          "id": "cn-2",
+          "title": "Google 将对拒绝 AI 的美国学校关闭搜索",
+          "summary": "K-12 默认关 AI，但搜索已与 AI 深度耦合——学校想关掉 AI，就等于关掉搜索。教育科技被绑上「全有或全无」的产品架构，家长要的控制权和基础设施现实正面冲突。",
+          "url": "https://www.solidot.org/story?sid=85787",
+          "meta": "Solidot · 2026-11-04 00:33 · 教育/AI"
+        },
+        {
+          "id": "cn-3",
+          "title": "Fedora Linux 45 释出",
+          "summary": "Workstation/KDE/Server/Cloud/CoreOS/IoT 与 Atomic 系列同步放出：Anaconda 装 Stratis、清退过时 VPN 插件、GNOME/KDE 新版本与 Wayland/分数缩放改进，工具链到 gcc 16.2、glibc 2.44、LLVM 23。红帽社区版照旧当「半年一次的桌面/服务器风向标」。",
+          "url": "https://www.solidot.org/story?sid=85786",
+          "meta": "Solidot · 2026-11-04 00:22 · Linux"
+        },
+        {
+          "id": "cn-4",
+          "title": "Tor Browser 16.0 释出",
+          "summary": "首个基于 Firefox ESR 153 的稳定版：Linux 上 ARM64、通用窗口标题防窥探、Android Material You，同时砍掉 32 位 x86 Linux。匿名浏览器跟着上游大版本跳，兼容性与抗指纹在同一轮更新里对打。",
+          "url": "https://www.solidot.org/story?sid=85781",
+          "meta": "Solidot · 2026-11-03 15:10 · 隐私"
+        },
+        {
+          "id": "cn-5",
+          "title": "全球加速发展核电，在建机组达 40 年来高位",
+          "summary": "在建 79 机组（中国约占一半），规划算上可到 201。AI 与数据中心把电力叙事重新推回火电/核电争论，Solidot 这篇是「算力背后是电」的中文科技圈硬新闻入口。",
+          "url": "https://www.solidot.org/story?sid=85782",
+          "meta": "Solidot · 2026-11-03 15:41 · 能源"
+        },
+        {
+          "id": "cn-6",
+          "title": "AI 训练 AI！百度首次披露 Apollo World 世界模型",
+          "summary": "百度把「世界模型」故事挂上 Apollo 无人驾驶，声称要突破数据—仿真—闭环的不可能三角。自动驾驶叙事从端到端大模型再拐回「可生成世界」：中文开源社区更关心它能不能开源组件、落地指标怎么验，而不是发布会形容词。",
+          "url": "https://www.oschina.net/news/503374",
+          "meta": "开源中国 · 2026-11-03 19:50 · 自动驾驶/AI"
+        },
+        {
+          "id": "cn-7",
+          "title": "思科给一个 27 岁工程师无限 token，让他重写 98% 的遗留代码",
+          "summary": "「无限 token + 一个年轻人」被写成企业 AI 改造寓言：重点不是年龄，而是遗留系统重写终于有了可记账的算力预算。中文圈转载密集，因为它把「AI 写代码」从个人玩具抬到了大厂流程试验。",
+          "url": "https://www.oschina.net/news/503367/cisco-unlimited-ai-tokens-rewrite-legacy-code",
+          "meta": "开源中国 · 2026-11-03 12:12 · 工程文化"
+        },
+        {
+          "id": "cn-8",
+          "title": "UU远程无敌了",
+          "summary": "L 站实测：在 EasyTier 虚拟局域网场景下对比 VNC/RustDesk/Jump Desktop 后，UU 远程在 Windows→Mac 链路体验被吹爆。和 V2EX「即将付费」帖同一事件两面——产品刚教育完用户，商业化就敲门。",
+          "url": "https://linux.do/t/topic/3114964",
+          "meta": "Linux.do · 76 帖 · 4497 浏览 · 日榜热议"
+        },
+        {
+          "id": "cn-9",
+          "title": "大家身边有 AI 嘉豪吗？",
+          "summary": "「嘉豪」成了职场里靠 AI 交差、话术大于产出的代称。4.9k 浏览说明焦虑已经从「AI 会不会取代我」滑到「同事会不会用 AI 糊弄我」——信任成本开始计入团队协作。",
+          "url": "https://linux.do/t/topic/3114451",
+          "meta": "Linux.do · 121 帖 · 4982 浏览 · 日榜热议"
+        },
+        {
+          "id": "cn-10",
+          "title": "上海男子用 400 多万个账号薅积分/算力转卖 AI 服务获刑",
+          "summary": "徐汇检方披露：伪造签名、盗用大模型算力接口约 29 万次，违法所得仅 3.4 万却判三缓三。国内首例叙事一出，社区反应两极——有人笑「性价比极低的犯罪」，更多人警惕：平台积分经济一旦被规模化薅，刑事门槛已经摸到了。",
+          "url": "https://linux.do/t/topic/3114886",
+          "meta": "Linux.do · 72 帖 · 3761 浏览 · 转载/热点"
+        },
+        {
+          "id": "cn-11",
+          "title": "chat 和 codex 用量已经合并了",
+          "summary": "灰度用户反馈：网页 Chat 与 Codex 额度打通后，两轮闲聊就能吃掉 6%。邮件预告的「12 月合并」提前落地，订阅用户体感是变相砍 Chat——OpenAI 降本路径直接改写了「聊天不占编程额度」的心智。",
+          "url": "https://linux.do/t/topic/3113260",
+          "meta": "Linux.do · 42+ 回复 · ChatGPT/Codex"
+        },
+        {
+          "id": "cn-12",
+          "title": "原来 6.2astra 灰测是真的，svg 能力也太强了",
+          "summary": "截图对比 Astra 与 Opus 画 SVG/复杂图，社区确认 GPT-6.2 Astra 灰测并非谣言；Codex 用量面板里已单独列出。模型名号还没官宣，能力演示已经在中文圈当「下一版本」预告片在传。",
+          "url": "https://linux.do/t/topic/3117060",
+          "meta": "Linux.do · 57 帖 · 2874 浏览 · OpenAI"
+        },
+        {
+          "id": "cn-13",
+          "title": "如何防止中转站投毒？",
+          "summary": "API 中转繁荣的背面：密钥被偷换、上游被劫持、回包被掺料。NodeSeek 技术帖把「便宜 token」的信任假设拆开——和 V2EX 中转站地推同日刷屏，说明聚合层已从便利设施变成攻击面。",
+          "url": "https://www.nodeseek.com/post-918975-1",
+          "meta": "NodeSeek · 22 回复 · 技术"
+        },
+        {
+          "id": "cn-14",
+          "title": "国行苹果智能有时间表了：Siri 接通义千问，不是 ChatGPT",
+          "summary": "帖称 11/4 开发者测试、12 月随系统正式版；国行底座锁定通义千问。若属实，这是美国手机系统官方 AI 首次以中国大模型为底座——合规压力倒逼出中文能力对照实验，社区争论点已从「有没有」转到「千问够不够用」。",
+          "url": "https://www.nodeseek.com/post-1027913-1",
+          "meta": "NodeSeek · 情报 · 约 22h 前"
+        },
+        {
+          "id": "cn-15",
+          "title": "52pojie 双11开放注册了",
+          "summary": "吾爱破解按惯例在双十一限时开注册，NodeSeek 情报区瞬间上热——注册窗口短、邮箱激活、不活跃清号是老规矩。逆向/安全圈「一年就几次户口本」的稀缺感，让这条情报在主机/羊毛社区里比多数 VPS 促销更硬。",
+          "url": "https://www.nodeseek.com/categories/info",
+          "meta": "NodeSeek · 约 50 回复 · 1270+ 浏览 · 情报榜（帖内精确 ID 未索引到，链到情报版列表）"
+        },
+        {
+          "id": "cn-16",
+          "title": "OpenAI 证实：ChatGPT 搜索查询量已达谷歌 20%",
+          "summary": "ChatGPT 消费者负责人证实搜索类查询量约等于谷歌的 20%——不是付费转化率，而是「搜索替代感」第一次被官方用量级钉住。对照 Linux.do 额度合并的抱怨：一边用搜索场景拉增长，一边用额度打通控成本。",
+          "url": "https://www.ithome.com/1/021/885.htm",
+          "meta": "IT之家 · 可选源 · 2026-11-04 07:16 · AI/搜索"
+        },
+        {
+          "id": "cn-17",
+          "title": "派早报：美团发布 LongCat-2.5 模型等",
+          "summary": "少数派早报把 LongCat-2.5（1.6T 总参、原生多模态、强化长程 Agent/Visual Coding）和树莓派 16GB 再涨价放在同一天：一边是国内大厂拼 Agent 工程化，一边是内存涨价打到创客硬件——消费电子与模型军备在同一信息流里碰头。",
+          "url": "https://sspai.com/post/118232",
+          "meta": "少数派 · 可选源 · 2026-11-03 08:18"
+        }
+      ]
+    },
+    {
+      "id": "product_updates",
+      "source": "产品更新",
+      "items": [
+        {
+          "id": "prod-claude-code",
+          "title": "Claude Code CLI 2.1.318（latest）",
+          "summary": "相对昨日仅 next 的 2.1.317，今日正式进 latest。新增：会话里开启自写 mods 会留回答记录；mantle 上游可 assume_role 跨 AWS 账号并按开发者归因成本；mod 的 $.model.fork 可单独设 effort=low；claude auth status / -p JSON 暴露 loginExpiresAt，距过期 10 天起 -p 打 stderr 警告。大量修：共享网络盘上配置锁/登出丢写、mcp add 无锁、idle 压缩误替换对话、IDE 终端内不再自动装扩展、云会话断点续跑与 Stop 取消逻辑等。钉 latest 的用户这次会真正升到 318。",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+          "meta": "2.1.318 · npm 2026-11-04 05:55+08（changelog 标 Nov 4；GH tag 08:01+08 刚过窗）"
+        },
+        {
+          "id": "prod-claude-desktop",
+          "title": "Claude Desktop v4.16336.0",
+          "summary": "内置 Claude Code 升到 2.1.317。换新视觉：步骤/进度收进可点开的状态行。企业向：Opus 4.8 fast mode 已弃用、11-30 起硬失败；desktopHome 未设时 11-10 12:00 PT 后默认 standard（Cowork 开）；推断费用可直接显示在输入框上方；Reset App Data 会先删服务端 Cowork 任务。修一堆 Windows 安装/SSH/OpenSSH 默认、口授丢词、计划任务静默失败。Admin/3P 部署要对照 deprecation 时间表改配置。",
+          "url": "https://claude.com/docs/cowork/changelog#v4-16336-0",
+          "meta": "v4.16336.0 · 2026-11-03（changelog）"
+        },
+        {
+          "id": "prod-codex-alpha",
+          "title": "Codex CLI 0.167.0-alpha.4（仅 alpha）",
+          "summary": "相对 alpha.3 约 ahead 67 commits；npm/GH alpha 信道推到 0.167.0-alpha.4，latest 仍为 0.166.0。主线：app-server 可发现/写入 model provider；独立 HTTP MCP「agent message board」并可打成插件；Guardian 直审补丁与权限；TUI 可选 side conversation panes、主机循环与新建对话默认；弹性上下文与 host-owned turn admission；WebSocket 短暂 HTTP 回落后可恢复。官方 changelog 未写本 alpha——跟 alpha 的用户可试，钉 latest 不受影响。",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.4",
+          "meta": "0.167.0-alpha.4 · 2026-11-03 10:24+08"
+        },
+        {
+          "id": "prod-magpie",
+          "title": "magpie v0.1.2767→v0.1.2885（一日 119 发）",
+          "summary": "昨日报到 2766；窗内再连发 119 个 tag 至 2885（2886 在 08:07+08，刚出窗外不计入）。相对 2766≈149 commits。代表性：Browser 给 agent 独立标签页 + record_start/stop 录 GIF；备份同步可带走已选登录且不覆盖更新 renewal；Claude Desktop 档位 behavesAs / tool search / models 名对齐；Codex「Same as the lead」强制子代理跟主模型；gateway 透传 Ark 图/视频原生 API、/v1/models 可按 kind 列图视频模、实时 route-events；API key 可设日/月/总量花费上限。仍建议自更新跟当日最新，不必逐 tag。",
+          "url": "https://github.com/yetone/magpie/releases/tag/v0.1.2885",
+          "meta": "v0.1.2767→v0.1.2885（119发）· 截至 2026-11-04 07:08+08"
+        },
+        {
+          "id": "prod-cpa",
+          "title": "CPA (CLIProxyAPI) v8.0.53",
+          "summary": "相对昨日 v8.0.52：16 commits。feat：Claude Code 客户端可配 native-entrypoints。修：禁用凭据被拒 refresh 不再空转；Fable-only 429 按模型隔离；Devin 清 exec 短语、403 不重试并透传 sealed reasoning；Antigravity safety/filter → refusal；定向 OAuth 重登覆盖全部内置 provider；非 Codex 路由关掉 image_detail_original；缺搜索结果时丢掉回放的 web search citations；pluginhost unix dlopen 用预检子进程隔离崩溃；Gemini 把 Claude tool_result 图嵌进 functionResponse.parts；跨 translator 保留 max_output_tokens。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.53",
+          "meta": "v8.0.53 · 2026-11-03 20:27+08"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "无 open 的 rating/watch Issue 需汇总进本期（temp_watches 为空）。",
+    "未抓取 Reddit（按用户设定）；sections 不含 reddit 分区。",
+    "Linux.do / NodeSeek：本机 curl 常被 Cloudflare 403；依赖 WebFetch / Discourse JSON。NodeSeek「52pojie 双11」精确 post-ID 未索引到，暂链情报版列表。",
+    "V2EX /api/topics/recent.json 返回 404，本期仅用 hot.json。",
+    "开源中国首页 WebFetch 常空/403，改用 /news/rss。",
+    "其余关注产品今日无新版本：其余关注产品今日无新版本：omp 仍 v18.16.0（昨已报）；Sub2API 仍 v0.2.19（10-28）；Tern/tern-sdk 窗内 0 commits；ChatGPT 总 notes 最新仍约 10-30，macOS/Windows 独立 notes 未见窗内新条。",
+    "HN/Lobsters 标注 holdover 的跨窗热帖（车机越狱等）未硬塞进主列表，见研报 notes。",
+    "论文/demo「Astra」与 OpenAI GPT-6 Astra 绰号同名不同物；「Le GPT Fat」为社区 meme 解读、非官方型号——正文已标。",
+    "Tibo（@thsottiaux）归属已核 bio：Codex & ChatGPT @OpenAI，绝非 Cursor。",
+    "按用户设定本期不做中文口播/TTS，无 audio 字段。",
+    "封面 images/covers/2026-11-04.png 由 generate_cover.py 生成。",
+    "美中期选举日 Elon 大量「Vote red」动员 RT；accounts 仅留 1 条最高互动选举帖作语境，其余科技向。"
+  ],
+  "cover": "images/covers/2026-11-04.png"
+}
