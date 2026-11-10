@@ -1,55 +1,57 @@
 {
-  "id": "2026-11-09",
-  "title": "技术早报 · 2026-11-09",
+  "id": "2026-11-10",
+  "title": "技术早报 · 2026-11-10",
   "window": {
-    "start": "2026-11-08T08:00:00+08:00",
-    "end": "2026-11-09T08:00:00+08:00"
+    "start": "2026-11-09T08:00:00+08:00",
+    "end": "2026-11-10T08:00:00+08:00"
   },
-  "generated_at": "2026-11-09T08:20:00+08:00",
+  "generated_at": "2026-11-10T08:30:00+08:00",
   "highlights": [
     {
       "id": "h1",
-      "title": "Grok Bot 用量烧得太快：Elon 公开承认「token 效率与行为修复正在进行」，poteto 与 mattyp 同步接话",
-      "summary": "Elon 在窗内发帖称 Grok Bot 的「token 效率改进与更聪明的行为修复正在进行」，该帖曝光约 490 万、3.5 万点赞；随后 @mattyp（bio：cursor & @bot at @spacexsi）引用并请用户回帖反馈，说会「全部读完」，poteto（bio：grok @bot at @SpaceXSI）转发并回复「正在处理」。背景是用户抱怨额度消耗骤增：有人称上周 200 美元档能用 7 天、本周中度使用只撑 14 小时，Elon 回复「我今天会去查」，并反问一位用户有没有简单的按 token 计费切换方式。对读者的意义：Agent 产品的「订阅额度」本质是对 token 消耗的承诺，一旦工具链变得更啰嗦，用户体感就是被偷额度；官方现在只承诺修复，没有给出时间表或补偿。",
-      "url": "https://x.com/elonmusk/status/2119419126045454531",
-      "source": "X/@elonmusk · @mattyp · @poteto"
+      "title": "Anthropic 发布 Claude Fable 5.2 / Mythos 5.2：价格降到 $8/$40，基准全面压过 Opus 5.5，但「每题 token 翻倍」和「拒答自作主张」成了争议焦点",
+      "summary": "Anthropic 11 月 9 日发布 Fable 5.2 与 Mythos 5.2（官方说明二者是同一底座模型，Fable 加了网络安全与生物安全拦截、面向所有用户，Mythos 只给通过 Cyber / Life Sciences 验证计划的机构）。官方给出的卖点是更便宜（$8/$40 每百万 token，fast 模式 $16/$80）、输出最高快 30%、FrontierCode 2.0 在 Xhigh 档 49.1% 为已发布模型最高，并展示了 1000 个 Fable agent 30 小时形式化费马大定理、自主设计三款可用电子设备等案例；同时宣布本周给付费订阅加发 1～3 次 Fable 额度重置。HN（800+ 分）的冷水集中在成本：有评论者引用 Artificial Analysis 数据指出单任务输出 token 从 5.1 的约 11.8 万涨到约 27.4 万，降价后单任务成本反而翻倍；Linux.do 上则有人吐槽它把画同人图判为侵权后「自作主张画原创角色」。对读者：Claude Code 2.1.321 已把 Fable 5.2 设为默认 Fable 模型，按 token 计费的用户先用 Medium/High 档测成本，再决定是否把日常主力从 Opus 5.5 换过去——官方自己也建议日常仍从 Opus 5.5 起步。",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50429906",
+      "source": "Anthropic / Hacker News / Linux.do"
     },
     {
       "id": "h2",
-      "title": "NVIDIA 董事会对黄仁勋启动独立调查，黄致信员工承认出轨；Elon 对「他做了件极蠢的事」表示同意",
-      "summary": "11 月 8 日 NVIDIA 官网发布董事会声明：鉴于近期报道称黄仁勋曾是外国情报行动的目标，由独立董事委员会牵头、外部律师协助展开调查；声明称董事会「没有理由相信国家安全或 NVIDIA 机密遭到泄露」，并表示信任黄和管理层。Axios 刊出黄给员工的信，据 Axios 称他承认与一名涉嫌中国间谍的人有恋情，并向家人道歉、承诺配合调查。HN 上有人指出标题易误读——被调查的是「他被针对」这件事，而非他是调查对象；NodeSeek 上同题材发帖密集。Elon 转引 Shaun Maguire 的评论（「黄是这一代最伟大的企业家之一，但做了非常愚蠢的事，对美国不利，我猜并无恶意」），只回了「I agree」。目前没有证据显示机密外泄，调查结论才是后续关键。",
-      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-      "source": "NVIDIA Newsroom / Axios / HN / X/@elonmusk"
+      "title": "Grok Bot 额度风波第二天：Elon 开圆桌承诺「明天显著改善」，官方给所有用户重置周额度；poteto 下周要讲「一个月 11,000 个 PR」",
+      "summary": "承接上期的「额度烧太快」投诉：Elon 窗内发帖称刚和 Grok Bot 工程团队开完圆桌，修复会在夜间上线，「明天你应该能感到显著改善」，没改善就回帖（约 678 万曝光、6.3 万赞、近 9000 条回复）；@mdamore9（bio：building Cursor）引用称会改进用量限制与模型路由，并在未来几周改进 harness 与 routines。北京时间 11 月 10 日凌晨，官方账号 @bot 宣布「已为所有 Grok Bot 用户重置周额度」，poteto（bio：grok @bot at @SpaceXSI）转发并写「reset rolling out!」。同一天 poteto 预告 AI Engineer Code Summit 演讲主题是团队「上个月合并 11,000 个 PR 而不牺牲代码质量」，有用户在回复里反呛「换了更笨的模型、额度砍半」，poteto 回应那是「糟糕的产品决定，与代码无关」。解读：重置额度是止血而非根治，真正要看的是之后的 token 效率与路由策略是否透明；「用户自称额度砍半」目前只是用户说法，官方没有给出具体数字。",
+      "url": "https://x.com/elonmusk/status/2119617455102333206",
+      "source": "X/@elonmusk · @bot · @poteto · @mdamore9"
     },
     {
       "id": "h3",
-      "title": "Tibo 澄清 Codex 的 Pro 档位：无 5 小时限制，Pro 100/200/500 分别是 Plus 的 10×/20×/50×；还抛出「要不要 Pro 50」",
-      "summary": "Tibo（@thsottiaux，bio：Codex & ChatGPT @OpenAI）在回应「额度困惑」时写明：所有 Pro 档都没有 5 小时限制，Pro 100 = 10×、Pro 200 = 20×、Pro 500 = 50× Plus 用量，其中 Pro 500 可用 ultrafast。随后他又发「Would a Pro 50 make sense? Wdyt?」征求意见，引来近 3900 条回复。与 OpenAI 帮助中心 10 月 29 日的公告对得上：Pro 100 与 Pro 500 的 Work/Codex 额度翻倍，并撤销了 Pro 200 的下调。他还回应说拿 GPT-6.1 Terra 去比 Opus 5.5 是错位，「我们有别的模型去打大局」。读者要点：Codex 的竞争正在从模型转向「额度档位的定价」；Pro 50 目前只是征求意见，不是官宣。",
-      "url": "https://x.com/thsottiaux/status/2119296267545419987",
-      "source": "X/@thsottiaux · OpenAI Help Center"
+      "title": "Agent 的安全边界又被戳破两处：ChatGPT 桌面端把本机 SSH agent 转发到远端，Claude Code 2.1.321 修了「OAuth 刷新令牌被重定向发给别的主机」",
+      "summary": "HN 一帖（205 分）指出 ChatGPT 桌面端的远程（SSH）会话会把本机 SSH agent 转发给远端，远端跑的 agent 因此能用你的本地密钥推送私有 GitHub 仓库；发帖人给出的证据是 openai/codex PR #28131 的讨论——该 PR 给 `codex app-server proxy` 加了一个可选的 `--forward-ssh-agent` 模式，让常驻 app-server 跟随当前 SSH 连接刷新转发的 agent socket（PR 已关闭，桌面端实际默认行为以官方说明为准）。巧的是同一窗口里 Claude Code 2.1.321 的修复清单也在补洞：MCP OAuth 请求遇到服务器重定向时会把 refresh token 等密钥发给另一个主机、只读 Bash 命令可能在沙箱外无提示执行、`cp`/`mv` 进目录时 deny 规则不生效。HN 排在前列的建议是把 SSH 密钥放进 macOS Secure Enclave、每次新连接都要指纹确认。对读者：给 coding agent 开远程会话前，检查 `ssh -A`/agent forwarding 和 MCP 服务器来源，Claude Code 用户建议尽快升级。",
+      "url": "https://github.com/openai/codex/pull/28131",
+      "discussion_url": "https://news.ycombinator.com/item?id=50422628",
+      "source": "Hacker News / GitHub"
     },
     {
       "id": "h4",
-      "title": "高盛把 Claude Code 收回给工程师：交易员与银行家不再能用，「致命三要素」成了解释主线",
-      "summary": "据 State of AI 转述 Bloomberg：高盛 10 月更新内部指引，把 Claude Code 与 GitHub 限定给约 1.2 万名工程师，交易员和投行人员原本用它盯客户交易流、建市场模型；strats 仍可用。HN 评论里最有说服力的一条认为，这是把能读文件、写代码并联网的半自动 agent，放进同时能碰客户数据、邮件和内网的工作站——也就是「致命三要素」（社区常用说法，指私有数据 + 外部通信 + 不可信输入同时存在）。另一层看点是时机：高盛是 Anthropic IPO 的牵头承销商之一，而 7 月时其 CIO 还在夸赞非技术员工的 vibe coding。对读者：企业落地 agent 的下一步不是禁，而是谁对 agent 写的代码负责。",
-      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-      "source": "Hacker News / State of AI"
+      "title": "只凭车牌就能远程开锁：白帽 Shubs 与 Sam Curry 打穿某大车企联网平台，关键一步是 GPT 5.6 Sol Ultra 跑 6 小时找到的 WAF 绕过",
+      "summary": "Shubham Shah（shubs）与 Sam Curry 联合披露：在澳大利亚，只要知道车牌，就能走「车牌 → VIN → 订阅者 GUID → JS 包里泄露的 OpenIDM 管理员凭据 → 路径穿越绕 WAF → 用 ROPC 流程跳过 MFA → 签发 App 令牌 → 远程命令 API」这条链对该车企（含旗下两个品牌）任意车辆下发开锁命令；Sam Curry 的另一篇覆盖了美国和加拿大，可远程开锁和启动发动机。文中坦言，两人手工试过绕过但漏了某个前缀，是把 OpenIDM 源码交给 GPT 5.6 Sol Ultra 跑了约六小时才找到没被 WAF 覆盖的路径。车企名称被隐去，HN（597 分）与 Lobsters 评论里猜 Toyota/Hyundai 的都只是猜测。看点有二：联网汽车的攻击面仍是「互联网上的后台和测试工具」，以及 AI 已在真实漏洞挖掘里承担「穷举人类懒得试的组合」这一步。",
+      "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+      "discussion_url": "https://news.ycombinator.com/item?id=50419215",
+      "source": "Hacker News / Lobsters"
     },
     {
       "id": "h5",
-      "title": "systemd 合并 Rust 支持：只进叶子二进制，不碰核心共享库，且不用 cargo、不用 std",
-      "summary": "Lennart Poettering 与 Christian Brauner 的博文说明：systemd 已合并 Rust 支持，但仅限单个二进制（叶子组件），核心 libsystemd-shared.so 暂不引入，原因是 Rust 缺少一等公民的共享库支持（所谓稳定 ABI 问题）。原则很克制：用 meson 构建而非 cargo、no-std、自己的可失败分配器、依赖严格受控、不为换语言而重写稳定的 C 代码，Rust 保持可选。Lobsters 评论中最高赞的看法是，这其实是「没有生态的 Rust 语言」，类似内核的用法。意味着：Linux 底层栈在拥抱 Rust，但条件是 Rust 社区先补齐共享库与 fd 级文件系统接口。",
-      "url": "https://amutable.com/blog/systemd-loves-rust",
-      "discussion_url": "https://lobste.rs/s/62loik/systemd_loves_rust",
-      "source": "Lobsters"
+      "title": "Gemini 连接 Gmail / Drive 后，内容可能进入人工审核：帮助中心白纸黑字写着「别连含机密的应用」",
+      "summary": "一个 GitHub 仓库（HN 321 分）整理称：Google 2023 年推出 Workspace 扩展时承诺 Gmail/Docs/Drive 内容「不会被人工审核员看到」，但现在的帮助文档已改口，并声称在普通对话里不 @Drive/@Gmail 也可能后台检索邮件和文件。我们核对了 Google 帮助中心 16836988 页：确实写明 Connected Apps 数据的一部分会被人工审核（含外包服务商），在邮件或文件很短时，用于训练的「摘要可能就是邮件或文件本身」，并提醒「如果应用里有你不想让审核员看到的机密信息，就不要连接」；文件也说审核前会断开账号关联并减少个人信息。仓库里「自动后台读取的四种概率状态」属作者自测，未经独立验证。对读者：用个人 Gemini 连了工作邮箱或网盘的，应关闭 Keep Activity 或断开连接——这比「本地模型 vs 云模型」的争论更现实。",
+      "url": "https://support.google.com/gemini/answer/16836988",
+      "discussion_url": "https://news.ycombinator.com/item?id=50429426",
+      "source": "Hacker News / Google Help"
     },
     {
       "id": "h6",
-      "title": "「本地大模型」两头夹击：64GB 纯 CPU 跑 284B 的 llama-modchip，与 Elon 转的「买 Mac Studio 反而不如 200 刀订阅」",
-      "summary": "llama-modchip 项目声称在 64GB 纯 CPU 机器上以 256K 上下文运行 284B 的 DeepSeek-V4-Flash（README 给出 prefill 44.4 tok/s、生成 9.1～14.7 tok/s）；HN 评论里 antirez 补充 128GB 统一内存机器可以更快，但也有人指出激进量化的质量损失。同一天 Elon 引用中文推友 AndyL5cc 的故事——有人嫌 200 美元/月太贵，花十几万买两台 Mac Studio 跑开源模型，结果发现不如闭源订阅——评论「Many such stories」（该故事为转述，未核实）。两者合起来：本地跑得动已不是门槛，质量与总成本才是，读者买硬件前先算清楚自己要的是哪一档模型。",
-      "url": "https://github.com/synchopate/llama-modchip",
-      "discussion_url": "https://news.ycombinator.com/item?id=50411961",
-      "source": "Hacker News / X/@elonmusk"
+      "title": "Elon：Cybertruck 约 8 个月后停产、将退还大量订金，「不是不赚钱，是复杂度的机会成本让位给 Cybercab」",
+      "summary": "Elon 在窗内发帖称 Cybertruck 订单远超产能，会在约 8 个月后关闭产线前尽量多造，但要给很多人退订金；他强调这并非媒体所说的「不赚钱」，而是 Cybertruck 的复杂度占用的产能，远不如多造 Cybercab（无人驾驶出租车）值钱（约 388 万曝光、2.8 万赞、4100+ 回复，NodeSeek 也有同题搬运）。同一天他用「Project Crystal Sun」引用 Sawyer Merritt 的帖子：特斯拉在休斯敦附近动工 100 亿美元的垂直一体化太阳能制造厂，计划 2028 年完工、2029 年一季度投产（数字出自 Sawyer Merritt 转述）。解读：特斯拉在主动收缩低量车型、把产能押向 Robotaxi 与能源；「订单远超产能」是 Elon 的说法，公司未披露订单数据。",
+      "url": "https://x.com/elonmusk/status/2119691615774146614",
+      "source": "X/@elonmusk / NodeSeek"
     }
   ],
   "accounts": [
@@ -59,99 +61,99 @@
       "items": [
         {
           "id": "elon-1",
-          "summary": "「Grok Bot fixes for improved token efficiency and smarter behavior are underway」——Grok Bot 的 token 效率与行为修复正在进行。窗内曝光最高的一条（约 490 万曝光）。同日他回复用户抱怨：「I will dig into this today」（用户称 200 美元档上周够用 7 天、本周中度使用只撑 14 小时），并反问另一位用户「是否有简单切换到按 token 计费的方式」，对「更高于 Ultra 的档位」的请求没有直接答复。解读：这是产品层面的公开承认，但没有时间表。",
-          "url": "https://x.com/elonmusk/status/2119419126045454531",
-          "time": "2026-11-08T21:17:51+08:00",
+          "summary": "「刚和 Grok @Bot 工程团队开完圆桌复盘。修复会在夜里上线，明天应该能感到显著改善；如果没有，回复这条，我们马上处理剩下的问题。」窗内曝光最高的科技帖之一。随后 @mdamore9（bio：building Cursor）引用说会改进用量限制与模型路由，@bot 账号在北京时间 11-10 03:17 宣布给所有用户重置周额度。解读：Elon 把一款付费 agent 产品的额度问题拉到自己亲自背书的层级，压力在交付——明天的体感是检验点。",
+          "url": "https://x.com/elonmusk/status/2119617455102333206",
+          "time": "2026-11-09T10:25:56+08:00",
           "interactions": [
             {
-              "summary": "@mattyp 引用：改进正在进行，请回帖反馈，会全部阅读",
-              "url": "https://x.com/mattyp/status/2119474599708827957"
+              "summary": "@mdamore9 引用：改进用量限制与模型路由，未来几周改进 harness 与 routines",
+              "url": "https://x.com/mdamore9/status/2119623664941584718"
             },
             {
-              "summary": "回复用户用量骤降的抱怨：「I will dig into this today」",
-              "url": "https://x.com/elonmusk/status/2119415029812609301"
-            },
-            {
-              "summary": "回复 @teslaownersSV：是否有简单切到按 token 计费的方式",
-              "url": "https://x.com/elonmusk/status/2119406729074979035"
+              "summary": "@bot：已为所有 Grok Bot 用户重置周额度",
+              "url": "https://x.com/bot/status/2119871982946971659"
             }
           ],
           "metrics": {
-            "likes": 35103,
-            "reposts": 2229,
-            "replies": 4309
+            "likes": 63266,
+            "reposts": 4455,
+            "replies": 8944
           }
         },
         {
           "id": "elon-2",
-          "summary": "引用 Shaun Maguire 对 NVIDIA 黄仁勋事件的五点评论（「黄是这一代最伟大的企业家之一；他做了件极蠢的事；对美国不利；但我猜没有恶意；两个错误不…」），只回「I agree」。属于对热点的表态，信息量在被引用帖，不是他自己的新事实。",
-          "url": "https://x.com/elonmusk/status/2119578315619254275",
-          "time": "2026-11-09T07:50:24+08:00",
+          "summary": "Cybertruck 停产与退订金（见头条）：订单远超产能，约 8 个月后关线，「不是不赚钱，而是复杂度的机会成本远低于多造 Cybercab 的价值」。引用的是 @jamesdouma「趁还能买赶紧买」的帖子。",
+          "url": "https://x.com/elonmusk/status/2119691615774146614",
+          "time": "2026-11-09T15:20:37+08:00",
           "interactions": [
             {
-              "summary": "被引用：@shaunmmaguire 的评论",
-              "url": "https://x.com/shaunmmaguire/status/2119560017624158265"
+              "summary": "被引用：@jamesdouma 的帖子",
+              "url": "https://x.com/jamesdouma/status/2119460358826176575"
             }
           ],
           "metrics": {
-            "likes": 3393,
-            "reposts": 285,
-            "replies": 482
+            "likes": 27810,
+            "reposts": 2827,
+            "replies": 4135
           }
         },
         {
           "id": "elon-3",
-          "summary": "引用 AndyL5cc 的中文故事（朋友嫌 200 美元/月 AI 订阅贵，花十几万买两台 Mac Studio 部署开源模型，结果不如闭源订阅好用），评论「Many such stories」。观点是：自建本地模型看似省钱，实际可能更贵、更差；与 HN 上 llama-modchip 的讨论形成对照。",
-          "url": "https://x.com/elonmusk/status/2119425068979937378",
-          "time": "2026-11-08T21:41:00+08:00",
+          "summary": "「Project Crystal Sun」：引用 @SawyerMerritt，称特斯拉已在休斯敦附近动工 100 亿美元太阳能制造厂（硅锭、硅片、电池片到测试全链条，2028 年完工、2029 年 Q1 投产，数字为 Sawyer 转述）。同日回复 @herbertong 关于「AI6 芯片 LPDDR6 从 216GB 砍到 144GB」的报道：「但内存带宽保持不变」——措辞上没有否认容量削减，只强调带宽这一关键指标没降。",
+          "url": "https://x.com/elonmusk/status/2119812607117062451",
+          "time": "2026-11-09T23:21:24+08:00",
           "interactions": [
             {
-              "summary": "被引用：@AndyL5cc 的原帖",
-              "url": "https://x.com/AndyL5cc/status/2119247317975060982"
+              "summary": "被引用：@SawyerMerritt 太阳能工厂帖",
+              "url": "https://x.com/SawyerMerritt/status/2119805979583828413"
+            },
+            {
+              "summary": "回复 AI6 内存削减传闻：Memory bandwidth was held constant",
+              "url": "https://x.com/elonmusk/status/2119812349658079420"
             }
           ],
           "metrics": {
-            "likes": 14241,
-            "reposts": 878,
-            "replies": 1463
+            "likes": 33355,
+            "reposts": 3236,
+            "replies": 2264
           }
         },
         {
           "id": "elon-4",
-          "summary": "两条「太空算力」互动：引用 @niccruzpatane 转述的说法（Elon 称年产 100GW 轨道 AI 算力、按每瓦 10 美元，SpaceX 每年将新增 1 万亿美元收入，涨价后可达 3～5 万亿），回「Yup」；引用 @hosun_chung 转述的 Larry Page「太空里的算力占比是 5 个 9（99.999%）」的二手说法，称「Larry Page 做过很多准确预测，这是其中之一」。这些数字都是第三方转述的二手信息，未见一手来源，应视为 Elon 的愿景叙事而非既定计划。",
-          "url": "https://x.com/elonmusk/status/2119469436092760547",
-          "time": "2026-11-09T00:37:00+08:00",
+          "summary": "回复 @rohanpaul_ai 转述的 Chamath 观点（若数据中心供给吃紧，SpaceX 可提前 90 天终止与 Anthropic 的算力合同、再以 2～3 倍价格续签）：「这是双向的。如果算力变得充足便宜，SpaceX 的收入就会下降。愿赌服输，双方都一样。」解读：他没有否认这份算力合同的存在，但把它定性为普通的市场供需关系；合同条款细节均为 Chamath 的说法，未见一手披露。",
+          "url": "https://x.com/elonmusk/status/2119610442867749040",
+          "time": "2026-11-09T09:58:04+08:00",
           "interactions": [
             {
-              "summary": "「Yup」：引用 @niccruzpatane 的 100GW/年轨道算力帖",
-              "url": "https://x.com/elonmusk/status/2119420033113739525"
-            },
-            {
-              "summary": "被引用：@hosun_chung 转述 Larry Page",
-              "url": "https://x.com/hosun_chung/status/2119198237047590971"
+              "summary": "被回复：@rohanpaul_ai 转述 Chamath",
+              "url": "https://x.com/rohanpaul_ai/status/2119409905434268064"
             }
           ],
           "metrics": {
-            "likes": 15470,
-            "reposts": 1614,
-            "replies": 1307
+            "likes": 11915,
+            "reposts": 579,
+            "replies": 410
           }
         },
         {
           "id": "elon-5",
-          "summary": "引用 @cb_doge：Starlink 帮助被困在哈萨克斯坦雪山、无手机信号的 5 人求救，评论「Starlink saves lives」。属于 Starlink 品牌叙事，窗内互动较高；案例来自 @cb_doge 的转述。",
-          "url": "https://x.com/elonmusk/status/2119450198007337418",
-          "time": "2026-11-08T23:21:00+08:00",
+          "summary": "「Chinese 𝕏 is 牛逼」——窗内互动最高的一条（约 1960 万曝光、14.3 万赞、2 万回复）。帖子本身没有附带上下文；几分钟后他回复了一张「你的中国替身」照片（@AdamLowisz），当晚又对一条法语调侃帖（「中国人在对黄仁勋下手前先试过 Elon」）回了 😂。社区解读 / 非官方定义：「牛逼」是带粗口的中文网络俚语，意为「非常厉害」，评论区连 @grok 都在给外国网友翻译；这是一条示好中文社区的玩笑帖，没有产品信息。",
+          "url": "https://x.com/elonmusk/status/2119629310969467053",
+          "time": "2026-11-09T11:13:03+08:00",
           "interactions": [
             {
-              "summary": "被引用：@cb_doge 的原帖",
-              "url": "https://x.com/cb_doge/status/2119430733525815742"
+              "summary": "回复 @AdamLowisz「你的中国替身」：💯😂",
+              "url": "https://x.com/elonmusk/status/2119631405252751657"
+            },
+            {
+              "summary": "回复 @Le_Crapaud47 黄仁勋相关调侃：😂",
+              "url": "https://x.com/elonmusk/status/2119900637240664414"
             }
           ],
           "metrics": {
-            "likes": 21943,
-            "reposts": 2609,
-            "replies": 1263
+            "likes": 143372,
+            "reposts": 11944,
+            "replies": 20423
           }
         }
       ]
@@ -162,60 +164,19 @@
       "items": [
         {
           "id": "tibo-1",
-          "summary": "澄清 Pro 档位：「所有 Pro 档都没有 5 小时限制」，相对 Plus 的用量为 Pro 100 = 10×、Pro 200 = 20×、Pro 500 = 50×（含 ultrafast）。解读：这是对「额度和 5 小时窗口」混乱的官方人物层面说明，与 OpenAI 帮助中心 10/29 条目一致；价格与最终规则以官方帮助中心为准。",
-          "url": "https://x.com/thsottiaux/status/2119296267545419987",
-          "time": "2026-11-08T13:09:39+08:00",
+          "summary": "窗内只有一条：@maria_rcks（bio 标注 @t3dotcodes）宣布加入 Anthropic，Tibo 回「Congrats to Theo」。社区解读 / 非官方定义：t3 是 Theo 的公司，这句话被理解为一句调侃——祝贺的不是本人而是「把人送去 Anthropic 的老板」。另，NodeSeek 上 Anthropic 本周给订阅用户发 Fable 额度重置后，出现「TIBO 是不是跳槽到 A\\ 了，送这么多卡」的帖子：Tibo 此前常在 X 上给 Codex 用户发额度重置（banked reset），社区因此把「发重置卡」当成他的标签；这只是玩笑，Tibo 的 X bio 仍是「Codex & ChatGPT @OpenAI」。",
+          "url": "https://x.com/thsottiaux/status/2119611877810639072",
+          "time": "2026-11-09T10:03:46+08:00",
           "interactions": [
             {
-              "summary": "随后自己引用并发问：Would a Pro 50 make sense?（3875 条回复）",
-              "url": "https://x.com/thsottiaux/status/2119305294291612140"
+              "summary": "被回复：@maria_rcks 宣布加入 Anthropic",
+              "url": "https://x.com/maria_rcks/status/2119595096928571776"
             }
           ],
           "metrics": {
-            "likes": 8231,
-            "reposts": 229,
-            "replies": 1473
-          }
-        },
-        {
-          "id": "tibo-2",
-          "summary": "回复一位把 GPT 6.1 Terra 与 Opus 5.5 对比的用户：「很意外 Terra 被拿去和 Opus 5.5 比，它是很好的模型，但不是用来打大局的，我们有别的模型做这个」。解读：Terra 在 OpenAI 序列里是中档（帮助中心 10/26 写它面向视觉推理、电脑使用和写作），Tibo 在主动降低「对标」预期。",
-          "url": "https://x.com/thsottiaux/status/2119304055126425939",
-          "time": "2026-11-08T13:40:36+08:00",
-          "interactions": [],
-          "metrics": {
-            "likes": 2905,
-            "reposts": 34,
-            "replies": 397
-          }
-        },
-        {
-          "id": "tibo-3",
-          "summary": "回复称「We doubled the usage on Pro plans and Business 100」（我们把 Pro 与 Business 100 的用量翻倍了），对应帮助中心 10/29「Pro 100 与 Pro 500 的 Work/Codex 额度翻倍、撤销 Pro 200 下调」。当时有人调侃「自从 Tibo 不再发重置，Codex 额度好像更耐用了」——此类说法是用户猜测。",
-          "url": "https://x.com/thsottiaux/status/2119232059537514598",
-          "time": "2026-11-08T08:54:31+08:00",
-          "interactions": [],
-          "metrics": {
-            "likes": 1900,
-            "reposts": 21,
-            "replies": 296
-          }
-        },
-        {
-          "id": "tibo-4",
-          "summary": "对 @garrytan「在用开源评测比较各 harness 与前沿模型」的帖子回复「感谢跑这些并公开」；对 @MillionInt 的「2026 年大 agent 之争最后能出个好游戏」回复「Jerry，我挑战你做一个游戏」。后者与 poteto 的 tibo.dog 小游戏梗相关，社区解读 / 非官方定义：「agent beef」指各家 coding agent 阵营之间的口水战。",
-          "url": "https://x.com/thsottiaux/status/2119532403593191733",
-          "time": "2026-11-09T04:47:58+08:00",
-          "interactions": [
-            {
-              "summary": "回复 @MillionInt：「I challenge you to make a game」",
-              "url": "https://x.com/thsottiaux/status/2119528988033073501"
-            }
-          ],
-          "metrics": {
-            "likes": 168,
-            "reposts": 1,
-            "replies": 16
+            "likes": 729,
+            "reposts": 0,
+            "replies": 47
           }
         }
       ]
@@ -226,73 +187,61 @@
       "items": [
         {
           "id": "poteto-1",
-          "summary": "围绕 Elon 的 token 效率帖接话：转发 @mattyp 的「改进进行中」，并回复多位抱怨额度的用户「it's being worked on / we are working on it」。他的 bio 为「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」。解读：官方团队成员在帖下逐一回应，但仍没有具体修复版本与时间。",
-          "url": "https://x.com/poteto/status/2119523566886785274",
-          "time": "2026-11-09T04:12:00+08:00",
+          "summary": "「reset rolling out!」——引用 @bot 的「已为所有 Grok Bot 用户重置周额度」。此前 poteto 转发了 @mdamore9 的改进承诺，并在帖下逐个回应用户：对一位称「换了更笨的模型、额度砍半」的用户回「that was a poor product decision however, nothing to do with the code」，并对同一用户的订阅问题说会研究后私信回复。解读：团队成员公开承认是产品决策失误，而不是工程质量问题——这和 poteto 即将讲的「11,000 个 PR」话题直接相关。",
+          "url": "https://x.com/poteto/status/2119875790485741964",
+          "time": "2026-11-10T03:32:28+08:00",
           "interactions": [
             {
-              "summary": "回复 @spcxGOD：「we are working on it」",
-              "url": "https://x.com/poteto/status/2119522528842649949"
+              "summary": "回复 @Aluminumwraith：糟糕的产品决定，与代码无关",
+              "url": "https://x.com/poteto/status/2119921913778905442"
             },
             {
-              "summary": "被引用：@mattyp 的原帖",
-              "url": "https://x.com/mattyp/status/2119474599708827957"
+              "summary": "被引用：@bot 重置周额度",
+              "url": "https://x.com/bot/status/2119871982946971659"
             }
           ],
           "metrics": {
-            "likes": 33,
-            "reposts": 2,
-            "replies": 1
+            "likes": 2240,
+            "reposts": 50,
+            "replies": 266
           }
         },
         {
           "id": "poteto-2",
-          "summary": "推荐用 pstack 里的两个 skill：「use /create-formal-verification-skill to model these state machines, one skill per subsystem. and use /statechart to visualize my most important user flows」，引用 @steveruizok 的「找出应用里所有隐式状态机」好提示。pstack 位于 cursor/plugins 仓库。回复中他解释：formal 那个用形式化验证语言给系统建模并检查，普通 statechart 则教 agent 如何运行并调试应用，两者可组合；并说「any model 都能用，把 agent 指向这个仓库即可」。窗内他互动最高的一条（约 2200 赞）。",
-          "url": "https://x.com/poteto/status/2119521036660314339",
-          "time": "2026-11-09T04:02:48+08:00",
+          "summary": "预告 11 月 11 日（周三）太平洋时间 10:10 在 AI Engineer Code Summit 演讲：Grok @bot 团队「上个月发了 11,000 个 PR 而没有牺牲代码质量」（大会官方帖把 poteto 列为 SpaceX Principal Engineer）。在回复 Matt Pocock（bio：Total TypeScript 作者）时，poteto 说自己不太用「Software Factory」这个词，认为它就是软件工程的演进、被说得比实际更玄乎，「希望在演讲里祛魅」。社区解读 / 非官方定义：「Software Factory」指用大量 agent 流水线式产出代码的工程组织方式，近期在 X 上很流行。",
+          "url": "https://x.com/poteto/status/2119841446308221152",
+          "time": "2026-11-10T01:16:00+08:00",
           "interactions": [
             {
-              "summary": "回复 @TheRealAdilP：formal 与 regular 版本的区别",
-              "url": "https://x.com/poteto/status/2119523322757325117"
-            },
-            {
-              "summary": "被引用：@steveruizok「找出所有隐式状态机」",
-              "url": "https://x.com/steveruizok/status/2116552016218710389"
+              "summary": "回复 @mattpocockuk 关于「Software Factory」一词",
+              "url": "https://x.com/poteto/status/2119828459728121925"
             }
           ],
           "metrics": {
-            "likes": 2194,
-            "reposts": 71,
-            "replies": 76
+            "likes": 1234,
+            "reposts": 67,
+            "replies": 86
           }
         },
         {
           "id": "poteto-3",
-          "summary": "让 Grok Bot 做了一段视频，讲 tibo.dog 里的音乐是怎么合成的；自己说对音乐「0 经验」，技巧是对 agent 说「我缺词汇描述想要的」，并用 pstack 的 /sharpen 与 /in-your-own-words 确认 agent 是否理解，最后产出分镜与动画样片再成片。结论是「knowing the right words is very powerful」。tibo.dog 的页面卡片写着「Tibo and a pack of dogs against an endless swarm」，即上期提到的小游戏。",
-          "url": "https://x.com/poteto/status/2119313621188849806",
-          "time": "2026-11-08T14:18:36+08:00",
-          "interactions": [],
-          "metrics": {
-            "likes": 1256,
-            "reposts": 61,
-            "replies": 151
-          }
-        },
-        {
-          "id": "poteto-4",
-          "summary": "有中文推友称「负责人 lauren tan 在接触 AI 前一行代码都不会」，poteto 回复「你从哪看来的？我从高中就开始写代码了」，并对另一回复称「别让 @grok 以为这是真的」。另一位推友随后在 fact check 后道歉，称其在 Netflix 和 Meta React 团队有多年工程经验，poteto 回「别担心」。解读：属于谣言被当事人当场辟谣的小插曲，无需放大。",
-          "url": "https://x.com/poteto/status/2119549361323639139",
-          "time": "2026-11-09T05:55:00+08:00",
+          "summary": "「我们正进入编程语言与运行时研究的文艺复兴，以及软件测试与验证的黄金时代——是时候重写所有软件了。」有人问用什么重写、Rust 吗？回答是「用很快会被发明出来的新语言」。同日 poteto 称赞 @ezyang 关于「如何让非专家理解形式化验证规格」的长帖，并回应 Expo 的 Charlie Cheever 发布的 Rust 写的 agent 原生应用框架 Exact（「不太确定缩进语法，但其他都喜欢」）。解读：与上期推荐的形式化验证 skill 一脉相承，代表一种观点——agent 写代码越多，验证与规格就越成为核心。",
+          "url": "https://x.com/poteto/status/2119824409087348984",
+          "time": "2026-11-10T00:08:18+08:00",
           "interactions": [
             {
-              "summary": "回复 @maid_crypto：「don't worry about it!」",
-              "url": "https://x.com/poteto/status/2119566727310901670"
+              "summary": "回复 @caiopizzol90：in new languages that will be invented soon",
+              "url": "https://x.com/poteto/status/2119826122464772109"
+            },
+            {
+              "summary": "回复 @ccheever 的 Exact 框架",
+              "url": "https://x.com/poteto/status/2119823057800052804"
             }
           ],
           "metrics": {
-            "likes": 456,
-            "reposts": 4,
-            "replies": 30
+            "likes": 6590,
+            "reposts": 427,
+            "replies": 403
           }
         }
       ]
@@ -305,51 +254,59 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "Goodbye Claude, hello Pi",
-          "summary": "一位长期 Claude Code 用户（博文首发 9 月 21 日，11 月 7 日更新）宣布改用开源 coding harness Pi：不满 CLAUDE.md/AGENTS.md 要来回拷贝，VS Code 里一次只能连一个会话，官方插件缺 slash 命令与状态栏，且今年 244 次发版里超过四分之三改动了 system prompt 或工具描述，Bash 工具描述就近 3000 token。HN 评论分成两派：重度用户支持「完全可控才能从驱动 agent 变成编排 agent」；反对者指出 Pi 缺少拦截危险操作的 auto 模式、第三方模块缺审核，也有人提醒用别家 harness 接 Anthropic 订阅有违反 ToS 或损失缓存与自定义头的风险。对读者：harness 之争的核心已是「提示词稳定性、可控性、token 开销」，不是单纯模型强弱。",
-          "url": "https://caleb.software/posts/claude-to-pi.html",
-          "discussion_url": "https://news.ycombinator.com/item?id=50410107",
-          "meta": "675 分 · 424 评论"
+          "title": "Claude Fable 5.2 and Mythos 5.2",
+          "summary": "见头条。HN 讨论的三条主线：一是命名混乱——旗舰叫 5.2、次一级的 Opus 却是 5.5，有人怀疑是在维持「Opus 技术更新」的印象；二是有人直接挖苦「这是在你们削弱 Opus 5.5 之前还是之后测的」（呼应 hn-3 的降智帖）；三是价格，$8/$40 有人觉得便宜、有人嫌贵。另有评论注意到模型在 Claude Code 里立即可用，没有以往的灰度延迟。",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "discussion_url": "https://news.ycombinator.com/item?id=50429906",
+          "meta": "857 分 · 517 评论"
         },
         {
           "id": "hn-2",
-          "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-          "summary": "原始消息来自 Bloomberg，本文为 State of AI 的转述：高盛 10 月更新的内部指引把 Claude Code 与 GitHub 限定给工程师，strats 仍可用；此前高盛 4 月已在香港下线 Claude。HN 的主要讨论是风险模型——agent 在同一台机器上有文件、邮件、网络和内网权限，加上信息隔离墙要求；也有人质疑是否与 Anthropic IPO 的承销角色有关，这点只是评论者推测。注意：文中提到 Anthropic 将以 ANT 上市等细节为该文所述，我们未独立核实。",
-          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-          "discussion_url": "https://news.ycombinator.com/item?id=50415628",
-          "meta": "545 分 · 329 评论"
+          "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+          "summary": "Artificial Analysis 智能指数给 Fable 5.2 打出 65 分、目前最高。但最有信息量的评论在成本：按该站数据，单任务输出 token 从 Fable 5.1 的约 11.8 万（4.6 万答案 + 7.1 万推理）涨到约 27.4 万（8.1 万答案 + 19.2 万推理），即便降价，单任务成本也约翻倍；也有人指出它的 low/medium 档在「速度—智能」帕累托前沿上。对读者：看排行榜之外一定要看 cost per task，尤其是跑 agent 长任务。",
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+          "discussion_url": "https://news.ycombinator.com/item?id=50431144",
+          "meta": "254 分 · 177 评论"
         },
         {
           "id": "hn-3",
-          "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-          "summary": "项目 README 声称在 64GB 纯 CPU 机器上跑 284B 的 DeepSeek-V4-Flash，256K 上下文，占用不足 59GiB，prefill 44.4 tok/s、生成约 9～15 tok/s，并含 SwiGLU-H2 与「13ms 恢复 Claude Code 会话」等优化。评论里 antirez 说 128GB 统一内存机器可以到「编码 agent 勉强够快」；也有人提醒 2-bit 级别的量化会明显掉质量，另有人吐槽 README 满是表情符号。该项目窗内 GitHub 星标为 0，更像一个性能展示，数字未经第三方复现。",
-          "url": "https://github.com/synchopate/llama-modchip",
-          "discussion_url": "https://news.ycombinator.com/item?id=50411961",
-          "meta": "343 分 · 143 评论"
+          "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+          "summary": "@shanemelaugh（bio：building @SashimiiAI）让 Gemini 4 Argon 分析了 1400 个 Claude Code 会话，称 11 月 3 日起 Opus 5.5 的推理模式「急转弯」，模型名没变。HN 评论两极：不少人说体感变差、脚本错误增多；也有人认为只是换了思考摘要器（summarizer），模型本身没变。所谓「新模型发布前降智」是社区流传说法，Anthropic 未就此回应；但两天后 Fable 5.2 正好发布，让这个猜测更有市场。",
+          "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+          "discussion_url": "https://news.ycombinator.com/item?id=50422069",
+          "meta": "721 分 · 468 评论"
         },
         {
           "id": "hn-4",
-          "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
-          "summary": "NVIDIA 官方声明：董事会因「黄仁勋曾是外国情报行动目标」的报道启动独立调查，由独立董事委员会与外部律师负责，称无理由相信国家安全或公司机密被泄露。HN 讨论首先吐槽标题——更准确的说法是调查「他被针对」这件事，而非调查他本人；其他评论在讨论被「钓鱼」的动机，以及黄在出口管制上的公开立场，这些多是评论者猜测，没有事实支持。",
-          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-          "discussion_url": "https://news.ycombinator.com/item?id=50416801",
-          "meta": "334 分 · 261 评论"
+          "title": "Unlocking any car from X brand in most of the world",
+          "summary": "见头条：车牌到远程开锁的完整攻击链，AI 帮忙找到了 WAF 绕过。HN 有人吐槽标题太绕，更准确的说法是「全球范围内解锁某大车企的车」；另有评论认为安全工程师难招、攻击者遍地，主张由监管设立集中的安全要求，这是评论者观点。",
+          "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50419215",
+          "meta": "597 分 · 328 评论"
         },
         {
           "id": "hn-5",
-          "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-          "summary": "Axios 刊出黄仁勋写给员工的信：据 Axios 称他承认与一名涉嫌中国间谍的人有恋情，向妻子和孩子道歉，说董事会已启动独立调查并承诺全力配合；NVIDIA 公共政策沟通负责人 John Rizzo 称黄会继续无间断担任 CEO。评论区有人质疑 CEO 为何公开谈私生活，也有人在讨论黄对 NVIDIA 的不可替代性——这些都是评论者观点。需要等调查结论才能判断是否影响公司治理。",
-          "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-          "discussion_url": "https://news.ycombinator.com/item?id=50418016",
-          "meta": "243 分 · 238 评论"
+          "title": "Google Gemini routes personal Drive files and emails to human annotators",
+          "summary": "见头条（已对照 Google 帮助中心原文）。HN 高赞评论的情绪是「又一个转向本地模型的理由」，也有人提到 Gemini 回答里出现与刚收到邮件「诡异吻合」的内容；这些属个人经历，不能当作 Google 后台检索的证据。",
+          "url": "https://github.com/thisisme6598/gemini_files/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50429426",
+          "meta": "321 分 · 73 评论"
         },
         {
           "id": "hn-6",
-          "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
-          "summary": "mailroute 的博文称，Outlook.com 正在悄悄拒收没有配置 DMARC 的域名的邮件，且没有事先公告。HN 评论多数认同「没有 SPF/DKIM/DMARC 的发件人本就该补」，批评点是静默拒收与不透明——自建邮件服务器的用户还抱怨 Outlook 另有不公开的黑名单，邮件被吞却没有退信。对读者：自己域名发邮件（尤其通知类、独立站）请立刻检查 DMARC 记录，这已是收件方的硬门槛。",
-          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
-          "discussion_url": "https://news.ycombinator.com/item?id=50416158",
-          "meta": "201 分 · 161 评论"
+          "title": "I saw your HN comment",
+          "summary": "作者 Josh Strange 说，回应他博客和 HN 评论的邮件在近两年从「多是信号」变成「多是噪音」：LLM 让人可以针对某条真实评论写出个性化邮件，以提问开场、装作关心答案，等他认真写完几段回复后再转为推销（「这正是我们在做的……」「下周能聊 15 分钟吗？」）。他把这比作「放大攻击」：对方写两三句，你写两三段。对读者：公开留邮箱的开发者都会遇到，作者的应对是先短回、确认不是推销再深聊。",
+          "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50426582",
+          "meta": "403 分 · 288 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+          "summary": "见头条第三条。评论区有人借机抨击 OpenAI 把 Codex 并入 ChatGPT 是在变相涨价，并自称有内部人士反对——这是匿名评论者的说法，无法核实；更有用的是几条安全建议：Secure Enclave 存密钥、不要让工具往 ~/.ssh/config 里直接写配置而用 Include。",
+          "url": "https://github.com/openai/codex/pull/28131",
+          "discussion_url": "https://news.ycombinator.com/item?id=50422628",
+          "meta": "205 分 · 71 评论"
         }
       ]
     },
@@ -359,26 +316,35 @@
       "items": [
         {
           "id": "lo-1",
-          "title": "systemd loves Rust",
-          "summary": "见头条：Rust 只进叶子二进制，不进核心共享库，不用 cargo / std，保持可选。Lobsters 评论认为这是「无生态的 Rust 语言」用法，类似内核。",
-          "url": "https://amutable.com/blog/systemd-loves-rust",
-          "discussion_url": "https://lobste.rs/s/62loik/systemd_loves_rust",
-          "meta": "32 分 · 14 评论 · rust, systemd"
+          "title": "How Much Energy Does Building Distro Packages Use",
+          "summary": "Wesley Moore 给 Casuarina Linux（基于 Chimera Linux）的构建机接了智能插座：2026 年 3 月 30 日到 11 月 8 日约 5000 次包构建，共耗电 98.4 kWh，按他的电价约 32 澳元；而且他只在有活时开机，因为这台 Ryzen 9 5950X 机器空闲功耗约 55W。Lobsters 最高赞评论算了一笔账：若一直开着，7 个月空闲就要约 275 kWh，接近实际用电的三倍——空闲功耗才是被忽视的大头；也有人建议把构建任务排到光伏发电充足的时段。",
+          "url": "https://www.wezm.net/v2/posts/2026/distro-energy-use/",
+          "discussion_url": "https://lobste.rs/s/ezjewj",
+          "meta": "83 分 · 15 评论 · linux"
         },
         {
           "id": "lo-2",
-          "title": "Who wants to crowdsource LLM scans of articles submitted to Lobste.rs?",
-          "summary": "有用户想建立一个由多人分摊费用的 Pangram「AI 文本检测」索引，以对抗灌水文章，并澄清不会改动 Lobste.rs 本身。评论几乎一边倒反对：检测器有假阳性，会冤枉纯手写文章，有人说自己因此不再写长文；也有人要求先给出方法论。意义：反 slop 的需求真实，但用概率检测去「判官」会伤害真人作者，社区倾向要求申诉与透明。",
-          "url": "https://lobste.rs/s/jbdtim/who_wants_crowdsource_llm_scans_articles",
-          "meta": "17 分 · 22 评论 · ask, web"
+          "title": "Terminal2Shell: Critical flaw grants instant shell access on every major OS",
+          "summary": "一篇讽刺「漏洞营销」的网站（Lobsters 标签就是 satire）：煞有介事地披露「打开终端就会连上一个能执行任意命令的 shell」，CVSS「11.0」，受影响设备 20 亿+，唯一不受影响的是 Microsoft Paint，缓解措施是「别打开终端」。它讽刺的是近年给漏洞起名、建站、渲染恐慌的套路；评论区一片「Mac OS 9 安全了」之类的接梗。",
+          "url": "https://terminal2shell.com/",
+          "discussion_url": "https://lobste.rs/s/vghqe8",
+          "meta": "74 分 · 20 评论 · satire, security"
         },
         {
           "id": "lo-3",
-          "title": "Nspawn 3.0: A Docker-compatible Engine API for systemd-nspawn containers",
-          "summary": "Nspawn 3.0 为 systemd-nspawn 容器提供 Docker Engine API 兼容层（socket 为 /run/nspawn/api.sock，覆盖 1.51 及更早版本），docker 命令和 GitLab Runner 的 docker executor 可以直接指向它。它走 polkit 授权，但有安全提示：拥有 org.nspawn.manage 的用户等同主机 root；镜像构建/推送等仍返回 501。对读者：想在不装 Docker 守护进程的 systemd 主机上复用 docker 工具链，可以关注，但注意其权限模型。",
-          "url": "https://blog.nspawn.org/posts/nspawn-3-0-a-docker-compatible-engine-api-for-systemd-nspawn-containers/",
-          "discussion_url": "https://lobste.rs/s/lh0qbr/nspawn_3_0_docker_compatible_engine_api",
-          "meta": "12 分 · 4 评论 · release"
+          "title": "Horrible public key tricks",
+          "summary": "作者出于对 ACME 与短期证书的不满，做了一张「抗议证书」：在 RSA 公钥的模数 n 里藏入可读的字符串（需要找到两个大素数使其乘积恰好呈现这段「虚荣」模数），因为 CA 不允许改公钥指数 e，只能在模数上做文章。这是密码学玩具而非攻击，读者能顺便复习 RSA 密钥结构；评论者发现作者自己网站的证书里就带着这样的消息。",
+          "url": "https://maurycyz.com/projects/badcert/",
+          "discussion_url": "https://lobste.rs/s/txkq8s",
+          "meta": "73 分 · 9 评论 · cryptography"
+        },
+        {
+          "id": "lo-4",
+          "title": "Microsoft are rejecting your mail",
+          "summary": "英国主机商 Mythic Beasts 的博文，与上期 HN 的「Outlook 静默拒收无 DMARC 域名」是同一件事的又一个一手确认。评论补充：DMARC 哪怕设为 none 也已是多家大邮件服务商的事实要求；也有人说即使 SPF/DKIM/DMARC 全配好，过去还得向微软的 Junk Mail Reporting Program 申请才可能进收件箱。结论：自建邮件或用小服务商发信，先把 DMARC 记录补上。",
+          "url": "https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/",
+          "discussion_url": "https://lobste.rs/s/ynik5s",
+          "meta": "36 分 · 3 评论 · email"
         }
       ]
     },
@@ -388,106 +354,120 @@
       "items": [
         {
           "id": "v2-1",
-          "title": "现在还有必要花大量时间学习编程吗？",
-          "summary": "楼主问 AI 写代码越来越强，数据结构、算法、计算机原理还值不值得学。高赞回答分成三类：「术可浅尝，道要学」（带宽、磁盘 IO 这类物理限制，AI 帮不了你）、「5 年后产品思维比编程更有竞争力」，以及用五笔对输入法类比的反方观点；一位接活的人举例，非技术客户把命令丢给 AI 反而越弄越糟，最后还得远程救场。共识是：基础概念要懂，才能和 AI 沟通并验证结果。",
-          "url": "https://www.v2ex.com/t/1255305",
-          "meta": "68 回复 · 职场话题"
+          "title": "我觉得 CSDN 是彻底废了吧",
+          "summary": "楼主只贴了一张图，回复几乎一边倒：CSDN 被认为是「中文内容坟场」，文章被平台擅自加上 VIP 才能看全文（有作者说自己多年没登录的旧文也被加锁）、垃圾短信推广、被爬虫搬运严重；也有人怀念「国内项目那些稀奇古怪的问题只有 CSDN 上有答案」。背景是 AI 搜索与问答分流了「搜报错进 CSDN」的流量——Stack Overflow 都在衰落，内容农场式平台更难维持。",
+          "url": "https://www.v2ex.com/t/1255435",
+          "meta": "71 回复 · 互联网"
         },
         {
           "id": "v2-2",
-          "title": "卖软件这个事情在未来可能是伪命题了",
-          "summary": "楼主转引 X 上孟岩关于「人人都能用嘴炮做 app，卖通用软件更难」的观点，问程序员/产品/设计会不会消失。回复里的反驳比较有信息量：开源 Linux、LibreOffice 并没有让 Windows/Office 消失；真实企业业务的复杂度不是 vibe 一下能覆盖；多数人既说不清需求，也无法把软件从「能用」做到「好用」；AI 本身也有 token 成本，vibe 出来的东西通常更糙。结论倾向：低端定制开发会被压缩，但不会归零。",
-          "url": "https://www.v2ex.com/t/1255327",
-          "meta": "57 回复 · 程序员"
-        },
-        {
-          "id": "v2-3",
-          "title": "哪位大神的 claude 没有被封过，分享下方法哇",
-          "summary": "又一个 Claude 防封讨论。回复里的经验大致是：固定的海外 IP + 正常用量更安全，比如公司专线固定美国 IP 的个人 Pro、中文环境、用 Google Play 订阅、每周只用约 70%，半年没被封；也有人认为 Max 长期用满更容易被判为异常。部分回复夹带拼车/代充链接，请谨慎。这类经验都是个案，Anthropic 并未公布风控规则，不能当作保证。",
-          "url": "https://www.v2ex.com/t/1255324",
-          "meta": "32 回复 · Claude"
-        },
-        {
-          "id": "v2-4",
-          "title": "突然想起来，微软居然没拿出一个能用的模型？",
-          "summary": "楼主困惑微软投入巨大、又有 GitHub，为何没有存在感。回复给出两种解释：一说微软战略是做「模型供应商的 hub」，因为 AI 的重资产是数据中心（电力、土地、服务器、液冷）而不是模型；另一说微软与 OpenAI 多次改协议、自家 MAI/Phi 训练落后。两种说法都没有一手证据，属论坛推断；与本期 HN 上「微软研究院 AI Frontiers 解散」的话题可以对照看。",
-          "url": "https://www.v2ex.com/t/1255350",
-          "meta": "30 回复 · 程序员"
+          "title": "初级古法前端说：前端比后端难多了。我这个后端老登沉默了",
+          "summary": "一位十多年经验的后端在公司不提供也不报销 AI 的情况下仍重度用 AI 写代码，结果把后台管理系统页面、联调、运维、部署全揽了下来，而三年经验的前端同事只做商城前台还常把自己的 bug 报成接口问题。社区解读 / 非官方定义：「古法前端」指不用 AI、纯手写的前端，「老登」是对资深老员工的自嘲称呼。帖子折射的是 AI 正在放大个人产出差距：会用 AI 的人把邻近岗位的活也吃掉了；这是楼主单方面叙述，前端同事的说法不在帖内。",
+          "url": "https://www.v2ex.com/t/1255534",
+          "meta": "67 回复 · 职场话题"
         }
       ]
     },
     {
       "id": "cn",
-      "source": "Solidot / NodeSeek",
+      "source": "Solidot / Linux.do / NodeSeek",
       "items": [
         {
           "id": "cn-1",
-          "title": "LG 因其智能电视监视用户面临法律诉讼",
-          "summary": "Solidot 报道：9 月有研究人员称 LG 智能电视在屏幕关闭但未断电时会扫描家庭网络、寻找手机等设备并记录麦克风音频，还收集附近 Wi-Fi 名称、信号强度与位置，数据发往 LG 的定向广告部门 LG Ad Solutions；LG 否认。葡萄牙消费者组织 Citizens Voice 请求当地法院审查 LG 的说法，并希望把零售商也纳入追责。要点：这是研究人员的报告加 LG 的否认，法院尚未认定。",
-          "url": "https://www.solidot.org/story?sid=85829",
-          "meta": "Solidot · 11-08 23:23"
+          "title": "苹果将部分工程师的每日 AI 预算从 300 美元削减到 200 美元",
+          "summary": "Solidot 转述 Bloomberg：市值重回第一的苹果也开始给内部 AI 用量设限。和上期高盛收回 Claude Code、本期 Grok Bot 额度风波放在一起看，是同一个趋势：企业已不再把 agent token 当作免费午餐，「每人每天花多少」正在变成管理指标。对读者：团队若在推广 coding agent，最好提前建立按人/按项目的用量观测，而不是等账单出来再砍。",
+          "url": "https://www.solidot.org/story?sid=85833",
+          "meta": "Solidot · 11-09 14:40"
         },
         {
           "id": "cn-2",
-          "title": "微软移除了 PC 到 PC 的迁移功能",
-          "summary": "Windows 11 曾提供通过 Wi-Fi 或以太网在两台 PC 间直传文件与设置的迁移工具，现已移除，支持文档改推荐 Windows Backup。它基于 OneDrive，需要登录个人微软账号，免费版仅 5GB；应用仍需重装。对读者：换机时别再指望官方直连迁移，大量照片文档会很快超过免费额度。",
-          "url": "https://www.solidot.org/story?sid=85827",
-          "meta": "Solidot · 11-08 22:34"
+          "title": "Asahi Linux 从 MIT 许可证切换到 GPL",
+          "summary": "Asahi Linux（把 Linux 移植到 Apple Silicon Mac 的项目）宣布从 MIT 改为 GPLv2 或更高版本。原因是有人把开发分支里尚未完成的代码不注明出处地发表，甚至用 AI 重写以掩盖来源、意图取代原项目牟利。过去「代码洗白」需要逐行改写，LLM 让它变得廉价，宽松许可证对小团队的保护因此变弱。这可能是开源项目「因 AI 改协议」的一个标志性案例；不过 GPL 能否真正挡住 AI 改写式的「洗白」，法律上仍无定论。",
+          "url": "https://www.solidot.org/story?sid=85832",
+          "meta": "Solidot · 11-09 14:29"
         },
         {
           "id": "cn-3",
-          "title": "台积电考虑进入内存行业",
-          "summary": "据 Solidot，应最大客户英伟达要求，台积电考虑生产名为 3D DRAM 的先进内存，可能新建工厂或收购现有工厂改造，时间表不明，项目由负责先进封装的副总裁徐国晋领导。若成真将与三星、SK 海力士、美光竞争。目前还只是「考虑」阶段，没有官方确认。",
-          "url": "https://www.solidot.org/story?sid=85826",
-          "meta": "Solidot · 11-08 21:43"
+          "title": "脚本 Ram Altman：监视 PC 闲置内存，然后给 Sam Altman 发邮件",
+          "summary": "梗的来源是 Sam Altman 一句关于 PC 内存被浪费的言论，被网友做成无数梗图，他本人还把用户名自嘲改成「Ram Altman」。开发者 Iain Kay 写了个 Bash 脚本：闲置内存超过 10% 就随机挑一封讽刺邮件模板寄给 Sam Altman（默认未配置邮件服务器，需要用户自己设置）。背景是 AI 数据中心抢购内存推高消费级内存价格，同日 HN 热帖「树莓派 5 16GB 卖到 385 美元」也是同一种情绪。",
+          "url": "https://www.solidot.org/story?sid=85834",
+          "meta": "Solidot · 11-09 15:32"
         },
         {
           "id": "cn-4",
-          "title": "老黄出轨被大调查 #NVIDIA（NodeSeek 多帖）",
-          "summary": "NodeSeek 窗内（至 11-09 08:04 北京时间）出现多个相关帖子，如「老黄出轨被大调查#NVIDIA」「老黄的瓜有点大」「[News] 我要是老黄那么有钱，我比他玩得花」，都在围绕头条里的 NVIDIA 事件调侃。RSS 不提供回复数和热度，这里只收录标题并以官方声明为准；论坛里的段子不代表事实。",
-          "url": "https://www.nodeseek.com/post-1040694-1",
-          "meta": "NodeSeek · 11-09 07:38"
+          "title": "彻底抛弃 Trellis，工作已经完全交给 AI 了，分享下我的工作流",
+          "summary": "Linux.do 日榜第一：作者称半年没写一行代码，流程是 Jira 任务 → 固定提示词 → 调查与方案 → 开发和针对性测试 → 派两个 subagent 独立审查 → 授权后提交推送 Jenkins 部署 → 浏览器验收；工具组合换成 OpenSpec（记录要改什么、怎么验收）+ CodeGraph（找代码）+ ai-memory（检索历史问题），公司提供 GPT Pro 20x、主力 6.1-sol。最值得抄的是他写进 AGENTS.md 的约束：最小完整修改、发现无关问题先记录不顺手改、验证通过就收尾避免反复重构。适合正在搭团队 agent 流程的读者参考。",
+          "url": "https://linux.do/t/topic/3143498",
+          "meta": "Linux.do · 日榜"
+        },
+        {
+          "id": "cn-5",
+          "title": "Fable 5.2 中文社区首日反馈：「提升恐怖」与「自作主张」并存（Linux.do / NodeSeek）",
+          "summary": "Fable 5.2 发布当晚（北京时间 11-10 凌晨）Linux.do 涌出一串帖子：有人引用评测称其接近 Anthropic 内部最强模型；有人说让它画《孤独摇滚》后藤一里的 SVG，它判定侵权却不明说，而是十几分钟后「自作主张」画了个原创角色，浪费 token；还有人拿灰测视频对比，认为正式版精细度不如此前流传的「灰测模型」（灰测版本身是否为同一模型未经证实）。NodeSeek 则在讨论本周 Anthropic 一口气送了几张 Fable 重置卡。RSS 不提供回复数与热度，这里只做情绪归纳。",
+          "url": "https://linux.do/t/topic/3147419",
+          "meta": "Linux.do · NodeSeek · 11-10 凌晨"
         }
       ]
     },
     {
       "id": "product_updates",
       "source": "产品更新",
-      "note": "其余关注产品窗内无新版本：Claude Code CLI（GitHub/npm 最新仍为 2.1.319，11-06 发布）、Claude Desktop（changelog 顶条仍为 11-05 v4.23118.0）、Codex CLI（最新稳定 0.167.0；0.169.0-alpha.3 发布于 11-07 19:31 UTC，早于窗口）、ChatGPT 客户端（总 changelog 最新为 11-04 Images 2.6，macOS/Windows 无新条目）、Sub2API（最新 v0.2.20 发布于 11-07）、Tern（tern-sdk 最近提交为 11-04）。",
+      "note": "其余关注产品今日无新版本：Codex CLI（npm latest 仍为 0.167.0，窗内只有 0.169.0-alpha.4～alpha.8 与 0.167.0-alpha.4.1 预发布，未写入）、ChatGPT 客户端（总 release notes 最新仍为 11-04 Images 2.6，macOS/Windows 页无新条目）、Sub2API（最新仍为 v0.2.20，11-07 发布）。",
       "items": [
         {
-          "id": "prod-omp",
-          "title": "omp (oh-my-pi) v18.18.1 → v18.18.2",
-          "summary": "窗内两个正式版（GitHub 与 npm @oh-my-pi/pi-coding-agent 同步）。v18.18.1：Cursor 工具批次保序（文件编辑会等待先发的调用，之后的调用等编辑落盘，避免 Shell 抢在 StrReplace 之前执行）；ChatGPT Pro Max 计入 Pro 的 Codex 账号路由；把形如 429 'Too many tokens' 的上下文溢出措辞误判，改按限流重试；RPC bash 可用 excludeFromContext 把一次运行排除出模型上下文（Rust SDK 有破坏性变更）；agent 的 bash 统一使用 C.UTF-8 区域；内置 shell 解析快约三分之一。v18.18.2：新增 omp gc --strip，清除空闲超过 30 天会话里的服务商重放数据（会话仍可换模型恢复）；内置 shell 加入 sd 查找替换与 ls -O；sloppy 编辑工具只拒绝匹配失败的操作、其余照常应用；并发 bash 在会话 shell 的副本里运行；修复 Anthropic 被拒绝的思考块导致会话卡住、Codex Responses 经鉴权网关丢工具命名空间等。对用户意味着：做 Codex/Anthropic 账号轮换、长会话或多代理的人建议升级；写宿主集成的要注意 logoutCredential 和 SessionStorage 的破坏性变更。",
-          "url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.18.2",
-          "meta": "v18.18.1 · 11-08 08:25 / v18.18.2 · 11-09 02:07（北京）"
+          "id": "prod-claude-code",
+          "title": "Claude Code CLI v2.1.321",
+          "summary": "新增 Claude Fable 5.2（claude-fable-5-2），并设为默认 Fable 模型：1M 上下文、$8/$40 每百万 token、缓存读取 $0.20；`claude remote-control` 支持 `--settings <file>` 为每个会话套用设置文件。安全相关修复值得单独注意：MCP OAuth 请求遇到服务器重定向时会把 refresh token 等密钥发给另一主机；只读 Bash 命令可能在沙箱外无提示执行；Bash 权限检查按错误目录判断写入；`cp`/`mv` 进目录时 deny 规则与受保护文件提示不生效。其他还有 fast 模式限流时先回退同模型标准速度、长会话反复读大文件单行导致高内存、网络路径（UNC/WSL）上 Edit/NotebookEdit 误改等数十项修复。anthropics/claude-code 仓库只含发布说明、不含源码，本条依据官方 release notes。对用户：所有人都建议升级，尤其是接了第三方 MCP 服务器或依赖沙箱的团队。",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+          "meta": "v2.1.321 · 11-10 03:22（北京，GitHub；npm 03:02）"
         },
         {
-          "id": "prod-cpa",
-          "title": "CPA (CLIProxyAPI) v8.0.61",
-          "summary": "窗内一个版本，主要围绕 Codex 的 SIWC（Sign in with ChatGPT）续期：保留 SIWC 轮换与续期窗口、CLI 重新授权时复用已签发的 SIWC 客户端、在 macOS 维护唤醒期间推迟续期以免误判；另外对缺少 call_id 的孤儿工具输出做清洗，新增会话亲和「never」重绑模式、插件商店可选刷新发行缓存，README 补充 SWE-2 Flash 与 cpa-status 说明。对用户意味着：用 ChatGPT 登录反代 Codex 的人，凭据续期更稳，Mac 休眠唤醒后不容易掉授权；建议直接升级。发布说明里的 compare 为 v8.0.60...v8.0.61。",
-          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.61",
-          "meta": "v8.0.61 · 11-08 22:31（北京）"
+          "id": "prod-claude-desktop",
+          "title": "Claude Desktop v4.23118.1（内置 Claude Code 2.1.321）",
+          "summary": "官方 changelog 11-09 条目。通用：Windows 上 Claude Code 不再通过网络（UNC）或相对 PATH 条目寻找 git 等程序，只能这样找到 Git 时改用 PowerShell 而非 Git Bash；macOS 上 Claude Code 换用同团队（Team ID Q6L2SF6YDW）的新 Developer ID 证书签名——按证书本身做白名单的企业需要把新证书加进去；修复中途断线报「EPROTO: TLS handshake failed」。Code：开启沙箱时，子目录 `.claude/skills` 中的 skill 不再在会话中加载，需要在该子目录启动会话；修复多条 Bash 并发时在错误目录执行。3P：插件自身代码（mod）发起的工具调用不再弹审批卡，但对设为 ask 的工具这类调用会直接被拒。对企业 IT：证书和 Windows PATH 两条变更可能影响终端管控规则。",
+          "url": "https://claude.com/docs/cowork/changelog",
+          "meta": "v4.23118.1 · 2026-11-09（官方 changelog）"
+        },
+        {
+          "id": "prod-omp",
+          "title": "omp (oh-my-pi) v18.18.3 → v18.18.6",
+          "summary": "窗内四个正式版（GitHub 与 npm 同步），v18.18.2..v18.18.6 共 399 个提交、409 个文件变更（+24645/−8973），改动集中在 coding-agent（约 22%）、内置 shell 的 bash VM（crates/pi-shell）和 TUI。v18.18.3 有破坏性变更：ask 工具改为接收一个 HTML `<form>`（单选、多选、下拉、文本框，可预选推荐项、可嵌图片与 SVG），返回 JSON，旧的 questions[] 与「Other / Chat about this」路径移除；另有 omp zsh 在 Windows 上大量补齐（Ctrl-C、ZLE、/dev/null），函数调用与循环快 2～3 倍；Claude/Gemini 等模型不再被提示词推着去派子代理。v18.18.4：暂停 Google Antigravity 登录（理由是 Google 可能限制在其应用外使用的账号），新增 Otari 网关。v18.18.5：加入 Claude Fable 5.2 与 Mythos 5.2 定价与能力元数据。v18.18.6：上一家提供商迟到的限额错误不再拖累当前选中的提供商、MCP `!command` 生成的短期令牌在 401/403 时重新执行，Tern 手机端长按菜单可编辑重发/重试/回溯/分叉会话。对用户：写宿主集成或依赖 ask 工具结构的要按 v18.18.3 改接口；用 Antigravity 的会发现登录项消失。",
+          "url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.18.6",
+          "meta": "v18.18.3 · 11-09 11:59 / v18.18.6 · 11-10 07:30（北京）"
+        },
+        {
+          "id": "prod-tern",
+          "title": "Tern (Stencil) · tern-sdk 同步提交 a933069",
+          "summary": "Tern App 仍为封闭 beta，没有公开发版，这里看 SDK 提交：窗内唯一一次「chore: synced the sdk」改了 24 个文件（+241/−62），在 Go、Python、Rust、TypeScript 四个 SDK 里同时新增 OnHold / on_hold / onHold 处理器——把条目加进 `actions.hold`，即手机上长按弹出的菜单（桌面端忽略）。这与同日 omp v18.18.6 在 Tern 手机端加入「长按一轮对话可编辑重发、重试、回溯、分叉」是配套的。对用户：基于 tern-sdk 写界面的开发者现在可以为移动端定义长按操作。",
+          "url": "https://github.com/stencil-hq/tern-sdk/commit/a933069de6f6e7707880383f56f7695cf8940ced",
+          "meta": "a933069 · 11-10 03:45（北京）"
         },
         {
           "id": "prod-magpie",
-          "title": "magpie v0.1.3295 → v0.1.3351（窗内 57 个连续 tag）",
-          "summary": "yetone/magpie 日更式小版本，这里只做代表性归纳（依据发布说明，未逐条核对代码 diff）。新功能：Provider 余额可用人民币并按月/周自动续充，之后支持多笔带各自到期日的额度；按模型自定义请求头；可禁用某密钥的模型列表；Antigravity CLI 支持选择思考强度并传给 Gemini；Provider 账号可路由让会话回到原 Provider；浏览器录屏默认存 MP4。网关修复：/v1/models 支持 ETag 与 304；Claude Code 无回答时返回 502 而非空 200；多文本块回复可继续；auto 模式分类器保留缓存标记；Max 20x 账号显示为 Claude Ultra；路由 ID（auto/free/default）不再绑定单一模型；发布文件改由 Cloudflare R2 分发；新增在 Claude Code 与 Codex 里使用其他模型的文档。意味着：多账号/多 Provider 的网关用户获得更细的额度管理，旧版建议升级（应用会自动更新）。",
-          "url": "https://github.com/yetone/magpie/releases/tag/v0.1.3351",
-          "meta": "v0.1.3295 · 11-08 09:17 / v0.1.3351 · 11-09 07:46（北京）"
+          "title": "magpie v0.1.3353 → v0.1.3484（窗内约 130 个连续 tag）",
+          "summary": "yetone/magpie 仍是日更式小版本；按 git 对照 v0.1.3351..v0.1.3484 共 198 个非合并提交、748 个文件（+58886/−3307），此处按提交信息做代表性归纳。最大的新功能是一整套「共享记忆」：所有 agent 共用一个关于用户的记忆库、以 MCP 服务器形式供各 agent 挂载，可选「从对话中学习」（把结束的对话提炼成待审阅记忆，被用户丢弃的不再提议），以及每晚整理记忆的 Dreaming，可一键撤销。模型与网关：支持 Fable 5.2（含 Vertex、Bedrock、Desktop fable 档和 Anthropic fast 模式），Responses 供应商可走 WebSocket，账号窗口可按固定额度封顶，供应商声明的限流截止时间内不再重试。平台：可选在你自己的 Claude 旁边装一个「Claude Magpie」桌面 app、Windows 进入「已安装应用」且卸载会恢复各 agent 配置、支持 LazyCat 部署；文档新增与 CC Switch、Claude Code Router 的对比页。对用户：多 agent 共用上下文是本轮最值得试的点，但记忆会跨 agent 共享，涉及隐私的内容记得在 Memory 页审阅。",
+          "url": "https://github.com/yetone/magpie/releases/tag/v0.1.3484",
+          "meta": "v0.1.3353 · 11-09 08:38 / v0.1.3484 · 11-10 07:51（北京）"
+        },
+        {
+          "id": "prod-cpa",
+          "title": "CPA (CLIProxyAPI) v8.0.62",
+          "summary": "窗内一个版本，v8.0.61..v8.0.62 改动 93 个文件（+7986/−1501），主要有三块。路由：新增按权重轮询的选择器（selector_weighted.go，约 400 行），并对粘性会话、固定（pinned）与复用的流量做补偿，避免会话亲和让权重失真。Claude：默认关闭上游连接复用，并回滚上一版的流后排空逻辑（相关 keepalive/detachable context 测试被移除），识别带扩展 UA 的原生 Claude Code 请求并保留请求字段。Gemini/Antigravity：支持非对称 thoughtSignature 重放缓存，去掉 KV 数组的双重 base64 编码。对用户：做多账号加权分流的人会直接受益；上一版引入的 Claude 流后排空被回滚，遇到 Claude 上游连接异常的可升级验证。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.62",
+          "meta": "v8.0.62 · 11-10 00:40（北京）"
         }
       ]
     }
   ],
   "gaps": [
     "按用户设定未抓取 Reddit，sections 中没有 reddit 分区；本期只有文字和封面图，没有视频和音频。",
-    "Linux.do：top/latest RSS 对本机返回 403，本期 cn 分区没有收录 Linux.do（上期已因 API 限制只靠 RSS）。NodeSeek 仅有 RSS，没有热度数据，只收录与头条相关的一组帖子标题。",
-    "开源中国：RSS 窗内只有 zlang、拾趣 (Magpie)、Cordonix、OpenGoLive 等项目自荐类发版稿，信息量不足，未收录；注意其「拾趣 (Magpie)」与 yetone/magpie 是否同一产品本期未核实，产品区只用了 GitHub 发布。",
-    "magpie 窗内 57 个 tag 只按发布说明代表性归纳，未读取代码 diff；omp、CPA 依据官方发布说明，未逐个读取 tag 间提交。Codex alpha 版本在窗外，未写入。",
-    "X 数据取自 X API（窗内 11-08 00:00Z～11-09 00:00Z），Elon 窗内共 17 条（非转帖）；未收录与科技关系较弱的政治/文化帖（如 Chappelle、美国选举游行、Gene Wu 相关回复）。帖子中「Grok Bot」是推文原文写法。",
-    "身份核对：Tibo（@thsottiaux）X bio 为「Codex & ChatGPT @OpenAI」；poteto（lauren）bio 为「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」；mattyp（matt palmer）bio 为「cursor & @bot at @spacexsi」，均为 X API 当日读取。Elon 的 bio 仅为短链接，只写可见身份与 handle。",
-    "State of AI 对高盛事件是转述 Bloomberg，ANT 上市、S-1 等细节未独立核实；NVIDIA/黄仁勋事件以官方声明和 Axios 为准，评论区的动机推测不当作事实。Elon 转述的「100GW 轨道算力」「Larry Page 5 个 9」均为二手说法。",
-    "未发现 label=rating 或 watch 的 Issue（仓库仅有两个已合并的 PR），因此 data/ratings.json 与 data/config.json 无需更新；temp_watches 为空。"
+    "X 数据取自 X API（窗内 11-09 00:00Z～11-10 00:00Z）：Elon 窗内 28 条非转帖，未收录政治/文化类帖子（如 Chappelle、Russell Brand、「左派庆祝谋杀」等）；Tibo 窗内仅 1 条；poteto 21 条（含转帖）。",
+    "身份核对（当日 X API 读取 bio）：Tibo（@thsottiaux）「Codex & ChatGPT @OpenAI」；poteto「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」；@mdamore9「building Cursor」；@bot「AI teammates that you can give real work to.」；@maria_rcks 标注 @t3dotcodes；Charlie Cheever「working on @expo & @castlexyz」；Elon 的 bio 仅为短链接，只写可见身份。",
+    "Linux.do 的 RSS 本次可读（日榜与最新），但帖子页与 JSON 被 Cloudflare 拦截（403），只能依据 RSS 摘要，无回复数；NodeSeek 同样只有 RSS。开源中国 RSS 窗内仍以项目自荐发版稿为主（ApiGo、uniTerm、NocoBase 等），未收录。",
+    "GitHub REST API 匿名额度在抓取中途耗尽，产品区改用 releases.atom、GitHub MCP 和 git 部分克隆（blob:none）对照 tag 计算 diffstat；omp、CPA、magpie、tern-sdk 的代码规模数字来自 git diff，功能描述以发布说明与提交信息为主，未逐文件审阅。Claude Code 仓库不含源码，只能依据发布说明。",
+    "Fable 5.2 的基准与案例数字均出自 Anthropic 官方文章；「单任务 token 翻倍」出自 HN 评论者对 Artificial Analysis 数据的转述；「Opus 5.5 降智」为用户分析，Anthropic 未回应。车企名称原文隐去，评论区猜测不作为事实。Gemini 人工审核一条已对照 Google 帮助中心原文，仓库作者的复现结论未独立验证。",
+    "NodeSeek「TIBO 是不是跳槽到 A\\ 了」与「Cybertruck 退订金」两帖发布于北京时间 08:01～08:04，略晚于窗口结束，只作为语境引用，条目链接使用窗内帖子或一手来源。",
+    "未发现 label=rating 或 watch 的 Issue（仓库只有两个已合并 PR），data/ratings.json 与 data/config.json 无需更新；temp_watches 为空。"
   ],
-  "cover": "images/covers/2026-11-09.png"
+  "cover": "images/covers/2026-11-10.png"
 }
