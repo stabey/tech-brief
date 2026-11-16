@@ -1,0 +1,488 @@
+{
+  "id": "2026-11-16",
+  "title": "刚出锅 · 2026-11-16",
+  "window": {
+    "start": "2026-11-15T08:00:00+08:00",
+    "end": "2026-11-16T08:00:00+08:00"
+  },
+  "generated_at": "2026-11-16T08:20:41+08:00",
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "「凡 AI 生成的代码都应开源」——窗内最高分帖把版权吵到了 1054 分",
+      "summary": "Jakub Jankiewicz 在短文里主张：凡由 AI 生成的代码都应开源，或用 CC0 交给公共领域。理由有两条。其一是训练数据大量来自开源仓库，以及按 CC 协议本就要求署名的 Stack Overflow，把集体知识洗成专有闭源等于「许可洗白」；其二是美国版权局沿用「非人类不能持有版权」，纯模型产出本就可能没有版权，开发者不如主动把规则拉齐。文章很短，没处理混合作品里人类贡献怎么切割、强制开源怎么执行。HN 以 1054 分、577 条评论成为窗内最高分，并不买账「应当开源」四个字：反对派把模型比作编译器，并指出当前判例更接近「输出并不自动继承训练数据的开源许可」；中间派提醒，若代码不可版权，再套 MIT/BSD 反而没有法律抓手。Lobsters 也在讨论同一篇，焦点更干脆——不可版权、公有领域和开源许可根本不是一回事。我们的看法：这篇更像原则宣言，真正有信息量的是评论里那类「开源被原样盗用，再被 LLM 克隆后继续卖」的亲历，以及法律概念被混用的地方。",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "source": "HN / Lobsters"
+    },
+    {
+      "id": "h2",
+      "title": "Elon 查完热盾：Ship 42「几周翻修大概能再飞」，离飞机式立即复用还早",
+      "summary": "Ship 42 被发射塔机械臂接住发生在窗前（11 月 14 日，SpaceX 官方「Mechazilla catches Starship!」），本期是捕获后最有信息量的一段。Elon 在发射台看过整块热盾和发动机后写：整体看起来很好，发动机也好，Ship 42 大概几周翻修就能再飞；但要达到「像飞机一样立即复用」——除定期维护外预期零翻修——还需要许多小修（约 2.75 万赞、111.8 万次曝光）。这是他把「能再飞」和「完全复用」明确拆开的第一手判断，也解释了为什么昨天接住了船、丢掉了助推器之后，闭合回路仍缺一截。同窗他还发了塔上拍的手机视频（约 26.0 万赞、731 万次曝光）和「I hugged ship 42 upon its return」（约 13.4 万赞），并接了船号 42 与《银河系漫游指南》的梗。DeepMind / Alphabet 首席科学家 Demis Hassabis（@demishassabis，当日 bio 写明 Nobel Laureate、Co-Founder & Chair @GoogleDeepMind、Chief Scientist of Alphabet）祝贺说「the whole stack is now proven out」，传记作者 Walter Isaacson 则回忆 2020 年 12 月工程师听到「用 Mechazilla 接住返回的星舰」时的表情。",
+      "url": "https://x.com/elonmusk/status/2122092374016806969",
+      "source": "X / SpaceX"
+    },
+    {
+      "id": "h3",
+      "title": "ULA 火神重返飞行失败，亚马逊 40 颗 Leo 卫星未入轨",
+      "summary": "联合发射联盟（ULA）Vulcan Centaur 于美东 11 月 15 日 12:40 从卡纳维拉尔角 41 号工位升空，约 10 分钟后出现异常，未能把 40 颗亚马逊 Leo（前称 Project Kuiper）卫星送入轨道。ULA 官方账号随后确认「根据发射导演收到的数据……failed to deliver the Amazon mission to orbit」，但还没有故障定位；Elon 回复「Sorry to hear this. Hope you are back to flight soon.」。这是 Vulcan 为固体助推器喷管问题停飞约 9 个月后的重返飞行，也是它第一次执行亚马逊 Leo 任务（ULA 称之为 Vulcan Leo 1）。Space.com 写此前第 2、第 4 次飞行出现过喷管异常但载荷仍入轨，本次固体助推器看起来工作正常，故障出在别处。IT之家称这是 ULA 自 2006 年成立以来首次完全失败。对读者的意味很直接：美国除 SpaceX 以外的商业运力又被打一个问号，亚马逊向 ULA 采购的 38 次火神发射里第一次就砸了。评论里有人转述故障可能在助推级、甚至关联蓝源 BE-4，这仍是猜测，官方尚未定性。",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+      "source": "ULA / Space.com / X"
+    },
+    {
+      "id": "h4",
+      "title": "Tibo 为 OpenAI Daybreak 征求反馈；GrapheneOS 抱怨蓝队用不上最新模型",
+      "summary": "Tibo（@thsottiaux，当日 bio：Codex & ChatGPT @OpenAI，不能写成 Cursor 或其他公司）窗内只发了一条，却是本期 OpenAI 侧最直接的产品信号：Cyber team 想听对 Daybreak 的反馈，点名 models、codex plugins、blue/red access、文档、red teaming 和 defense factory（约 4066 赞、2271 条回复、82.8 万次曝光）。官方 @OpenAI 窗内 0 条，细节只能记他的原句。互动最高的长回复来自 GrapheneOS（开源、侧重隐私安全的 Android 兼容移动系统）：他们称已拿到 Daybreak Blue，但该档对 GPT-6 Astra / GPT-6.1 Sol 没有 cyber access，模型常拒绝为非安全的 Linux 内核 bug 做测试用例；Daybreak Red 则没有申请流程，对比 Anthropic 更开放的 Red Team Access，以及 Defense 档里的 Mythos 5.2（他们也称作 Fable 5.2）。这些是 GrapheneOS 的用户侧陈述，窗内没有 OpenAI 或 Anthropic 的官方定义帖，「Daybreak Blue / Red」也不是我们自造的产品名，只是双方帖文里的用词。我们的看法：Daybreak 已经从内部计划变成有分层访问、且被安全组织拿来和 Anthropic 对照的东西，卡点不在有没有产品，而在谁能用上最强的网络安全模型。",
+      "url": "https://x.com/thsottiaux/status/2121845965997101118",
+      "source": "X"
+    },
+    {
+      "id": "h5",
+      "title": "三星、海力士、美光的 DRAM 价格操纵诉讼过了驳回关",
+      "summary": "加州北区法官 Noël Wise 于 11 月 14 日全盘驳回三星、SK 海力士、美光对一起拟制集体诉讼的联合驳回动议，认为诉状已就《谢尔曼法》第 1 条「协议」给出足以进入下一阶段的合理陈述。原告是 17 名消费者和小企业，指控三家合谋削减常规 DRAM（含电脑用 DDR5）供应、把产能转向 AI 加速器所需的 HBM；诉状称 2025 年三季度三家控制全球 DRAM 营收逾 91%，常规 DRAM 一年上涨 171.8%，18 个月涨幅被主张为 697%。法官采信的「附加因素」包括长期锁定 HBM、拒绝常规 DRAM 长约、美光关闭 Crucial、在创纪录价格下仍不扩产等，同时明确不采信三类论据：已被 DRAM II 案判为不足的「供给纪律」表态、行业会议碰面本身，以及三寡头市场结构。这些仍是诉状主张，不是已证事实，答辩截止 12 月 7 日。对读者的意味很具体：内存已经贵到有人刚拿到科研经费也不知该不该买，案子过了驳回关意味着要进入举证，而不是「再罚款一周营收就完事」。评论里也有冷静派提醒，转产 HBM、砍 DDR4 都可以有非共谋解释。",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "source": "LitNews / HN"
+    },
+    {
+      "id": "h6",
+      "title": "微软 Outlook 中断期间，德国乐园酒店的加氯告警没人看到，15 名住客不适",
+      "summary": "这不是重报昨日那次逾 24 小时的微软云故障，而是窗内出现的具体人身后果。德国西德广播 WDR 报道（文内时间 11 月 14 日 18:01）：布鲁尔梦幻乐园（Phantasialand）酒店 Ling Bao 水疗区的自动加药系统出了故障、往泳池打进过多氯，维护安全系统其实已经发出邮件告警，但周五 Outlook 收不到信，园区称直到周六才说明「因为中断，邮件没有送达」。15 名住客入池后出现健康问题，其中 13 人主诉呼吸道刺激，后更正为 4 人送医、1 人中度伤情留院观察。标题常写成「微软导致氯气中毒」，更精确的因果链是：加药故障造成氯过高，告警只走了 Outlook、又赶上宕机。HN 评论几乎一边倒认为这首先是酒店工程责任——危险化学品告警不能只靠一封邮件、没有现场联锁「完全不可接受」。把公有云失败写成唯一原因，既夸大了微软的直接责任，也放过了本不该把安全关键链路放在单一邮箱上的设计。",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "source": "WDR / HN"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "elon-1",
+          "summary": "捕获后的第一人称余波。窗内互动最高的原创是「Some phone videos I took from the tower」（约 26.0 万赞、1.18 万条回复、731 万次曝光，11-15 08:33 北京），两分钟后是「I hugged ship 42 upon its return」（约 13.4 万赞、744 万次曝光）。有人写「The answer is 42.」，他接梗「As foretold by the great prophet, Douglas Adams」——社区解读 / 非官方定义：把船号联到《银河系漫游指南》里「生命、宇宙以及一切的答案」。同窗他还引用 Walter Isaacson（bio：Author of biographies of Musk… Professor @Tulane）回忆 2020 年 12 月坚持 Mechazilla 方案的长帖，写「The epic day has arrived, thanks to the incredibly talented team at SpaceX!」（约 6.01 万赞）；并引用 Demis Hassabis「the whole stack is now proven out. Ad Astra!」只回「Great day」（约 1.58 万赞）。捕获本帖在窗外，细节见头条 h2。",
+          "url": "https://x.com/elonmusk/status/2121763396190179414",
+          "time": "2026-11-15T08:33:08+08:00",
+          "interactions": [
+            {
+              "summary": "I hugged ship 42 upon its return",
+              "url": "https://x.com/elonmusk/status/2121763977349013884"
+            },
+            {
+              "summary": "引用 Isaacson：The epic day has arrived",
+              "url": "https://x.com/elonmusk/status/2121759522851115109"
+            },
+            {
+              "summary": "引用 Demis Hassabis：Great day",
+              "url": "https://x.com/elonmusk/status/2121875056817328621"
+            }
+          ],
+          "metrics": {
+            "likes": 259952,
+            "replies": 11763,
+            "reposts": 26316,
+            "impressions": 7314050
+          }
+        },
+        {
+          "id": "elon-2",
+          "summary": "热盾检查长帖是窗内最有技术含量的一条，详见头条 h2。他写 Ship 42 几周翻修后大概能再飞，但「像飞机一样立即复用」还需要许多小修、预期零翻修（约 2.75 万赞、111.8 万次曝光）。帖子引用 @xdNiBoR（Robin，bio：Software @Socialdatabase / @starlink_stats）「Elon is up at the pad inspecting the ship」。稍后他又回复检查照片帖：「Ship 42 brings back a motherlode of data for further improvements to the heat shield」。",
+          "url": "https://x.com/elonmusk/status/2122092374016806969",
+          "time": "2026-11-16T06:20:23+08:00",
+          "interactions": [
+            {
+              "summary": "被引用：Robin 称路已封闭、Elon 在发射台检查",
+              "url": "https://x.com/xdNiBoR/status/2122060889901748577"
+            },
+            {
+              "summary": "热盾带回大量数据",
+              "url": "https://x.com/elonmusk/status/2122108594183414081"
+            }
+          ],
+          "metrics": {
+            "likes": 27477,
+            "replies": 1249,
+            "reposts": 2398,
+            "impressions": 1118360
+          }
+        },
+        {
+          "id": "elon-3",
+          "summary": "长回复反驳「砸钱就能做出 Starship / Falcon / Dragon」。线程里 @matthewstoller（Matt Stoller，bio 写明 Opinions my own、Writer for BIG）的讨论中，@dhh（DHH，bio：Creator of Ruby on Rails… Co-owner & CTO of 37signals）先写世界上有无数资本配置者、却只有一个 Musk。Elon 接下去问：若谁都能靠砸钱做出这类火箭，为何早于 SpaceX、且由「极为富有的 Jeff Bezos」资助的 Blue Origin 还不能可靠发射；为何波音和洛克希德拿到的政府研发经费数倍于 SpaceX，波音载人舱仍未投入运营、ULA 运送的地球载荷却「不到 SpaceX 的 5%」。他自称 Falcon 承担了 85% 的地球载荷。约 5478 赞。这些百分比和「波音载人舱仍未运营」都是他帖中的主张，未经本刊第三方核对。同一争论里他回复并转推 @paulg（Paul Graham，当日 bio 为空）「limiting factor isn't investment. It's founder ability.」。",
+          "url": "https://x.com/elonmusk/status/2122114284779925897",
+          "time": "2026-11-16T07:47:27+08:00",
+          "interactions": [
+            {
+              "summary": "回复并转推 Paul Graham：限制因素不是投资，是创始人能力",
+              "url": "https://x.com/elonmusk/status/2122043332146684189"
+            }
+          ],
+          "metrics": {
+            "likes": 5478,
+            "replies": 606,
+            "reposts": 622,
+            "impressions": 160970
+          }
+        },
+        {
+          "id": "elon-4",
+          "summary": "对 ULA 官方声明「Vulcan 升空 10 分钟后异常，未能把 the Amazon mission 送入轨道」回复「Sorry to hear this. Hope you are back to flight soon.」（约 2954 赞）。ULA 原帖未给出任务专名，40 颗 Leo 卫星的细节见头条 h3。产品与供应链上，他多为引用或转推 @cb_doge（显示名 DogeDesigner，当日 bio 为空）的「BREAKING」转述：汉莎将于 12 月 3 日首飞装有 Starlink 的 A350、洪都拉斯农村学校天线、联合航空 CEO 的客流说法，以及据 Seoul Economic Daily 称三星计划在 Austin 为 Starlink 做 STM32V8 芯片——这些都不是航司、政府或三星官方账号在本窗的原文。他另转推 @jamesdouma 的提问「Is Jensen being railroaded?」，自己没有下判断；Nvidia / 黄仁勋官方账号窗内 0 条。@SpaceX 窗内仅 1 条，推出网页游戏 STARSHIP The Game。",
+          "url": "https://x.com/elonmusk/status/2122108170176786732",
+          "time": "2026-11-16T07:23:09+08:00",
+          "interactions": [
+            {
+              "summary": "ULA 官方：升空 10 分钟后异常，Amazon 任务未入轨",
+              "url": "https://x.com/ulalaunch/status/2122034531658076417"
+            },
+            {
+              "summary": "SpaceX：推出 STARSHIP The Game",
+              "url": "https://x.com/SpaceX/status/2122001927861158109"
+            }
+          ],
+          "metrics": {
+            "likes": 2954
+          }
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "tibo-1",
+          "summary": "窗内唯一一条，详见头条 h4。「Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, red teaming & defense factory... What can we do better or improve?」（约 4066 赞、2271 条回复、82.8 万次曝光）。身份已按当日 bio 核对：Codex & ChatGPT @OpenAI。最高信息密度的回复来自 @GrapheneOS（bio：Open source privacy and security focused mobile OS with Android app compatibility.），称 Daybreak Blue 对 GPT-6 Astra / GPT-6.1 Sol 无 cyber access，Red 没有申请流程，并对比 Anthropic 的 Defense / Red Team Access 与 Mythos 5.2。这些是 GrapheneOS 陈述；@OpenAI 官方窗内 0 条。",
+          "url": "https://x.com/thsottiaux/status/2121845965997101118",
+          "time": "2026-11-15T14:01:14+08:00",
+          "interactions": [
+            {
+              "summary": "GrapheneOS：Blue 对最新模型无 cyber access，Red 没有申请流程",
+              "url": "https://x.com/GrapheneOS/status/2122018465905082813"
+            }
+          ],
+          "metrics": {
+            "likes": 4066,
+            "replies": 2271,
+            "reposts": 120,
+            "impressions": 827737
+          }
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "lauren",
+      "items": [
+        {
+          "id": "poteto-1",
+          "summary": "「interesting how well this post aged / what are your predictions 1 year from now?」（约 851 赞、99 条回复），引用她自己 2025-10-31 的长帖：高级工程师有责任把护栏搭好、把高质量软件的实践教给下一代；「AIs may write most of the code, but you still decide what ships」；类比是人人都能在家做饭，餐厅却还在，地板在抬高，天花板也在抬高。这和她窗外已上线的 AI.Engineer 演讲「All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI」直接对上，是作者本人给「速度 vs 质量」辩论的注释。身份核对：当日 bio 为 grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix——cursor 在 prev 之后，不是现职。",
+          "url": "https://x.com/poteto/status/2122067662373269960",
+          "time": "2026-11-16T04:42:11+08:00",
+          "interactions": [
+            {
+              "summary": "被引用的 2025-10-31 旧帖：你仍然决定什么能上线",
+              "url": "https://x.com/poteto/status/1984403065571848511"
+            }
+          ],
+          "metrics": {
+            "likes": 851,
+            "replies": 99,
+            "reposts": 22,
+            "impressions": 43643
+          }
+        },
+        {
+          "id": "poteto-2",
+          "summary": "窗内转发了自己窗外已发的 AIE 演讲（YouTube https://youtu.be/O_zcc6Xl12g，卡片标题「All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI」），并转发会议官方 @aiDotEngineer 的切片：Grok Bot 团队一个月 11,000 个 PR、回滚率约 0.5%，更多贡献者、每日稳定发布、应用还更快了——这是会议官方对演讲的转述。查找 @spacexai 返回 Not Found，不能据此编造官方账号。其余窗内帖多为短回复和「poteto」梗（有人把她只回一个词比作格鲁特的 “I'm Groot”，社区解读 / 非官方定义）。",
+          "url": "https://x.com/poteto/status/2122062243760341228",
+          "time": "2026-11-16T04:20:39+08:00",
+          "interactions": [
+            {
+              "summary": "AI.Engineer：一个月 11,000 个 PR，回滚率约 0.5%",
+              "url": "https://x.com/aiDotEngineer/status/2121981562824564960"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "All AI-generated code should be Open Source",
+          "summary": "窗内分数最高的帖，细节见头条 h1。评论里大致三派：一派用「开源被原样盗用、再被 LLM 克隆后继续卖」的亲历，支持「训练于开源、输出却用来规避开源义务」这一指控；反对派把 AI 比作编译器或假肢，并引用美国版权局指引和相关判例，指出「输出并不自动继承训练许可」和「应当开源」不是一回事；中间派承认自己既是被训练的开源作者、也在用 AI 写专有代码，主张关键在工程决策与责任，而不是逐行出处。",
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50507303",
+          "meta": "1054 分 · 577 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "Court denies motion to dismiss DRAM price fixing case",
+          "summary": "细节见头条 h5。评论情绪一边倒地倒向消费者：有人刚拿到科研经费，256GB 内存加一块 32GB 显存的工作站每样都要四五千美元，不知该等还是该买。冷静派提醒，涨价、转产 HBM、砍 DDR4 都可能有非共谋解释，真正要看审判里挖出什么。不要把诉状里的涨幅写成已判决事实。",
+          "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+          "discussion_url": "https://news.ycombinator.com/item?id=50502988",
+          "meta": "485 分 · 215 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+          "summary": "《纽约时报》Ana Swanson、Aaron Krolik、Paul Mozur 报道（本次全文主要依据 Inquirer 对同文的转载，NYT 原页抽取不完整）：马来西亚一座代号 A201、计划明年开业的数据中心将装满价值数亿美元的英伟达最先进 AI 服务器，并计划把算力提供给一家中国科技巨头——在直接对华禁售最先进芯片的规则下，这种境外转供仍属合法。运营方是新加坡公司 Bitdeer，而商务部长 Howard Lutnick 此前长期执掌、现由其子运营的 Cantor Fitzgerald，是 Bitdeer 今年度至多 10 亿美元股权发行的指定销售代理。与此同时，Lutnick 正在参与起草会影响这类数据中心的规则，并被描述为反对把管制收得太紧。商务部称他已遵守伦理协议并已回避；报道也写明这些业务只是 Cantor 的一小部分，「没有证据表明 Cantor 的投资影响了 Lutnick 的决策」。争议点正在于此：回避声明并不能消除「规则制定者的家族事务所是受规管对象的承销商」这一结构性重叠。这与昨日「英伟达被指靠输血初创维持短缺叙事」不是同一件事。评论多数直接定性为利益冲突，少数认为标题用词过重。",
+          "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50506180",
+          "meta": "450 分 · 192 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "The MacBook Pro's OLED PWM problem",
+          "summary": "MacAnorak 写新款 MacBook Pro 的「PROLED XDR」串联 OLED：对比度、黑位和 HDR 峰值亮度都比 Mini-LED 更出色，也是苹果笔记本屏首次支持触控。但 MacRumors 和 AppleInsider 里陆续有人报告头痛、眼疲劳、头晕或无法长时间盯屏，部分人已退货。核心数据来自 Notebookcheck 对 14 英寸机型的实验室测试：最坏情况下 PWM 为 240Hz，多个亮度仍测到闪烁；对照 M4 Pro Mini-LED 机型测到 14,880Hz。该屏似乎同时使用 PWM 与 DC 调光，后者并没有消掉 240Hz 闪烁。作者强调这不是「所有人都会出问题」，而是对 PWM 敏感的那部分用户，一块技术上更漂亮的屏可能更难用。评论里敏感者认为 240Hz 低得离谱，怀疑派拿 CRT 扫描频率类比，中间派则讨论 DC 调光并不能当作已解决问题。",
+          "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50506719",
+          "meta": "400 分 · 225 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+          "summary": "昨日微软云宕机的窗内后果，细节见头条 h6。标题把「氯气中毒」直接归因于 Microsoft 365，原文更精确的因果链是加药系统故障造成氯过高，邮件告警因 Outlook 中断未被看到。评论占主导的一派认为危险化学品告警不能只靠一封邮件；另一派认为付费云服务失败是事实，不必先替微软开脱。",
+          "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50509411",
+          "meta": "342 分 · 163 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+          "summary": "EFF 原文署期 11 月 9 日，早于窗口，HN 讨论落在窗内。EFF 与 ACLU 向第六巡回上诉法院提交 United States v. Sturdivant 的法庭之友意见书，主张用自动车牌识别（ALPR）数据追踪行踪构成第四修正案意义上的「搜查」，应当需要令状。该案里警方只知道车辆品牌、型号和颜色，对 Flock 与 ELSAG 两个 ALPR 数据库做开放式检索后锁定被告。地区法院驳回排除证据动议，理由是车牌可被公众看见。EFF 认为 ALPR 不能类比「路人看一眼车牌」：它是可随时回放的「虚拟时光机」。评论的核心分歧是：公共道路上的大规模回溯跟踪算不算搜查；支持者主张只对已有活跃令状的车牌保留命中数据，对立观点则问为什么「免于监控的自由」高于「抓住持枪抢劫犯」。",
+          "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+          "discussion_url": "https://news.ycombinator.com/item?id=50503255",
+          "meta": "334 分 · 116 评论 · 原文 11-09，讨论在窗内"
+        },
+        {
+          "id": "hn-7",
+          "title": "Old Bitly Links Are Being Hijacked",
+          "summary": "Ransomnews 报道：被改的不是 Burger King 与麦当劳的 X 账号，而是 2011 年旧推文里的 Bitly 短链。Burger King 一条餐厅定位广告里的短链在 11 月 15 日被重新登记，指向维基百科「纳粹集中营列表」；麦当劳瑞典一条旧帖里的短链被同样手法改指向「9/11」词条。作者又查了特朗普 2009–2013 年推文中的 97 条 Bitly 链，发现其中一些在 2023 年被集中重建、11-15 当天又有 4 条被改挂。Bitly 于 19:13 UTC 在 X 确认：旧的、不活跃的链接可被「重新利用」指向无关内容，已暂停涉事账号并停用受影响链接。短链把目标藏起来，一旦平台允许回收不活跃码，旧帖就会变成挂马或恶作剧通道。CNN 还报道比尔·盖茨、特鲁多、彭斯、FBI 和美国国防部的旧帖也受影响，但作者写明自己未核对这些链接。",
+          "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50511395",
+          "meta": "116 分 · 58 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+          "summary": "窗内航天第二条主线，细节见头条 h3。评论以失望为主，并担心美国除 SpaceX 之外缺少可靠运力。技术向评论引用 Eric Berger：故障更像出在助推级而非半人马座上面级或固体助推器，若涉及蓝源 BE-4 可能连带影响 New Glenn——这是评论转述，不等于已确认的官方结论。",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+          "discussion_url": "https://news.ycombinator.com/item?id=50510442",
+          "meta": "93 分 · 44 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
+          "summary": "这是黄仁勋 11 月 12 日辞职后的继任战新进展，与昨日「短缺叙事」报道不是同一主题。FT 原文和 Reuters 转稿均未直接打开（403 / bot 墙），以下据 Digital Trends 对 FT 的转述，以及《海峡时报》刊载的 Reuters 改写交叉一致的部分：知情人士称黄仁勋正与亲信讨论重返 CEO 职位；一名盟友称正在组织硅谷高管「战情室」，游说董事会并争取白宫支持，还说这些努力得到黄本人支持。与「回归」并行的是相反压力：财政部长 Scott Bessent 呼吁大幅度改组并到公司外部找新 CEO；FT 先前还报道董事会曾接触 Arm CEO Rene Haas。马斯克与 Epic 的 Tim Sweeney 公开呼吁请他回来。黄本人和英伟达均未公开确认回归计划，这仍是「讨论中的可能性」，不是已宣布的复职。评论质疑集中在：即便抛开私生活，如果对华规避出口管制或间谍相关指控成立，他就不应回来。",
+          "url": "https://www.digitaltrends.com/computing/jensen-huang-nvidia-ceo-comeback-allies/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50509883",
+          "meta": "99 分 · 77 评论 · 未读到 FT 原文，据转述核对"
+        },
+        {
+          "id": "hn-10",
+          "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+          "summary": "昨日已报 FAA 解除全国地面停飞；这是窗内出现的原因调查，不是重报。WSJ 独家（本次从 MSN 转载文本读到，不是付费墙原始版式）还原排查：FAA 先在印第安纳波利斯高空中心看到通信毛刺，随后定位到阿肯色州 El Dorado 的无线电站点，以及可能还有得州 Amarillo 的雷达站。FAA 技术负责人 Rebecca Guy 在周六发布会上说，这两个地点「以非常高的速率 ping 我们的网络，每四五秒就有一千个连接」。这些流量进入由 L3Harris 运维、正在从铜线迈向光纤的老化 FAA Telecommunications Infrastructure。文中写 L3Harris 在阿肯色站点装上一台 HPE Juniper 路由器后不久，机器在周五下午开始大量发数据，与得州站点的数据一起压垮系统；FAA 局长 Bryan Bedford 称 22 个高空中心里有 17 个通信中断。尚不清楚是路由器本身故障还是配置/安装问题。与此同时，有记者转述 60 名空管不买账运输部长 Sean Duffy 的解释，质疑这类切换不会安排在周五下午繁忙时段——这是记者采访，不是 FAA 正式调查结论。网络工程师评论多认为「单台路由器拖垮全国空管网」只有在连续犯低级错误时才说得通。",
+          "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+          "discussion_url": "https://news.ycombinator.com/item?id=50503588",
+          "meta": "84 分 · 55 评论 · 全文据 MSN 转载"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "Memory management in 40 major C projects, a survey",
+          "summary": "Phil Eaton 对 40 个主要 C 项目做内存管理普查（排除测试、第三方和示例代码）。关键数字：仅 8 个项目只使用 malloc/free（包括 Brotli、FreeRTOS、HAProxy、SQLite、zlib 等）；仅 2 个完全不用 malloc/free；15 个至少在某处使用 region；7 个主要以 region 分配；5 个主要以垃圾回收；3 个主要以引用计数。一个反直觉发现是：以严谨著称的 SQLite 百分之百手动分配，cURL 与 Redis 也以手动为主（文中写手动分配调用点分别约占 94% 和 79%）。另一个发现是 Linux 与 QEMU 近几年来开始用编译器扩展做作用域清理，例如 Linux 的 __free(kfree)。计量方式是数分配调用点，作者承认这不反映分配大小或子系统内部策略。最高分评论认为文章「好但分析不够」；也有人提醒子系统常在初始化时拿到一块 region 后自行管理，只数顶层 malloc/free 会低估真实策略。",
+          "url": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
+          "discussion_url": "https://lobste.rs/s/vdxevp/memory_management_40_major_c_projects",
+          "meta": "42 分 · 10 评论"
+        },
+        {
+          "id": "lo-2",
+          "title": "All AI-generated code should be Open Source",
+          "summary": "与 HN 最高分是同一篇，细节见头条 h1。Lobsters 讨论更短、更聚焦法律概念：不可版权、公有领域、开源许可三者不是一回事。最高分评论欢迎 AI 冲击让版权期限缩短；关键反对点仍是——即使纯 AI 代码不可版权，也不等于必须公开源码。另有人从可审计性出发：既然公司要把 vibe-coded 软件直接推向生产，用户需要源码才能抓住安全回退。",
+          "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "discussion_url": "https://lobste.rs/s/ek4fkg/all_ai_generated_code_should_be_open",
+          "meta": "31 分 · 9 评论"
+        },
+        {
+          "id": "lo-3",
+          "title": "25 of my favourite modern NES games",
+          "summary": "窗内 Lobsters 分数最高的在窗帖。Jordi Gutiérrez Hermoso 盘点仍在为原版 NES 硬件（或兼容环境）新做的现代游戏，想重新制造「走进 80/90 年代游戏店翻新货架」的感觉。作者在评论里明确说：「没有 AI 做的游戏，也没有 AI 写的博客。」同文也出现在 HN（199 分）。这不是硬新闻，但是一条把「好的旧互联网还在」写得很干净的推荐榜。",
+          "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+          "discussion_url": "https://lobste.rs/s/w9j7xs/25_my_favourite_modern_nes_games",
+          "meta": "63 分 · 10 评论"
+        },
+        {
+          "id": "lo-4",
+          "title": "cursor:pointer on buttons",
+          "summary": "Roma Komarov 记录 CSS Working Group 就「Cursors for base appearance」达成决议：在 appearance: base-… 的用户代理样式里，采用「指针表示可点击、文本光标表示可输入、抓手表示可拖」，其中包含按钮使用 cursor: pointer。这不是改所有浏览器的默认样式，而且该 UA 样式没有 !important，不喜欢的人可以覆盖。作者从 2013 年就站在「可交互元素应显示指针」一侧，并列举 Discord、Slack、VS Code 等桌面应用已经这么做。评论里分数最高的几条其实是在批评现代 UI 先拆掉按钮/链接的可辨识性，再靠改光标补救：触屏根本没有光标；也有人认为操作系统 historically 并不给按钮指针，把「不要破坏用户习惯」排除出论据说不过去。",
+          "url": "https://blog.kizu.dev/cursors/",
+          "discussion_url": "https://lobste.rs/s/h8tghc/cursor_pointer_on_buttons",
+          "meta": "28 分 · 12 评论"
+        },
+        {
+          "id": "lo-5",
+          "title": "Jiff 1.0：一套让你掉进「成功之坑」的 Rust 日期时间库",
+          "summary": "这不是 2025 年 Jiff 首次亮相的旧文重发。Andrew Gallant（burntsushi）这篇是 1.0 发布导览：口号是让使用者掉进「成功之坑」，自动处理许多与夏令时、时区有关的常见陷阱。文中写 Jiff 已在 uv、Cargo、Starship、fd、Nushell、mise、Jujutsu、uutils/coreutils 等生产项目使用，甚至作为 AWS LLRT 里一套 Temporal 实现的基础。有 Go 开发者问为何日期时间不进 Rust 标准库，作者亲自回复：time crate 在 Rust 1.0 之前一度随发行版提供，后来被明确移出，正因这是极复杂、很难一次建模正确的领域。",
+          "url": "https://burntsushi.net/jiff/",
+          "discussion_url": "https://lobste.rs/s/dxxvek/datetime_library_for_rust",
+          "meta": "16 分 · 5 评论"
+        },
+        {
+          "id": "lo-6",
+          "title": "FreeBSD bhyve 热迁移：在主机之间搬还在跑的虚拟机",
+          "summary": "gyptazy 公布 FreeBSD 15.1 上 bhyve 客户机热迁移的首个可工作状态，作为 WIP RFC 供测试。一台运行中的 amd64 客户机可通过 TCP 在两台主机间迁移，只在最后的 stop-and-copy 阶段暂停。实现建立在 bhyve 实验性快照之上，并在 vmm 内核模块中加入脏页跟踪：先发送已填充的客户内存，再反复根据脏页位图只传变化页，直到剩余脏页达到停机时间目标。作者强调这对主机维护、换硬件和负载均衡很关键，也是他参与的 Sylve（希望做成 FreeBSD 上类似 Proxmox 的方案）目前的卡点。窗内没有评论，但原文技术信息完整。",
+          "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
+          "discussion_url": "https://lobste.rs/s/hiayul/freebsd_bhyve_live_migration_moving_vms",
+          "meta": "23 分 · 0 评论"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
+          "summary": "楼主自称从 2023 年免费 Cursor 上线起做 AI Coding，路径是 Cursor → Codex → Claude Code，deepseek-harness（DSH）此前只是备胎。转折点是近期 Codex「降智」、Claude Code 弹 KYC，他才深度用了约半个月 DSH，并声称在真实项目里跑通了完整闭环：UI 还原、架构、前后端、提交 GitHub、登 ECS 部署、查日志、修 bug 再发布。这不是对照实验，是单一用户的热情体验贴，但正好踩在站内「西方模型不好用 / 被 KYC」的情绪上：国内编码 agent 正在被叙述成可替换方案，而不是「便宜备胎」。文风很满，读的时候要把「体验总结」和评测分开。",
+          "url": "https://www.v2ex.com/t/1257214",
+          "meta": "78 回复 · 程序员"
+        },
+        {
+          "id": "v2-2",
+          "title": "闲聊聊到了我司当前接入 AI 的年度成本",
+          "summary": "楼主说公司今年 2 月才随着 Opus 4.6 大规模采购经 AWS 分销的 Claude API，随后又接了外部 Gateway 以覆盖几乎所有模型供应商，员工按月限额。他从大部门 VP 饭局旁敲侧击得到的数字是：截至目前大模型调用支出已占部门往年总工资支出的 20%，估全年会到 30% 以上；公司盈利没有变好甚至变差，他担心明年会砍额度并按比例裁 20% 以上。这是二手转述，不是财报，不要把 20%/30%/裁员比例当成已证实的行业均值。但它是本期中文社区里最硬的企业侧观察之一：「模型账单开始啃工资盘子、还没换来利润」。",
+          "url": "https://www.v2ex.com/t/1257169",
+          "meta": "37 回复 · 职场话题"
+        },
+        {
+          "id": "v2-3",
+          "title": "有没有 Claude portal 验证一直在验证中的 v 友",
+          "summary": "楼主称前两天弹出 Claude portal 验证，当即用护照提交，但超过 48 小时仍显示「正在检查」。帖子很短，价值在于它把 V 站也卷进了同一波 KYC / 封号讨论：Linux.do 上「不要用 Google Play 订阅 Claude」做成了当日 AI 头条之一，还有找人代认证被骗约 1000 元的防骗帖。这只是用户侧卡住的求助，不是官方政策变更公告，建议和跨站讨论合并看。",
+          "url": "https://www.v2ex.com/t/1257170",
+          "meta": "18 回复 · claude"
+        },
+        {
+          "id": "v2-4",
+          "title": "十年 Java 终于借助 AI 做了个东西出来：给亲戚小厂搓了个轻量进销存，基础版已开源",
+          "summary": "亲戚小厂只想记出入库、按月看收益，市面软件要么太贵功能太多、要么不习惯又请不起定制。楼主花两天对接需求，定位「家庭小仓」、给原先用手机和本子记账的小厂用，起初只打算做 Windows 本地安装，后来范围膨胀到入库订单、打印模板、委外、移动端和一点 AI 辅助。他觉得两三个人的机加工小厂很典型，想把这条垂直场景做成产品，并已开源基础版。这是「AI 帮老程序员终于做出能用的东西」类分享，重点不在技术栈炫耀，而在需求克制失败后又反过来发现产品缝。不要把「两天做成」理解成已经验证商业模式。本次未打开外链仓库逐行核代码。",
+          "url": "https://www.v2ex.com/t/1257235",
+          "meta": "13 回复 · 程序员"
+        },
+        {
+          "id": "v2-5",
+          "title": "Gemini 模型如何？",
+          "summary": "短问长评型帖。楼主觉得最近 Codex「智力下滑」且额度不经用，想改试 Gemini，直接问两件事：体感对比 Claude 如何；同样 20 美元档，Gemini 和 Codex 谁更耐用。它本身没有新评测数据，但和置顶那篇 DSH 体验、以及 Linux.do 上的 Claude 验证潮是同一条情绪线：编码模型的选用正在从「追最强」变成「额度、稳定性和封号风险一起算账」。把它当社区风向，而不是模型跑分。",
+          "url": "https://www.v2ex.com/t/1257234",
+          "meta": "21 回复 · Vibe Coding"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 开源中国 / Linux.do / NodeSeek",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "香港迪士尼乐园 1.7 万张电子门票被盗",
+          "summary": "Solidot 记述：约 1.7 万张电子门票（二维码）在网上票务系统中被盗，园方已报警，并暂停网上售票和酒店预订，改引导旅客走旅行社、平台或正门售票处。报道称网上票务由 Cityline 负责，乐园资讯科技部于 11 月 12 日晚侦测到异常活动后发现被盗。文末引用香港资讯科技商会荣誉会长方保侨的评论，把近期多起攻击与「AI 找漏洞更快、人手防守跟不上」联系起来——这是受访人判断，不是已证实的归因。这是窗内少有的中文地区安全事件。意大利对 Meta 的 8.05 亿欧元罚单 Solidot 也在窗内补发，但昨日早读已作头条，本期不重报。",
+          "url": "https://www.solidot.org/story?sid=85891",
+          "meta": "Solidot · 11-15 21:15"
+        },
+        {
+          "id": "cn-2",
+          "title": "QuickBlue 用 3 条命令把整套微服务装进 Docker",
+          "summary": "开源中国在本时间窗内几乎唯一一条实质新资讯，是 QuickBlue-MicroAI 项目方的部署理念稿。判断是：单体 vs 微服务之争，在 AI 把开发、排障边际成本打下来之后，真正劝退人的是部署。他们的答案是宿主机只依赖 Docker：复制 .env、执行 bash build.sh --all，再打开安装向导；首次全量大约 20–40 分钟。编排上宣称 13 个服务定义，分五层按健康探针启动，版本钉死。协议 Apache 2.0，仓库在 GitHub 58ossbar/QuickBlue-MicroAI。需要说清楚：这是项目自荐，不是第三方评测；「3 条命令」仍以 Docker 和一次较长构建为前提，本次没有实际跑过部署。开源中国正文页已改成 SPA，原站全文未能渲染，要点依据 RSS 摘要、同日转载和仓库说明交叉核对。",
+          "url": "https://www.oschina.net/news/503579",
+          "meta": "开源中国 · 11-15 10:20"
+        },
+        {
+          "id": "cn-3",
+          "title": "【开源】网页版的 AI 变成本地 Agent",
+          "summary": "Linux.do 原站被 Cloudflare 拦截，本条依据公开门户 linuxdo.club 第 038 期（11-15 21:30 出刊）摘述，带真实主题 URL，但未能阅读原帖正文，也无法核对发帖时间。按晚报摘要：作者做了「本地软件 + 浏览器插件」，让网页版 AI 直接读写本地文件、驱动 Blender 与 Unity，自称体验接近 Codex；GPT 走隧道后几乎有原生 MCP 体验，Gemini 与 Claude 的稳定方案还在打磨。门户统计 117 帖、50 人，是该期技术向参与度最高的帖，也和 V2EX、NodeSeek 上「给网页 ChatGPT 加本地能力」的讨论同频。不能核对仓库地址、具体实现是否真能对标 MCP，请保留「据晚报转述」。",
+          "url": "https://linux.do/t/topic/3179456",
+          "meta": "Linux.do · 117 帖 · 门户摘述"
+        },
+        {
+          "id": "cn-4",
+          "title": "不要使用 Google Play 订阅 Claude，以及找人代认证被骗约 1000 元",
+          "summary": "这是 linuxdo.club 038 期 AI 板块的头条之一，同样只读到门户摘述。摘要称作者从 Android SubscriptionManager 讲起，认为 Claude App 在首次启动、甚至未登录时就可能读到 SIM 国家码和运营商信息，结论是不要用 Google Play 订阅；评论区则在争这些遥测到底有没有实据。同一组相关帖还堆着一年老号跳 Portal 验证、Play 订阅被封后退款被拒。衍生伤害更具体：有人账号触发验证后花 100 元找第三方「代认证」，被引导下载 TronLink 并签下 USDT 无限额度授权，前后损失约 1000 元，对方还把这叫做「质押」。晚报给出的提醒很明确——任何要求连接钱包、签名授权、刷流水的代认证都是骗局。门户摘述不能代替对 App 行为的独立取证，前半应写成「社区争论」，不要写成已证实的客户端后门；后半当作防骗条目，而不是教人如何过认证。",
+          "url": "https://linux.do/t/topic/3180147",
+          "meta": "Linux.do · 门户摘述"
+        },
+        {
+          "id": "cn-5",
+          "title": "测试了 Fable 5.2 自己跑 24 小时 Blender 建模的上限",
+          "summary": "仍据 linuxdo.club 038 期摘述，未观看原帖视频，也未核 24 小时任务的原始日志。作者让 Fable 5.2 自己跑 24 小时、全程用 Blender 建模，完全没有上 AI 视频生成模型；检测交给 Gemini 4 Argon，配乐用 ElevenLabs。他认为成片质量的关键是 reference，下一步想复刻王者荣耀「澜」的 CG。看点是长时自主 3D 工作流，而不是又一段文生视频。「非常恐怖」是作者主观评价，未见第三方复现说明。",
+          "url": "https://linux.do/t/topic/3179936",
+          "meta": "Linux.do · 42 帖 · 门户摘述"
+        },
+        {
+          "id": "cn-6",
+          "title": "东京甲骨文「坠机了」（部署了 CPA 反代）",
+          "summary": "NodeSeek 楼主在东京开了两台 Oracle Cloud：ARM 上部署了 CPA 反代给 GPT 用，AMD 上跑 Vaultwarden。当天突然连不上，登录后台提示「用户名或密码无效」，自称平时没怎么登过后台，实例就「水灵灵的没了」，并问如何尽快从 Vaultwarden 迁出数据。这是窗内云厂商可用性/封号类一线故障贴。原因是不是 CPA 反代触发风控，帖里只是楼主猜测，不能写成定论；本次也未从 Oracle 官方状态页核对该时段东京区域故障。",
+          "url": "https://www.nodeseek.com/post-1056144-1",
+          "meta": "NodeSeek · 12 评论 · 浏览 544"
+        },
+        {
+          "id": "cn-7",
+          "title": "自组一台长期放家里的 Linux 主机，预算和用途都写清楚了",
+          "summary": "楼主已有群晖，想再组一台跑 LobeHub、数据库、Nginx、Codex CLI 和后续 Docker 服务的迷你服务器，模型走云端，用户只有自己和一两个家人。纠结集中在四处：CPU 是 13500 / 14600K / 9700X 还是 5800H 这一档就够；现在新装该不该上 DDR5（他算过 DIY DDR4+32GB 约 3418 元，全新 DDR5+32GB 约 5000 元）；能不能先单条 16GB 顶着；以及精粤、星越、昂达这类便宜 ITX 板长期跑 Linux 稳不稳，还有 Intel 13/14 代微码更新跟不跟得上。这是窗内少见的、把预算和用途写清楚的硬件讨论。发帖时刻按帖页最早 time 标签估计，不是官方 created 字段。",
+          "url": "https://www.nodeseek.com/post-1055811-1",
+          "meta": "NodeSeek · 16 评论 · 浏览 487"
+        },
+        {
+          "id": "cn-8",
+          "title": "微软进一步封锁 eMudhra 剩余 10 张根证书",
+          "summary": "这是已发生证书事件的扩大处理，不是新曝的私钥泄漏。IT之家转述：微软 11 月 16 日起把印度 CA eMudhra 剩余 10 张根证书从微软产品默认信任中移除；能连证书更新服务的 Windows / Azure Windows 会自动生效，Edge 和 WebView2 则通过 PKI Metadata 更新。背景：早前 8 张中间 CA 私钥因生成过程问题可被推算，微软已在 10 月把相关证书列入不受信任列表。此次是扩大到剩余根证书，哪怕某张根本身尚未被确认私钥泄露。离线设备需要等微软另行提供的更新包。对依赖 eMudhra 证书的站点或软件，这是会直接导致握手失败的运维事件。关键指纹未在本刊逐条核对 MSRC 原公告。",
+          "url": "https://www.ithome.com/1/027/472.htm",
+          "meta": "IT之家 · 11-16 07:35"
+        }
+      ]
+    },
+    {
+      "id": "product_updates",
+      "source": "产品更新",
+      "note": "其余关注产品窗内无新的正式版本：Claude Code CLI 仍为 2.1.325（GitHub 11-14 04:40，早于今日 08:00 分界）；Claude Desktop 官方 cowork changelog 最新仍是 11-13 的 v5.11492.5，Bundled Claude Code 2.1.325，窗内无新条目。ChatGPT 三份官方说明页均成功抓取（非 403）：主 Release notes 最新注明 11-13 的 ChatGPT Wallet，iOS 在 Codex changelog 中最新 1.2026.307（11-10）；macOS 专页仍停在 2026-07-09 的 ChatGPT Classic、Windows 专页仍停在 2025-01-30，明显是旧/Classic 应用说明，按官方注明日期本窗无新版本。omp 仍为昨日已报的 v18.20.2，窗内有未发版提交但无新 tag。Tern（stencil-hq/tern-sdk）无公开 App Releases，SDK 最近同步在窗外（11-15 00:23），窗内无新 commit。Sub2API 仍为 v0.2.21（11-11），窗内 0 commit。",
+      "items": [
+        {
+          "id": "pu-1",
+          "title": "magpie v0.1.4225–v0.1.4280（窗内连续 56 个版本）",
+          "summary": "自动更新通道从昨日已报的 v0.1.4224 之后一直打到 11-16 07:33 的 v0.1.4280，主仓对比是 97 个 commit。对使用者真正有感的不是每一次修样式，而是这条迁移线：v0.1.4232 退役内置 Antigravity，不再依赖 Google，改由本机 agy / agy-cli 提供服务；v0.1.4273 起插件仍向已有用户开放，但不再向新用户提供；v0.1.4280 加了一键把 Antigravity 账号迁到 agy-cli。新能力包括 Daily 更新通道（每天一个通过测试的版本，覆盖 app 与 Docker）、网关上新 agent Dim alpha、百度千帆个人 Token、跨所有 agent 会话搜索对话历史、一键预热当前在用的全部账号，以及断开退出后下次启动自动重连。体验上修了「机器上已有更新的 Claude Code 却仍报太旧」，并不再把 Claude 内部推理当普通文本传给 Claude Code。会话落盘从 JSON 改为二进制：一般用户无感，若有外部工具解析旧会话文件需留意。另有一次针对插件的额外审查——该插件被指读取浏览器 cookie 并改写用户文本以绕过 Perch 检查。",
+          "url": "https://github.com/yetone/magpie-releases/releases/tag/v0.1.4280",
+          "meta": "v0.1.4225–v0.1.4280 · 11-16 07:33（北京）"
+        },
+        {
+          "id": "pu-2",
+          "title": "CPA（CLIProxyAPI）v8.0.73",
+          "summary": "正式版从昨日的 v8.0.72 再跳一档，发布于 11-15 22:59（北京）。模型注册表新增 Gemini 4 三款：gemini-4-argon / gemini-4-carbon / gemini-4-hydrogen（显示名 Gemini 4 Argon / Carbon / Hydrogen），上下文 1,048,576，输入支持 text/image/audio/video，带原生 web search；Hydrogen 的 thinking levels 含 xhigh。同时保留 Gemini 原生 thinkingLevel，避免被错写成 budget。对运维更有感的是两处容错：Gemini 429 冷却遵循 Retry-After / RetryInfo；「零输出的 502」不再把凭证打进冷却。Responses 翻译把 inlineData 图片表现为 image_generation_call；管理面在上传/删除插件凭证时保留凭证身份。相关 GUI EasyCLIProxyAPI v0.3.107 同窗发布（北京 11-15 17:30），插件 OAuth 卡片会列出已授权账号，这不是 CPA 本体。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.73",
+          "meta": "v8.0.73 · 11-15 22:59（北京）"
+        },
+        {
+          "id": "pu-3",
+          "title": "Codex CLI 0.171.0-alpha.6 / 0.171.0-alpha.7（仅预发布）",
+          "summary": "稳定版没有更新。官方 changelog 与 npm latest 仍是 11-13 的 0.169.0。窗内只有两档 prerelease：alpha.6（GitHub 11-16 02:58，npm 03:06）和 alpha.7（GitHub 11-16 07:13，npm 07:21）。两条 GitHub 说明都只有一句「Release 0.171.0-alpha.X」，官方 changelog 尚未收录；默认 npm i -g @openai/codex 不会装到它们。对照上一档窗外预发布 alpha.5 到 alpha.7 的代码，窗内较有感的包括：Cloud 对话自动起标题；修复相对工作目录下读配置；推迟到选中 marketplace 条目再加载插件 manifest；TUI review 增加所有权与风险提示；以及宽字符状态下的 status 截断修复。若只跟踪稳定版，可以把它当作「0.171 预发布在夜间连发两档，changelog 尚未收录」。",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
+          "meta": "0.171.0-alpha.7（预发布）· 11-16 07:13（北京）"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "按用户设定未抓取 Reddit，sections 中没有 reddit 分区；本期只有文字和封面图，没有视频和音频。本期无新的 rating / watch Issue，temp_watches 为空。",
+    "X 数据取自 X API（窗内 11-15 00:00Z～11-16 00:00Z）：Elon 窗内 58 条已翻完；未收录纯政治/社会类短回复（如对前白宫官员声援帖的感谢）。search_posts_all 不支持 min_likes，全站热帖筛查不完整，其他热帖主要来自已知账号时间线。Elon 塔上视频下 1.18 万条回复未能按赞数取出。Tibo Daybreak 帖 2271 条回复只完整追踪了 GrapheneOS 主线。若干配图/视频未逐帧描写。Elon bio 与 poteto 主页的 t.co 短链未展开。",
+    "身份核对（当日 X API 读取 bio）：Tibo（@thsottiaux）「Codex & ChatGPT @OpenAI」；poteto「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」；Elon bio 只有一个短链接；Demis Hassabis「Nobel Laureate. Co-Founder & Chair @GoogleDeepMind; Chief Scientist of Alphabet. Founder & CEO @IsomorphicLabs…」；Walter Isaacson「Author of biographies of Musk… Professor @Tulane」；DHH「Creator of Ruby on Rails… Co-owner & CTO of 37signals…」；Matt Stoller「Opinions my own… Writer for BIG」；GrapheneOS「Open source privacy and security focused mobile OS with Android app compatibility.」；ULA「Wherever the mission takes us…」；@xdNiBoR（Robin）「Software @Socialdatabase / @starlink_stats」；@cb_doge 当日 bio 为空；Paul Graham 当日 bio 为空。查找 @spacexai 返回 Not Found。",
+    "Linux.do 的 latest/top JSON、/hot.md 和首页均返回 403（Cloudflare），条目来自公开检索门户 linuxdo.club 第 038 期（11-15 21:30 出刊）的摘述与真实主题 URL，未能阅读原帖正文，也无法核对发帖时间；21:30 之后到周一 08:00 的新热帖覆盖不到。NodeSeek 首页可抓到标题和链接，发帖时刻按帖页最早 time 标签估计，不是官方 created 字段。开源中国正文页已改成 SPA，原站全文未能渲染，QuickBlue 一条用 RSS + 同日转载 + GitHub 说明补。Solidot 周日 08:00 后只发了 4 条，不是漏抓。",
+    "FT 黄仁勋回归稿返回 403 安全验证页，Reuters 两篇（黄仁勋 / Vulcan）遇到 bot 墙，未能阅读原文；黄仁勋要点改用 Digital Trends 与《海峡时报》转述交叉核对，不能写成「已读 FT 原文」。NYT Lutnick 稿抽取不完整，全文主要依据 Inquirer 转载。WSJ 阿肯色路由器稿付费墙抽取不足，完整叙述来自 MSN 转载接口。Space.com 的 Vulcan 报道已打开。ChatGPT 三份官方说明页均成功抓取，并非 403。",
+    "Algolia HN 分数与评论数以 11-16 08:12 左右（北京）的读数为准。Algolia/Firebase 都没有返回 HN 评论分数，派别按回复量和论点归纳。意大利 Meta 罚单、Project Zero 缩短披露期限，昨日早读已报，本期不重写。Solidot 写 Starship 部署了 22 颗 Starlink V3，与昨日依据 SpaceX 官方页写下的 26 颗不一致，本期复用讨论不再采用卫星数量。Elon 帖中「Falcon 承担 85% 地球载荷」「ULA 不到 5%」未经第三方核对。"
+  ],
+  "cover": "images/covers/2026-11-16.png"
+}
