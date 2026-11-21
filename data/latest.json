@@ -1,53 +1,54 @@
 {
-  "id": "2026-11-20",
-  "title": "刚出锅 · 2026-11-20",
+  "id": "2026-11-21",
+  "title": "刚出锅 · 2026-11-21",
   "window": {
-    "start": "2026-11-19T08:00:00+08:00",
-    "end": "2026-11-20T08:00:00+08:00"
+    "start": "2026-11-20T08:00:00+08:00",
+    "end": "2026-11-21T08:00:00+08:00"
   },
-  "generated_at": "2026-11-20T08:18:11+08:00",
+  "generated_at": "2026-11-21T08:21:31+08:00",
+  "cover": "images/covers/2026-11-21.png",
   "highlights": [
     {
       "id": "h1",
-      "title": "Anthropic 首日开盘 111.50 美元，收在 97.17，较发行价涨 17%",
-      "summary": "这是对上期「定价 83 美元、代码 ANT、预计 11 月 19 日开盘」的实质进展：Anthropic, PBC 已在纳斯达克正式交易。纳斯达克新闻室确认开盘价 111.50 美元，Dario Amodei 与 Daniela Amodei 在 MarketSite 敲了开市铃。CNBC 直播报道收盘 97.17 美元，较发行价上涨约 17%，并称此次售出 9.80 亿股、筹资约 813 亿美元，按完全稀释口径收盘市值约 1.8 万亿美元，成交量超过 8.46 亿股；它把这次称作有记录以来最大的 IPO，超过今年 6 月的 SpaceX。收盘价、成交量和市值来自已打开的 CNBC，不是纳斯达克官方稿或 Anthropic 新闻稿——纳斯达克稿只写了开盘 111.50 美元，官方此前也没有公布市值。HN 原链指向的路透社文章返回 401，未能打开。同日官号 @AnthropicAI 先发了一条几乎无文字的视频（约 7.7 万赞，视频未转写），随后发出 Dario 五千余字的上市致辞：他写会按对安全有信心所需的时间来安排训练与部署，「不会向商业或政治压力让步」，并把这称作 race to the top；致辞本身没有重述 83 美元、ANT 或融资金额。对我们的读者，关键新事实是「已经开盘，且高开后回落、仍收在发行价之上」；市值数字只能标明出处，不能写成公司自己的口径。产品路线会不会被季度报表改写，要从今后的财报里看，而不是从首日涨幅里看。",
-      "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
-      "source": "Nasdaq / CNBC / Anthropic"
+      "title": "同一天两份广义黎曼猜想证明声明：一份跟 Claude 写成 Lean，一份是人工稿",
+      "summary": "这是窗内讨论量最大的一组新闻，必须先把「声称」和「已被数学界接受」分开。Anthropic 雇员、数学家 Levent Alpöge 在个人站点 alpo.ge 发表声明，写他「相信自己与 Claude 一起发现了黎曼猜想的证明」，方法还能推广到广义黎曼猜想（GRH）；论证目前极长，形式化已完成，Lean 包被拆成 14 个分卷供下载。Scientific American 称他是 Anthropic 的雇员与数学家，声明本身也写他在周日深夜完成后先向 Dario 请示能否公布，并感叹「时机糟糕」——就在公司上市次日。这不是已裁定的定理：陶哲轩（Terence Tao）在自己博客里把这份证明列为「消化程度最低」的一项，并指向 Lean Zulip 上正在进行的核验；他补充说初步看来用到了朗兰兹纲领与算术几何的当代工具。Scott Aaronson 以《随机鹦鹉看来证明了黎曼猜想》为题写道，自己刚在晚宴上被人问「AI 还要几年才能证 RH」，次日清晨就看到 Alpöge 说模型产出了约 1740 万行 Lean；他提醒 Lean 内核过去出现过能推出 0=1 的缺陷，在补上之前「足够有动机的 AI 几乎肯定能钻空子」，并在开篇注明标题里的「随机鹦鹉」是反讽，不是他现在的立场。几乎同时，代数几何博客 Math 216 的作者 Ravi Vakil 发了一则「匆忙公告」：他当时正在美国数学会执委会与理事会会议上，称 Alessandro Masullo 有一份 GRH 的拟议证明，Brian Conrad 已仔细看了数月并给了大量反馈，「到目前为止看起来不错」，而且「全是人工，没有 AI」。原计划是请 Masullo 去斯坦福待一年打磨后再公布，现在改为先把当前草稿放出来，请人尽快检查、形式化并补上可能的小缺口。陶哲轩同一篇文章还记录了另两项与 Alpöge 相关、同样「重度使用 AI」的声明：他与 Tristan Buckmaster、Matei Coiculescu 给出三维无强迫不可压缩 Euler 方程有限时间爆破的可读证明并已 Lean 形式化；他与 Buckmaster 又给出三维无强迫 Navier–Stokes 有限时间爆破的证明，策略大致清楚，但陶哲轩认为还需要写成更专业的文本。对读者来说，今天能确定的是「两份独立的 GRH 声明和两份流体方程爆破声明同时出现，且有陶哲轩级别的数学家在跟踪」；能不能进教科书，只能等核验，不能把 SciAm 那种「漫长斗争看来结束了」的句子当成结论。",
+      "url": "https://alpo.ge/remark.pdf",
+      "source": "alpo.ge / Tao / Vakil / Aaronson / Scientific American"
     },
     {
       "id": "h2",
-      "title": "Ruby2Shell：默认配置的 Rails 就能打预认证 RCE，PoC 推迟到 11 月 25 日",
-      "summary": "Veria Labs 把 Ruby 官方公告里的字符串大小写转换堆溢出（GHSA-34m4-m9fh-gqp5）写成了可打到默认配置 Rails、以及经典风格 Sinatra 的预认证远程代码执行，并命名为 Ruby2ßhell。根因是多数单字节编码（UTF-8 不受影响）在 upcase / swapcase / downcase(:fold) / casecmp? 路径把 ß 扩成 SS 时少做了一字节边界检查，该循环自 Ruby 2.4.0 起就在；修复版本为 3.3.14、3.4.13 和 4.0.10。文中在 11 月 19 日 23:59 UTC 的更新里点名 GitLab 19.6.0 及更早、GitHub Enterprise Server 3.22.5 及更早、Chatwoot 4.20.0 及更早仍为 Vulnerable；Mastodon、OpenProject、Discourse 已有补丁。PoC 宣布推迟到 2026-11-25（或等主要厂商修好）再公开，因此「预认证 RCE」目前来自 Veria 的说明，不是我们复现的结果。官方在窗口前 8 分钟还有一条七个漏洞的综合公告（Regexp 与大小写转换，多个被写明已有 RCE PoC），同一组修复版本；那条 HN 帖不算本窗新帖，但 Lobsters 上的官方帖在窗内。对还在跑默认 Rails 或自带 Ruby 的自托管软件的人，这比「官方已承认原语」更紧迫：先升级解释器，再核对自己用的 GitLab / GHES / Chatwoot 有没有补丁。",
-      "url": "https://verialabs.com/ruby2shell/",
-      "source": "Veria Labs / HN / Lobsters"
+      "title": "ChatGPT Space 向 Plus 放开，官方还写了一次「更好用」的桌面与线程改造",
+      "summary": "这是对上期 Tibo 宣布「Dots 开测 Plus、新版手机端先给有 dot 的 Pro」的落地与加码。OpenAI 帮助中心标注日期为 2026 年 11 月 20 日的更新写明：ChatGPT Space 即日起向全球 18 岁以上的 Plus 用户推送；可在 Space 里做互动页面和演示文稿，邀请同样有 Space 权限的人一起改，也能让页面、幻灯片按已连接的应用自动更新。打开或协作一份分享页，需要查看权限，并且登录的是已开通 Space 的 Plus、Pro、Business 或 Enterprise；Free 打不开，也没有公开链接。Space 会出现在侧栏，取代 Library，成为页面、幻灯片、图片和上传文件的新首页，网页、桌面和 iOS/Android 都可以创建和编辑。OpenAI 的 Tibo（@thsottiaux，当日 bio：Codex & ChatGPT @OpenAI）在北京时间 11 月 21 日凌晨引用同事 Andrew Ambrosino（@ajambrosino，当日 bio 同样是 Codex & ChatGPT @OpenAI）的公告，写道「团队状态拉满，去升级你的桌面应用。更快、更简单，也好用得多」。Ambrosino 列出的清单与官方稿一致，并多写了「全应用更简单的视觉设计、各处性能大改、线程彻底重做、Space 首页重设计、页面和幻灯片更快、可在手机上编辑页面、Codex 更可靠」。Tibo 稍后又引用 Akshay Nathan（@akshaynathan_，当日 bio 只写 @openai）的第一条推：「chatgpt 应用应该流畅得多。告诉我们还能改哪里，还有很多事要做。」他称「这是 Akshay 的第一条推，对这人好一点，他是特别的」——这是同事介绍，不是一份职务说明。上期已经写过的新版手机端和 Health 出现在桌面，官方说明仍停在 11 月 19 日，不再当作今天的新事实。对使用者，关键变化是 Plus 终于能进 Space，以及桌面客户端被官方和产品负责人同时点名要求升级。",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source": "OpenAI Help Center / Tibo / Andrew Ambrosino"
     },
     {
       "id": "h3",
-      "title": "Tibo：Dots 开测 Plus，新版 ChatGPT 手机端先给有 dot 的 Pro",
-      "summary": "OpenAI 的 Tibo（@thsottiaux，当日 bio：Codex & ChatGPT @OpenAI）在北京时间 11 月 20 日清晨连续发了两条产品说明。先是宣布 dots 开始向「一小部分 ChatGPT Plus 用户」测试，并称对 proactivity（主动性）改进的反馈最近转正；同时 dots 将面向所有 ChatGPT Business Standard 用户开放，滚动发布当天开始（约 2333 赞、386 条回复）。紧接着他引用自己这条，补充正在做新的 ChatGPT 移动端体验：dot 会有独立标签页，可以把 Codex、Projects、Images 等钉到标签栏；先从已有 dot 或有资格创建 dot 的 Pro 用户开始，部分人会默认看到新界面，也可在 Settings > New ChatGPT Design 随时开关（约 1798 赞）。再早几小时他先写了「Tokens go brrrrrr. Going to need more compute.」，并自回「New Sol being particularly popular」（主帖约 4543 赞、600 条回复）。「社区解读 / 非官方定义」：tokens go brrr 借用梗图 money printer go brrr（印钞机狂转），这里指 token 消耗和推理用量在暴涨；Sol 是 GPT-6.2 家族里更常用、更亲民的一档，不是当天新发布的模型名。窗末 @OpenAIDevs 还说明，GPT-6.2 的 Responses API 会把 reasoning 绑在历史前缀上，编辑早先消息会丢掉后续推理，建议对 Astra/Sol 只追加新轮次。Theo 把 2026 说成像已经结束、并写 OpenAI「最聪明但不好用」时，Tibo 只回「一年还剩六周」，没有正面辩驳口碑。我们的看法：Dots 正在从 Pro 往下扩，手机端也在从聊天框改成可钉选的工作台；Sol 的用量已经被自家产品负责人拿来证明「算力不够了」，但「好不好用」的争议并没有在这一天结束。",
-      "url": "https://x.com/thsottiaux/status/2123556256392847657",
-      "source": "Tibo / OpenAI"
+      "title": "纳斯达克抹去 2026 全年涨幅，Anthropic 上市次日没能托住 AI 股",
+      "summary": "这是上期「Anthropic 首日开盘 111.50 美元、收在 97.17、较发行价涨 17%」的第二日读数，来源换成了已打开的《卫报》与 NBC News，不是纳斯达克官方稿或公司新闻稿。《卫报》标题写纳斯达克抹去 2026 年全部涨幅，AI 抛售令 Anthropic 上市次日交易失色；导语配图说明称，周五的 Anthropic 股价「几乎不比上市时高多少」——上期已核实的发行价是 83 美元，但本窗没有从这两篇已打开的正文里读到一个可独立引用的周五收盘价，因此不能把「回到发行价附近」写成精确数字。NBC News 由 Rob Wile 撰写，标注 11 月 20 日美东 9:20 发布、16:37 更新（北京时间 11 月 21 日 05:37，仍在本窗内）：科技股抛售加剧，纳斯达克复合指数抹去今年涨幅，标普 500 与道指进入回调，也就是较近期高点下跌 10%；稿件把周四创纪录的 Anthropic IPO 写成「未能恢复投资者对 AI 市场的信心」。HN 上《卫报》稿 191 分、225 评，NBC 稿 175 分、175 评。对我们的读者，这意味着上市首日的高开并不能当成 AI 板块的托底；产品与安全路线会不会被季报改写，仍然要等今后的财报，而不是看次日行情。",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "source": "The Guardian / NBC News"
     },
     {
       "id": "h4",
-      "title": "oh-my-pi 跨到 19.0.1：换掉 artifact://，改成每用户一个 daemon",
-      "summary": "can1357/oh-my-pi 的 v19.0.0 在北京时间 11 月 19 日 08:02:14 发布，刚好越过上期 08:00 的截止线，必须写进本期；次日 06:54 又补了 v19.0.1，npm @oh-my-pi/pi-coding-agent 的 latest 已指向它。这是大版本，对照上一标签 v18.22.2 有 230 个提交。会碰到手的破坏性变更包括：会话里的 artifact://N 链接改成可列出、可补全的 local://N.log（旧会话不会自动迁移）；SDK 的 session.handoff(focus) 改成 session.compact(focus, { mode: \"handoff\" })；共享后台进程收成每用户一个 daemon，旧版 daemon 和服务不会被接管，omp ps 去掉 --global，JSON 也改成 {daemon, reports}；cacheWarming 不再接受 false，要写成 off、streaming 或 idle。新能力包括内置 MCP transforms（含 Codex Desktop 的 node_repl 替换）、把 MCP 服务器暴露成 JS/Python eval 命名空间、以 ? 开头的草稿会按 /btw 提问、Tern 上给正在跑的子代理和后台任务做 live cards，以及可配置的 cache warming（Anthropic 端还支持不产生计费输出的 prewarm）。19.0.1 是跟进修复：WSL2 上存会话卡几秒到几分钟的问题改成锁 sidecar 文件，官方提醒更新后要把还在跑的旧 omp 重启；Vertex 若因组织策略拒绝 structured_outputs，会按严格工具失败回退并重试一次。建议不要单独停在 19.0.0，直接升到 19.0.1。",
-      "url": "https://github.com/can1357/oh-my-pi/releases/tag/v19.0.1",
-      "source": "产品更新"
+      "title": "Thinking Machines 放出可在笔记本跑的 Inkling 2 Mini：中间层循环三遍的小模型",
+      "summary": "Thinking Machines Lab 在 11 月 20 日的官方新闻页发布 Inkling 2 Mini，定位是「足够快、足够强，小到能在笔记本上跑」。它是 looped transformer：对每个 token 把模型中间层跑三遍，让模型在少写推理 token 的情况下多做内部计算，官方特别提到这在依赖推理质量的 agentic coding 任务上更明显。结构是混合专家模型，总参数 264 亿、每次激活 34 亿，若把循环造成的权重激活算进去则是每 token 54 亿。官方给出的对比口径是：在总参数不到 1000 亿的开源权重模型里，DeepSWE v1.1 为 48.2%、Vals Index v2.2 为 46.5%，并称领先同档；同时也写了评测设置因模型而异，速度数字是 614 GB/s、BF16、batch size 为 1 时的理论上限。他们还另发了一个研究用的可变循环版本：无思维链的时间跨度从一轮的 16 秒提到三轮的 37 秒，串行推理测试一直改善到十轮——是训练时循环次数的两倍；思维链随循环变短但保持可读，agentic sabotage 测试没有随循环增加而升高。模型可在 Tinker 与 Hugging Face 上试用。对关心本地和可监测性的人，这是今天少数把「循环架构」做成可下载权重、并主动讨论思维链能否被看懂的发布，而不是又一个只给 API 的闭源小模型。",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "source": "Thinking Machines Lab"
     },
     {
       "id": "h5",
-      "title": "英国法庭逼政府承认曾向 Apple 发出秘密加密令",
-      "summary": "MacAnorak 报道，调查权力审裁处（Investigatory Powers Tribunal）裁定英国政府必须承认曾向 Apple 发出《2016 年调查权力法》第 253 条下的技术能力通知（TCN），其「既不证实也不否认」策略在此落败。文章转述路透社引述的裁决表述是：政府未能证明，在这些程序中公开「已经向 Apple 发出 TCN」这一事实会损害国家安全。背景是 2025 年 1 月那张据称为全球 iCloud 加密数据开后门的命令被《华盛顿邮报》曝光后，Apple 撤回了英国新用户的 Advanced Data Protection；原通知随后撤回，但政府又发了据称仅针对英国用户的第二张 TCN，Apple 在 2026 年重新起诉。裁决只确认「存在这张通知」，并未判定通知是否合法，也未披露技术要求；Liberty 与 Privacy International 参与了保密争议，实体审理预计 2027 年。我们没有打开裁决原文或 Apple / 英国政府的官方声明，路透引文也来自这篇转述。对技术读者，这意味着英国仍可能在秘密程序里要求厂商削弱端到端加密，只是这次连「有没有这张命令」都瞒不住了。HN 464 分、201 评。",
-      "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
-      "source": "MacAnorak / HN"
+      "title": "Claude Code 发到 2.1.330：企业控制台登录，以及会自己画图的内置模组 easel",
+      "summary": "anthropics/claude-code 的 v2.1.330 在 GitHub 的 published_at 为 2026-11-20T22:32:56Z（北京时间 11 月 21 日 06:32），npm 的 2.1.330 时间是 19:16:01Z（北京 03:16），都落在本窗。官方 changelog 里，对普通使用者最明显的两项是：一，可以用 claude auth login 登录 Anthropic 企业管理控制台里的组织，之后 Claude Code 会套用该组织的设置，并走它的云供应商或网关——这是从「个人账号工具」往「公司统一管控」再迈一步；二，新增内置模组 easel，在被要求时以及 MCP 指标结果下画图表，面向 Pro、Max，以及在已开通的情况下面向 Team 和 Enterprise，目前写明支持 macOS 与 Linux，可在 /config 里关掉自动出图。环境变量 CLAUDE_CODE_FULL_SIGN_IN_LINK=1 会打印完整登录链接，短链报错或脚本需要完整地址时用得上。自托管 runner 增加了 --start-dir，让 Claude 在仓库的某个子目录里开工，同时仍按原来的方式加载设置和 hooks。修的 bug 很长，直接关系到「用着用着卡住」：超长对话 compact 之后可能冻住数分钟、WebFetch 冻住或返回空结果、退出 worktree 时误删另一个会话还在用的目录、多进程同时写用户设置导致丢失、Linux/WSL 上休眠后再发第一条要空等三分钟，以及会话文件被拒掉的 MCP schema 撑到数兆。对正在跑企业或自托管的人，这是该升的一版；桌面端同日的 v6.28899.6 也把捆绑的 Claude Code 改到了 2.1.330，详见产品更新。",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "source": "Claude Code changelog / GitHub / npm"
     },
     {
       "id": "h6",
-      "title": "微软官方 PyPI 包 agent-framework 被劫持，装上就会偷凭据",
-      "summary": "Solidot 转述 The Register 的报道：微软托管在 PyPI 上、用于构建 AI 智能体的官方包 agent-framework 被劫持，月下载量近 20 万次。受影响版本是 v1.26.1 和 v1.26.2，会窃取开发者在 Azure、Git、Docker、Hugging Face 等服务上的环境变量、凭据文件和其他敏感信息；而且恶意代码不必被 import，只要安装了该包的 Python 解释器启动就会执行。微软发言人说，调查期间已将部分软件包项目设为私有。这是把「官方包」信任链直接打断的供应链事件——漏洞不在你写的 agent 里，而在你以为可以放心 pip install 的官方名字上。对还在用这个包做智能体原型的人，第一件事是核对自己锁住的版本，并轮换可能已经进过环境的云与仓库凭据；我们依据的是 Solidot 对 The Register 的转述，没有打开微软自己的事故说明页。",
-      "url": "https://www.solidot.org/story?sid=85931",
-      "source": "Solidot"
+      "title": "Signal 开始拦截操作系统里的 AI 代理读屏：继 Windows Recall 之后轮到 iOS 与 Android",
+      "summary": "Signal 官方博文《Signal Is Serious About Protecting Your Privacy》把问题提到「生存级」：Google、Apple、Microsoft 正在把智能体能力写进操作系统，等于改变了第三方应用必须游泳的那片海。文章回顾，去年他们已经用屏蔽截屏的方式，阻止 Windows 11 上微软 Recall 默认截取并存储 Signal 画面；现在要对 iOS 27 里的智能体，以及能检测到 AI 助手正在读取 Signal 屏幕的 Android 版本，采取类似限制。点名的例子包括 Android 上与 Gemini Intelligence / Google Gemini 的结合，以及 Apple 的 Onscreen Awareness 与 Siri AI。这些系统级代理会扫描当前屏幕上的信息，再拿去回答问题或执行指令，结果是 Signal 无法再单独保证：端到端加密和经过形式化验证的协议，挡不住操作系统在显示这一层把内容抄走。HN 上这篇有 485 分、292 评。对日常把聊天当私密渠道的人，这意味着「应用层加密」和「系统层 AI 读屏」已经正面冲突；短期能做的是升级 Signal、留意系统助手的屏幕感知开关，长期则要看各平台会不会给应用一个真正的退出权，而不是只给一个通知。",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "source": "Signal"
     }
   ],
   "accounts": [
@@ -56,78 +57,68 @@
       "name": "Elon Musk",
       "items": [
         {
-          "id": "elon-1",
-          "summary": "引用爱好者「早上起来 Bot 已经开 PR、跑完测试并合并」的体验，写道「You can create an entire company made of Grok Bots!」。被引用作者 @Texas_Twins_Dad 是特斯拉 / Grok Bot 爱好者账号，不是 xAI 官方声明。这是他当天最直接的产品判断：把 Bot 从聊天助手说成可以组成整家公司的劳动力。约 1.30 万赞、1983 条回复、239 万次曝光，11-20 01:56 北京。",
-          "url": "https://x.com/elonmusk/status/2123475464043786417",
-          "time": "2026-11-20T01:56:17+08:00",
-          "interactions": [
-            {
-              "summary": "被引用的体验帖",
-              "url": "https://x.com/i/status/2123417350234136746"
-            }
-          ],
+          "id": "x-elon-1",
+          "summary": "引用 @XFreeze 一条回顾 2020 年 1 月他在上海超级工厂台上跳舞的视频，只回「This is not AI」，并配了笑哭表情。被引用帖写的是特斯拉中国团队在开工 357 天后交付首批国产 Model 3，埃隆到台致谢。社区解读 / 非官方定义：他是在说这段旧录像是真人，不是生成视频；在 AI 假视频已经很常见的语境里，这条变成了当天赞数最高的互动（约 5.77 万赞、714 万次曝光）。@XFreeze 资料写 try Grok Bot templates，不是特斯拉或 xAI 官方账号。",
+          "url": "https://x.com/elonmusk/status/2123695317375992288",
+          "time": "2026-11-20T16:29:54+08:00",
+          "interactions": "约 5.77 万赞 · 6893 回复 · 714 万次曝光",
           "metrics": {
-            "likes": 13020,
-            "replies": 1983,
-            "reposts": 1194,
-            "impressions": 2388512
+            "likes": 57666,
+            "replies": 6893,
+            "reposts": 4678,
+            "impressions": 7143108
           }
         },
         {
-          "id": "elon-2",
-          "summary": "回复谷歌 / Alphabet CEO Sundar Pichai（@sundarpichai）的 Neon 演示帖：「Neon seems to be a banger!」Pichai 原帖展示用 Neon 在 Antigravity 里经由 Blender MCP 建模实验室仿真，并跟帖「It is, also No. 1 on Cursorbench:))」。官方 Neon 发布正文在窗前，这里只记窗内互动；Cursorbench 的榜单细则未见官方长文，仅转述 Pichai 原话。约 7954 赞，11-19 15:29 北京。",
-          "url": "https://x.com/elonmusk/status/2123317647106609205",
-          "time": "2026-11-19T15:29:11+08:00",
-          "interactions": [
-            {
-              "summary": "Pichai 称 Neon 也在 Cursorbench 第一",
-              "url": "https://x.com/sundarpichai/status/2123321095344492961"
-            }
-          ],
+          "id": "x-elon-2",
+          "summary": "写道「Tesla 的 AI 跑在我们那块小小的 AI4 计算机上，现在已经能打到暗黑破坏神的 Torment II」。这是一条独立原帖，不是引用。它把车载 AI4 的能力用游戏进度来量化，等于在说同一套端侧模型已经强到能处理高难度动作游戏，而不是只能做辅助驾驶演示。帖内没有给出配置、模型名或是否为车上实机，不能写成量产车功能清单。",
+          "url": "https://x.com/elonmusk/status/2123726569206415815",
+          "time": "2026-11-20T18:34:05+08:00",
+          "interactions": "约 2.70 万赞 · 2004 回复 · 534 万次曝光",
           "metrics": {
-            "likes": 7954,
-            "replies": 211,
-            "reposts": 339,
-            "impressions": 314019
+            "likes": 26975,
+            "replies": 2004,
+            "reposts": 1502,
+            "impressions": 5336438
           }
         },
         {
-          "id": "elon-3",
-          "summary": "澄清所谓 “Grok 4.8” 目前是多个仍在 beta 的模型变体，还不确定哪一个会进入大范围发布。被回复的 @firesidealpha 转述 DealBook 采访，称其处于 RL（强化学习）阶段，且用户从 Grok Bot 里拿到的有时是不同版本。对外名称已经在传，但产品形态仍未定稿，不能把「Grok 4.8」当成已经统一上线的单一模型。约 3411 赞，11-19 09:28 北京。",
-          "url": "https://x.com/elonmusk/status/2123226994246828250",
-          "time": "2026-11-19T09:28:57+08:00",
-          "interactions": [],
+          "id": "x-elon-3",
+          "summary": "原帖：「听我说：Singularity dot Com，一个给数字超级智能用的交友网站……」约 2.72 万赞、297 万次曝光。这是玩笑，不是产品发布，也没有配套域名或公司说明。它出现在他白天密集转发 Neuralink、Starlink 和「X 是全球市政广场」的时段里，更像是用一句话把「超智能已经近到可以谈恋爱」的梗抛出来。",
+          "url": "https://x.com/elonmusk/status/2123852660688494744",
+          "time": "2026-11-21T02:55:08+08:00",
+          "interactions": "约 2.72 万赞 · 4608 回复 · 297 万次曝光",
           "metrics": {
-            "likes": 3411,
-            "replies": 308,
-            "reposts": 216,
-            "impressions": 169874
+            "likes": 27165,
+            "replies": 4608,
+            "reposts": 2016,
+            "impressions": 2972709
           }
         },
         {
-          "id": "elon-4",
-          "summary": "引用一条关于 Terafab 时间表的帖，只写「Looking for hardcore engineers to join Terafab!」。这与他当日 bio 仍只指向 Terafab.AI、简介未写 Tesla / SpaceX / xAI 职务是一致的。被引用帖转述称计划建成约 1 亿平方英尺、首枚测试芯片目标 2027 年 6 月——这些数字是引用帖的转述，不是他这条里亲口写出的。约 2.46 万赞，11-19 09:38 北京。",
-          "url": "https://x.com/elonmusk/status/2123229344936173890",
-          "time": "2026-11-19T09:38:18+08:00",
-          "interactions": [],
+          "id": "x-elon-4",
+          "summary": "引用 @XFreeze 一条关于 Neuralink Blindsight 的帖，写道「Neuralink 的 Blindsight 产品现在只差监管批准」。被引用帖转述称 Blindsight 是直接接视觉皮层、让完全失明的人看见的植入物，并配了演讲片段；@XFreeze 不是 Neuralink 官方。埃隆这条等于把产品状态从「研发中」推进到「等批文」，但帖里没有点名是哪一家监管机构、哪一阶段的试验，也没有给出时间表。",
+          "url": "https://x.com/elonmusk/status/2123817232849567933",
+          "time": "2026-11-21T00:34:21+08:00",
+          "interactions": "约 1.34 万赞 · 1143 回复 · 122 万次曝光",
           "metrics": {
-            "likes": 24587,
-            "replies": 2134,
-            "reposts": 3084,
-            "impressions": 1921827
+            "likes": 13350,
+            "replies": 1143,
+            "reposts": 2172,
+            "impressions": 1218133
           }
         },
         {
-          "id": "elon-5",
-          "summary": "引用 XChat 通知并写「Moving all text conversations to be encrypted to ensure user privacy」。被引用帖（发在窗前）说传统群组将于「本周五」停止支持，未加密对话将改为加密，周五前未加入 XChat 的群成员需要注册才能重新进入。按日历应指 2026-11-20，但我们没有打开 X 官方帮助页做二次确认，截止日期以原通知为准。约 2.72 万赞，11-19 15:38 北京。",
-          "url": "https://x.com/elonmusk/status/2123319956381339961",
-          "time": "2026-11-19T15:38:21+08:00",
-          "interactions": [],
+          "id": "x-elon-5",
+          "summary": "回复 @cb_doge（DogeDesigner）一条「据 CNBC，SpaceX 的 Cursor 考虑停用中国 AI 模型」的帖，先回一个问号，再写「我们并不在提供开源模型」。被引用帖自己也写了「尚未得到 SpaceX 或埃隆的官方确认」。需要把话说准：@cb_doge 不是 SpaceX 官方；「SpaceX 的 Cursor」这一表述本身含混，可能把公司、产品和编辑器混在一起。埃隆否认的是「正在提供开源模型」，既没有承认有一条叫 Cursor 的 SpaceX 产品线，也没有直接回答「是否停用中国模型」。不能把这条写成官方政策声明。",
+          "url": "https://x.com/elonmusk/status/2123808714566373703",
+          "time": "2026-11-21T00:00:30+08:00",
+          "interactions": "约 6264 赞 · 384 回复 · 49.8 万次曝光",
           "metrics": {
-            "likes": 27182,
-            "replies": 1137,
-            "reposts": 2526,
-            "impressions": 2696227
+            "likes": 6264,
+            "replies": 384,
+            "reposts": 482,
+            "impressions": 498210
           }
         }
       ]
@@ -137,65 +128,55 @@
       "name": "Tibo",
       "items": [
         {
-          "id": "tibo-1",
-          "summary": "窗内最完整的产品公告，详见头条 h3。Dots 开始向一小部分 ChatGPT Plus 用户测试，并面向所有 Business Standard 当天开始滚动发布；他称对主动性的反馈最近转正。约 2333 赞、386 条回复、19.6 万次曝光，11-20 07:17 北京。",
-          "url": "https://x.com/thsottiaux/status/2123556256392847657",
-          "time": "2026-11-20T07:17:19+08:00",
-          "interactions": [],
+          "id": "x-tibo-1",
+          "summary": "窗内最完整的产品表态，详见头条 h2。他引用 Andrew Ambrosino 的桌面更新清单，呼吁用户升级桌面应用。约 1977 赞、20 万次曝光，北京时间 11 月 21 日 03:29。Ambrosino 当日 bio 与 Tibo 相同，都是 Codex & ChatGPT @OpenAI，可视为同一产品线的公开说明，并与帮助中心 11 月 20 日的 Space for Plus 稿互相印证。",
+          "url": "https://x.com/thsottiaux/status/2123861214644347122",
+          "time": "2026-11-21T03:29:07+08:00",
+          "interactions": "约 1977 赞 · 280 回复 · 20.0 万次曝光",
           "metrics": {
-            "likes": 2333,
-            "replies": 386,
-            "reposts": 164,
-            "impressions": 195630
+            "likes": 1977,
+            "replies": 280,
+            "reposts": 0,
+            "impressions": 200394
           }
         },
         {
-          "id": "tibo-2",
-          "summary": "紧接着补充新的 ChatGPT 移动端体验，详见头条 h3。dot 独立标签页，可钉 Codex、Projects、Images；先给已有或有资格建 dot 的 Pro 用户，可在 Settings > New ChatGPT Design 开关。约 1798 赞，11-20 07:20 北京。",
-          "url": "https://x.com/thsottiaux/status/2123557171321561133",
-          "time": "2026-11-20T07:20:58+08:00",
-          "interactions": [
-            {
-              "summary": "他引用的 Dots 公告",
-              "url": "https://x.com/thsottiaux/status/2123556256392847657"
-            }
-          ],
+          "id": "x-tibo-2",
+          "summary": "北京时间 11 月 20 日 11:00 发「Le ChatGPT 2.0」，引用的是他自己上期已经报道过的那条新版手机端说明（dot 独立标签、可钉 Codex / Projects / Images，先给有资格的 Pro）。约 3960 赞、53 万次曝光，是他窗内互动最高的一条。标题是玩笑式的版本号，不是官方把客户端改名为 2.0；社区解读 / 非官方定义：他是在用「第二版 ChatGPT」来概括这次导航和桌面/移动改造的幅度。他随后自回：「团队够疯，才会觉得能原地改好这套 12 亿人正在用的体验。且看这套策略能不能走通。」",
+          "url": "https://x.com/thsottiaux/status/2123612433923051976",
+          "time": "2026-11-20T11:00:33+08:00",
+          "interactions": "约 3960 赞 · 610 回复 · 53.0 万次曝光",
           "metrics": {
-            "likes": 1798,
-            "replies": 286,
-            "reposts": 87,
-            "impressions": 133844
+            "likes": 3960,
+            "replies": 610,
+            "reposts": 0,
+            "impressions": 530051
           }
         },
         {
-          "id": "tibo-3",
-          "summary": "「Tokens go brrrrrr. Going to need more compute.」并自回 New Sol 特别受欢迎。社区解读 / 非官方定义见头条 h3。约 4543 赞、600 条回复，11-20 03:54 北京。",
-          "url": "https://x.com/thsottiaux/status/2123505331531882923",
-          "time": "2026-11-20T03:54:58+08:00",
-          "interactions": [
-            {
-              "summary": "自回：New Sol being particularly popular",
-              "url": "https://x.com/thsottiaux/status/2123505661741084830"
-            }
-          ],
+          "id": "x-tibo-3",
+          "summary": "引用 Akshay Nathan（@akshaynathan_，当日 bio 为 @openai）的第一条推，称「这是 Akshay 的第一条推，对这人好一点，他是特别的」。Akshay 原文说 ChatGPT 应用应该流畅得多，欢迎反馈。这是内部同事的公开引荐，bio 只证明他与 OpenAI 有关，没有写具体岗位。约 1904 赞。",
+          "url": "https://x.com/thsottiaux/status/2123864112694509995",
+          "time": "2026-11-21T03:40:38+08:00",
+          "interactions": "约 1904 赞 · 177 回复 · 18.1 万次曝光",
           "metrics": {
-            "likes": 4543,
-            "replies": 600,
-            "reposts": 85,
-            "impressions": 314484
+            "likes": 1904,
+            "replies": 177,
+            "reposts": 0,
+            "impressions": 180549
           }
         },
         {
-          "id": "tibo-4",
-          "summary": "回复 @theo 的年终盘点：「I still count 6 weeks in the year。」Theo 原文分别写 Anthropic 改变了写代码的方式、Google 的通用模型好用、OpenAI「有史以来最聪明但实际不好用」。Tibo 没有正面辩驳口碑，只用「还剩六周」提醒年底前仍可能出牌。约 1258 赞，11-20 05:24 北京。",
-          "url": "https://x.com/thsottiaux/status/2123527849403674729",
-          "time": "2026-11-20T05:24:27+08:00",
-          "interactions": [],
+          "id": "x-tibo-4",
+          "summary": "回复 Charlie Marsh（@charliermarsh）一条关于 Codex 的技术说明：「这里是在做真正的工程。」Marsh 原文写：Codex 用 WebSocket 做模型请求以便增量发送；现在把 WebSocket 大小上限从 16 MB 提到 128 MB（8 倍），大轮次就不必退回 HTTP；即使仍超限，处理速度也大约快 5 倍。Tibo 的背书说明这项改动被产品线视为一次认真的基础设施升级，而不只是客户端换皮。约 343 赞。Marsh 的公司归属本期未再核 bio，只记 handle 与显示名。",
+          "url": "https://x.com/thsottiaux/status/2123859787079426435",
+          "time": "2026-11-21T03:23:27+08:00",
+          "interactions": "约 343 赞 · 27 回复 · 2.1 万次曝光",
           "metrics": {
-            "likes": 1258,
-            "replies": 108,
-            "reposts": 23,
-            "impressions": 37836
+            "likes": 343,
+            "replies": 27,
+            "reposts": 0,
+            "impressions": 20993
           }
         }
       ]
@@ -205,52 +186,42 @@
       "name": "lauren",
       "items": [
         {
-          "id": "poteto-1",
-          "summary": "回复 AI Engineer（@aiDotEngineer）为其演讲庆 100 万次观看的帖。原帖写这是他们最快破百万的演讲，主题是她在 @spacexai 背后一个月 11,000 个生产环境 PR 的工程方法，标题 All Code Is Slop (Except Mine)。活动主办方写的是 @spacexai，她自己当日 bio 仍是「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」，雇主按可见 bio 写 SpaceXSI，二者不要混成别的公司。约 357 赞，11-20 00:40 北京。",
-          "url": "https://x.com/poteto/status/2123456507622641876",
-          "time": "2026-11-20T00:40:57+08:00",
-          "interactions": [
-            {
-              "summary": "AI Engineer 的百万观看公告（含 YouTube 链接）",
-              "url": "https://x.com/aiDotEngineer/status/2123453748785684806"
-            }
-          ],
+          "id": "x-poteto-1",
+          "summary": "宣布 pstack v0.15.46 的小更新：做了大量裁剪，skills 明显变短；把 Gemini 4 Neon 加进 panel reviewer。她写 Grok Bot 和 Cursor 用户会自动更新，若要改模型路由，再跑一次 /setup-pstack。约 2520 赞、27 万次曝光，是她窗内互动最高的原帖。当日 bio 仍是「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」，资料链接展开为 https://x.ai/bot/plugin/9717366；affiliation 徽章为 SpaceX Super Intelligence。pstack 是她维护的技能栈，这条是维护者自己的发版说明，不是 xAI 或 SpaceX 官方更新。",
+          "url": "https://x.com/poteto/status/2123824683862855898",
+          "time": "2026-11-21T01:03:58+08:00",
+          "interactions": "约 2520 赞 · 166 回复 · 27.1 万次曝光",
           "metrics": {
-            "likes": 357,
-            "replies": 11,
-            "reposts": 3,
-            "impressions": 6490
+            "likes": 2520,
+            "replies": 166,
+            "reposts": 0,
+            "impressions": 271159
           }
         },
         {
-          "id": "poteto-2",
-          "summary": "补充 /correct skill：让 agent 先反思自己的错误，再为你生成确定性检查。链接指向 Cursor 官方插件仓库里的 skill 文档。原切片强调「如果你反复改正同一个错误，就把它做成检查」。约 792 赞、730 次收藏，是她窗内互动最高的回复。她此前在 Cursor，但今天这条是在讲可复用 skill，不能据此把现在的雇主写成 Cursor。11-19 08:16 北京。",
-          "url": "https://x.com/poteto/status/2123208699309347294",
-          "time": "2026-11-19T08:16:15+08:00",
-          "interactions": [],
+          "id": "x-poteto-2",
+          "summary": "引用一条「把代码库里的注释分类成废话、借口……」的长提示词，建议试试 pstack 里的 /no-comments，「最好再让你的 agent 把它做成一条 lint 规则」。这是她把「别让模型用注释给自己开脱」做成可重复检查的一贯做法，和上期提到的 /correct skill 是同一思路。约 962 赞。",
+          "url": "https://x.com/poteto/status/2123898792487576021",
+          "time": "2026-11-21T05:58:26+08:00",
+          "interactions": "约 962 赞 · 45 回复 · 4.5 万次曝光",
           "metrics": {
-            "likes": 792,
-            "replies": 50,
-            "reposts": 50,
-            "impressions": 37440
+            "likes": 962,
+            "replies": 45,
+            "reposts": 0,
+            "impressions": 45388
           }
         },
         {
-          "id": "poteto-3",
-          "summary": "向刚上线的社区目录 grok-bot.directory 提交了 dr eggbot，并给出 x.ai/bot 上的 dr eggbot v2。被回复帖宣布可以浏览、安装别人做的 bot 与应用，或发布自己的作品。目录本身不是她发的，她窗内的动作是提交自己的 bot，说明 Grok Bot 生态开始出现目录和版本迭代。约 218 赞，11-19 13:35 北京。",
-          "url": "https://x.com/poteto/status/2123288922448965851",
-          "time": "2026-11-19T13:35:02+08:00",
-          "interactions": [
-            {
-              "summary": "grok-bot.directory 上线公告",
-              "url": "https://x.com/ericzakariasson/status/2123102642704675241"
-            }
-          ],
+          "id": "x-poteto-3",
+          "summary": "引用 Neuralink 官方账号一条「用 Neuralink 玩 GTA VI」的帖，写道「想象一下，只用意识就能调度你所有的 Grok Bot」。她还单独回了 Neuralink「好酷」。这是把脑机接口演示和她自己的 bot 编排工作开的脑洞，不是产品预告。约 973 赞。",
+          "url": "https://x.com/poteto/status/2123907614551810372",
+          "time": "2026-11-21T06:33:30+08:00",
+          "interactions": "约 973 赞 · 90 回复 · 3.3 万次曝光",
           "metrics": {
-            "likes": 218,
-            "replies": 22,
-            "reposts": 10,
-            "impressions": 12638
+            "likes": 973,
+            "replies": 90,
+            "reposts": 0,
+            "impressions": 32602
           }
         }
       ]
@@ -263,91 +234,107 @@
       "items": [
         {
           "id": "hn-1",
-          "title": "Anthropic’s Nasdaq debut",
-          "summary": "详见头条 h1。纳斯达克新闻室确认开盘 111.50 美元；CNBC 报道收盘 97.17 美元（+17%）。原链路透社 401，未能打开。Firebase 读数 834 分、1598 评，是窗内讨论最热闹的帖。",
-          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
-          "discussion_url": "https://news.ycombinator.com/item?id=50562754",
-          "meta": "834 分 · 1598 评论"
+          "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+          "summary": "详见头条 h1。Alpöge 在 alpo.ge 发表声明，并提供分卷 Lean 形式化包。Algolia 读数 2288 分、1555 评，是窗内讨论最热闹的帖。",
+          "url": "https://alpo.ge/remark.pdf",
+          "discussion_url": "https://news.ycombinator.com/item?id=50574968",
+          "meta": "2288 分 · 1555 评论"
         },
         {
           "id": "hn-2",
-          "title": "How the European Commission rolled out Matrix to more than 40k staff",
-          "summary": "Element 在 11 月 19 日的博文里，根据 Matrix Conference 2026 上欧委会 Diana Gheorghe 与 Alexandru Vignide 的分享，把一次九个月的落地过程写了出来：2025 年 12 月概念验证过关，2026 年 1–6 月搭生产环境，7–9 月分波段把 Element Server Suite Pro 装进全体委员会笔记本电脑，并称现在服务超过 4 万名用户。系统跑在主权云招标选出的托管商上、对接 EU Login，由委员会自己运维多套 Synapse；跨服务器搜人一度失败，在线状态（presence）因性能被关掉，对外联邦仍在评估，而且明确不是用来一对一替换 Teams。该原文 URL 此刻会 302 到会议演讲汇总页，正文是从 2026-11-19 15:07:44 UTC 的 Wayback 快照读到的，4 万用户这个数字也没有从欧委会自己的页面再核对。",
-          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50558533",
-          "meta": "647 分 · 310 评论"
+          "title": "Hurried Announcement: Alessandro Masullo GRH",
+          "summary": "详见头条 h1。Ravi Vakil 在代数几何课程博客上紧急公布 Masullo 的人工 GRH 草稿，称 Brian Conrad 已审阅数月，「到目前为止看起来不错」。1406 分、647 评，是与 Alpöge 声明并行的第二条主线。",
+          "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50579568",
+          "meta": "1406 分 · 647 评论"
         },
         {
           "id": "hn-3",
-          "title": "UK government forced to admit it issued Apple a secret encryption order",
-          "summary": "详见头条 h5。调查权力审裁处裁定必须承认向 Apple 发出的 TCN，但并未判定其是否合法。Firebase 读数 464 分、201 评。",
-          "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50562113",
-          "meta": "464 分 · 201 评论"
+          "title": "I'll never buy Framework hardware again",
+          "summary": "Gilles Chehade（个人站点 poolp.org）的帖在 HN 拿到 756 分、534 评，但我们打开原文时，页面只剩约 56 词的后续说明：他写这篇意外上了 HN，并不想伤害 Framework，只是要他们修好支持、把已付过款的可用笔记本交出来，并以 ENODRAMA 收尾。原先那篇更长的投诉正文已经不在当前页面上，因此不能转述已经撤下的细节；能确定的是社区对 Framework 售后的情绪足够把一篇后来被删减的帖送到首页前列。",
+          "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50576855",
+          "meta": "756 分 · 534 评论"
         },
         {
           "id": "hn-4",
-          "title": "Fuck Your AI Safeguards",
-          "summary": "爱沙尼亚工程师的情绪长文正好撞上 Anthropic 上市日。作者写自己用 Claude Code 给本人掌控的产品做安全加固时，被「AI safeguards」拦住；申请豁免还要等工作日、交出身份证件并放弃数据留存豁免。他改用欧盟托管的开源权重模型（文中点名 GLM 5.3）才完成验证和修复，并主张这类防护栏挡住的是试图合法防御的开发者，挡不住使用去对齐或开源模型的攻击者，甚至将其解读成上市前给监管和护城河造势。这是一篇个人体验与立场文，没有可独立复核的漏洞细节，也没有 Anthropic 官方回应，更适合当作「安全工作流 vs 模型拒答」的社区情绪样本，而不是事故通报。",
-          "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50562262",
-          "meta": "456 分 · 186 评论"
+          "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+          "summary": "Architect Labs 的博文称，其 AI 系统自主迭代了编译器、指令集、架构、微架构、RTL、验证到最终 GDS，得到一套基于 interaction nets（交互网）的 CPU 设计：计算是局部改写图，每个值只有一个所有者，从而避免传统 CPU 在共享可变状态上做运行时依赖发现。官方给出的数字是：在 25 个工作负载（其中 15 个留到最终评估才揭晓）上，相对一颗「现代、已在硅上验证的双发射按序超标量」核心，能效为 4.59 倍。这是公司自己的基准和表述，文中没有第三方复现或流片商的独立确认，不能写成「已经量产的新架构已经快了 4.59 倍」。它值得看，是因为把「AI 设计芯片」从生成 RTL 片段推到了声称可到 GDS 的完整闭环。",
+          "url": "https://architectlabs.com/blog/frostbite",
+          "discussion_url": "https://news.ycombinator.com/item?id=50572503",
+          "meta": "614 分 · 320 评论"
         },
         {
           "id": "hn-5",
-          "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-          "summary": "详见头条 h2。Veria Labs 把官方已披露的 ß 大小写堆溢出写成默认 Rails 上的预认证 RCE；GitLab / GHES / Chatwoot 在其 11-19 23:59 UTC 的表里仍为 Vulnerable，PoC 推迟到 11 月 25 日。Firebase 读数 377 分、160 评。",
-          "url": "https://verialabs.com/ruby2shell/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50556287",
-          "meta": "377 分 · 160 评论"
+          "title": "Inkling 2 Mini",
+          "summary": "详见头条 h4。Thinking Machines Lab 发布可在笔记本运行的开源权重小模型，中间层循环三遍。575 分、94 评。",
+          "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50581260",
+          "meta": "575 分 · 94 评论"
         },
         {
           "id": "hn-6",
-          "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
-          "summary": "kapteko 用半玩笑的目标——在一台 10GB 内存、1 核虚拟机上跑 1500 万个 web 服务器——把内核协议栈的「每个监听套接字」内存税讲清楚：默认内核路径大约在 250 万个服务处就把内存吃光、RPS 下滑；改用 smoltcp 把 TCP/IP 搬到用户态后，空闲实例约 620 字节、活跃约 1KB，作者写到跑到了 1600 万个。数据面比较了 DPDK（完全旁路内核、独占网卡、忙轮询占满一核）和 AF_XDP（内核仍持有设备，SSH 还能用，性能「紧随其后」），并配了自研 runtime 与 LFI 沙箱来调度海量 guest。文中的对比图数字没能从 HTML 文本里提取，而且这是实验性 PoC，作者自己也说距离完整 POSIX 兼容还差一篇文章。价值在于用户态协议栈如何压低每个 listen 的内核对象成本，而不是真的要部署 1500 万个站点。",
-          "url": "https://kapteko.com/15-million-webservers/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50556533",
-          "meta": "375 分 · 41 评论"
+          "title": "Signal Is Serious About Protecting Your Privacy",
+          "summary": "详见头条 h6。Signal 宣布限制操作系统级 AI 代理读取聊天画面。485 分、292 评。",
+          "url": "https://signal.org/blog/protecting-your-privacy/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50572348",
+          "meta": "485 分 · 292 评论"
         },
         {
           "id": "hn-7",
-          "title": "Claude solves two open problems in the physics of black holes",
-          "summary": "Anthropic 这篇研究博文标注发布于 2026-11-17（早于本窗口，今天才在 HN 上爆开），页面标题写的是 Claude Fable 5.2。文中称代理大致自主完成了两道黑洞 / 量子引力方向的未决问题：一是补完二十多年前就摆好、但手算太长而易错的霍金–Page 相变计算；二是为最简单版本的模 bootstrap 找到精确上限——该方法还复现过一个近日由 OpenAI 模型证明的球堆积结果，9 月用 Lean 做了形式化验证，论文由 Claude 在少量指导下写成，并由一位物理学家核对主要结果。作者自己也划了界限：结果并不直接描述我们的宇宙、没有实用价值，也「谈不上解决量子引力」。预印本挂在 hexagonmath.org，这次没有通读。应把它当成带人类选题、交叉验证和形式化检查的代理科研演示，而不是物理学已被改写的新闻；文中未给出期刊接收或外部同行评审信息。",
-          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-          "discussion_url": "https://news.ycombinator.com/item?id=50563148",
-          "meta": "346 分 · 155 评论"
+          "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+          "summary": "GrapheneOS 在自家 Mastodon 实例发帖，HN 标题概括为 Google 正在推动 OEM 反对 GrapheneOS 与解锁引导加载器。我们用抓取和页面抓取工具打开原帖时，只拿到标题和一句开头「Google is sabotaging their OEM partners by making…」，正文没有完整取回，因此不能转述未读到的具体措施或时间表。帖子本身的存在和 476 分、189 评说明，自定义 Android 系统与官方对解锁、认证的收紧，再次成为安全社区的焦点；细节需要打开原帖或后续声明再核对。",
+          "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+          "discussion_url": "https://news.ycombinator.com/item?id=50570479",
+          "meta": "476 分 · 189 评论"
         },
         {
           "id": "hn-8",
-          "title": "Someone reported java4shell bug in September 2026",
-          "summary": "这是对上期 Java4Shell（OpenJDK 处理 Base64 时的远程代码执行）的跟进，而不是新的官方补丁说明。社区翻出 2026-09-09 由 albertnetymk（ayang）在 openjdk/jdk 提交的草稿 PR #32781，标题直指 x86_64 AVX-512 VBMI 路径上 Base64 解码在短填充尾巴上写穿输出缓冲区（issue 8392044）。描述与后来公开的机制吻合：非法短输入会让 output_size 下溢，错误的 output_mask 把数据写到逻辑长度之外。PR 一直是 draft、未完成评审，还被 bot 警告不活跃，随后被作者关闭；此时 GitHub 已无法检索 issue 8392044。这并不等于「九月就有了官方修复」，更像是贡献者层面早就碰到了同一处 overflow，却没有走完披露与合入。给还在评估补丁窗口的人一个提醒：这条漏洞的修复轨迹并不干净。",
-          "url": "https://github.com/openjdk/jdk/pull/32781",
-          "discussion_url": "https://news.ycombinator.com/item?id=50558906",
-          "meta": "345 分 · 90 评论"
+          "title": "\"I can tell you wrote this yourself\"",
+          "summary": "工程学生 Em 写导师看到开题进度报告后的第一句话是「我能看出来这是你自己写的」，随后补了一句「我收到过很多 AI 写的报告」。作者说学院作业已经从「鼓励使用 AI」变成事实上的必须，最难的课是在没有窗户的机房里一天提示八小时；「会不会东西」被说成不如「会不会带模型」。403 分、395 评，评论区吵的是教育是不是在把工程师训练成监工。和头条里「AI 协助冲击千年问题」形成刺眼对照：一边是模型被拿去碰黎曼猜想，一边是学生因为自己动笔反而显得稀罕。",
+          "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50571189",
+          "meta": "403 分 · 395 评论"
         },
         {
           "id": "hn-9",
-          "title": "What's New in PHP 8.6",
-          "summary": "PHP 8.6.0 于 2026 年 11 月 19 日正式发布。这是一次语言级大版本，主打部分函数应用（用 ? 与 ... 预填参数得到 Closure）、新的 \\Time\\Duration（与时区无关、纳秒精度的时长），以及基于 epoll、kqueue、event ports 或 WSAPoll 的 Io\\Poll，用来给 ReactPHP / AMPHP 这类事件循环垫更可扩展的 I/O 多路复用，摆脱 stream_select() 常见的约 1024 连接上限。另外还有 clamp()、SortDirection 枚举，以及只读属性可以写默认值。对还停在 8.4/8.5 的团队，PFA 和 Poll API 是最值得看的两项；这份页面是功能发布说明，不是安全公告，是否与近日围绕 PHP 的安全更新叠在一起升级，需要另对官方 changelog。",
-          "url": "https://www.php.net/releases/8.6/en.php",
-          "discussion_url": "https://news.ycombinator.com/item?id=50557870",
-          "meta": "269 分 · 126 评论"
+          "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+          "summary": "Nicky Mouha 向 openssl/openssl 提交的 PR #33652，标题即 CVE-2026-121481，修补 EVP_EncodeBlock() 的缓冲区溢出，对非法输入改为返回 -1，并为 EVP_DecodeBlock() 加了类似保护，同时修正 http_client.c 里 base64encode() 错误的长度检查，还补了文档和测试。HN 标题写了 CVSS 9.8；PR 讨论里有评论认为这个分以及相关 CVE-2026-107494 偏高，我们没有打开官方安全公告核对最终评分，不能把 9.8 写成已确认的官方值。364 分、328 评。对仍在用旧版 OpenSSL 做 Base64 的服务，应跟踪该 PR 与随后的正式发行，而不是等待标题里的分数被吵清楚。",
+          "url": "https://github.com/openssl/openssl/pull/33652",
+          "discussion_url": "https://news.ycombinator.com/item?id=50569226",
+          "meta": "364 分 · 328 评论"
         },
         {
           "id": "hn-10",
-          "title": "PostgreSQL 19 Released",
-          "summary": "PostgreSQL 全球开发组于 2026 年 11 月 19 日发布 19。运维侧最显眼的是 REPACK (CONCURRENTLY)：可以在不阻塞读写的情况下回收膨胀并按索引重排，用来替代过去会锁表的 VACUUM FULL / CLUSTER（后两者仍保留兼容）。还有 pg_plan_advice / pg_stash_advice 做计划稳定与实验，autovacuum 可用并行 worker 清索引，以及待机库上的 WAIT FOR LSN「读己之写」、INSERT ... ON CONFLICT DO SELECT 的 get-or-create。复制方面可在创建第一个逻辑复制槽时自动把有效 WAL 级别升到 logical，并支持序列复制。默认行为也有变化：新增 TLS SNI（pg_hosts.conf），md5 认证成功后警告（该方式在 18 已弃用），移除 RADIUS，JIT 默认关闭，若构建时启用 LZ4 则 TOAST 默认改用 lz4。官方公告还写外键检查改进让批量插入在测试中「几乎快一倍」，这是公告自己的测试表述，没有另对基准。HN 分数不算顶，但和 Lobsters 热度加在一起，是窗口内最重要的数据库大版本更新。",
-          "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50560357",
-          "meta": "84 分 · 7 评论"
+          "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+          "summary": "陶哲轩博客把 Alpöge 参与的三项声明放在同一篇里：Euler 爆破、Navier–Stokes 爆破，以及 GRH 的 Lean 大证明。详见头条 h1。这是把流体千年问题与数论千年问题放在同一天、同一作者集群下的第一手记录，不是媒体转述。314 分、121 评。",
+          "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50578358",
+          "meta": "314 分 · 121 评论"
         },
         {
           "id": "hn-11",
-          "title": "Pancreatic cancer halted by virus injection in three patients",
-          "summary": "这篇 New Scientist 报道的刊登日期是 2026 年 5 月 29 日，并不是窗口内新发表的临床结果，今天只是在 HN 上重新爆了。文中写明尼苏达大学 Masato Yamamoto 团队用改造腺病毒（复制由肿瘤中高表达的 COX-2 激活）经超声引导注入胰腺癌灶：三名肿瘤尚未扩散出胰腺的患者，在「最终目标剂量十分之一」的安全性试验里肿瘤停止生长、病情临床稳定，其中首位患者已治疗约一年。作者和受访外科医生都强调没有对照组、样本极小，只能算假设生成；扩大到 15 名患者的更高剂量试验、以及与检查点抑制剂联用都还在计划中。不要把标题里的 halted 读成治愈或已经可临床推广。",
-          "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
-          "discussion_url": "https://news.ycombinator.com/item?id=50563066",
-          "meta": "480 分 · 69 评论 · 原文 2026-05-29"
+          "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+          "summary": "Scott Aaronson 的反应，详见头条 h1。他提醒不要被标题里的「随机鹦鹉」误导，并指出 Lean 可靠性与语句是否被正确编码，才是接下来几天真正要看的东西。191 分、154 评。",
+          "url": "https://scottaaronson.blog/?p=10344",
+          "discussion_url": "https://news.ycombinator.com/item?id=50581084",
+          "meta": "191 分 · 154 评论"
+        },
+        {
+          "id": "hn-12",
+          "title": "Why there are still no non-WebKit browsers on iOS",
+          "summary": "Mozilla 政策博文称，欧盟 DMA 让人在 iPhone 上选择默认浏览器之后，Firefox 在 iOS 上的日活跃已经翻倍，但 Apple 仍要求 iOS 上的浏览器使用 WebKit，因此所谓第三方浏览器并不能换一套引擎。322 分、190 评。文章把「可以换默认图标」和「可以跑自己的引擎」区分开来：前者已经发生，后者还没有。对关心移动浏览器竞争的人，这是官方在 11 月 20 日把旧限制又说了一遍，并附上了使用量变化。",
+          "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50575644",
+          "meta": "322 分 · 190 评论"
+        },
+        {
+          "id": "hn-13",
+          "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+          "summary": "详见头条 h3。《卫报》报道纳斯达克抹去 2026 全年涨幅。191 分、225 评。",
+          "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+          "discussion_url": "https://news.ycombinator.com/item?id=50574383",
+          "meta": "191 分 · 225 评论"
         }
       ]
     },
@@ -357,59 +344,52 @@
       "items": [
         {
           "id": "lo-1",
-          "title": "We Need Smart People Who Give a Shit",
-          "summary": "作者在 2026-11-17 的随笔里从 ACH 这类「看起来能跑、其实靠人肉托底」的系统出发，认为近一周微软 365、空管、航司、银行、苹果等故障的共同线索，是真正懂系统又肯负责的人被生成式 AI 的管理叙事挤走了——领导分不清「有人托底的脆弱系统」和「看起来能跑的 slop」。这是一篇文化评论，不是事故调查，文中也声明没有内部信息，不能当成故障归因结论。同一篇文章在 HN 上的讨论帖创建于窗口开始前几分钟；Lobsters 这条则在窗口内，是今天该站分数最高的帖。",
-          "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
-          "discussion_url": "https://lobste.rs/s/rzuasm",
-          "meta": "127 分 · 52 评论"
+          "title": "Levent Alpoge Claims Proof of Riemann Hypothesis",
+          "summary": "Lobsters 上热度最高的帖，链到 Alpöge 的 PDF，66 分、29 评。同一主题下另有一条链到 Scientific American、评分为负的帖，说明社区对「媒体是否写过了头」有直接反应。详情见头条 h1。",
+          "url": "https://alpo.ge/remark.pdf",
+          "meta": "66 分 · 29 评论 · math, pdf"
         },
         {
           "id": "lo-2",
-          "title": "PostgreSQL 19 Released",
-          "summary": "与 HN 上同一篇官方公告对应，详见 hn-10。不锁表的 REPACK (CONCURRENTLY)、计划稳定扩展、待机库 WAIT FOR LSN，以及 JIT 默认关闭，是这次对运维最有用的几项。Lobsters 52 分，是窗口内第二热，说明数据库社区对这次大版本比 HN 分数所显示的更上心。",
-          "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
-          "discussion_url": "https://lobste.rs/s/pqyuhk",
-          "meta": "52 分 · 2 评论"
+          "title": "Removing binder.c",
+          "summary": "LWN 报道 Android/Linux 侧去掉 binder.c、转向 Rust 实现的进展。55 分、5 评。Binder 是 Android 进程间通信的核心驱动，用 Rust 替换 C 版是内核内存安全改造里非常靠前的一块；对还在跟主线内核走的 Android 设备树维护者，这意味着接下来要跟的是接口与性能，而不只是又一篇「Rust in Linux」宣言。",
+          "url": "https://lwn.net/Articles/1102982/",
+          "meta": "55 分 · 5 评论 · android, linux, rust"
         },
         {
           "id": "lo-3",
-          "title": "15 million web servers on one VM - smoltcp, DPDK, AF_XDP",
-          "summary": "与 HN 上同一篇 kapteko 长文对应，详见 hn-6。作者称在用户态协议栈下把单机监听服务从内核路径的约 250 万推到了 1600 万。Lobsters 讨论分数 33、评论很少，更像被认真收藏的系统编程演示，而不是争议帖。",
-          "url": "https://kapteko.com/15-million-webservers/",
-          "discussion_url": "https://lobste.rs/s/elmy67",
-          "meta": "33 分 · 1 评论"
+          "title": "Vim Classic 8.3.1 released",
+          "summary": "Vim Classic 发布 8.3.1。51 分、9 评。这是把经典 Vim 8 线单独维护的发行，不是 Bram 之后的 Vim 9 主线；对不想跟 Vim 9 脚本和默认行为走、又希望继续拿到修复的人，这是一条并行的维护轨道。我们打开的发布说明很短，具体修复清单以官网为准。",
+          "url": "https://vim-classic.org/news/vim-8.3.1-released.html",
+          "meta": "51 分 · 9 评论 · editors, release"
         },
         {
           "id": "lo-4",
-          "title": "Design for Understandability",
-          "summary": "Google 工程师 Jonathan Schuster 把自己 2025 年 11 月在公司内部 Code Health Summit 的演讲公开了出来。核心论点是：LLM 会写越来越多的代码，人剩下的关键能力是判断，因此要像过去「为可测试性而设计」那样，「为可理解性而设计」——契约式设计、类不变量、模块化，并把目标定成「不跑测试也能预测每一行的行为」。他把今天的 LLM 比作 sloppy intern，强调无论代码是模型生成还是手写，质量责任仍在人。这不是新框架或新工具发布，而是把软件工程里并不新、但在 AI 编码时代被重新加急的主张讲给更广的听众。",
-          "url": "https://jschuster.org/blog/2026/11/19/design-for-understandability/",
-          "discussion_url": "https://lobste.rs/s/qsrnot",
-          "meta": "31 分 · 19 评论"
+          "title": "Announcing jj-musubi: live sync for Jujutsu",
+          "summary": "为 Jujutsu（jj）做出的实时同步工具 jj-musubi。34 分、22 评。jj 本身已经在开发者里热过一轮（本期 HN 也有 Jujutsu Primer，197 分），缺的是多人同时改同一仓库时的活同步；musubi 把这块补上，评论区在问它和传统 git 远端、冲突模型怎么相处。",
+          "url": "https://www.serpentine.com/posts/2026/announcing-jj-musubi/",
+          "meta": "34 分 · 22 评论 · release, vcs"
         },
         {
           "id": "lo-5",
-          "title": "Distributed, high-performance blob storage on SQLite",
-          "summary": "Zerodha 技术团队介绍他们开源的 Blobasaur：用 Rust 写成的单二进制、分片 blob 服务，对外讲 Redis 协议，底层用 SQLite，已经在生产环境里替换掉 SSDB，用来存非交易关键的 UI / 工作区偏好。设计取舍很明确——可接受放松耐久性、JSON 可压缩、只要 KV 和 hash 加 TTL。单机用多 SQLite 文件做分片加 group commit 换写并发；在 tmpfs 上的对照里，16 分片相对 1 分片把纯 HSET 从 7740 ops/s 提到 25324 ops/s。生产是三台 4 vCPU / 8GB 节点的集群，交易时段全命令 p99 约 2ms。这些数字来自他们自己的博文和测试，不是第三方复现。",
-          "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-          "discussion_url": "https://lobste.rs/s/bk5nfs",
-          "meta": "25 分 · 2 评论"
+          "title": "Internet Archive Staffers Are Unionizing",
+          "summary": "通信工人美国工会（CWA）宣布互联网档案馆员工启动组织活动。28 分、3 评。IA 既是公共记忆基础设施，也是一家要发工资的机构；在预算和版权诉讼压力下，员工选择工会化，说明「把网站存下来」背后的劳动条件已经被拿到台面上。",
+          "url": "https://cwa-union.org/news/releases/internet-archive-workers-launch-union-campaign-communications-workers-america",
+          "meta": "28 分 · 3 评论 · culture"
         },
         {
           "id": "lo-6",
-          "title": "Ruby2Shell (GHSA-34m4-m9fh-gqp5)",
-          "summary": "与头条 h2、HN 条目是同一篇 Veria Labs 报告。窗口内 Lobsters 还有一条官方公告（hsmtyg，21 分）：Ruby 在 Regexp 与字符串大小写转换上共披露七个漏洞，其中多个被官方写明已有 RCE PoC，同一组修复版本。运维侧应把官方七条与 Veria 的 Rails 利用链一起看，而不是只升级「听说有个 ß 的 bug」。",
-          "url": "https://verialabs.com/ruby2shell/",
-          "discussion_url": "https://lobste.rs/s/usdf7t",
-          "meta": "23 分 · 6 评论"
+          "title": "Garage Door Spam",
+          "summary": "Harrison 的硬件随笔：车库门系统如何变成垃圾信息通道。33 分、8 评。看起来像恶作剧，实际是「默认开放的无线协议 + 被遗忘的消费设备」会重新变成攻击面的一个具体例子，和本期更严肃的 CVE 可以对照着看。",
+          "url": "https://blog.harrison.page/garage-door-spam/",
+          "meta": "33 分 · 8 评论 · hardware"
         },
         {
           "id": "lo-7",
-          "title": "Mutex poisoning is not for everyone",
-          "summary": "Bert Peters 反驳近期 Rust 社区里为默认 mutex poisoning 辩护的观点：他认为默认中毒是语言里的大错之一——用一个几乎用不上的小众安全网，让所有 Mutex 多付 atomic 字段与代码体积成本，还把 lock().unwrap() 这种别扭模式变成常态；真正需要不变量保护的场景应该用显式 Poison 包装器。文章把 futex 快路径讲得很细，但结论是工程偏好，不是 rustc 或 RFC 即将改默认的公告。对写高并发 Rust 的人有参考价值，读的时候应把它当辩论文，而不是语言变更预告。",
-          "url": "https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html",
-          "discussion_url": "https://lobste.rs/s/uzn2t6",
-          "meta": "21 分 · 5 评论"
+          "title": "Jujutsu Primer",
+          "summary": "一份面向已经会 git 的人的 jj 入门。34 分、4 评；同一文也在 HN 拿到 197 分。它能在两个社区同时走红，说明 jj 已经从「有人在试用」变成「需要一份能转发的说明书」。",
+          "url": "https://ethanlowman.com/posts/jj-primer/",
+          "meta": "34 分 · 4 评论 · vcs"
         }
       ]
     },
@@ -419,38 +399,38 @@
       "items": [
         {
           "id": "v2-1",
-          "title": "我司全面禁止 AI Coding，一夜之间回到古法编程时代",
-          "summary": "楼主公司因同事用 AI 生成的代码审核不到位引发线上故障，先前又有 AI 写的 SQL 误删活跃用户，老板还把近期微软宕机归到 Vibe Coding 头上，于是全面禁止直接生成代码，只许用 AI 做分析和方案。243 条回复几乎一边倒认为这是因噎废食：事故来自测试和 review 跟不上交付速度，跟人写还是模型写没有必然关系；也有人问根本没法可靠区分来源，办公电脑拉黑 agent 也挡不住自费。楼主补充公司合规限制只能用国产模型（主用 DeepSeek），让 AI 复审自己写的代码又常「自我感觉良好」，大批量 vibe 之后人工审查其实接不住。可与同日「智驾代码能不能由 AI 写」那帖对读：站内更强调流程，而不是禁令。",
-          "url": "https://www.v2ex.com/t/1258200",
-          "meta": "243 回复 · 程序员"
+          "title": "我的 App 火了，然后苹果威胁要关闭我的开发者账号",
+          "summary": "一位独立开发者说自己的应用突然爆量之后，苹果以开发者账号风险为由发出关闭威胁。原帖写到审核、收款和「火了反而可能失去账号」的悖论，222 条回复是窗内 V2EX 最热闹的技术向讨论。它戳到的是 App Store 平台权力：流量来了之后，规则解释权仍在苹果，开发者没有对等的申诉通道。具体条款和信件内容以原帖为准，不应把「威胁关闭」写成已经关闭。",
+          "url": "https://www.v2ex.com/t/1258411",
+          "meta": "222 回复 · iDev"
         },
         {
           "id": "v2-2",
-          "title": "UU 远程宣布收费",
-          "summary": "网易 UU 远程公布会员档：免费版锁在 1080p / 30fps / 最高 8Mbps 且不支持副屏或虚拟屏，VIP 为 30 元/月或 238 元/年可到 4K 144fps，SVIP（98 元/月或 758 元/年）再加全球节点。官方账号 UURemote 在帖里回应，老用户可领年卡五折，折后约 119 元/年。争议焦点是纯内网或 P2P 打洞并不走中转，却仍按画质和码率收费，有人认为这是把人推回 Parsec、Moonlight；也有人对比 ToDesk 和向日葵，觉得只要基础远控还能救急、不塞广告，收费可以接受。Linux 客户端仍未上线，被反复追问。Linux.do 晚报同一事件写成 12 月 1 日起收费、基础远控仍免费。",
-          "url": "https://www.v2ex.com/t/1258207",
-          "meta": "179 回复 · 程序员"
+          "title": "Claude 真的吹过头了吗？实测下来很多场景还不如 GPT",
+          "summary": "作者根据自己的使用体验认为 Claude 在不少场景不如 GPT，询问是否信息茧房或版本差异。59 条回复。这类帖在模型评测几乎周周翻新的时候很常见，但它出现在黎曼猜想声明同一天，正好提醒：社交网络上的「体感」和「形式化证明」不是同一回事，不能互相替代。",
+          "url": "https://www.v2ex.com/t/1258440",
+          "meta": "59 回复 · 程序员"
         },
         {
           "id": "v2-3",
-          "title": "求助帖：2 年被裁 3 次，简历花掉还能找到工作吗？",
-          "summary": "楼主 29 岁，南航飞行器动力本科、南大环境工程硕士，做信贷风控，在 2025–2026 年从携程、美团到某银行金服连被裁三次，自述策略经验不足、简历「花掉」，找工作已读不回，又因炒股负债，担心明年 2 月逾期。她把三次被裁写得很具体：在携程两年半主要做模型和上线打杂，换领导后被认为没有核心产出；后两家都只有半年，第三家还承认态度和适应性有问题。167 条回复里，最先被强调的是先止损还债、不要再死磕风控策略岗；也有人建议把携程那段经历重新写实、补演示项目，或转向运维开发、外包、外企和考公。她用 vibe coding 做的副业只从网友那边拿到几千元，被当成「已经跨过 0 到 1」的鼓励，但远不够填负债。这是当天职场寒冬帖里经历写得最完整的一封。",
-          "url": "https://www.v2ex.com/t/1258214",
-          "meta": "167 回复 · 职场话题"
+          "title": "X 也被封了，难受",
+          "summary": "有人反馈 X（Twitter）访问再次出问题，73 条回复。这是国内开发者社区里对常用信息源稳定性的例行吐槽，本身不构成产品更新，但能解释为什么中文侧对同一事件的第一手推文往往慢半拍。",
+          "url": "https://www.v2ex.com/t/1258429",
+          "meta": "73 回复 · Twitter"
         },
         {
           "id": "v2-4",
-          "title": "如果汽车智驾的程序由 AI 编写，你还敢用吗？",
-          "summary": "楼主更相信传统手搓，担心迭代快、不讲究的车厂会把 vibe coding 用到智驾上。77 条回复几乎把问题翻转过来：智驾系统本身就是 AI，该不该把命交出去，取决于测试、路测和覆盖公里，而不是源代码是人写还是模型写。有人反讽人类上下文更短、幻觉更重，也有人唱反调，只接受「人来写、AI 参与审查和测试」。和同日「全面禁止 AI Coding」那帖对读，等于把「出了事故就禁工具」的逻辑放到了生命安全场景里复盘。",
-          "url": "https://www.v2ex.com/t/1258153",
-          "meta": "77 回复 · 问与答"
+          "title": "黎曼猜想被证明了？",
+          "summary": "社区把 Alpöge 的声明同步到 V2EX，28 条回复。原帖很短，讨论的价值在于中文技术圈第一时间的反应：有人直接问「AI 证的算不算数」，有人在等陶哲轩或专业数论学者的意见。结论应回到头条 h1，而不是看这个帖的标题。",
+          "url": "https://www.v2ex.com/t/1258665",
+          "meta": "28 回复 · Claude"
         },
         {
           "id": "v2-5",
-          "title": "统计了 V2EX 近 15 年提到「裁员」或「失业」的帖子",
-          "summary": "楼主用 SOV2EX 统计近 15 年站内提到「裁员」或「失业」的主题数：2018 年 706，2019 年升到 1297，2021 年骤降到 301，2024 年 1608，2026 年截至 11 月 19 日已有 1405，而这一年还没过完。回帖要求改成占总帖比例，有人补了占比图后仍认为趋势一致；对 2021 年低谷的解释包括疫情封控、居家导致站内摸鱼变少，不一定等于就业回暖。也有人说 2026 年体感比数字更冷。这给当天铺开的失业帖提供了一个站内数据注脚，而不是新的宏观统计。",
-          "url": "https://www.v2ex.com/t/1258315",
-          "meta": "56 回复 · 职场话题"
+          "title": "听过 ICQ 没？OICQ？做了个 OICU",
+          "summary": "分享创造节点里的新项目 OICU，名称向 ICQ/OICQ 致敬，51 条回复。属于社区里少见的、不以模型评测或职场吐槽为主的产品向帖，适合当作当天的轻松一条。",
+          "url": "https://www.v2ex.com/t/1258464",
+          "meta": "51 回复 · 分享创造"
         }
       ]
     },
@@ -460,59 +440,59 @@
       "items": [
         {
           "id": "cn-1",
-          "title": "微软官方 agent-framework 软件包被黑客劫持安装恶意程序",
-          "summary": "详见头条 h6。受影响版本是 v1.26.1 和 v1.26.2，安装后不必 import 就会在解释器启动时执行，目标是云与开发凭据。Solidot 转述 The Register，微软称调查期间已将部分项目设为私有。",
-          "url": "https://www.solidot.org/story?sid=85931",
-          "meta": "Solidot"
+          "title": "Anthropic 的数论学家声称证明黎曼猜想",
+          "summary": "Solidot 转述 Alpöge 的声明，并称他以数论和算术统计方面的工作著称、目前在 Anthropic 工作。稿件同时给出维基百科词条和他的 PDF。2114 次查看（页面显示）。详情与核验状态见头条 h1，此处不把「声称」升级成「已证明」。",
+          "url": "https://www.solidot.org/story?sid=85949",
+          "meta": "Solidot · 2026-11-20 23:14（Asia/Shanghai）"
         },
         {
           "id": "cn-2",
-          "title": "IEA 警告称到 2030 年数据中心碳排放量将增加七成",
-          "summary": "国际能源署警告，到 2030 年数据中心用电量将达到目前的两倍，碳排放量增加约 70%。未来四年 AI 数据中心每年将额外消耗 350 TWh 电力，超过英国全年用电。IEA 预计这个十年末，中国 AI 数据中心所需电力约半数来自燃煤电厂，美国则约 60% 依赖天然气；截至今年 8 月，美国已有约 180 GW 的新建天然气发电项目规划为数据中心供电，几乎相当于目前整个欧盟已装机的天然气发电容量。AI 扩张正在把电力结构重新绑回化石能源，而不是自然走向清洁电力。数字均来自 Solidot 对 IEA 的转述，没有另开 IEA 原报告核对。",
-          "url": "https://www.solidot.org/story?sid=85937",
-          "meta": "Solidot"
+          "title": "GTA 6 创游戏史上最高首日销售额",
+          "summary": "Solidot 转述 Sensor Tower 数据：周四上市的 GTA 6 预购加首日销量合计超过 2450 万份，收入约 23.6 亿美元；约四分之三来自 PS5，其余来自 Xbox。Rockstar 与 Take-Two 尚未公布官方销售数字，只称需求「空前」。开发成本被写为超过 10 亿美元。PC 版和多人模式上线时间仍未公布。这些数字来自第三方估测，不是公司财报。",
+          "url": "https://www.solidot.org/story?sid=85948",
+          "meta": "Solidot · 2026-11-20 22:38（Asia/Shanghai）"
         },
         {
           "id": "cn-3",
-          "title": "黄仁勋的下台可能削弱开放权重模型让闭源模型受益",
-          "summary": "Solidot 转述的分析认为，黄仁勋下台可能削弱开放权重模型生态，让 OpenAI、Anthropic 等闭源厂商相对受益。他此前借助英伟达的资金投资和收购，支持开源与开放权重模型，并游说反对限制使用中国的开放权重模型。一位风险投资人担心，失去这份最慷慨的财力后，模型提供商会更加集中；也有业内人士认为开放权重不会消失，但会明显变慢。这是对近日人事变动的一层产业解读，不是新的任免公告，也不是英伟达官方口径。",
-          "url": "https://www.solidot.org/story?sid=85932",
-          "meta": "Solidot"
+          "title": "阿里巴巴警告未来两年算力紧缺",
+          "summary": "Solidot 转述阿里巴巴 CEO 吴泳铭在二季度业绩电话会上的话：全球各区域算力政策变化很大，可能影响阿里云数据中心建设；到 2032 年全球数据中心超过 20 吉瓦的目标有可能下调，资本开支也可能降低。管理层认为美国商务部新规对 AI 产品进度的影响是短暂的，并称已在用自研芯片训练下一代大模型。公司预测 2027、2028 年将是中国算力市场最紧缺的两年。",
+          "url": "https://www.solidot.org/story?sid=85947",
+          "meta": "Solidot · 2026-11-20 20:48（Asia/Shanghai）"
         },
         {
           "id": "cn-4",
-          "title": "美国破产法庭法官批准 Google 以千万美元收购 Spirit Airlines 数据",
-          "summary": "美国联邦破产法庭法官 Sean Lane 批准 Google 以 1000 万美元买下已于今年 5 月停运的廉航 Spirit Airlines 内部数据。拍下的内容包括员工电子邮件、电子表格和日历，以及市场营销、生产力和运营方面的数据，Google 表示将用于产品开发和 AI 训练。工会和国会议员表达关切后，Google 上周同意增加隐私保护措施。这是「破产清算把员工与运营数据卖去训练模型」的典型争议样本，关键不在成交价，而在个人数据能否随资产一起被拍卖。依据 Solidot 转述。",
-          "url": "https://www.solidot.org/story?sid=85928",
-          "meta": "Solidot"
+          "title": "微软测试对被盗或丢失设备远程锁定",
+          "summary": "Solidot 转述 BleepingComputer：微软在 Windows 11 Insider 中测试 Remote Lock，企业 IT 可通过 Intune 远程锁定加入 Entra 的企业版、教育版或专业版设备，而不清除数据。锁定后 PIN、密码、本地管理员和网页登录都失效，只有 Intune 能解锁；BitLocker 保持开启，重启或离线后锁定仍有效。面向的是托管设备，不是个人家庭版的一键找机。",
+          "url": "https://www.solidot.org/story?sid=85942",
+          "meta": "Solidot · 2026-11-20 16:03（Asia/Shanghai）"
         },
         {
           "id": "cn-5",
-          "title": "UU 远程宣布 12 月 1 日开始收费，基础远控仍免费",
-          "summary": "【门户摘述 / 未读原帖】linuxdo.club 第 041 期把 UU 远程收费列为头条之一，统计为 197 帖、166 人。消化写官方承诺基础远控不限次、不限时、不排队、无广告，12 月 1 日前注册成功的用户可领年卡五折；评论区开始盘点 RustDesk、CrossDesk 等替代方案。与 V2EX 179 条讨论是同一事件，门户数字只来自晚报，不是直接打开 linux.do 计出的回复数。详细档位与争议见 v2-2。",
-          "url": "https://linux.do/t/topic/3201522",
-          "meta": "Linux.do 晚报 · 197 帖 / 166 人（社区统计）"
+          "title": "Vint Cerf 谈 TCP/IP 为何从未申请专利",
+          "summary": "Solidot 转述 83 岁的 Vint Cerf 访谈。他已卸任 Google 首席互联网布道官，正在参与创办 Tolero，为星际互联网做软件。关于当年不申请专利，他说公共资金项目可以授权也可以开放；TCP/IP 若要在未来仍能与「届时的盟友」互通，唯一可靠的办法就是完全公开。这与 HN 上同一访谈（157 分）是同一条新闻的中文入口。",
+          "url": "https://www.solidot.org/story?sid=85944",
+          "meta": "Solidot · 2026-11-20 17:40（Asia/Shanghai）"
         },
         {
           "id": "cn-6",
-          "title": "现在应届生找工作真是麻了",
-          "summary": "【门户摘述 / 未读原帖】消化写：楼主 2023 年入学时 AI 还很弱，四年后已经到了 Opus 5.5；Java + Spring Boot + Redis + SQL + MyBatis + k8s 的经典技术栈不再好使，HC 还在肉眼可见地缩水。门户把同一天的「前端这个岗位约等于死了」「失业两个月，已经不想上班了」「想辞职了，有没有副业可以干」列为相关帖，合计统计写在主帖下为 77 帖、42 人。这和 V2EX 当天的裁员、失业统计帖是同一气候，只不过这边把原因更直接地指向 AI 进度和岗位收缩。数字来自晚报，不是直接打开原帖的回复计数。",
-          "url": "https://linux.do/t/topic/3203394",
-          "meta": "Linux.do 晚报 · 77 帖 / 42 人（社区统计）"
+          "title": "【46周】周五了来点轻松的，抽个 Premium 名额",
+          "summary": "linux.do 晚报第 042 期（11 月 20 日 21:30 出刊）的头条：周五常规 Premium 抽奖一天攒下 999 个回帖、999 位参与者，回复即参与、扣 24 点，截止下周一 0 点。采集窗口是 11 月 19 日 21:30 到 11 月 20 日 21:30，有 10.5 小时落在上一期窗口，发帖时刻无法由我们独立核验；条目依据晚报摘述，不是直接打开 linux.do 原帖。它说明社区积分消耗已经产品化成每周固定节目。",
+          "url": "https://linux.do/t/topic/3208330",
+          "meta": "Linux.do 晚报 · 999 帖 / 999 人（社区统计）"
         },
         {
           "id": "cn-7",
-          "title": "【富可敌国】星驰公益重新开放注册和兑换码领取",
-          "summary": "【门户摘述 / 未读原帖】第 041 期把星驰公益重开注册和兑换码列为毫无争议的第一热帖，统计 488 帖、433 人。消化称本轮支持 gpt-6-astra、gpt-6.1-sol，其中 gpt-6-astra 临时下架，其他模型陆续开放；新老两条 cdk.linux.do 领码链接同时放出，领到后到 xingchiapi.com 兑换。这是社区羊毛帖的热度，不是官方产品发布。同一期第二热是「300 元保首登」成品号交易翻车（424 帖、182 人，标题后来改成卖家已退款）。两项统计都只来自门户。",
-          "url": "https://linux.do/t/topic/3200689",
-          "meta": "Linux.do 晚报 · 488 帖 / 433 人（社区统计）"
+          "title": "Logan 官宣自 12/02 起，反重力额度将逐步支持在第三方 Harness 中使用",
+          "summary": "晚报 AI 前线里期待值最高的一条：被称为 Logan 的官方消息称，自 12 月 2 日起，反重力（Antigravity，Google 一侧的代理/额度产品，社区惯用名）的额度将逐步允许用在第三方 harness 里，而不只锁在官方客户端。98 帖 / 80 人。对同时订了多家模型、靠 Magpie、CPA、Sub2API 这类统一入口切换的人，这是额度能不能「带走」的关键变化。我们依据的是晚报对「一张图」的转述，没有打开原图逐字核对。",
+          "url": "https://linux.do/t/topic/3210255",
+          "meta": "Linux.do 晚报 · 98 帖 / 80 人（社区统计）"
         },
         {
           "id": "cn-8",
-          "title": "plus 也可以用 dots 了",
-          "summary": "楼主翻译并转发 Tibo 的说明：OpenAI 开始对少量 ChatGPT Plus 用户测试 dots，同时将向所有 ChatGPT Business Standard 用户推出，rollout 从当天开始。原帖页面可以打开并看到楼主正文，但页面没有标明评论或浏览数，不宜自行清点。产品含义见头条 h3。发帖时间 11-20 07:37 北京，紧贴窗口结束。",
-          "url": "https://www.nodeseek.com/post-1066839-1",
-          "meta": "NodeSeek · 2026-11-20 07:37（Asia/Shanghai）"
+          "title": "这次真眩晕瘫坐了，黎曼猜想被证明！",
+          "summary": "NodeSeek 在 11 月 20 日 23:43 UTC（北京时间 21 日 07:43，窗内末端）出现的反应帖。RSS 是短时序最新列表，不按热度，也几乎没有浏览/评论数，因此不能把它写成站内最热；它只说明中文站也在同一早晨接到了这条声明。结论仍见头条 h1。",
+          "url": "https://www.nodeseek.com/post-1069196-1",
+          "meta": "NodeSeek · 2026-11-21 07:43（Asia/Shanghai）"
         }
       ]
     },
@@ -522,55 +502,62 @@
       "items": [
         {
           "id": "pu-1",
-          "title": "oh-my-pi 跨到 19.0.0，当天又补了 19.0.1：换掉 artifact://，后台进程改成每用户一个 daemon",
-          "summary": "详见头条 h4。v19.0.0 的 published_at 刚好越过上期 08:00 截止线；对照 v18.22.2 有 230 个提交。19.0.1 修了 WSL2 存会话卡顿和 Vertex structured_outputs 回退。建议直接升到 19.0.1，更新后重启还在跑的旧进程。",
-          "url": "https://github.com/can1357/oh-my-pi/releases/tag/v19.0.1",
-          "meta": "版本 19.0.0 · 2026-11-19 08:02；版本 19.0.1 · 2026-11-20 06:54（GitHub，Asia/Shanghai）"
+          "title": "Claude Code 2.1.330：企业控制台登录，以及内置画图模组 easel",
+          "summary": "详见头条 h5。npm 时间 2026-11-20T19:16:01Z，GitHub published_at 为 22:32:56Z。changelog 还列出自托管 runner 的 --start-dir 和大量卡死修复。建议对照官方说明升级；若在用企业网关或自托管，先看组织登录和 SSH/插件相关条目。",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+          "meta": "版本 2.1.330 · 2026-11-21 06:32（GitHub published_at，Asia/Shanghai）；npm 时间为 03:16"
         },
         {
           "id": "pu-2",
-          "title": "Claude Code 连发 2.1.328 与 2.1.329：第三方云上的 auto mode，以及大量稳定性修复",
-          "summary": "官方 changelog 给这两次发布都标了 November 19, 2026。2.1.328（GitHub 11-19 09:14 北京；npm 上该版本的 time 为 11-19 07:09，出窗，本期按 GitHub published_at 计入）让 Claude Opus 4.6 和 Sonnet 4.6 在 Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 以及 Claude apps gateway 上也能用 auto mode；交互会话如果没指定权限模式，会直接进自动模式。mcp_tool 钩子新增与命令 / HTTP 钩子一样的 \"onFailure\": \"block\"，钩子调用失败就拦住这次操作。2.1.329（11-20 06:14）更偏日常可靠性：信任对话框会写明该文件夹的 hooks 是在哪里声明的；在 Claude Desktop 等非交互宿主里，托管设置里的 hooks 加载失败会在对话中告警；/tasks 现在能列出本会话的定时任务、/loop 唤醒、目标和这次对话的分叉。changelog 还修了 ~/.claude.json 在网络卡住或文件被锁时被重置成默认值、以及 macOS 上能读钥匙串却写不回去导致反复登出的问题——现在过期的会话会停在过期处并说明原因，其他会话保持登录。另外，新登录的会话里，旧版保存的多数定时任务需要重新安排（用 --resume 打开原来的会话仍能跑）；macOS 的 computer use 改了安全规则，部分操作会被拒绝，部分应用权限也会收窄。",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
-          "meta": "版本 2.1.328 · 2026-11-19 09:14；版本 2.1.329 · 2026-11-20 06:14（GitHub published_at，Asia/Shanghai）"
+          "title": "Claude Desktop 发到 v6.28899.6，捆绑 Claude Code 2.1.330",
+          "summary": "官方 Cowork changelog 在今日抓取时，顶部已是 2026-11-20 的 v6.28899.6：General 写 No user-facing changes；Code 页为插件主题加了消息样式和声音（要在会话标题栏按喇叭才响），并把 SSH 主机所需的 Claude Code 版本改到 2.1.330——自己在 SSH 主机上装或做镜像的人，需要先把那边升到 2.1.330，否则新桌面端连不上。Cowork 调整了 Windows 上 EFS 加密文件的附件规则，以及 macOS/Linux 在连不上必须检查的文件夹时先关掉已连接文件夹。3P/远程任务把新的循环任务上限从 7 天改到 30 天，并修复 Windows 10 / Server 2022 上 Cowork 工作区起不来、以及导入的 Code 会话被按旧活跃时间误删。上期抓取时页面还停在 2026-11-18 的 v6.6395.1；此次一并出现了标注日期为 11 月 19 日的 v6.28899.2（捆绑 Claude Code 2.1.328，含托管 MCP 名单回退、下载失败自动重试等），官方只给了日期、没有时刻，按「昨天页面上还没有、今天已经出现」记入观察，不把它的功能日期强行算进 11 月 20 日 08:00 之后。",
+          "url": "https://claude.com/docs/cowork/changelog",
+          "meta": "版本 v6.28899.6 · 官方日期 2026-11-20；v6.28899.2 官方日期 2026-11-19（今日页面新出现）"
         },
         {
           "id": "pu-3",
-          "title": "Magpie 一天内连发 67 个构建到 v0.1.4572：子代理可存成 Markdown，规则目录能和 Claude Code 共享",
-          "summary": "上一期写到的最新版本是 v0.1.4503（2026-11-19 07:17 CST，已出本窗）。本窗从 v0.1.4504（09:26）一直到 v0.1.4572（次日 06:07），yetone/magpie 与 yetone/magpie-releases 同步放出，中间缺号 4536、4551 在两个仓库里都不存在。比较值得写的包括：子代理可以存成可编辑的 Markdown，或从自己的 git 仓库拉取，并新增 Rules 文件夹，用来和 Claude Code、Cline、Kiro CLI 共享规则（v0.1.4511）；Codex Ultra 支持 GPT Sol、Astra、Terra 家族，含 GPT-6.2 Sol 和 Astra（v0.1.4521）；后来又加了库视图，列出原生安装在 Codex 和 Pi 里的 skills、MCP 服务器和 hooks（v0.1.4559–4560）；项目可以从自己的设置启用已安装的 Claude Code 插件（v0.1.4561）；hooks 可通过 DeepSeek Harness 的 Claude Code hooks 插件对接（v0.1.4569）。使用体验上，工具发现支持中文查询，设置搜索可用 ⌘K。另外，默认路由选项从 “Smart” 改成了 “Quota first”（v0.1.4558），可能会改变现有分流习惯。没有对全部 67 个相邻 tag 做代码对比，只按发行说明聚类。",
-          "url": "https://github.com/yetone/magpie/releases/tag/v0.1.4572",
-          "meta": "最新 v0.1.4572 · 2026-11-20 06:07；本窗自 v0.1.4504 起共 67 个构建（GitHub，Asia/Shanghai）"
+          "title": "Codex CLI 稳定版升到 0.171.0，默认目录里出现 GPT-6.2 Sol 和 Astra",
+          "summary": "openai/codex 的 rust-v0.171.0 在 GitHub published_at 为 2026-11-20T00:44:47Z（北京时间 08:44，刚过本窗起点），npm latest 指向 0.171.0，时间为 00:51:29Z。官方说明的新功能包括：把 GPT-6.2 Sol 和 Astra 加入模型目录，Sol 成为默认选项；TUI workspace 默认打开，可搜索文档预览、图片预览，并在主对话旁显示子代理记录；非 Vim 提示框可配置撤销/重做并恢复附件和大段粘贴；新增 codex exec --remote 以在已有 app server 上开或恢复非交互会话；TUI 增加 /rc 与 /remote 管理本机远程控制和配对码。窗内还有没有功能说明正文的预发布 0.173.0-alpha.1/2/3，最新为 0.173.0-alpha.3（published_at 22:23:53Z）。稳定版仍以 0.171.0 为准；对照 rust-v0.170.0...rust-v0.171.0 的提交标题，与发行说明中的模型目录、workspace 和远程控制条目一致。上一期稳定版是 0.170.0，预发布停在 0.172.0-alpha.2。",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+          "meta": "稳定版 0.171.0 · 2026-11-20 08:44；预发布最新 0.173.0-alpha.3 · 2026-11-21 06:23（GitHub，Asia/Shanghai）"
         },
         {
           "id": "pu-4",
-          "title": "CLIProxyAPI 更新到 v8.0.79：补上 Gemini 4 Neon XHigh，并做 Codex 会话连续性",
-          "summary": "相对上一期看到的 v8.0.77（2026-11-18 06:18 CST，当时已出窗），本窗先有 v8.0.78（2026-11-19 08:28），再有 v8.0.79（21:11）。8.0.78 把 Gemini 4 Neon XHigh 写进模型注册表；Claude OAuth 的 org:create_api_key 范围可配置；macOS 在维护唤醒时会推迟 OAuth token 刷新；翻译层修复了 Gemini 工具 schema 和非字符串类型、以及流式 interactions 参数拼不完整的问题；Codex 会跨请求管理 session instructions，并把 Interactions 的 system 说明转成 developer 消息。8.0.79 的主要新条目是 feat(home): enable home-backed codex continuity，让走 CPA 的 Codex 会话更容易保持连续；同时把 Antigravity Hub changelist 更新到 2.33.0，模型探测改为强制 HTTP/1.1 且不用 ALPN，并从 Codex 工具参数 schema 中去掉 uniqueItems。对照 v8.0.77...v8.0.79 共 16 个提交。",
-          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.79",
-          "meta": "版本 8.0.78 · 2026-11-19 08:28；版本 8.0.79 · 2026-11-19 21:11（GitHub，Asia/Shanghai）"
+          "title": "ChatGPT：Space 向 Plus 推送，桌面应用被点名升级",
+          "summary": "详见头条 h2。帮助中心总 changelog 增加了 11 月 20 日一条；macOS 专页仍停在 2026-07-09，Windows 专页仍停在 2025-01-30，和上期一样没有按平台拆开的新版本号。11 月 19 日的新版手机端与 Health 上桌面已在上期写过，不再重复当新功能。",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "meta": "官方日期 2026-11-20，时刻未知（ChatGPT release notes；Asia/Shanghai 日期界）"
         },
         {
           "id": "pu-5",
-          "title": "ChatGPT Health 开始出现在桌面应用（官方只标了 11 月 19 日，具体时刻未知）",
-          "summary": "OpenAI 总 release notes 在 November 19, 2026 写下：Health 即日起扩展到桌面应用、dots、sites 和 Android，并支持 Android Health Connect。官方举例包括用桌面应用做一个站点，追踪马拉松训练和计划进度。入口是更新到最新 ChatGPT 应用后，在侧边栏选择 Health；如果没有，就到 Explore 菜单里找。这是逐步放量，账户上不一定立刻能看到。Health 面向美国的 Free、Go、Plus、Pro 用户；dots 目前面向 Pro。同一日还有「新的 ChatGPT 移动体验」（给已开放 dots 地区、18 岁以上的 Pro，以及一小部分 Plus；排除欧洲经济区、英国、瑞士和韩国），与 Tibo 窗内的说明一致，不是桌面专页更新。需要注意：macOS 应用专页仍停留在 2026-07-09 的 ChatGPT Classic 更名说明；Windows 应用专页仍停留在 2025-01-30 的 winget 安装说明。桌面相关功能目前只能以总 release notes 为准。11 月 18 日同页还有 Live Dictation 和 Accounting 插件，按「只有日期 11 月 18 日则出窗」的规则，不计入本期。",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-          "meta": "官方日期 2026-11-19，时刻未知（ChatGPT release notes；Asia/Shanghai 日期界）"
+          "title": "Sub2API 更新到 0.2.24：修掉重复字段把低价模型计费、实际打高价模型的问题",
+          "summary": "Wei-Shaw/sub2api 的 v0.2.24 落在本窗。发行说明里最重要的是安全修复 GHSA-p3r4-jcm3-2hph：请求体（含嵌套字段）和 WebSocket 帧里如果出现同名字段重复声明，现在直接拒绝，避免按低价模型计费、实际调用高价模型，以及绕过账号模型映射、强制 service_tier 和推理强度上限；带 BOM 或把 Content-Type 标成 multipart 来绕过分组白名单的请求也会被挡住。破坏性变更写明：同名字段重复（包括值相同、仅大小写不同、嵌套重复，以及 multipart 里的 model/n/size 等）会返回 400 或关闭连接，正常 SDK 不受影响。功能上，网页搜索模拟新增 Exa，web_search 结果会带回搜索来源；Claude Code 的上下文压缩请求按 5 分钟缓存 TTL 写入；Claude OAuth / Setup Token 账号会显示窗口费用估算；模型广场可一键复制模型 ID。网关侧还做了只解析一次请求体、减少重复拷贝的性能改动。对照提交，版本号在 2026-11-20T09:20:06Z 的 chore: sync VERSION to 0.2.24 里对齐。用 Sub2API 做计费或模型映射的，这是必须升的一版。",
+          "url": "https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.24",
+          "meta": "版本 0.2.24（GitHub，本窗内；Asia/Shanghai）"
         },
         {
           "id": "pu-6",
-          "title": "Codex CLI 预发布到 0.172.0-alpha.2，稳定版仍停在 0.170.0",
-          "summary": "稳定版 rust-v0.170.0（2026-11-18 11:40 CST）已在上一期写过，npm latest 也还是 0.170.0，本窗没有新的稳定版。预发布通道新到 rust-v0.172.0-alpha.2（2026-11-19 23:40 CST），npm 的 alpha 标签已指向它；稍后又给 0.171.0 线补了 rust-v0.171.0-alpha.13.1（2026-11-20 06:01 CST）。这两次 GitHub Release 正文都只有版本号，没有官方功能列表。从 0.172.0-alpha.1 到 alpha.2 的 compare 能看到 62 个提交，比较贴近使用的包括：TUI 里直接打开 Codex 线程链接、在供应商错误页进入 command center、斜杠命令参数补全、stdio MCP 服务器改为默认延迟启动、/experimental 露出自定义状态行、Code Mode 宿主连接全部改走 gRPC。官方文档 changelog 最新 Codex CLI 条目仍是 2026-11-18 的 0.170.0。不跟预发布通道的人，这一天没有必须升级的稳定版。",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2",
-          "meta": "预发布 0.172.0-alpha.2 · 2026-11-19 23:40；稳定版仍为 0.170.0（GitHub，Asia/Shanghai）"
+          "title": "CLIProxyAPI 更新到 v8.0.80：收紧 Antigravity 额度回退和鉴权取消路径",
+          "summary": "router-for-me/CLIProxyAPI 的 v8.0.80 发布于 2026-11-20T14:54:23Z（北京时间 22:54）。发行说明以修复为主：Antigravity 额度回退会遵守停止规则和重试上限，OAuth 刷新的传输和 User-Agent 对齐，刷新后的额度预热被加上边界以防 goroutine 泄漏和死锁，403 探测的退避与 token 轮换分开，并跳过已禁用的凭据；合成的 request.sessionId 改为按凭据隔离。Gemini 4 的最大 completion tokens 被限制在 65536。鉴权路径上，取消、Retry-After 冷却、空流结束和 401 重试时发布刷新后的凭据，都写进了变更。另有 Claude 在凭据重绑定后去掉外来 advisor 块、插件支持按凭据在鉴权后终止请求、gzip 请求体解码等。对正在把 Google 反重力额度和多账号轮换接进网关的人，这是跟官方 12 月 2 日「额度可进第三方 harness」预期相配套的稳定性补丁，不是功能大版。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.80",
+          "meta": "版本 8.0.80 · 2026-11-20 22:54（GitHub，Asia/Shanghai）"
+        },
+        {
+          "id": "pu-7",
+          "title": "Magpie 一天内至少又发了 30 个构建到 v0.1.4622：区域出口提醒，以及按请求头选账号",
+          "summary": "yetone/magpie-releases 在本窗最新为 v0.1.4622（2026-11-20T21:00:47Z，北京时间 11 月 21 日 05:00）。GitHub 发行接口一页最多 30 条，本窗可见的就是这 30 个构建，更早、仍可能落在 11 月 20 日 08:00 之后的编号没有出现在这一页里，因此不能写成「总共恰好 30 个」。把重复的安装段去掉之后，对使用者较有意义的变化包括：选到 Anthropic 不支持的出口区域时会通知，并可选择暂缓请求直到能处理；新增列出全部 Magpie 账号和 API 密钥的端点，可用请求头 X-Magpie-Account 指定账号；严格会话里 Claude Code 的 fork 与 compact 用量可能记到错误账号的问题已修；插件能知道是哪个 agent 发起的请求（本地或 Remote magpie）；~/.agents/skills 里的技能可以真正删掉而不必留副本；已保存的 Claude 账号从其他文件夹启动时，会带上正确的受信任状态；Claude Desktop 在子代理模型未设置时，会自动用 Lead 所选模型。和上期「一天 67 个构建」一样，这些是高频小步发布，建议打开自动更新，而不是逐条对照源码 diff。",
+          "url": "https://github.com/yetone/magpie-releases/releases/tag/v0.1.4622",
+          "meta": "最新 v0.1.4622 · 2026-11-21 05:00；本窗 API 一页可见 30 个构建（GitHub，Asia/Shanghai）"
         }
       ]
     }
   ],
   "gaps": [
-    "按用户设定未抓取 Reddit，sections 中没有 reddit 分区；本期只有文字和封面图，没有视频和音频。本期无新的 rating / watch Issue，temp_watches 为空。其余关注产品今日无新版本：Claude Desktop changelog 仍停在 2026-11-18 的 v6.6395.1（No user-facing changes，捆绑 Claude Code 2.1.326）；Sub2API 仍为 v0.2.23；Tern 官方应用仍是封闭 beta，公开 tag 停在 2026-10-31 的 go/tern/v0.2.0，tern-sdk 窗内无提交，docs.stencil.so/tern/ 无带日期 changelog。",
-    "身份核对（当日读取 bio）：Tibo（@thsottiaux）「Codex & ChatGPT @OpenAI」；poteto / lauren「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」，资料链接展开为 https://x.ai/bot/plugin/9717366；Elon Musk（@elonmusk）bio 只有短链，实体展开为 http://Terafab.AI，简介未写 Tesla/SpaceX/xAI 职务，本期只标 handle 与显示名。X 数据取自内置 X API（窗内 11-19 00:00Z～11-20 00:00Z）。Elon 窗内 68 帖已翻完 3 页（25+25+18），其中 40 条纯转推、0 条独立原创。Tibo 7 帖一次拉完，poteto 16 帖一次拉完。回复区和引用区未系统抓取。Anthropic 官号上市视频未转写，故不能从视频本身核对代码或定价。@OpenAI、@sama 窗内 0 帖。",
-    "Linux.do 的 /latest.json、/top.json 和 /hot.md 仍返回 403（Cloudflare）。本期改用公开检索门户 linuxdo.club 的 2026-11-19 晚报（第 041 期，21:30 出刊，在本窗内）；其采集窗是 11-18 21:30–11-19 21:30，有 10.5 小时落在上一期窗口，发帖时刻无法独立核验。条目依据晚报摘述与统计，不是直接打开 linux.do 原帖。11-20 早报 404。NodeSeek 原帖页多数能打开楼主正文，但 RSS 是短时序最新列表，几乎全部落在 11-20 07:26–08:00，不按热度，会漏掉窗口前段可能更热的帖；评论/浏览数未标明故不写。开源中国正文页多为 Vue SPA，本期未单列与上期重复的定价 / Nginx / Neon 转载。",
-    "HN 分数与评论数以 11-20 08:13 左右（北京）的 Firebase 读数为准。路透社 Anthropic 上市稿返回 401，未能打开，收盘价、成交量和完全稀释市值约 1.8 万亿美元只来自已打开的 CNBC，开盘 111.50 美元来自纳斯达克新闻室；未再打开招股说明书核对总股本。Element 博文现已 302 到会议汇总页，正文来自 Wayback 2026-11-19 15:07:44 UTC 快照。New Scientist 胰腺癌报道刊登于 2026-05-29，是旧文今日爆火。MacAnorak 文中的审裁处引文来自其对路透的转述，未打开裁决原文。Algolia search_by_date 有 1000 条上限，曾漏掉窗口前约 5.46 小时，已用二次查询和 Firebase 补回 Ruby2Shell。黑洞预印本只记了链接未通读。",
-    "产品关注：Claude Code 2.1.328 的 npm time 为 2026-11-18T23:09:39Z（11-19 07:09 CST，出窗），但 GitHub published_at 与官方 changelog 日期均落在本窗，按后者计入。ChatGPT 帮助中心三页 curl 曾 403，已用其他抓取取回；macOS 专页仍停在 2026-07-09，Windows 专页仍停在 2025-01-30。Codex 两个窗内预发布没有官方功能说明，代码摘要来自 GitHub compare 提交标题。Magpie 67 个构建只按发行说明聚类，没有逐条对照源码 diff；v0.1.4536 与 v0.1.4551 在两个仓库里都不存在，视为跳号。"
-  ],
-  "cover": "images/covers/2026-11-20.png"
+    "按用户设定未抓取 Reddit，sections 中没有 reddit 分区；本期只有文字和封面图，没有视频和音频。本期无新的 rating / watch Issue，temp_watches 为空。其余关注产品今日无新版本：oh-my-pi 仍停在 19.0.1，npm 与 GitHub 窗内无新 tag；Tern 官方应用仍是封闭 beta，公开 tag 停在 2026-10-31 的 go/tern/v0.2.0，tern-sdk 窗内无提交，docs.stencil.so/tern/ 仍是 SDK 说明、无带日期 changelog。",
+    "身份核对（当日读取 bio）：Tibo（@thsottiaux）「Codex & ChatGPT @OpenAI」；Andrew Ambrosino（@ajambrosino）同样是「Codex & ChatGPT @OpenAI」；Akshay Nathan（@akshaynathan_）bio 只写「@openai」，未写职务；poteto / lauren「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」，资料链接展开为 https://x.ai/bot/plugin/9717366，affiliation 为 SpaceX Super Intelligence；Elon Musk（@elonmusk）bio 短链展开为 http://Terafab.AI，简介未写 Tesla/SpaceX/xAI 职务，本期只标 handle 与显示名，affiliation 徽章为 X。Levent Alpöge 的 Anthropic 雇员身份来自 Scientific American 与 Solidot，以及他在声明里写自己向 Dario 请示能否公布；未打开公司人事页。Ravi Vakil 按 Math 216 博客作者及帖中「正在美国数学会执委会与理事会会议上」来写，未再打开个人主页核对现职；Brian Conrad、Alessandro Masullo、Tristan Buckmaster、Matei Coiculescu 只使用公告或陶哲轩博客中的姓名，不补未核验的机构。Charlie Marsh 只记显示名与 handle。Nate Esparza 当日 bio 为 Ads Product @SpaceXSI。",
+    "X 数据取自内置 X API（窗内 11-20 00:00Z～11-21 00:00Z）。Elon 窗内 48 帖已翻完 2 页；Tibo 11 帖一次拉完，poteto 14 帖一次拉完。引用帖已按条补读关键原文。回复区和引用区未系统抓取。@sama 最近一条在窗前（2026-11-18T22:14:02Z）。OpenAI 官号窗内发了蒸馏研究、MedChemBench 和神经退行性疾病合作，Anthropic 官号发了联合创始人口述，均未单独做成头条。",
+    "Linux.do 的 /latest.json、/top.json 和 /hot.md 仍返回 403（Cloudflare）。本期改用公开检索门户 linuxdo.club 的 2026-11-20 晚报（第 042 期，21:30 出刊，在本窗内）；其采集窗是 11-19 21:30–11-20 21:30，有 10.5 小时落在上一期窗口，发帖时刻无法独立核验。条目依据晚报摘述与统计，不是直接打开 linux.do 原帖。NodeSeek RSS 是短时序最新列表，取到的多是窗末帖，不按热度，会漏掉窗口前段可能更热的帖；评论/浏览数未标明故不写。开源中国正文页多为 Vue SPA，哈佛 Code Review 与 OceanBase PowerContext 等只留下 RSS 标题，未单列以免在未读到正文的情况下复述。",
+    "HN 分数与评论数以 11-21 08:15 左右（北京）的 Algolia 读数为准。search_by_date 十页共 1000 条，叠加按热度的三页后，窗内去重 1016 条，接口显示 nbHits 为 1093，约 77 条低分或晚出现的帖可能未进入本地列表。Framework 原文打开时已被作者改成约 56 词的后续说明，原先长文不在当前页面。GrapheneOS 的 Mastodon 原帖未能完整取回。Yahoo Finance 关于英伟达会计与 SEC 调查的页面打开后出现错误提示，正文不足，故未写入条目。卫报与 NBC 已打开，但摘录里没有可用的 Anthropic 周五精确收盘价，不能续写上期的 97.17 美元。Scientific American 正文在付费墙处截断。Alpöge 的 PDF 是声明不是证明全文；Lean 包未下载核验。OpenSSL PR 标题中的 CVSS 9.8 未用官方公告核对，讨论里有人认为偏高。",
+    "产品关注：Codex 0.171.0 的 GitHub published_at 刚好越过本日 08:00 起点（08:44 北京）。ChatGPT 帮助中心 macOS 专页仍停在 2026-07-09，Windows 专页仍停在 2025-01-30。Claude Desktop v6.28899.2 官方日期为 11 月 19 日、时刻未知，上期 08:18 抓取时页面仍停在 v6.6395.1，本期按「今日页面新出现」附记，不把它写成 11 月 20 日 08:00 之后发布。Magpie 只读了发行接口第一页 30 条，未逐条对照源码 diff。Sub2API 0.2.24 的精确 published_at 已确认在窗内，但摘要主要依据发行说明与提交标题。Codex 三个 0.173.0-alpha 预发布没有官方功能说明。"
+  ]
 }
