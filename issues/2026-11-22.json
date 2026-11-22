@@ -1,0 +1,452 @@
+{
+  "id": "2026-11-22",
+  "title": "刚出锅 · 2026-11-22",
+  "window": {
+    "start": "2026-11-21T08:00:00+08:00",
+    "end": "2026-11-22T08:00:00+08:00"
+  },
+  "generated_at": "2026-11-22T08:25:00+08:00",
+  "cover": "images/covers/2026-11-22.png",
+  "highlights": [
+    {
+      "id": "h1",
+      "title": "Lean 社区为 Alpöge 的黎曼猜想形式化证明公开背书",
+      "summary": "这是昨天那组「声称证明」之后，窗内最重要的进展，必须把「形式化社区已背书」和「数学界已经读懂并接受」分开写。11 月 21 日，Lean 与 Mathlib 社区发表联合声明（Lean FRO 与 Mathlib Initiative 背书），写他们对 Levent Alpöge 11 月 20 日放出的黎曼猜想 Lean 库「有充分信心是正确的」，并宣布四条标准都已满足：定理陈述就是 Mathlib 里经过数论专家审过的 RiemannHypothesis；库能干净编过，且多人复现了同一份导出证明；社区另写了一个只依赖 Mathlib 的隔离文件，用 comparator 和 con-leche --compare 两个独立工具核对，确认库里证到的就是这条陈述；导出后的惰性证明被 Lean 官方内核、con-leche、con-ron 以及若干用不同语言写的第三方检查器接受，其中 con-leche / con-ron 还带有相对集合论的正确性证明，用来回应「会不会是 Lean 逻辑本身有洞」的担心。MIT 的 Andrew Sutherland 在同日更新的核验日志里给出了更细的流水：175,187 个模块编译通过，五个主定理只用到 Lean 的三条标准公理，nanoda、con-leche 和 lean4lean 已接受完整导出，但截至 12:55 UTC，lake comparator 的端到端跑和 Lean 内核单线程回放仍在进行。声明结尾也说，他们期待数学共同体接下来把证明里的新想法解释清楚。换言之：形式化侧已经给出很强的正确性背书，传统意义上的「读懂、消化、写入教科书」才刚刚开始。Alpöge 的 Anthropic 雇员身份沿用 Scientific American、Solidot 及他本人声明，本期未再打开公司人事页。",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "source": "Lean community blog / Hacker News"
+    },
+    {
+      "id": "h2",
+      "title": "Tesla 开始推 FSD v15：安全关键场景号称提升 25 倍，画面被做成「像 GTA」",
+      "summary": "特斯拉开始推送 Full Self-Driving v15。Electrek 援引 Tesla Super Intelligence 账号放出的发行说明：整套端到端驾驶网络都改过，视觉编码器与 Robotaxi、Optimus 共用，并在海量互联网视频上训练，宣称安全关键场景的干预率改善 25 倍；导航改成跟车队路线偏好学出来的端到端模型（目前只覆盖行程两端，后续版本再铺到全程）；停车会参考个人历史并在地图上给出多个选项；标牌、小动物、路面异物、链条、坑洼和深积水的检测，以及学校区、限速和恶劣天气下的车速，都被点名改进；还加了减速过测速相机，以及带自行车架或类似挂架时仍可用 FSD 的 Bike Rack Mode。最惹眼的是新的 Tesla Augmented Reality / Reality View：不再把一堆显式模型信号叠在屏幕上，而是用更省算力的端到端可视化，连续输出车上方虚拟相机的画面，导航转弯直接画进场景里。Elon Musk（@elonmusk，当日 bio 只是短链，未写职务）先写「在 FSD V15 里，特斯拉的 AI 计算机像游戏一样把现实重新渲染出来，天空里有转弯用的 chevron；你可以点现实重渲染器上的任意一点，让车开过去」，随后引用投资者账号 @SawyerMerritt（资料写 EVs/space/tech 资讯，持有 $TSLA 与 $SPCX，不是特斯拉官方）的演示视频，只回了一句「It's like GTA」。发行说明里没有写清哪些车型、哪些地区先拿到；特斯拉此前对投资者说过 AI4（HW4）计算机足以运行 v15。这仍是辅助驾驶更新，不是已获批准的无人驾驶许可。",
+      "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+      "source": "Electrek / X"
+    },
+    {
+      "id": "h3",
+      "title": "GPGME 爆出可导致信息泄漏、不排除远程代码执行的严重漏洞",
+      "summary": "GnuPG 项目负责人 Werner Koch 发出安全公告：GPGME 在 2.3.1 之前的所有版本都受 CVE-2026-129975（内部编号 T8557）影响。攻击者可以构造带有极长 user id 的 OpenPGP 密钥，触发读取 gpg 状态行和密钥列表时的双重释放；公告写它可被用来从应用中带出数据，例如通过签名数据，并且「不能排除」被升级成远程代码执行，因此建议立刻更新。根因很具体：内部缓冲区从 1024 字节起分配，需要时 realloc，但新指针要到函数结束才写回上下文对象——中途因读错误等原因提前返回时，上下文里仍是已释放的旧指针，稍后释放上下文就会 double free。受影响的不只是命令行 gpg，而是所有以共享库、DLL 或静态链接使用旧版 GPGME 的软件，公告点名了 Gpg4win、GnuPG Desktop、GnuPG VS-Desktop、大多数邮件客户端、许多 XMPP 客户端、Samba 和 Flatpak。漏洞由 Johan Carlsson 发现，经 GitLab 于 11 月 12 日告知；原定 11 月 25 日协调披露，但因另一个 Ruby2Shell 漏洞，GitLab 需要提前更新，GPGME 也在 11 月 20 日晚（欧洲中部时间，对应北京时间 21 日凌晨，略早于本期 08:00 分界）一并公开。HN 上这条「RCE in Gnupg」是在窗内炸开的，225 分、90 条评论。补丁版本是 GPGME 2.3.1，不能升级库的可以用公告附带的补丁往回打。",
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "source": "GnuPG / Hacker News"
+    },
+    {
+      "id": "h4",
+      "title": "Tibo 说 OpenAI 内部做出了「好玩到不想干活」的东西，但没点名是什么",
+      "summary": "Tibo（@thsottiaux，当日 bio 为 Codex & ChatGPT @OpenAI，不是 Cursor 或其他公司）发了一条约 9413 赞、超过百万次曝光的原帖：「我们随便摆弄了一下，无意中做出了一种内部体验，好玩得过了头，结果现在大家都在玩而不是在干活。我们可能缓不过来了。」帖子本身没有配图、没有产品名、没有时间表，也不是重置额度或发版说明。引用和回复里猜测很多：有人把它写成「找到了能对抗 Opus 5.5 的东西所以集体放假」，有人喊 FunMax，也有 #keep4o 用户借机骂 OpenAI「虚伪」；这些都是社区解读 / 非官方定义。接近窗口结束时他又写了一句「Going to check out this threads thing」，同样没有展开。有追踪账号把后一条理解成他在试用前一天 changelog 里写过的 ChatGPT 线程改造，这也只是旁人的对应，不是他本人的定义。对读者来说，这条的信息量是「内部确实在玩一个还没公开的体验，而且团队自己也觉得上头」，除此以外不宜写成产品预告。",
+      "url": "https://x.com/thsottiaux/status/2123997735326232775",
+      "source": "X"
+    },
+    {
+      "id": "h5",
+      "title": "中文圈开始从 GPT Plus 往 Gemini Neon 挪，同时在被封号和清渠道",
+      "summary": "V2EX 和 Linux.do 这一天几乎在吵同一件事：写代码的人要不要把订阅从 ChatGPT / Claude 换成 Gemini 4 Neon，以及换了会不会被封。V 站有人刚买上 Gemini Pro 就「严肃取消」即将到期的 GPT Plus，夸 Neon「干活漂亮、少废话」，但同一帖里也写一周额度几轮任务就用掉 92%，Antigravity（社区口中的「反重力」）还不好用；另有人标题直接是「gemini neon 不堪大任」，说改爬虫写出一堆红线，最后还是交回 Claude Code。评论区的分裂很具体：有人觉得 Neon 体感接近 Opus 5.5、比 GPT-6.2 更说人话，也有人拿它做 review 时被 Claude 否定了一半意见。另一条热帖是「Claude 被连封两个账号，不想折腾了，接下来用啥？」——作者充了香港区 Google AI Pro，却在 Antigravity 里看到 Neon / Hydrogen 不可用，以及「当前账号暂时无法通过 Google AI 套餐获得更高速率」，评论指出大陆和香港 Play 地区常常开不出完整能力。Linux.do 晚报（第 043 期，21:30 出刊）把另一条主线写得更硬：谷歌在清反代、异常订阅和号商渠道，「小米渠道」的 Gemini Pro 出现掉回 Free、商家跑路的集中投诉，有帖子一天 58 个回帖专程记坑；同一天也有人说 Antigravity 的缓存命中问题被修好，客户端和 CLI 之间离谱的命中率差开始收口。对普通读者，这意味着「Neon 好不好用」和「你的账号从哪来、在哪一区」已经缠在一起，不能只看模型评测。",
+      "url": "https://www.v2ex.com/t/1258745",
+      "source": "V2EX / Linux.do"
+    }
+  ],
+  "accounts": [
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "items": [
+        {
+          "id": "x-elon-1",
+          "summary": "原帖介绍 FSD v15 的「现实重渲染器」：特斯拉的 AI 计算机像电子游戏一样重新画出周围世界，转弯在天空里用 chevron 标出，点画面上任意一点就能让车开过去。这是他对 v15 可视化最直接的第一人称描述，但帖里没有给出车型范围或推送地区。",
+          "url": "https://x.com/elonmusk/status/2124238164512714925",
+          "time": "2026-11-22T04:26:59+08:00",
+          "interactions": "约 1.86 万赞 · 1288 回复 · 1780 次转发",
+          "metrics": {
+            "likes": 18619,
+            "replies": 1288,
+            "reposts": 1780,
+            "quotes": 411,
+            "bookmarks": 1751
+          }
+        },
+        {
+          "id": "x-elon-2",
+          "summary": "引用 @SawyerMerritt 的 FSD v15 可视化视频，只回「It's like GTA」。被引用帖写：画面从车上方任意虚拟相机连续输出，导航转弯直接画进驾驶可视化，转向灯提示更轻、点几下后会淡出。@SawyerMerritt 资料写 EVs/space/tech 资讯，是 $TSLA 与 $SPCX 投资者、Model Y 车主，不是特斯拉官方账号。埃隆这条是在用一个大家都认识的游戏作类比，用来解释新可视化有多「像玩开」。",
+          "url": "https://x.com/elonmusk/status/2124238249686159590",
+          "time": "2026-11-22T04:27:19+08:00",
+          "interactions": "约 1.62 万赞 · 1200 回复",
+          "metrics": {
+            "likes": 16156,
+            "replies": 1200,
+            "reposts": 1175,
+            "quotes": 156,
+            "bookmarks": 822
+          }
+        },
+        {
+          "id": "x-elon-3",
+          "summary": "引用 Tesla AI 负责人 Ashok Elluswamy（@aelluswamy，当日 bio「Leading AI @Tesla」）一条几乎只有「XV」和一段视频的帖，写道「XV is the beginning of the “super” part of Tesla SI」。Tesla SI 在这里就是 Tesla Super Intelligence 的简称。帖文没有解释 XV 是模型、演示还是产品线，也没有规格或发布时间，不能写成已经上市的新车功能；它表达的是：在他看来，这段 XV 演示标志着 Tesla SI 开始进入「超级」那一段。",
+          "url": "https://x.com/elonmusk/status/2124071338394399028",
+          "time": "2026-11-21T17:24:05+08:00",
+          "interactions": "约 1.70 万赞 · 1432 回复",
+          "metrics": {
+            "likes": 17035,
+            "replies": 1432,
+            "reposts": 1528,
+            "quotes": 290,
+            "bookmarks": 627
+          }
+        },
+        {
+          "id": "x-elon-4",
+          "summary": "原帖解释黎曼猜想证明（若成立）为什么有用：「它去掉了那些依赖该猜想的其他定理里的条件句。当然，这也是超级智能又一件令人瞠目的事。」这是他对前一天 Alpöge 声明的跟进，不是新的数学判断，也没有引用 Lean 社区同日的背书声明。稍后他又引用自己这条，只回「最短的解释就是：🤯」。需要分开看：他在谈「证明若成立的数学后果」，并把它算进超级智能的成绩单，但证明是否被数学界消化，并不由这条帖决定。",
+          "url": "https://x.com/elonmusk/status/2124213680422387741",
+          "time": "2026-11-22T02:49:42+08:00",
+          "interactions": "约 9895 赞 · 1140 回复",
+          "metrics": {
+            "likes": 9895,
+            "replies": 1140,
+            "reposts": 914,
+            "quotes": 155,
+            "bookmarks": 1278
+          }
+        },
+        {
+          "id": "x-elon-5",
+          "summary": "引用一条对比视频后写道：「这是实时 AI 视频生成（没有游戏引擎！），只用了一块 AI4 TRIP 加速器的一半。好好消化一下。」被引用帖强调右侧画面用的算力比左侧从前需要的还少。这是算力效率演示，不是 FSD 发行说明的一部分；帖里没有给出分辨率、延迟或是否已进入车机量产软件。同一时段他回复 @fchollet（François Chollet）和 @garrytan（Garry Tan）关于 AI 基建的讨论，说「把这么多算力接通、制冷并稳定跑起来极其难，明年现金短缺也会很夸张」——哪怕全行业只延误几个月，从付钱买算力到真能靠它赚钱之间的空档都可能很难熬。这条只当作他对算力资本开支的评论，不是财报数字。",
+          "url": "https://x.com/elonmusk/status/2124270426402836626",
+          "time": "2026-11-22T06:35:11+08:00",
+          "interactions": "约 7135 赞 · 751 回复",
+          "metrics": {
+            "likes": 7135,
+            "replies": 751,
+            "reposts": 683,
+            "quotes": 145,
+            "bookmarks": 591
+          }
+        }
+      ]
+    },
+    {
+      "handle": "thsottiaux",
+      "name": "Tibo",
+      "items": [
+        {
+          "id": "x-tibo-1",
+          "summary": "窗内互动最高的一条，也是本期速览里的谜语帖。原文只说内部「无意中」做了一种太好玩的体验，全员都在玩而不是干活，可能会「缓不过来」。没有产品名，不能写成 ChatGPT / Codex 的正式预告。社区解读 / 非官方定义里，有人猜是新的聊天体验，有人嘲讽「看到 Opus 5.5 决定摆烂」，也有 #keep4o 用户对这条表达愤怒。约 9413 赞、169 条引用、1395 条回复、104 万次曝光。",
+          "url": "https://x.com/thsottiaux/status/2123997735326232775",
+          "time": "2026-11-21T12:31:36+08:00",
+          "interactions": "约 9413 赞 · 1395 回复 · 104 万次曝光",
+          "metrics": {
+            "likes": 9413,
+            "replies": 1395,
+            "reposts": 192,
+            "quotes": 169,
+            "impressions": 1042157,
+            "bookmarks": 609
+          }
+        },
+        {
+          "id": "x-tibo-2",
+          "summary": "窗口末尾又发了一句「Going to check out this threads thing」，没有配图、没有链接、没有说明是 Meta 的 Threads，还是 ChatGPT 里刚改过的线程。有追踪站把它标成「去看新做好的 threads 功能，并非重置信号」。这是旁人标注，不是他的定义。和前一条连着看，更像他当天在公开场合保持高调但继续不揭谜底。",
+          "url": "https://x.com/thsottiaux/status/2124277855131664869",
+          "time": "2026-11-22T07:04:42+08:00",
+          "interactions": "约 1116 赞 · 280 回复",
+          "metrics": {
+            "likes": 1116,
+            "replies": 280,
+            "reposts": 22,
+            "quotes": 11,
+            "bookmarks": 39
+          }
+        }
+      ]
+    },
+    {
+      "handle": "poteto",
+      "name": "lauren",
+      "items": [
+        {
+          "id": "x-poteto-1",
+          "summary": "引用 React Miami 大会官方账号 @ReactMiamiConf 的宣布，回「see you in vice city」：她和 @threepointone 将担任 React Miami 2027 的司仪（MC）。@poteto 当日 bio 为「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」，显示名 lauren；本期只使用 handle 与资料里的可见身份，不补未核验的本名。@threepointone 同样只记 handle，不臆造所属公司。这是会议角色宣布，不是产品发版。",
+          "url": "https://x.com/poteto/status/2123972719272452221",
+          "time": "2026-11-21T10:52:12+08:00",
+          "interactions": "约 1109 赞 · 37 回复",
+          "metrics": {
+            "likes": 1109,
+            "replies": 37,
+            "reposts": 29,
+            "quotes": 3,
+            "bookmarks": 58
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hn",
+      "source": "Hacker News",
+      "items": [
+        {
+          "id": "hn-1",
+          "title": "Lean verification of the Riemann Hypothesis",
+          "summary": "窗内 HN 最高分（783 分、620 评论）。这不是再贴一遍 Alpöge 的声明，而是 Lean / Mathlib 社区的联合核验声明：他们认为证明与陈述都正确，四条形式化标准已满足。讨论区的焦点迅速从「AI 能不能证数学」转到「独立内核有没有都跑完、Mathlib 里的陈述是否被人钻了空子、17 万个模块意味着什么」。同日还有一条 87 分的补充帖，指向 MIT 的 Andrew Sutherland 核验日志，里面既有已经通过的独立内核，也标明仍在跑的检查。适合当作昨天新闻的下一章，而不是同一条新闻再发一遍。",
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50589618",
+          "meta": "783 分 · 620 评论"
+        },
+        {
+          "id": "hn-2",
+          "title": "My monitor was cutting my download speed by 75%",
+          "summary": "Oscar Molnar 有一条 2.5 Gbps 对称线路，但经 Apple Studio Display 的一线直通接上 UGREEN USB-C 2.5G 网卡后，下载只剩约 600 Mbps，上传却仍有 2.4 Gbps。ISP、线材、路由器和网卡本身都没问题：网卡直接插电脑就能跑满。真正的瓶颈是显示器当 USB 集线器时，macOS 通用驱动与 Realtek RTL8156B 的流量控制、突发包数量合在一起，适配器到电脑这一段来不及把入站 2.5G 及时抽走，缓冲溢出且丢包发生在电脑看见之前。换官方驱动只能到约 1.1 Gbps；换成支持更高 bMaxBurst 的 RTL8157 后，适配器到电脑的理论吞吐超过入站速率，问题消失。这是一篇把「显示器拖慢网速」写成可复现的 USB 突发与流控课的排障笔记。",
+          "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50587875",
+          "meta": "451 分 · 222 评论"
+        },
+        {
+          "id": "hn-3",
+          "title": "Inkling-2-Mini in 5.4 GB Memory",
+          "summary": "昨天 Thinking Machines 刚放出可在笔记本上跑的 Inkling 2 Mini，今天就有人把量化后的体积做到约 5.4 GB 显存。仓库 ShinMegamiBoson/lookatmyquant 自称是一套量化编译器，在相同体积下 KL 散度比常见的 Q4_K_M 低一个数量级（项目介绍写 12 倍）。这不是官方发布，而是社区在第一时间把「能在笔记本跑」推进到「能在更小显存里跑」。对想本地试这个中间层循环三遍的小模型的人，门槛又降了一截；质量如何仍要自己对照官方权重评估，不能把仓库口号当成官方基准。",
+          "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+          "discussion_url": "https://news.ycombinator.com/item?id=50591853",
+          "meta": "327 分 · 88 评论"
+        },
+        {
+          "id": "hn-4",
+          "title": "RCE in Gnupg",
+          "summary": "GPGME CVE-2026-129975 的 HN 讨论帖。标题写的是 GnuPG，公告针对的其实是几乎所有调用 GPGME 的应用，包括邮件客户端和 Samba。评论区不少人在确认自己发行版、邮件软件和 Flatpak 运行时到底链的是哪一个库版本。细节见本期速览。",
+          "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50587208",
+          "meta": "225 分 · 90 评论"
+        },
+        {
+          "id": "hn-5",
+          "title": "FBI reportedly investigating apparent hack of its criminal database",
+          "summary": "BBC 援引两名知情人士报道，FBI 正在调查其国家犯罪信息中心（NCIC）数据库疑似被入侵。NCIC 供联邦和地方执法共享通缉令和背景调查信息。FBI 没有立即回应 BBC 的置评请求；报道引述特朗普总统在 Fox News 采访中说他「刚听说」，并称「这不好，我不喜欢」，又补了一句「也许我们会因此学到本来学不到的东西」。这不是 FBI 的正式确认通报。BBC 把它放在一连串美国基础设施故障和白宫国家网络主管 Sean Cairncross 被撤换的背景下，并提到今年 9 月 ShinyHunters 声称窃取约 3.8 万名 FBI 员工信息的另一次调查。尚未看到官方说明入侵范围、是否有数据被取走、或攻击者是谁。",
+          "url": "https://www.bbc.com/news/articles/cvze7de86pk3o",
+          "discussion_url": "https://news.ycombinator.com/item?id=50587859",
+          "meta": "167 分 · 82 评论"
+        },
+        {
+          "id": "hn-6",
+          "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
+          "summary": "SimpleBench 是一个两百多道选择题的小基准，专门测空间时间推理、社交判断和故意绕弯的题，官方介绍写非专业人类基线是 83.7%，而且在多数文本基准上已经被模型超越的今天，这里人类仍常胜过前沿模型。HN 这篇讨论的矛头是：GPT-6.2 的 Astra 与 Sol 在这块板上相对前代退步。第三方综述 Traictory（日期写 11 月 20 日，数字来自更新后的榜）给出 Astra 77.3%（前代 83.6%）、Sol 69.9%（前代 82.9%），都落到人类基线以下；官方首页的静态介绍文案仍引用过一个较旧的 Claude Fable 81.9% 数字，本期未能从无脚本的页面上独立核对实时表格，所以具体名次只当作第三方对榜单的转述。更有意思的是解释：这类题奖励的是一次读懂陷阱、不能靠工具循环补救，而 6.2 的发布材料更强调 agent 多步任务和单位成本，训练配方如果偏向后者，前者就可能悄悄丢掉。",
+          "url": "https://simple-bench.com/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50588916",
+          "meta": "158 分 · 155 评论"
+        },
+        {
+          "id": "hn-7",
+          "title": "Show HN: Zero C# – C# without a runtime or GC",
+          "summary": "Onur Gümüş 的 Show HN：一套不要 .NET 运行时、也不要垃圾回收的 C# 编译路径，内存改用 arena，一次性整块释放。介绍里写的卖点是语言本身还在——包括 C# 15 的 union、扩展成员、泛型、接口和 LINQ 风格查询——但「Hello world」在 Windows 上大约 11 KB、Linux 上大约 40 KB，不需要安装运行时；异常则变成直接结束进程，错误用 union 返回。这是在用系统编程的内存模型重新承载一门本来绑在 CLR 上的语言，适合关心体积和启动时间的人看演示，还不是可以替换生产 .NET 的完整替代品。",
+          "url": "https://onurgumus.github.io/zero-csharp/index.html",
+          "discussion_url": "https://news.ycombinator.com/item?id=50590279",
+          "meta": "121 分 · 94 评论"
+        },
+        {
+          "id": "hn-8",
+          "title": "Upload2Shell (CVE-2026-125396)",
+          "summary": "pwn.ai 公开了 Ghostscript Type 1 字体加载器里的释放后使用漏洞 Upload2Shell（CVE-2026-125396）：特制文档可以跨过 -dSAFER 沙箱，改原生路径控制，并以渲染进程的身份执行攻击者指定的命令。Ghostscript 藏在打印、邮件、上传和预览链路里；他们先前对 ImageMagick 的研究已经说明，扩展名看起来像 .png / .jpg 的文件仍可能被转到 Ghostscript。时间线写他们 7 月发现、随后在 Google 的文档渲染管线里打出已登录态之外的生产证明，WordPress 核心也为此单独修过 CVE-2026-65640（Author 及以上，以及被授予 upload_files 的 Contributor，外加一些插件的公开上传字段）。对普通站点管理员，这意味着「用户上传图片」并不自动等于「不会进到 PostScript 渲染器」。",
+          "url": "https://pwn.ai/upload2shell",
+          "discussion_url": "https://news.ycombinator.com/item?id=50592097",
+          "meta": "68 分 · 25 评论"
+        },
+        {
+          "id": "hn-9",
+          "title": "Tell HN: OpenRouter prompts to Minimax may have been read",
+          "summary": "OpenRouter 向用户发出警告：经其平台发给 MiniMax 模型的提示词和输出，可能被第三方读到。公开报道写，问题与 MiniMax 以及转发层的 AtlasCloud、Novita、StreamLake 有关；有金丝雀 URL 在 40 到 130 小时后被访问。OpenRouter 在调查期间去掉了相关的 Zero Data Retention 标记。Novita 自己的说明把受影响的 MiniMax 请求窗口写到 5 月 28 日至 11 月 11 日，并建议轮换曾经放进提示词里的密钥。分数不算最高，但对任何把密钥、代码或客户数据经路由层发给第三方模型的人，这是一条需要立刻处理的提醒：ZDR 标签不是契约本身，链路中每一个转发层都可能成为阅读面。",
+          "url": "https://news.ycombinator.com/item?id=50585962",
+          "discussion_url": "https://news.ycombinator.com/item?id=50585962",
+          "meta": "41 分 · 5 评论"
+        },
+        {
+          "id": "hn-10",
+          "title": "Verification files for the Lean proof of the Riemann Hypothesis",
+          "summary": "MIT 的 Andrew Sutherland 为 Alpöge 的 Lean 库维护的核验看板，页脚写检查是和 Claude Code 一起跑的，最后更新 2026-11-21 12:55 UTC。它把「已经通过」和「还在跑」摊开：全部 175,187 个模块用 Lean / Mathlib v4.33.1 编过；五个主定理的公理集只有 propext、Classical.choice、Quot.sound；独立 Rust 内核 nanoda、con-leche 和 lean4lean 已接受导出证明。同时，Lean 默认内核与 paranoid 内核对导出文件的单线程回放，以及 lake comparator 的端到端跑，当时还没有最终结论。和社区联合声明对照着看更完整：背书已经发出，公开日志仍保留正在进行的条目。",
+          "url": "https://math.mit.edu/~drew/grh/",
+          "discussion_url": "https://news.ycombinator.com/item?id=50590441",
+          "meta": "87 分 · 34 评论"
+        }
+      ]
+    },
+    {
+      "id": "lobsters",
+      "source": "Lobsters",
+      "items": [
+        {
+          "id": "lo-1",
+          "title": "My Monitor Was Cutting My Download Speed by 75%",
+          "summary": "Lobsters 当日最热的新帖（71 分），与 HN 那条是同一篇文章。社区更集中在 USB 突发、macOS 通用驱动和显示器当扩展坞时的流控，而不是「显示器质量差」这种结论。细节见 HN 条目。",
+          "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+          "discussion_url": "https://lobste.rs/s/qzerls/my_monitor_was_cutting_my_download_speed",
+          "meta": "71 分 · 5 评论 · networking"
+        },
+        {
+          "id": "lo-2",
+          "title": "C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)",
+          "summary": "Herb Sutter 写的 11 月布济乌斯（Búzios）ISO C++ 会议旅行报告。C++26 的技术工作原本在今年 3 月就完成过一次，但第一次 DIS 投票因意见——主要是对 contracts（合约）的反对——没有过，委员会在这次六天会议里重开并再次完成技术工作。报告的要点是：合约被保留，并增加了必须始终检查的 enforced 标签；更新后的文档计划再次提交批准投票，赞成比例被写到 92.5%。下一步是第二次 DIS 投票和收尾编辑，还不是已经正式发布的国际标准。标题里的「again」就是这个反复：不是又发明了一遍 C++26，而是第一次票没过之后又做完了一轮。",
+          "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
+          "discussion_url": "https://lobste.rs/s/fjueso/c_26_is_done_again_trip_report_november",
+          "meta": "16 分 · 14 评论 · c++"
+        },
+        {
+          "id": "lo-3",
+          "title": "TODOs JJ Style",
+          "summary": "一篇讲如何在 Jujutsu（jj）工作流里管理 TODO 的实践。Lobsters 上 37 分、7 条评论，说明 jj 已经从「新 VCS 猎奇」走进日常习惯讨论。和前几期出现的 jj-musubi、jj primer 是同一条线上的社区建设：人们开始分享具体的日常套路，而不只是介绍命令。",
+          "url": "https://bwc9876.dev/blog/jj_todo/",
+          "discussion_url": "https://lobste.rs/s/qxzs4y/todos_jj_style",
+          "meta": "37 分 · 7 评论 · vcs"
+        },
+        {
+          "id": "lo-4",
+          "title": "How I Got Postgres into a Single Binary",
+          "summary": "把 PostgreSQL 打进单一可执行文件的实践记录。对要分发演示环境、本地工具或嵌入式场景的人有用：少掉一套安装和动态库对齐，代价和裁剪范围需要自己看正文。讨论不多，但和本期 Zero C# 一样，都在回答「能不能把本来很重的东西收成一个文件带走」。",
+          "url": "https://progrium.xyz/articles/2026/single-binary-postgres",
+          "discussion_url": "https://lobste.rs/s/pvylnk/how_i_got_postgres_into_single_binary",
+          "meta": "9 分 · 1 评论 · databases"
+        },
+        {
+          "id": "lo-5",
+          "title": "Microsoft 365 Outage - Post Incident Report",
+          "summary": "一份关于 Microsoft 365 故障的事后报告 PDF，被提到 Lobsters 上讨论。它不是微软官方状态页的原文替代，而是一份面向工程读者的复盘材料，适合关心大型 SaaS 故障如何被切片、写入时间线和行动项的人。本期没有把全文逐段转写，需要看原始 PDF。",
+          "url": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+          "discussion_url": "https://lobste.rs/s/becitz/microsoft_365_outage_post_incident",
+          "meta": "11 分 · 5 评论"
+        },
+        {
+          "id": "lo-6",
+          "title": "Advice for the next 100 Rust GUIs",
+          "summary": "Linebender 团队为「还要再出现的那些 Rust GUI 工具包」写的经验清单。Rust 桌面 UI 一直是新项目高产、持久项目稀缺的领域，这类文章的价值是把已经踩过的坑写成别人开工前能读的约束，而不是再宣布一个框架。",
+          "url": "https://linebender.org/blog/next-100-guis/",
+          "discussion_url": "https://lobste.rs/s/inhlo2/advice_for_next_100_rust_guis",
+          "meta": "4 分 · 评论数未列出"
+        }
+      ]
+    },
+    {
+      "id": "v2ex",
+      "source": "V2EX",
+      "items": [
+        {
+          "id": "v2-1",
+          "title": "Claude 被连封两个账号，不想折腾了，接下来用啥？",
+          "summary": "作者连着丢掉两个 Claude 账号后发问：Gemini Carbon 是否值得试、会不会牵连 Gmail；Codex「听说现在挺拉」；国产写代码最好的是哪个。他升级到香港区 Google AI Pro（帖里写 HK$158）后，Antigravity 里 Neon 和 Hydrogen 仍显示 Unavailable，随后又看到「当前账号暂时无法通过 Google AI 套餐获得更高速率」。评论区给出的经验很一致也很难受：大陆和香港 Play 地区经常开不出完整模型，有人建议改到日本或新加坡并走 Google 的国家关联申请表；也有人直接说「这 20 块白充了，申请退款吧」。这不是模型能力帖，而是一篇账号地缘和风控帖：你买的套餐名字，和客户端真正放行的模型，中间还隔着地区与资格检查。",
+          "url": "https://www.v2ex.com/t/1258753",
+          "meta": "43 回复 · 程序员"
+        },
+        {
+          "id": "v2-2",
+          "title": "入了 Gemini Pro 之后，已经严肃取消 GPT plus",
+          "summary": "作者觉得 Neon「干活确实挺漂亮，也没 GPT 那么多废话」，因此决定 GPT Plus 到期不续，只保留 GLM Max、opencode go 和 Gemini Pro 做管理规划。同一帖里的保留意见同样清楚：额度很不经用，一个对话几轮就把一周用量打到 92%；Antigravity 还不好用，不过他听说大约 12 月 2 日会支持接到其他 agent。评论区在交换日区一折、美区前三个月 $4.99、学生档只能用到 3.8 Flash、以及 Gemini 需要全局翻墙等具体订阅技巧。把它和下一篇「不堪大任」对着读，能看到同一天里 Neon 口碑有多两极。",
+          "url": "https://www.v2ex.com/t/1258745",
+          "meta": "32 回复 · 程序员"
+        },
+        {
+          "id": "v2-3",
+          "title": "gemini neon 不堪大任",
+          "summary": "作者用促销价买了 Gemini Pro，第一天拿去试 Opus 相关额度，五小时用完却几乎没写出代码；转试 Neon，写小程序过关，改下载爬虫时却在 20 分钟后交出带 9 处飘红、无法运行的结果，最后还是交给 Claude Code。评论并不站在同一边：有 Ultra 用户觉得 Neon Extra High 体感甚至超过 6.2 Astra；也有人说 Neon 适合规划和说人话，但挑出的问题里有一半会被 Claude 判定不成立；还有人抱怨「慢、量少，能用 Claude 就用 Claude」。一篇差评帖变成了现场评测会，结论只能是：Neon 的「说人话」和「是否稳」被拆成了两件事。",
+          "url": "https://www.v2ex.com/t/1258716",
+          "meta": "27 回复 · Google"
+        },
+        {
+          "id": "v2-4",
+          "title": "今天到 26 号哈基米黑五半价啊",
+          "summary": "一条短而实用的提醒：Gemini 黑五促销窗口到 11 月 26 日，有人写 Pro 一年 99.99 美元。评论区随即比较学生档、各区优惠和「到底该不该现在锁一年」。它解释了为什么同一天会同时出现「我刚改订 Gemini」和「额度根本不够用」两种帖——价格信号比能力共识来得更快。",
+          "url": "https://www.v2ex.com/t/1258768",
+          "meta": "24 回复 · gemini"
+        },
+        {
+          "id": "v2-5",
+          "title": "观人工智能解决黎曼猜想有感",
+          "summary": "在 Alpöge 声明刷屏之后，V 站也出现了偏哲学的读后感：如果物理世界本质是信息，智能是不是就是对信息的处理，人工智能不必复制人脑。它不是核验帖，也没有增加数学事实，但说明这条新闻在中文程序员社区里已经从「看热闹」走到「开始谈含义」。和 Lean 社区同日的背书对照着看更有意思：一边是内核和公理清单，一边是对「力大飞砖」的想象。",
+          "url": "https://www.v2ex.com/t/1258707",
+          "meta": "22 回复 · 随想"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "source": "Solidot / 开源中国 / Linux.do / NodeSeek",
+      "items": [
+        {
+          "id": "cn-1",
+          "title": "人类数学家匆忙发布广义黎曼猜想的证明手稿",
+          "summary": "Solidot 跟进昨天已经出现过的另一条线：Alessandro Maria Masullo 在广义黎曼猜想上投入了 12 年，手稿正由 Brian Conrad 审阅，两人原计划再用一年完善并征求更多意见后发表；但 Alpöge / Anthropic 一侧的声明迫使这份「完全没有使用任何 AI 工具」的人工稿提前公开。原文指向 Math 216 博客上那篇「匆忙宣布」。需要记清：这仍是一份被提前摊开的手稿和审阅安排，不是已经完成的期刊发表，更不是对 Lean 库的替代判决。",
+          "url": "https://www.solidot.org/story?sid=85952",
+          "meta": "Solidot · 2026-11-21 19:09（Asia/Shanghai）"
+        },
+        {
+          "id": "cn-2",
+          "title": "GTA 6 首日销售额达到创纪录的 37.9 亿美元",
+          "summary": "Take-Two 披露，《GTA 6》预购加首日销售额达到 37.9 亿美元，称这是娱乐产品历史上最高的首日收入，并拿它和《复盟 4》全球总票房约 29 亿美元作比较。公司没有公布销量；开发成本被外界估计可能超过 15 亿美元。报道还写，开发团队里约 21%、大约 1000 人已在公司工作超过 10 年。昨天中文源已经报过「史上最高首日」，今天补上了具体金额。这是发行商披露的销售额，不是独立审计后的最终财报口径。",
+          "url": "https://www.solidot.org/story?sid=85951",
+          "meta": "Solidot · 2026-11-21 18:48（Asia/Shanghai）"
+        },
+        {
+          "id": "cn-3",
+          "title": "为勒索软件受害者提供解密服务的公司只是付钱给勒索软件组织",
+          "summary": "Solidot 转述 Krebs on Security：佛罗里达州的 RansomwareHelp.com 对外宣称有独有算法，能 100% 恢复数据且不会代客户向勒索组织付钱。但根据递交到罗德岛州的诉讼，联合创始人兼 CTO Juan Ricardo Palacio Escobar 在 FBI 的钓鱼行动中——特工同时扮演受害者和攻击者——被发现只是把钱付给勒索组织换解密密钥，再向受害者收更高费用。公司成立六年，官网话术与起诉书中的描述完全相反。对任何正在找「正规解密商」的人，这是一条该去读原文和起诉文件的警报，而不是已经宣判的全部事实。",
+          "url": "https://www.solidot.org/story?sid=85950",
+          "meta": "Solidot · 2026-11-21 18:11（Asia/Shanghai）"
+        },
+        {
+          "id": "cn-4",
+          "title": "地球 28 光年外发现一个三星系统",
+          "summary": "天文学家在距地球 28 光年处发现被命名为 Welopōʻa 的三星系统：两颗白矮星和一颗红矮星。红矮星与其中一颗白矮星靠得很近，更远的一颗白矮星再绕着这两颗转。按常规演化，那颗曾经膨胀成红巨星的类太阳恒星应当会严重干扰甚至吞掉红矮星，但这颗红矮星不但还在，轨道也显得稳定。报道称 100 光年内还没见过类似结构，现有模型解释不清它为何能存留下来。",
+          "url": "https://www.solidot.org/story?sid=85955",
+          "meta": "Solidot · 2026-11-21 22:40（Asia/Shanghai）"
+        },
+        {
+          "id": "cn-5",
+          "title": "据 Levent 声称，Anthropic 已证明黎曼猜想",
+          "summary": "Linux.do 晚报第 043 期（21:30 出刊）把这条列为站内主线之一：135 个回帖、75 人参与，从「AI 是不是真做到了」聊到形式化要跑多久。同站还有人写「跑完这份 Lean 证明需要 4 天、1TB 工作区」，以及人类数学家同日交出 940 页人工稿的跟帖。晚报出刊时刻略早于 Lean 社区联合声明的北京时间晚上，所以标题仍用「声称」；对读者来说，要把站内热议和稍后发出的正式背书分开看。条目依据 linuxdo.club 晚报摘述与统计，linux.do 本站 JSON 接口仍被 Cloudflare 拦截。",
+          "url": "https://linux.do/t/topic/3213004",
+          "meta": "Linux.do 晚报 · 135 帖 / 75 人（社区统计）"
+        },
+        {
+          "id": "cn-6",
+          "title": "哈基米王朝，谷歌狂杀反代，T3 Code 可能是你最好的避风港",
+          "summary": "Linux.do 当日另一条主线：谷歌针对反代和异常订阅的清理让许多人的便宜渠道失效。原帖主张与其在 Antigravity 里提心吊胆，不如改用 T3 Code 这类「在 CLI 外面再套一层」的工具；评论立刻反驳「走 ACP 照样第二天被拿下」。和它绑在一起的，是「跟风买某 mi 的 Gemini Pro，后续好多坑」（58 帖 / 35 人）以及「小米渠道一夜掉订阅」：排队开通、扫码或自拍验证、默认续费的虚拟卡，再到有人说商家当天下午跑路。这是渠道风险帖，不是对 Gemini 官方套餐的评测。",
+          "url": "https://linux.do/t/topic/3213434",
+          "meta": "Linux.do 晚报 · 113 帖 / 50 人（社区统计）"
+        },
+        {
+          "id": "cn-7",
+          "title": "哈基米的缓存到底怎么回事？反重力客户端和 CLI 的缓存率能差这么多",
+          "summary": "同一天里不多的「坏消息里夹着修好了」：有人发现 Antigravity 客户端缓存命中可以在 90% 以上，换到 CLI 后有的会话掉到 20%。晚报写，当天有谷歌反重力员工确认缓存问题将被修复并提供重置，晚间已有人贴出 98.9% 的命中率；同时也有人说重置后 5 小时配额好像从 35 美元降到 20 美元。如果你正在用 Antigravity / Gemini CLI 写代码，这条比「某渠道还能不能充」更接近产品本身的变化。",
+          "url": "https://linux.do/t/topic/3213524",
+          "meta": "Linux.do 晚报 · 23 帖 / 11 人（社区统计）"
+        }
+      ]
+    },
+    {
+      "id": "product_updates",
+      "source": "产品更新",
+      "items": [
+        {
+          "id": "pu-1",
+          "title": "omp 19.1.0：备用工具、提示词扰动，以及 Chrome 扩展要重装",
+          "summary": "oh-my-pi / omp 在窗内发到 v19.1.0（GitHub 2026-11-21 14:32 UTC，npm latest 同步为 19.1.0）。对使用者最明显的三件事：一是 agent 核心加了 standby tools，工具可以先挂在旁边，直到某次请求明确启用，减少一上来就把工具清单塞进上下文；二是可选的 prompt perturbation（提示词扰动）——安装时从一份写死的同义池里挑一套措辞，覆盖静态系统提示和工具描述，模型目录用 prompt-perturbation 轴选择，也可用环境变量 OMP_PROMPT_PERTURBATION 强制开关，意图是让提示词不再千篇一律、略增加被针对性提取的难度；三是浏览器扩展有破坏性变更：改为固定的 Chrome 扩展 ID，经 native host 连接，需要按「加载已解压的扩展」重新安装，原先的中继端口和 token 选项被去掉，侧栏现在直接控制已连接的 Chrome，而不是另开无头浏览器，并加了选模型、排队、截图/选元素、Teach 和 GIF 导出。目录里移除了内置的 Gemini CLI OAuth 提供者 google-gemini-cli，Google Antigravity 和 Antigravity CLI 还在。此外还有一串对日常使用很实在的修复：Codex 请求不再发送带下划线的 session_id / conversation_id 头，以免被 Envoy、nginx 默认配置丢掉；GPT-6.2 的系统提示在第三方 Responses 代理上改成前置 developer 消息，便于提示缓存；Antigravity 额度耗尽会按 429 处理从而触发重试和轮换，而不再被当成助手文本。仓库与 GitHub 发布说明对照过，不是只抄版本号。",
+          "url": "https://github.com/can1357/oh-my-pi/releases/tag/v19.1.0",
+          "meta": "版本 19.1.0 · 2026-11-21 22:32（GitHub published_at，Asia/Shanghai）；npm 时间为 22:42"
+        },
+        {
+          "id": "pu-2",
+          "title": "CLIProxyAPI 8.1.0：加上 GitHub Copilot 作为提供方",
+          "summary": "router-for-me/CLIProxyAPI 从昨天的 v8.0.80 跳到 v8.1.0（2026-11-21 19:03 UTC）。版本号跳到 8.1，主新增是把 GitHub Copilot 做成一等提供方：支持 OAuth 模型别名和按路由的精确选择、把 Copilot 流式响应翻译出来、用 execution mode 做 Claude 流转换、为 count tokens 返回 Gemini 格式，并加入基于预设的内存目录，以及 Home 分发的 Copilot 执行路径。其余大量提交是鉴权和 Antigravity 通路的加固：空流、中途取消、上游卡住时关掉被放弃的尝试、保留 thoughtSignature、额度回退时过滤不合格凭证、以及 TOS 暂停等错误的作用域。对已经在用 CPA 做多提供方网关的人，这期的实用含义是：Copilot 可以进同一套路由；Antigravity 相关的流和额度边角仍然在被逐个补上。发布说明里的 Linux / FreeBSD 资产说明与以往相同，带插件的 glibc 构建和不带插件的便携构建要分开选。",
+          "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.1.0",
+          "meta": "版本 8.1.0 · 2026-11-22 03:03（GitHub published_at，Asia/Shanghai）"
+        },
+        {
+          "id": "pu-3",
+          "title": "Magpie 本窗又推到 v0.1.4657：Claude 插件市场、按调用方区分钩子",
+          "summary": "yetone/magpie 与镜像仓 magpie-releases 在本期窗口内继续高频发版，最新看到 v0.1.4657（2026-11-21 19:38 UTC）。上一期报到 v0.1.4622，因此 4623 到 4657 都是新的。对使用者较有感的变化包括：Library 里出现 Claude 插件市场（和已有的 Pi packages 类似，并用上 Claude Code / Pi 的标识）；Skills 和 MCP 两个标签页顶部加了对应的路由行；网关中间件和请求钩子能从 ctx.caller 知道调用方；Codex 窗口的用量按该次调用实际档位计入套餐；中继（relay）响应可以在已有 response ID 上继续作为新输入，走 socket 或 HTTP；另外还有插件侧栏拖拽、搜索框遮挡列表、隐私设置里 Advanced 的排版等一串界面修复。4657 本身还加了插件页打开次数和合作方位置的统计。Magpie 仍然是一日多构建的节奏，不必把每一个中间版本都当成功能里程碑，记住上述用户可见变化即可。",
+          "url": "https://github.com/yetone/magpie-releases/releases/tag/v0.1.4657",
+          "meta": "最新 v0.1.4657 · 2026-11-22 03:38（GitHub，Asia/Shanghai）；上一期截止 v0.1.4622"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "按用户设定未抓取 Reddit，sections 中没有 reddit 分区；本期只有文字和封面图，没有视频和音频。本期无新的 rating / watch Issue，temp_watches 为空。其余关注产品今日无新的稳定版本：Claude Code 仍停在昨天的 2.1.330，官方 changelog 顶部还是该版本；Claude Desktop 页面的 dateModified 虽有 2026-11-21T00:10:50Z，但未见新的带日期版本条目，上一期已报到 v6.28899.6；ChatGPT 总 changelog 与 macOS / Windows 独立 notes 未见 11 月 21 日新条目，上一期已写过 11 月 20 日 Space 向 Plus 放开和桌面改造；Sub2API 仍为 v0.2.24；Tern 官方应用仍是封闭 beta，tern-sdk 窗内无新提交，docs.stencil.so/tern/ 无带日期 changelog。Codex CLI 稳定版仍为 0.171.0（11 月 20 日），npm 预发布标签在窗内出现 0.173.0-alpha.4（约 00:43 UTC），相对昨日报过的 alpha.3 没有单独可引用的稳定版说明，故不单列。",
+    "身份核对（当日读取 bio）：Tibo（@thsottiaux）「Codex & ChatGPT @OpenAI」；poteto / lauren「grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix」；Elon Musk（@elonmusk）bio 仍为短链，简介未写 Tesla/SpaceX/xAI 职务，本期只标 handle 与显示名。Ashok Elluswamy（@aelluswamy）当日 bio 为「Leading AI @Tesla」，按可见身份写。@SawyerMerritt 资料写 EVs/space/tech 资讯并自称 $TSLA / $SPCX 投资者，不是特斯拉官方。@ReactMiamiConf 为会议官方账号；@threepointone 只记 handle。Levent Alpöge 的 Anthropic 雇员身份沿用 Scientific American、Solidot 及其声明，未打开公司人事页。Andrew Sutherland 按 MIT 个人页与核验日志署名来写。Alessandro Maria Masullo、Brian Conrad 只使用 Solidot / Math 216 公告中的姓名与角色，不补未核验的机构职务。Werner Koch 按 GnuPG 公告发件人来写。",
+    "X 数据取自内置 X API（窗内 11-21 00:00Z～11-22 00:00Z）。Elon 排除转帖后一次拉到 25 条（可能未翻完全部）；Tibo 3 条一次拉完，poteto 5 条一次拉完。Tibo 那条高赞帖补充了引用和会话内回复，引用区未穷尽所有 169 条。FSD v15 发行说明转述自 Electrek 对 Tesla Super Intelligence 账号笔记的引用，未打开特斯拉官方帮助中心作为第二来源。",
+    "Linux.do 的 /latest.json、/top.json、RSS 和首页今日均返回 403（Cloudflare）。本期改用公开检索门户 linuxdo.club 的 2026-11-21 晚报（第 043 期，21:30 出刊，在本窗内）；其采集窗通常覆盖前一晚 21:30 到当天 21:30，条目依据晚报摘述与统计，原文链接使用 linux.do/t/topic/…。NodeSeek 主站和 /rss 返回 403，改用 rss.nodeseek.com；该源是按时间倒序的最新帖，窗内几乎全是黑五 VPS / 账号交易，没有足够的技术向热帖可单列，故本期 NodeSeek 不单独成条。开源中国 RSS 窗内只有一场 11 月 25 日人形机器人开发者大会预告，信息量不足，不单列。",
+    "SimpleBench 官方首页在无脚本抓取下没有渲染出完整实时表格，引言区仍出现较旧的 Claude Fable 81.9% 表述；Astra / Sol 的具体分数转述自 Traictory 11 月 20 日的第三方写稿，已在条目中标明。Science.org 上 Derek Lowe 关于叠氮化铅的博文返回 403，尽管 HN 分数很高，本期未在未读原文的情况下写入摘要。ClawDOS 项目页返回 500，同样不单列。"
+  ]
+}
